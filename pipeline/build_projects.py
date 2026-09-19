@@ -1,0 +1,627 @@
+#!/usr/bin/env python3
+"""
+evidence → WorkbenchProject generator
+=====================================================================
+把已缓存的真实仓库树 + robots.json 元数据编译成标杆同形的 `WorkbenchProject`。
+
+设计原则（对齐 physical-ai 的 evidence-policy）：
+  1. 装配层级优先取仓库的功能性目录；目录只有格式桶时退回按零件名聚类；
+     两条路都走不通就显式说明"无可识别的功能分区"，不编。
+  2. 每条零件行 = 一个真实文件，source 指向可点击的 blob URL。
+  3. 没有的东西写进 gaps，不用看起来合理的值填充。
+  4. 不产出任何"重现概率"——评分是 OPEN_REPRO_V2 的职责，这里只产出证据。
+
+关于装配层级为什么这么绕：
+  第一版直接取"离文件最近的目录名"，结果 88 个项目出现名为 `meshes` 的"总成"、
+  53 个叫 `urdf`、40 个叫 `docs`。这些是资产格式桶，不是机器人的功能分区——
+  它们在 UI 里排成一列毫无意义。所以现在分三层回退：
+      功能性目录 → 文件名机器人部位聚类 → 显式声明无功能分区。
+
+用法：
+  python3 pipeline/build_projects.py --min-tier B --out lib/projects.generated.ts
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import math
+import re
+from collections import Counter, defaultdict
+from pathlib import Path
+from urllib.parse import quote
+
+HOME = Path.home()
+COURSE = HOME / "hermes-robot-course"
+CACHE = COURSE / "pipeline" / ".cache"
+ROBOTS = COURSE / "data" / "robots.json"
+
+# --- 文件分类：全部基于扩展名/文件名，不做语义猜测 -------------------------
+
+PARAMETRIC_CAD = {".step", ".stp", ".iges", ".igs", ".f3d", ".f3z", ".sldprt",
+                  ".sldasm", ".x_t", ".x_b", ".brep", ".fcstd", ".scad", ".3dm",
+                  ".catpart", ".catproduct", ".ipt", ".iam"}
+PRINT_MESH = {".stl", ".3mf", ".obj", ".ply"}
+ROBOT_DESC = {".urdf", ".xacro", ".mjcf", ".usd", ".usda", ".srdf"}
+PCB_EDA = {".kicad_pcb", ".kicad_sch", ".brd", ".sch", ".gerber", ".gbr",
+           ".drl", ".net", ".dsn"}
+DOC_EXT = {".md", ".pdf", ".txt", ".rst"}
+BOM_RX = re.compile(r"(^|[^a-z])(bom|bill[_\-\s]?of[_\-\s]?material|parts[_\-\s]?list|"
+                    r"material[_\-\s]?list|shopping[_\-\s]?list)([^a-z]|$)", re.I)
+DOCISH_RX = re.compile(r"(readme|assembly|build[_\-\s]?guide|instruction|"
+                       r"getting[_\-\s]?started|manual|tutorial)", re.I)
+
+# 格式桶：这些目录名描述的是「文件是什么格式」，不是「机器人的哪个部分」。
+# 它们绝不能当总成，否则界面会出现一列叫 meshes / urdf / docs 的"总成"。
+FORMAT_BUCKET = {
+    "mesh", "meshes", "stl", "stls", "step", "stp", "cad", "3d", "3dmodel",
+    "3dmodels", "model", "models", "part", "parts", "asset", "assets",
+    "visual", "collision", "collisions", "urdf", "urdfs", "xacro", "mjcf",
+    "doc", "docs", "documentation", "image", "images", "img", "media",
+    "gallery", "photo", "photos", "render", "renders", "preview", "stl_files",
+    "step_files", "exported", "export", "output", "outputs", "generated",
+    "files", "file", "data", "resource", "resources", "download", "downloads",
+    "release", "releases", "old", "new", "backup", "archive", "final",
+}
+
+# 无意义的路径段
+NOISE_SEG = {"", ".", "..", "main", "master", "src", "lib", "include",
+             "static", "misc", "other", "tmp", "temp", "build", "dist", "out",
+             "node_modules", ".github", "example", "examples", "demo", "demos",
+             "test", "tests", "test_data", "bin", "obj", "cache"}
+
+# 目录/文件名里的机器人功能部位 → 中文部位名。
+# 用于第二层回退：当仓库只有格式桶目录时，按零件文件名聚类出真正的部位。
+PART_WORDS: list[tuple[re.Pattern, str, str]] = [
+    (re.compile(r"leg|thigh|shin", re.I), "leg", "腿部"),
+    (re.compile(r"hip", re.I), "hip", "髋部"),
+    (re.compile(r"knee", re.I), "knee", "膝部"),
+    (re.compile(r"ankle", re.I), "ankle", "踝部"),
+    (re.compile(r"foot|feet|toe", re.I), "foot", "足部"),
+    (re.compile(r"arm|upper_?link|forearm", re.I), "arm", "手臂"),
+    (re.compile(r"shoulder", re.I), "shoulder", "肩部"),
+    (re.compile(r"elbow", re.I), "elbow", "肘部"),
+    (re.compile(r"wrist", re.I), "wrist", "腕部"),
+    (re.compile(r"hand|finger|thumb|palm|knuckle", re.I), "hand", "手部"),
+    (re.compile(r"gripper|claw|jaw", re.I), "gripper", "夹爪"),
+    (re.compile(r"head|neck", re.I), "head", "头部/颈部"),
+    (re.compile(r"torso|trunk|chest|pelvis|waist|spine", re.I), "torso", "躯干"),
+    (re.compile(r"body|chassis|frame|base|plate|shell|cover|casing", re.I),
+     "body", "机身/结构件"),
+    (re.compile(r"bracket|mount|adapter|holder|clamp|spacer|flange", re.I),
+     "mount", "安装件/支架"),
+    (re.compile(r"joint|pivot|hinge|coupling", re.I), "joint", "关节连接件"),
+    (re.compile(r"motor|servo|actuator|gearbox|reducer|gear|pulley|belt", re.I),
+     "drive", "驱动/传动"),
+    (re.compile(r"bearing|bushing|shaft|axle|screw|bolt|nut|fastener", re.I),
+     "fasten", "轴承/紧固件"),
+    (re.compile(r"pcb|board|shield|controller|driver|electronics?", re.I),
+     "pcb", "电路板/控制"),
+    (re.compile(r"battery|power|supply|bms|charger", re.I), "power", "供电"),
+    (re.compile(r"wheel|tire|track|caster", re.I), "wheel", "行走"),
+    (re.compile(r"propeller|rotor|blade", re.I), "prop", "旋翼"),
+    (re.compile(r"sensor|camera|lidar|imu|encoder|antenna", re.I),
+     "sensor", "传感器"),
+    (re.compile(r"harness|wiring|cable|connector", re.I), "harness", "线束"),
+]
+
+# 机器人相关性信号：仓库必须至少命中一个，否则不生成工作台。
+# （text-to-cad 这类"生成 CAD 的 AI 工具"曾以 ★16147 排到榜首，就是缺这道闸。）
+ROBOT_SIGNAL = re.compile(
+    r"robot|humanoid|biped|quadruped|hexapod|manipulator|robotic arm|"
+    r"gripper|dexterous|exoskeleton|drone|uav|rover|locomotion|teleop|"
+    r"embodied|actuator|servo|leg|arm|android|\bbot\b|机械臂|机器人|四足|"
+    r"人形|灵巧手|双足|仿生|舵机", re.I)
+# 模拟器/模型库：按「仓库名」判定，不按描述。
+# 理由：真机器人的描述里常写"支持 Gazebo / MuJoCo 仿真"，
+# 拿描述匹配会把真项目误杀；而物理引擎和模型库的名字里一定带框架名。
+SIM_NAME_RX = re.compile(
+    r"mujoco|menagerie|pybullet|gazebo|isaac[-_ ]?(sim|lab|gym|rl)|sapien|"
+    r"brax|genesis|drakesim|webots|gym[-_]|rl[-_]bench|bullet|ignition|"
+    r"[-_](ctrl|control|mpc|ign|sim|rl|studio|viewer|driver|drivers|msgs|"
+    r"bridge|api|sdk|server|client)\b|"
+    r"[-_](ctrl|control|mpc|ign|studio|viewer|drivers|msgs|bridge)$", re.I)
+# 描述里的强模拟信号。每条都要求」明确自述是仿真/学习框架」，
+# 而不是仅仅提到某个仿真器——真机器人的描述经常会说"支持 Isaac 仿真"。
+SIM_DESC_RX = re.compile(
+    r"physics engine|simulator only|simulation framework|model zoo|"
+    r"a collection of (robot )?models|simulation benchmark|"
+    r"based on genesis|isaaclab|isaac lab|motion retargeting|"
+    r"simulation and learning framework|gpu-accelerated simulation|"
+    r"reinforcement learning of .* robots", re.I)
+
+# 反信号：命中则直接排除（这些是工具/库/数据集/教程，不是机器人本体的公开设计）。
+# 词边界必须写全 —— `llm` 不带 \b 会命中账号名 "Ange_lLM_/Thor"，
+# 把一个 ★1596 的真机械臂误杀，与早先 `arm` 命中 `FPGAwars` 是同一类错误。
+NEG_SIGNAL = re.compile(
+    r"text-to-cad|text to cad|cad generator|\bllm\b|language model|benchmark|"
+    r"\bdataset\b|awesome[- ]list|tutorial series|\bcourse\b|\blecture\b|"
+    r"tutorials|simulator only|ros2 driver|sdk for|python api|client library",
+    re.I)
+
+
+def classify(path: str) -> str | None:
+    """'CAD'|'MESH'|'DESC'|'PCB'|'BOM'|'DOC'，或 None（与硬件证据无关）。"""
+    low = path.lower()
+    name = low.rsplit("/", 1)[-1]
+    ext = ("." + name.rsplit(".", 1)[-1]) if "." in name else ""
+    if BOM_RX.search(name):
+        return "BOM"
+    if ext in PARAMETRIC_CAD:
+        return "CAD"
+    if ext in PRINT_MESH:
+        return "MESH"
+    if ext in ROBOT_DESC:
+        return "DESC"
+    if ext in PCB_EDA:
+        return "PCB"
+    if ext in DOC_EXT and DOCISH_RX.search(low) and not re.search(r"readme", low):
+        return "DOC"
+    return None
+
+
+def is_readme(path: str) -> bool:
+    """README 是仓库说明，不是零件；只作为证据链接出现，不占零件行。"""
+    return bool(re.search(r"readme", path.rsplit("/", 1)[-1], re.I))
+
+
+def segments(path: str) -> list[str]:
+    return [s for s in path.split("/") if s]
+
+
+def is_format_bucket(seg: str) -> bool:
+    low = seg.lower()
+    if low in FORMAT_BUCKET:
+        return True
+    # 形如 meshes_v2 / stl_export 也归为格式桶
+    return any(low.startswith(b + "_") or low.startswith(b + "-")
+               for b in FORMAT_BUCKET)
+
+
+def functional_dir(parts: list[str]) -> str | None:
+    """从文件往上找第一个「功能性」目录段，跳过格式桶、噪声段与版本号。"""
+    for seg in reversed(parts[:-1]):
+        low = seg.lower()
+        if low in NOISE_SEG or is_format_bucket(seg):
+            continue
+        if re.fullmatch(r"v?\d+(\.\d+)*", low):
+            continue
+        if len(seg) > 40:
+            continue
+        return seg
+    return None
+
+
+def part_word(text: str) -> tuple[str, str] | None:
+    """按零件名/路径里的部位词归类。返回 (key, 中文名)。"""
+    for rx, key, zh in PART_WORDS:
+        if rx.search(text):
+            return key, zh
+    return None
+
+
+def blob_url(full: str, branch: str, path: str) -> str:
+    return f"https://github.com/{full}/blob/{branch}/{quote(path)}"
+
+
+def tree_url(full: str, branch: str, path: str) -> str:
+    return f"https://github.com/{full}/tree/{branch}/{quote(path)}"
+
+
+def load_tree(full_name: str) -> list[dict] | None:
+    f = CACHE / f"t_{full_name.replace('/', '__')}.json"
+    if not f.exists():
+        return None
+    try:
+        payload = json.load(open(f))
+    except Exception:
+        return None
+    if isinstance(payload, list) and len(payload) == 2 and isinstance(payload[1], dict):
+        return payload[1].get("tree")
+    if isinstance(payload, dict):
+        return payload.get("tree")
+    return None
+
+
+KIND_MAP = {"MESH": "PRINT", "CAD": "PRINT", "PCB": "PCB",
+            "DESC": "SW", "BOM": "MAKE", "DOC": "MAKE"}
+KIND_SPEC = {
+    "BOM": "物料清单文件 · 数量与单价需人工核对",
+    "DESC": "运动学描述 · 关节结构可验证",
+    "PCB": "电路设计文件",
+    "CAD": "参数化 CAD · 可再导出加工",
+    "MESH": "网格文件 · 可直接打印",
+    "DOC": "装配/构建文档",
+}
+COLORS = ["#d3ea5c", "#5aa9ff", "#35d0c8", "#ffb454",
+          "#b98cff", "#ff7a7a", "#7affc4", "#ffd47a"]
+
+
+def build_project(repo: dict, tree: list[dict], max_parts: int) -> dict | None:
+    full = repo["full_name"]
+    branch = "main"
+    blobs = [e for e in tree if e.get("type") == "blob" and e.get("path")]
+
+    buckets: dict[str, list[tuple[dict, str]]] = defaultdict(list)
+    for e in blobs:
+        k = classify(e["path"])
+        if k:
+            buckets[k].append((e, e["path"]))
+
+    if not buckets.get("MESH") and not buckets.get("CAD"):
+        return None
+
+    # --- 硬件证据硬闸 -----------------------------------------------------
+    # 仿真/控制/可视化包会发网格文件（用于显示），但几乎不会发参数化 CAD、
+    # BOM 或 Gerber —— 后者只有在真的要造东西时才需要。URDF-Studio、
+    # go2-convex-mpc、LeggedRobotsForBullet 这类就是靠网格混过 CAD 检查的。
+    # 纯 3D 打印项目（只有 STL）仍然保留，条件是网格数量够多且有运动学描述。
+    has_parametric = bool(buckets.get("CAD"))
+    has_bom = bool(buckets.get("BOM"))
+    has_pcb = bool(buckets.get("PCB"))
+    mesh_count = len(buckets.get("MESH", []))
+    has_desc = bool(buckets.get("DESC"))
+    if not (has_parametric or has_bom or has_pcb
+            or (mesh_count >= 8 and has_desc)):
+        return None
+
+    hardware = [(k, e, p) for k in ("MESH", "CAD", "PCB", "BOM")
+                for e, p in buckets.get(k, [])]
+    software = [(k, e, p) for k in ("DESC", "DOC")
+                for e, p in buckets.get(k, [])]
+
+    # --- 第 1 层：功能性目录 ---------------------------------------------
+    groups: dict[tuple[str, str], list] = defaultdict(list)
+    for k, e, p in hardware:
+        d = functional_dir(segments(p))
+        if d:
+            groups[("dir", d)].append((k, e, p))
+
+    # --- 第 2 层：对落在格式桶里的文件，按文件名部位词聚类 ----------------
+    fallback_used = False
+    unassigned: list = []
+    if groups:
+        # 已有功能目录时，把无名文件按部位词并进去；部位词也命中不了就并入最大组
+        for k, e, p in hardware:
+            if functional_dir(segments(p)):
+                continue
+            pw = part_word(p.rsplit("/", 1)[-1])
+            if pw:
+                groups[("part", pw[0])].append((k, e, p))
+            else:
+                unassigned.append((k, e, p))
+    else:
+        # 整个仓库只有格式桶：全部按零件名部位词聚类
+        fallback_used = True
+        for k, e, p in hardware:
+            pw = part_word(p.rsplit("/", 1)[-1])
+            groups[("part", pw[0] if pw else "asset")].append((k, e, p))
+
+    if unassigned:
+        biggest = max(groups, key=lambda k: len(groups[k]))
+        groups[biggest].extend(unassigned)
+
+    no_structure = fallback_used and set(groups) == {("part", "asset")}
+
+    # 合并碎组（<2 文件的组并入最大组）
+    if len(groups) > 1:
+        biggest = max(groups, key=lambda k: len(groups[k]))
+        for key in [k for k, v in groups.items() if len(v) < 2 and k != biggest]:
+            groups[biggest].extend(groups.pop(key))
+
+    # 最多 7 个硬件总成 + 1 个软件文档组
+    ordered = sorted(groups.items(), key=lambda kv: -len(kv[1]))[:7]
+    if len(groups) > 7:
+        keep = dict(ordered)
+        merged = [x for k, v in groups.items() if k not in keep for x in v]
+        ordered[0][1].extend(merged)
+
+    # --- 组装总成定义 -----------------------------------------------------
+    def asm_label(key: tuple[str, str], items: list) -> tuple[str, str]:
+        kind, val = key
+        if kind == "dir":
+            return val, ""
+        # part 聚类：用中文部位名
+        zh = next((z for _, k, z in PART_WORDS if k == val), None)
+        if val == "asset":
+            return "整机资产", "仓库未按功能分区组织，本组按文件类型聚合"
+        return (zh or val), "按零件文件名中的部位词聚类"
+
+    assemblies = []
+    asm_paths: dict[str, list[str]] = {}
+    for i, (key, items) in enumerate(ordered):
+        name, note = asm_label(key, items)
+        aid = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-") or f"asm{i}"
+        if aid in asm_paths:  # 目录名与部位名撞车时去重
+            aid = f"{aid}-{i}"
+        ang = (2 * math.pi * i / max(len(ordered), 1)) - math.pi / 2
+        kinds = Counter(k for k, _, _ in items)
+        comp = " · ".join(f"{v} 个 {k}" for k, v in
+                          sorted(kinds.items(), key=lambda kv: -kv[1]))
+        desc = f"{note}｜{comp}" if note else comp
+        assemblies.append({
+            "id": aid, "name": name, "description": desc,
+            "x": round(50 + 30 * math.cos(ang), 1),
+            "y": round(48 + 28 * math.sin(ang), 1),
+            "color": COLORS[i % len(COLORS)],
+        })
+        for _, _, p in items:
+            asm_paths.setdefault(aid, []).append(p)
+
+    # 软件与文档单列一组，明确标注非硬件
+    if software:
+        ang = (2 * math.pi * len(assemblies) / max(len(ordered) + 1, 1)) - math.pi / 2
+        assemblies.append({
+            "id": "software-docs", "name": "软件与文档",
+            "description": "非硬件件｜运动学描述与控制/装配文档",
+            "x": round(50 + 30 * math.cos(ang), 1),
+            "y": round(48 + 28 * math.sin(ang), 1),
+            "color": "#8894a6",
+        })
+
+    path_to_asm: dict[str, str] = {}
+    for aid, paths in asm_paths.items():
+        for p in paths:
+            path_to_asm[p] = aid
+    for _, _, p in software:
+        path_to_asm[p] = "software-docs"
+
+    # --- 零件行 -----------------------------------------------------------
+    rows = []
+    for kind in ("MESH", "CAD", "PCB", "BOM", "DESC", "DOC"):
+        for e, path in buckets.get(kind, []):
+            fname = path.rsplit("/", 1)[-1]
+            stem = fname.rsplit(".", 1)[0] if "." in fname else fname
+            ext = ("." + fname.rsplit(".", 1)[-1]) if "." in fname else ""
+            size = e.get("size") or 0
+            spec = KIND_SPEC[kind]
+            if kind in ("MESH", "CAD", "PCB", "DESC", "DOC"):
+                spec = f"{spec} {ext} · {size:,} B"
+            rows.append({
+                "id": re.sub(r"[^a-z0-9]+", "-",
+                             f"{full}-{path}".lower()).strip("-")[:80],
+                "assembly": path_to_asm.get(path, assemblies[0]["id"]),
+                "name": stem,
+                "specification": spec,
+                "quantity": "1",
+                "kind": KIND_MAP[kind],
+                "state": "verified",
+                "source": blob_url(full, branch, path),
+            })
+
+    rows.sort(key=lambda r: (r["assembly"], r["kind"], r["name"]))
+    if len(rows) > max_parts:
+        per = max(1, max_parts // max(len(assemblies), 1))
+        trimmed, seen = [], Counter()
+        for r in rows:
+            if seen[r["assembly"]] < per:
+                trimmed.append(r)
+                seen[r["assembly"]] += 1
+        rows = trimmed
+
+    # --- 证据 -------------------------------------------------------------
+    dirs: dict[str, set[str]] = defaultdict(set)
+    for k, _, p in hardware + software:
+        parts = segments(p)
+        if len(parts) > 1:
+            dirs[k].add("/".join(parts[:-1]))
+
+    evidence = []
+    for k, label, detail in (
+        ("MESH", "CAD 网格", "3D 打印件网格目录"),
+        ("CAD", "参数化 CAD", "可再导出的参数化设计目录"),
+        ("PCB", "电路设计", "PCB / 原理图目录"),
+        ("DESC", "运动学模型", "URDF / MJCF 机器人描述目录"),
+    ):
+        if dirs.get(k):
+            d = sorted(dirs[k])[0]
+            evidence.append({"label": label, "url": tree_url(full, branch, d),
+                             "state": "verified", "detail": f"{detail}：{d}"})
+    if buckets.get("BOM"):
+        evidence.append({"label": "BOM", "state": "verified",
+                         "url": blob_url(full, branch, buckets["BOM"][0][1]),
+                         "detail": f"仓库内物料清单：{buckets['BOM'][0][1]}"})
+    evidence.append({"label": "上游仓库", "state": "verified",
+                     "url": f"https://github.com/{full}",
+                     "detail": repo.get("description") or "仓库主页"})
+
+    # --- 缺口：只写真实缺的东西 -------------------------------------------
+    gaps = []
+    if no_structure:
+        gaps.append(
+            "仓库未按功能分区组织文件，装配层级由零件文件名中的部位词聚类推导，"
+            "与官方装配顺序可能有出入。"
+        )
+    else:
+        gaps.append("装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。")
+    if not buckets.get("BOM"):
+        gaps.append("仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。")
+    if not buckets.get("DESC"):
+        gaps.append("未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。")
+    if not dirs.get("PCB"):
+        gaps.append("未发现 PCB / 原理图文件，电子部分的具体设计不可复核。")
+    gaps.append("零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，"
+                "采购成本需以供应商实时报价为准。")
+
+    return {
+        "id": f"REPO-{full.replace('/', '-').upper()}",
+        "name": repo["name"],
+        "category": repo.get("_class") or "ROBOT",
+        "version": (repo.get("pushed_at") or "")[:10] or "UNKNOWN",
+        "embodiment": repo.get("_embodiment") or "UNKNOWN",
+        "summary": repo.get("description") or f"{full} 的公开仓库证据工作台。",
+        "repository": f"https://github.com/{full}",
+        "releaseBasis": (
+            f"仓库 {full} 的公开文件树快照（{len(blobs)} 个文件）；"
+            f"装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。"
+        ),
+        "stars": repo.get("stars", 0),
+        "license": repo.get("license") or "无",
+        "assemblies": assemblies,
+        "parts": rows,
+        "evidence": evidence,
+        "gaps": gaps,
+        "reproduction": {
+            "state": "UNSCORED",
+            "reason": "NOT_YET_MODELED",
+            "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。",
+        },
+    }
+
+
+def classify_form(r: dict) -> tuple[str, str]:
+    text = f"{r.get('name','')} {r.get('description','') or ''} " \
+           f"{' '.join(r.get('topics') or [])}".lower()
+    if any(w in text for w in ("humanoid", "biped", "双足", "人形")):
+        return ("HUMANOID_FULL", "FULL_22_DOF 级")
+    if any(w in text for w in ("quadruped", "四足")):
+        return ("QUADRUPED", "12-DOF 级")
+    if any(w in text for w in ("hexapod", "六足")):
+        return ("HEXAPOD", "18-DOF 级")
+    if any(w in text for w in ("dexterous hand", "robot hand", "灵巧手")):
+        return ("DEXTEROUS_HAND", "多指")
+    if re.search(r"gripper|夹爪", text):
+        return ("ROBOT_GRIPPER", "夹持器")
+    if re.search(r"\barm\b|manipulator|机械臂", text):
+        return ("ROBOT_ARM", "6-DOF 级")
+    if re.search(r"exoskeleton|外骨骼", text):
+        return ("HYBRID_ROBOT", "穿戴式")
+    if re.search(r"drone|uav|aerial|四旋翼", text):
+        return ("AERIAL_ROBOT", "飞行平台")
+    if re.search(r"rover|wheeled|mobile robot|轮式", text):
+        return ("WHEELED_ROBOT", "轮式底盘")
+    if re.search(r"robot|robotic|机械|机器人", text):
+        return ("ROBOT", "通用机器人")
+    return ("ROBOT", "未归类")
+
+
+def format_ts(projects: list[dict]) -> str:
+    header = f'''/**
+ * GENERATED FILE — do not edit by hand.
+ *
+ * Produced by `pipeline/build_projects.py` from cached public repository trees.
+ * Every assembly is either a real functional directory or a cluster of part
+ * filenames; every part row points at a real blob URL. Absent facts are listed
+ * in `gaps` rather than filled in, and no reproduction probability is emitted
+ * here — scoring belongs to OPEN_REPRO_V2 alone.
+ *
+ * Projects: {len(projects)}
+ */
+
+import type {{ WorkbenchProject }} from "./workbench-types";
+
+export const GENERATED_PROJECTS: WorkbenchProject[] = '''
+    return header + json.dumps(projects, ensure_ascii=False, indent=2) + ";\n"
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--min-tier", default="B")
+    ap.add_argument("--max-projects", type=int, default=0)
+    ap.add_argument("--max-parts", type=int, default=26)
+    ap.add_argument("--out", default="lib/projects.generated.ts")
+    args = ap.parse_args()
+
+    order = {"A": 0, "B": 1, "C": 2, "D": 3}
+    cutoff = order[args.min_tier]
+    repos = [r for r in json.load(open(ROBOTS))
+             if order.get(r.get("tier"), 9) <= cutoff]
+
+    out, stats = [], Counter()
+    dropped_neg: list[str] = []
+    dropped_nosig: list[str] = []
+    dropped_sim: list[str] = []
+    rescued: list[str] = []
+    for r in repos:
+        blob_text = f"{r.get('name','')} {r.get('description','') or ''} " \
+                    f"{' '.join(r.get('topics') or [])} {r.get('full_name','')}"
+        tree = load_tree(r["full_name"])
+
+        # 结构证据：机器人描述文件是"这是个机器人"的决定性证据。
+        # 光靠名字/描述关键词会误杀真机器人——Open_Duck_Mini（★4115 双足）
+        # 和 AngelLM/Thor（真机械臂）都因为没有命中词表而被排除过。
+        has_desc = False
+        if tree:
+            has_desc = any(
+                e.get("type") == "blob"
+                and classify(e.get("path", "")) == "DESC"
+                for e in tree
+            )
+
+        # 模拟器 / 模型库：名字里带框架名，或自述是引擎/模型库。
+        # 这类仓库有 mesh 文件（可视化用），能骗过 CAD 存在性检查，
+        # 但它们不是可制造机器人的设计——mujoco（★15229）曾因此排到榜首。
+        desc = r.get("description") or ""
+        if SIM_NAME_RX.search(r.get("name", "")) or SIM_DESC_RX.search(desc):
+            stats["drop_simulator"] += 1
+            dropped_sim.append(r["full_name"])
+            continue
+
+        # NEG_SIGNAL 是硬闸，不设 URDF 豁免：text-to-cad 会生成 .urdf 文件，
+        # 但它是个 CAD 生成工具库，不是机器人。豁免只能用在"漏判真机器人"上。
+        if NEG_SIGNAL.search(blob_text):
+            stats["drop_neg_signal"] += 1
+            dropped_neg.append(r["full_name"])
+            continue
+        if not ROBOT_SIGNAL.search(blob_text):
+            if has_desc:
+                stats["rescued_by_urdf"] += 1
+                rescued.append(r["full_name"])
+            else:
+                stats["drop_no_robot_signal"] += 1
+                dropped_nosig.append(r["full_name"])
+                continue
+        if not tree:
+            stats["drop_no_tree"] += 1
+            continue
+        cls, emb = classify_form(r)
+        r["_class"], r["_embodiment"] = cls, emb
+        proj = build_project(r, tree, args.max_parts)
+        if not proj:
+            stats["drop_no_cad"] += 1
+            continue
+        out.append(proj)
+
+    out.sort(key=lambda p: -p["stars"])
+    if args.max_projects:
+        out = out[: args.max_projects]
+
+    dest = Path(args.out)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(format_ts(out), encoding="utf-8")
+
+    print(f"候选仓库（tier ≤ {args.min_tier}）: {len(repos)}")
+    for k in ("drop_neg_signal", "drop_no_robot_signal", "drop_no_tree", "drop_no_cad"):
+        if stats[k]:
+            print(f"  {k:<22}: {stats[k]}")
+    if dropped_neg:
+        print(f"  被反信号排除（工具/数据集/教程，非机器人本体）:")
+        for name in dropped_neg:
+            print(f"      - {name}")
+    if dropped_nosig:
+        print(f"  机器人信号不足排除:")
+        for name in dropped_nosig:
+            print(f"      - {name}")
+    if rescued:
+        print(f"  关键词未命中但凭 URDF 结构证据收录:")
+        for name in rescued:
+            print(f"      - {name}")
+    if dropped_sim:
+        print(f"  模拟器/模型库排除（不可制造）：")
+        for name in dropped_sim:
+            print(f"      - {name}")
+    print(f"  生成工作台            : {len(out)}")
+    print(f"  总零件行              : {sum(len(p['parts']) for p in out)}")
+    print(f"  总成总数              : {sum(len(p['assemblies']) for p in out)}")
+    print(f"  形态分布              : {dict(Counter(p['category'] for p in out))}")
+    allasm = Counter(a["name"] for p in out for a in p["assemblies"])
+    print(f"  最高频总成名（应为人名或部位名，不应是 meshes/urdf/docs）:")
+    for name, cnt in allasm.most_common(8):
+        print(f"      {name:<20} {cnt}")
+    print(f"  评分状态              : "
+          f"{dict(Counter(p['reproduction']['state'] for p in out))}")
+    print(f"写成                  : {dest}  ({dest.stat().st_size/1024:.0f} KB)")
+
+
+if __name__ == "__main__":
+    main()
