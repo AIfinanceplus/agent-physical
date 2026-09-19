@@ -524,13 +524,34 @@ def main() -> None:
 
     order = {"A": 0, "B": 1, "C": 2, "D": 3}
     cutoff = order[args.min_tier]
-    repos = [r for r in json.load(open(ROBOTS))
-             if order.get(r.get("tier"), 9) <= cutoff]
+    raw = [r for r in json.load(open(ROBOTS))
+           if order.get(r.get("tier"), 9) <= cutoff]
+
+    # 按小写去重：GitHub 的 owner/repo 大小写不敏感，同一个仓库可能以
+    # `ROBOTIS-GIT/open_manipulator` 和 `robotis-git/open_manipulator` 两种写法
+    # 各收一份。上游按精确字符串去重，拦不住。漏掉的后果不只是多一行——
+    # 两条记录会生成同一个 React key，导致筛选后残留错误行。
+    seen_casefold: dict[str, dict] = {}
+    case_dupes: list[str] = []
+    for r in raw:
+        key = r["full_name"].lower()
+        prev = seen_casefold.get(key)
+        if prev is None:
+            seen_casefold[key] = r
+            continue
+        case_dupes.append(f"{prev['full_name']} / {r['full_name']}")
+        # 保留大写字母更多的那一份——通常是官方写法（ROBOTIS-GIT 而非 robotis-git）
+        if sum(c.isupper() for c in r["full_name"]) > sum(
+            c.isupper() for c in prev["full_name"]
+        ):
+            seen_casefold[key] = r
+    repos = list(seen_casefold.values())
 
     out, stats = [], Counter()
     dropped_neg: list[str] = []
     dropped_nosig: list[str] = []
     dropped_sim: list[str] = []
+    dropped_nocad: list[str] = []
     rescued: list[str] = []
     for r in repos:
         blob_text = f"{r.get('name','')} {r.get('description','') or ''} " \
@@ -579,6 +600,7 @@ def main() -> None:
         proj = build_project(r, tree, args.max_parts)
         if not proj:
             stats["drop_no_cad"] += 1
+            dropped_nocad.append(r["full_name"])
             continue
         out.append(proj)
 
@@ -586,11 +608,64 @@ def main() -> None:
     if args.max_projects:
         out = out[: args.max_projects]
 
+    # 断言唯一性。重复 id 会变成重复的 React key，让筛选后的表格残留错误行——
+    # 症状看起来像"筛选坏了"，根因却在数据层，所以在这一层拦住。
+    dup_ids = [k for k, v in Counter(p["id"] for p in out).items() if v > 1]
+    dup_urls = [k for k, v in Counter(p["repository"] for p in out).items() if v > 1]
+    if dup_ids or dup_urls:
+        raise SystemExit(
+            f"生成中止：id 重复 {dup_ids}，repository 重复 {dup_urls}。"
+            f"唯一性不变量被破坏，产物不可用。"
+        )
+
     dest = Path(args.out)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(format_ts(out), encoding="utf-8")
 
-    print(f"候选仓库（tier ≤ {args.min_tier}）: {len(repos)}")
+    # 排除清单落成数据，供审看页展示——启发式规则必须可复核，
+    # 否则"为什么这个项目没进来"只能去翻终端日志。
+    audit = {
+        "generatedAt": __import__("datetime").date.today().isoformat(),
+        "minTier": args.min_tier,
+        "candidates": len(repos),
+        "kept": len(out),
+        "excluded": [
+            {"reason": "TOOL_OR_LIBRARY_OR_DATASET",
+             "label": "工具 / 库 / 数据集 / 教程",
+             "repos": sorted(dropped_neg)},
+            {"reason": "NO_ROBOT_SIGNAL",
+             "label": "无机器人信号且无 URDF 结构证据",
+             "repos": sorted(dropped_nosig)},
+            {"reason": "SIMULATOR_OR_MODEL_ZOO",
+             "label": "仿真器 / 模型库（不可制造）",
+             "repos": sorted(dropped_sim)},
+            {"reason": "NO_HARDWARE_EVIDENCE",
+             "label": "无硬件证据（无参数化 CAD / BOM / PCB，网格也不足）",
+             "repos": sorted(dropped_nocad)},
+        ],
+        "rescuedByStructure": sorted(rescued),
+    }
+    audit_path = dest.parent / "pipeline-audit.ts"
+    audit_path.write_text(
+        "/**\n"
+        " * GENERATED FILE — do not edit by hand.\n"
+        " *\n"
+        " * Which repositories the pipeline rejected, and why. Written because a\n"
+        " * heuristic filter that cannot be audited is indistinguishable from a bug:\n"
+        " * 'why is this project missing' should be answerable from the UI, not from\n"
+        " * a scrolling terminal log.\n"
+        " */\n\n"
+        "export const PIPELINE_AUDIT = "
+        + json.dumps(audit, ensure_ascii=False, indent=2)
+        + " as const;\n",
+        encoding="utf-8",
+    )
+
+    print(f"候选仓库（tier ≤ {args.min_tier}）: {len(raw)}")
+    if case_dupes:
+        print(f"  大小写重复已合并      : {len(case_dupes)}")
+        for d in case_dupes:
+            print(f"      - {d}")
     for k in ("drop_neg_signal", "drop_no_robot_signal", "drop_no_tree", "drop_no_cad"):
         if stats[k]:
             print(f"  {k:<22}: {stats[k]}")

@@ -59,6 +59,12 @@ export function ProjectSwitcher({
           {current.deep ? " · 深度 3D" : ""}
         </span>
       ) : null}
+      <a
+        href="/review"
+        className="num hidden shrink-0 rounded-sm border border-primary/40 bg-primary/10 px-2 py-1.5 text-[11px] text-primary hover:border-primary sm:block"
+      >
+        审看台
+      </a>
     </nav>
   );
 }
