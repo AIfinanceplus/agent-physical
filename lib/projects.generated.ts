@@ -26,12 +26,20 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "license": "无",
     "assemblies": [
       {
+        "id": "gerber",
+        "name": "Gerber",
+        "description": "22 个 PCB",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      },
+      {
         "id": "4-model",
         "name": "4.Model",
         "description": "4 个 CAD",
         "x": 50.0,
-        "y": 20.0,
-        "color": "#d3ea5c"
+        "y": 76.0,
+        "color": "#5aa9ff"
       }
     ],
     "parts": [
@@ -74,6 +82,226 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/4.Model/Motor42-%E4%B8%8B%E7%9B%96.step"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-g1",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .G1 · 71,899 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.G1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-g2",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .G2 · 32,829 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.G2"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gbl",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GBL · 153,318 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GBL"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gbo",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GBO · 102,779 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GBO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gbs",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GBS · 18,545 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GBS"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gg1",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GG1 · 17,149 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GG1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gko",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GKO · 1,094 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GKO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gm1",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GM1 · 1,094 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GM1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gtl",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GTL · 83,903 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GTL"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gto",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GTO · 338,663 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GTO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-42-gerber-motor-42-gts",
+        "assembly": "gerber",
+        "name": "Motor-42",
+        "specification": "电路设计文件 .GTS · 31,826 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-42/Gerber/Motor-42.GTS"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-g1",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .G1 · 72,660 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.G1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-g2",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .G2 · 33,590 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.G2"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gbl",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GBL · 154,384 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GBL"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gbo",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GBO · 102,779 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GBO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gbs",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GBS · 18,545 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GBS"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gg1",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GG1 · 17,153 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GG1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gko",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GKO · 1,333 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GKO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gm1",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GM1 · 1,324 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GM1"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gtl",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GTL · 85,180 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GTL"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gto",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GTO · 338,680 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GTO"
+      },
+      {
+        "id": "peng-zhihui-dummy-robot-1-hardware-motordriver-57-unused-gerber-motor-57-gts",
+        "assembly": "gerber",
+        "name": "Motor-57",
+        "specification": "电路设计文件 .GTS · 31,823 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/Dummy-Robot/blob/HEAD/1.Hardware/MotorDriver-57-unused/Gerber/Motor-57.GTS"
       }
     ],
     "evidence": [
@@ -82,6 +310,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "url": "https://github.com/peng-zhihui/Dummy-Robot/tree/HEAD/4.Model",
         "state": "verified",
         "detail": "可再导出的参数化设计目录：4.Model"
+      },
+      {
+        "label": "电路设计",
+        "url": "https://github.com/peng-zhihui/Dummy-Robot/tree/HEAD/1.Hardware/MotorDriver-42/Gerber",
+        "state": "verified",
+        "detail": "PCB / 原理图目录：1.Hardware/MotorDriver-42/Gerber"
       },
       {
         "label": "上游仓库",
@@ -94,7 +328,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
-      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
     "reproduction": {
@@ -205,34 +438,50 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "control-board",
         "name": "control_board",
-        "description": "23 个 CAD · 7 个 PCB · 2 个 BOM",
+        "description": "23 个 CAD · 5 个 PCB · 4 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
       },
       {
+        "id": "brain-board",
+        "name": "brain_board",
+        "description": "8 个 PCB",
+        "x": 76.0,
+        "y": 34.0,
+        "color": "#5aa9ff"
+      },
+      {
+        "id": "motor-board",
+        "name": "motor_board",
+        "description": "8 个 PCB",
+        "x": 76.0,
+        "y": 62.0,
+        "color": "#35d0c8"
+      },
+      {
         "id": "dxf",
         "name": "dxf",
         "description": "7 个 CAD",
-        "x": 80.0,
-        "y": 48.0,
-        "color": "#5aa9ff"
+        "x": 50.0,
+        "y": 76.0,
+        "color": "#ffb454"
       },
       {
         "id": "bom",
         "name": "BOM",
         "description": "3 个 BOM",
-        "x": 50.0,
-        "y": 76.0,
-        "color": "#35d0c8"
+        "x": 24.0,
+        "y": 62.0,
+        "color": "#b98cff"
       },
       {
         "id": "mast",
         "name": "mast",
         "description": "2 个 MESH",
-        "x": 20.0,
-        "y": 48.0,
-        "color": "#ffb454"
+        "x": 24.0,
+        "y": 34.0,
+        "color": "#ff7a7a"
       }
     ],
     "parts": [
@@ -267,6 +516,46 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/BOM/digikey_bom_4-20-2023.csv"
       },
       {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-bra",
+        "assembly": "brain-board",
+        "name": "brain_board",
+        "specification": "电路设计文件 .drl · 5,168 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/brain_board/brain_board.drl"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-bra",
+        "assembly": "brain-board",
+        "name": "brain_board-B_Cu",
+        "specification": "电路设计文件 .gbl · 268,569 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/brain_board/brain_board-B_Cu.gbl"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-bra",
+        "assembly": "brain-board",
+        "name": "brain_board-B_Mask",
+        "specification": "电路设计文件 .gbs · 8,126 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/brain_board/brain_board-B_Mask.gbs"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-bra",
+        "assembly": "brain-board",
+        "name": "brain_board-B_Silkscreen",
+        "specification": "电路设计文件 .gbo · 349,530 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/brain_board/brain_board-B_Silkscreen.gbo"
+      },
+      {
         "id": "nasa-jpl-open-source-rover-parts-list-digikey-bom-csv",
         "assembly": "control-board",
         "name": "digikey_bom",
@@ -275,6 +564,16 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "MAKE",
         "state": "verified",
         "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/parts_list/digikey_bom.csv"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-parts-list-extra-parts-md",
+        "assembly": "control-board",
+        "name": "extra_parts",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/parts_list/extra_parts.md"
       },
       {
         "id": "nasa-jpl-open-source-rover-parts-list-parts-list-csv",
@@ -287,44 +586,14 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/parts_list/parts_list.csv"
       },
       {
-        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-brain-board-kicad-sch",
+        "id": "nasa-jpl-open-source-rover-parts-list-screws-md",
         "assembly": "control-board",
-        "name": "Brain_Board",
-        "specification": "电路设计文件 .kicad_sch · 283,393 B",
+        "name": "screws",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PCB",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/Brain_Board.kicad_sch"
-      },
-      {
-        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-control-boards-kicad-pcb",
-        "assembly": "control-board",
-        "name": "Control_Boards",
-        "specification": "电路设计文件 .kicad_pcb · 3,159,159 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/Control_Boards.kicad_pcb"
-      },
-      {
-        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-control-boards-kicad-sch",
-        "assembly": "control-board",
-        "name": "Control_Boards",
-        "specification": "电路设计文件 .kicad_sch · 1,889 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/Control_Boards.kicad_sch"
-      },
-      {
-        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-control-boards-net",
-        "assembly": "control-board",
-        "name": "Control_Boards",
-        "specification": "电路设计文件 .net · 85,941 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/Control_Boards.net"
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/parts_list/screws.md"
       },
       {
         "id": "nasa-jpl-open-source-rover-mechanical-body-laser-cut-parts-dxf-back-plate-stando",
@@ -367,26 +636,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/mechanical/body/laser_cut_parts/dxf/gap_slat.dxf"
       },
       {
-        "id": "nasa-jpl-open-source-rover-mechanical-body-laser-cut-parts-dxf-side-plate-dxf",
-        "assembly": "dxf",
-        "name": "side_plate",
-        "specification": "参数化 CAD · 可再导出加工 .dxf · 10,557 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/mechanical/body/laser_cut_parts/dxf/side_plate.dxf"
-      },
-      {
-        "id": "nasa-jpl-open-source-rover-mechanical-body-laser-cut-parts-dxf-top-front-dxf",
-        "assembly": "dxf",
-        "name": "top_front",
-        "specification": "参数化 CAD · 可再导出加工 .dxf · 7,859 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/mechanical/body/laser_cut_parts/dxf/top_front.dxf"
-      },
-      {
         "id": "nasa-jpl-open-source-rover-expansion-mast-3d-models-mast-backplate-stl",
         "assembly": "mast",
         "name": "mast_backplate",
@@ -405,6 +654,46 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/expansion/mast/3d_models/mast_head-2.stl"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-mot",
+        "assembly": "motor-board",
+        "name": "motor_board",
+        "specification": "电路设计文件 .drl · 11,140 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/motor_board/motor_board.drl"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-mot",
+        "assembly": "motor-board",
+        "name": "motor_board-B_Cu",
+        "specification": "电路设计文件 .gbl · 511,195 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/motor_board/motor_board-B_Cu.gbl"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-mot",
+        "assembly": "motor-board",
+        "name": "motor_board-B_Mask",
+        "specification": "电路设计文件 .gbs · 14,630 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/motor_board/motor_board-B_Mask.gbs"
+      },
+      {
+        "id": "nasa-jpl-open-source-rover-electrical-pcb-control-board-gerbers-gerber-files-mot",
+        "assembly": "motor-board",
+        "name": "motor_board-B_Silkscreen",
+        "specification": "电路设计文件 .gbo · 193,215 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/gerbers/gerber_files/motor_board/motor_board-B_Silkscreen.gbo"
       }
     ],
     "evidence": [
@@ -3392,15 +3681,205 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#d3ea5c"
       },
       {
+        "id": "gerber-files-v1-1m",
+        "name": "Gerber_files_v1.1M",
+        "description": "7 个 PCB",
+        "x": 73.5,
+        "y": 30.5,
+        "color": "#5aa9ff"
+      },
+      {
+        "id": "gerber-files-v1-2",
+        "name": "Gerber_files_v1.2",
+        "description": "7 个 PCB",
+        "x": 79.2,
+        "y": 54.2,
+        "color": "#35d0c8"
+      },
+      {
+        "id": "gerber-files-v1-2m",
+        "name": "Gerber_files_v1.2M",
+        "description": "7 个 PCB",
+        "x": 63.0,
+        "y": 73.2,
+        "color": "#ffb454"
+      },
+      {
+        "id": "gerber-files-v1-0",
+        "name": "Gerber_files_v1.0",
+        "description": "7 个 PCB",
+        "x": 37.0,
+        "y": 73.2,
+        "color": "#b98cff"
+      },
+      {
+        "id": "gerber-files-v1-1",
+        "name": "Gerber_files_v1.1",
+        "description": "7 个 PCB",
+        "x": 20.8,
+        "y": 54.2,
+        "color": "#ff7a7a"
+      },
+      {
         "id": "pcb",
         "name": "PCB",
         "description": "4 个 PCB",
-        "x": 50.0,
-        "y": 76.0,
-        "color": "#5aa9ff"
+        "x": 26.5,
+        "y": 30.5,
+        "color": "#7affc4"
       }
     ],
     "parts": [
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-0-",
+        "assembly": "gerber-files-v1-0",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBL · 36,028 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.0/PCB1.GBL"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-0-",
+        "assembly": "gerber-files-v1-0",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBO · 3,045 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.0/PCB1.GBO"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-0-",
+        "assembly": "gerber-files-v1-0",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBS · 3,353 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.0/PCB1.GBS"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-1-",
+        "assembly": "gerber-files-v1-1",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBL · 38,756 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.1/PCB1.GBL"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-1-",
+        "assembly": "gerber-files-v1-1",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBO · 16,050 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.1/PCB1.GBO"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-gerber-files-v1-1-",
+        "assembly": "gerber-files-v1-1",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBS · 3,506 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/Gerber_files_v1.1/PCB1.GBS"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-1m-gerber-files-v1-1m-pcb1-gbl",
+        "assembly": "gerber-files-v1-1m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBL · 48,424 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.1M/Gerber_files_v1.1M/PCB1.GBL"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-1m-gerber-files-v1-1m-pcb1-gbo",
+        "assembly": "gerber-files-v1-1m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBO · 51,665 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.1M/Gerber_files_v1.1M/PCB1.GBO"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-1m-gerber-files-v1-1m-pcb1-gbs",
+        "assembly": "gerber-files-v1-1m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBS · 5,064 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.1M/Gerber_files_v1.1M/PCB1.GBS"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2-gerber-files-v1-2-pcb1-gbl",
+        "assembly": "gerber-files-v1-2",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBL · 49,887 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2/Gerber_files_v1.2/PCB1.GBL"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2-gerber-files-v1-2-pcb1-gbo",
+        "assembly": "gerber-files-v1-2",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBO · 51,614 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2/Gerber_files_v1.2/PCB1.GBO"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2-gerber-files-v1-2-pcb1-gbs",
+        "assembly": "gerber-files-v1-2",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBS · 5,114 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2/Gerber_files_v1.2/PCB1.GBS"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2m-gerber-files-v1-2m-pcb1-gbl",
+        "assembly": "gerber-files-v1-2m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBL · 47,874 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2M/Gerber_files_v1.2M/PCB1.GBL"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2m-gerber-files-v1-2m-pcb1-gbo",
+        "assembly": "gerber-files-v1-2m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBO · 51,617 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2M/Gerber_files_v1.2M/PCB1.GBO"
+      },
+      {
+        "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-2m-gerber-files-v1-2m-pcb1-gbs",
+        "assembly": "gerber-files-v1-2m",
+        "name": "PCB1",
+        "specification": "电路设计文件 .GBS · 5,141 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2M/Gerber_files_v1.2M/PCB1.GBS"
+      },
       {
         "id": "iliasam-opensimplelidar-pcb-commonpcb-v1-1m-pcb-bom-xlsx",
         "assembly": "mechanics",
@@ -3432,126 +3911,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/CommonPCB_v1.2M/PCB_BOM.xlsx"
       },
       {
-        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-mainpcb-pcb-bom-xlsx",
-        "assembly": "mechanics",
-        "name": "PCB_BOM",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/PCB_BOM.xlsx"
-      },
-      {
-        "id": "iliasam-opensimplelidar-totalbom-xlsx",
-        "assembly": "mechanics",
-        "name": "TotalBOM",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/TotalBOM.xlsx"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-encoder-ring-encoder-ring-dxf",
-        "assembly": "mechanics",
-        "name": "Encoder_ring",
-        "specification": "参数化 CAD · 可再导出加工 .dxf · 655,691 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/Encoder_ring/Encoder_ring.dxf"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-base-plate-base-plate-dxf",
-        "assembly": "mechanics",
-        "name": "base_plate",
-        "specification": "参数化 CAD · 可再导出加工 .dxf · 698,132 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/Base_plate/base_plate.dxf"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-holder-v1-0-stl",
-        "assembly": "mechanics",
-        "name": "holder_v1.0",
-        "specification": "网格文件 · 可直接打印 .stl · 262,744 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/holder_v1.0.stl"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-holder-v1-0-stp",
-        "assembly": "mechanics",
-        "name": "holder_v1.0",
-        "specification": "参数化 CAD · 可再导出加工 .stp · 64,141 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/holder_v1.0.stp"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-laser-holder1-step-stp",
-        "assembly": "mechanics",
-        "name": "laser_holder1_step",
-        "specification": "参数化 CAD · 可再导出加工 .stp · 63,580 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/laser_holder1_step.stp"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-laser-holder-v1-0-stl",
-        "assembly": "mechanics",
-        "name": "laser_holder_v1.0",
-        "specification": "网格文件 · 可直接打印 .stl · 120,416 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/laser_holder_v1.0.stl"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-plate-for-cut-stp",
-        "assembly": "mechanics",
-        "name": "plate_for_cut",
-        "specification": "参数化 CAD · 可再导出加工 .stp · 35,376 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/plate_for_cut.stp"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-plate-for-cut-v1-0-stl",
-        "assembly": "mechanics",
-        "name": "plate_for_cut_v1.0",
-        "specification": "网格文件 · 可直接打印 .stl · 42,884 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/plate_for_cut_v1.0.stl"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-plate-for-printing-stp",
-        "assembly": "mechanics",
-        "name": "plate_for_printing",
-        "specification": "参数化 CAD · 可再导出加工 .stp · 37,714 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/plate_for_printing.stp"
-      },
-      {
-        "id": "iliasam-opensimplelidar-mechanics-3d-models-plate-for-printing-v1-0-stl",
-        "assembly": "mechanics",
-        "name": "plate_for_printing_v1.0",
-        "specification": "网格文件 · 可直接打印 .stl · 237,797 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/plate_for_printing_v1.0.stl"
-      },
-      {
         "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-motorpcb-v1-0-pcb-motor-pc",
         "assembly": "pcb",
         "name": "motor_pcb2_copper_bottom",
@@ -3580,16 +3939,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PCB",
         "state": "verified",
         "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MotorPCB_v1.0/PCB/motor_pcb2_smdmask_bottom.gbr"
-      },
-      {
-        "id": "iliasam-opensimplelidar-pcb-splittedpcb-v1-0-and-v1-1-motorpcb-v1-0-pcb-motor-pc",
-        "assembly": "pcb",
-        "name": "motor_pcb2_soldermask_bottom",
-        "specification": "电路设计文件 .gbr · 1,466 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MotorPCB_v1.0/PCB/motor_pcb2_soldermask_bottom.gbr"
       }
     ],
     "evidence": [
@@ -3607,9 +3956,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "label": "电路设计",
-        "url": "https://github.com/iliasam/OpenSimpleLidar/tree/HEAD/PCB/SplittedPCB_v1.0_and_v1.1/MotorPCB_v1.0/PCB",
+        "url": "https://github.com/iliasam/OpenSimpleLidar/tree/HEAD/PCB/CommonPCB_v1.1M/Gerber_files_v1.1M",
         "state": "verified",
-        "detail": "PCB / 原理图目录：PCB/SplittedPCB_v1.0_and_v1.1/MotorPCB_v1.0/PCB"
+        "detail": "PCB / 原理图目录：PCB/CommonPCB_v1.1M/Gerber_files_v1.1M"
       },
       {
         "label": "BOM",
@@ -3650,7 +3999,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "01-sw-project",
         "name": "01_SW_Project",
-        "description": "186 个 CAD · 93 个 MESH · 9 个 BOM",
+        "description": "186 个 CAD · 87 个 MESH · 9 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -3944,22 +4293,22 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/rpo_hardware/V1.0/atom01_mechanic/03_URDF/urdf/Atom01_urdf.urdf"
       },
       {
-        "id": "roboparty-roboto-origin-modules-roboparty-deploy-src-camera-thirdparty-realsense",
+        "id": "roboparty-roboto-origin-modules-roboparty-xr-teleop-assets-atom01-urdf-urdf-atom",
         "assembly": "software-docs",
-        "name": "_d405.urdf",
-        "specification": "运动学描述 · 关节结构可验证 .xacro · 7,282 B",
+        "name": "atom01",
+        "specification": "运动学描述 · 关节结构可验证 .urdf · 29,775 B",
         "quantity": "1",
         "kind": "SW",
         "state": "verified",
-        "source": "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/urdf/_d405.urdf.xacro"
+        "source": "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/roboparty_xr_teleop/assets/Atom01_urdf/urdf/atom01.urdf"
       }
     ],
     "evidence": [
       {
         "label": "CAD 网格",
-        "url": "https://github.com/Roboparty/roboto_origin/tree/HEAD/modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/meshes",
+        "url": "https://github.com/Roboparty/roboto_origin/tree/HEAD/modules/roboparty_train/robolab/data/robots/roboparty/rpo/meshes",
         "state": "verified",
-        "detail": "3D 打印件网格目录：modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/meshes"
+        "detail": "3D 打印件网格目录：modules/roboparty_train/robolab/data/robots/roboparty/rpo/meshes"
       },
       {
         "label": "参数化 CAD",
@@ -3969,9 +4318,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "label": "运动学模型",
-        "url": "https://github.com/Roboparty/roboto_origin/tree/HEAD/modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/urdf",
+        "url": "https://github.com/Roboparty/roboto_origin/tree/HEAD/modules/roboparty_train/robolab/data/robots/roboparty/rpo/urdf",
         "state": "verified",
-        "detail": "URDF / MJCF 机器人描述目录：modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/urdf"
+        "detail": "URDF / MJCF 机器人描述目录：modules/roboparty_train/robolab/data/robots/roboparty/rpo/urdf"
       },
       {
         "label": "BOM",
@@ -4012,7 +4361,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "carbon-board",
         "name": "carbon_board",
-        "description": "2 个 MESH · 2 个 CAD",
+        "description": "2 个 MESH · 2 个 CAD · 1 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -4035,6 +4384,16 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       }
     ],
     "parts": [
+      {
+        "id": "zju-fast-lab-fast-drone-250-purchase-list-xlsx",
+        "assembly": "carbon-board",
+        "name": "purchase_list",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/ZJU-FAST-Lab/Fast-Drone-250/blob/HEAD/purchase_list.xlsx"
+      },
       {
         "id": "zju-fast-lab-fast-drone-250-carbon-board-stl",
         "assembly": "carbon-board",
@@ -4216,6 +4575,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "detail": "URDF / MJCF 机器人描述目录：src/realflight_modules/realsense-ros/realsense2_description/tests"
       },
       {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/ZJU-FAST-Lab/Fast-Drone-250/blob/HEAD/purchase_list.xlsx",
+        "detail": "仓库内物料清单：purchase_list.xlsx"
+      },
+      {
         "label": "上游仓库",
         "state": "verified",
         "url": "https://github.com/ZJU-FAST-Lab/Fast-Drone-250",
@@ -4224,7 +4589,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
-      "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
@@ -5599,7 +5963,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "case",
         "name": "case",
-        "description": "19 个 CAD · 15 个 MESH · 4 个 PCB",
+        "description": "19 个 CAD · 15 个 MESH · 6 个 PCB",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -5743,14 +6107,14 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/stack-chan/stack-chan/blob/HEAD/schematics/m5-pantilt/m5-pantilt.kicad_sch"
       },
       {
-        "id": "stack-chan-stack-chan-schematics-m5-pantilt-gerber-m5-pantilt-npth-drl",
+        "id": "stack-chan-stack-chan-schematics-m5-pantilt-gerber-m5-pantilt-b-silkscreen-gbo",
         "assembly": "case",
-        "name": "m5-pantilt-NPTH",
-        "specification": "电路设计文件 .drl · 543 B",
+        "name": "m5-pantilt-B_Silkscreen",
+        "specification": "电路设计文件 .gbo · 26,776 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/stack-chan/stack-chan/blob/HEAD/schematics/m5-pantilt/gerber/m5-pantilt-NPTH.drl"
+        "source": "https://github.com/stack-chan/stack-chan/blob/HEAD/schematics/m5-pantilt/gerber/m5-pantilt-B_Silkscreen.gbo"
       },
       {
         "id": "stack-chan-stack-chan-case-contributed-mongonta-case-for-sg90-and-m5gobottomboar",
@@ -12478,6 +12842,145 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     }
   },
   {
+    "id": "REPO-PENG-ZHIHUI-MINIROVER-HARDWARE",
+    "name": "MiniRover-Hardware",
+    "category": "WHEELED_ROBOT",
+    "version": "2022-07-25",
+    "embodiment": "轮式底盘",
+    "summary": "自制火星车的开源资料。",
+    "repository": "https://github.com/peng-zhihui/MiniRover-Hardware",
+    "releaseBasis": "仓库 peng-zhihui/MiniRover-Hardware 的公开文件树快照（111 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 610,
+    "license": "无",
+    "assemblies": [
+      {
+        "id": "1-hardware",
+        "name": "1.Hardware",
+        "description": "9 个 PCB",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gbl",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GBL · 100,915 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GBL"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gbo",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GBO · 118,292 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GBO"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gbs",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GBS · 2,280 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GBS"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gg1",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GG1 · 11,966 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GG1"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gko",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GKO · 688 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GKO"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gm1",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GM1 · 1,515 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GM1"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gtl",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GTL · 220,599 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GTL"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gto",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GTO · 72,477 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GTO"
+      },
+      {
+        "id": "peng-zhihui-minirover-hardware-1-hardware-release-minirover-gts",
+        "assembly": "1-hardware",
+        "name": "MiniRover",
+        "specification": "电路设计文件 .GTS · 14,344 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/peng-zhihui/MiniRover-Hardware/blob/HEAD/1.Hardware/release/MiniRover.GTS"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "电路设计",
+        "url": "https://github.com/peng-zhihui/MiniRover-Hardware/tree/HEAD/1.Hardware/release",
+        "state": "verified",
+        "detail": "PCB / 原理图目录：1.Hardware/release"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/peng-zhihui/MiniRover-Hardware",
+        "detail": "自制火星车的开源资料。"
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
     "id": "REPO-HUMANCOMPUTERLAB-LELAMP",
     "name": "LeLamp",
     "category": "ROBOT",
@@ -13389,7 +13892,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "gerber",
         "name": "Gerber",
-        "description": "13 个 PCB · 4 个 MESH",
+        "description": "34 个 PCB · 6 个 MESH",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -13398,33 +13901,49 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "id": "asm1",
         "name": "头部/颈部",
         "description": "按零件文件名中的部位词聚类｜9 个 MESH",
-        "x": 78.5,
-        "y": 39.3,
+        "x": 73.5,
+        "y": 30.5,
         "color": "#5aa9ff"
       },
       {
-        "id": "asm2",
+        "id": "circuits",
+        "name": "circuits",
+        "description": "7 个 PCB",
+        "x": 79.2,
+        "y": 54.2,
+        "color": "#35d0c8"
+      },
+      {
+        "id": "v3-1",
+        "name": "v3_1",
+        "description": "7 个 PCB",
+        "x": 63.0,
+        "y": 73.2,
+        "color": "#ffb454"
+      },
+      {
+        "id": "body",
+        "name": "body",
+        "description": "7 个 PCB",
+        "x": 37.0,
+        "y": 73.2,
+        "color": "#b98cff"
+      },
+      {
+        "id": "asm5",
         "name": "腿部",
         "description": "按零件文件名中的部位词聚类｜4 个 MESH",
-        "x": 67.6,
-        "y": 70.7,
-        "color": "#35d0c8"
+        "x": 20.8,
+        "y": 54.2,
+        "color": "#ff7a7a"
       },
       {
         "id": "v4head",
         "name": "v4head",
         "description": "2 个 PCB",
-        "x": 32.4,
-        "y": 70.7,
-        "color": "#ffb454"
-      },
-      {
-        "id": "asm4",
-        "name": "足部",
-        "description": "按零件文件名中的部位词聚类｜2 个 MESH",
-        "x": 21.5,
-        "y": 39.3,
-        "color": "#b98cff"
+        "x": 26.5,
+        "y": 30.5,
+        "color": "#7affc4"
       }
     ],
     "parts": [
@@ -13459,28 +13978,8 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/head_top.stl"
       },
       {
-        "id": "makerforgetech-modular-biped-3d-prints-v2-head-visor-stl",
-        "assembly": "asm1",
-        "name": "head_visor",
-        "specification": "网格文件 · 可直接打印 .stl · 29,484 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/head_visor.stl"
-      },
-      {
-        "id": "makerforgetech-modular-biped-3d-prints-v2-neck-extension-stl",
-        "assembly": "asm1",
-        "name": "neck_extension",
-        "specification": "网格文件 · 可直接打印 .stl · 22,484 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/neck_extension.stl"
-      },
-      {
         "id": "makerforgetech-modular-biped-3d-prints-v2-left-leg-lower-stl",
-        "assembly": "asm2",
+        "assembly": "asm5",
         "name": "left_leg_lower",
         "specification": "网格文件 · 可直接打印 .stl · 50,484 B",
         "quantity": "1",
@@ -13490,7 +13989,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "id": "makerforgetech-modular-biped-3d-prints-v2-left-leg-upper-stl",
-        "assembly": "asm2",
+        "assembly": "asm5",
         "name": "left_leg_upper",
         "specification": "网格文件 · 可直接打印 .stl · 49,284 B",
         "quantity": "1",
@@ -13500,7 +13999,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "id": "makerforgetech-modular-biped-3d-prints-v2-right-leg-lower-stl",
-        "assembly": "asm2",
+        "assembly": "asm5",
         "name": "right_leg_lower",
         "specification": "网格文件 · 可直接打印 .stl · 50,584 B",
         "quantity": "1",
@@ -13509,84 +14008,124 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/right_leg_lower.stl"
       },
       {
-        "id": "makerforgetech-modular-biped-3d-prints-v2-right-leg-upper-stl",
-        "assembly": "asm2",
-        "name": "right_leg_upper",
-        "specification": "网格文件 · 可直接打印 .stl · 49,284 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/right_leg_upper.stl"
-      },
-      {
-        "id": "makerforgetech-modular-biped-3d-prints-v2-left-foot-stl",
-        "assembly": "asm4",
-        "name": "left_foot",
-        "specification": "网格文件 · 可直接打印 .stl · 359,184 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/left_foot.stl"
-      },
-      {
-        "id": "makerforgetech-modular-biped-3d-prints-v2-right-foot-stl",
-        "assembly": "asm4",
-        "name": "right_foot",
-        "specification": "网格文件 · 可直接打印 .stl · 359,184 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/3d_prints/v2/right_foot.stl"
-      },
-      {
-        "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-gerber-v4head-b-cu-gbr",
-        "assembly": "gerber",
-        "name": "v4head-B_Cu",
-        "specification": "电路设计文件 .gbr · 15,135 B",
+        "id": "makerforgetech-modular-biped-circuits-v3-body-body-contour-gm1",
+        "assembly": "body",
+        "name": "body_contour",
+        "specification": "电路设计文件 .gm1 · 370 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v4/Head/v4head/Gerber/v4head-B_Cu.gbr"
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/body/body_contour.gm1"
       },
       {
-        "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-gerber-v4head-b-mask-gbr",
-        "assembly": "gerber",
-        "name": "v4head-B_Mask",
-        "specification": "电路设计文件 .gbr · 4,480 B",
+        "id": "makerforgetech-modular-biped-circuits-v3-body-body-copperbottom-gbl",
+        "assembly": "body",
+        "name": "body_copperBottom",
+        "specification": "电路设计文件 .gbl · 3,366 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v4/Head/v4head/Gerber/v4head-B_Mask.gbr"
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/body/body_copperBottom.gbl"
       },
       {
-        "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-gerber-v4head-b-paste-gbr",
-        "assembly": "gerber",
-        "name": "v4head-B_Paste",
-        "specification": "电路设计文件 .gbr · 489 B",
+        "id": "makerforgetech-modular-biped-circuits-v3-body-body-coppertop-gtl",
+        "assembly": "body",
+        "name": "body_copperTop",
+        "specification": "电路设计文件 .gtl · 4,057 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v4/Head/v4head/Gerber/v4head-B_Paste.gbr"
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/body/body_copperTop.gtl"
       },
       {
-        "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-gerber-v4head-b-silkscreen-",
-        "assembly": "gerber",
-        "name": "v4head-B_Silkscreen",
-        "specification": "电路设计文件 .gbr · 14,896 B",
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-body-contour-gm1",
+        "assembly": "circuits",
+        "name": "body_contour",
+        "specification": "电路设计文件 .gm1 · 370 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v4/Head/v4head/Gerber/v4head-B_Silkscreen.gbr"
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/body_contour.gm1"
       },
       {
-        "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-gerber-v4head-edge-cuts-gbr",
-        "assembly": "gerber",
-        "name": "v4head-Edge_Cuts",
-        "specification": "电路设计文件 .gbr · 644 B",
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-body-copperbottom-gbl",
+        "assembly": "circuits",
+        "name": "body_copperBottom",
+        "specification": "电路设计文件 .gbl · 2,411 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v4/Head/v4head/Gerber/v4head-Edge_Cuts.gbr"
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/body_copperBottom.gbl"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-body-coppertop-gtl",
+        "assembly": "circuits",
+        "name": "body_copperTop",
+        "specification": "电路设计文件 .gtl · 2,556 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/body_copperTop.gtl"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v2-lower-gerber-lower-feb-2021-contour-gm1",
+        "assembly": "gerber",
+        "name": "Lower Feb 2021_contour",
+        "specification": "电路设计文件 .gm1 · 370 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v2/Lower/Gerber/Lower%20Feb%202021_contour.gm1"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v2-lower-gerber-lower-feb-2021-copperbotto",
+        "assembly": "gerber",
+        "name": "Lower Feb 2021_copperBottom",
+        "specification": "电路设计文件 .gbl · 3,533 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v2/Lower/Gerber/Lower%20Feb%202021_copperBottom.gbl"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v2-lower-gerber-lower-feb-2021-coppertop-g",
+        "assembly": "gerber",
+        "name": "Lower Feb 2021_copperTop",
+        "specification": "电路设计文件 .gtl · 2,953 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v2/Lower/Gerber/Lower%20Feb%202021_copperTop.gtl"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-v3-1-body-contour-gm1",
+        "assembly": "v3-1",
+        "name": "body_contour",
+        "specification": "电路设计文件 .gm1 · 370 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/v3_1/body_contour.gm1"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-v3-1-body-copperbottom-gbl",
+        "assembly": "v3-1",
+        "name": "body_copperBottom",
+        "specification": "电路设计文件 .gbl · 3,426 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/v3_1/body_copperBottom.gbl"
+      },
+      {
+        "id": "makerforgetech-modular-biped-circuits-v3-archive-v3-1-body-coppertop-gtl",
+        "assembly": "v3-1",
+        "name": "body_copperTop",
+        "specification": "电路设计文件 .gtl · 3,677 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/makerforgetech/modular-biped/blob/HEAD/circuits/v3/archive/v3_1/body_copperTop.gtl"
       },
       {
         "id": "makerforgetech-modular-biped-circuits-v4-head-v4head-v4head-kicad-pcb",
@@ -13618,9 +14157,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "label": "电路设计",
-        "url": "https://github.com/makerforgetech/modular-biped/tree/HEAD/circuits/v4/Head/v4head",
+        "url": "https://github.com/makerforgetech/modular-biped/tree/HEAD/circuits/v2/Lower/Gerber",
         "state": "verified",
-        "detail": "PCB / 原理图目录：circuits/v4/Head/v4head"
+        "detail": "PCB / 原理图目录：circuits/v2/Lower/Gerber"
       },
       {
         "label": "上游仓库",
@@ -13795,17 +14334,17 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#d3ea5c"
       },
       {
-        "id": "template",
-        "name": "template",
-        "description": "2 个 CAD · 1 个 MESH",
+        "id": "gerber-pcb-harness",
+        "name": "Gerber_PCB_Harness",
+        "description": "10 个 PCB",
         "x": 78.5,
         "y": 39.3,
         "color": "#5aa9ff"
       },
       {
-        "id": "gerber-pcb-harness",
-        "name": "Gerber_PCB_Harness",
-        "description": "3 个 PCB",
+        "id": "template",
+        "name": "template",
+        "description": "2 个 CAD · 1 个 MESH",
         "x": 67.6,
         "y": 70.7,
         "color": "#35d0c8"
@@ -13859,6 +14398,26 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/pcb/production/Gerber_PCB_Harness/Drill_PTH_Through_Via.DRL"
       },
       {
+        "id": "autonomous-ai-openharness-devices-harness-device-hardware-pcb-production-gerber-",
+        "assembly": "gerber-pcb-harness",
+        "name": "Gerber_BoardOutlineLayer",
+        "specification": "电路设计文件 .GKO · 771 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/pcb/production/Gerber_PCB_Harness/Gerber_BoardOutlineLayer.GKO"
+      },
+      {
+        "id": "autonomous-ai-openharness-devices-harness-device-hardware-pcb-production-gerber-",
+        "assembly": "gerber-pcb-harness",
+        "name": "Gerber_BottomLayer",
+        "specification": "电路设计文件 .GBL · 87,985 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/pcb/production/Gerber_PCB_Harness/Gerber_BottomLayer.GBL"
+      },
+      {
         "id": "autonomous-ai-openharness-devices-harness-device-hardware-pcb-production-bom-har",
         "assembly": "hardware",
         "name": "BOM_Harness_1.75_AMOLED_PCB_Harness_1.75",
@@ -13907,66 +14466,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/step/Harness_assembly.step"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-stl-housing-stl",
-        "assembly": "hardware",
-        "name": "Housing",
-        "specification": "网格文件 · 可直接打印 .stl · 1,762,384 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/stl/Housing.stl"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-step-housing-step",
-        "assembly": "hardware",
-        "name": "Housing",
-        "specification": "参数化 CAD · 可再导出加工 .step · 1,346,495 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/step/Housing.step"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-stl-iron-base-stl",
-        "assembly": "hardware",
-        "name": "Iron_base",
-        "specification": "网格文件 · 可直接打印 .stl · 77,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/stl/Iron_base.stl"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-step-iron-base-step",
-        "assembly": "hardware",
-        "name": "Iron_base",
-        "specification": "参数化 CAD · 可再导出加工 .step · 12,187 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/step/Iron_base.step"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-stl-usb-clamp-stl",
-        "assembly": "hardware",
-        "name": "USB_clamp",
-        "specification": "网格文件 · 可直接打印 .stl · 132,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/stl/USB_clamp.stl"
-      },
-      {
-        "id": "autonomous-ai-openharness-devices-harness-device-hardware-3d-step-usb-clamp-step",
-        "assembly": "hardware",
-        "name": "USB_clamp",
-        "specification": "参数化 CAD · 可再导出加工 .step · 37,191 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/autonomous-ai/openharness/blob/HEAD/devices/harness-device/hardware/3d/step/USB_clamp.step"
       },
       {
         "id": "autonomous-ai-openharness-output-orchestrator-live-holder-model-stl",
@@ -16082,7 +16581,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "inventor",
         "name": "Inventor",
-        "description": "328 个 CAD · 4 个 BOM · 3 个 MESH",
+        "description": "278 个 CAD · 3 个 MESH · 1 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -16104,33 +16603,33 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#35d0c8"
       },
       {
-        "id": "metrisch",
-        "name": "Metrisch",
-        "description": "42 个 CAD",
+        "id": "printed-parts",
+        "name": "_printed parts",
+        "description": "38 个 CAD",
         "x": 63.0,
         "y": 73.2,
         "color": "#ffb454"
       },
       {
-        "id": "printed-parts",
-        "name": "_printed parts",
-        "description": "38 个 CAD",
+        "id": "workspace",
+        "name": "Workspace",
+        "description": "37 个 CAD",
         "x": 37.0,
         "y": 73.2,
         "color": "#b98cff"
       },
       {
-        "id": "workspace",
-        "name": "Workspace",
-        "description": "37 个 CAD",
+        "id": "misc-parts",
+        "name": "_misc parts",
+        "description": "16 个 CAD",
         "x": 20.8,
         "y": 54.2,
         "color": "#ff7a7a"
       },
       {
-        "id": "misc-parts",
-        "name": "_misc parts",
-        "description": "16 个 CAD",
+        "id": "herkulex",
+        "name": "Herkulex",
+        "description": "11 个 CAD",
         "x": 26.5,
         "y": 30.5,
         "color": "#7affc4"
@@ -16168,6 +16667,36 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/ThreeFingerGripper/inventor/Gripper%20V1/3_hebenMount_2_dual1.ipt"
       },
       {
+        "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-herkulex-bottom-c",
+        "assembly": "herkulex",
+        "name": "BOTTOM_CASE_290",
+        "specification": "参数化 CAD · 可再导出加工 .ipt · 2,030,080 B",
+        "quantity": "1",
+        "kind": "PRINT",
+        "state": "verified",
+        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Workspace/v4/Herkulex/BOTTOM_CASE_290.ipt"
+      },
+      {
+        "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-herkulex-case-228",
+        "assembly": "herkulex",
+        "name": "CASE_228",
+        "specification": "参数化 CAD · 可再导出加工 .ipt · 442,880 B",
+        "quantity": "1",
+        "kind": "PRINT",
+        "state": "verified",
+        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Workspace/v4/Herkulex/CASE_228.ipt"
+      },
+      {
+        "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-herkulex-horn-44-",
+        "assembly": "herkulex",
+        "name": "HORN_44",
+        "specification": "参数化 CAD · 可再导出加工 .ipt · 230,912 B",
+        "quantity": "1",
+        "kind": "PRINT",
+        "state": "verified",
+        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Workspace/v4/Herkulex/HORN_44.ipt"
+      },
+      {
         "id": "4ndreas-betabots-robot-arm-project-green-robotv4-bom-xlsx",
         "assembly": "inventor",
         "name": "RobotV4_BOM",
@@ -16178,24 +16707,24 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/RobotV4_BOM.xlsx"
       },
       {
-        "id": "4ndreas-betabots-robot-arm-project-blue-inventor-design-data-partslist-xml",
+        "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-metal-parts-16221",
         "assembly": "inventor",
-        "name": "partslist",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "name": "16221600",
+        "specification": "参数化 CAD · 可再导出加工 .ipt · 366,592 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "PRINT",
         "state": "verified",
-        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Blue/Inventor/Design%20Data/partslist.xml"
+        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Workspace/v4/_metal%20parts/16221600.ipt"
       },
       {
-        "id": "4ndreas-betabots-robot-arm-project-green-inventor-design-data-partslist-xml",
+        "id": "4ndreas-betabots-robot-arm-project-orange-inventor-3-finger-gripper-iam",
         "assembly": "inventor",
-        "name": "partslist",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "name": "3_finger_gripper",
+        "specification": "参数化 CAD · 可再导出加工 .iam · 196,608 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "PRINT",
         "state": "verified",
-        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Design%20Data/partslist.xml"
+        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Orange/Inventor/3_finger_gripper.iam"
       },
       {
         "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-elbow-konstruktio",
@@ -16226,36 +16755,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Workspace/v4/StepperBase/Konstruktions-Assistent/Flache%20Riemenscheibe11.ipt"
-      },
-      {
-        "id": "4ndreas-betabots-robot-arm-project-blue-inventor-templates-metrisch-blech-din-ip",
-        "assembly": "metrisch",
-        "name": "Blech (DIN)",
-        "specification": "参数化 CAD · 可再导出加工 .ipt · 83,456 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Blue/Inventor/Templates/Metrisch/Blech%20%28DIN%29.ipt"
-      },
-      {
-        "id": "4ndreas-betabots-robot-arm-project-green-inventor-templates-metrisch-blech-din-i",
-        "assembly": "metrisch",
-        "name": "Blech (DIN)",
-        "specification": "参数化 CAD · 可再导出加工 .ipt · 83,456 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/Inventor/Templates/Metrisch/Blech%20%28DIN%29.ipt"
-      },
-      {
-        "id": "4ndreas-betabots-robot-arm-project-orange-inventor-templates-metrisch-blech-din-",
-        "assembly": "metrisch",
-        "name": "Blech (DIN)",
-        "specification": "参数化 CAD · 可再导出加工 .ipt · 83,456 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Orange/Inventor/Templates/Metrisch/Blech%20%28DIN%29.ipt"
       },
       {
         "id": "4ndreas-betabots-robot-arm-project-green-inventor-workspace-v4-misc-parts-armseg",
@@ -16357,15 +16856,15 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "label": "参数化 CAD",
-        "url": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/tree/HEAD/Blue/Inventor/Design%20Data/AIT/Mold%20Design",
+        "url": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/tree/HEAD/Blue/Inventor/Libraries/Content%20Center%20Files",
         "state": "verified",
-        "detail": "可再导出的参数化设计目录：Blue/Inventor/Design Data/AIT/Mold Design"
+        "detail": "可再导出的参数化设计目录：Blue/Inventor/Libraries/Content Center Files"
       },
       {
         "label": "BOM",
         "state": "verified",
-        "url": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Blue/Inventor/Design%20Data/partslist.xml",
-        "detail": "仓库内物料清单：Blue/Inventor/Design Data/partslist.xml"
+        "url": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project/blob/HEAD/Green/RobotV4_BOM.xlsx",
+        "detail": "仓库内物料清单：Green/RobotV4_BOM.xlsx"
       },
       {
         "label": "上游仓库",
@@ -16399,27 +16898,35 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "license": "NOASSERTION",
     "assemblies": [
       {
-        "id": "exportstep",
-        "name": "ExportSTEP",
-        "description": "11 个 CAD · 1 个 BOM",
+        "id": "gerber",
+        "name": "Gerber",
+        "description": "79 个 PCB · 1 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
       },
       {
+        "id": "exportstep",
+        "name": "ExportSTEP",
+        "description": "11 个 CAD",
+        "x": 76.0,
+        "y": 62.0,
+        "color": "#5aa9ff"
+      },
+      {
         "id": "bom",
         "name": "BOM",
         "description": "11 个 BOM",
-        "x": 50.0,
-        "y": 76.0,
-        "color": "#5aa9ff"
+        "x": 24.0,
+        "y": 62.0,
+        "color": "#35d0c8"
       },
       {
         "id": "software-docs",
         "name": "软件与文档",
         "description": "非硬件件｜运动学描述与控制/装配文档",
-        "x": 24.0,
-        "y": 62.0,
+        "x": 20.0,
+        "y": 48.0,
         "color": "#8894a6"
       }
     ],
@@ -16485,36 +16992,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/hamilton/Project%20Outputs%20for%20Hamilton/BOM/Bill%20of%20Materials-Hamilton.xlsx"
       },
       {
-        "id": "google-deepmind-barkour-robot-hardware-electronics-holberton-project-outputs-for",
-        "assembly": "bom",
-        "name": "Bill of Materials-Holberton",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/holberton/Project%20Outputs%20for%20Holberton/BOM/Bill%20of%20Materials-Holberton.xlsx"
-      },
-      {
-        "id": "google-deepmind-barkour-robot-hardware-electronics-hopper-project-outputs-for-ho",
-        "assembly": "bom",
-        "name": "Bill of Materials-Hopper",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/hopper/Project%20Outputs%20for%20Hopper/BOM/Bill%20of%20Materials-Hopper.xlsx"
-      },
-      {
-        "id": "google-deepmind-barkour-robot-hardware-barkour-robot-bill-of-materials-csv",
-        "assembly": "exportstep",
-        "name": "barkour_robot_bill_of_materials",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/barkour_robot_bill_of_materials.csv"
-      },
-      {
         "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-e",
         "assembly": "exportstep",
         "name": "Ada",
@@ -16575,14 +17052,64 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/hamilton/Project%20Outputs%20for%20Hamilton/ExportSTEP/Hamilton.step"
       },
       {
-        "id": "google-deepmind-barkour-robot-hardware-electronics-holberton-project-outputs-for",
-        "assembly": "exportstep",
-        "name": "Holberton",
-        "specification": "参数化 CAD · 可再导出加工 .step · 14,897,912 B",
+        "id": "google-deepmind-barkour-robot-hardware-barkour-robot-bill-of-materials-csv",
+        "assembly": "gerber",
+        "name": "barkour_robot_bill_of_materials",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/holberton/Project%20Outputs%20for%20Holberton/ExportSTEP/Holberton.step"
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/barkour_robot_bill_of_materials.csv"
+      },
+      {
+        "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-g",
+        "assembly": "gerber",
+        "name": "Ada",
+        "specification": "电路设计文件 .GBL · 13,054 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber/Ada.GBL"
+      },
+      {
+        "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-g",
+        "assembly": "gerber",
+        "name": "Ada",
+        "specification": "电路设计文件 .GBO · 3,402 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber/Ada.GBO"
+      },
+      {
+        "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-g",
+        "assembly": "gerber",
+        "name": "Ada",
+        "specification": "电路设计文件 .GBS · 1,559 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber/Ada.GBS"
+      },
+      {
+        "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-g",
+        "assembly": "gerber",
+        "name": "Ada",
+        "specification": "电路设计文件 .GTL · 21,990 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber/Ada.GTL"
+      },
+      {
+        "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-g",
+        "assembly": "gerber",
+        "name": "Ada",
+        "specification": "电路设计文件 .GTO · 9,192 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber/Ada.GTO"
       },
       {
         "id": "google-deepmind-barkour-robot-hardware-electronics-ada-project-outputs-for-ada-p",
@@ -16643,26 +17170,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "MAKE",
         "state": "verified",
         "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/hamilton/Project%20Outputs%20for%20Hamilton/PDF/PCB%20Print/Assembly%20Drawings.PDF"
-      },
-      {
-        "id": "google-deepmind-barkour-robot-hardware-electronics-holberton-project-outputs-for",
-        "assembly": "software-docs",
-        "name": "Assembly Drawings",
-        "specification": "装配/构建文档 .PDF · 3,806,717 B",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/holberton/Project%20Outputs%20for%20Holberton/PDF/PCB%20Print/Assembly%20Drawings.PDF"
-      },
-      {
-        "id": "google-deepmind-barkour-robot-hardware-electronics-hopper-project-outputs-for-ho",
-        "assembly": "software-docs",
-        "name": "Assembly Drawings",
-        "specification": "装配/构建文档 .PDF · 286,519 B",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/google-deepmind/barkour_robot/blob/HEAD/hardware/electronics/hopper/Project%20Outputs%20for%20Hopper/PDF/PCB%20Print/Assembly%20Drawings.PDF"
       }
     ],
     "evidence": [
@@ -16671,6 +17178,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "url": "https://github.com/google-deepmind/barkour_robot/tree/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/ExportSTEP",
         "state": "verified",
         "detail": "可再导出的参数化设计目录：hardware/electronics/ada/Project Outputs for Ada/ExportSTEP"
+      },
+      {
+        "label": "电路设计",
+        "url": "https://github.com/google-deepmind/barkour_robot/tree/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/Gerber",
+        "state": "verified",
+        "detail": "PCB / 原理图目录：hardware/electronics/ada/Project Outputs for Ada/Gerber"
       },
       {
         "label": "BOM",
@@ -16688,7 +17201,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
-      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
     "reproduction": {
@@ -19200,7 +19712,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "asm0",
         "name": "腿部",
-        "description": "按零件文件名中的部位词聚类｜37 个 MESH · 11 个 BOM · 7 个 CAD",
+        "description": "按零件文件名中的部位词聚类｜37 个 MESH · 15 个 BOM · 7 个 CAD",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -19482,8 +19994,8 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "label": "BOM",
         "state": "verified",
-        "url": "https://github.com/TNY-Robotics/TNY-360/blob/HEAD/PCBs/Analog%20Reader/Analog%20Reader%20-%20BOM.csv",
-        "detail": "仓库内物料清单：PCBs/Analog Reader/Analog Reader - BOM.csv"
+        "url": "https://github.com/TNY-Robotics/TNY-360/blob/HEAD/BOM/Cables.md",
+        "detail": "仓库内物料清单：BOM/Cables.md"
       },
       {
         "label": "上游仓库",
@@ -20632,7 +21144,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "psm",
         "name": "psm",
-        "description": "688 个 MESH",
+        "description": "668 个 MESH",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -20906,34 +21418,34 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/med-air/SurRoL/blob/HEAD/Benchmark/state_based/surrol/assets/psm/meshes/collision/CDF_base_no_shaft.obj"
       },
       {
-        "id": "med-air-surrol-data-driven-scene-simulation-reconstruction-submodules-gs-render-",
+        "id": "med-air-surrol-benchmark-state-based-surrol-assets-match-board-0-urdf",
         "assembly": "software-docs",
-        "name": "manual",
-        "specification": "装配/构建文档 .pdf · 1,466,032 B",
+        "name": "0",
+        "specification": "运动学描述 · 关节结构可验证 .urdf · 1,230 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "SW",
         "state": "verified",
-        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Data_driven_scene_simulation/reconstruction/submodules/gs-render/third_party/glm/doc/manual.pdf"
+        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Benchmark/state_based/surrol/assets/match_board/0.urdf"
       },
       {
-        "id": "med-air-surrol-data-driven-scene-simulation-reconstruction-submodules-gs-render-",
+        "id": "med-air-surrol-benchmark-state-based-surrol-assets-match-board-rl-0-urdf",
         "assembly": "software-docs",
-        "name": "manual",
-        "specification": "装配/构建文档 .md · 95,932 B",
+        "name": "0",
+        "specification": "运动学描述 · 关节结构可验证 .urdf · 2,115 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "SW",
         "state": "verified",
-        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Data_driven_scene_simulation/reconstruction/submodules/gs-render/third_party/glm/manual.md"
+        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Benchmark/state_based/surrol/assets/match_board_rl/0.urdf"
       },
       {
-        "id": "med-air-surrol-data-driven-scene-simulation-submodules-surrol-gs-third-party-glm",
+        "id": "med-air-surrol-haptic-guidance-surrol-assets-match-board-0-urdf",
         "assembly": "software-docs",
-        "name": "manual",
-        "specification": "装配/构建文档 .pdf · 1,466,032 B",
+        "name": "0",
+        "specification": "运动学描述 · 关节结构可验证 .urdf · 1,229 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "SW",
         "state": "verified",
-        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Data_driven_scene_simulation/submodules/surrol_gs/third_party/glm/doc/manual.pdf"
+        "source": "https://github.com/med-air/SurRoL/blob/HEAD/Haptic_guidance/surrol/assets/match_board/0.urdf"
       }
     ],
     "evidence": [
@@ -23921,7 +24433,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "07-molds",
         "name": "07_Molds",
-        "description": "140 个 MESH · 6 个 PCB · 3 个 CAD · 2 个 BOM",
+        "description": "140 个 MESH · 20 个 CAD · 2 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -23967,9 +24479,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#ff7a7a"
       },
       {
-        "id": "tower",
-        "name": "Tower",
-        "description": "17 个 CAD",
+        "id": "orca-motor-connectors-gerber",
+        "name": "ORCA_Motor_Connectors_Gerber",
+        "description": "18 个 PCB",
         "x": 26.5,
         "y": 30.5,
         "color": "#7affc4"
@@ -24065,14 +24577,14 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls"
       },
       {
-        "id": "orcahand-orcahand-hardware-orca-v1-orca-electronics-orca-motor-connectors-gerber",
+        "id": "orcahand-orcahand-hardware-orca-v1-orca-spools-basespool-stl",
         "assembly": "07-molds",
-        "name": "Drill_NPTH_Through",
-        "specification": "电路设计文件 .DRL · 281 B",
+        "name": "BaseSpool",
+        "specification": "网格文件 · 可直接打印 .stl · 573,184 B",
         "quantity": "1",
-        "kind": "PCB",
+        "kind": "PRINT",
         "state": "verified",
-        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_Gerber/Drill_NPTH_Through.DRL"
+        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v1/ORCA_Spools/BaseSpool.stl"
       },
       {
         "id": "orcahand-orcahand-hardware-orca-v2-base-step-files-hand-ap-i-ap-l-ap-step",
@@ -24135,6 +24647,36 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/lite/AP_M-AP-Lite_AP.stl"
       },
       {
+        "id": "orcahand-orcahand-hardware-orca-v1-orca-electronics-orca-motor-connectors-gerber",
+        "assembly": "orca-motor-connectors-gerber",
+        "name": "Drill_NPTH_Through",
+        "specification": "电路设计文件 .DRL · 281 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_Gerber/Drill_NPTH_Through.DRL"
+      },
+      {
+        "id": "orcahand-orcahand-hardware-orca-v2-electronics-orca-motor-connectors-gerber-dril",
+        "assembly": "orca-motor-connectors-gerber",
+        "name": "Drill_NPTH_Through",
+        "specification": "电路设计文件 .DRL · 281 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/electronics/ORCA_Motor_Connectors_Gerber/Drill_NPTH_Through.DRL"
+      },
+      {
+        "id": "orcahand-orcahand-hardware-orca-v1-orca-electronics-orca-motor-connectors-gerber",
+        "assembly": "orca-motor-connectors-gerber",
+        "name": "Drill_PTH_Through",
+        "specification": "电路设计文件 .DRL · 403 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_Gerber/Drill_PTH_Through.DRL"
+      },
+      {
         "id": "orcahand-orcahand-hardware-orca-v1-orca-tower-27teethwristservo-stl",
         "assembly": "orca-tower",
         "name": "27TeethWristServo",
@@ -24173,36 +24715,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "MAKE",
         "state": "verified",
         "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/base/ASSEMBLY_ADDENDUM.md"
-      },
-      {
-        "id": "orcahand-orcahand-hardware-orca-v2-base-step-files-tower-cableholder-cableholder",
-        "assembly": "tower",
-        "name": "CableHolder_CableHolder_CableHolder_selection",
-        "specification": "参数化 CAD · 可再导出加工 .step · 102,890 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/base/STEP%20Files/Tower/CableHolder_CableHolder_CableHolder_selection.step"
-      },
-      {
-        "id": "orcahand-orcahand-hardware-orca-v2-base-step-files-tower-carpalsteeth-carpalstee",
-        "assembly": "tower",
-        "name": "CarpalsTeeth_CarpalsTeeth_selection",
-        "specification": "参数化 CAD · 可再导出加工 .step · 467,927 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/base/STEP%20Files/Tower/CarpalsTeeth_CarpalsTeeth_selection.step"
-      },
-      {
-        "id": "orcahand-orcahand-hardware-orca-v2-base-step-files-tower-fancover-twofans-fancov",
-        "assembly": "tower",
-        "name": "FanCover-TwoFans_FanCover_Feetech_TwoFans_selection",
-        "specification": "参数化 CAD · 可再导出加工 .step · 206,599 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/orcahand/orcahand_hardware/blob/HEAD/orca_v2/base/STEP%20Files/Tower/FanCover-TwoFans_FanCover_Feetech_TwoFans_selection.step"
       }
     ],
     "evidence": [
@@ -31548,9 +32060,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "license": "CC-BY-SA-4.0",
     "assemblies": [
       {
-        "id": "project-outputs-for-48v-5v-buck",
-        "name": "Project Outputs for 48V-5V Buck",
-        "description": "24 个 PCB · 8 个 BOM · 4 个 CAD",
+        "id": "gerbers",
+        "name": "Gerbers",
+        "description": "394 个 PCB · 22 个 CAD · 6 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -31558,47 +32070,47 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "gerber",
         "name": "Gerber",
-        "description": "23 个 PCB",
+        "description": "74 个 PCB",
         "x": 73.5,
         "y": 30.5,
         "color": "#5aa9ff"
       },
       {
-        "id": "rev1",
-        "name": "Rev1",
-        "description": "9 个 CAD · 2 个 BOM",
+        "id": "gerber-output",
+        "name": "Gerber Output",
+        "description": "46 个 PCB",
         "x": 79.2,
         "y": 54.2,
         "color": "#35d0c8"
       },
       {
-        "id": "gerbers",
-        "name": "Gerbers",
-        "description": "11 个 PCB",
+        "id": "rev1",
+        "name": "Rev1",
+        "description": "26 个 PCB · 9 个 CAD · 2 个 BOM",
         "x": 63.0,
         "y": 73.2,
         "color": "#ffb454"
       },
       {
-        "id": "step-files",
-        "name": "Step Files",
-        "description": "8 个 CAD",
+        "id": "project-outputs-for-48v-5v-buck",
+        "name": "Project Outputs for 48V-5V Buck",
+        "description": "23 个 PCB",
         "x": 37.0,
         "y": 73.2,
         "color": "#b98cff"
       },
       {
-        "id": "assy",
-        "name": "assy",
-        "description": "6 个 CAD",
+        "id": "rev2",
+        "name": "Rev2",
+        "description": "17 个 PCB · 2 个 BOM · 1 个 CAD",
         "x": 20.8,
         "y": 54.2,
         "color": "#ff7a7a"
       },
       {
-        "id": "board-shape",
-        "name": "Board Shape",
-        "description": "5 个 CAD",
+        "id": "power-distribution-board",
+        "name": "Power Distribution Board",
+        "description": "20 个 PCB",
         "x": 26.5,
         "y": 30.5,
         "color": "#7affc4"
@@ -31606,128 +32118,68 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "parts": [
       {
-        "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev1-assy-gimbal-pcb-rev1-sldp",
-        "assembly": "assy",
-        "name": "Gimbal-PCB-Rev1",
-        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 5,288,145 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev1/assy/Gimbal-PCB-Rev1.SLDPRT"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev1-assy-gimbal-pcb-rev1-step",
-        "assembly": "assy",
-        "name": "Gimbal-PCB-Rev1",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,966,647 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev1/assy/Gimbal-PCB-Rev1.step"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-safety-rev1-assy-safety-rev1-sldprt",
-        "assembly": "assy",
-        "name": "Safety-Rev1",
-        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 5,230,236 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Safety/Rev1/assy/Safety-Rev1.SLDPRT"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev2-board-shape-backconnector",
-        "assembly": "board-shape",
-        "name": "BackConnectors",
-        "specification": "参数化 CAD · 可再导出加工 .DXF · 70,402 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev2/Board%20Shape/BackConnectors.DXF"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev2-board-shape-frontconnecto",
-        "assembly": "board-shape",
-        "name": "FrontConnectors",
-        "specification": "参数化 CAD · 可再导出加工 .DXF · 172,336 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev2/Board%20Shape/FrontConnectors.DXF"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev2-board-shape-screw-step",
-        "assembly": "board-shape",
-        "name": "Screw",
-        "specification": "参数化 CAD · 可再导出加工 .STEP · 363,082 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev2/Board%20Shape/Screw.STEP"
-      },
-      {
-        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev2-project-outputs-for-48v-5",
+        "id": "uwrobotics-marsroverhardware-projects-30to50v-24v-pdb-rev1-30to50v-24v-pdb-proje",
         "assembly": "gerber",
-        "name": "48V-5V Buck_Copper_Signal_1",
-        "specification": "电路设计文件 .gbr · 37,228 B",
+        "name": "30to50V-24V_10A",
+        "specification": "电路设计文件 .GBL · 23,468 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev2/Project%20Outputs%20for%2048V-5V%20Buck/Gerber/48V-5V%20Buck_Copper_Signal_1.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/30to50V-24V%20PDB/Rev1/30to50V-24V%20PDB/Project%20Outputs%20for%2030to50V-24V%20PDB/Gerber/30to50V-24V_10A.GBL"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev2-project-outputs-for-48v-5",
+        "id": "uwrobotics-marsroverhardware-projects-30to50v-24v-pdb-rev1-30to50v-24v-pdb-proje",
         "assembly": "gerber",
-        "name": "48V-5V Buck_Copper_Signal_2",
-        "specification": "电路设计文件 .gbr · 37,231 B",
+        "name": "30to50V-24V_10A",
+        "specification": "电路设计文件 .GBO · 268 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev2/Project%20Outputs%20for%2048V-5V%20Buck/Gerber/48V-5V%20Buck_Copper_Signal_2.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/30to50V-24V%20PDB/Rev1/30to50V-24V%20PDB/Project%20Outputs%20for%2030to50V-24V%20PDB/Gerber/30to50V-24V_10A.GBO"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev2-project-outputs-for-48v-5",
+        "id": "uwrobotics-marsroverhardware-projects-30to50v-24v-pdb-rev1-30to50v-24v-pdb-proje",
         "assembly": "gerber",
-        "name": "48V-5V Buck_Copper_Signal_Bot",
-        "specification": "电路设计文件 .gbr · 23,708 B",
+        "name": "30to50V-24V_10A",
+        "specification": "电路设计文件 .GBS · 581 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev2/Project%20Outputs%20for%2048V-5V%20Buck/Gerber/48V-5V%20Buck_Copper_Signal_Bot.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/30to50V-24V%20PDB/Rev1/30to50V-24V%20PDB/Project%20Outputs%20for%2030to50V-24V%20PDB/Gerber/30to50V-24V_10A.GBS"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-battery-management-system-rev3-project-out",
-        "assembly": "gerbers",
-        "name": "BMSRev3_Copper_Signal_1",
-        "specification": "电路设计文件 .gbr · 98,495 B",
+        "id": "uwrobotics-marsroverhardware-projects-24v-multiphase-buck-rev-1-project-outputs-",
+        "assembly": "gerber-output",
+        "name": "24V Multiphase Buck",
+        "specification": "电路设计文件 .GBL · 111,768 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Battery%20Management%20System/Rev3/Project%20Outputs%20for%20Battery%20Management%20System%20Rev3/BMS%20Rev%203%202022-10-09/Gerbers/BMSRev3_Copper_Signal_1.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/24V%20Multiphase%20Buck/Rev%201/Project%20Outputs/Gerber%20Output/24V%20Multiphase%20Buck.GBL"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-battery-management-system-rev3-project-out",
-        "assembly": "gerbers",
-        "name": "BMSRev3_Copper_Signal_2",
-        "specification": "电路设计文件 .gbr · 201,638 B",
+        "id": "uwrobotics-marsroverhardware-projects-24v-multiphase-buck-rev-1-project-outputs-",
+        "assembly": "gerber-output",
+        "name": "24V Multiphase Buck",
+        "specification": "电路设计文件 .GBO · 268 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Battery%20Management%20System/Rev3/Project%20Outputs%20for%20Battery%20Management%20System%20Rev3/BMS%20Rev%203%202022-10-09/Gerbers/BMSRev3_Copper_Signal_2.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/24V%20Multiphase%20Buck/Rev%201/Project%20Outputs/Gerber%20Output/24V%20Multiphase%20Buck.GBO"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-battery-management-system-rev3-project-out",
-        "assembly": "gerbers",
-        "name": "BMSRev3_Copper_Signal_Bot",
-        "specification": "电路设计文件 .gbr · 137,446 B",
+        "id": "uwrobotics-marsroverhardware-projects-24v-multiphase-buck-rev-1-project-outputs-",
+        "assembly": "gerber-output",
+        "name": "24V Multiphase Buck",
+        "specification": "电路设计文件 .GBS · 661 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Battery%20Management%20System/Rev3/Project%20Outputs%20for%20Battery%20Management%20System%20Rev3/BMS%20Rev%203%202022-10-09/Gerbers/BMSRev3_Copper_Signal_Bot.gbr"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/24V%20Multiphase%20Buck/Rev%201/Project%20Outputs/Gerber%20Output/24V%20Multiphase%20Buck.GBS"
       },
       {
         "id": "uwrobotics-marsroverhardware-projects-battery-management-system-rev1-project-out",
-        "assembly": "project-outputs-for-48v-5v-buck",
+        "assembly": "gerbers",
         "name": "Bill of Materials-Battery Management System(Production)",
         "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
@@ -31737,7 +32189,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "id": "uwrobotics-marsroverhardware-projects-robot-controller-dev-board-dev-board-bom-x",
-        "assembly": "project-outputs-for-48v-5v-buck",
+        "assembly": "gerbers",
         "name": "Dev Board BOM",
         "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
@@ -31747,13 +32199,73 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "id": "uwrobotics-marsroverhardware-projects-gimbal-2021-rev1-fab-gimbal-2020-bom-xls",
-        "assembly": "project-outputs-for-48v-5v-buck",
+        "assembly": "gerbers",
         "name": "Gimbal 2020-BOM",
         "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
         "kind": "MAKE",
         "state": "verified",
         "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Gimbal/2021/Rev1/fab/Gimbal%202020-BOM.xls"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev4-1-power-dist",
+        "assembly": "power-distribution-board",
+        "name": "Power Distribution Board",
+        "specification": "电路设计文件 .G1 · 46,184 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev4.1/Power%20Distribution%20Board/Project%20Outputs%20for%20Power%20Distribution%20Board/Power%20Distribution%20Board.G1"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev4-1-power-dist",
+        "assembly": "power-distribution-board",
+        "name": "Power Distribution Board",
+        "specification": "电路设计文件 .G2 · 42,610 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev4.1/Power%20Distribution%20Board/Project%20Outputs%20for%20Power%20Distribution%20Board/Power%20Distribution%20Board.G2"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev4-1-power-dist",
+        "assembly": "power-distribution-board",
+        "name": "Power Distribution Board",
+        "specification": "电路设计文件 .GBL · 14,770 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev4.1/Power%20Distribution%20Board/Project%20Outputs%20for%20Power%20Distribution%20Board/Power%20Distribution%20Board.GBL"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev-3-project-outputs-for-48v-",
+        "assembly": "project-outputs-for-48v-5v-buck",
+        "name": "48V-5V Buck_Copper_Signal_1",
+        "specification": "电路设计文件 .gbr · 37,228 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev%203/Project%20Outputs%20for%2048V-5V%20Buck/48V-5V%20Buck_Copper_Signal_1.gbr"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev-3-project-outputs-for-48v-",
+        "assembly": "project-outputs-for-48v-5v-buck",
+        "name": "48V-5V Buck_Copper_Signal_2",
+        "specification": "电路设计文件 .gbr · 37,231 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev%203/Project%20Outputs%20for%2048V-5V%20Buck/48V-5V%20Buck_Copper_Signal_2.gbr"
+      },
+      {
+        "id": "uwrobotics-marsroverhardware-projects-48v-5v-buck-rev-3-project-outputs-for-48v-",
+        "assembly": "project-outputs-for-48v-5v-buck",
+        "name": "48V-5V Buck_Copper_Signal_Bot",
+        "specification": "电路设计文件 .gbr · 23,708 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-5V%20Buck/Rev%203/Project%20Outputs%20for%2048V-5V%20Buck/48V-5V%20Buck_Copper_Signal_Bot.gbr"
       },
       {
         "id": "uwrobotics-marsroverhardware-projects-arm-rev1-arm-bom-xls",
@@ -31776,44 +32288,44 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Science/Rev1/Science-BOM.xls"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-arm-rev1-arm-pcb-rev1-sldprt",
+        "id": "uwrobotics-marsroverhardware-projects-48v-24v-buck-converter-rev1-project-output",
         "assembly": "rev1",
-        "name": "Arm-PCB-Rev1",
-        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 8,631,368 B",
+        "name": "48V-24V Buck Converter",
+        "specification": "电路设计文件 .G1 · 27,763 B",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Arm/Rev1/Arm-PCB-Rev1.SLDPRT"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/48V-24V%20Buck%20Converter/Rev1/Project%20Outputs%20for%2048V-24V%20Buck%20Converter/48V-24V%20Buck%20Converter.G1"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev6-1-power-dist",
-        "assembly": "step-files",
-        "name": "48-17V Buck Converter",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,761,568 B",
+        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev2-power-distri",
+        "assembly": "rev2",
+        "name": "Power Distribution Board BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev6.1/Power%20Distribution%20Board/Step%20Files/48-17V%20Buck%20Converter.step"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev2/Power%20Distribution%20Board%20BOM.xlsx"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev6-power-distri",
-        "assembly": "step-files",
-        "name": "48-17V Buck Converter",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,761,568 B",
+        "id": "uwrobotics-marsroverhardware-projects-science-rev2-science-bom-pcbway-xlsx",
+        "assembly": "rev2",
+        "name": "Science BOM PCBWay",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev6/Power%20Distribution%20Board/Step%20Files/48-17V%20Buck%20Converter.step"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Science/Rev2/Science%20BOM%20PCBWay.xlsx"
       },
       {
-        "id": "uwrobotics-marsroverhardware-projects-power-distribution-board-rev6-1-power-dist",
-        "assembly": "step-files",
-        "name": "48V-5V Buck",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,406,089 B",
+        "id": "uwrobotics-marsroverhardware-projects-low-power-brushed-motor-controller-rev2-pr",
+        "assembly": "rev2",
+        "name": "Low Power Brushed Motor Controller",
+        "specification": "电路设计文件 .GBL · 17,700 B",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Power%20Distribution%20Board/Rev6.1/Power%20Distribution%20Board/Step%20Files/48V-5V%20Buck.step"
+        "source": "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Low%20Power%20Brushed%20Motor%20Controller/Rev2/Project%20Outputs%20for%20Brushed_Motorcontroller/Low%20Power%20Brushed%20Motor%20Controller.GBL"
       }
     ],
     "evidence": [
@@ -31825,9 +32337,9 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       },
       {
         "label": "电路设计",
-        "url": "https://github.com/uwrobotics/MarsRoverHardware/tree/HEAD/Projects/48V-5V%20Buck/Rev%203/Project%20Outputs%20for%2048V-5V%20Buck",
+        "url": "https://github.com/uwrobotics/MarsRoverHardware/tree/HEAD/Projects/24V%20Multiphase%20Buck/Rev%201/Project%20Outputs/Gerber%20Output",
         "state": "verified",
-        "detail": "PCB / 原理图目录：Projects/48V-5V Buck/Rev 3/Project Outputs for 48V-5V Buck"
+        "detail": "PCB / 原理图目录：Projects/24V Multiphase Buck/Rev 1/Project Outputs/Gerber Output"
       },
       {
         "label": "BOM",
@@ -34062,7 +34574,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "gerber-lsa",
         "name": "gerber_lsa",
-        "description": "24 个 PCB · 20 个 CAD · 1 个 MESH",
+        "description": "24 个 PCB · 20 个 CAD · 1 个 BOM · 1 个 MESH",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -34118,6 +34630,16 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "parts": [
       {
+        "id": "sra-vjti-sra-board-hardware-design-sra-dev-board-2026-bom-sra-dev-board-2026-csv",
+        "assembly": "gerber-lsa",
+        "name": "sra_dev_board_2026",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/SRA-VJTI/sra-board-hardware-design/blob/HEAD/sra_dev_board_2026/bom/sra_dev_board_2026.csv"
+      },
+      {
         "id": "sra-vjti-sra-board-hardware-design-lsa-board-lsa-kicad-pcb",
         "assembly": "gerber-lsa",
         "name": "lsa",
@@ -34136,16 +34658,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PCB",
         "state": "verified",
         "source": "https://github.com/SRA-VJTI/sra-board-hardware-design/blob/HEAD/LSA_board/lsa.kicad_sch"
-      },
-      {
-        "id": "sra-vjti-sra-board-hardware-design-lsa-board-gerber-lsa-lsa-b-cu-gbr",
-        "assembly": "gerber-lsa",
-        "name": "lsa-B_Cu",
-        "specification": "电路设计文件 .gbr · 99,027 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/SRA-VJTI/sra-board-hardware-design/blob/HEAD/LSA_board/gerber_lsa/lsa-B_Cu.gbr"
       },
       {
         "id": "sra-vjti-sra-board-hardware-design-gerber-sra-dev-board-sra-dev-board-2026-b-cu-",
@@ -34348,6 +34860,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "detail": "PCB / 原理图目录：LSA_board"
       },
       {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/SRA-VJTI/sra-board-hardware-design/blob/HEAD/sra_dev_board_2026/bom/sra_dev_board_2026.csv",
+        "detail": "仓库内物料清单：sra_dev_board_2026/bom/sra_dev_board_2026.csv"
+      },
+      {
         "label": "上游仓库",
         "state": "verified",
         "url": "https://github.com/SRA-VJTI/sra-board-hardware-design",
@@ -34356,7 +34874,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
-      "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
@@ -37483,363 +38000,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     }
   },
   {
-    "id": "REPO-LXLIAM-LEGGED_MPC_AMP",
-    "name": "legged_mpc_amp",
-    "category": "QUADRUPED",
-    "version": "2026-07-22",
-    "embodiment": "12-DOF 级",
-    "summary": "AMP gait generator for quadruped robots (NMPC + WBC)",
-    "repository": "https://github.com/Lxliam/legged_mpc_amp",
-    "releaseBasis": "仓库 Lxliam/legged_mpc_amp 的公开文件树快照（4173 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
-    "stars": 61,
-    "license": "NOASSERTION",
-    "assemblies": [
-      {
-        "id": "franka",
-        "name": "franka",
-        "description": "49 个 MESH",
-        "x": 50.0,
-        "y": 20.0,
-        "color": "#d3ea5c"
-      },
-      {
-        "id": "kinova",
-        "name": "kinova",
-        "description": "17 个 MESH · 1 个 CAD",
-        "x": 73.5,
-        "y": 30.5,
-        "color": "#5aa9ff"
-      },
-      {
-        "id": "base",
-        "name": "base",
-        "description": "11 个 MESH",
-        "x": 79.2,
-        "y": 54.2,
-        "color": "#35d0c8"
-      },
-      {
-        "id": "gripper-v0",
-        "name": "gripper_v0",
-        "description": "10 个 MESH",
-        "x": 63.0,
-        "y": 73.2,
-        "color": "#ffb454"
-      },
-      {
-        "id": "ur5",
-        "name": "ur5",
-        "description": "7 个 MESH",
-        "x": 37.0,
-        "y": 73.2,
-        "color": "#b98cff"
-      },
-      {
-        "id": "base-v0",
-        "name": "base_v0",
-        "description": "6 个 MESH",
-        "x": 20.8,
-        "y": 54.2,
-        "color": "#ff7a7a"
-      },
-      {
-        "id": "kinect-prosilica-v0",
-        "name": "kinect_prosilica_v0",
-        "description": "6 个 MESH",
-        "x": 26.5,
-        "y": 30.5,
-        "color": "#7affc4"
-      },
-      {
-        "id": "software-docs",
-        "name": "软件与文档",
-        "description": "非硬件件｜运动学描述与控制/装配文档",
-        "x": 28.8,
-        "y": 28.2,
-        "color": "#8894a6"
-      }
-    ],
-    "parts": [
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base",
-        "name": "3dm-gxX",
-        "specification": "网格文件 · 可直接打印 .stl · 11,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/base/3dm-gxX.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base",
-        "name": "axle",
-        "specification": "网格文件 · 可直接打印 .stl · 7,284 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/base/axle.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base",
-        "name": "body",
-        "specification": "网格文件 · 可直接打印 .stl · 29,484 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/base/body.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base-v0",
-        "name": "base",
-        "specification": "网格文件 · 可直接打印 .stl · 58,284 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/base_v0/base.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base-v0",
-        "name": "base_L",
-        "specification": "网格文件 · 可直接打印 .stl · 4,884 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/base_v0/base_L.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "base-v0",
-        "name": "caster",
-        "specification": "网格文件 · 可直接打印 .stl · 50,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/base_v0/caster.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-ballbot-mesh",
-        "assembly": "franka",
-        "name": "base",
-        "specification": "网格文件 · 可直接打印 .obj · 7,645,141 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/ballbot/meshes/base.obj"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "franka",
-        "name": "elbow_flex",
-        "specification": "网格文件 · 可直接打印 .stl · 7,484 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/upper_arm_v0/elbow_flex.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "franka",
-        "name": "forearm",
-        "specification": "网格文件 · 可直接打印 .stl · 17,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/forearm_v0/forearm.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "gripper-v0",
-        "name": "finger_tip_l",
-        "specification": "网格文件 · 可直接打印 .stl · 44,484 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/gripper_v0/finger_tip_l.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "gripper-v0",
-        "name": "finger_tip_pad2_l",
-        "specification": "网格文件 · 可直接打印 .stl · 6,984 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/gripper_v0/finger_tip_pad2_l.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "gripper-v0",
-        "name": "finger_tip_pad2_r",
-        "specification": "网格文件 · 可直接打印 .stl · 6,984 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/gripper_v0/finger_tip_pad2_r.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinect-prosilica-v0",
-        "name": "115x100_swept_back--coarse",
-        "specification": "网格文件 · 可直接打印 .STL · 916,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/sensors/kinect_prosilica_v0/115x100_swept_back--coarse.STL"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinect-prosilica-v0",
-        "name": "115x100_swept_back_no_sensors--coarse",
-        "specification": "网格文件 · 可直接打印 .STL · 639,884 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/sensors/kinect_prosilica_v0/115x100_swept_back_no_sensors--coarse.STL"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinect-prosilica-v0",
-        "name": "115x100_swept_fwd--coarse",
-        "specification": "网格文件 · 可直接打印 .STL · 916,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/pr2/meshes/sensors/kinect_prosilica_v0/115x100_swept_fwd--coarse.STL"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinova",
-        "name": "arm",
-        "specification": "网格文件 · 可直接打印 .STL · 410,884 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/kinova/meshes/arm.STL"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinova",
-        "name": "arm",
-        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 597,168 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/kinova/meshes/arm.SLDPRT"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "kinova",
-        "name": "arm_half_1",
-        "specification": "网格文件 · 可直接打印 .STL · 321,084 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/kinova/meshes/arm_half_1.STL"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-docs-build-guide-md",
-        "assembly": "software-docs",
-        "name": "build_guide",
-        "specification": "装配/构建文档 .md · 3,422 B",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/docs/build_guide.md"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-docs-build-guide-en-md",
-        "assembly": "software-docs",
-        "name": "build_guide_EN",
-        "specification": "装配/构建文档 .md · 3,646 B",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/docs/build_guide_EN.md"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-ocs2-doc-docs-getting-started-rst",
-        "assembly": "software-docs",
-        "name": "getting-started",
-        "specification": "装配/构建文档 .rst · 10,943 B",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2/ocs2_doc/docs/getting-started.rst"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "ur5",
-        "name": "base",
-        "specification": "网格文件 · 可直接打印 .stl · 28,984 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/ur5/collision/base.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "ur5",
-        "name": "forearm",
-        "specification": "网格文件 · 可直接打印 .stl · 52,584 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/ur5/collision/forearm.stl"
-      },
-      {
-        "id": "lxliam-legged-mpc-amp-src-third-party-ocs2-robotic-assets-resources-mobile-manip",
-        "assembly": "ur5",
-        "name": "shoulder",
-        "specification": "网格文件 · 可直接打印 .stl · 33,784 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/ridgeback_ur5/meshes/ur5/collision/shoulder.stl"
-      }
-    ],
-    "evidence": [
-      {
-        "label": "CAD 网格",
-        "url": "https://github.com/Lxliam/legged_mpc_amp/tree/HEAD/src/legged_robot_description/meshes/Lite3",
-        "state": "verified",
-        "detail": "3D 打印件网格目录：src/legged_robot_description/meshes/Lite3"
-      },
-      {
-        "label": "参数化 CAD",
-        "url": "https://github.com/Lxliam/legged_mpc_amp/tree/HEAD/src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/kinova/meshes",
-        "state": "verified",
-        "detail": "可再导出的参数化设计目录：src/third_party/ocs2_robotic_assets/resources/mobile_manipulator/kinova/meshes"
-      },
-      {
-        "label": "运动学模型",
-        "url": "https://github.com/Lxliam/legged_mpc_amp/tree/HEAD/src/legged_robot_description/urdf",
-        "state": "verified",
-        "detail": "URDF / MJCF 机器人描述目录：src/legged_robot_description/urdf"
-      },
-      {
-        "label": "上游仓库",
-        "state": "verified",
-        "url": "https://github.com/Lxliam/legged_mpc_amp",
-        "detail": "AMP gait generator for quadruped robots (NMPC + WBC)"
-      }
-    ],
-    "gaps": [
-      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
-      "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
-      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
-      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
-    ],
-    "reproduction": {
-      "state": "UNSCORED",
-      "reason": "NOT_YET_MODELED",
-      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
-    }
-  },
-  {
     "id": "REPO-NIMBRO-NIMBRO-OP2",
     "name": "nimbro-op2",
     "category": "ROBOT",
@@ -38754,57 +38914,57 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "license": "无",
     "assemblies": [
       {
-        "id": "project-outputs-for-can-dshot-adapter",
-        "name": "Project Outputs for CAN DSHOT Adapter",
-        "description": "31 个 PCB · 23 个 CAD · 9 个 BOM",
+        "id": "gerber",
+        "name": "Gerber",
+        "description": "75 个 PCB · 27 个 CAD · 9 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
       },
       {
-        "id": "project-outputs-for-6s-servo-module",
-        "name": "Project Outputs for 6S Servo Module",
-        "description": "22 个 PCB",
+        "id": "project-outputs-for-can-dshot-adapter",
+        "name": "Project Outputs for CAN DSHOT Adapter",
+        "description": "23 个 PCB",
         "x": 73.5,
         "y": 30.5,
         "color": "#5aa9ff"
       },
       {
-        "id": "scottokeebs-cad-3dshapes",
-        "name": "ScottoKeebs_CAD.3dshapes",
-        "description": "18 个 CAD",
+        "id": "project-outputs-for-6s-servo-module",
+        "name": "Project Outputs for 6S Servo Module",
+        "description": "22 个 PCB",
         "x": 79.2,
         "y": 54.2,
         "color": "#35d0c8"
       },
       {
-        "id": "scottokeebs-components-3dshapes",
-        "name": "ScottoKeebs_Components.3dshapes",
+        "id": "scottokeebs-cad-3dshapes",
+        "name": "ScottoKeebs_CAD.3dshapes",
         "description": "18 个 CAD",
         "x": 63.0,
         "y": 73.2,
         "color": "#ffb454"
       },
       {
-        "id": "scottokeebs-mcu-3dshapes",
-        "name": "ScottoKeebs_MCU.3dshapes",
-        "description": "11 个 CAD",
+        "id": "scottokeebs-components-3dshapes",
+        "name": "ScottoKeebs_Components.3dshapes",
+        "description": "18 个 CAD",
         "x": 37.0,
         "y": 73.2,
         "color": "#b98cff"
       },
       {
-        "id": "scottokeebs-stabilizer-3dshapes",
-        "name": "ScottoKeebs_Stabilizer.3dshapes",
-        "description": "6 个 CAD",
+        "id": "scottokeebs-mcu-3dshapes",
+        "name": "ScottoKeebs_MCU.3dshapes",
+        "description": "11 个 CAD",
         "x": 20.8,
         "y": 54.2,
         "color": "#ff7a7a"
       },
       {
-        "id": "pegasus-2",
-        "name": "Pegasus 2",
-        "description": "4 个 PCB",
+        "id": "12-5v-protected-buck",
+        "name": "12-5V Protected Buck",
+        "description": "8 个 PCB · 2 个 CAD",
         "x": 26.5,
         "y": 30.5,
         "color": "#7affc4"
@@ -38820,34 +38980,64 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "parts": [
       {
-        "id": "uwarg-hardware-harness-pegasus-2-jst-can-example-dsn",
-        "assembly": "pegasus-2",
-        "name": "JST CAN example",
-        "specification": "电路设计文件 .dsn · 4,616 B",
+        "id": "uwarg-hardware-projects-12-5v-protected-buck-project-outputs-for-12v-5v-5a-buck-",
+        "assembly": "12-5v-protected-buck",
+        "name": "PCB",
+        "specification": "电路设计文件 .G1 · 15,860 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Harness/Pegasus%202/JST%20CAN%20example.dsn"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12-5V%20Protected%20Buck/Project%20Outputs%20for%2012V-5V%20%40%205A%20Buck%20Converter/PCB.G1"
       },
       {
-        "id": "uwarg-hardware-harness-pegasus-2-lighting-harness-dsn",
-        "assembly": "pegasus-2",
-        "name": "Lighting harness",
-        "specification": "电路设计文件 .dsn · 22,475 B",
+        "id": "uwarg-hardware-projects-12-5v-protected-buck-project-outputs-for-12v-5v-5a-buck-",
+        "assembly": "12-5v-protected-buck",
+        "name": "PCB",
+        "specification": "电路设计文件 .G2 · 16,620 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Harness/Pegasus%202/Lighting%20harness.dsn"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12-5V%20Protected%20Buck/Project%20Outputs%20for%2012V-5V%20%40%205A%20Buck%20Converter/PCB.G2"
       },
       {
-        "id": "uwarg-hardware-harness-pegasus-2-rpi-harness-dsn",
-        "assembly": "pegasus-2",
-        "name": "Rpi harness",
-        "specification": "电路设计文件 .dsn · 91,724 B",
+        "id": "uwarg-hardware-projects-12-5v-protected-buck-project-outputs-for-12v-5v-5a-buck-",
+        "assembly": "12-5v-protected-buck",
+        "name": "PCB",
+        "specification": "电路设计文件 .GBL · 15,863 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Harness/Pegasus%202/Rpi%20harness.dsn"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12-5V%20Protected%20Buck/Project%20Outputs%20for%2012V-5V%20%40%205A%20Buck%20Converter/PCB.GBL"
+      },
+      {
+        "id": "uwarg-hardware-projects-12-5v-buck-elrs-rx-bom-csv",
+        "assembly": "gerber",
+        "name": "BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12-5V%20Buck%20%2B%20ELRS%20RX/BOM.csv"
+      },
+      {
+        "id": "uwarg-hardware-projects-12v-5v-buck-converter-bom-no-variations-csv",
+        "assembly": "gerber",
+        "name": "BOM_[No Variations]",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12V-5V%20Buck%20Converter/BOM_%5BNo%20Variations%5D.csv"
+      },
+      {
+        "id": "uwarg-hardware-projects-24v-12v-5v-buck-converter-bom-no-variations-csv",
+        "assembly": "gerber",
+        "name": "BOM_[No Variations]",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/24V-12V%2C5V%20Buck%20Converter/BOM_%5BNo%20Variations%5D.csv"
       },
       {
         "id": "uwarg-hardware-projects-6s-servo-module-project-outputs-for-6s-servo-module-6s-s",
@@ -38880,34 +39070,34 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/6S%20Servo%20Module/Project%20Outputs%20for%206S%20Servo%20Module/6S_SERVO_MODULE_Copper_Signal_2.gbr"
       },
       {
-        "id": "uwarg-hardware-projects-12-5v-buck-elrs-rx-bom-csv",
+        "id": "uwarg-hardware-projects-can-dshot-adapter-project-outputs-for-can-dshot-adapter-",
         "assembly": "project-outputs-for-can-dshot-adapter",
-        "name": "BOM",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "name": "PCB",
+        "specification": "电路设计文件 .DRL · 1,017 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12-5V%20Buck%20%2B%20ELRS%20RX/BOM.csv"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/CAN%20DSHOT%20Adapter/Project%20Outputs%20for%20CAN%20DSHOT%20Adapter/PCB.DRL"
       },
       {
-        "id": "uwarg-hardware-projects-12v-5v-buck-converter-bom-no-variations-csv",
+        "id": "uwarg-hardware-projects-can-dshot-adapter-project-outputs-for-can-dshot-adapter-",
         "assembly": "project-outputs-for-can-dshot-adapter",
-        "name": "BOM_[No Variations]",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "name": "PCB_Bottom_3D_Body",
+        "specification": "电路设计文件 .gbr · 270 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/12V-5V%20Buck%20Converter/BOM_%5BNo%20Variations%5D.csv"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/CAN%20DSHOT%20Adapter/Project%20Outputs%20for%20CAN%20DSHOT%20Adapter/PCB_Bottom_3D_Body.gbr"
       },
       {
-        "id": "uwarg-hardware-projects-24v-12v-5v-buck-converter-bom-no-variations-csv",
+        "id": "uwarg-hardware-projects-can-dshot-adapter-project-outputs-for-can-dshot-adapter-",
         "assembly": "project-outputs-for-can-dshot-adapter",
-        "name": "BOM_[No Variations]",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "name": "PCB_Bottom_Component_Outline",
+        "specification": "电路设计文件 .gbr · 321 B",
         "quantity": "1",
-        "kind": "MAKE",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/24V-12V%2C5V%20Buck%20Converter/BOM_%5BNo%20Variations%5D.csv"
+        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/CAN%20DSHOT%20Adapter/Project%20Outputs%20for%20CAN%20DSHOT%20Adapter/PCB_Bottom_Component_Outline.gbr"
       },
       {
         "id": "uwarg-hardware-projects-imacs-keyboard-scottokicad-3dmodels-scottokeebs-cad-3dsh",
@@ -38998,36 +39188,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/IMACS/Keyboard/ScottoKicad/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step"
-      },
-      {
-        "id": "uwarg-hardware-projects-imacs-keyboard-scottokicad-3dmodels-scottokeebs-stabiliz",
-        "assembly": "scottokeebs-stabilizer-3dshapes",
-        "name": "Stabilizer_MX_2.00u",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,091,860 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/IMACS/Keyboard/ScottoKicad/3dmodels/ScottoKeebs_Stabilizer.3dshapes/Stabilizer_MX_2.00u.step"
-      },
-      {
-        "id": "uwarg-hardware-projects-imacs-keyboard-scottokicad-3dmodels-scottokeebs-stabiliz",
-        "assembly": "scottokeebs-stabilizer-3dshapes",
-        "name": "Stabilizer_MX_3.00u",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,091,878 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/IMACS/Keyboard/ScottoKicad/3dmodels/ScottoKeebs_Stabilizer.3dshapes/Stabilizer_MX_3.00u.step"
-      },
-      {
-        "id": "uwarg-hardware-projects-imacs-keyboard-scottokicad-3dmodels-scottokeebs-stabiliz",
-        "assembly": "scottokeebs-stabilizer-3dshapes",
-        "name": "Stabilizer_MX_6.00u",
-        "specification": "参数化 CAD · 可再导出加工 .step · 2,095,406 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/UWARG/hardware/blob/HEAD/Projects/IMACS/Keyboard/ScottoKicad/3dmodels/ScottoKeebs_Stabilizer.3dshapes/Stabilizer_MX_6.00u.step"
       },
       {
         "id": "uwarg-hardware-projects-12v-5v-buck-converter-assembly-drawings-no-variations-pd",
@@ -45929,10 +46089,18 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "body",
         "name": "body",
-        "description": "10 个 MESH · 1 个 PCB · 1 个 BOM",
+        "description": "10 个 MESH · 1 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
+      },
+      {
+        "id": "gerber",
+        "name": "gerber",
+        "description": "8 个 PCB",
+        "x": 50.0,
+        "y": 76.0,
+        "color": "#5aa9ff"
       }
     ],
     "parts": [
@@ -45945,16 +46113,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "MAKE",
         "state": "verified",
         "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/BOM.html"
-      },
-      {
-        "id": "ssloy-penny-hardware-motherboard-gerber-penny-drl",
-        "assembly": "body",
-        "name": "penny",
-        "specification": "电路设计文件 .DRL · 1,046 B",
-        "quantity": "1",
-        "kind": "PCB",
-        "state": "verified",
-        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.DRL"
       },
       {
         "id": "ssloy-penny-hardware-body-3servohexapod-assembled-stl",
@@ -46055,6 +46213,86 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/body/LegPushRodFinal.stl"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-drl",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .DRL · 1,046 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.DRL"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gbl",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GBL · 26,623 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GBL"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gbo",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GBO · 987 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GBO"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gbs",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GBS · 2,264 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GBS"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gko",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GKO · 1,066 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GKO"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gtl",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GTL · 9,663 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GTL"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gto",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GTO · 22,465 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GTO"
+      },
+      {
+        "id": "ssloy-penny-hardware-motherboard-gerber-penny-gts",
+        "assembly": "gerber",
+        "name": "penny",
+        "specification": "电路设计文件 .GTS · 3,391 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/ssloy/penny/blob/HEAD/hardware/motherboard/gerber/penny.GTS"
       }
     ],
     "evidence": [
@@ -46927,7 +47165,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "head",
         "name": "head",
-        "description": "334 个 MESH · 157 个 CAD · 1 个 BOM",
+        "description": "334 个 MESH · 157 个 CAD · 3 个 BOM",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -47001,24 +47239,24 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/Components/Actuators/OpenTorque%20%28ODrive%29/Bill%20of%20Materials.csv"
       },
       {
-        "id": "hyperspawn-dropbear-cad-files-assembly-full-body-urdf-dropbear-detailed-urdf-mes",
+        "id": "hyperspawn-dropbear-cad-files-assembly-head-external-assembly-bom-nuts-bolts-txt",
         "assembly": "head",
-        "name": "00_top_lvl_p3737_01142022_1",
-        "specification": "网格文件 · 可直接打印 .stl · 133 B",
+        "name": "nuts_bolts",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/meshes/head/00_top_lvl_p3737_01142022_1.stl"
+        "source": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt"
       },
       {
-        "id": "hyperspawn-dropbear-cad-files-assembly-full-body-urdf-dropbear-detailed-urdf-mes",
+        "id": "hyperspawn-dropbear-cad-files-assembly-head-internal-assembly-bom-nuts-bolts-txt",
         "assembly": "head",
-        "name": "10mm-ujoint-base_1",
-        "specification": "网格文件 · 可直接打印 .stl · 131 B",
+        "name": "nuts_bolts",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "MAKE",
         "state": "verified",
-        "source": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/meshes/head/10mm-ujoint-base_1.stl"
+        "source": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Head/INTERNAL_ASSEMBLY/BOM/nuts_bolts.txt"
       },
       {
         "id": "hyperspawn-dropbear-cad-files-assembly-full-body-urdf-dropbear-detailed-urdf-mes",
@@ -47253,8 +47491,8 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "label": "BOM",
         "state": "verified",
-        "url": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/Components/Actuators/OpenTorque%20%28ODrive%29/Bill%20of%20Materials.csv",
-        "detail": "仓库内物料清单：Components/Actuators/OpenTorque (ODrive)/Bill of Materials.csv"
+        "url": "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+        "detail": "仓库内物料清单：CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt"
       },
       {
         "label": "上游仓库",
@@ -51458,7 +51696,7 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "panels",
         "name": "Panels",
-        "description": "73 个 CAD · 9 个 MESH · 2 个 BOM",
+        "description": "80 个 CAD · 9 个 MESH",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
@@ -51504,15 +51742,45 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#ff7a7a"
       },
       {
-        "id": "topplatescananddrawings",
-        "name": "TopPlateScanAndDrawings",
-        "description": "7 个 CAD",
+        "id": "01-output",
+        "name": "01 - OUTPUT",
+        "description": "8 个 PCB · 2 个 BOM",
         "x": 26.5,
         "y": 30.5,
         "color": "#7affc4"
       }
     ],
     "parts": [
+      {
+        "id": "introlab-securbot-hardware-03-charge-station-01-schemas-et-pcb-01-revision-1-000",
+        "assembly": "01-output",
+        "name": "BOM_Charge_Station",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/03%20-%20Charge%20Station/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_Charge_Station.xls"
+      },
+      {
+        "id": "introlab-securbot-hardware-01-powertree-01-schemas-et-pcb-01-revision-1-000-01-o",
+        "assembly": "01-output",
+        "name": "BOM_PowerTree",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/01%20-%20PowerTree/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_PowerTree.xls"
+      },
+      {
+        "id": "introlab-securbot-hardware-01-powertree-01-schemas-et-pcb-01-revision-1-000-01-o",
+        "assembly": "01-output",
+        "name": "PowerTree",
+        "specification": "电路设计文件 .GBL · 39,807 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/01%20-%20PowerTree/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/PowerTree.GBL"
+      },
       {
         "id": "introlab-securbot-hardware-96-mechanical-robotbases-base-pioneer-assembly-assem-",
         "assembly": "assembly",
@@ -51634,26 +51902,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/Base_turtlebot/OriginalParts/kobuki.SLDPRT"
       },
       {
-        "id": "introlab-securbot-hardware-03-charge-station-01-schemas-et-pcb-01-revision-1-000",
-        "assembly": "panels",
-        "name": "BOM_Charge_Station",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/03%20-%20Charge%20Station/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_Charge_Station.xls"
-      },
-      {
-        "id": "introlab-securbot-hardware-01-powertree-01-schemas-et-pcb-01-revision-1-000-01-o",
-        "assembly": "panels",
-        "name": "BOM_PowerTree",
-        "specification": "物料清单文件 · 数量与单价需人工核对",
-        "quantity": "1",
-        "kind": "MAKE",
-        "state": "verified",
-        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/01%20-%20PowerTree/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_PowerTree.xls"
-      },
-      {
         "id": "introlab-securbot-hardware-96-mechanical-robotbases-odasmaterials-91290a110-blac",
         "assembly": "panels",
         "name": "91290A110_BLACK-OXIDE CLASS 12.9 SOCKET HEAD CAP SCREW",
@@ -51662,6 +51910,26 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/OdasMaterials/91290A110_BLACK-OXIDE%20CLASS%2012.9%20SOCKET%20HEAD%20CAP%20SCREW.SLDPRT"
+      },
+      {
+        "id": "introlab-securbot-hardware-96-mechanical-robotbases-odasmaterials-95610a330-nylo",
+        "assembly": "panels",
+        "name": "95610A330_NYLON FLAT WASHER",
+        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 62,957 B",
+        "quantity": "1",
+        "kind": "PRINT",
+        "state": "verified",
+        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/OdasMaterials/95610A330_NYLON%20FLAT%20WASHER.SLDPRT"
+      },
+      {
+        "id": "introlab-securbot-hardware-96-mechanical-robotbases-odasmaterials-98952a120-alum",
+        "assembly": "panels",
+        "name": "98952A120_ALUM MALE-FEM THRDED HEX STANDOFF",
+        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 684,185 B",
+        "quantity": "1",
+        "kind": "PRINT",
+        "state": "verified",
+        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/OdasMaterials/98952A120_ALUM%20MALE-FEM%20THRDED%20HEX%20STANDOFF.SLDPRT"
       },
       {
         "id": "introlab-securbot-hardware-96-mechanical-charge-station-pannels-back-pannel-dxf",
@@ -51692,36 +51960,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "kind": "PRINT",
         "state": "verified",
         "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/Charge%20Station/Pannels/Bottom_Pannel.DXF"
-      },
-      {
-        "id": "introlab-securbot-hardware-96-mechanical-robotbases-base-pioneer-topplatescanand",
-        "assembly": "topplatescananddrawings",
-        "name": "Part1",
-        "specification": "参数化 CAD · 可再导出加工 .SLDPRT · 90,464 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/Base_pioneer/TopPlateScanAndDrawings/Part1.SLDPRT"
-      },
-      {
-        "id": "introlab-securbot-hardware-96-mechanical-robotbases-base-pioneer-topplatescanand",
-        "assembly": "topplatescananddrawings",
-        "name": "Pioneer",
-        "specification": "参数化 CAD · 可再导出加工 .dxf · 103,432 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/Base_pioneer/TopPlateScanAndDrawings/Pioneer.dxf"
-      },
-      {
-        "id": "introlab-securbot-hardware-96-mechanical-robotbases-base-pioneer-topplatescanand",
-        "assembly": "topplatescananddrawings",
-        "name": "Pioneer_Compare_Plates",
-        "specification": "参数化 CAD · 可再导出加工 .SLDASM · 1,230,376 B",
-        "quantity": "1",
-        "kind": "PRINT",
-        "state": "verified",
-        "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/RobotBases/Base_pioneer/TopPlateScanAndDrawings/Pioneer_Compare_Plates.SLDASM"
       }
     ],
     "evidence": [
@@ -51736,6 +51974,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "url": "https://github.com/introlab/securbot/tree/HEAD/hardware/96%20-%20Mechanical/Charge%20Station",
         "state": "verified",
         "detail": "可再导出的参数化设计目录：hardware/96 - Mechanical/Charge Station"
+      },
+      {
+        "label": "电路设计",
+        "url": "https://github.com/introlab/securbot/tree/HEAD/hardware/01%20-%20PowerTree/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT",
+        "state": "verified",
+        "detail": "PCB / 原理图目录：hardware/01 - PowerTree/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT"
       },
       {
         "label": "BOM",
@@ -51753,7 +51997,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
-      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
     "reproduction": {
@@ -53135,15 +53378,53 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "color": "#d3ea5c"
       },
       {
+        "id": "bom",
+        "name": "BOM",
+        "description": "3 个 BOM",
+        "x": 76.0,
+        "y": 62.0,
+        "color": "#5aa9ff"
+      },
+      {
         "id": "dragonflyte",
         "name": "Dragonflyte",
         "description": "2 个 CAD",
-        "x": 50.0,
-        "y": 76.0,
-        "color": "#5aa9ff"
+        "x": 24.0,
+        "y": 62.0,
+        "color": "#35d0c8"
       }
     ],
     "parts": [
+      {
+        "id": "raphaelchang-dragonflyte-hardware-dragonflyte-boards-dragonflyte-project-outputs",
+        "assembly": "bom",
+        "name": "Dragonflyte",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.csv"
+      },
+      {
+        "id": "raphaelchang-dragonflyte-hardware-dragonflyte-boards-dragonflyte-project-outputs",
+        "assembly": "bom",
+        "name": "Dragonflyte",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.xls"
+      },
+      {
+        "id": "raphaelchang-dragonflyte-hardware-dragonflyte-boards-dragonflyte-project-outputs",
+        "assembly": "bom",
+        "name": "Dragonflyte",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.xlsx"
+      },
       {
         "id": "raphaelchang-dragonflyte-hardware-dragonflyte-boards-dragonfleye-cad-camerasketc",
         "assembly": "dragonfleye",
@@ -53243,6 +53524,12 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "detail": "可再导出的参数化设计目录：Dragonflyte/Boards/Dragonfleye/CAD"
       },
       {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.csv",
+        "detail": "仓库内物料清单：Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.csv"
+      },
+      {
         "label": "上游仓库",
         "state": "verified",
         "url": "https://github.com/raphaelchang/dragonflyte-hardware",
@@ -53251,7 +53538,6 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
-      "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
@@ -54592,31 +54878,31 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "gerbers",
         "name": "Gerbers",
-        "description": "4 个 PCB · 1 个 CAD",
+        "description": "16 个 PCB · 1 个 CAD",
         "x": 50.0,
         "y": 20.0,
         "color": "#d3ea5c"
       },
       {
-        "id": "milk-v-hat-rev-b",
-        "name": "Milk V Hat, Rev B",
-        "description": "2 个 BOM · 1 个 CAD",
+        "id": "uncompressed-gerbers",
+        "name": "Uncompressed Gerbers",
+        "description": "9 个 PCB",
         "x": 80.0,
         "y": 48.0,
         "color": "#5aa9ff"
       },
       {
-        "id": "imu-mount-rev-a",
-        "name": "IMU Mount, Rev A",
-        "description": "1 个 CAD · 1 个 BOM",
+        "id": "milk-v-hat-rev-b",
+        "name": "Milk V Hat, Rev B",
+        "description": "2 个 BOM · 1 个 CAD",
         "x": 50.0,
         "y": 76.0,
         "color": "#35d0c8"
       },
       {
-        "id": "uncompressed-gerbers",
-        "name": "Uncompressed Gerbers",
-        "description": "2 个 PCB",
+        "id": "imu-mount-rev-a",
+        "name": "IMU Mount, Rev A",
+        "description": "1 个 CAD · 1 个 BOM",
         "x": 20.0,
         "y": 48.0,
         "color": "#ffb454"
@@ -54624,54 +54910,64 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     ],
     "parts": [
       {
-        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-np",
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-b-",
         "assembly": "gerbers",
-        "name": "IMU Mount-NPTH",
-        "specification": "电路设计文件 .drl · 287 B",
+        "name": "IMU Mount-B_Cu",
+        "specification": "电路设计文件 .gbl · 31,037 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-NPTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-B_Cu.gbl"
       },
       {
-        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-pt",
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-b-",
         "assembly": "gerbers",
-        "name": "IMU Mount-PTH",
-        "specification": "电路设计文件 .drl · 1,112 B",
+        "name": "IMU Mount-B_Mask",
+        "specification": "电路设计文件 .gbs · 1,669 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-PTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-B_Mask.gbs"
       },
       {
-        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-a-gerbers-milkvhat-np",
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-b-",
         "assembly": "gerbers",
-        "name": "MilkVHat-NPTH",
-        "specification": "电路设计文件 .drl · 287 B",
+        "name": "IMU Mount-B_Silkscreen",
+        "specification": "电路设计文件 .gbo · 9,861 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20A/Gerbers/MilkVHat-NPTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-B_Silkscreen.gbo"
       },
       {
-        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-a-gerbers-milkvhat-pt",
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-ed",
         "assembly": "gerbers",
-        "name": "MilkVHat-PTH",
-        "specification": "电路设计文件 .drl · 1,876 B",
+        "name": "IMU Mount-Edge_Cuts",
+        "specification": "电路设计文件 .gm1 · 1,129 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20A/Gerbers/MilkVHat-PTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-Edge_Cuts.gm1"
       },
       {
-        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-a-milkvhat-step",
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-f-",
         "assembly": "gerbers",
-        "name": "MilkVHat",
-        "specification": "参数化 CAD · 可再导出加工 .step · 51,634,046 B",
+        "name": "IMU Mount-F_Cu",
+        "specification": "电路设计文件 .gtl · 43,469 B",
         "quantity": "1",
-        "kind": "PRINT",
+        "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20A/MilkVHat.step"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-F_Cu.gtl"
+      },
+      {
+        "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-gerbers-imu-mount-f-",
+        "assembly": "gerbers",
+        "name": "IMU Mount-F_Mask",
+        "specification": "电路设计文件 .gts · 1,843 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/IMU%20Mount%2C%20Rev%20A/Gerbers/IMU%20Mount-F_Mask.gts"
       },
       {
         "id": "zeroth-robotics-hardware-custom-electronics-imu-mount-rev-a-rev-a-electronics-mi",
@@ -54726,22 +55022,62 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       {
         "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
         "assembly": "uncompressed-gerbers",
-        "name": "MilkVHat-NPTH",
-        "specification": "电路设计文件 .drl · 286 B",
+        "name": "MilkVHat-B_Cu",
+        "specification": "电路设计文件 .gbl · 192,378 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-NPTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-B_Cu.gbl"
       },
       {
         "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
         "assembly": "uncompressed-gerbers",
-        "name": "MilkVHat-PTH",
-        "specification": "电路设计文件 .drl · 1,904 B",
+        "name": "MilkVHat-B_Mask",
+        "specification": "电路设计文件 .gbs · 4,167 B",
         "quantity": "1",
         "kind": "PCB",
         "state": "verified",
-        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-PTH.drl"
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-B_Mask.gbs"
+      },
+      {
+        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
+        "assembly": "uncompressed-gerbers",
+        "name": "MilkVHat-B_Silkscreen",
+        "specification": "电路设计文件 .gbo · 35,597 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-B_Silkscreen.gbo"
+      },
+      {
+        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
+        "assembly": "uncompressed-gerbers",
+        "name": "MilkVHat-Edge_Cuts",
+        "specification": "电路设计文件 .gm1 · 1,981 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-Edge_Cuts.gm1"
+      },
+      {
+        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
+        "assembly": "uncompressed-gerbers",
+        "name": "MilkVHat-F_Cu",
+        "specification": "电路设计文件 .gtl · 146,705 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-F_Cu.gtl"
+      },
+      {
+        "id": "zeroth-robotics-hardware-custom-electronics-milk-v-hat-rev-b-uncompressed-gerber",
+        "assembly": "uncompressed-gerbers",
+        "name": "MilkVHat-F_Mask",
+        "specification": "电路设计文件 .gts · 2,892 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/zeroth-robotics/hardware/blob/HEAD/Custom%20Electronics%20/Milk%20V%20Hat%2C%20Rev%20B/Uncompressed%20Gerbers/MilkVHat-F_Mask.gts"
       }
     ],
     "evidence": [

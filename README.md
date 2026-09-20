@@ -11,8 +11,8 @@
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
 | 管线生成 | 216 个（来自公开仓库树的证据化拆解） |
-| 评分 | OPEN_REPRO_V2：1 个已评分（Berkeley，导入自 physical-ai）· 221 个未评分；<br>证据重现度（ERI）：221 个已计分，锚点 Berkeley = 100，中位 38.0 |
-| 零件行 | 3,908 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
+| 评分 | OPEN_REPRO_V2：1 个已评分（Berkeley，导入自 physical-ai）· 221 个未评分；<br>证据重现度（ERI）：221 个已计分，锚点 Berkeley = 100，中位 39.1 |
+| 零件行 | 3,935 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -65,7 +65,7 @@ pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.gen
 ```
 
 输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 216 个 `WorkbenchProject`
-（3,908 条零件行、1,059 个总成）。规则：
+（3,935 条零件行、1,059 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -302,42 +302,101 @@ if not buckets.get("MESH") and not buckets.get("CAD"):
 
 221 / 222 个项目计分（`HEAD-BEATRIX` 的证据在 OSF，无仓库树可数，如实留空并写明原因）。
 
-- 最高 **107.1**（`roboto_origin`）· 中位 **38.0** · 均值 41.7 · 最低 5.4
-- ≥100 有 **4** 个 · 70–100 有 23 个 · 45–70 有 51 个 · 20–45 有 109 个 · <20 有 34 个
-- 12 个项目的分数为**下界**（有维度未能测量）
+- 最高 **110.0**（`noah-hardware`）· 中位 **39.1** · 均值 43.3 · 最低 5.4
+- ≥100 有 **4** 个 · 70–100 有 25 个 · 45–70 有 57 个 · 20–45 有 103 个 · <20 有 32 个
+- **0 个项目带未测维度**（首版有 12 个，见下文 BOM 解析一节）
 
-中位只有 38.0 是真实信号：多数开源机器人仓库公开了 STL/CAD，但没有可采购清单、
+中位不到 40 是真实信号：多数开源机器人仓库公开了 STL/CAD，但没有可采购清单、
 没有板子设计、没有装配文档——按"能否被第三方复现"这把尺子衡量，离 Berkeley 参考实现确实很远。
 
-### 抽检审计：分类器的三个系统性漏判
+## 审计：从 10% 抽检到全量覆盖
 
-用 `pipeline/audit_sample.py` 分层随机抽 10%（22 个项目）、**不复用缓存**、从实时 API
-独立重取仓库树并重新计数，回答"树是否取全 / 取证是否取全 / 分类器是否漏判"。
-跑出 1 条 HIGH + 10 条 MEDIUM，逐个查实后修掉了三处系统性漏判——**每一项都让分数变了**：
+`pipeline/audit_sample.py` 分层随机抽 10%、**不复用缓存**（缓存正是被审计对象）、
+从实时 API 独立重取仓库树并重新计数。抽检查出问题后，紧接着的问题必然是"那另外 90% 呢"——
+所以把它扩成全量的 `pipeline/audit_all.py`：并发跑完 221 个项目、逐项目输出、
+结果边跑边落 JSONL，跑一千个仓库也不会因中途超时而丢失进度。
+
+审计回答六个问题：树是否取全 / 分类器是否漏判 / **是否误计** / BOM 是否取全 /
+评分能否复算 / **证据引用是否每条都对**。
+
+### 覆盖式断言（审计的正面结论，同样是交付物）
+
+```
+仓库树与实时 API 条目数一致：220/221      实时树被 API 截断：0
+证据引用 1250 条：悬空 0 · 非法 0 · 指向他库 0
+BOM 文件 253 个：全部解析成功（0 未解析、0 抓取失败、0 从未抓取）
+用同一公式喂实时树复算：与记录不一致 0 个
+```
+
+"复算差异 0"是评分可复现的硬证据——比任何文字声明都强。
+
+### 查出的问题（四类，逐条修掉后分数都变了）
+
+**一、漏判：真证据没被计入**
 
 | 漏判 | 影响面 | 性质 |
 | --- | --- | --- |
-| `bill of materials` 里的复数 `s` 让词尾边界失配 | 40 个 BOM 文件 | **最常见的 BOM 命名从未被识别过** |
+| `bill of materials` 里的复数 `s` 让词尾边界失配 | 40 个 BOM 文件 | **最常见的 BOM 命名从未被识别过**；连带 `TotalBOM`/`3DBOM`/`ibom` 与全部中文名 |
 | `.dxf` / `.dwg` 不在 CAD 清单里 | 229 个文件 / 26 个项目 | 激光切割件、钣金图是真实加工文件 |
-| 中文命名的 BOM 无任何规则 | 全部中国项目 | `采购清单` / `物料表` / `散件清单` 整批丢 |
+| 逐层 Gerber（`.gtl/.gbl/.gts/.gbs/.gko`）没算作 PCB | 12 个项目 | 同族的 `.gbr`/`.gerber` 收了，逐层文件没收——**同一件事写了两套判据** |
+| BOM 只测文件名，不测所在目录 | 20 个文件 / 11 个项目 | `BOM/Components.md`、`BOM/Screws.md`、Altium 的 `BOM/Dragonflyte.xls` 整类丢 |
+| 英文的 `purchase_list` 没加（中文的"采购清单"加了） | 若干 | 补一类命名时要两边都过一遍 |
 
-修正后 **34 个项目分数上升、0 个下降**（`barkour_robot` 39.4 → 70.3，`mocktailsmixer`
-15.4 → 40.4）。同时修掉一处**反向错误**：放宽后 PX4 借 `.github/workflows/sbom_license_check.yml`
-混进目录——`SBOM` 是软件许可证合规产物，与能否买到舵机无关；它的 208 个"装配文档"
-其实是 GitHub Copilot 提示词。另有一处**误伤**值得记：首版模板排除规则按文件名匹配
-`template`，删掉了 `Bottom_Cover (Template).FCStd` 这类作者自己命名的真实零件；
-规则只应针对**软件的行为**（Inventor 在 `Templates/` 里自带 45 个 .dwg 图框），
-不应针对**人会怎么命名**。
+**二、误计：把别人的东西算成自己的**
 
-结构闸只能按可观测特征判定，识别不了"BOM 里写的是买两台商用机器人"这类语义问题。
-因此新增人工复核的**拒绝出口** `data/excluded-reviewed.json`（与 `candidates-manual.json`
-这个入口相对），每条形如：
+这一类与漏判方向相反、同样致命，而且**偏袒"把第三方仓库塞进自己目录"的项目**：
+
+| 误计 | 影响面 | 性质 |
+| --- | --- | --- |
+| vendored 第三方代码 | **1623 个文件 / 9 个项目** | `third_party/flexiv_rdk-main/.../flexiv_rizon10_kinematics.urdf` 是商用机械臂的描述；`third_party/include/boost_parts/README.md` 是 **Boost 的 README**（被当成装配说明）；`site-packages/_distutils_hack/`、`node_modules/.bin/` 是随仓库带的依赖 |
+| Autodesk Inventor 自带库 | 100 个 `.ipt` + 59 个 `.iam` + 45 个 `.dwg` | `Blue/Inventor/Design Data/AIT/Mold Design/*.ipt` 等 |
+
+**最重的一条**：`BetaBots`（原第 2 名，101 分）的"最佳 BOM"曾是
+`Blue/Inventor/Design Data/partslist.xml`——2250 行、它 101 分里 **43 分来自这个文件**。
+该文件头部写着 `Created by Autodesk Inventor Version 19.0 Internal`，内容是
+`<Style ... EditableFlag="0" ...>`（样式定义，不可编辑 = 软件自带），
+且不含任何 `betabots`/`robot`/`arm` 字样。剔除后它降到 **78.5**。
+
+**三、放宽引入的反向错误（自己引入、自己查掉）**
+
+- PX4 借 `.github/workflows/sbom_license_check.yml` 混进目录——`SBOM` 是**软件**物料清单；
+  它的 208 个"装配文档"实为 GitHub Copilot 提示词。修了文件名这一路之后，
+  `attest-sbom/action.yml` 又让地面站 `qgroundcontrol` 从**目录**这一路混进来：
+  **同一个判据有两个入口时，两个入口都要堵**。
+- 首版模板排除规则按**文件名**匹配 `template`，删掉了 `Bottom_Cover (Template).FCStd`
+  这类作者自己命名的真实零件。规则只应针对**软件的行为**（Inventor 在 `Templates/` 里
+  自带 45 个 `.dwg` 图框），不应针对**人会怎么命名**。
+- 按目录判 BOM 会把目录里的一切吸进来，其中
+  `02 - BOM AND MANUAL/Assembly Manual PRIMO_1.1.pdf` 从装配文档被改判成 BOM。
+
+同一次审计里，还有三条看着很合理的排除规则**被数据否决**，没有采纳：
+`submodules/`（`Mobile_Robot_URDF_Maker` 把自己写的 xacro 放在名叫 `submodules` 的目录里）、
+`examples/`（目录里的大户 bullet3/esp-idf/sofa **都是已被正确排除的**工具库，
+而目录内的 `AmazingHand` 那 52 个网格是**它自己的手部零件**）、
+`test/fixtures/`（信号太弱，且 `Extras/tests/insert_test.stl` 可能真是要打印的零件）。
+
+**四、测量失败被误报成"格式不支持"**
+
+`fetch_bom_content.py` 原本按**扩展名**分派解析器，并把 `.pdf/.xls/.ods/.docx`
+直接短路成"需专门解析器"。实际按字节看：`.xls` 里有 3 个其实是 xlsx（改名），
+`.xlsx` 里有 4 个是 **39MB** 的文件被 8MB 读取上限截断后报 `BadZipFile`。
+而这些容器（xlsx / ods / docx）**都是 zip+XML，标准库足够**。
+
+改法：按**字节**分派（`PK` / OLE2 / `%PDF-` / 文本），截断单独报出
+"这是我们自己的上限造成的，不是文件格式问题"，PDF 与旧版 `.xls` 走**可选依赖**
+（`pdfplumber` / `xlrd`，缺失时如实写"可选依赖未安装"，而不是笼统说"不支持"）。
+
+结果：BOM 解析从 **170 → 253**，未解析归零，**附带的"下界分数"从 12 个项目降到 0**。
+
+### 结构闸识别不了语义问题，所以给了个正式出口
+
+"BOM 里写的是买两台商用机器人"这类问题，任何可观测特征都判不出来。
+除启发式排除清单（一个**输出**）外，再给一个**输入**：人工复核后排除的名单 + 理由
+（`data/excluded-reviewed.json`），被拒条目连同理由显示在审看台的排除清单里：
 
 > `real-stanford/umi-on-legs` —— 该仓库的 `bill_of_materials.md` 首两行是
 > "Unitree Go2 Edu Plus: $12500 / ARX5: $10000"，它要求读者**购买两台商用机器人**。
 > 按此仓库造不出任何零件。
-
-被拒条目连同理由一并出现在审看台的排除清单里，让"为什么这个项目没进来"在界面上有答案。
 
 ## 运行
 
@@ -354,7 +413,16 @@ python3 fetch_bom_content.py            # 解析全语料 BOM（--force 全量�
 python3 fetch_curated_trees.py          # 补拉策展条目的仓库树
 python3 score_reproduction.py           # 产出 lib/scores.generated.ts + data/score-audit.json
 
-python3 audit_sample.py                 # 抽检 10%：实时重取树、独立重算、分层报告
+# 审计链：全量独立复核（并发、实时重取、边跑边落盘）
+python3 audit_all.py                    # 221 个项目全覆盖 → data/audit-all.json
+python3 audit_sample.py                 # 分层随机 10% 抽检（更便宜，用于快速回归）
+```
+
+PDF 与旧版 `.xls` 的 BOM 走**可选依赖**，缺失时如实记为"可选依赖未安装"
+（而不是笼统的"格式不支持"）。装了就多出 22 个可解析的 BOM：
+
+```bash
+uv run --with pdfplumber --with xlrd python pipeline/fetch_bom_content.py --force
 ```
 
 `--min-tier` 控制收录范围（A/B/C/D），`--max-parts` 控制每个项目的零件行上限。
@@ -400,6 +468,8 @@ data/repo-ids.json                仓库 id → 规范名 映射（去重与改�
 data/bom-content.json             全语料 BOM 的解析结果（含未解析原因）
 data/score-audit.json             逐项目六维评分 + 全部证据（可离线逐条核对）
 data/audit-sample.json            10% 抽检的分层审计结果
+data/audit-all.json               全量审计结果（221 个项目 × 六类检查）
+data/audit-all.jsonl              全量审计的增量落盘中转（可断点续看）
 data/curated-license.json         策展条目的许可标识（取自 gh，避免重复请求）
 app/review/page.tsx               审看台：可筛选表格 + 排除清单
 ```

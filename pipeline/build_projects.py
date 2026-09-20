@@ -55,7 +55,12 @@ PARAMETRIC_CAD = {".step", ".stp", ".iges", ".igs", ".f3d", ".f3z", ".sldprt",
 PRINT_MESH = {".stl", ".3mf", ".obj", ".ply"}
 ROBOT_DESC = {".urdf", ".xacro", ".mjcf", ".usd", ".usda", ".srdf"}
 PCB_EDA = {".kicad_pcb", ".kicad_sch", ".brd", ".sch", ".gerber", ".gbr",
-           ".drl", ".net", ".dsn"}
+           ".drl", ".net", ".dsn",
+           # Gerber 层的逐层文件。全量审计发现 `.gbl/.gtl/.gts/.gbs/.gko` 有
+           # 105+105+104+104+61 个（12 个项目）被漏掉——同族的 `.gbr/.gerber`
+           # 收了，逐层文件没收，属于同一件事写了两套判据。
+           ".gtl", ".gbl", ".gts", ".gbs", ".gto", ".gbo", ".gko",
+           ".gm1", ".gg1", ".g1", ".g2", ".g3", ".gbr", ".gerber"}
 DOC_EXT = {".md", ".pdf", ".txt", ".rst"}
 # 物料清单的识别。
 #
@@ -74,6 +79,7 @@ BOM_RX = re.compile(
     r"|parts?[_\- ]?list"
     r"|material[_\- ]?list"
     r"|shopping[_\- ]?list"
+    r"|purchase[_\- ]?list"
     r"|bom[_\- ]?list"
     # 中文只收明确指零件的说法；裸「清单」不收——`训练前数据清单.md` 不是 BOM。
     r"|采购清单|散件清单|物料清单|物料表|零件清单|采购表"
@@ -104,6 +110,31 @@ CI_PATH_RX = re.compile(r"(^|/)\.(github|gitlab|circleci)(/|$)", re.I)
 #     7 个 FreeCAD 零件。**规则要针对软件的行为，不要针对人会怎么命名。**
 TEMPLATE_DIR_RX = re.compile(r"(^|/)(templates?|design[_\- ]?data|samples?)(/|$)", re.I)
 TEMPLATE_DIR_EXTS = {".dwg", ".xls", ".xlsx", ".xlt"}
+
+# 第三方 vendored 内容不是本项目的证据。
+#
+# `third_party/flexiv_rdk-main/resources/flexiv_rizon10_kinematics.urdf` 是商用机械臂
+# Flexiv Rizon 10 的运动学描述；`ocs2_robotic_assets/.../kinova/meshes/arm.SLDPRT`
+# 是 Kinova 的网格；`gs-render/third_party/glm/doc/manual.pdf` 是 GLM 库的文档。
+# 它们躺在某个仓库里，但不属于那个项目。全量审计实测**1623 个文件 / 9 个项目**
+# 因此被算成证据——最高分的那个项目靠 vendored 的第三方相机描述拿到了运动学维度的分。
+#
+# 这些都是**代码托管的约定目录**，按路径段排除是安全的。
+# 但 `submodules/` 不收：`Mobile_Robot_URDF_Maker` 把自己写的 xacro 放在
+# 名叫 `submodules` 的目录里——同一个名字放什么取决于作者，不取决于约定。
+VENDOR_PATH_RX = re.compile(
+    r"(^|/)(third[_\-]?party|thirdparty|vendor|vendored|node_modules"
+    r"|site-packages|dist-packages|extern|external)(/|$)", re.I)
+
+# Autodesk 自带库同理：`Blue/Inventor/Design Data/AIT/Mold Design/*.ipt`（100 个）、
+# `Blue/Inventor/Design Data/Cable & Harness/de-DE/harness.iam`（59 个）都是
+# Inventor 安装目录里的标准件，不是这个项目的设计。
+#
+# 判据是**软件自身的目录布局**——路径里既有 `Inventor/Autodesk` 段、又有
+# 模板/设计数据段。不能只按"目录叫 Design Data"排除：
+# `Hardware/Design Data/Body Assembly/*.ipt` 是另一个项目**自己的真实装配件**（79 个）。
+_VENDOR_SEG_RX = re.compile(r"(^|/)(inventor|autodesk)(/|$)", re.I)
+_TMPL_SEG_RX = re.compile(r"(^|/)(templates?|design[_\- ]?data)(/|$)", re.I)
 
 # 物料清单必须是**能读出零件行**的表格或文档。只看文件名会出笑话：
 # PX4 的 docs/assets/airframes/.../parts_list.jpg 是一张照片，证明不了任何零件。
@@ -214,8 +245,40 @@ def classify(path: str) -> str | None:
     name = low.rsplit("/", 1)[-1]
     ext = ("." + name.rsplit(".", 1)[-1]) if "." in name else ""
     templated = ext in TEMPLATE_DIR_EXTS and bool(TEMPLATE_DIR_RX.search(low))
-    if (BOM_RX.search(name) and not SOFTWARE_BOM_RX.search(name)
-            and (not ext or ext in BOM_EXT) and not templated):
+    # vendored 代码与 Autodesk 自带库都是"不属于这个项目"的文件。
+    # 这是**误计**（把别人的东西算成自己的），与"漏判"方向相反，
+    # 但同样会让分数失真——而且偏袒的是把第三方仓库塞进自己目录的项目。
+    vendored = bool(VENDOR_PATH_RX.search(low)) or (
+        bool(_VENDOR_SEG_RX.search(low)) and bool(_TMPL_SEG_RX.search(low)))
+    if vendored:
+        return None
+    # BOM 判定不能只看文件名。
+    #
+    # `BOM/Components.md`、`BOM/Screws.md`、`BOM/nuts_bolts.txt`、
+    # `parts_list/extra_parts.md`、Altium 的 `BOM/Dragonflyte.xls`——文件名本身
+    # 不含 bom/parts 字样，但它们就躺在明确的物料目录里。只测 basename 会把
+    # 这一整类真实零件表漏掉（全量审计实测 20 个文件 / 11 个项目）。
+    #
+    # 但按目录判定会把目录里的一切都吸进来，所以还有三个例外——
+    # 每一个都是实际撞出来的：
+    #   · 目录里的 README 是目录说明，不是零件表；
+    #   · `02 - BOM AND MANUAL/Assembly Manual PRIMO_1.1.pdf` 从**装配文档**
+    #     被改判成 BOM，那一维直接掉分——名字明说是手册的，仍是文档；
+    #   · `attest-sbom/action.yml` 让飞控地面站 qgroundcontrol 借道混进目录。
+    #     **SBOM 是软件物料清单**，上一轮修了文件名这一路，目录这一路又漏了：
+    #     同一个判据有两个入口时，两个入口都要堵。
+    parent = low.rsplit("/", 2)[-2] if low.count("/") >= 1 else ""
+    in_bom_dir = (bool(parent) and bool(BOM_RX.search(parent))
+                  and not SOFTWARE_BOM_RX.search(parent)
+                  and not name.startswith("readme")
+                  # `_category_.json` 这类下划线开头的是工具链的元数据
+                  # （Docusaurus 的分类配置），不是零件表。
+                  and not name.startswith("_")
+                  and not (ext in DOC_EXT and DOCISH_RX.search(name)))
+    if ((BOM_RX.search(name) or in_bom_dir) and not SOFTWARE_BOM_RX.search(name)
+            and (not ext or ext in BOM_EXT) and not templated
+            and not name.startswith("readme")
+            and not (in_bom_dir and ext in DOC_EXT and DOCISH_RX.search(name))):
         return "BOM"
     if ext in PARAMETRIC_CAD:
         return None if templated else "CAD"

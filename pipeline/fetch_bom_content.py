@@ -43,10 +43,10 @@ COL_RX = {
 }
 
 TEXT_EXT = {".csv", ".tsv", ".md", ".txt", ".json", ".xml", ".html"}
-UNPARSED_EXT = {".pdf": "PDF 二进制，需专门解析器",
-                ".xls": "旧版 Excel 二进制格式，标准库不支持",
-                ".ods": "OpenDocument 表格，需专门解析器",
-                ".docx": "Word 文档，需专门解析器"}
+# 上限提高到 48MB：真 BOM 里的 xlsx 有大到 39MB 的（Primo 的 3D 打印件清单），
+# 8MB 会把它们全部截断，然后当成"解析不了"。
+MAX_BYTES = 48_000_000
+OLE2_MAGIC = b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1"
 
 # 表头候选行必须在文件前部；真 BOM 表常跟在标题/签名块之后。
 HEADER_SCAN = 60
@@ -60,13 +60,22 @@ def raw_url(full: str, path: str) -> str:
     return f"https://raw.githubusercontent.com/{full}/HEAD/{safe}"
 
 
-def fetch_bytes(url: str, limit: int = 8_000_000) -> tuple[bytes | None, str]:
+def fetch_bytes(url: str, limit: int = MAX_BYTES) -> tuple[bytes | None, str, bool]:
+    """返回 (字节, 错误名, 是否被上限截断)。
+
+    截断必须**单独报出来**：首版把 39MB 的 BOM 截到 8MB，zip 自然打不开，
+    于是被报成"格式不支持"——一个由我们自己的读取上限造成的假象，
+    被写进数据当成了"这个文件解析不了"。**测量失败的成因要如实记录。**
+    """
     try:
         req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=40) as r:
-            return r.read(limit), ""
+        with urllib.request.urlopen(req, timeout=90) as r:
+            data = r.read(limit + 1)
+            if len(data) > limit:
+                return data[:limit], "", True
+            return data, "", False
     except Exception as e:
-        return None, type(e).__name__
+        return None, type(e).__name__, False
 
 
 def looks_binary(text: str) -> bool:
@@ -166,6 +175,109 @@ def xlsx_rows(data: bytes) -> list[list[str]]:
 
 
 # ------------------------------------------------------------------ 各格式
+
+def container_rows(data: bytes) -> list[list[str]]:
+    """从"zip 容器"里取表格行，**不按扩展名分派**。
+
+    `.ods`（OpenDocument 表格）与 `.docx`（Word）都是 zip+XML，标准库足够；
+    `.xls` 里也混着改名成 .xls 的 xlsx。按扩展名分派会把这三类全判成
+    "需专门解析器"，实际上都读得出来。
+    """
+    zf = zipfile.ZipFile(io.BytesIO(data))
+    names = zf.namelist()
+    if any(re.match(r"xl/worksheets/sheet\d+\.xml$", n) for n in names):
+        return xlsx_rows(data)
+    if "content.xml" in names:                      # ODS
+        xml = zf.read("content.xml").decode("utf-8", "replace")
+        return _xml_rows(xml, r"<table:table-row\b[^>]*>(.*?)</table:table-row>",
+                         r"<table:table-cell\b[^>]*>.*?</table:table-cell>"
+                         r"|<table:table-cell\b[^>]*/>",
+                         r"<text:p\b[^>]*>(.*?)</text:p>",
+                         value_attr=r'office:value="([^"]*)"')
+    if any(n.startswith("word/") for n in names):   # DOCX
+        xml = zf.read("word/document.xml").decode("utf-8", "replace")
+        return _xml_rows(xml, r"<w:tr\b[^>]*>(.*?)</w:tr>",
+                         r"<w:tc\b[^>]*>.*?</w:tc>",
+                         r"<w:t\b[^>]*>(.*?)</w:t>")
+    return []
+
+
+def _xml_rows(xml: str, row_rx: str, cell_rx: str, text_rx: str,
+              value_attr: str | None = None) -> list[list[str]]:
+    """通用的 XML 表格抽取：ODS 与 DOCX 的表都长成"行里套格、格里套文本"。"""
+    from xml.sax.saxutils import unescape
+    out: list[list[str]] = []
+    for rxml in re.findall(row_rx, xml, re.S):
+        vals: list[str] = []
+        for cell in re.findall(cell_rx, rxml, re.S):
+            txt = " ".join(re.sub(r"<[^>]+>", "", p) for p in re.findall(text_rx, cell, re.S))
+            if not txt.strip() and value_attr:
+                m = re.search(value_attr, cell)
+                if m:
+                    txt = m.group(1)
+            vals.append(unescape(txt).strip())
+        while vals and not vals[-1]:
+            vals.pop()
+        if vals:
+            out.append(vals)
+    return out
+
+
+def pdf_rows(data: bytes) -> list[list[str]] | None:
+    """PDF 里的表格。pdfplumber 是**可选**依赖。
+
+    返回 None 表示"库没装"（≠"没有表格"）——两者在证据里含义完全不同：
+    一个是我们的能力缺口，一个是文件本身没有表格。混为一谈就无法判断
+    该去补依赖还是该承认数据缺失。
+    """
+    try:
+        import pdfplumber
+    except ImportError:
+        return None
+    out: list[list[str]] = []
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        for page in pdf.pages[:25]:
+            for table in page.extract_tables() or []:
+                for row in table:
+                    vals = [(c or "").strip().replace("\n", " ") for c in row]
+                    while vals and not vals[-1]:
+                        vals.pop()
+                    if vals:
+                        out.append(vals)
+    return out
+
+
+def ole2_rows(data: bytes) -> list[list[str]] | None:
+    """旧版 .xls（OLE2 复合文档）。xlrd 是**可选**依赖；返回 None 表示没装。"""
+    try:
+        import xlrd
+    except ImportError:
+        return None
+    book = xlrd.open_workbook(file_contents=data)
+    best: list[list[str]] = []
+    for sh in book.sheets()[:5]:
+        cur: list[list[str]] = []
+        for r in range(min(sh.nrows, 20000)):
+            vals = [str(sh.cell_value(r, c)).strip() for c in range(sh.ncols)]
+            while vals and not vals[-1]:
+                vals.pop()
+            if vals:
+                cur.append(vals)
+        if len(cur) > len(best):
+            best = cur
+    return best
+
+
+def sniff(data: bytes) -> str:
+    """按**字节**判容器类型。扩展名是提示，不是证据。"""
+    if data[:2] == b"PK":
+        return "zip"
+    if data[:8] == OLE2_MAGIC:
+        return "ole2"
+    if data[:5] == b"%PDF-":
+        return "pdf"
+    return "text"
+
 
 def pick_header_and_rows(rows: list[list[str]]) -> tuple[list[str], int]:
     """在前若干行里挑最像表头的一行：非空单元格最多、且含关键词。
@@ -276,22 +388,45 @@ def parse(full: str, path: str) -> dict:
     """
     ext = ("." + path.rsplit(".", 1)[-1].lower()) if "." in path.rsplit("/", 1)[-1] else ""
     url = raw_url(full, path)
-    if ext in UNPARSED_EXT:
-        return {"file": path, "url": url, "status": "unparsed",
-                "reason": UNPARSED_EXT[ext]}
+    # 不再按扩展名提前短路（首版对 .pdf/.xls/.ods/.docx 直接返回"需专门解析器"，
+    # 于是装了 pdfplumber 也永远走不到解析器）。一切按字节判定。
     try:
-        if ext == ".xlsx":
-            data, err = fetch_bytes(url)
-            if data is None:
-                return {"file": path, "url": url, "status": "fetch_failed", "reason": err}
-            rows = xlsx_rows(data)
-            if not rows:
-                return {"file": path, "url": url, "status": "unparsed",
-                        "reason": "xlsx 内无可用行"}
-            return {"file": path, "url": url, **finish(rows)}
-        data, err = fetch_bytes(url)
+        data, err, truncated = fetch_bytes(url)
         if data is None:
             return {"file": path, "url": url, "status": "fetch_failed", "reason": err}
+        if truncated:
+            return {"file": path, "url": url, "status": "unparsed",
+                    "reason": f"超过 {MAX_BYTES // 10**6}MB 读取上限，未取到完整文件"
+                              f"（这是我们自己的上限造成的，不是文件格式问题）"}
+        # 按字节分派，不按扩展名。
+        # `.xls` 里有 3 个其实是 xlsx（改名），`.xlsx` 有 4 个是 39MB 的大文件
+        # 被读取上限截断后报 BadZipFile——按扩展名分派会把它们全部误报成
+        # "格式不支持"。**扩展名是提示，不是证据。**
+        kind = sniff(data)
+        if kind == "zip":
+            rows = container_rows(data)
+            if rows:
+                return {"file": path, "url": url, **finish(rows)}
+            return {"file": path, "url": url, "status": "unparsed",
+                    "reason": "zip 容器内没有可识别的表格（既非 xlsx/ods，也非 docx 表格）"}
+        if kind == "ole2":
+            rows = ole2_rows(data)
+            if rows is None:
+                return {"file": path, "url": url, "status": "unparsed",
+                        "reason": "旧版 Excel 二进制格式（OLE2）；可选依赖 xlrd 未安装"}
+            if not rows:
+                return {"file": path, "url": url, "status": "unparsed",
+                        "reason": "OLE2 工作簿内无可用行"}
+            return {"file": path, "url": url, **finish(rows)}
+        if kind == "pdf":
+            rows = pdf_rows(data)
+            if rows is None:
+                return {"file": path, "url": url, "status": "unparsed",
+                        "reason": "PDF；可选依赖 pdfplumber 未安装"}
+            if not rows:
+                return {"file": path, "url": url, "status": "unparsed",
+                        "reason": "PDF 内未提取到表格（不是能力缺口，是文件里没有表格）"}
+            return {"file": path, "url": url, **finish(rows)}
         text, enc = decode_text(data)
         if text is None:
             return {"file": path, "url": url, "status": "unparsed",
@@ -366,6 +501,23 @@ def main() -> None:
         print(f"  {r['status']:<12} {r.get('rows', '-'):>5} 行  {f}/{p}"
               + (f"  ({r.get('reason', r.get('note',''))})" if r["status"] != "ok"
                  or r.get("note") else ""))
+
+    # 剪掉不再是 BOM 的陈旧条目。
+    #
+    # 分类规则会变（本次就收紧了 SBOM 目录、Autodesk 自带库、vendored 路径），
+    # 而这里一直在"合并"——于是产物里留着 7 个 classify 已经不认为是 BOM 的文件。
+    # 产物应当是当前判定的**函数**，不是历次运行的累积。
+    allowed = {f: set() for f, _ in jobs}
+    for f, p in jobs:
+        allowed[f].add(p)
+    before = sum(len(v) for v in done.values())
+    done = {f: {p: r for p, r in files.items() if p in allowed.get(f, ())}
+            for f, files in done.items()}
+    done = {f: files for f, files in done.items() if files}
+    after = sum(len(v) for v in done.values())
+    if before != after:
+        print(f"剪掉 {before - after} 个已不再判为 BOM 的陈旧条目")
+
     OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
 
     ok = sum(1 for f in done.values() for r in f.values() if r["status"] == "ok")

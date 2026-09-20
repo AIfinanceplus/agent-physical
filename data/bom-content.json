@@ -173,6 +173,42 @@
     "qty": false
    },
    "note": "分隔符 ','"
+  },
+  "parts_list/extra_parts.md": {
+   "file": "parts_list/extra_parts.md",
+   "url": "https://raw.githubusercontent.com/nasa-jpl/open-source-rover/HEAD/parts_list/extra_parts.md",
+   "status": "ok",
+   "rows": 40,
+   "header": [],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   },
+   "note": "无表格，按列表条目计数"
+  },
+  "parts_list/screws.md": {
+   "file": "parts_list/screws.md",
+   "url": "https://raw.githubusercontent.com/nasa-jpl/open-source-rover/HEAD/parts_list/screws.md",
+   "status": "ok",
+   "rows": 27,
+   "header": [
+    "subassembly",
+    "nb",
+    "length",
+    "type",
+    "purpose",
+    "multiplier",
+    "total"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 2 张表中最大的（28 行）"
   }
  },
  "dorianborian/sesame-robot": {
@@ -682,8 +718,21 @@
   "BOM/BOM_PDF_Legacy.pdf": {
    "file": "BOM/BOM_PDF_Legacy.pdf",
    "url": "https://raw.githubusercontent.com/Source-Robotics/PAROL6-Desktop-robot-arm/HEAD/BOM/BOM_PDF_Legacy.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 59,
+   "header": [
+    "Name in building instructions",
+    "Type",
+    "quantity",
+    "Description",
+    "Link"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "iliasam/OpenSimpleLidar": {
@@ -1048,16 +1097,41 @@
   "BOM/BCN3D Moveo BOM.pdf": {
    "file": "BOM/BCN3D Moveo BOM.pdf",
    "url": "https://raw.githubusercontent.com/BCN3D/BCN3D-Moveo/HEAD/BOM/BCN3D%20Moveo%20BOM.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 93,
+   "header": [
+    "BOM ID",
+    "BOM",
+    "QUANTITY"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "open-dynamic-robot-initiative/open_robot_actuator_hardware": {
   "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.pdf": {
    "file": "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.pdf",
    "url": "https://raw.githubusercontent.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/HEAD/mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 13,
+   "header": [
+    "Qty",
+    "Part",
+    "Value",
+    "Description",
+    "Order code",
+    "Part number"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   },
   "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.xlsx": {
    "file": "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.xlsx",
@@ -1867,39 +1941,27 @@
   "hardware/bom.pdf": {
    "file": "hardware/bom.pdf",
    "url": "https://raw.githubusercontent.com/Deeplocal/mocktailsmixer/HEAD/hardware/bom.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 79,
+   "header": [
+    "Item #",
+    "Part",
+    "Cost/Unit",
+    "Supplier",
+    "QTY",
+    "Total Cost(-shipping)",
+    "Comments",
+    "Link"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   }
  },
  "4ndreas/BetaBots-Robot-Arm-Project": {
-  "Blue/Inventor/Design Data/partslist.xml": {
-   "file": "Blue/Inventor/Design Data/partslist.xml",
-   "url": "https://raw.githubusercontent.com/4ndreas/BetaBots-Robot-Arm-Project/HEAD/Blue/Inventor/Design%20Data/partslist.xml",
-   "status": "ok",
-   "rows": 2250,
-   "header": [],
-   "cols": {
-    "mpn": false,
-    "supplier": true,
-    "price": false,
-    "qty": true
-   },
-   "note": "纯文本，按非空行数计数 编码 utf-16"
-  },
-  "Green/Inventor/Design Data/partslist.xml": {
-   "file": "Green/Inventor/Design Data/partslist.xml",
-   "url": "https://raw.githubusercontent.com/4ndreas/BetaBots-Robot-Arm-Project/HEAD/Green/Inventor/Design%20Data/partslist.xml",
-   "status": "ok",
-   "rows": 2250,
-   "header": [],
-   "cols": {
-    "mpn": false,
-    "supplier": true,
-    "price": false,
-    "qty": true
-   },
-   "note": "纯文本，按非空行数计数 编码 utf-16"
-  },
   "Green/RobotV4_BOM.xlsx": {
    "file": "Green/RobotV4_BOM.xlsx",
    "url": "https://raw.githubusercontent.com/4ndreas/BetaBots-Robot-Arm-Project/HEAD/Green/RobotV4_BOM.xlsx",
@@ -1921,20 +1983,6 @@
     "price": false,
     "qty": false
    }
-  },
-  "Orange/Inventor/Design Data/partslist.xml": {
-   "file": "Orange/Inventor/Design Data/partslist.xml",
-   "url": "https://raw.githubusercontent.com/4ndreas/BetaBots-Robot-Arm-Project/HEAD/Orange/Inventor/Design%20Data/partslist.xml",
-   "status": "ok",
-   "rows": 2250,
-   "header": [],
-   "cols": {
-    "mpn": false,
-    "supplier": true,
-    "price": false,
-    "qty": true
-   },
-   "note": "纯文本，按非空行数计数 编码 utf-16"
   }
  },
  "Source-Robotics/Differential-robot-wrist": {
@@ -2398,6 +2446,86 @@
     "qty": true
    },
    "note": "分隔符 '\\t' 编码 utf-16"
+  },
+  "BOM/Cables.md": {
+   "file": "BOM/Cables.md",
+   "url": "https://raw.githubusercontent.com/TNY-Robotics/TNY-360/HEAD/BOM/Cables.md",
+   "status": "ok",
+   "rows": 17,
+   "header": [
+    "Type",
+    "Pins",
+    "Length",
+    "Quantity",
+    "Location",
+    "Link"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "取 2 张表中最大的（18 行）"
+  },
+  "BOM/Components.md": {
+   "file": "BOM/Components.md",
+   "url": "https://raw.githubusercontent.com/TNY-Robotics/TNY-360/HEAD/BOM/Components.md",
+   "status": "ok",
+   "rows": 13,
+   "header": [
+    "Type",
+    "Description",
+    "Quantity",
+    "Location",
+    "Link"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "取 1 张表中最大的（14 行）"
+  },
+  "BOM/PCBs.md": {
+   "file": "BOM/PCBs.md",
+   "url": "https://raw.githubusercontent.com/TNY-Robotics/TNY-360/HEAD/BOM/PCBs.md",
+   "status": "ok",
+   "rows": 7,
+   "header": [
+    "PCB",
+    "Purpose",
+    "Quantity",
+    "Files"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   },
+   "note": "取 1 张表中最大的（8 行）"
+  },
+  "BOM/Screws.md": {
+   "file": "BOM/Screws.md",
+   "url": "https://raw.githubusercontent.com/TNY-Robotics/TNY-360/HEAD/BOM/Screws.md",
+   "status": "ok",
+   "rows": 23,
+   "header": [
+    "Type",
+    "Length",
+    "Quantity",
+    "Location",
+    "Link"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "取 3 张表中最大的（24 行）"
   }
  },
  "fuwei007/Navbot-EN01": {
@@ -2557,8 +2685,23 @@
   "docs/bom.ods": {
    "file": "docs/bom.ods",
    "url": "https://raw.githubusercontent.com/reubenstr/ElectroPup/HEAD/docs/bom.ods",
-   "status": "unparsed",
-   "reason": "OpenDocument 表格，需专门解析器"
+   "status": "ok",
+   "rows": 88,
+   "header": [
+    "Hardware",
+    "Qty",
+    "Est. Cost",
+    "SubTotal",
+    "Link 1",
+    "Link 2",
+    "Notes"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   }
  },
  "poppy-project/poppy-ergo-jr": {
@@ -2601,14 +2744,38 @@
   "orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_BOM.xls": {
    "file": "orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_BOM.xls",
    "url": "https://raw.githubusercontent.com/orcahand/orcahand_hardware/HEAD/orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "Comment",
+    "Designator",
+    "Footprint",
+    "JLCPCB Part #"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls": {
    "file": "orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls",
    "url": "https://raw.githubusercontent.com/orcahand/orcahand_hardware/HEAD/orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "Comment",
+    "Designator",
+    "Footprint",
+    "JLCPCB Part #"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   }
  },
  "AshishA26/Orion-Quadruped": {
@@ -2862,14 +3029,51 @@
   "Projects/Arm/Rev1/Arm-BOM.xls": {
    "file": "Projects/Arm/Rev1/Arm-BOM.xls",
    "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Arm/Rev1/Arm-BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 42,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Supplier 1",
+    "Supplier Part Number 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   },
   "Projects/Gimbal/2021/Rev1/fab/Gimbal 2020-BOM.xls": {
    "file": "Projects/Gimbal/2021/Rev1/fab/Gimbal 2020-BOM.xls",
    "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Gimbal/2021/Rev1/fab/Gimbal%202020-BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 36,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Manufacturer Lifecycle 1",
+    "Supplier 1",
+    "Supplier Part Number 1",
+    "Supplier Unit Price 1",
+    "Supplier Subtotal 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "Projects/LED Matrix/Rev1/Project Outputs for LED-V1/LED Matrix BOM.xlsx": {
    "file": "Projects/LED Matrix/Rev1/Project Outputs for LED-V1/LED Matrix BOM.xlsx",
@@ -2919,20 +3123,77 @@
   "Projects/Robot Controller/Dev Board/Dev Board BOM.xls": {
    "file": "Projects/Robot Controller/Dev Board/Dev Board BOM.xls",
    "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Robot%20Controller/Dev%20Board/Dev%20Board%20BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 40,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Manufacturer Lifecycle 1",
+    "Supplier 1",
+    "Supplier Part Number 1",
+    "Supplier Unit Price 1",
+    "Supplier Subtotal 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "Projects/Safety/Rev1/fab/safety2020-BOM.xls": {
    "file": "Projects/Safety/Rev1/fab/safety2020-BOM.xls",
    "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Safety/Rev1/fab/safety2020-BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 30,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Manufacturer Lifecycle 1",
+    "Supplier 1",
+    "Supplier Part Number 1",
+    "Supplier Unit Price 1",
+    "Supplier Subtotal 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "Projects/Science/Rev1/Science-BOM.xls": {
    "file": "Projects/Science/Rev1/Science-BOM.xls",
    "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Science/Rev1/Science-BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 30,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Supplier 1",
+    "Supplier Part Number 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   },
   "Projects/Science/Rev2/Science BOM PCBWay.xlsx": {
    "file": "Projects/Science/Rev2/Science BOM PCBWay.xlsx",
@@ -3028,14 +3289,49 @@
   "02 - BOM AND MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx",
    "url": "https://raw.githubusercontent.com/CreaRobotics/Primo/HEAD/02%20-%20BOM%20AND%20MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx",
-   "status": "unparsed",
-   "reason": "解析异常: BadZipFile"
+   "status": "ok",
+   "rows": 52,
+   "header": [
+    "N° LIST",
+    "SUB ASSEMBLY",
+    "Q.TY",
+    "PIC",
+    "ITEM NAME",
+    "MATERIAL",
+    "PROJECT",
+    "PROJECT      UPDATE",
+    "MANIFACTURING PROCESS",
+    "REVIEW",
+    "ITEM        NUMBER",
+    "CODE",
+    "COLOUR"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "02 - BOM AND MANUAL/PRIMO_1.1_Electrical_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_Electrical_BOM.xlsx",
    "url": "https://raw.githubusercontent.com/CreaRobotics/Primo/HEAD/02%20-%20BOM%20AND%20MANUAL/PRIMO_1.1_Electrical_BOM.xlsx",
-   "status": "unparsed",
-   "reason": "解析异常: BadZipFile"
+   "status": "ok",
+   "rows": 42,
+   "header": [
+    "N° LIST",
+    "SUB-ASSEMBLY",
+    "ITEM",
+    "IMAGE",
+    "N° ITEMS",
+    "PROVIDER"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "02 - BOM AND MANUAL/PRIMO_1.1_Mechanical_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_Mechanical_BOM.xlsx",
@@ -3062,14 +3358,40 @@
   "bom/HandUMI_BOM.docx": {
    "file": "bom/HandUMI_BOM.docx",
    "url": "https://raw.githubusercontent.com/murobotics-ai/handumi-hw/HEAD/bom/HandUMI_BOM.docx",
-   "status": "unparsed",
-   "reason": "Word 文档，需专门解析器"
+   "status": "ok",
+   "rows": 17,
+   "header": [
+    "Part",
+    "Qty Needed",
+    "Unit Price",
+    "Link",
+    "Total (USD)*"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "bom/HandUMI_BOM.pdf": {
    "file": "bom/HandUMI_BOM.pdf",
    "url": "https://raw.githubusercontent.com/murobotics-ai/handumi-hw/HEAD/bom/HandUMI_BOM.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 17,
+   "header": [
+    "Part",
+    "Qty Needed",
+    "Unit Price",
+    "Link",
+    "Total (USD)*"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   }
  },
  "NRdrgz/Just1": {
@@ -3450,14 +3772,45 @@
   "Hex2_resources/BOM/hexapod_bom - electrical.pdf": {
    "file": "Hex2_resources/BOM/hexapod_bom - electrical.pdf",
    "url": "https://raw.githubusercontent.com/ManufacturedMotion/Hex/HEAD/Hex2_resources/BOM/hexapod_bom%20-%20electrical.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 44,
+   "header": [
+    "Category Accessory",
+    "Attachment N/A",
+    "Item 60 LEDs WS2812B 5050 RGB LED Ring Lamp Light",
+    "Quantity 1",
+    "Approx. Unit Cost $15.99",
+    "Approx. Total Cost $15.99",
+    "Notes",
+    "Purchased"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": true,
+    "qty": true
+   }
   },
   "Hex2_resources/BOM/hexapod_bom - mechanical.pdf": {
    "file": "Hex2_resources/BOM/hexapod_bom - mechanical.pdf",
    "url": "https://raw.githubusercontent.com/ManufacturedMotion/Hex/HEAD/Hex2_resources/BOM/hexapod_bom%20-%20mechanical.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 34,
+   "header": [
+    "Type",
+    "Item",
+    "Quantity",
+    "Approx. Unit Cost",
+    "Approx. Total Cost",
+    "Notes",
+    "Purchased / Completed"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": true,
+    "qty": true
+   }
   },
   "Hex3_resources/electronics/leg_board/V2.0/HEX3_leg_board_v2.0 v69_top_bom.csv": {
    "file": "Hex3_resources/electronics/leg_board/V2.0/HEX3_leg_board_v2.0 v69_top_bom.csv",
@@ -3672,8 +4025,28 @@
   "Projects/Nav-Lights/Project Outputs for Nav_Lights_UWARG/BOM/Bill of Materials-Nav_Lights_UWARG.xls": {
    "file": "Projects/Nav-Lights/Project Outputs for Nav_Lights_UWARG/BOM/Bill of Materials-Nav_Lights_UWARG.xls",
    "url": "https://raw.githubusercontent.com/UWARG/hardware/HEAD/Projects/Nav-Lights/Project%20Outputs%20for%20Nav_Lights_UWARG/BOM/Bill%20of%20Materials-Nav_Lights_UWARG.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 8,
+   "header": [
+    "#",
+    "#Column Name Error:' Category",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Quantity",
+    "Supplier 1",
+    "Supplier Part Number 1",
+    "Supplier Order Qty 1",
+    "Supplier Stock 1",
+    "Supplier Unit Price 1",
+    "Supplier Subtotal 1",
+    "Supplier Currency 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "Projects/Power Distribution/Rev 1/Project Outputs for Power Distribution/BOM/Bill of Materials-Power Distribution.xlsx": {
    "file": "Projects/Power Distribution/Rev 1/Project Outputs for Power Distribution/BOM/Bill of Materials-Power Distribution.xlsx",
@@ -3706,8 +4079,18 @@
   "RapidHandHardware/mechanical_structure/BOM_and_Assembly_Guide.pdf": {
    "file": "RapidHandHardware/mechanical_structure/BOM_and_Assembly_Guide.pdf",
    "url": "https://raw.githubusercontent.com/SYSU-RoboticsLab/RAPID-Hand/HEAD/RapidHandHardware/mechanical_structure/BOM_and_Assembly_Guide.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 136,
+   "header": [
+    "Name",
+    "Number"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "RapidHandHardware/pcb_sync_module/pcb_sourcing/BOM_Board1_PCB1.xlsx": {
    "file": "RapidHandHardware/pcb_sync_module/pcb_sourcing/BOM_Board1_PCB1.xlsx",
@@ -3796,8 +4179,20 @@
   "BOM.xls": {
    "file": "BOM.xls",
    "url": "https://raw.githubusercontent.com/well-robotics/STRIDE/HEAD/BOM.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 85,
+   "header": [
+    "Mechanical parts",
+    "numbers",
+    "prices (with educational \ndiscount)",
+    "source"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": false
+   }
   }
  },
  "huggingface/lerobot-humanoid-hardware": {
@@ -3925,14 +4320,38 @@
   "nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Chest.pdf": {
    "file": "nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Chest.pdf",
    "url": "https://raw.githubusercontent.com/tork-a/rtmros_nextage/HEAD/nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Chest.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 9,
+   "header": [
+    "No.",
+    "Name",
+    "Qty.",
+    "Remarks"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   },
   "nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Waist.pdf": {
    "file": "nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Waist.pdf",
    "url": "https://raw.githubusercontent.com/tork-a/rtmros_nextage/HEAD/nextage_calibration/resource/PartsList_Checkerboard_for_NEXTAGE_Waist.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "No.",
+    "Name",
+    "Qty.",
+    "Remarks"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "artfulbytes/nsumo_hardware": {
@@ -3998,8 +4417,24 @@
   "Doc/BOM.ods": {
    "file": "Doc/BOM.ods",
    "url": "https://raw.githubusercontent.com/GonzaCerv/noah-hardware/HEAD/Doc/BOM.ods",
-   "status": "unparsed",
-   "reason": "OpenDocument 表格，需专门解析器"
+   "status": "ok",
+   "rows": 40,
+   "header": [
+    "Item",
+    "Categoria",
+    "Fabricante",
+    "Descripcion",
+    "Proveedor",
+    "Costo U$S",
+    "Costo $",
+    "Referencia"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": true,
+    "qty": false
+   }
   },
   "PCB/bom/ibom.html": {
    "file": "PCB/bom/ibom.html",
@@ -4048,14 +4483,38 @@
   "hardware/01 - PowerTree/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_PowerTree.xls": {
    "file": "hardware/01 - PowerTree/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_PowerTree.xls",
    "url": "https://raw.githubusercontent.com/introlab/securbot/HEAD/hardware/01%20-%20PowerTree/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_PowerTree.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 35,
+   "header": [
+    "Designator",
+    "Part number",
+    "Quantity",
+    "Value"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   },
   "hardware/03 - Charge Station/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_Charge_Station.xls": {
    "file": "hardware/03 - Charge Station/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_Charge_Station.xls",
    "url": "https://raw.githubusercontent.com/introlab/securbot/HEAD/hardware/03%20-%20Charge%20Station/01%20-%20SCHEMAS%20ET%20PCB/01%20-%20REVISION%201_000/01%20-%20OUTPUT/BOM_Charge_Station.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 14,
+   "header": [
+    "Designator",
+    "Part number",
+    "Quantity",
+    "Value"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "zeroth-robotics/hardware": {
@@ -4175,14 +4634,49 @@
   "02 - BOM AND MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx",
    "url": "https://raw.githubusercontent.com/Gh0stlyKn1ght/Primo/HEAD/02%20-%20BOM%20AND%20MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx",
-   "status": "unparsed",
-   "reason": "解析异常: BadZipFile"
+   "status": "ok",
+   "rows": 52,
+   "header": [
+    "N° LIST",
+    "SUB ASSEMBLY",
+    "Q.TY",
+    "PIC",
+    "ITEM NAME",
+    "MATERIAL",
+    "PROJECT",
+    "PROJECT      UPDATE",
+    "MANIFACTURING PROCESS",
+    "REVIEW",
+    "ITEM        NUMBER",
+    "CODE",
+    "COLOUR"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "02 - BOM AND MANUAL/PRIMO_1.1_Electrical_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_Electrical_BOM.xlsx",
    "url": "https://raw.githubusercontent.com/Gh0stlyKn1ght/Primo/HEAD/02%20-%20BOM%20AND%20MANUAL/PRIMO_1.1_Electrical_BOM.xlsx",
-   "status": "unparsed",
-   "reason": "解析异常: BadZipFile"
+   "status": "ok",
+   "rows": 42,
+   "header": [
+    "N° LIST",
+    "SUB-ASSEMBLY",
+    "ITEM",
+    "IMAGE",
+    "N° ITEMS",
+    "PROVIDER"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   }
   },
   "02 - BOM AND MANUAL/PRIMO_1.1_Mechanical_BOM.xlsx": {
    "file": "02 - BOM AND MANUAL/PRIMO_1.1_Mechanical_BOM.xlsx",
@@ -4652,14 +5146,40 @@
   "mushr_docs/hardware/mushr_nano_bill_of_materials.docx": {
    "file": "mushr_docs/hardware/mushr_nano_bill_of_materials.docx",
    "url": "https://raw.githubusercontent.com/prl-mushr/mushr/HEAD/mushr_docs/hardware/mushr_nano_bill_of_materials.docx",
-   "status": "unparsed",
-   "reason": "Word 文档，需专门解析器"
+   "status": "ok",
+   "rows": 47,
+   "header": [
+    "Part",
+    "Quantity",
+    "Cost Per Unit",
+    "Vendor/Link",
+    "Notes"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   },
   "mushr_docs/hardware/mushr_nano_bill_of_materials.pdf": {
    "file": "mushr_docs/hardware/mushr_nano_bill_of_materials.pdf",
    "url": "https://raw.githubusercontent.com/prl-mushr/mushr/HEAD/mushr_docs/hardware/mushr_nano_bill_of_materials.pdf",
-   "status": "unparsed",
-   "reason": "PDF 二进制，需专门解析器"
+   "status": "ok",
+   "rows": 47,
+   "header": [
+    "Part",
+    "Quantity",
+    "Cost Per Unit",
+    "Vendor/Link",
+    "Notes"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   }
  },
  "ajayre/JacktheRipperBot": {
@@ -4730,14 +5250,42 @@
   "NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls": {
    "file": "NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls",
    "url": "https://raw.githubusercontent.com/NimbRo/nimbro-op2/HEAD/NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 67,
+   "header": [
+    "Nr",
+    "Item name",
+    "MPN",
+    "Manufacturer",
+    "Qty",
+    "Comment"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   },
   "NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls": {
    "file": "NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls",
    "url": "https://raw.githubusercontent.com/NimbRo/nimbro-op2/HEAD/NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls",
-   "status": "unparsed",
-   "reason": "旧版 Excel 二进制格式，标准库不支持"
+   "status": "ok",
+   "rows": 70,
+   "header": [
+    "Nr",
+    "Item name",
+    "MPN",
+    "Manufacturer",
+    "Qty",
+    "Comment"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "OpenPodcar/OpenPodcar": {
@@ -4802,14 +5350,55 @@
     "qty": false
    },
    "note": "分隔符 ','"
+  },
+  "CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt": {
+   "file": "CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+   "url": "https://raw.githubusercontent.com/Hyperspawn/Dropbear/HEAD/CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+   "status": "ok",
+   "rows": 16,
+   "header": [],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   },
+   "note": "纯文本，按非空行数计数"
+  },
+  "CAD_Files/Assembly/Head/INTERNAL_ASSEMBLY/BOM/nuts_bolts.txt": {
+   "file": "CAD_Files/Assembly/Head/INTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+   "url": "https://raw.githubusercontent.com/Hyperspawn/Dropbear/HEAD/CAD_Files/Assembly/Head/INTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+   "status": "ok",
+   "rows": 9,
+   "header": [],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   },
+   "note": "纯文本，按非空行数计数"
   }
  },
  "MarginallyClever/sixi": {
   "part files/Bill Of Materials.ods": {
    "file": "part files/Bill Of Materials.ods",
    "url": "https://raw.githubusercontent.com/MarginallyClever/sixi/HEAD/part%20files/Bill%20Of%20Materials.ods",
-   "status": "unparsed",
-   "reason": "OpenDocument 表格，需专门解析器"
+   "status": "ok",
+   "rows": 81,
+   "header": [
+    "Qty",
+    "Name",
+    "Source",
+    "Part number at source",
+    "URI"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "rosmo-robot/rosmo-robot.github.io": {
@@ -4844,14 +5433,38 @@
   "HARDWARE/MiniBot_RevA_BOM.ods": {
    "file": "HARDWARE/MiniBot_RevA_BOM.ods",
    "url": "https://raw.githubusercontent.com/OLIMEX/Minibot/HEAD/HARDWARE/MiniBot_RevA_BOM.ods",
-   "status": "unparsed",
-   "reason": "OpenDocument 表格，需专门解析器"
+   "status": "ok",
+   "rows": 14,
+   "header": [
+    "Designation",
+    "Quantity",
+    "Designator",
+    "Package"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   },
   "HARDWARE/charger/MiniBot_charger_RevA_BOM.ods": {
    "file": "HARDWARE/charger/MiniBot_charger_RevA_BOM.ods",
    "url": "https://raw.githubusercontent.com/OLIMEX/Minibot/HEAD/HARDWARE/charger/MiniBot_charger_RevA_BOM.ods",
-   "status": "unparsed",
-   "reason": "OpenDocument 表格，需专门解析器"
+   "status": "ok",
+   "rows": 9,
+   "header": [
+    "Designation",
+    "Quantity",
+    "Designator",
+    "Package"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "PCrnjak/Faze4-Robotic-arm": {
@@ -4869,6 +5482,120 @@
    ],
    "cols": {
     "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
+  }
+ },
+ "ZJU-FAST-Lab/Fast-Drone-250": {
+  "purchase_list.xlsx": {
+   "file": "purchase_list.xlsx",
+   "url": "https://raw.githubusercontent.com/ZJU-FAST-Lab/Fast-Drone-250/HEAD/purchase_list.xlsx",
+   "status": "ok",
+   "rows": 47,
+   "header": [
+    "备注",
+    "类目",
+    "型号",
+    "数量",
+    "单价",
+    "总价",
+    "淘宝链接"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
+  }
+ },
+ "SRA-VJTI/sra-board-hardware-design": {
+  "sra_dev_board_2026/bom/sra_dev_board_2026.csv": {
+   "file": "sra_dev_board_2026/bom/sra_dev_board_2026.csv",
+   "url": "https://raw.githubusercontent.com/SRA-VJTI/sra-board-hardware-design/HEAD/sra_dev_board_2026/bom/sra_dev_board_2026.csv",
+   "status": "ok",
+   "rows": 52,
+   "header": [
+    "Reference",
+    "Qty",
+    "Value",
+    "Footprint",
+    "Datasheet"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   },
+   "note": "分隔符 ','"
+  }
+ },
+ "raphaelchang/dragonflyte-hardware": {
+  "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.csv": {
+   "file": "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.csv",
+   "url": "https://raw.githubusercontent.com/raphaelchang/dragonflyte-hardware/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.csv",
+   "status": "ok",
+   "rows": 86,
+   "header": [
+    "Designator",
+    "Quantity",
+    "Manufacturer",
+    "PartNumber",
+    "PackageReference",
+    "Description",
+    "Mounting Technology",
+    "Layer"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "分隔符 ','"
+  },
+  "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.xls": {
+   "file": "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.xls",
+   "url": "https://raw.githubusercontent.com/raphaelchang/dragonflyte-hardware/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.xls",
+   "status": "ok",
+   "rows": 86,
+   "header": [
+    "Designator",
+    "Quantity",
+    "Manufacturer",
+    "PartNumber",
+    "PackageReference",
+    "Description",
+    "Mounting Technology",
+    "Layer"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
+  },
+  "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.xlsx": {
+   "file": "Dragonflyte/Boards/Dragonflyte/Project Outputs for Dragonflyte/BOM/Dragonflyte.xlsx",
+   "url": "https://raw.githubusercontent.com/raphaelchang/dragonflyte-hardware/HEAD/Dragonflyte/Boards/Dragonflyte/Project%20Outputs%20for%20Dragonflyte/BOM/Dragonflyte.xlsx",
+   "status": "ok",
+   "rows": 86,
+   "header": [
+    "Designator",
+    "Quantity",
+    "Manufacturer",
+    "PartNumber",
+    "PackageReference",
+    "Description",
+    "Mounting Technology",
+    "Layer"
+   ],
+   "cols": {
+    "mpn": true,
     "supplier": true,
     "price": false,
     "qty": true
