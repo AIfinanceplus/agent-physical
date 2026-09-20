@@ -10,9 +10,9 @@
 | --- | --- |
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
-| 管线生成 | 187 个（来自公开仓库树的证据化拆解） |
-| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 192 个未评分 |
-| 零件行 | 3,724 条，全部指向真实文件（逐项目抽检链接可达率 187/187） |
+| 管线生成 | 183 个（来自公开仓库树的证据化拆解） |
+| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 188 个未评分 |
+| 零件行 | 3,652 条，全部指向真实文件（逐项目检测链接可达率 183/183） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -64,8 +64,8 @@ type ReproductionScore =
 pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.generated.ts
 ```
 
-输入是 543 棵已缓存的公开仓库树与仓库元数据，输出 187 个 `WorkbenchProject`
-（3,724 条零件行、966 个总成）。规则：
+输入是 543 棵已缓存的公开仓库树与仓库元数据，输出 183 个 `WorkbenchProject`
+（3,652 条零件行、943 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -111,7 +111,7 @@ pipeline/review_gap.py   逐条审看：谁有真硬件证据、谁与现目录�
 pipeline/audit_links.py  对全部零件链接做覆盖式可达性检测
 ```
 
-从 99 个候选中补进 54 个（133 → 187）。三件事值得记下来：
+从 99 个候选中补进 50 个（133 → 183）。四件事值得记下来：
 
 ### 标杆自己的硬件仓库一直不在库里
 
@@ -142,10 +142,37 @@ pipeline/audit_links.py  对全部零件链接做覆盖式可达性检测
 
 `blob_url()` 原本写死 `branch="main"`，于是默认分支是 `master` 的仓库
 整个仓库的零件链接全 404。**逐项目抽检 133 条，51 条 404（38%）。**
-改用 `/blob/HEAD/`（GitHub 会解析到默认分支）后复测 187/187 全部可达。
+改用 `/blob/HEAD/`（GitHub 会解析到默认分支）后复测 183/183 全部可达。
 
-为什么之前没发现：上一轮只抽查了 3 条 URL，全 200 就认为链接是好的。
-成片失效恰恰是抽样看不见的——所以现在用 `audit_links.py` 做覆盖式检测。
+**规则：链接、引用、外键这类“每一条都必须对”的数据，一律写覆盖式检测脚本（并发 HEAD 请求 + 逐项计数），不用抽样。抽样只能证伪“全坏”，不能证明“全好”。**
+
+### 按名字去重是假的（大小写之后，还有改名）
+
+先修的是大小写：GitHub 的 `owner/repo` 大小写不敏感，`ROBOTIS-GIT/open_manipulator`
+和 `robotis-git/open_manipulator` 是同一个仓库。
+
+但按 `.lower()` 去重只能挡住大小写差异。仓库**改名或换组织**后，同一仓库会以两个
+毫无共同点的名字出现，小写化也拦不住：
+
+```
+menloresearch/asimov-1      ≡  asimovinc/asimov-1           (id 1204739178)
+Source-Robotics/Faze4-...   ≡  PCrnjak/Faze4-Robotic-arm    (id 203364778)
+```
+
+稳定的身份是 GitHub 的**数字 id**。`pipeline/resolve_repo_ids.py` 解析全部 608 个候选的
+id 与当前规范名，落盘 `data/repo-ids.json`——这样生成器仍保持离线（不因去重而发网络请求），
+而 id 映射本身可复核。顺带纠正了 6 个已改名的引用：
+
+```
+isl-org/OpenBot            → ob-f/OpenBot
+HybridRobotics/Berkeley-Humanoid-Lite → HybridRobotics/berkeley-humanoid-lite
+asimovinc/asimov-1         → menloresearch/asimov-1
+AndReGeist/wheelbot-v2.5   → AndReGeist/wheelbot
+PCrnjak/Faze4-Robotic-arm  → Source-Robotics/Faze4-Robotic-arm
+mmmarinho/UMIRobot        → mmmarinho/umirobot
+```
+
+改名后缓存文件仍挂在旧名下，所以规范化名字时必须同时迁移缓存，否则生成器反而找不到树。
 
 ## 运行
 
@@ -176,8 +203,10 @@ lib/
 pipeline/build_projects.py        证据 → 工作台 的生成器
 pipeline/fetch_gap.py             漏网候选的采集（策展清单 → 种子）
 pipeline/audit_links.py           零件链接覆盖式可达性检测
+pipeline/resolve_repo_ids.py      仓库稳定 id 与规范名解析
 data/candidates-gap.json          补采候选清单（人工策展来源）
 data/seed-gap.json                补采种子（robots.json 同形）
+data/repo-ids.json                仓库 id → 规范名 映射（去重与改名纠正）
 app/review/page.tsx               审看台：可筛选表格 + 排除清单
 ```
 
