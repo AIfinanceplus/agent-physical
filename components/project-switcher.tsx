@@ -3,6 +3,7 @@
 import { ChevronDown } from "lucide-react";
 import { ALL_PROJECTS, PROJECT_STATS } from "@/lib/workbench-projects";
 import { scoreLabel } from "@/lib/reproduction";
+import { TEARDOWN_IDS, hasTeardown } from "@/lib/teardown-registry";
 
 /**
  * Project switcher.
@@ -32,7 +33,7 @@ export function ProjectSwitcher({
         <p className="mt-1 truncate text-[12px] leading-none text-muted-foreground">
           {PROJECT_STATS.total} 个项目 · 策展 {PROJECT_STATS.curated} · 生成{" "}
           {PROJECT_STATS.generated} · 已评分 {PROJECT_STATS.scored} · 未评分{" "}
-          {PROJECT_STATS.unscored}
+          {PROJECT_STATS.unscored} · 3D 拆解台 {TEARDOWN_IDS.length}
         </p>
       </div>
       <div className="relative ml-auto min-w-0 max-w-[420px] flex-1 sm:w-[420px] sm:flex-none">
@@ -56,7 +57,7 @@ export function ProjectSwitcher({
       {current ? (
         <span className="num hidden shrink-0 rounded-sm border border-border px-2 py-1 text-[10px] text-muted-foreground lg:block">
           {current.curated ? "人工策展" : "证据管线"}
-          {current.deep ? " · 深度 3D" : ""}
+          {hasTeardown(current.id) ? " · 深度 3D" : ""}
         </span>
       ) : null}
       <a

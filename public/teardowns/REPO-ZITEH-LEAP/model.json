@@ -1,0 +1,26 @@
+{
+ "source": "https://github.com/ziteh/LEAP/blob/HEAD/3D_models/Solidworks/%E4%B8%8B%E8%82%A2/%E6%A9%9F%E6%A2%B0/SHD-2SH/shd-25-xxx-2sh.stp",
+ "links": {
+  "shd-25-xxx-2sh": {
+   "mass": null,
+   "min": [
+    -0.13864,
+    -0.5,
+    -0.5
+   ],
+   "max": [
+    0.06759,
+    0.5,
+    0.5
+   ],
+   "tris": 3164
+  }
+ },
+ "joints": [],
+ "modelScale": 0.009090909,
+ "originalExtent": [
+  22.685,
+  110.0,
+  110.0
+ ]
+}

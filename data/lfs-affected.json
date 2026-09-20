@@ -1,0 +1,218 @@
+[
+ {
+  "pid": "REPO-HYPERSPAWN-DROPBEAR",
+  "name": "Dropbear",
+  "repo": "Hyperspawn/Dropbear",
+  "score": 105.9,
+  "tiny": 6201,
+  "total": 6222,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-POLLEN-ROBOTICS-GRABETTE",
+  "name": "grabette",
+  "repo": "pollen-robotics/grabette",
+  "score": 58.7,
+  "tiny": 318,
+  "total": 362,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-LOONGOPEN-OPENLOONG-HARDWARE",
+  "name": "OpenLoong-Hardware",
+  "repo": "loongOpen/OpenLoong-Hardware",
+  "score": 53.3,
+  "tiny": 190,
+  "total": 226,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-VULCAN-FORGE-SOURCCEY-HARDWARE",
+  "name": "sourccey-hardware",
+  "repo": "vulcan-forge/sourccey-hardware",
+  "score": 47.6,
+  "tiny": 111,
+  "total": 166,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-ROBSTRIDE-EDULITE_A3",
+  "name": "EDULITE_A3",
+  "repo": "RobStride/EDULITE_A3",
+  "score": 32.7,
+  "tiny": 26,
+  "total": 26,
+  "allTiny": true
+ },
+ {
+  "pid": "REPO-GONZACERV-NOAH-HARDWARE",
+  "name": "noah-hardware",
+  "repo": "GonzaCerv/noah-hardware",
+  "score": 110.0,
+  "tiny": 22,
+  "total": 35,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-POPPY-PROJECT-POPPY-ERGO-JR",
+  "name": "poppy-ergo-jr",
+  "repo": "poppy-project/poppy-ergo-jr",
+  "score": 31.6,
+  "tiny": 21,
+  "total": 21,
+  "allTiny": true
+ },
+ {
+  "pid": "REPO-EM0SH-ONDROID",
+  "name": "ondroid",
+  "repo": "em0sh/ondroid",
+  "score": 43.9,
+  "tiny": 15,
+  "total": 15,
+  "allTiny": true
+ },
+ {
+  "pid": "REPO-INTELLIGENT-SOFT-ROBOTS-BALL_LAUNCHER_HARDWARE",
+  "name": "ball_launcher_hardware",
+  "repo": "intelligent-soft-robots/ball_launcher_hardware",
+  "score": 45.7,
+  "tiny": 13,
+  "total": 13,
+  "allTiny": true
+ },
+ {
+  "pid": "REPO-POPPY-PROJECT-POPPY-TORSO",
+  "name": "poppy-torso",
+  "repo": "poppy-project/poppy-torso",
+  "score": 14.7,
+  "tiny": 13,
+  "total": 30,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-MED-AIR-SURROL",
+  "name": "SurRoL",
+  "repo": "med-air/SurRoL",
+  "score": 38.0,
+  "tiny": 11,
+  "total": 1191,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-CYPYPCCPY-ISAAC-MANIPULARL",
+  "name": "Isaac-ManipulaRL",
+  "repo": "cypypccpy/Isaac-ManipulaRL",
+  "score": 43.8,
+  "tiny": 7,
+  "total": 571,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-IMINTHEMIDDLE-EMLOCO",
+  "name": "EmLoco",
+  "repo": "ImIntheMiddle/EmLoco",
+  "score": 36.2,
+  "tiny": 7,
+  "total": 315,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-JINDADU00-LEGGED_ROBOT_COMPETITION",
+  "name": "legged_robot_competition",
+  "repo": "jindadu00/legged_robot_competition",
+  "score": 27.6,
+  "tiny": 7,
+  "total": 351,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-LOONGOPEN-OPENLOONG-GYMLOONG",
+  "name": "OpenLoong-Gymloong",
+  "repo": "loongOpen/OpenLoong-Gymloong",
+  "score": 37.4,
+  "tiny": 7,
+  "total": 322,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-FERROLHO-ROTARY-INVERTED-PENDULUM",
+  "name": "rotary-inverted-pendulum",
+  "repo": "ferrolho/rotary-inverted-pendulum",
+  "score": 30.8,
+  "tiny": 5,
+  "total": 9,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-BOTBOTROBOTICS-BOTBRAIN",
+  "name": "BotBrain",
+  "repo": "botbotrobotics/BotBrain",
+  "score": 38.7,
+  "tiny": 1,
+  "total": 384,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-CKRAFT11-IRONLESS-QDD-ACTUATOR",
+  "name": "Ironless-QDD-Actuator",
+  "repo": "CKraft11/Ironless-QDD-Actuator",
+  "score": 38.8,
+  "tiny": 1,
+  "total": 17,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-MENLORESEARCH-ASIMOV-1",
+  "name": "asimov-1",
+  "repo": "menloresearch/asimov-1",
+  "score": 85.5,
+  "tiny": 1,
+  "total": 205,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-SYSU-ROBOTICSLAB-RAPID-HAND",
+  "name": "RAPID-Hand",
+  "repo": "SYSU-RoboticsLab/RAPID-Hand",
+  "score": 63.7,
+  "tiny": 1,
+  "total": 179,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-THEROBOTSTUDIO-HOPEJR",
+  "name": "HOPEJr",
+  "repo": "TheRobotStudio/HOPEJr",
+  "score": 36.7,
+  "tiny": 1,
+  "total": 182,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-UPKIE-UPKIE",
+  "name": "upkie",
+  "repo": "upkie/upkie",
+  "score": 42.1,
+  "tiny": 1,
+  "total": 1,
+  "allTiny": true
+ },
+ {
+  "pid": "REPO-WENGMISTER-BIDEXHAND",
+  "name": "BiDexHand",
+  "repo": "wengmister/BiDexHand",
+  "score": 45.6,
+  "tiny": 1,
+  "total": 59,
+  "allTiny": false
+ },
+ {
+  "pid": "REPO-WUPHILIPP-GELLO_MECHANICAL",
+  "name": "gello_mechanical",
+  "repo": "wuphilipp/gello_mechanical",
+  "score": 26.1,
+  "tiny": 1,
+  "total": 72,
+  "allTiny": false
+ }
+]

@@ -1,0 +1,194 @@
+{
+ "source": "https://github.com/OpenPodcar/OpenPodcar/blob/HEAD/catkin_ws/src/podcar/models/INBLincoln_3DMap/INBLincoln.stl",
+ "links": {
+  "INBLincoln": {
+   "mass": null,
+   "min": [
+    -0.8937,
+    -0.971,
+    -0.10716
+   ],
+   "max": [
+    0.1063,
+    6e-05,
+    4e-05
+   ],
+   "tris": 41686
+  },
+  "woudhouseLeeds": {
+   "mass": null,
+   "min": [
+    -0.27181,
+    -0.25091,
+    -0.03046
+   ],
+   "max": [
+    3e-05,
+    2e-05,
+    0.00013
+   ],
+   "tris": 36831
+  },
+  "base_link": {
+   "mass": null,
+   "min": [
+    -1e-05,
+    -1e-05,
+    -0.0
+   ],
+   "max": [
+    1e-05,
+    1e-05,
+    0.0
+   ],
+   "tris": 8000
+  },
+  "wheel": {
+   "mass": null,
+   "min": [
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "tris": 8000
+  },
+  "LCD_support": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.00123,
+    0.00072,
+    0.00037
+   ],
+   "tris": 2064
+  },
+  "pod car electronics case-LidLeft": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    4e-05
+   ],
+   "max": [
+    0.00299,
+    0.00312,
+    0.00152
+   ],
+   "tris": 104
+  },
+  "pod car electronics case-LidRight": {
+   "mass": null,
+   "min": [
+    0.00299,
+    0.0,
+    4e-05
+   ],
+   "max": [
+    0.00597,
+    0.00312,
+    0.00152
+   ],
+   "tris": 164
+  },
+  "pod car electronics case-StandOff Holder": {
+   "mass": null,
+   "min": [
+    0.00027,
+    0.00027,
+    4e-05
+   ],
+   "max": [
+    0.00055,
+    0.00055,
+    0.00025
+   ],
+   "tris": 260
+  },
+  "pod car electronics case-base plate": {
+   "mass": null,
+   "min": [
+    -0.00031,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.00082,
+    0.00312,
+    0.00018
+   ],
+   "tris": 1088
+  },
+  "pod car electronics case-column support": {
+   "mass": null,
+   "min": [
+    0.00236,
+    6e-05,
+    0.00023
+   ],
+   "max": [
+    0.00246,
+    0.00011,
+    0.00145
+   ],
+   "tris": 12
+  },
+  "pod car electronics case-triangle support": {
+   "mass": null,
+   "min": [
+    0.00254,
+    6e-05,
+    0.00127
+   ],
+   "max": [
+    0.00336,
+    0.00027,
+    0.00147
+   ],
+   "tris": 8
+  },
+  "VLP16_support": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.00236,
+    0.00236,
+    4e-05
+   ],
+   "tris": 3060
+  },
+  "adafruit_mcp4725-3D": {
+   "mass": null,
+   "min": [
+    -0.0,
+    -0.0,
+    -0.00018
+   ],
+   "max": [
+    0.00037,
+    0.00029,
+    6e-05
+   ],
+   "tris": 5320
+  }
+ },
+ "joints": [],
+ "modelScale": 2.0485e-05,
+ "originalExtent": [
+  48815.8672,
+  47552.7031,
+  5305.6905
+ ]
+}

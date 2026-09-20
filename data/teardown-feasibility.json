@@ -1,0 +1,895 @@
+[
+ {
+  "id": "REPO-GONZACERV-NOAH-HARDWARE",
+  "name": "noah-hardware",
+  "repo": "GonzaCerv/noah-hardware",
+  "score": 110.0,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 16,
+   "IGES": 1,
+   "STL": 18
+  },
+  "meshBytesByKind": {
+   "STEP": 81789171,
+   "IGES": 3362229,
+   "STL": 2351
+  },
+  "webMeshCount": 18,
+  "webMeshKinds": {
+   "STL": 18
+  },
+  "totalMeshBytes": 85153751,
+  "bomFiles": [
+   "Doc/BOM.ods",
+   "PCB/bom/ibom.html"
+  ],
+  "bomRows": 41,
+  "kinematicsEvidence": 11
+ },
+ {
+  "id": "REPO-HYPERSPAWN-DROPBEAR",
+  "name": "Dropbear",
+  "repo": "Hyperspawn/Dropbear",
+  "score": 105.9,
+  "urdf": [
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/arm.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/battery.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/dropbear_gz.urdf.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/head.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/leg.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/pelvicgirdle.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/torso.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/materials.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/ros2_control/head_ros2_control.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/arm.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/battery.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/dropbear.urdf.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/head.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/leg.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/pelvicgirdle.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/rviz/torso.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/arm.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/dropbear_simplified_gz.urdf.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/head.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/leg.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/torso.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/gazebo/waist.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/materials.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/arm.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/dropbear_simplified.urdf.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/head.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/leg.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/torso.xacro",
+   "CAD_Files/Assembly/Full_Body/URDF/dropbear_simplified_urdf/urdf/rviz/waist.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/arm.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/battery.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/dropbear_gz.urdf",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/dropbear_gz.urdf.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/head.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/leg.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/p.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/pelvicgirdle.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/gazebo/torso.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/materials.xacro",
+   "Sim/Gazebo/dropbear-sim/dropbear/install/dropbear/share/dropbear/urdf/ros2_control/arm.ros2_control.xacro"
+  ],
+  "urdfCount": 192,
+  "meshKinds": {
+   "STEP": 120,
+   "STL": 6081,
+   "IGES": 21
+  },
+  "meshBytesByKind": {
+   "STEP": 15744,
+   "STL": 795200,
+   "IGES": 232430634
+  },
+  "webMeshCount": 6081,
+  "webMeshKinds": {
+   "STL": 6081
+  },
+  "totalMeshBytes": 233241578,
+  "bomFiles": [
+   "Components/Actuators/OpenTorque (ODrive)/Bill of Materials.csv",
+   "CAD_Files/Assembly/Head/EXTERNAL_ASSEMBLY/BOM/nuts_bolts.txt",
+   "CAD_Files/Assembly/Head/INTERNAL_ASSEMBLY/BOM/nuts_bolts.txt"
+  ],
+  "bomRows": 36,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-ROBOPARTY-ROBOTO_ORIGIN",
+  "name": "roboto_origin",
+  "repo": "Roboparty/roboto_origin",
+  "score": 100.8,
+  "urdf": [
+   "modules/roboparty_train/robolab/data/robots/roboparty/rpo/urdf/rpo.urdf",
+   "modules/roboparty_xr_teleop/assets/Atom01_urdf/urdf/atom01.urdf",
+   "modules/rpo_description/urdf/rpo.urdf",
+   "modules/rpo_hardware/V1.0/atom01_mechanic/03_URDF/urdf/Atom01_urdf.urdf",
+   "modules/rpo_hardware/V2.0/roboto_origin_mechanic/03_URDF/urdf/roboto_origin.urdf"
+  ],
+  "urdfCount": 5,
+  "meshKinds": {
+   "STL": 191,
+   "STEP": 187
+  },
+  "meshBytesByKind": {
+   "STL": 626409344,
+   "STEP": 292483442
+  },
+  "webMeshCount": 191,
+  "webMeshKinds": {
+   "STL": 191
+  },
+  "totalMeshBytes": 918892786,
+  "bomFiles": [
+   "assets/BOM.md",
+   "assets/BOM_EN.md",
+   "assets/Internal Roboto D-BOM.xlsx",
+   "modules/rpo_hardware/V1.0/atom01_mechanic/00_Docs/BOM_Mechanical.xlsx",
+   "modules/rpo_hardware/V1.0/atom01_pcb/Roboto_Power/02_Assembly/BOM_POWER_BOARD-V1.0.xlsx",
+   "modules/rpo_hardware/V1.0/atom01_pcb/Roboto_Usb2Can/02_Assembly/BOM_Roboto_uUsb2Can_V1.0_1_2026-4-8.xlsx",
+   "modules/rpo_hardware/V2.0/roboto_origin_pcb/02_Assembly/BOM_三合一V2.1_RBE_PWR_HUB_V2.1_2026-04-09.xlsx",
+   "modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM 01 ZZEBOM.xlsx",
+   "modules/rpo_hardware/V2.0/roboto_origin_mechanic/00_Docs/萝博头原型机（RoboParty Roboto Origin）散件清单 V1.1.3.xlsx",
+   "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/3D_Printing/A2_3DBOM .xlsx",
+   "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/CNC_Machining/A2_CNCBOM.xlsx"
+  ],
+  "bomRows": 472,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "HUM-BERKELEY-LITE",
+  "name": "Berkeley Humanoid Lite",
+  "repo": "HybridRobotics/Berkeley-Humanoid-Lite",
+  "score": 100.0,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {},
+  "meshBytesByKind": {},
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 0,
+  "bomFiles": [],
+  "bomRows": 0,
+  "kinematicsEvidence": 0
+ },
+ {
+  "id": "REPO-GOOGLE-DEEPMIND-BARKOUR_ROBOT",
+  "name": "barkour_robot",
+  "repo": "google-deepmind/barkour_robot",
+  "score": 98.3,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 11
+  },
+  "meshBytesByKind": {
+   "STEP": 88436941
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 88436941,
+  "bomFiles": [
+   "hardware/barkour_robot_bill_of_materials.csv",
+   "hardware/electronics/ada/Project Outputs for Ada/BOM/Bill of Materials-Ada.xlsx",
+   "hardware/electronics/cortes/Project Outputs for Cortes/BOM/Bill of Materials-Cortes.xlsx",
+   "hardware/electronics/feifei/Project Outputs for Power_Distro/BOM/Bill of Materials-Fei-Fei.xlsx",
+   "hardware/electronics/gebru/Project Outputs for Gebru/BOM/Bill of Materials-Gebru.xlsx",
+   "hardware/electronics/grace/Project Outputs for Grace/BOM/Bill of Materials-Grace.xlsx",
+   "hardware/electronics/hamilton/Project Outputs for Hamilton/BOM/Bill of Materials-Hamilton.xlsx",
+   "hardware/electronics/holberton/Project Outputs for Holberton/BOM/Bill of Materials-Holberton.xlsx",
+   "hardware/electronics/hopper/Project Outputs for Hopper/BOM/Bill of Materials-Hopper.xlsx",
+   "hardware/electronics/jackson/Project Outputs for Jackson/BOM/Bill of Materials-Jackson.xlsx",
+   "hardware/electronics/mataric/Project Outputs for Mataric/BOM/Bill of Materials-Mataric.xlsx",
+   "hardware/electronics/rus/Project Outputs for Rus/BOM/Bill of Materials-Rus.xlsx"
+  ],
+  "bomRows": 592,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-EPFLXPLORE-XRE_LEGGEDROBOT_HW",
+  "name": "XRE_LeggedRobot_HW",
+  "repo": "EPFLXplore/XRE_LeggedRobot_HW",
+  "score": 96.5,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 44
+  },
+  "meshBytesByKind": {
+   "STEP": 55207731
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 55207731,
+  "bomFiles": [
+   "amulet_controller/Manufacturing/Assembly/amulet_controller-BOM.csv",
+   "amulet_controller/Manufacturing/Assembly/amulet_controller-PCBWay-BOM.csv",
+   "amulet_encoder/Manufacturing/Assembly/amulet_encoder_BOM.csv",
+   "amulet_encoder/Manufacturing/Assembly/amulet_encoder_BOM_12x.csv",
+   "amulet_controller/Manufacturing/Assembly/ibom/ibom.html",
+   "amulet_encoder/Manufacturing/Assembly/ibom/ibom.html"
+  ],
+  "bomRows": 166,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-ASHISHA26-ORION-QUADRUPED",
+  "name": "Orion-Quadruped",
+  "repo": "AshishA26/Orion-Quadruped",
+  "score": 95.2,
+  "urdf": [
+   "Software/Jetson/workspace/isaac_ros-dev/src/orion_urdf/urdf/robot_description.urdf",
+   "Software/kinematics_sim/pybullet_sim/leg.urdf",
+   "Software/reinforcement-learning/src/robot_description/robot.urdf",
+   "urdf/orion_urdf_rl/urdf/orion_urdf_rl.urdf",
+   "urdf/urdf_files_original/urdf/urdf_files.urdf",
+   "urdf/urdf_files_original_v2/urdf/urdf_files_v3.urdf"
+  ],
+  "urdfCount": 6,
+  "meshKinds": {
+   "STL": 136,
+   "3MF": 29,
+   "STEP": 1
+  },
+  "meshBytesByKind": {
+   "STL": 96186124,
+   "3MF": 3020434,
+   "STEP": 1314202
+  },
+  "webMeshCount": 165,
+  "webMeshKinds": {
+   "STL": 136,
+   "3MF": 29
+  },
+  "totalMeshBytes": 100520760,
+  "bomFiles": [
+   "pcb/Orion-Control-Board/production/Orion_-_Control_Board_1.0_bom.csv"
+  ],
+  "bomRows": 16,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-UWARG-HARDWARE",
+  "name": "hardware",
+  "repo": "UWARG/hardware",
+  "score": 94.7,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 76
+  },
+  "meshBytesByKind": {
+   "STEP": 206946895
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 206946895,
+  "bomFiles": [
+   "Projects/12-5V Buck + ELRS RX/BOM.csv",
+   "Projects/12V-5V Buck Converter/BOM_[No Variations].csv",
+   "Projects/24V-12V,5V Buck Converter/BOM_[No Variations].csv",
+   "Projects/ELRS Gemini TX/BOM_[No Variations].csv",
+   "Projects/IMACS/Keyboard/IMACS_Keyboard/production/bom.csv",
+   "Projects/Zeropilot 3.0 Interface/BOM_[No Variations].csv",
+   "Projects/Zeropilot 3.0 Primary/BOM_[No Variations].csv",
+   "Projects/Nav-Lights/Project Outputs for Nav_Lights_UWARG/BOM/Bill of Materials-Nav_Lights_UWARG.xls",
+   "Projects/Power Distribution/Rev 1/Project Outputs for Power Distribution/BOM/Bill of Materials-Power Distribution.xlsx"
+  ],
+  "bomRows": 206,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-CHESTNUT-ROBOTICS-AERO-HAND-OPEN",
+  "name": "aero-hand-open",
+  "repo": "Chestnut-Robotics/aero-hand-open",
+  "score": 94.1,
+  "urdf": [
+   "ros2/src/aero_hand_open_description/urdf/aero_hand_open_left.urdf",
+   "ros2/src/aero_hand_open_description/urdf/aero_hand_open_right.urdf"
+  ],
+  "urdfCount": 2,
+  "meshKinds": {
+   "STEP": 28,
+   "3MF": 3,
+   "STL": 46
+  },
+  "meshBytesByKind": {
+   "STEP": 131103505,
+   "3MF": 25182420,
+   "STL": 8607964
+  },
+  "webMeshCount": 49,
+  "webMeshKinds": {
+   "3MF": 3,
+   "STL": 46
+  },
+  "totalMeshBytes": 164893889,
+  "bomFiles": [
+   "hardware/Assembly/BOM.csv",
+   "hardware/PCB/Aero_hand_open_left/Aero-Hand-Open-Left-BOM.csv",
+   "hardware/PCB/Aero_hand_open_right/Aero-Hand-Open-Right-BOM.csv"
+  ],
+  "bomRows": 80,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-INTROLAB-SECURBOT",
+  "name": "securbot",
+  "repo": "introlab/securbot",
+  "score": 94.1,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STL": 13,
+   "STEP": 9
+  },
+  "meshBytesByKind": {
+   "STL": 522292,
+   "STEP": 23289509
+  },
+  "webMeshCount": 13,
+  "webMeshKinds": {
+   "STL": 13
+  },
+  "totalMeshBytes": 23811801,
+  "bomFiles": [
+   "hardware/01 - PowerTree/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_PowerTree.xls",
+   "hardware/03 - Charge Station/01 - SCHEMAS ET PCB/01 - REVISION 1_000/01 - OUTPUT/BOM_Charge_Station.xls"
+  ],
+  "bomRows": 49,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-OPEN-RDC-BIPEDAL_ROBOT_HARDWARE",
+  "name": "Bipedal_Robot_Hardware",
+  "repo": "open-rdc/Bipedal_Robot_Hardware",
+  "score": 93.9,
+  "urdf": [
+   "Robot_Models/URDF/urdf_simple-model/simple_model.urdf"
+  ],
+  "urdfCount": 1,
+  "meshKinds": {
+   "STEP": 29,
+   "3MF": 5,
+   "STL": 54
+  },
+  "meshBytesByKind": {
+   "STEP": 3487309,
+   "3MF": 257175,
+   "STL": 24388153
+  },
+  "webMeshCount": 59,
+  "webMeshKinds": {
+   "3MF": 5,
+   "STL": 54
+  },
+  "totalMeshBytes": 28132637,
+  "bomFiles": [
+   "Circuit/Doc/V2/250317_logic_circuit_v2_parts_list.csv"
+  ],
+  "bomRows": 48,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-UWROBOTICS-MARSROVERHARDWARE",
+  "name": "MarsRoverHardware",
+  "repo": "uwrobotics/MarsRoverHardware",
+  "score": 90.2,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 18
+  },
+  "meshBytesByKind": {
+   "STEP": 172516186
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 172516186,
+  "bomFiles": [
+   "Projects/Arm/Rev1/Arm-BOM.xls",
+   "Projects/Gimbal/2021/Rev1/fab/Gimbal 2020-BOM.xls",
+   "Projects/LED Matrix/Rev1/Project Outputs for LED-V1/LED Matrix BOM.xlsx",
+   "Projects/Power Distribution Board/Rev2/Power Distribution Board BOM.xlsx",
+   "Projects/Robot Controller/Dev Board/Dev Board BOM.xls",
+   "Projects/Safety/Rev1/fab/safety2020-BOM.xls",
+   "Projects/Science/Rev1/Science-BOM.xls",
+   "Projects/Science/Rev2/Science BOM PCBWay.xlsx",
+   "Projects/Science/Rev3/Science BOM PCBWay.xlsx",
+   "Projects/Battery Management System/Rev1/Project Outputs for Battery Management System/BOM/Bill of Materials-Battery Management System(Production).xlsx"
+  ],
+  "bomRows": 403,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-NASA-JPL-OPEN-SOURCE-ROVER",
+  "name": "open-source-rover",
+  "repo": "nasa-jpl/open-source-rover",
+  "score": 89.8,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 23,
+   "STL": 2
+  },
+  "meshBytesByKind": {
+   "STEP": 37191767,
+   "STL": 629368
+  },
+  "webMeshCount": 2,
+  "webMeshKinds": {
+   "STL": 2
+  },
+  "totalMeshBytes": 37821135,
+  "bomFiles": [
+   "electrical/pcb/control_board/BOM/bom_v2.0.3_board_ref_parts.csv",
+   "electrical/pcb/control_board/BOM/bom_v2.0.3_other_parts.csv",
+   "electrical/pcb/control_board/BOM/digikey_bom_4-20-2023.csv",
+   "parts_list/digikey_bom.csv",
+   "parts_list/parts_list.csv",
+   "parts_list/extra_parts.md",
+   "parts_list/screws.md"
+  ],
+  "bomRows": 247,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-NEWDEXTERITY-OPEN-BIOMANUAL-MANIPULATION-SYSTEM",
+  "name": "Open-Biomanual-Manipulation-System",
+  "repo": "newdexterity/Open-Biomanual-Manipulation-System",
+  "score": 87.7,
+  "urdf": [
+   "Software/moah_src/moa_description/urdf/dual_arm.xacro",
+   "Software/moah_src/moa_description/urdf/left_arm_moa_transmission.xacro",
+   "Software/moah_src/moa_description/urdf/left_hand.xacro",
+   "Software/moah_src/moa_description/urdf/right_arm_moa_transmission.xacro",
+   "Software/moah_src/moa_description/urdf/right_hand.xacro",
+   "Software/moah_src/moa_moveit_config/config/gazebo_dual_arm.urdf",
+   "Software/moah_src/ndx_util/urdf/base_xacros.xacro",
+   "Software/moah_src/ndx_util/xacro/spherical_joint_macro.xacro"
+  ],
+  "urdfCount": 8,
+  "meshKinds": {
+   "STEP": 248,
+   "STL": 28,
+   "DAE": 20
+  },
+  "meshBytesByKind": {
+   "STEP": 267608597,
+   "STL": 100311202,
+   "DAE": 77613326
+  },
+  "webMeshCount": 48,
+  "webMeshKinds": {
+   "STL": 28,
+   "DAE": 20
+  },
+  "totalMeshBytes": 445533125,
+  "bomFiles": [
+   "Assembly Guide/Bill_of_Materials.xlsx"
+  ],
+  "bomRows": 99,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-MENLORESEARCH-ASIMOV-1",
+  "name": "asimov-1",
+  "repo": "menloresearch/asimov-1",
+  "score": 85.5,
+  "urdf": [
+   "sim-model/urdf/asimov_1.urdf"
+  ],
+  "urdfCount": 1,
+  "meshKinds": {
+   "STEP": 180,
+   "STL": 25
+  },
+  "meshBytesByKind": {
+   "STEP": 363867592,
+   "STL": 43324400
+  },
+  "webMeshCount": 25,
+  "webMeshKinds": {
+   "STL": 25
+  },
+  "totalMeshBytes": 407191992,
+  "bomFiles": [],
+  "bomRows": 0,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-REGULAR030-SATURNARM",
+  "name": "SaturnArm",
+  "repo": "regular030/SaturnArm",
+  "score": 83.9,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "3MF": 1,
+   "STEP": 86,
+   "STL": 7,
+   "FBX": 27
+  },
+  "meshBytesByKind": {
+   "3MF": 2352387,
+   "STEP": 226246546,
+   "STL": 4387188,
+   "FBX": 5760620
+  },
+  "webMeshCount": 35,
+  "webMeshKinds": {
+   "3MF": 1,
+   "STL": 7,
+   "FBX": 27
+  },
+  "totalMeshBytes": 238746741,
+  "bomFiles": [
+   "BOM - Arm.csv"
+  ],
+  "bomRows": 23,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-POPI-MKX3-POPI_PROJECT",
+  "name": "popi_project",
+  "repo": "popi-mkx3/popi_project",
+  "score": 82.3,
+  "urdf": [
+   "popi_software/popi/popi_code/models/popi.urdf",
+   "popi_software/popi/popi_description/xacro/const.xacro",
+   "popi_software/popi/popi_description/xacro/physicprop.xacro",
+   "popi_software/popi/popi_description/xacro/popi.urdf",
+   "popi_software/popi/popi_description/xacro/popi.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/biped.urdf",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/hyq.urdf.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/hyq.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/leg.urdf.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/leg.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/monoped.urdf",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/trunk.urdf.xacro",
+   "popi_software/towr/xpp/robots/xpp_hyq/urdf/trunk.xacro",
+   "popi_software/towr/xpp/robots/xpp_quadrotor/urdf/quadrotor.urdf",
+   "popi_software/towr/xpp/robots/xpp_quadrotor/urdf/quadrotor.xacro"
+  ],
+  "urdfCount": 15,
+  "meshKinds": {
+   "STEP": 2,
+   "STL": 133,
+   "DAE": 5
+  },
+  "meshBytesByKind": {
+   "STEP": 5551733,
+   "STL": 41864372,
+   "DAE": 224946
+  },
+  "webMeshCount": 138,
+  "webMeshKinds": {
+   "STL": 133,
+   "DAE": 5
+  },
+  "totalMeshBytes": 47641051,
+  "bomFiles": [
+   "popi_reports/POPI_bill_of_materials.xlsx"
+  ],
+  "bomRows": 35,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-SRA-VJTI-SRA-BOARD-HARDWARE-DESIGN",
+  "name": "sra-board-hardware-design",
+  "repo": "SRA-VJTI/sra-board-hardware-design",
+  "score": 80.5,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 27,
+   "STL": 2
+  },
+  "meshBytesByKind": {
+   "STEP": 108480011,
+   "STL": 30168
+  },
+  "webMeshCount": 2,
+  "webMeshKinds": {
+   "STL": 2
+  },
+  "totalMeshBytes": 108510179,
+  "bomFiles": [
+   "sra_dev_board_2026/bom/sra_dev_board_2026.csv"
+  ],
+  "bomRows": 52,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-MANUFACTUREDMOTION-HEX",
+  "name": "Hex",
+  "repo": "ManufacturedMotion/Hex",
+  "score": 80.1,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STL": 11,
+   "STEP": 2,
+   "3MF": 31
+  },
+  "meshBytesByKind": {
+   "STL": 3948924,
+   "STEP": 84717741,
+   "3MF": 3325697
+  },
+  "webMeshCount": 42,
+  "webMeshKinds": {
+   "STL": 11,
+   "3MF": 31
+  },
+  "totalMeshBytes": 91992362,
+  "bomFiles": [
+   "Hex1_resources/BOM/BOM.md",
+   "Hex2_resources/BOM/hexapod_bom - electrical.pdf",
+   "Hex2_resources/BOM/hexapod_bom - mechanical.pdf",
+   "Hex3_resources/electronics/leg_board/V2.0/HEX3_leg_board_v2.0 v69_top_bom.csv",
+   "Hex3_resources/electronics/leg_board/V3.2/HEX3_leg_board_PCB_v3.2 top_bom.csv"
+  ],
+  "bomRows": 136,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-4NDREAS-BETABOTS-ROBOT-ARM-PROJECT",
+  "name": "BetaBots-Robot-Arm-Project",
+  "repo": "4ndreas/BetaBots-Robot-Arm-Project",
+  "score": 78.5,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 9,
+   "STL": 3
+  },
+  "meshBytesByKind": {
+   "STEP": 71004889,
+   "STL": 4934952
+  },
+  "webMeshCount": 3,
+  "webMeshKinds": {
+   "STL": 3
+  },
+  "totalMeshBytes": 75939841,
+  "bomFiles": [
+   "Green/RobotV4_BOM.xlsx"
+  ],
+  "bomRows": 110,
+  "kinematicsEvidence": 5
+ },
+ {
+  "id": "REPO-AUTONOMOUS-AI-OPENHARNESS",
+  "name": "openharness",
+  "repo": "autonomous-ai/openharness",
+  "score": 78.3,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 7,
+   "STL": 8,
+   "GLB": 1
+  },
+  "meshBytesByKind": {
+   "STEP": 4571865,
+   "STL": 12007572,
+   "GLB": 173004
+  },
+  "webMeshCount": 9,
+  "webMeshKinds": {
+   "STL": 8,
+   "GLB": 1
+  },
+  "totalMeshBytes": 16752441,
+  "bomFiles": [
+   "devices/harness-device/hardware/pcb/production/BOM_Harness_1.75_AMOLED_PCB_Harness_1.75.xlsx"
+  ],
+  "bomRows": 40,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-OPENBIONICS-PROSTHETIC-HANDS",
+  "name": "Prosthetic-Hands",
+  "repo": "OpenBionics/Prosthetic-Hands",
+  "score": 77.8,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STL": 280
+  },
+  "meshBytesByKind": {
+   "STL": 40004720
+  },
+  "webMeshCount": 280,
+  "webMeshKinds": {
+   "STL": 280
+  },
+  "totalMeshBytes": 40004720,
+  "bomFiles": [],
+  "bomRows": 0,
+  "kinematicsEvidence": 7
+ },
+ {
+  "id": "REPO-ARTFULBYTES-NSUMO_HARDWARE",
+  "name": "nsumo_hardware",
+  "repo": "artfulbytes/nsumo_hardware",
+  "score": 75.5,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 8
+  },
+  "meshBytesByKind": {
+   "STEP": 3448961
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 3448961,
+  "bomFiles": [
+   "manufacture/rev1/assembly/nsumo_bom_2021-06-13.csv",
+   "manufacture/rev1/assembly/nsumo_bom_2021-06-15.csv",
+   "manufacture/rev2/assembly/nsumo_bom_rev2_2021-08-20.csv"
+  ],
+  "bomRows": 165,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-ZITEH-LEAP",
+  "name": "LEAP",
+  "repo": "ziteh/LEAP",
+  "score": 74.6,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 1
+  },
+  "meshBytesByKind": {
+   "STEP": 721904
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 721904,
+  "bomFiles": [],
+  "bomRows": 0,
+  "kinematicsEvidence": 6
+ },
+ {
+  "id": "REPO-OPENPODCAR-OPENPODCAR",
+  "name": "OpenPodcar",
+  "repo": "OpenPodcar/OpenPodcar",
+  "score": 73.3,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "OBJ": 2,
+   "STL": 12,
+   "DAE": 4,
+   "STEP": 2
+  },
+  "meshBytesByKind": {
+   "OBJ": 62517680,
+   "STL": 36952508,
+   "DAE": 100242610,
+   "STEP": 52484424
+  },
+  "webMeshCount": 18,
+  "webMeshKinds": {
+   "OBJ": 2,
+   "STL": 12,
+   "DAE": 4
+  },
+  "totalMeshBytes": 252197222,
+  "bomFiles": [
+   "docs/hardware/billOfMaterials.xlsx"
+  ],
+  "bomRows": 11,
+  "kinematicsEvidence": 13
+ },
+ {
+  "id": "REPO-STACK-CHAN-STACK-CHAN",
+  "name": "stack-chan",
+  "repo": "stack-chan/stack-chan",
+  "score": 72.8,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 36,
+   "STL": 47
+  },
+  "meshBytesByKind": {
+   "STEP": 33791280,
+   "STL": 15315648
+  },
+  "webMeshCount": 47,
+  "webMeshKinds": {
+   "STL": 47
+  },
+  "totalMeshBytes": 49106928,
+  "bomFiles": [],
+  "bomRows": 0,
+  "kinematicsEvidence": 11
+ },
+ {
+  "id": "REPO-ORCAHAND-ORCAHAND_HARDWARE",
+  "name": "orcahand_hardware",
+  "repo": "orcahand/orcahand_hardware",
+  "score": 72.7,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 69,
+   "STL": 221,
+   "3MF": 13
+  },
+  "meshBytesByKind": {
+   "STEP": 108496847,
+   "STL": 229778764,
+   "3MF": 72366079
+  },
+  "webMeshCount": 234,
+  "webMeshKinds": {
+   "STL": 221,
+   "3MF": 13
+  },
+  "totalMeshBytes": 410641690,
+  "bomFiles": [
+   "orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_BOM.xls",
+   "orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls"
+  ],
+  "bomRows": 2,
+  "kinematicsEvidence": 10
+ },
+ {
+  "id": "REPO-OPENAMROBOT-OPENAMR",
+  "name": "openamr",
+  "repo": "openAMRobot/openamr",
+  "score": 71.8,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 29
+  },
+  "meshBytesByKind": {
+   "STEP": 54838931
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 54838931,
+  "bomFiles": [
+   "docs/hardware/BOM/BOM_specs_MMP.xlsx"
+  ],
+  "bomRows": 42,
+  "kinematicsEvidence": 9
+ },
+ {
+  "id": "REPO-ALEXHUGE1-ALEXBOTMINI_HARDWARE",
+  "name": "Alexbotmini_hardware",
+  "repo": "Alexhuge1/Alexbotmini_hardware",
+  "score": 70.2,
+  "urdf": [],
+  "urdfCount": 0,
+  "meshKinds": {
+   "STEP": 38
+  },
+  "meshBytesByKind": {
+   "STEP": 216686338
+  },
+  "webMeshCount": 0,
+  "webMeshKinds": {},
+  "totalMeshBytes": 216686338,
+  "bomFiles": [
+   "1_Mechanic/Alexbotmini(SW2URDF)/2_Wholebody/BOM.xlsx",
+   "1_Mechanic/Alexbotmini(SW2URDF)/3_For_CNC/BOM.xlsx",
+   "1_Mechanic/Alexbotmini_V1.0/2_Wholebody/BOM.xlsx",
+   "1_Mechanic/Alexbotmini_V1.0/3_For_CNC/BOM.xlsx"
+  ],
+  "bomRows": 124,
+  "kinematicsEvidence": 5
+ }
+]

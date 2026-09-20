@@ -1,0 +1,591 @@
+{
+ "source": "https://github.com/popi-mkx3/popi_project/blob/HEAD/popi_software/popi/popi_description/xacro/popi.xacro",
+ "links": {
+  "Bati": {
+   "mass": null,
+   "min": [
+    -0.35478,
+    -0.16955,
+    -0.10131
+   ],
+   "max": [
+    0.35478,
+    0.16955,
+    0.04578
+   ],
+   "tris": 9410
+  },
+  "EpauleAVD": {
+   "mass": null,
+   "min": [
+    0.21321,
+    -0.1882,
+    -0.10639
+   ],
+   "max": [
+    0.34207,
+    -0.00996,
+    0.00673
+   ],
+   "tris": 4598
+  },
+  "HJambeAVD": {
+   "mass": null,
+   "min": [
+    -0.03103,
+    -0.27312,
+    -0.09127
+   ],
+   "max": [
+    0.34336,
+    -0.18819,
+    0.05386
+   ],
+   "tris": 9410
+  },
+  "BJambeAVD": {
+   "mass": null,
+   "min": [
+    -0.08485,
+    -0.26759,
+    -0.1191
+   ],
+   "max": [
+    0.23281,
+    -0.21168,
+    -0.06318
+   ],
+   "tris": 2570
+  },
+  "PiedAVD": {
+   "mass": null,
+   "min": [
+    0.23281,
+    -0.24178,
+    -0.09326
+   ],
+   "max": [
+    0.23366,
+    -0.23754,
+    -0.08902
+   ],
+   "tris": 12
+  },
+  "EpauleAVG": {
+   "mass": null,
+   "min": [
+    0.21321,
+    0.00996,
+    -0.10639
+   ],
+   "max": [
+    0.34207,
+    0.1882,
+    0.00673
+   ],
+   "tris": 4600
+  },
+  "HJambeAVG": {
+   "mass": null,
+   "min": [
+    -0.02778,
+    0.18815,
+    -0.11445
+   ],
+   "max": [
+    0.34336,
+    0.27312,
+    0.05288
+   ],
+   "tris": 9410
+  },
+  "BJambeAVG": {
+   "mass": null,
+   "min": [
+    -0.08485,
+    0.21169,
+    -0.11909
+   ],
+   "max": [
+    0.23281,
+    0.2676,
+    -0.06317
+   ],
+   "tris": 2570
+  },
+  "PiedAVG": {
+   "mass": null,
+   "min": [
+    0.23281,
+    0.23754,
+    -0.09326
+   ],
+   "max": [
+    0.23366,
+    0.24178,
+    -0.08902
+   ],
+   "tris": 12
+  },
+  "EpauleARD": {
+   "mass": null,
+   "min": [
+    -0.34207,
+    -0.1882,
+    -0.10639
+   ],
+   "max": [
+    -0.21321,
+    -0.00996,
+    0.00673
+   ],
+   "tris": 4600
+  },
+  "HJambeARD": {
+   "mass": null,
+   "min": [
+    -0.59143,
+    -0.27312,
+    -0.09118
+   ],
+   "max": [
+    -0.21708,
+    -0.18812,
+    0.05386
+   ],
+   "tris": 9410
+  },
+  "BJambeARD": {
+   "mass": null,
+   "min": [
+    -0.64522,
+    -0.2676,
+    -0.11909
+   ],
+   "max": [
+    -0.32755,
+    -0.21169,
+    -0.06317
+   ],
+   "tris": 2570
+  },
+  "PiedARD": {
+   "mass": null,
+   "min": [
+    -0.32755,
+    -0.24178,
+    -0.09326
+   ],
+   "max": [
+    -0.32671,
+    -0.23754,
+    -0.08902
+   ],
+   "tris": 12
+  },
+  "EpauleARG": {
+   "mass": null,
+   "min": [
+    -0.34207,
+    0.00996,
+    -0.10639
+   ],
+   "max": [
+    -0.21321,
+    0.1882,
+    0.00673
+   ],
+   "tris": 4598
+  },
+  "HJambeARG": {
+   "mass": null,
+   "min": [
+    -0.58786,
+    0.18777,
+    -0.11435
+   ],
+   "max": [
+    -0.217,
+    0.27312,
+    0.05288
+   ],
+   "tris": 9410
+  },
+  "BJambeARG": {
+   "mass": null,
+   "min": [
+    -0.64522,
+    0.21169,
+    -0.11909
+   ],
+   "max": [
+    -0.32755,
+    0.2676,
+    -0.06317
+   ],
+   "tris": 2570
+  },
+  "PiedARG": {
+   "mass": null,
+   "min": [
+    -0.32755,
+    0.23754,
+    -0.09326
+   ],
+   "max": [
+    -0.32671,
+    0.24178,
+    -0.08902
+   ],
+   "tris": 12
+  }
+ },
+ "joints": [
+  {
+   "name": "base_flottante",
+   "type": "fixed",
+   "parent": "Base_flottante",
+   "child": "Bati",
+   "origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "Bati",
+   "jointId": 1
+  },
+  {
+   "name": "aileAVD",
+   "type": "revolute",
+   "parent": "Bati",
+   "child": "EpauleAVD",
+   "origin": [
+    0.3305,
+    -0.175,
+    -0.051
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "EpauleAVD",
+   "jointId": 2
+  },
+  {
+   "name": "epauleAVD",
+   "type": "revolute",
+   "parent": "EpauleAVD",
+   "child": "HJambeAVD",
+   "origin": [
+    0.0,
+    -0.1077,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "HJambeAVD",
+   "jointId": 3
+  },
+  {
+   "name": "coudeAVD",
+   "type": "revolute",
+   "parent": "HJambeAVD",
+   "child": "BJambeAVD",
+   "origin": [
+    -0.35192,
+    0.0,
+    -0.041509
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "BJambeAVD",
+   "jointId": 4
+  },
+  {
+   "name": "piedAVD",
+   "type": "fixed",
+   "parent": "BJambeAVD",
+   "child": "PiedAVD",
+   "origin": [
+    0.29604,
+    0.0,
+    -0.015
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "PiedAVD",
+   "jointId": 5
+  },
+  {
+   "name": "aileAVG",
+   "type": "revolute",
+   "parent": "Bati",
+   "child": "EpauleAVG",
+   "origin": [
+    0.3305,
+    0.175,
+    -0.051
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "EpauleAVG",
+   "jointId": 6
+  },
+  {
+   "name": "epauleAVG",
+   "type": "revolute",
+   "parent": "EpauleAVG",
+   "child": "HJambeAVG",
+   "origin": [
+    0.0,
+    0.1077,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "HJambeAVG",
+   "jointId": 7
+  },
+  {
+   "name": "coudeAVG",
+   "type": "revolute",
+   "parent": "HJambeAVG",
+   "child": "BJambeAVG",
+   "origin": [
+    -0.35192,
+    0.0,
+    -0.041509
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "BJambeAVG",
+   "jointId": 8
+  },
+  {
+   "name": "piedAVG",
+   "type": "fixed",
+   "parent": "BJambeAVG",
+   "child": "PiedAVG",
+   "origin": [
+    0.29604,
+    0.0,
+    -0.015
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "PiedAVG",
+   "jointId": 9
+  },
+  {
+   "name": "aileARD",
+   "type": "revolute",
+   "parent": "Bati",
+   "child": "EpauleARD",
+   "origin": [
+    -0.3305,
+    -0.175,
+    -0.051
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "EpauleARD",
+   "jointId": 10
+  },
+  {
+   "name": "epauleARD",
+   "type": "revolute",
+   "parent": "EpauleARD",
+   "child": "HJambeARD",
+   "origin": [
+    0.0,
+    -0.1077,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "HJambeARD",
+   "jointId": 11
+  },
+  {
+   "name": "coudeARD",
+   "type": "revolute",
+   "parent": "HJambeARD",
+   "child": "BJambeARD",
+   "origin": [
+    -0.35192,
+    0.0,
+    -0.041509
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "BJambeARD",
+   "jointId": 12
+  },
+  {
+   "name": "piedARD",
+   "type": "fixed",
+   "parent": "BJambeARD",
+   "child": "PiedARD",
+   "origin": [
+    0.29604,
+    0.0,
+    -0.015
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "PiedARD",
+   "jointId": 13
+  },
+  {
+   "name": "aileARG",
+   "type": "revolute",
+   "parent": "Bati",
+   "child": "EpauleARG",
+   "origin": [
+    -0.3305,
+    0.175,
+    -0.051
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "EpauleARG",
+   "jointId": 14
+  },
+  {
+   "name": "epauleARG",
+   "type": "revolute",
+   "parent": "EpauleARG",
+   "child": "HJambeARG",
+   "origin": [
+    0.0,
+    0.1077,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "HJambeARG",
+   "jointId": 15
+  },
+  {
+   "name": "coudeARG",
+   "type": "revolute",
+   "parent": "HJambeARG",
+   "child": "BJambeARG",
+   "origin": [
+    -0.35192,
+    0.0,
+    -0.041509
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "BJambeARG",
+   "jointId": 16
+  },
+  {
+   "name": "piedARG",
+   "type": "fixed",
+   "parent": "BJambeARG",
+   "child": "PiedARG",
+   "origin": [
+    0.29604,
+    0.0,
+    -0.015
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "PiedARG",
+   "jointId": 17
+  }
+ ],
+ "modelScale": 0.847749477,
+ "originalExtent": [
+  1.1796,
+  0.6443,
+  0.204
+ ]
+}

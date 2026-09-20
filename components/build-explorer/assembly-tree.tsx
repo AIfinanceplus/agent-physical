@@ -2,16 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { ROBOT_TREE, type TreeNode } from "@/lib/robot-tree";
-import { ACTUATOR_PARTS, ROBOT_PARTS, type Part } from "@/lib/robot-parts";
+import { partIndex, type TreeNode } from "@/lib/robot-tree";
+import type { Part } from "@/lib/robot-parts";
+import { useTeardown } from "@/lib/teardown-context";
 import { cn } from "@/lib/utils";
 import { ClassBadge, fmtQty } from "./marks";
-
-const PART_INDEX = new Map<string, Part>([
-  ...ROBOT_PARTS.map((p) => [p.id, p] as const),
-  ...ACTUATOR_PARTS["6512"].map((p) => [p.id, p] as const),
-  ...ACTUATOR_PARTS["5010"].map((p) => [p.id, p] as const),
-]);
 
 const KIND_LABEL: Record<TreeNode["kind"], string | null> = {
   root: null,
@@ -21,25 +16,25 @@ const KIND_LABEL: Record<TreeNode["kind"], string | null> = {
   group: "工序",
 };
 
-function nodeMatches(node: TreeNode, q: string): boolean {
+function nodeMatches(node: TreeNode, q: string, index: Map<string, Part>): boolean {
   if (!q) return true;
   const needle = q.toLowerCase();
   if (node.label.toLowerCase().includes(needle) || node.labelEn.toLowerCase().includes(needle)) return true;
   if (node.summary?.toLowerCase().includes(needle)) return true;
   if (
     node.joint &&
-    (node.joint.docName.toLowerCase().includes(needle) || String(node.joint.canId) === needle)
+    (node.joint.docName.toLowerCase().includes(needle) || String(node.joint.canId ?? "") === needle)
   )
     return true;
   for (const ref of node.parts) {
-    const p = PART_INDEX.get(ref.partId);
+    const p = index.get(ref.partId);
     if (
       p &&
       (p.name.toLowerCase().includes(needle) || p.nameZh.includes(q) || (p.mpn ?? "").toLowerCase().includes(needle))
     )
       return true;
   }
-  return node.children.some((c) => nodeMatches(c, q));
+  return node.children.some((c) => nodeMatches(c, q, index));
 }
 
 export function AssemblyTree({
@@ -55,6 +50,8 @@ export function AssemblyTree({
 }) {
   const [query, setQuery] = useState("");
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const spec = useTeardown();
+  const PART_INDEX = useMemo(() => partIndex(spec.parts), [spec.parts]);
 
   const pathToSelected = useMemo(() => {
     const trail: string[] = [];
@@ -65,9 +62,9 @@ export function AssemblyTree({
       trail.pop();
       return false;
     };
-    walk(ROBOT_TREE);
+    walk(spec.tree);
     return new Set(trail);
-  }, [selectedId]);
+  }, [selectedId, spec.tree]);
 
   const isOpen = (n: TreeNode) => {
     if (collapsed.has(n.id)) return false;
@@ -86,7 +83,7 @@ export function AssemblyTree({
   };
 
   const renderNode = (node: TreeNode, depth: number) => {
-    if (query && !nodeMatches(node, query)) return null;
+    if (query && !nodeMatches(node, query, PART_INDEX)) return null;
     const open = isOpen(node);
     const hasChildren = node.children.length > 0;
     const needle = query.toLowerCase();
@@ -141,7 +138,8 @@ export function AssemblyTree({
               ) : null}
               {node.joint ? (
                 <span className="num text-[11px] leading-none text-muted-foreground">
-                  #{node.joint.jointId} · {node.joint.canBus} ID{node.joint.canId}
+                  #{node.joint.jointId}
+                  {node.joint.canBus ? ` · ${node.joint.canBus} ID${node.joint.canId}` : ""}
                 </span>
               ) : null}
             </span>
@@ -187,7 +185,7 @@ export function AssemblyTree({
         />
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto py-1.5 pr-1">
-        <ul>{renderNode(ROBOT_TREE, 0)}</ul>
+        <ul>{renderNode(spec.tree, 0)}</ul>
       </div>
       <div className="border-t border-border px-3 py-2 text-[12px] leading-snug text-muted-foreground">
         点击任意总成、子总成、关节或单件，3D 视图会同步高亮。

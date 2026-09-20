@@ -20,10 +20,12 @@ export interface JointRecord {
   docName: string;
   /** Chinese joint name derived from limb + axis, for UI labels. */
   zhName: string;
-  /** Global joint index from the documentation. */
+  /** Global joint index from the documentation. For generated teardowns this is
+   *  the joint's position in the released URDF, not a CAN id. */
   jointId: number;
-  canBus: "CAN0" | "CAN1" | "CAN2" | "CAN3";
-  canId: number;
+  /** NULL when the release publishes no bus mapping (most repositories do not). */
+  canBus?: "CAN0" | "CAN1" | "CAN2" | "CAN3" | null;
+  canId?: number | null;
   range: [number, number];
   motion: string;
   /** URDF joint name in the released CAD assets. */
@@ -57,6 +59,14 @@ export interface TreeNode {
 }
 
 const ROBOT_PART_INDEX = new Map<string, Part>(ROBOT_PARTS.map((p) => [p.id, p]));
+
+/**
+ * Part-id → part lookup for any spec. Generated teardowns carry their own part
+ * list, so the index can no longer be a single module-level table.
+ */
+export function partIndex(parts: Part[]): Map<string, Part> {
+  return new Map(parts.map((p) => [p.id, p]));
+}
 
 /** Limb prefix → Chinese limb name, matching the released URDF link naming. */
 const LIMB_ZH: Record<"arm_left" | "arm_right" | "leg_left" | "leg_right", string> = {
@@ -560,7 +570,8 @@ export function actuatorPartsFor(variant: ActuatorVariant, count: number): BomLi
     }));
 }
 
-export function rollup(node: TreeNode = ROBOT_TREE): Rollup {
+export function rollup(node: TreeNode = ROBOT_TREE, parts?: Part[]): Rollup {
+  const index = parts ? partIndex(parts) : ROBOT_PART_INDEX;
   const acc = new Map<string, BomLine>();
   const actuatorCounts: Record<ActuatorVariant, number> = { "6512": 0, "5010": 0 };
 
@@ -640,7 +651,7 @@ export function nodePath(id: string, node: TreeNode = ROBOT_TREE, trail: string[
 }
 
 /** Human-readable ancestor labels, root excluded. */
-export function nodeLabelPath(id: string): string[] {
+export function nodeLabelPath(id: string, root: TreeNode = ROBOT_TREE): string[] {
   const found: string[] = [];
   const walk = (node: TreeNode, trail: string[]): boolean => {
     const here = node.kind === "root" ? trail : [...trail, node.label];
@@ -651,7 +662,7 @@ export function nodeLabelPath(id: string): string[] {
     for (const c of node.children) if (walk(c, here)) return true;
     return false;
   };
-  walk(ROBOT_TREE, []);
+  walk(root, []);
   return found;
 }
 
@@ -676,12 +687,13 @@ export function flattenJoints(node: TreeNode = ROBOT_TREE): TreeNode[] {
   return out.sort((a, b) => (a.joint!.jointId ?? 0) - (b.joint!.jointId ?? 0));
 }
 
-export function collectPartsFor(node: TreeNode): BomLine[] {
+export function collectPartsFor(node: TreeNode, parts?: Part[]): BomLine[] {
+  const index = parts ? partIndex(parts) : ROBOT_PART_INDEX;
   const lines: BomLine[] = [];
   const walk = (n: TreeNode, path: string[]) => {
     const here = [...path, n.label];
     for (const ref of n.parts) {
-      const part = ROBOT_PART_INDEX.get(ref.partId);
+      const part = index.get(ref.partId);
       if (!part) continue;
       lines.push({
         part,

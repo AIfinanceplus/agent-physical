@@ -9,7 +9,7 @@ import {
   MODEL_ROOT_ROTATION_X,
   explodeOffset,
   modelCenter,
-  regionOfLink,
+  regionOfLink as defaultRegionOfLink,
   type Region,
   type RobotModel,
 } from "@/lib/robot-view";
@@ -67,6 +67,8 @@ export default function RobotViewer({
   onPickJoint,
   handleRef,
   className,
+  glbUrl = "/model/robot.glb",
+  linkRegion = defaultRegionOfLink,
 }: {
   model: RobotModel;
   joints: JointMarker[];
@@ -74,7 +76,15 @@ export default function RobotViewer({
   onPickJoint: (jointId: number) => void;
   handleRef: RefObject<ViewerHandle | null>;
   className?: string;
+  /** Geometry for this teardown. Generated teardowns ship their own GLB. */
+  glbUrl?: string;
+  /** Link → region mapping, carried by the spec. */
+  linkRegion?: (link: string) => string;
 }) {
+  // Props are read through a ref because the GLB is fetched once per mount: a
+  // changing function identity must not reload the model.
+  const cfgRef = useRef({ glbUrl, linkRegion });
+  cfgRef.current = { glbUrl, linkRegion };
   const hostRef = useRef<HTMLDivElement>(null);
   const stateRef = useRef<ViewerState>({
     highlightLinks: [],
@@ -214,14 +224,48 @@ export default function RobotViewer({
       }
     };
 
+    // 取景必须由模型自身尺寸决定。参照实现的固定坐标是给一台 ≈0.83 m 高的人形调的：
+    // 换成 0.4 m 的四足或 2 m 的机械臂，固定距离会把模型推出画框（看起来像"没加载出来"）。
+    // URDF 是 Z 轴向上，模型根节点绕 X 轴 -90°，所以渲染坐标是 (x, z, -y)。
+    const frameBox = (() => {
+      const mn = [Infinity, Infinity, Infinity];
+      const mx = [-Infinity, -Infinity, -Infinity];
+      for (const l of Object.values(model.links)) {
+        const a = [l.min[0], l.min[2], -l.max[1]];
+        const b = [l.max[0], l.max[2], -l.min[1]];
+        for (let i = 0; i < 3; i++) {
+          mn[i] = Math.min(mn[i], a[i], b[i]);
+          mx[i] = Math.max(mx[i], a[i], b[i]);
+        }
+      }
+      if (!mn.every(Number.isFinite) || !mx.every(Number.isFinite)) {
+        return { center: new THREE.Vector3(0, 0.42, 0), radius: 0.7 };
+      }
+      return {
+        center: new THREE.Vector3((mn[0] + mx[0]) / 2, (mn[1] + mx[1]) / 2, (mn[2] + mx[2]) / 2),
+        radius: Math.max(0.05, 0.5 * Math.hypot(mx[0] - mn[0], mx[1] - mn[1], mx[2] - mn[2])),
+      };
+    })();
+
     const setView = (v: "iso" | "front" | "side" | "top") => {
-      const target = new THREE.Vector3(0, 0.42, 0);
-      const pos = {
-        iso: new THREE.Vector3(0.95, 0.78, 1.2),
-        front: new THREE.Vector3(0, 0.45, 1.6),
-        side: new THREE.Vector3(1.6, 0.45, 0),
-        top: new THREE.Vector3(0.01, 1.95, 0.02),
-      }[v];
+      const target = frameBox.center.clone();
+      const d = (frameBox.radius / Math.sin((camera.fov * Math.PI) / 360)) * 1.15;
+      // 近/远平面也必须跟着模型尺寸走。它们原来是给 ≈1 m 的人形定的（0.02 / 40），
+      // 而 CAD 常按毫米建模：整机包围盒 258×404×248 时相机要退到 800 单位外，
+      // 模型整个落在远平面之外被裁掉 —— 症状同样是"全黑"，但根因和取景无关。
+      camera.near = Math.max(0.001, d / 100);
+      camera.far = d * 8;
+      camera.updateProjectionMatrix();
+      // 缩放上下限同理：写死的 0.35–5 对毫米级模型等于把相机强行拽进模型内部。
+      controls.minDistance = Math.max(frameBox.radius * 0.2, d * 0.04);
+      controls.maxDistance = d * 4;
+      const unit = {
+        iso: new THREE.Vector3(0.72, 0.52, 1),
+        front: new THREE.Vector3(0, 0.12, 1),
+        side: new THREE.Vector3(1, 0.12, 0),
+        top: new THREE.Vector3(0.01, 1, 0.02),
+      }[v].normalize();
+      const pos = target.clone().addScaledVector(unit, d);
       camera.position.copy(pos);
       controls.target.copy(target);
       camera.lookAt(target);
@@ -233,10 +277,16 @@ export default function RobotViewer({
     const loader = new GLTFLoader();
     let disposed = false;
 
-    loader.load("/model/robot.glb", (gltf) => {
+    loader.load(cfgRef.current.glbUrl, (gltf) => {
       if (disposed) return;
+      // Index by name at any depth. The reference GLB hangs each link directly
+      // off the scene root, but exporters commonly wrap everything in one root
+      // node ("world") — scanning only the first level silently yields an empty
+      // scene, which looks like a load failure rather than a layout mismatch.
       const byName = new Map<string, THREE.Object3D>();
-      gltf.scene.children.forEach((c) => byName.set(c.name, c));
+      gltf.scene.traverse((o) => {
+        if (o.name) byName.set(o.name, o);
+      });
 
       for (const [name, meta] of Object.entries(model.links)) {
         const node = byName.get(name);
@@ -266,7 +316,7 @@ export default function RobotViewer({
             material,
             basePosition: node.position.clone(),
             offset,
-            region: regionOfLink(name),
+            region: cfgRef.current.linkRegion(name),
           };
           mesh.userData.link = entry;
           links.push(entry);

@@ -6,7 +6,14 @@
  * published CAD hierarchy.
  */
 
-export type Region = "torso" | "arm_left" | "arm_right" | "leg_left" | "leg_right";
+/**
+ * Region keys are project-specific: Berkeley's released URDF happens to split
+ * into torso + two arms + two legs, a quadruped splits into body + four legs,
+ * and an arm has no torso at all. The type is therefore open — the concrete
+ * list travels with each teardown spec (`TeardownSpec.regions`) instead of
+ * being baked in here. `REGIONS` below stays as the Berkeley default.
+ */
+export type Region = string;
 
 export interface RegionInfo {
   key: Region;

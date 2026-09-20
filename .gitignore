@@ -52,3 +52,6 @@ next-env.d.ts
 __pycache__/
 *.pyc
 pipeline/.cache/
+
+# 拆解台生成器的下载缓存（网格本体，5 GB 级，可重跑再取）
+.teardown-work/

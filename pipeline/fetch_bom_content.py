@@ -29,6 +29,7 @@ import build_projects as B  # noqa: E402
 from fetch_curated_trees import curated_repos  # noqa: E402
 
 OUT = ROOT / "data" / "bom-content.json"
+ROWS_OUT = ROOT / "data" / "bom-rows.json"
 UA = {"User-Agent": "agent-physical-bom-audit"}
 
 # 四类关键列：有型号才能买到指定件，有厂家才能找替代，有价格才能做预算。
@@ -310,6 +311,12 @@ def finish(rows: list[list[str]], note: str = "") -> dict:
     out = {"status": "ok", "rows": len(data_rows),
            "header": [c for c in header if c][:24],
            "cols": detect_cols([c for c in header if c])}
+    # 行项原文单独落 data/bom-rows.json（见下方剥离）。
+    #
+    # 只存行数是不够的：拆解台要把"物料清单的每一行"当成可点开的外购件，
+    # 而按行数反推行内容是编造。这里存真实单元格（截断 12 列 × 60 行，
+    # 够覆盖绝大多数清单，也不至于让文件膨胀）。
+    out["items"] = [[(c or "").strip()[:120] for c in r][:12] for r in data_rows[:60]]
     if note:
         out["note"] = note
     if not data_rows:
@@ -518,12 +525,24 @@ def main() -> None:
     if before != after:
         print(f"剪掉 {before - after} 个已不再判为 BOM 的陈旧条目")
 
+    # 行项原文剥进单独文件：评分只需要计数与列标记，拆解台需要行内容。
+    # 两者用途不同，放一起会让评分输入无谓膨胀。
+    rows_out: dict[str, dict[str, list]] = {}
+    for repo, files in done.items():
+        for f, info in files.items():
+            items = info.pop("items", None)
+            if items:
+                rows_out.setdefault(repo, {})[f] = items
+    ROWS_OUT.write_text(json.dumps(rows_out, ensure_ascii=False, indent=1), encoding="utf-8")
+
     OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
 
     ok = sum(1 for f in done.values() for r in f.values() if r["status"] == "ok")
     un = sum(1 for f in done.values() for r in f.values() if r["status"] == "unparsed")
     ff = sum(1 for f in done.values() for r in f.values() if r["status"] == "fetch_failed")
+    nrows = sum(len(v) for files in rows_out.values() for v in files.values())
     print(f"\n解析成功 {ok} · 未解析 {un} · 抓取失败 {ff} → {OUT}")
+    print(f"行项原文 {nrows} 行 → {ROWS_OUT}")
 
 
 if __name__ == "__main__":

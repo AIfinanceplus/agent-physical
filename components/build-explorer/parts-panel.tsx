@@ -1,6 +1,7 @@
 "use client";
 
 import { aggregateLines, collectPartsFor, nodeLabelPath, sumLines, type TreeNode } from "@/lib/robot-tree";
+import { useTeardown } from "@/lib/teardown-context";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ClassBadge, Mono, StatusDot, fmtQty } from "./marks";
 
@@ -11,9 +12,10 @@ export function PartsPanel({
   node: TreeNode;
   onOpenPart: (partId: string) => void;
 }) {
-  const lines = aggregateLines(collectPartsFor(node));
+  const spec = useTeardown();
+  const lines = aggregateLines(collectPartsFor(node, spec.parts));
   const totals = sumLines(lines);
-  const path = nodeLabelPath(node.id);
+  const path = nodeLabelPath(node.id, spec.tree);
   const actuatorTotal = node.actuators.reduce(
     (acc, a) => acc + (a.count > 0 ? a.count : 0),
     0,

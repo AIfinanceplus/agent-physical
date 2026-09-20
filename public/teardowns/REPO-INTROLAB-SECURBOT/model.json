@@ -1,0 +1,320 @@
+{
+ "source": "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/Charge%20Station/AprilTagHolder.STL",
+ "links": {
+  "AprilTagHolder": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.32353,
+    0.35,
+    0.29412
+   ],
+   "tris": 676
+  },
+  "Back_Pannel_Restrictor_for_supply_cable": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.03871,
+    0.0
+   ],
+   "max": [
+    0.26176,
+    0.15636,
+    0.00882
+   ],
+   "tris": 888
+  },
+  "Link_corner": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.03558,
+    0.0
+   ],
+   "max": [
+    0.08824,
+    0.14793,
+    0.08824
+   ],
+   "tris": 72
+  },
+  "Link_upper_corner_L": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.08824,
+    0.11176,
+    0.08824
+   ],
+   "tris": 72
+  },
+  "Link_upper_corner_R": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.08824,
+    0.11176,
+    0.12353
+   ],
+   "tris": 302
+  },
+  "Base_of_box": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.37235,
+    0.11765,
+    0.17647
+   ],
+   "tris": 1104
+  },
+  "Front_piece": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.28412,
+    0.09412,
+    0.01176
+   ],
+   "tris": 628
+  },
+  "Slider_double": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.28412,
+    0.09412,
+    0.10235
+   ],
+   "tris": 784
+  },
+  "BodyAttach": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.20588,
+    0.18029,
+    0.22303
+   ],
+   "tris": 1640
+  },
+  "BodyAttachSecond": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.18824,
+    0.14706,
+    0.07353
+   ],
+   "tris": 500
+  },
+  "counterweight": {
+   "mass": null,
+   "min": [
+    -0.04706,
+    0.0,
+    -0.04706
+   ],
+   "max": [
+    0.04706,
+    0.11471,
+    0.04706
+   ],
+   "tris": 136
+  },
+  "plate_bottom": {
+   "mass": null,
+   "min": [
+    -0.5,
+    -0.0,
+    -0.32353
+   ],
+   "max": [
+    0.5,
+    0.01765,
+    0.46257
+   ],
+   "tris": 7272
+  },
+  "plate_middle": {
+   "mass": null,
+   "min": [
+    -0.5,
+    -0.0,
+    -0.46257
+   ],
+   "max": [
+    0.5,
+    0.01765,
+    0.38235
+   ],
+   "tris": 7270
+  },
+  "plate_top": {
+   "mass": null,
+   "min": [
+    -0.5,
+    -0.0,
+    -0.46257
+   ],
+   "max": [
+    0.5,
+    0.01765,
+    0.38235
+   ],
+   "tris": 7270
+  },
+  "pole_bottom": {
+   "mass": null,
+   "min": [
+    -0.01765,
+    0.0,
+    -0.01765
+   ],
+   "max": [
+    0.01765,
+    0.14471,
+    0.01765
+   ],
+   "tris": 156
+  },
+  "pole_kinect": {
+   "mass": null,
+   "min": [
+    -0.01765,
+    0.0,
+    -0.01765
+   ],
+   "max": [
+    0.01765,
+    0.27529,
+    0.01765
+   ],
+   "tris": 172
+  },
+  "pole_middle": {
+   "mass": null,
+   "min": [
+    -0.01618,
+    0.0,
+    -0.01618
+   ],
+   "max": [
+    0.01618,
+    0.17882,
+    0.01618
+   ],
+   "tris": 156
+  },
+  "pole_top": {
+   "mass": null,
+   "min": [
+    -0.01765,
+    0.03529,
+    -0.01765
+   ],
+   "max": [
+    0.01765,
+    0.63294,
+    0.01528
+   ],
+   "tris": 160
+  },
+  "BodyAttach_back_turtle": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.29412,
+    0.14706,
+    0.07353
+   ],
+   "tris": 816
+  },
+  "BodyAttach_side_turtle": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.22059,
+    0.18118,
+    0.22275
+   ],
+   "tris": 1968
+  },
+  "Intel_RealSense_Depth_Camera_D435": {
+   "mass": null,
+   "min": [
+    -0.13075,
+    -0.03704,
+    -0.07379
+   ],
+   "max": [
+    0.13221,
+    0.03904,
+    0.0
+   ],
+   "tris": 7270
+  },
+  "RealSense_holder": {
+   "mass": null,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.3,
+    0.1185,
+    0.12031
+   ],
+   "tris": 974
+  }
+ },
+ "joints": [],
+ "modelScale": 0.002941176,
+ "originalExtent": [
+  340.0,
+  227.7952,
+  314.5448
+ ]
+}

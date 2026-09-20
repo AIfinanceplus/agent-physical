@@ -40,7 +40,7 @@ export function JointPanel({
 
   if (active) {
     const j = active.node.joint!;
-    const busColor = CAN_BUS_COLOR[j.canBus] ?? "#8894a6";
+    const busColor = (j.canBus ? CAN_BUS_COLOR[j.canBus] : undefined) ?? "#8894a6";
     const limb = limbActuators(j.docName);
 
     return (
@@ -66,21 +66,31 @@ export function JointPanel({
           <section className="rounded-sm border border-border bg-background/50 p-3">
             <h3 className="text-[12px] tracking-wide text-muted-foreground">总线定位</h3>
             <div className="mt-2 flex items-center gap-3">
-              <span
-                className="num inline-flex items-center rounded-sm border px-2 py-1 text-[13px] font-semibold"
-                style={{
-                  color: busColor,
-                  borderColor: `color-mix(in srgb, ${busColor} 45%, transparent)`,
-                  backgroundColor: `color-mix(in srgb, ${busColor} 14%, transparent)`,
-                }}
-              >
-                {j.canBus}
-              </span>
-              <Mono className="text-[15px]">CAN ID {j.canId}</Mono>
+              {j.canBus ? (
+                <span
+                  className="num inline-flex items-center rounded-sm border px-2 py-1 text-[13px] font-semibold"
+                  style={{
+                    color: busColor,
+                    borderColor: `color-mix(in srgb, ${busColor} 45%, transparent)`,
+                    backgroundColor: `color-mix(in srgb, ${busColor} 14%, transparent)`,
+                  }}
+                >
+                  {j.canBus}
+                </span>
+              ) : (
+                <span className="num inline-flex items-center rounded-sm border border-border px-2 py-1 text-[13px] font-semibold text-muted-foreground">
+                  URDF 关节 #{j.jointId}
+                </span>
+              )}
+              {j.canId != null ? <Mono className="text-[15px]">CAN ID {j.canId}</Mono> : null}
             </div>
             <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">
-              {CAN_BUS_LABEL[j.canBus] ?? ""}
-              <span className="mx-1">·</span>
+              {j.canBus ? (
+                <>
+                  {CAN_BUS_LABEL[j.canBus] ?? ""}
+                  <span className="mx-1">·</span>
+                </>
+              ) : null}
               关节角范围{" "}
               <Mono>
                 {j.range[0]}° … {j.range[1]}°

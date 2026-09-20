@@ -1,0 +1,727 @@
+{
+ "source": "https://github.com/AshishA26/Orion-Quadruped/blob/HEAD/urdf/orion_urdf_rl/urdf/orion_urdf_rl.urdf",
+ "links": {
+  "chassis_link": {
+   "mass": 1.2884,
+   "min": [
+    -0.45434,
+    -0.20554,
+    -0.21883
+   ],
+   "max": [
+    0.41107,
+    0.20554,
+    0.04415
+   ],
+   "tris": 9202
+  },
+  "lidar_link": {
+   "mass": 0.073251,
+   "min": [
+    0.09272,
+    -0.08098,
+    -0.04435
+   ],
+   "max": [
+    0.29995,
+    0.07583,
+    0.07867
+   ],
+   "tris": 7618
+  },
+  "left_camera_link": {
+   "mass": 0.0043213,
+   "min": [
+    0.34707,
+    -0.00043,
+    -0.03959
+   ],
+   "max": [
+    0.38399,
+    0.09173,
+    0.01233
+   ],
+   "tris": 2682
+  },
+  "right_camera_link": {
+   "mass": 0.0043257,
+   "min": [
+    0.34707,
+    -0.0926,
+    -0.03959
+   ],
+   "max": [
+    0.38399,
+    -0.00043,
+    0.01233
+   ],
+   "tris": 2382
+  },
+  "front_left_link_1": {
+   "mass": 0.10768,
+   "min": [
+    0.17115,
+    0.13873,
+    -0.20496
+   ],
+   "max": [
+    0.34833,
+    0.23877,
+    -0.07143
+   ],
+   "tris": 7618
+  },
+  "front_left_link_2": {
+   "mass": 0.062209,
+   "min": [
+    -0.0513,
+    0.23139,
+    -0.15354
+   ],
+   "max": [
+    0.2635,
+    0.29543,
+    -0.07782
+   ],
+   "tris": 2980
+  },
+  "front_left_link_3": {
+   "mass": 0.052056,
+   "min": [
+    -0.03383,
+    0.23788,
+    -0.37548
+   ],
+   "max": [
+    0.04448,
+    0.28894,
+    -0.01675
+   ],
+   "tris": 1706
+  },
+  "front_left_link_4": {
+   "mass": 0.0071989,
+   "min": [
+    -0.03077,
+    0.23139,
+    -0.3833
+   ],
+   "max": [
+    0.03667,
+    0.29542,
+    -0.32301
+   ],
+   "tris": 3180
+  },
+  "back_left_link_1": {
+   "mass": 0.10768,
+   "min": [
+    -0.3916,
+    0.13938,
+    -0.20746
+   ],
+   "max": [
+    -0.21375,
+    0.23942,
+    -0.07239
+   ],
+   "tris": 7618
+  },
+  "back_left_link_2": {
+   "mass": 0.062209,
+   "min": [
+    -0.58893,
+    0.23203,
+    -0.15354
+   ],
+   "max": [
+    -0.27413,
+    0.29608,
+    -0.07782
+   ],
+   "tris": 2980
+  },
+  "back_left_link_3": {
+   "mass": 0.052055,
+   "min": [
+    -0.57146,
+    0.23853,
+    -0.37548
+   ],
+   "max": [
+    -0.49315,
+    0.28959,
+    -0.01675
+   ],
+   "tris": 1706
+  },
+  "back_left_link_4": {
+   "mass": 0.0071989,
+   "min": [
+    -0.5684,
+    0.23204,
+    -0.3833
+   ],
+   "max": [
+    -0.50096,
+    0.29607,
+    -0.32301
+   ],
+   "tris": 3180
+  },
+  "back_right_link_1": {
+   "mass": 0.10768,
+   "min": [
+    -0.3916,
+    -0.23877,
+    -0.20169
+   ],
+   "max": [
+    -0.21474,
+    -0.13873,
+    -0.07143
+   ],
+   "tris": 7618
+  },
+  "back_right_link_2": {
+   "mass": 0.062209,
+   "min": [
+    -0.58893,
+    -0.29543,
+    -0.15354
+   ],
+   "max": [
+    -0.27413,
+    -0.23139,
+    -0.07782
+   ],
+   "tris": 2980
+  },
+  "back_right_link_3": {
+   "mass": 0.05206,
+   "min": [
+    -0.57146,
+    -0.28894,
+    -0.37548
+   ],
+   "max": [
+    -0.49315,
+    -0.23788,
+    -0.01675
+   ],
+   "tris": 1704
+  },
+  "back_right_link_4": {
+   "mass": 0.0071989,
+   "min": [
+    -0.56841,
+    -0.29542,
+    -0.38328
+   ],
+   "max": [
+    -0.50113,
+    -0.23139,
+    -0.32277
+   ],
+   "tris": 3180
+  },
+  "front_right_link_1": {
+   "mass": 0.10768,
+   "min": [
+    0.17048,
+    -0.23942,
+    -0.20746
+   ],
+   "max": [
+    0.34833,
+    -0.13938,
+    -0.07239
+   ],
+   "tris": 7618
+  },
+  "front_right_link_2": {
+   "mass": 0.062209,
+   "min": [
+    -0.0513,
+    -0.29608,
+    -0.15354
+   ],
+   "max": [
+    0.2635,
+    -0.23203,
+    -0.07782
+   ],
+   "tris": 2980
+  },
+  "front_right_link_3": {
+   "mass": 0.05206,
+   "min": [
+    -0.03383,
+    -0.28959,
+    -0.37548
+   ],
+   "max": [
+    0.04448,
+    -0.23853,
+    -0.01675
+   ],
+   "tris": 1704
+  },
+  "front_right_link_4": {
+   "mass": 0.0071989,
+   "min": [
+    -0.03078,
+    -0.29607,
+    -0.38328
+   ],
+   "max": [
+    0.0365,
+    -0.23204,
+    -0.32277
+   ],
+   "tris": 3180
+  },
+  "lid_link": {
+   "mass": 0.47342,
+   "min": [
+    -0.02164,
+    -0.19688,
+    -0.03462
+   ],
+   "max": [
+    0.40026,
+    0.19688,
+    0.02164
+   ],
+   "tris": 1270
+  }
+ },
+ "joints": [
+  {
+   "name": "lid_joint",
+   "type": "fixed",
+   "parent": "chassis_link",
+   "child": "lid_link",
+   "origin": [
+    0.01,
+    0.0,
+    0.1
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "lid_link",
+   "jointId": 1
+  },
+  {
+   "name": "lidar_joint",
+   "type": "fixed",
+   "parent": "chassis_link",
+   "child": "lidar_link",
+   "origin": [
+    0.10304797227565,
+    -8.87688453378886e-05,
+    0.0345
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "lidar_link",
+   "jointId": 2
+  },
+  {
+   "name": "left_camera_joint",
+   "type": "fixed",
+   "parent": "chassis_link",
+   "child": "left_camera_link",
+   "origin": [
+    0.17653,
+    0.02985,
+    -0.00265
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "left_camera_link",
+   "jointId": 3
+  },
+  {
+   "name": "right_camera_joint",
+   "type": "fixed",
+   "parent": "chassis_link",
+   "child": "right_camera_link",
+   "origin": [
+    0.17653,
+    -0.03025,
+    -0.00265
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "right_camera_link",
+   "jointId": 4
+  },
+  {
+   "name": "front_left_joint_1",
+   "type": "revolute",
+   "parent": "chassis_link",
+   "child": "front_left_link_1",
+   "origin": [
+    0.10379030300648,
+    0.0824500000000001,
+    -0.0540925624189766
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_left_link_1",
+   "jointId": 5
+  },
+  {
+   "name": "front_left_joint_2",
+   "type": "revolute",
+   "parent": "front_left_link_1",
+   "child": "front_left_link_2",
+   "origin": [
+    0.0,
+    0.039298,
+    0.000625
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_left_link_2",
+   "jointId": 6
+  },
+  {
+   "name": "front_left_joint_3",
+   "type": "revolute",
+   "parent": "front_left_link_2",
+   "child": "front_left_link_3",
+   "origin": [
+    -0.1095,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_left_link_3",
+   "jointId": 7
+  },
+  {
+   "name": "front_left_joint_4",
+   "type": "fixed",
+   "parent": "front_left_link_3",
+   "child": "front_left_link_4",
+   "origin": [
+    -0.00241539800881991,
+    0.0,
+    -0.119811924362056
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "front_left_link_4",
+   "jointId": 8
+  },
+  {
+   "name": "back_left_joint_1",
+   "type": "revolute",
+   "parent": "chassis_link",
+   "child": "back_left_link_1",
+   "origin": [
+    -0.144705178168527,
+    0.08275,
+    -0.0540925624189766
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_left_link_1",
+   "jointId": 9
+  },
+  {
+   "name": "back_left_joint_2",
+   "type": "revolute",
+   "parent": "back_left_link_1",
+   "child": "back_left_link_2",
+   "origin": [
+    0.0,
+    0.0392976651289136,
+    0.000629726685457487
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_left_link_2",
+   "jointId": 10
+  },
+  {
+   "name": "back_left_joint_3",
+   "type": "revolute",
+   "parent": "back_left_link_2",
+   "child": "back_left_link_3",
+   "origin": [
+    -0.1095,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_left_link_3",
+   "jointId": 11
+  },
+  {
+   "name": "back_left_joint_4",
+   "type": "fixed",
+   "parent": "back_left_link_3",
+   "child": "back_left_link_4",
+   "origin": [
+    -0.0024154,
+    0.0,
+    -0.11981
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "back_left_link_4",
+   "jointId": 12
+  },
+  {
+   "name": "back_right_joint_1",
+   "type": "revolute",
+   "parent": "chassis_link",
+   "child": "back_right_link_1",
+   "origin": [
+    -0.144705178168499,
+    -0.08245,
+    -0.0540925624189766
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_right_link_1",
+   "jointId": 13
+  },
+  {
+   "name": "back_right_joint_2",
+   "type": "revolute",
+   "parent": "back_right_link_1",
+   "child": "back_right_link_2",
+   "origin": [
+    0.0,
+    -0.039297740587505,
+    0.000624999999999695
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_right_link_2",
+   "jointId": 14
+  },
+  {
+   "name": "back_right_joint_3",
+   "type": "revolute",
+   "parent": "back_right_link_2",
+   "child": "back_right_link_3",
+   "origin": [
+    -0.1095,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "back_right_link_3",
+   "jointId": 15
+  },
+  {
+   "name": "back_right_joint_4",
+   "type": "fixed",
+   "parent": "back_right_link_3",
+   "child": "back_right_link_4",
+   "origin": [
+    -0.00255555314355546,
+    0.0,
+    -0.119685144101967
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "back_right_link_4",
+   "jointId": 16
+  },
+  {
+   "name": "front_right_joint_1",
+   "type": "revolute",
+   "parent": "chassis_link",
+   "child": "front_right_link_1",
+   "origin": [
+    0.103790303006509,
+    -0.0827499999999999,
+    -0.0540925624189766
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_right_link_1",
+   "jointId": 17
+  },
+  {
+   "name": "front_right_joint_2",
+   "type": "revolute",
+   "parent": "front_right_link_1",
+   "child": "front_right_link_2",
+   "origin": [
+    0.0,
+    -0.039297740587505,
+    0.000624999999999272
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_right_link_2",
+   "jointId": 18
+  },
+  {
+   "name": "front_right_joint_3",
+   "type": "revolute",
+   "parent": "front_right_link_2",
+   "child": "front_right_link_3",
+   "origin": [
+    -0.1095,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -3.1416,
+   "limitUpper": 3.1416,
+   "meshLink": "front_right_link_3",
+   "jointId": 19
+  },
+  {
+   "name": "front_right_joint_4",
+   "type": "fixed",
+   "parent": "front_right_link_3",
+   "child": "front_right_link_4",
+   "origin": [
+    -0.00255555314355553,
+    0.0,
+    -0.119685144101968
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "front_right_link_4",
+   "jointId": 20
+  },
+  {
+   "name": "lid_joint",
+   "type": "fixed",
+   "parent": "chassis_link",
+   "child": "lid_link",
+   "origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "lid_link",
+   "jointId": 21
+  }
+ ],
+ "modelScale": 2.16354134,
+ "originalExtent": [
+  0.4622,
+  0.2737,
+  0.2135
+ ]
+}

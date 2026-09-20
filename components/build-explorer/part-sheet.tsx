@@ -1,11 +1,11 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
+import { useMemo } from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { ALL_PARTS, AVAILABILITY, EVIDENCE, PART_CLASS, type Part } from "@/lib/robot-parts";
+import { AVAILABILITY, EVIDENCE, PART_CLASS, type Part } from "@/lib/robot-parts";
+import { useTeardown } from "@/lib/teardown-context";
 import { ClassBadge, Mono, StatusDot } from "./marks";
-
-const BY_ID = new Map<string, Part>(ALL_PARTS.map((p) => [p.id, p]));
 
 export function PartSheet({
   partId,
@@ -17,6 +17,8 @@ export function PartSheet({
   /** Assembly paths where this part appears, with quantity per path. */
   usages: { path: string; qty: number }[];
 }) {
+  const spec = useTeardown();
+  const BY_ID = useMemo(() => new Map<string, Part>(spec.parts.map((p) => [p.id, p])), [spec.parts]);
   const part = partId ? BY_ID.get(partId) : undefined;
   const availability = part ? AVAILABILITY[part.availability] : null;
 

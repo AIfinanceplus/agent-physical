@@ -1,0 +1,251 @@
+{
+ "source": "https://github.com/open-rdc/Bipedal_Robot_Hardware/blob/HEAD/Robot_Models/URDF/urdf_simple-model/simple_model.urdf",
+ "links": {
+  "body": {
+   "mass": 1.128279,
+   "min": [
+    -0.01799,
+    -0.19186,
+    0.78688
+   ],
+   "max": [
+    0.01799,
+    0.19192,
+    0.81087
+   ],
+   "tris": 380
+  },
+  "body_luggage": {
+   "mass": 6.002284,
+   "min": [
+    -0.42223,
+    -0.35985,
+    0.35506
+   ],
+   "max": [
+    -0.01439,
+    0.35985,
+    0.9788
+   ],
+   "tris": 28
+  },
+  "link_wr2wp_r": {
+   "mass": 1.463019,
+   "min": [
+    -0.42463,
+    -0.31187,
+    0.7809
+   ],
+   "max": [
+    -0.18832,
+    -0.16195,
+    0.81687
+   ],
+   "tris": 380
+  },
+  "link_wp2kp": {
+   "mass": 0.581098,
+   "min": [
+    -0.01799,
+    -0.32387,
+    0.58896
+   ],
+   "max": [
+    0.01799,
+    -0.29988,
+    1.00879
+   ],
+   "tris": 228
+  },
+  "link_kp2heel": {
+   "mass": 0.199496,
+   "min": [
+    -0.01798,
+    -0.32387,
+    0.2363
+   ],
+   "max": [
+    0.01798,
+    -0.29988,
+    0.61175
+   ],
+   "tris": 128
+  },
+  "link_heel2end": {
+   "mass": 0.0,
+   "min": [
+    -0.04796,
+    -0.35985,
+    0.00879
+   ],
+   "max": [
+    0.04796,
+    -0.26389,
+    0.05677
+   ],
+   "tris": 5302
+  },
+  "link_wr2wp_l": {
+   "mass": 1.463019,
+   "min": [
+    -0.42463,
+    0.16195,
+    0.7809
+   ],
+   "max": [
+    -0.18832,
+    0.31187,
+    0.81687
+   ],
+   "tris": 380
+  }
+ },
+ "joints": [
+  {
+   "name": "CPG",
+   "type": "fixed",
+   "parent": "base_link",
+   "child": "body",
+   "origin": [
+    0.0,
+    0.0,
+    0.333
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "body",
+   "jointId": 1
+  },
+  {
+   "name": "luggage",
+   "type": "fixed",
+   "parent": "body",
+   "child": "body_luggage",
+   "origin": [
+    -0.091,
+    0.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "body_luggage",
+   "jointId": 2
+  },
+  {
+   "name": "r_waist_roll",
+   "type": "revolute",
+   "parent": "body",
+   "child": "r_wr2wp",
+   "origin": [
+    -0.091,
+    -0.075,
+    0.0
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -6.28,
+   "limitUpper": 6.28,
+   "meshLink": "link_wr2wp_r",
+   "jointId": 3
+  },
+  {
+   "name": "r_waist_pitch",
+   "type": "revolute",
+   "parent": "r_wr2wp",
+   "child": "r_wp2kp",
+   "origin": [
+    0.091,
+    -0.055,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -6.28,
+   "limitUpper": 6.28,
+   "meshLink": "link_wp2kp",
+   "jointId": 4
+  },
+  {
+   "name": "r_knee_pitch",
+   "type": "revolute",
+   "parent": "r_wp2kp",
+   "child": "r_kp2heel",
+   "origin": [
+    0.0,
+    0.0,
+    -0.16
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "limitLower": -6.28,
+   "limitUpper": 6.28,
+   "meshLink": "link_kp2heel",
+   "jointId": 5
+  },
+  {
+   "name": "r_ankle",
+   "type": "fixed",
+   "parent": "r_kp2heel",
+   "child": "r_heel2end",
+   "origin": [
+    0.0,
+    0.0,
+    -0.149335
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": null,
+   "limitUpper": null,
+   "meshLink": "link_heel2end",
+   "jointId": 6
+  },
+  {
+   "name": "l_waist_roll",
+   "type": "revolute",
+   "parent": "body",
+   "child": "l_wr2wp",
+   "origin": [
+    -0.091,
+    0.075,
+    0.0
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "limitLower": -6.28,
+   "limitUpper": 6.28,
+   "meshLink": "link_wr2wp_l",
+   "jointId": 7
+  }
+ ],
+ "modelScale": 2.399030803,
+ "originalExtent": [
+  0.197,
+  0.3,
+  0.4168
+ ]
+}

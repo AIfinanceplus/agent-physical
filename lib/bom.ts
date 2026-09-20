@@ -32,14 +32,22 @@ export interface WholeBom {
 export const ACTIVITY_TOTAL_NOTE =
   "总额与官方 BOM 的整机页签一致（$4,350.59 / ¥23,244.19）。未报价的打印件与装配工序按 0 计入，替代 IMU 不计入总额。";
 
-export function buildBom(): WholeBom {
-  const roll = rollup(ROBOT_TREE);
+/**
+ * Note shown above a generated purchase list. Generated teardowns have no
+ * published total to reconcile against, so the note says what the number
+ * actually is instead of implying an official figure.
+ */
+export const GENERATED_TOTAL_NOTE =
+  "总额由本仓库物料清单里的行项与单价相加得到（不含运费与税）。未给出单价的行按 0 计入并标为「资料缺失」，不做推测填充。";
+
+export function buildBom(root: TreeNode = ROBOT_TREE, parts?: Part[]): WholeBom {
+  const roll = rollup(root, parts);
 
   // Walk the tree once to collect every occurrence path per part.
   const paths = new Map<string, Set<string>>();
   const note = (partId: string, trail: string[]) => {
     const set = paths.get(partId) ?? new Set<string>();
-    set.add(trail.join(" › ") || ROBOT_TREE.label);
+    set.add(trail.join(" › ") || root.label);
     paths.set(partId, set);
   };
   const visit = (node: TreeNode, trail: string[]) => {
@@ -56,7 +64,7 @@ export function buildBom(): WholeBom {
     }
     node.children.forEach((c) => visit(c, here));
   };
-  visit(ROBOT_TREE, []);
+  visit(root, []);
 
   const rows: BomRow[] = roll.lines
     .map((line) => ({

@@ -4,7 +4,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Boxes, Crosshair, Eye, EyeOff, Focus, Maximize2, RotateCcw } from "lucide-react";
 import { CAN_BUS_COLOR, EVIDENCE } from "@/lib/robot-parts";
 import {
-  ROBOT_TREE,
   aggregateLines,
   buildMeshIndex,
   collectPartsFor,
@@ -13,14 +12,15 @@ import {
   sumLines,
   type TreeNode,
 } from "@/lib/robot-tree";
-import { REGIONS, type Region, type RobotModel } from "@/lib/robot-view";
+import type { Region, RobotModel } from "@/lib/robot-view";
+import { useTeardown } from "@/lib/teardown-context";
 import { cn } from "@/lib/utils";
-import { PROJECT_META } from "@/lib/project-meta";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Slider } from "@/components/ui/slider";
 import { AssemblyTree } from "./assembly-tree";
 import { BomPanel } from "./bom-panel";
 import { JointPanel, type JointEntry } from "./joint-panel";
+import { JointTable } from "./joint-table";
 import { PartSheet } from "./part-sheet";
 import { PartsPanel } from "./parts-panel";
 import RobotViewer, {
@@ -29,29 +29,11 @@ import RobotViewer, {
   type ViewerHandle,
 } from "./robot-viewer";
 
-const ROOT_ID = ROBOT_TREE.id;
-const MESH_INDEX = buildMeshIndex(ROBOT_TREE);
-const JOINT_NODES = flattenJoints(ROBOT_TREE);
-
-const JOINT_MARKERS: JointMarker[] = JOINT_NODES.map((n) => ({
-  jointId: n.joint!.jointId,
-  docName: n.joint!.docName,
-  bus: n.joint!.canBus,
-  canId: n.joint!.canId,
-  link: n.joint!.meshLink,
-  color: CAN_BUS_COLOR[n.joint!.canBus] ?? "#8894a6",
-}));
-
-const JOINT_ENTRIES: JointEntry[] = JOINT_NODES.map((node) => ({ node }));
-
 function collectMeshLinks(node: TreeNode): string[] {
   const out: string[] = [...node.meshLinks];
   for (const c of node.children) out.push(...collectMeshLinks(c));
   return out;
 }
-
-/** Every 3D link in the released model — selecting all of them is the neutral "whole robot" state. */
-const TOTAL_MESH_LINKS = collectMeshLinks(ROBOT_TREE).length;
 
 /** Only one panel layout is mounted at a time, so the 3D canvas is never duplicated. */
 function useIsDesktop(): boolean {
@@ -66,22 +48,38 @@ function useIsDesktop(): boolean {
   return isDesktop;
 }
 
-const DEFAULT_MODES: Record<Region, RegionMode> = {
-  torso: "on",
-  arm_left: "on",
-  arm_right: "on",
-  leg_left: "on",
-  leg_right: "on",
-};
-
 export function Workbench({ embedded = false }: { embedded?: boolean }) {
+  const spec = useTeardown();
+  const tree = spec.tree;
+
+  const meshIndex = useMemo(() => buildMeshIndex(tree), [tree]);
+  const jointNodes = useMemo(() => flattenJoints(tree), [tree]);
+  const jointMarkers: JointMarker[] = useMemo(
+    () =>
+      jointNodes.map((n) => ({
+        jointId: n.joint!.jointId,
+        docName: n.joint!.docName,
+        bus: n.joint!.canBus ?? "",
+        canId: n.joint!.canId ?? -1,
+        link: n.joint!.meshLink,
+        color: (n.joint!.canBus ? CAN_BUS_COLOR[n.joint!.canBus] : undefined) ?? "#8894a6",
+      })),
+    [jointNodes],
+  );
+  const jointEntries: JointEntry[] = useMemo(() => jointNodes.map((node) => ({ node })), [jointNodes]);
+  const totalMeshLinks = useMemo(() => collectMeshLinks(tree).length, [tree]);
+  const defaultModes = useMemo(
+    () => Object.fromEntries(spec.regions.map((r) => [r.key, "on" as RegionMode])) as Record<Region, RegionMode>,
+    [spec.regions],
+  );
+
   const [model, setModel] = useState<RobotModel | null>(null);
-  const [selectedId, setSelectedId] = useState<string>(ROOT_ID);
+  const [selectedId, setSelectedId] = useState<string>(tree.id);
   const [activeJointId, setActiveJointId] = useState<number | null>(null);
   const [tab, setTab] = useState("parts");
   const [openPartId, setOpenPartId] = useState<string | null>(null);
   const [explode, setExplode] = useState(0);
-  const [regionModes, setRegionModes] = useState<Record<Region, RegionMode>>(DEFAULT_MODES);
+  const [regionModes, setRegionModes] = useState<Record<Region, RegionMode>>(defaultModes);
   const [isolated, setIsolated] = useState(false);
   const [showJoints, setShowJoints] = useState(true);
   const viewerRef = useRef<ViewerHandle | null>(null);
@@ -89,8 +87,11 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
 
   useEffect(() => {
     let alive = true;
-    fetch("/model/robot.json")
-      .then((r) => r.json() as Promise<RobotModel>)
+    fetch(spec.modelJsonUrl)
+      .then((r) => {
+        if (!r.ok) throw new Error(String(r.status));
+        return r.json() as Promise<RobotModel>;
+      })
       .then((data) => {
         if (alive) setModel(data);
       })
@@ -100,21 +101,24 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
     return () => {
       alive = false;
     };
-  }, []);
+  }, [spec.modelJsonUrl]);
 
-  const selectedNode = useMemo(() => findNode(selectedId) ?? ROBOT_TREE, [selectedId]);
+  const selectedNode = useMemo(() => findNode(selectedId, tree) ?? tree, [selectedId, tree]);
   const highlightLinks = useMemo(() => collectMeshLinks(selectedNode), [selectedNode]);
   const isolatedLink = isolated && highlightLinks.length ? highlightLinks[0] : null;
 
   const selection = useMemo(() => {
-    const lines = aggregateLines(collectPartsFor(selectedNode));
+    const lines = aggregateLines(collectPartsFor(selectedNode, spec.parts));
     return { lines, totals: sumLines(lines) };
-  }, [selectedNode]);
+  }, [selectedNode, spec.parts]);
 
-  const rootRollup = useMemo(() => {
-    const lines = aggregateLines(collectPartsFor(ROBOT_TREE));
+  const rootTotals = useMemo(() => {
+    const lines = aggregateLines(collectPartsFor(tree, spec.parts));
     return sumLines(lines);
-  }, []);
+  }, [tree, spec.parts]);
+
+  /** True when nothing in the tree carries a price — a number would be invented. */
+  const priced = useMemo(() => spec.parts.some((p) => p.unitUsd != null || p.unitRmb != null), [spec.parts]);
 
   useEffect(() => {
     viewerRef.current?.setState({
@@ -127,33 +131,39 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
     });
   }, [highlightLinks, regionModes, isolatedLink, explode, showJoints, activeJointId]);
 
-  const selectNode = useCallback((id: string) => {
-    setSelectedId(id);
-    const node = findNode(id);
-    if (node?.joint) setActiveJointId(node.joint.jointId);
-    setIsolated(false);
-  }, []);
+  const selectNode = useCallback(
+    (id: string) => {
+      setSelectedId(id);
+      const node = findNode(id, tree);
+      if (node?.joint) setActiveJointId(node.joint.jointId);
+      setIsolated(false);
+    },
+    [tree],
+  );
 
-  const selectJoint = useCallback((jointId: number) => {
-    if (jointId < 0) {
-      setActiveJointId(null);
-      return;
-    }
-    const node = JOINT_NODES.find((n) => n.joint!.jointId === jointId);
-    if (!node) return;
-    setActiveJointId(jointId);
-    setSelectedId(node.id);
-    setIsolated(false);
-    setTab("joint");
-  }, []);
+  const selectJoint = useCallback(
+    (jointId: number) => {
+      if (jointId < 0) {
+        setActiveJointId(null);
+        return;
+      }
+      const node = jointNodes.find((n) => n.joint!.jointId === jointId);
+      if (!node) return;
+      setActiveJointId(jointId);
+      setSelectedId(node.id);
+      setIsolated(false);
+      setTab("joint");
+    },
+    [jointNodes],
+  );
 
   const handlePickLink = useCallback(
     (link: string | null) => {
       if (!link) return;
-      const owner = MESH_INDEX.get(link);
+      const owner = meshIndex.get(link);
       if (owner) selectNode(owner);
     },
-    [selectNode],
+    [meshIndex, selectNode],
   );
 
   const cycleRegion = (region: Region) => {
@@ -164,7 +174,7 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
   };
 
   const resetView = () => {
-    setRegionModes(DEFAULT_MODES);
+    setRegionModes(defaultModes);
     setExplode(0);
     setIsolated(false);
     viewerRef.current?.reset();
@@ -184,9 +194,11 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
       }
       node.children.forEach((c) => walk(c, here));
     };
-    walk(ROBOT_TREE, []);
+    walk(tree, []);
     return [...seen.entries()].map(([path, qty]) => ({ path, qty }));
-  }, [openPartId]);
+  }, [openPartId, tree]);
+
+  const meta = spec.meta;
 
   return (
     <div
@@ -201,36 +213,63 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 lg:px-6">
           <div className="flex items-center gap-2.5">
             <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none font-medium text-primary">
-              HUM-BERKELEY-LITE
+              {meta.projectId}
             </span>
+            {meta.embodiment ? (
+              <span className="num rounded-sm border border-border px-1.5 py-0.5 text-[11px] leading-none text-muted-foreground">
+                {meta.embodiment}
+              </span>
+            ) : null}
             <span className="num rounded-sm border border-border px-1.5 py-0.5 text-[11px] leading-none text-muted-foreground">
-              HUMANOID_FULL
+              {spec.computed ? "EVIDENCE_PIPELINE" : "A_BUILD_REPRODUCIBLE"}
             </span>
-            <span className="num rounded-sm border border-border px-1.5 py-0.5 text-[11px] leading-none text-muted-foreground">
-              A_BUILD_REPRODUCIBLE
-            </span>
-            <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none text-primary">
-              {PROJECT_META.version} · {PROJECT_META.embodiment}
-            </span>
-            <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none text-primary">
-              OPEN REPRO {PROJECT_META.reproduction.probabilityPercent}% · {PROJECT_META.reproduction.confidence}
-            </span>
+            {meta.version ? (
+              <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none text-primary">
+                {meta.version}
+              </span>
+            ) : null}
+            {spec.score != null ? (
+              <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none text-primary">
+                证据重现度 {spec.score.toFixed(1)} · 锚点 Berkeley = 100
+              </span>
+            ) : null}
+            {!spec.computed && meta.reproduction ? (
+              <span className="num rounded-sm border border-primary/40 bg-primary/10 px-1.5 py-0.5 text-[11px] leading-none text-primary">
+                OPEN REPRO {meta.reproduction.probabilityPercent}% · {meta.reproduction.confidence}
+              </span>
+            ) : null}
           </div>
           <h1 className="text-[15px] leading-tight font-semibold lg:text-[16px]">
-            Berkeley Humanoid Lite · 互动拆解与采购台
+            {spec.name} · 互动拆解与采购台
           </h1>
           <div className="ml-auto flex items-baseline gap-2">
             <span className="text-[12px] text-muted-foreground">整机物料</span>
-            <span className="num text-[16px] font-semibold text-primary">
-              ${rootRollup.usd.toFixed(2)}
-            </span>
-            <span className="num text-[13px] text-muted-foreground">¥{rootRollup.rmb.toFixed(2)}</span>
+            {priced ? (
+              <>
+                <span className="num text-[16px] font-semibold text-primary">
+                  ${rootTotals.usd.toFixed(2)}
+                </span>
+                {rootTotals.rmb ? (
+                  <span className="num text-[13px] text-muted-foreground">¥{rootTotals.rmb.toFixed(2)}</span>
+                ) : null}
+              </>
+            ) : (
+              <span className="text-[12px] text-muted-foreground">仓库内未给出任何单价</span>
+            )}
           </div>
         </div>
         <p className="border-t border-border/70 px-4 py-1.5 text-[12px] leading-relaxed text-muted-foreground lg:px-6">
-          范围：公开发布的指定版本中，能够从 BOM、CAD、文档和代码识别出的全部零部件。价格来自官方 BOM
-          工作表，未给出的行标注为「资料缺失」，不做推测填充。版本锁定 {PROJECT_META.version}；v2 仅为规划版本，不混入当前 BOM。
+          {spec.basis}
         </p>
+        {spec.gaps.length ? (
+          <ul className="border-t border-border/70 px-4 py-1.5 lg:px-6">
+            {spec.gaps.map((g) => (
+              <li key={g} className="text-[12px] leading-relaxed text-muted-foreground">
+                · {g}
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </header>
 
       <main
@@ -240,16 +279,16 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
         )}
       >
         {isDesktop ? (
-        <section className="flex min-h-0 flex-col border-r border-border">
-          <AssemblyTree
-            selectedId={selectedId}
-            onSelect={(id) => {
-              selectNode(id);
-              setTab("parts");
-            }}
-            onOpenPart={openPart}
-          />
-        </section>
+          <section className="flex min-h-0 flex-col border-r border-border">
+            <AssemblyTree
+              selectedId={selectedId}
+              onSelect={(id) => {
+                selectNode(id);
+                setTab("parts");
+              }}
+              onOpenPart={openPart}
+            />
+          </section>
         ) : null}
 
         <section
@@ -261,10 +300,12 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
           {model ? (
             <RobotViewer
               model={model}
-              joints={JOINT_MARKERS}
+              joints={jointMarkers}
               onPickLink={handlePickLink}
               onPickJoint={selectJoint}
               handleRef={viewerRef}
+              glbUrl={spec.modelUrl}
+              linkRegion={spec.regionOfLink}
               className="absolute inset-0"
             />
           ) : (
@@ -278,30 +319,33 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
             <p className="num text-[11px] tracking-wide text-muted-foreground">
               {highlightLinks.length === 0
                 ? "整机"
-                : highlightLinks.length === TOTAL_MESH_LINKS
-                  ? `整机 · ${TOTAL_MESH_LINKS} 个 3D 部件`
+                : highlightLinks.length === totalMeshLinks
+                  ? `整机 · ${totalMeshLinks} 个 3D 部件`
                   : `${highlightLinks.length} 个 3D 部件已高亮`}
             </p>
             <p className="mt-0.5 text-[14px] leading-tight font-semibold">{selectedNode.label}</p>
             {selectedNode.joint ? (
               <p className="num mt-1 text-[11px] leading-none text-muted-foreground">
-                {selectedNode.joint.canBus} · CAN ID {selectedNode.joint.canId} · #{selectedNode.joint.jointId}
+                {selectedNode.joint.canBus
+                  ? `${selectedNode.joint.canBus} · CAN ID ${selectedNode.joint.canId} · #${selectedNode.joint.jointId}`
+                  : `URDF 关节 #${selectedNode.joint.jointId}`}
               </p>
             ) : (
               <p className="num mt-1 text-[11px] leading-none text-muted-foreground">
-                ${selection.totals.usd.toFixed(2)} · {selection.lines.length} 类零件
+                {priced ? `$${selection.totals.usd.toFixed(2)} · ` : ""}
+                {selection.lines.length} 类零件
               </p>
             )}
           </div>
 
           {/* Region visibility */}
-          <div className="absolute top-3 right-3 rounded-sm border border-border bg-background/85 p-2 backdrop-blur">
+          <div className="absolute top-3 right-3 max-h-[60%] overflow-y-auto rounded-sm border border-border bg-background/85 p-2 backdrop-blur">
             <p className="mb-1.5 px-0.5 text-[11px] tracking-wide text-muted-foreground">
               显示 / 隐藏 / 隔离
             </p>
             <div className="flex flex-col gap-1">
-              {REGIONS.map((r) => {
-                const mode = regionModes[r.key];
+              {spec.regions.map((r) => {
+                const mode = regionModes[r.key] ?? "on";
                 return (
                   <button
                     key={r.key}
@@ -417,35 +461,48 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
         </section>
 
         {isDesktop ? (
-        <section className="flex min-h-0 flex-col border-l border-border">
-          <Tabs value={tab} onValueChange={setTab} className="flex min-h-0 flex-1 flex-col gap-0">
-            <TabsList className="m-3 mb-0 grid w-auto grid-cols-3 rounded-sm border border-border bg-background/60 p-0.5">
-              <TabsTrigger value="parts" className="rounded-xs text-[13px]">
-                零件明细
-              </TabsTrigger>
-              <TabsTrigger value="joint" className="rounded-xs text-[13px]">
-                关节反查
-              </TabsTrigger>
-              <TabsTrigger value="bom" className="rounded-xs text-[13px]">
-                采购清单
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="parts" className="mt-0 flex min-h-0 flex-1 flex-col">
-              <PartsPanel node={selectedNode} onOpenPart={openPart} />
-            </TabsContent>
-            <TabsContent value="joint" className="mt-0 flex min-h-0 flex-1 flex-col">
-              <JointPanel
-                joints={JOINT_ENTRIES}
-                activeId={activeJointId}
-                onSelect={selectJoint}
-                onOpenPart={openPart}
-              />
-            </TabsContent>
-            <TabsContent value="bom" className="mt-0 flex min-h-0 flex-1 flex-col">
-              <BomPanel onOpenPart={openPart} />
-            </TabsContent>
-          </Tabs>
-        </section>
+          <section className="flex min-h-0 flex-col border-l border-border">
+            <Tabs value={tab} onValueChange={setTab} className="flex min-h-0 flex-1 flex-col gap-0">
+              <TabsList className="m-3 mb-0 grid w-auto grid-cols-3 rounded-sm border border-border bg-background/60 p-0.5">
+                <TabsTrigger value="parts" className="rounded-xs text-[13px]">
+                  零件明细
+                </TabsTrigger>
+                <TabsTrigger value="joint" className="rounded-xs text-[13px]">
+                  关节反查
+                </TabsTrigger>
+                <TabsTrigger value="bom" className="rounded-xs text-[13px]">
+                  采购清单
+                </TabsTrigger>
+              </TabsList>
+              <TabsContent value="parts" className="mt-0 flex min-h-0 flex-1 flex-col">
+                <PartsPanel node={selectedNode} onOpenPart={openPart} />
+              </TabsContent>
+              <TabsContent value="joint" className="mt-0 flex min-h-0 flex-1 flex-col">
+                {spec.computed ? (
+                  <JointTable
+                    model={model}
+                    joints={jointNodes.map((n) => ({
+                      id: n.joint!.jointId,
+                      name: n.joint!.docName,
+                      link: n.joint!.meshLink,
+                    }))}
+                    activeId={activeJointId}
+                    onSelect={selectJoint}
+                  />
+                ) : (
+                  <JointPanel
+                    joints={jointEntries}
+                    activeId={activeJointId}
+                    onSelect={selectJoint}
+                    onOpenPart={openPart}
+                  />
+                )}
+              </TabsContent>
+              <TabsContent value="bom" className="mt-0 flex min-h-0 flex-1 flex-col">
+                <BomPanel onOpenPart={openPart} />
+              </TabsContent>
+            </Tabs>
+          </section>
         ) : (
           <MobilePanels
             tab={tab === "parts" ? "tree" : tab}
@@ -456,6 +513,14 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
             activeJointId={activeJointId}
             selectJoint={selectJoint}
             openPart={openPart}
+            jointEntries={jointEntries}
+            computed={Boolean(spec.computed)}
+            model={model}
+            jointTableRows={jointNodes.map((n) => ({
+              id: n.joint!.jointId,
+              name: n.joint!.docName,
+              link: n.joint!.meshLink,
+            }))}
           />
         )}
       </main>
@@ -470,6 +535,14 @@ export function Workbench({ embedded = false }: { embedded?: boolean }) {
             </a>
           </span>
         ))}
+        {spec.repository ? (
+          <>
+            <span className="mx-1.5 opacity-50">·</span>
+            <a href={spec.repository} target="_blank" rel="noreferrer" className="num hover:text-primary">
+              原始仓库
+            </a>
+          </>
+        ) : null}
         <span className="mx-1.5 opacity-50">·</span>
         本项目为社区整理的非官方拆解视图，采购前请核对官方最新 BOM。
       </footer>
@@ -488,6 +561,10 @@ function MobilePanels({
   activeJointId,
   selectJoint,
   openPart,
+  jointEntries,
+  computed,
+  model,
+  jointTableRows,
 }: {
   tab: string;
   setTab: (v: string) => void;
@@ -497,6 +574,10 @@ function MobilePanels({
   activeJointId: number | null;
   selectJoint: (id: number) => void;
   openPart: (id: string) => void;
+  jointEntries: JointEntry[];
+  computed: boolean;
+  model: RobotModel | null;
+  jointTableRows: { id: number; name: string; link: string }[];
 }) {
   return (
     <section className="min-h-[60vh]">
@@ -527,12 +608,21 @@ function MobilePanels({
           <PartsPanel node={selectedNode} onOpenPart={openPart} />
         </TabsContent>
         <TabsContent value="joint" className="mt-0">
-          <JointPanel
-            joints={JOINT_ENTRIES}
-            activeId={activeJointId}
-            onSelect={selectJoint}
-            onOpenPart={openPart}
-          />
+          {computed ? (
+            <JointTable
+              model={model}
+              joints={jointTableRows}
+              activeId={activeJointId}
+              onSelect={selectJoint}
+            />
+          ) : (
+            <JointPanel
+              joints={jointEntries}
+              activeId={activeJointId}
+              onSelect={selectJoint}
+              onOpenPart={openPart}
+            />
+          )}
         </TabsContent>
         <TabsContent value="bom" className="mt-0">
           <BomPanel onOpenPart={openPart} />

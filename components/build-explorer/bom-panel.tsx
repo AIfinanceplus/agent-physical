@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import { Download } from "lucide-react";
-import { ACTIVITY_TOTAL_NOTE, buildBom, type BomFilter } from "@/lib/bom";
+import { ACTIVITY_TOTAL_NOTE, GENERATED_TOTAL_NOTE, buildBom, type BomFilter } from "@/lib/bom";
 import { AVAILABILITY, PART_CLASS, type Availability, type PartClass } from "@/lib/robot-parts";
+import { useTeardown } from "@/lib/teardown-context";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { ClassBadge, Mono, StatusDot, fmtQty } from "./marks";
@@ -13,7 +14,9 @@ const STATUSES: Availability[] = ["orderable", "alternative", "nosource", "missi
 
 export function BomPanel({ onOpenPart }: { onOpenPart: (partId: string) => void }) {
   const [filter, setFilter] = useState<BomFilter>({ classes: [], statuses: [] });
-  const all = useMemo(() => buildBom(), []);
+  const spec = useTeardown();
+  const all = useMemo(() => buildBom(spec.tree, spec.parts), [spec.tree, spec.parts]);
+  const note = spec.computed ? GENERATED_TOTAL_NOTE : ACTIVITY_TOTAL_NOTE;
 
   const rows = useMemo(
     () =>
@@ -107,7 +110,7 @@ export function BomPanel({ onOpenPart }: { onOpenPart: (partId: string) => void 
           </button>
         </div>
 
-        <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">{ACTIVITY_TOTAL_NOTE}</p>
+        <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">{note}</p>
 
         <div className="mt-3 space-y-2">
           <FilterRow
