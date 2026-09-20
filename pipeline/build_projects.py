@@ -39,6 +39,9 @@ ROOT = Path(__file__).resolve().parent.parent
 # 漏网项目的补充种子（pipeline/fetch_gap.py 产出）。与主采集共用同一条生成
 # 路径和同一套证据判定，所以它不是"另一份数据"，只是另一个来源。
 SEED_GAP = ROOT / "data" / "seed-gap.json"
+# 仓库稳定标识映射（pipeline/resolve_repo_ids.py 产出）。有了它，生成器既能按
+# 数字 id 去重，也能保持离线——解析结果单独落盘、可复核，生成时不发网络请求。
+REPO_IDS = ROOT / "data" / "repo-ids.json"
 
 # --- 文件分类：全部基于扩展名/文件名，不做语义猜测 -------------------------
 
@@ -572,6 +575,38 @@ def main() -> None:
                 seen_casefold[k] = r
         repos = list(seen_casefold.values())
 
+    # --- 按 GitHub 数字 id 去重 -------------------------------------------
+    # 仓库改名或换组织后，同一仓库会以两个完全不同的名字出现：
+    #   menloresearch/asimov-1 ≡ asimovinc/asimov-1
+    #   Source-Robotics/Faze4-Robotic-arm ≡ PCrnjak/Faze4-Robotic-arm
+    # 按名字去重——哪怕小写化之后——都拦不住这类重复，因为名字毫无共同点。
+    # 稳定的身份是数字 id。顺带把 full_name 改写成规范名，引用不再指向已改名的地址。
+    id_map: dict[str, dict] = {}
+    if REPO_IDS.exists():
+        id_map = json.loads(REPO_IDS.read_text(encoding="utf-8"))
+    by_id: dict[str | int, dict] = {}
+    rename_dupes: list[str] = []
+    renamed: list[str] = []
+    for r in repos:
+        meta = id_map.get(r["full_name"].lower())
+        if meta:
+            if meta["canonical"] != r["full_name"]:
+                renamed.append(f"{r['full_name']} → {meta['canonical']}")
+            r["full_name"] = meta["canonical"]
+            key: str | int = meta["id"]
+        else:
+            key = r["full_name"].lower()
+        prev = by_id.get(key)
+        if prev is None:
+            by_id[key] = r
+            continue
+        rename_dupes.append(f"{prev['full_name']} / {r['full_name']}")
+        # 保留证据更全的那一份（文件数 + BOM 条目数）
+        score = lambda x: (x.get("file_count") or 0) + 10 * len(x.get("bom_files") or [])  # noqa: E731
+        if score(r) > score(prev):
+            by_id[key] = r
+    repos = list(by_id.values())
+
     out, stats = [], Counter()
     dropped_neg: list[str] = []
     dropped_nosig: list[str] = []
@@ -698,6 +733,14 @@ def main() -> None:
     if case_dupes:
         print(f"  大小写重复已合并      : {len(case_dupes)}")
         for d in case_dupes:
+            print(f"      - {d}")
+    if rename_dupes:
+        print(f"  改名重复已合并（按 id）: {len(rename_dupes)}")
+        for d in rename_dupes:
+            print(f"      - {d}")
+    if renamed:
+        print(f"  已改用规范仓库名      : {len(renamed)}")
+        for d in renamed:
             print(f"      - {d}")
     for k in ("drop_neg_signal", "drop_no_robot_signal", "drop_no_tree", "drop_no_cad"):
         if stats[k]:

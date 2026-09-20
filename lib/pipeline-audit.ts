@@ -10,8 +10,8 @@
 export const PIPELINE_AUDIT = {
   "generatedAt": "2026-09-19",
   "minTier": "B",
-  "candidates": 264,
-  "kept": 187,
+  "candidates": 262,
+  "kept": 183,
   "excluded": [
     {
       "reason": "TOOL_OR_LIBRARY_OR_DATASET",
@@ -88,7 +88,7 @@ export const PIPELINE_AUDIT = {
         "Agroecology-Lab/feldfreund_devkit_ros",
         "CarbonAeronautics/Manual-Quadcopter-Drone",
         "FarmBot/farmbot_os",
-        "HybridRobotics/Berkeley-Humanoid-Lite",
+        "HybridRobotics/berkeley-humanoid-lite",
         "MarkFzp/mobile-aloha",
         "Nate711/Doggo",
         "Nate711/StanfordDoggoProject",
@@ -106,7 +106,7 @@ export const PIPELINE_AUDIT = {
         "makerspet/oomwoo",
         "miguelasd688/4-legged-robot-model",
         "mjbots/quad",
-        "mmmarinho/UMIRobot",
+        "mmmarinho/umirobot",
         "nhnifong/cranebot3-firmware",
         "orcahand/orca_core",
         "ruka-hand/RUKA",
