@@ -11,8 +11,23 @@ export const PIPELINE_AUDIT = {
   "generatedAt": "2026-09-19",
   "minTier": "B",
   "candidates": 764,
-  "kept": 212,
+  "kept": 216,
   "excluded": [
+    {
+      "reason": "REVIEWED_AND_REJECTED",
+      "label": "人工逐条核对后排除（附理由）",
+      "repos": [
+        "real-stanford/umi-on-legs"
+      ],
+      "details": [
+        {
+          "full_name": "real-stanford/umi-on-legs",
+          "date": "2026-09-19",
+          "reason": "该仓库的 `real-wbc/docs/bill_of_materials.md` 首两行是「Unitree Go2 Edu Plus: $12500 / ARX5: $10000」——它要求读者**购买两台商用机器人**，其余条目是 SpaceMouse、iPhone 15 Pro 与亚马逊线材。仓库本身是实现操作策略的研究代码，随附的 URDF 是第三方机型（go2_arx5）的运动学描述。按此仓库造不出任何零件。",
+          "found_by": "结构闸放宽（DXF/DWG 计入 CAD、BOM 命名修正）后新进，人工逐条核对时发现"
+        }
+      ]
+    },
     {
       "reason": "TOOL_OR_LIBRARY_OR_DATASET",
       "label": "工具 / 库 / 数据集 / 教程",
@@ -269,7 +284,6 @@ export const PIPELINE_AUDIT = {
         "OttoDIY/OttoDIYLib",
         "PR2/pr2_common",
         "PX4/PX4-Autopilot",
-        "PetoiCamp/OpenCat-Old",
         "PetoiCamp/OpenCat-Quadruped-Robot",
         "Physical-Intelligence/openpi",
         "Phyzicalorg/Phyzical_org",
@@ -345,7 +359,6 @@ export const PIPELINE_AUDIT = {
         "bharath5673/ros_ws",
         "bianglibeyond/spotMicro-Chinese",
         "bitcraze/crazyflie-firmware",
-        "blackbox114/Blacky",
         "boxer-cpr/boxer",
         "brenocq/atta",
         "brukg/so_arm_100_hardware",
@@ -361,7 +374,6 @@ export const PIPELINE_AUDIT = {
         "cyberbotics/wrestling",
         "danisotelo/qm_door",
         "david-dorf/perseverance-ingenuity-urdfs",
-        "deltarobotone/hardware_parts",
         "dingo-cpr/dingo",
         "dji-sdk/Tello-Python",
         "dora-rs/dora",
@@ -503,7 +515,6 @@ export const PIPELINE_AUDIT = {
         "rai-opensource/spot_description",
         "raphaelchang/toffee-hardware",
         "real-dex-suite/REAL-ROBO",
-        "real-stanford/umi-on-legs",
         "ridgeback/ridgeback",
         "ridgeback/ridgeback_manipulation",
         "rigbetellabs/tortoisebot",
@@ -566,7 +577,6 @@ export const PIPELINE_AUDIT = {
         "unitreerobotics/unitree_ros",
         "unitreerobotics/unitree_sdk2_python",
         "unitreerobotics/xr_teleoperate",
-        "upkie/upkie",
         "upkie/upkie_description",
         "userguide-galaxea/URDF",
         "utra-robosoccer/soccerbot",

@@ -199,7 +199,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "oomwoo"
  },
  "REPO-NASA-JPL-OPEN-SOURCE-ROVER": {
-  "score": 87.8,
+  "score": 89.8,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -208,12 +208,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 23,
+    "value": 30,
     "anchorValue": 21.0,
-    "ratio": 1.0281,
-    "points": 24.68,
+    "ratio": 1.1109,
+    "points": 26.66,
     "measured": true,
-    "detail": "仓库树中 23 个参数化 CAD 文件",
+    "detail": "仓库树中 30 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/3d_models/12_channel_servo_controller_headers.step",
      "https://github.com/nasa-jpl/open-source-rover/blob/HEAD/electrical/pcb/control_board/3d_models/1726750613.stp"
@@ -1047,7 +1047,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "low_cost_robot"
  },
  "REPO-NVIDIA-AI-IOT-JETBOT": {
-  "score": 28.5,
+  "score": 42.6,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -1072,13 +1072,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 9.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.6401,
+    "points": 14.08,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：docs/bill_of_materials.md（12 行，规格系数 0.75）",
+    "evidence": [
+     "https://raw.githubusercontent.com/NVIDIA-AI-IOT/jetbot/HEAD/docs/bill_of_materials.md"
+    ]
    },
    {
     "key": "assembly",
@@ -1238,7 +1240,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "PAROL6-Desktop-robot-arm"
  },
  "REPO-ILIASAM-OPENSIMPLELIDAR": {
-  "score": 63.6,
+  "score": 68.8,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -1247,12 +1249,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 4,
+    "value": 6,
     "anchorValue": 21.0,
-    "ratio": 0.5207,
-    "points": 12.5,
+    "ratio": 0.6295,
+    "points": 15.11,
     "measured": true,
-    "detail": "仓库树中 4 个参数化 CAD 文件",
+    "detail": "仓库树中 6 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/holder_v1.0.stp",
      "https://github.com/iliasam/OpenSimpleLidar/blob/HEAD/Mechanics/3D_models/laser_holder1_step.stp"
@@ -1263,14 +1265,14 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 7.5,
+    "value": 12.0,
     "anchorValue": 35.5,
-    "ratio": 0.5949,
-    "points": 13.09,
+    "ratio": 0.713,
+    "points": 15.69,
     "measured": true,
-    "detail": "最佳 BOM：PCB/CommonPCB_v1.1M/PCB_BOM.xlsx（30 行，规格系数 0.25）",
+    "detail": "最佳 BOM：TotalBOM.xlsx（16 行，规格系数 0.75）",
     "evidence": [
-     "https://raw.githubusercontent.com/iliasam/OpenSimpleLidar/HEAD/PCB/CommonPCB_v1.1M/PCB_BOM.xlsx"
+     "https://raw.githubusercontent.com/iliasam/OpenSimpleLidar/HEAD/TotalBOM.xlsx"
     ]
    },
    {
@@ -1334,7 +1336,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "OpenSimpleLidar"
  },
  "REPO-ROBOPARTY-ROBOTO_ORIGIN": {
-  "score": 102.7,
+  "score": 107.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -1343,12 +1345,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 375,
+    "value": 376,
     "anchorValue": 21.0,
-    "ratio": 1.9183,
-    "points": 46.04,
+    "ratio": 1.9192,
+    "points": 46.06,
     "measured": true,
-    "detail": "仓库树中 375 个参数化 CAD 文件",
+    "detail": "仓库树中 376 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/rpo_hardware/V1.0/atom01_mechanic/01_SW_Project/01总标定件/大腿后侧标定，数量1.STEP",
      "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/rpo_hardware/V1.0/atom01_mechanic/01_SW_Project/01总标定件/大腿定位块，数量2.STEP"
@@ -1359,14 +1361,14 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 52.5,
+    "value": 110.0,
     "anchorValue": 35.5,
-    "ratio": 1.1063,
-    "points": 24.34,
+    "ratio": 1.3092,
+    "points": 28.8,
     "measured": true,
-    "detail": "最佳 BOM：modules/rpo_hardware/V2.0/roboto_origin_pcb/02_Assembly/BOM_三合一V2.1_RBE_PWR_HUB_V2.1_2026-04-09.xlsx（70 行，规格系数 0.75）",
+    "detail": "最佳 BOM：modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM 01 ZZEBOM.xlsx（110 行，规格系数 1.0）",
     "evidence": [
-     "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V2.0/roboto_origin_pcb/02_Assembly/BOM_%E4%B8%89%E5%90%88%E4%B8%80V2.1_RBE_PWR_HUB_V2.1_2026-04-09.xlsx"
+     "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM%2001%20ZZEBOM.xlsx"
     ]
    },
    {
@@ -2182,7 +2184,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "XTDrone"
  },
  "REPO-VORONDESIGN-VORON-0": {
-  "score": 40.0,
+  "score": 42.4,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -2191,12 +2193,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 30,
+    "value": 41,
     "anchorValue": 21.0,
-    "ratio": 1.1109,
-    "points": 26.66,
+    "ratio": 1.2092,
+    "points": 29.02,
     "measured": true,
-    "detail": "仓库树中 30 个参数化 CAD 文件",
+    "detail": "仓库树中 41 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/VoronDesign/Voron-0/blob/HEAD/CAD/ADXL_Mounts/MiniSB_adxl_mount_adafruit_19mm_c_c.step",
      "https://github.com/VoronDesign/Voron-0/blob/HEAD/CAD/ADXL_Mounts/MiniSB_adxl_mount_adafruit_LIS3DH.step"
@@ -2366,7 +2368,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "Thor"
  },
  "REPO-SKYENTIFICGIT-SMALLROBOTARM": {
-  "score": 35.4,
+  "score": 36.6,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -2375,12 +2377,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 16,
+    "value": 19,
     "anchorValue": 21.0,
-    "ratio": 0.9166,
-    "points": 22.0,
+    "ratio": 0.9692,
+    "points": 23.26,
     "measured": true,
-    "detail": "仓库树中 16 个参数化 CAD 文件",
+    "detail": "仓库树中 19 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/SkyentificGit/SmallRobotArm/blob/HEAD/Axis/Axis1tube.f3d",
      "https://github.com/SkyentificGit/SmallRobotArm/blob/HEAD/Axis/Axis1tube.step"
@@ -2654,6 +2656,98 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "flags": [],
   "repository": "https://github.com/SIGRobotics-UIUC/LeKiwi",
   "name": "LeKiwi"
+ },
+ "REPO-PETOICAMP-OPENCAT-OLD": {
+  "score": 16.5,
+  "anchorScore": 100.0,
+  "measuredWeight": 100,
+  "dimensions": [
+   {
+    "key": "design",
+    "label": "设计可制造性",
+    "weight": 24,
+    "unit": "个参数化 CAD 文件",
+    "value": 0,
+    "anchorValue": 21.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "仓库树中 0 个参数化 CAD 文件",
+    "evidence": []
+   },
+   {
+    "key": "sourcing",
+    "label": "物料可采购性",
+    "weight": 22,
+    "unit": "个可采购行项（行数 × 规格系数）",
+    "value": 7.5,
+    "anchorValue": 35.5,
+    "ratio": 0.5949,
+    "points": 13.09,
+    "measured": true,
+    "detail": "最佳 BOM：Resources/miniBOM.csv（15 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/PetoiCamp/OpenCat-Old/HEAD/Resources/miniBOM.csv"
+    ]
+   },
+   {
+    "key": "assembly",
+    "label": "装配可理解性",
+    "weight": 16,
+    "unit": "份装配/构建文档",
+    "value": 1,
+    "anchorValue": 26.0,
+    "ratio": 0.2103,
+    "points": 3.36,
+    "measured": true,
+    "detail": "装配/构建类文档 1 份",
+    "evidence": [
+     "https://github.com/PetoiCamp/OpenCat-Old/blob/HEAD/Resources/AssemblingInstructions.pdf"
+    ]
+   },
+   {
+    "key": "electronics",
+    "label": "电子可复现性",
+    "weight": 14,
+    "unit": "个 PCB / EDA 设计文件",
+    "value": 0,
+    "anchorValue": 1.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "PCB / EDA 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "kinematics",
+    "label": "运动学可验证性",
+    "weight": 14,
+    "unit": "个运动学描述文件",
+    "value": 0,
+    "anchorValue": 12.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "licensing",
+    "label": "授权明确性",
+    "weight": 10,
+    "unit": "许可明确度（0–1）",
+    "value": 0.0,
+    "anchorValue": 1.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "仓库未声明许可",
+    "evidence": []
+   }
+  ],
+  "flags": [],
+  "repository": "https://github.com/PetoiCamp/OpenCat-Old",
+  "name": "OpenCat-Old"
  },
  "REPO-MENLORESEARCH-ASIMOV-1": {
   "score": 85.5,
@@ -3412,7 +3506,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "aero-hand-open"
  },
  "REPO-FANHAO375-MICRODUCK-REPLICA": {
-  "score": 25.0,
+  "score": 28.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -3421,14 +3515,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 1,
+    "value": 2,
     "anchorValue": 21.0,
-    "ratio": 0.2242,
-    "points": 5.38,
+    "ratio": 0.3554,
+    "points": 8.53,
     "measured": true,
-    "detail": "仓库树中 1 个参数化 CAD 文件",
+    "detail": "仓库树中 2 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/fanhao375/microduck-replica/blob/HEAD/hardware/imu_to_dxl/imu_to_dxl-PCB.step"
+     "https://github.com/fanhao375/microduck-replica/blob/HEAD/hardware/imu_to_dxl/imu_to_dxl-PCB.step",
+     "https://github.com/fanhao375/microduck-replica/blob/HEAD/hardware/imu_to_dxl/imu_to_dxl-板框-45x22-R2.dxf"
     ]
    },
    {
@@ -4917,7 +5012,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "microban"
  },
  "REPO-G-LEVINE-OPENTORQUE-ACTUATOR": {
-  "score": 17.7,
+  "score": 29.2,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -4942,13 +5037,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 5.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.5203,
+    "points": 11.45,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：Bill of Materials.csv（11 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/G-Levine/OpenTorque-Actuator/HEAD/Bill%20of%20Materials.csv"
+    ]
    },
    {
     "key": "assembly",
@@ -5105,8 +5202,103 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "repository": "https://github.com/HaddingtonDynamics/Dexter",
   "name": "Dexter"
  },
+ "REPO-UPKIE-UPKIE": {
+  "score": 42.1,
+  "anchorScore": 100.0,
+  "measuredWeight": 100,
+  "dimensions": [
+   {
+    "key": "design",
+    "label": "设计可制造性",
+    "weight": 24,
+    "unit": "个参数化 CAD 文件",
+    "value": 0,
+    "anchorValue": 21.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "仓库树中 0 个参数化 CAD 文件",
+    "evidence": []
+   },
+   {
+    "key": "sourcing",
+    "label": "物料可采购性",
+    "weight": 22,
+    "unit": "个可采购行项（行数 × 规格系数）",
+    "value": 17.0,
+    "anchorValue": 35.5,
+    "ratio": 0.8035,
+    "points": 17.68,
+    "measured": true,
+    "detail": "最佳 BOM：docs/assembly/bill-of-materials.md（34 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/upkie/upkie/HEAD/docs/assembly/bill-of-materials.md"
+    ]
+   },
+   {
+    "key": "assembly",
+    "label": "装配可理解性",
+    "weight": 16,
+    "unit": "份装配/构建文档",
+    "value": 8,
+    "anchorValue": 26.0,
+    "ratio": 0.6667,
+    "points": 10.67,
+    "measured": true,
+    "detail": "装配/构建类文档 8 份",
+    "evidence": [
+     "https://github.com/upkie/upkie/blob/HEAD/docs/assembly/3d-printing.md",
+     "https://github.com/upkie/upkie/blob/HEAD/docs/assembly/assembly.md"
+    ]
+   },
+   {
+    "key": "electronics",
+    "label": "电子可复现性",
+    "weight": 14,
+    "unit": "个 PCB / EDA 设计文件",
+    "value": 0,
+    "anchorValue": 1.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "PCB / EDA 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "kinematics",
+    "label": "运动学可验证性",
+    "weight": 14,
+    "unit": "个运动学描述文件",
+    "value": 1,
+    "anchorValue": 12.0,
+    "ratio": 0.2702,
+    "points": 3.78,
+    "measured": true,
+    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "evidence": [
+     "https://github.com/upkie/upkie/blob/HEAD/upkie/cpp/interfaces/bullet/plane/plane.urdf"
+    ]
+   },
+   {
+    "key": "licensing",
+    "label": "授权明确性",
+    "weight": 10,
+    "unit": "许可明确度（0–1）",
+    "value": 1.0,
+    "anchorValue": 1.0,
+    "ratio": 1.0,
+    "points": 10.0,
+    "measured": true,
+    "detail": "Apache-2.0（允许再制造）",
+    "evidence": []
+   }
+  ],
+  "flags": [],
+  "repository": "https://github.com/upkie/upkie",
+  "name": "upkie"
+ },
  "REPO-UPSIDEDOWNLABS-BIOAMP-EXG-PILL": {
-  "score": 49.0,
+  "score": 51.4,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -5131,13 +5323,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 0.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.1127,
+    "points": 2.48,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：hardware/bom/ibom.html（1 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/upsidedownlabs/BioAmp-EXG-Pill/HEAD/hardware/bom/ibom.html"
+    ]
    },
    {
     "key": "assembly",
@@ -5382,7 +5576,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "orcahand_description"
  },
  "REPO-DEEPLOCAL-MOCKTAILSMIXER": {
-  "score": 15.4,
+  "score": 40.4,
   "anchorScore": 100.0,
   "measuredWeight": 78,
   "dimensions": [
@@ -5391,14 +5585,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 1,
+    "value": 49,
     "anchorValue": 21.0,
-    "ratio": 0.2242,
-    "points": 5.38,
+    "ratio": 1.2656,
+    "points": 30.37,
     "measured": true,
-    "detail": "仓库树中 1 个参数化 CAD 文件",
+    "detail": "仓库树中 49 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/Deeplocal/mocktailsmixer/blob/HEAD/hardware/cad/mocktails-mixer.step"
+     "https://github.com/Deeplocal/mocktailsmixer/blob/HEAD/hardware/cad/mocktails-mixer.step",
+     "https://github.com/Deeplocal/mocktailsmixer/blob/HEAD/hardware/laser-cut/NEW%20FILES/Bottle%20Capture%20Panel%20CAP%202.DXF"
     ]
    },
    {
@@ -5567,7 +5762,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "BetaBots-Robot-Arm-Project"
  },
  "REPO-GOOGLE-DEEPMIND-BARKOUR_ROBOT": {
-  "score": 39.4,
+  "score": 70.3,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -5592,13 +5787,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 153.75,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 1.4015,
+    "points": 30.83,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：hardware/barkour_robot_bill_of_materials.csv（205 行，规格系数 0.75）",
+    "evidence": [
+     "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/barkour_robot_bill_of_materials.csv"
+    ]
    },
    {
     "key": "assembly",
@@ -5845,7 +6042,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "tiny-engineer"
  },
  "REPO-HACKCLUB-BLOT": {
-  "score": 42.9,
+  "score": 52.6,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -5854,13 +6051,14 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 1,
+    "value": 6,
     "anchorValue": 21.0,
-    "ratio": 0.2242,
-    "points": 5.38,
+    "ratio": 0.6295,
+    "points": 15.11,
     "measured": true,
-    "detail": "仓库树中 1 个参数化 CAD 文件",
+    "detail": "仓库树中 6 个参数化 CAD 文件",
     "evidence": [
+     "https://github.com/hackclub/blot/blob/HEAD/hardware/mechanical/blot-v6/1x_CarriagePlate.dxf",
      "https://github.com/hackclub/blot/blob/HEAD/hardware/mechanical/blot-v6/1x_CarriagePlate.step"
     ]
    },
@@ -6035,7 +6233,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "BotBrain"
  },
  "REPO-EPFLXPLORE-XRE_LEGGEDROBOT_HW": {
-  "score": 95.3,
+  "score": 96.5,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -6044,15 +6242,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 44,
+    "value": 51,
     "anchorValue": 21.0,
-    "ratio": 1.2315,
-    "points": 29.56,
+    "ratio": 1.2783,
+    "points": 30.68,
     "measured": true,
-    "detail": "仓库树中 44 个参数化 CAD 文件",
+    "detail": "仓库树中 51 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/EPFLXplore/XRE_LeggedRobot_HW/blob/HEAD/amulet_controller/STEP_Blender/amulet_controller.step",
-     "https://github.com/EPFLXplore/XRE_LeggedRobot_HW/blob/HEAD/amulet_controller/lib/3d_models/105430-1203.stp"
+     "https://github.com/EPFLXplore/XRE_LeggedRobot_HW/blob/HEAD/amulet_controller/DXF_SVG/breakoff-mousebites.dxf",
+     "https://github.com/EPFLXplore/XRE_LeggedRobot_HW/blob/HEAD/amulet_controller/DXF_SVG/guard_ring.dxf"
     ]
    },
    {
@@ -6591,7 +6789,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "ExoMy"
  },
  "REPO-FUWEI007-NAVBOT-EN01": {
-  "score": 28.3,
+  "score": 30.0,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -6600,12 +6798,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 3,
+    "value": 4,
     "anchorValue": 21.0,
-    "ratio": 0.4485,
-    "points": 10.76,
+    "ratio": 0.5207,
+    "points": 12.5,
     "measured": true,
-    "detail": "仓库树中 3 个参数化 CAD 文件",
+    "detail": "仓库树中 4 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/fuwei007/Navbot-EN01/blob/HEAD/Hardware/RebotModel/CNC/BodyBasc-Aluminum6061.stp",
      "https://github.com/fuwei007/Navbot-EN01/blob/HEAD/Hardware/RebotModel/CNC/MotorBase-Aluminum6061.stp"
@@ -7427,7 +7625,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "GrowBot"
  },
  "REPO-ALEXHUGE1-ALEXBOT": {
-  "score": 35.4,
+  "score": 36.2,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -7436,12 +7634,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 95,
+    "value": 105,
     "anchorValue": 21.0,
-    "ratio": 1.4766,
-    "points": 35.44,
+    "ratio": 1.5087,
+    "points": 36.21,
     "measured": true,
-    "detail": "仓库树中 95 个参数化 CAD 文件",
+    "detail": "仓库树中 105 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/Alexhuge1/Alexbot/blob/HEAD/4-ModelsV1/AlexbotV1/DM-J6006电机连接件.SLDPRT",
      "https://github.com/Alexhuge1/Alexbot/blob/HEAD/4-ModelsV1/AlexbotV1/DM-J8006电机延长件短.SLDPRT"
@@ -7612,7 +7810,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "mycobot_ros"
  },
  "REPO-REUBENSTR-ELECTROPUP": {
-  "score": 39.9,
+  "score": 42.1,
   "anchorScore": 100.0,
   "measuredWeight": 78,
   "dimensions": [
@@ -7621,15 +7819,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 2,
+    "value": 3,
     "anchorValue": 21.0,
-    "ratio": 0.3554,
-    "points": 8.53,
+    "ratio": 0.4485,
+    "points": 10.76,
     "measured": true,
-    "detail": "仓库树中 2 个参数化 CAD 文件",
+    "detail": "仓库树中 3 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/reubenstr/ElectroPup/blob/HEAD/cad/3D/assembly-v20.step",
-     "https://github.com/reubenstr/ElectroPup/blob/HEAD/cad/3D/v1/assembly-v20.step"
+     "https://github.com/reubenstr/ElectroPup/blob/HEAD/cad/2D/electropup.dwg",
+     "https://github.com/reubenstr/ElectroPup/blob/HEAD/cad/3D/assembly-v20.step"
     ]
    },
    {
@@ -7898,7 +8096,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "mockway_robotics"
  },
  "REPO-KALLASPRIIT-ROSBOT": {
-  "score": 54.2,
+  "score": 54.3,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -7907,12 +8105,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 148,
+    "value": 149,
     "anchorValue": 21.0,
-    "ratio": 1.6189,
-    "points": 38.85,
+    "ratio": 1.621,
+    "points": 38.9,
     "measured": true,
-    "detail": "仓库树中 148 个参数化 CAD 文件",
+    "detail": "仓库树中 149 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/kallaspriit/rosbot/blob/HEAD/solidworks/50w-resistor/50w-resistor.SLDPRT",
      "https://github.com/kallaspriit/rosbot/blob/HEAD/solidworks/M12-connector/M12-connector-nut.SLDPRT"
@@ -8198,12 +8396,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 391,
+    "value": 395,
     "anchorValue": 21.0,
-    "ratio": 1.9318,
-    "points": 46.36,
+    "ratio": 1.9351,
+    "points": 46.44,
     "measured": true,
-    "detail": "仓库树中 391 个参数化 CAD 文件",
+    "detail": "仓库树中 395 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/OpenBionics/Prosthetic-Hands/blob/HEAD/CAD/2D%20Design/LeftHand/Assembly/AnthropomorphicHandAssembly.SLDASM",
      "https://github.com/OpenBionics/Prosthetic-Hands/blob/HEAD/CAD/2D%20Design/LeftHand/Button/src/Button.SLDASM"
@@ -8287,7 +8485,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
  "REPO-PRL-MUSHR-MUSHR": {
   "score": 22.0,
   "anchorScore": 100.0,
-  "measuredWeight": 100,
+  "measuredWeight": 78,
   "dimensions": [
    {
     "key": "design",
@@ -8309,10 +8507,10 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "unit": "个可采购行项（行数 × 规格系数）",
     "value": 0.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
-    "measured": true,
-    "detail": "仓库内无 BOM 文件",
+    "ratio": null,
+    "points": null,
+    "measured": false,
+    "detail": "有 2 份 BOM，但格式无法解析（PDF 二进制，需专门解析器、Word 文档，需专门解析器）",
     "evidence": []
    },
    {
@@ -8371,7 +8569,9 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "evidence": []
    }
   ],
-  "flags": [],
+  "flags": [
+   "有 22 分权重的维度未能测量，已按 0 计入；总分为下界，实际不低于此值"
+  ],
   "repository": "https://github.com/prl-mushr/mushr",
   "name": "mushr"
  },
@@ -9045,7 +9245,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "yubi-hw"
  },
  "REPO-OPENAMROBOT-OPENAMR": {
-  "score": 70.2,
+  "score": 71.8,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -9054,15 +9254,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 55,
+    "value": 68,
     "anchorValue": 21.0,
-    "ratio": 1.3023,
-    "points": 31.25,
+    "ratio": 1.3698,
+    "points": 32.88,
     "measured": true,
-    "detail": "仓库树中 55 个参数化 CAD 文件",
+    "detail": "仓库树中 68 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/openAMRobot/openamr/blob/HEAD/docs/hardware/CAD_files/Full_assembly_STEP/MMP.00.00.00.000_full_assembly.STEP",
-     "https://github.com/openAMRobot/openamr/blob/HEAD/docs/hardware/CAD_files/production_files/MMP.00.00.00.001%20Front%20panel.SLDPRT"
+     "https://github.com/openAMRobot/openamr/blob/HEAD/docs/hardware/CAD_files/production_files/MMP.00.00.00.001%20Front%20panel.DXF"
     ]
    },
    {
@@ -9233,7 +9433,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "yertle"
  },
  "REPO-AJAYRE-JACKTHERIPPERBOT": {
-  "score": 36.7,
+  "score": 54.3,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -9258,13 +9458,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 17.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.8035,
+    "points": 17.68,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：Documents/BillofMaterials.xlsx（34 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/ajayre/JacktheRipperBot/HEAD/Documents/BillofMaterials.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -9417,7 +9619,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "wheelbot"
  },
  "REPO-EAI-YESLAB-OPENEAI-ARM": {
-  "score": 61.0,
+  "score": 64.2,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -9426,12 +9628,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 36,
+    "value": 55,
     "anchorValue": 21.0,
-    "ratio": 1.1682,
-    "points": 28.04,
+    "ratio": 1.3023,
+    "points": 31.25,
     "measured": true,
-    "detail": "仓库树中 36 个参数化 CAD 文件",
+    "detail": "仓库树中 55 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/eai-yeslab/OpenEAI-Arm/blob/HEAD/hardware/STEP/DM-J4310-2EC-V1_1__3D_20240822__ASM-1.STEP-1-1.STEP",
      "https://github.com/eai-yeslab/OpenEAI-Arm/blob/HEAD/hardware/STEP/DM_4340__3D20240822_1_2_1__ASM__ASM-2.STEP-1.STEP"
@@ -10061,7 +10263,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "OpenLoong-Hardware"
  },
  "REPO-TOANTECH-PY-APPLE-BLDC-QUADRUPED-ROBOT": {
-  "score": 15.4,
+  "score": 28.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -10085,13 +10287,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 7.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.5781,
+    "points": 12.72,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：BOM/菠萝无刷一代 机械 +电控 物料表.xlsx（14 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/ToanTech/py-apple-bldc-quadruped-robot/HEAD/BOM/%E8%8F%A0%E8%90%9D%E6%97%A0%E5%88%B7%E4%B8%80%E4%BB%A3%20%E6%9C%BA%E6%A2%B0%20%2B%E7%94%B5%E6%8E%A7%20%E7%89%A9%E6%96%99%E8%A1%A8.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -10335,7 +10539,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "open-source-leader-arm"
  },
  "REPO-POPI-MKX3-POPI_PROJECT": {
-  "score": 63.9,
+  "score": 82.3,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -10344,12 +10548,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 95,
+    "value": 101,
     "anchorValue": 21.0,
-    "ratio": 1.4766,
-    "points": 35.44,
+    "ratio": 1.4963,
+    "points": 35.91,
     "measured": true,
-    "detail": "仓库树中 95 个参数化 CAD 文件",
+    "detail": "仓库树中 101 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/popi-mkx3/popi_project/blob/HEAD/popi_mechanics/CATIA/07330-201200.CATPart",
      "https://github.com/popi-mkx3/popi_project/blob/HEAD/popi_mechanics/CATIA/10_37_0505_0250_001.CATPart"
@@ -10360,13 +10564,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 17.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.8111,
+    "points": 17.84,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：popi_reports/POPI_bill_of_materials.xlsx（35 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/popi-mkx3/popi_project/HEAD/popi_reports/POPI_bill_of_materials.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -10713,7 +10919,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "mevita"
  },
  "REPO-UWROBOTICS-MARSROVERHARDWARE": {
-  "score": 87.4,
+  "score": 90.2,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -10722,12 +10928,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 22,
+    "value": 32,
     "anchorValue": 21.0,
-    "ratio": 1.0144,
-    "points": 24.35,
+    "ratio": 1.1312,
+    "points": 27.15,
     "measured": true,
-    "detail": "仓库树中 22 个参数化 CAD 文件",
+    "detail": "仓库树中 32 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Arm/Rev1/Arm-PCB-Rev1.SLDPRT",
      "https://github.com/uwrobotics/MarsRoverHardware/blob/HEAD/Projects/Arm/Rev1/Arm-PCB-Rev1.step"
@@ -10807,6 +11013,97 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "flags": [],
   "repository": "https://github.com/uwrobotics/MarsRoverHardware",
   "name": "MarsRoverHardware"
+ },
+ "REPO-BLACKBOX114-BLACKY": {
+  "score": 22.5,
+  "anchorScore": 100.0,
+  "measuredWeight": 100,
+  "dimensions": [
+   {
+    "key": "design",
+    "label": "设计可制造性",
+    "weight": 24,
+    "unit": "个参数化 CAD 文件",
+    "value": 4,
+    "anchorValue": 21.0,
+    "ratio": 0.5207,
+    "points": 12.5,
+    "measured": true,
+    "detail": "仓库树中 4 个参数化 CAD 文件",
+    "evidence": [
+     "https://github.com/blackbox114/Blacky/blob/HEAD/carbonfiber/大腿_5个.dxf",
+     "https://github.com/blackbox114/Blacky/blob/HEAD/carbonfiber/小腿_5个.dxf"
+    ]
+   },
+   {
+    "key": "sourcing",
+    "label": "物料可采购性",
+    "weight": 22,
+    "unit": "个可采购行项（行数 × 规格系数）",
+    "value": 0.0,
+    "anchorValue": 35.5,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "仓库内无 BOM 文件",
+    "evidence": []
+   },
+   {
+    "key": "assembly",
+    "label": "装配可理解性",
+    "weight": 16,
+    "unit": "份装配/构建文档",
+    "value": 0,
+    "anchorValue": 26.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "装配/构建类文档 0 份",
+    "evidence": []
+   },
+   {
+    "key": "electronics",
+    "label": "电子可复现性",
+    "weight": 14,
+    "unit": "个 PCB / EDA 设计文件",
+    "value": 0,
+    "anchorValue": 1.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "PCB / EDA 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "kinematics",
+    "label": "运动学可验证性",
+    "weight": 14,
+    "unit": "个运动学描述文件",
+    "value": 0,
+    "anchorValue": 12.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "licensing",
+    "label": "授权明确性",
+    "weight": 10,
+    "unit": "许可明确度（0–1）",
+    "value": 1.0,
+    "anchorValue": 1.0,
+    "ratio": 1.0,
+    "points": 10.0,
+    "measured": true,
+    "detail": "MIT（允许再制造）",
+    "evidence": []
+   }
+  ],
+  "flags": [],
+  "repository": "https://github.com/blackbox114/Blacky",
+  "name": "Blacky"
  },
  "REPO-FERROLHO-ROTARY-INVERTED-PENDULUM": {
   "score": 30.8,
@@ -11367,7 +11664,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "Isaac-ManipulaRL"
  },
  "REPO-CBEDIO-OPENSCOUT": {
-  "score": 26.1,
+  "score": 33.2,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -11376,15 +11673,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 3,
+    "value": 9,
     "anchorValue": 21.0,
-    "ratio": 0.4485,
-    "points": 10.76,
+    "ratio": 0.7449,
+    "points": 17.88,
     "measured": true,
-    "detail": "仓库树中 3 个参数化 CAD 文件",
+    "detail": "仓库树中 9 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/cbedio/OpenScout/blob/HEAD/Documentation/CAD_Files/STEP/Final%20Model.step",
-     "https://github.com/cbedio/OpenScout/blob/HEAD/Documentation/CAD_Files/STEP/Model%20no%20Wheels.step"
+     "https://github.com/cbedio/OpenScout/blob/HEAD/Documentation/CAD_Files/DXF/Acrylic%20Spacer.dxf",
+     "https://github.com/cbedio/OpenScout/blob/HEAD/Documentation/CAD_Files/DXF/Back_back_340_200.dxf"
     ]
    },
    {
@@ -12773,7 +13070,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
  "REPO-NIMBRO-NIMBRO-OP2": {
   "score": 33.0,
   "anchorScore": 100.0,
-  "measuredWeight": 100,
+  "measuredWeight": 78,
   "dimensions": [
    {
     "key": "design",
@@ -12798,10 +13095,10 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "unit": "个可采购行项（行数 × 规格系数）",
     "value": 0.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
-    "measured": true,
-    "detail": "仓库内无 BOM 文件",
+    "ratio": null,
+    "points": null,
+    "measured": false,
+    "detail": "有 2 份 BOM，但格式无法解析（旧版 Excel 二进制格式，标准库不支持）",
     "evidence": []
    },
    {
@@ -12857,7 +13154,9 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "evidence": []
    }
   ],
-  "flags": [],
+  "flags": [
+   "有 22 分权重的维度未能测量，已按 0 计入；总分为下界，实际不低于此值"
+  ],
   "repository": "https://github.com/NimbRo/nimbro-op2",
   "name": "nimbro-op2"
  },
@@ -14268,7 +14567,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "roboprime"
  },
  "REPO-OPENPODCAR-OPENPODCAR": {
-  "score": 61.8,
+  "score": 73.3,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -14293,13 +14592,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 5.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.5203,
+    "points": 11.45,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：docs/hardware/billOfMaterials.xlsx（11 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/OpenPodcar/OpenPodcar/HEAD/docs/hardware/billOfMaterials.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -14550,7 +14851,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "giraffe"
  },
  "REPO-SERVODEVELOP-STAR-ARM-102": {
-  "score": 47.4,
+  "score": 48.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -14559,15 +14860,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 9,
+    "value": 10,
     "anchorValue": 21.0,
-    "ratio": 0.7449,
-    "points": 17.88,
+    "ratio": 0.7758,
+    "points": 18.62,
     "measured": true,
-    "detail": "仓库树中 9 个参数化 CAD 文件",
+    "detail": "仓库树中 10 个参数化 CAD 文件",
     "evidence": [
-     "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/Hardware/parts/First-Person_Camera_Mount_Base.STEP",
-     "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/Hardware/parts/First-Person_Camera_Mount_Top_Cover.STEP"
+     "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/Hardware/cad/Star%20Arm102-LD.DWG",
+     "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/Hardware/parts/First-Person_Camera_Mount_Base.STEP"
     ]
    },
    {
@@ -15485,7 +15786,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "ALTO-3D-Printed-6-Axis-Robotic-Arm"
  },
  "REPO-NEWDEXTERITY-OPEN-BIOMANUAL-MANIPULATION-SYSTEM": {
-  "score": 61.3,
+  "score": 87.7,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -15510,13 +15811,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 74.25,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 1.2011,
+    "points": 26.42,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：Assembly Guide/Bill_of_Materials.xlsx（99 行，规格系数 0.75）",
+    "evidence": [
+     "https://raw.githubusercontent.com/newdexterity/Open-Biomanual-Manipulation-System/HEAD/Assembly%20Guide/Bill_of_Materials.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -15670,7 +15973,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "booster_assets"
  },
  "REPO-HYPERSPAWN-DROPBEAR": {
-  "score": 94.4,
+  "score": 106.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -15679,12 +15982,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 153,
+    "value": 157,
     "anchorValue": 21.0,
-    "ratio": 1.6295,
-    "points": 39.11,
+    "ratio": 1.6378,
+    "points": 39.31,
     "measured": true,
-    "detail": "仓库树中 153 个参数化 CAD 文件",
+    "detail": "仓库树中 157 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Arm%20&%20Hand/Arm/DropbearRightArm.step",
      "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Arm%20&%20Hand/Arm/Fusion%20360/DropbearRightArm.f3d"
@@ -15695,13 +15998,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 5.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.5203,
+    "points": 11.45,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：Components/Actuators/OpenTorque (ODrive)/Bill of Materials.csv（11 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/Hyperspawn/Dropbear/HEAD/Components/Actuators/OpenTorque%20%28ODrive%29/Bill%20of%20Materials.csv"
+    ]
    },
    {
     "key": "assembly",
@@ -15959,7 +16264,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "nsumo_hardware"
  },
  "REPO-ZITEH-LEAP": {
-  "score": 73.9,
+  "score": 74.6,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -15968,12 +16273,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 215,
+    "value": 236,
     "anchorValue": 21.0,
-    "ratio": 1.739,
-    "points": 41.74,
+    "ratio": 1.769,
+    "points": 42.46,
     "measured": true,
-    "detail": "仓库树中 215 个参数化 CAD 文件",
+    "detail": "仓库树中 236 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/ziteh/LEAP/blob/HEAD/3D_models/Inventor/機械/HarmonicDrive/25%20WG%20BEARING%20DS.ipt",
      "https://github.com/ziteh/LEAP/blob/HEAD/3D_models/Inventor/機械/HarmonicDrive/SHD-25-2SH-CS.ipt"
@@ -16421,9 +16726,9 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "LeCyborg"
  },
  "REPO-GONZACERV-NOAH-HARDWARE": {
-  "score": 91.3,
+  "score": 93.8,
   "anchorScore": 100.0,
-  "measuredWeight": 78,
+  "measuredWeight": 100,
   "dimensions": [
    {
     "key": "design",
@@ -16446,13 +16751,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 0.5,
     "anchorValue": 35.5,
-    "ratio": null,
-    "points": null,
-    "measured": false,
-    "detail": "有 1 份 BOM，但格式无法解析（OpenDocument 表格，需专门解析器）",
-    "evidence": []
+    "ratio": 0.1127,
+    "points": 2.48,
+    "measured": true,
+    "detail": "最佳 BOM：PCB/bom/ibom.html（1 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/GonzaCerv/noah-hardware/HEAD/PCB/bom/ibom.html"
+    ]
    },
    {
     "key": "assembly",
@@ -16513,9 +16820,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "evidence": []
    }
   ],
-  "flags": [
-   "有 22 分权重的维度未能测量，已按 0 计入；总分为下界，实际不低于此值"
-  ],
+  "flags": [],
   "repository": "https://github.com/GonzaCerv/noah-hardware",
   "name": "noah-hardware"
  },
@@ -17172,7 +17477,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
  "REPO-MARGINALLYCLEVER-SIXI": {
   "score": 32.2,
   "anchorScore": 100.0,
-  "measuredWeight": 100,
+  "measuredWeight": 78,
   "dimensions": [
    {
     "key": "design",
@@ -17194,10 +17499,10 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "unit": "个可采购行项（行数 × 规格系数）",
     "value": 0.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
-    "measured": true,
-    "detail": "仓库内无 BOM 文件",
+    "ratio": null,
+    "points": null,
+    "measured": false,
+    "detail": "有 1 份 BOM，但格式无法解析（OpenDocument 表格，需专门解析器）",
     "evidence": []
    },
    {
@@ -17256,12 +17561,14 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "evidence": []
    }
   ],
-  "flags": [],
+  "flags": [
+   "有 22 分权重的维度未能测量，已按 0 计入；总分为下界，实际不低于此值"
+  ],
   "repository": "https://github.com/MarginallyClever/sixi",
   "name": "sixi"
  },
  "REPO-INTROLAB-SECURBOT": {
-  "score": 47.0,
+  "score": 48.3,
   "anchorScore": 100.0,
   "measuredWeight": 78,
   "dimensions": [
@@ -17270,12 +17577,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 117,
+    "value": 137,
     "anchorValue": 21.0,
-    "ratio": 1.5434,
-    "points": 37.04,
+    "ratio": 1.594,
+    "points": 38.26,
     "measured": true,
-    "detail": "仓库树中 117 个参数化 CAD 文件",
+    "detail": "仓库树中 137 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/Charge%20Station/AprilTagHolder.SLDPRT",
      "https://github.com/introlab/securbot/blob/HEAD/hardware/96%20-%20Mechanical/Charge%20Station/Bolts_Nuts_Misc/90592A095_STEEL%20HEX%20NUT.SLDPRT"
@@ -17906,7 +18213,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "rx2_arm_hardware_beta"
  },
  "REPO-RAPHAELCHANG-DRAGONFLYTE-HARDWARE": {
-  "score": 26.1,
+  "score": 27.9,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -17915,12 +18222,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 7,
+    "value": 9,
     "anchorValue": 21.0,
-    "ratio": 0.6727,
-    "points": 16.15,
+    "ratio": 0.7449,
+    "points": 17.88,
     "measured": true,
-    "detail": "仓库树中 7 个参数化 CAD 文件",
+    "detail": "仓库树中 9 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonfleye/CAD/CameraSketch.SLDPRT",
      "https://github.com/raphaelchang/dragonflyte-hardware/blob/HEAD/Dragonflyte/Boards/Dragonfleye/CAD/LensMount.SLDPRT"
@@ -18089,6 +18396,97 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "flags": [],
   "repository": "https://github.com/jackvial/assembler0",
   "name": "assembler0"
+ },
+ "REPO-DELTAROBOTONE-HARDWARE_PARTS": {
+  "score": 25.1,
+  "anchorScore": 100.0,
+  "measuredWeight": 100,
+  "dimensions": [
+   {
+    "key": "design",
+    "label": "设计可制造性",
+    "weight": 24,
+    "unit": "个参数化 CAD 文件",
+    "value": 11,
+    "anchorValue": 21.0,
+    "ratio": 0.8039,
+    "points": 19.29,
+    "measured": true,
+    "detail": "仓库树中 11 个参数化 CAD 文件",
+    "evidence": [
+     "https://github.com/deltarobotone/hardware_parts/blob/HEAD/Lasercut/DXF/00_Base_Layer_3mm.dxf",
+     "https://github.com/deltarobotone/hardware_parts/blob/HEAD/Lasercut/DXF/01_Servo_Layer_1_6mm.dxf"
+    ]
+   },
+   {
+    "key": "sourcing",
+    "label": "物料可采购性",
+    "weight": 22,
+    "unit": "个可采购行项（行数 × 规格系数）",
+    "value": 0.0,
+    "anchorValue": 35.5,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "仓库内无 BOM 文件",
+    "evidence": []
+   },
+   {
+    "key": "assembly",
+    "label": "装配可理解性",
+    "weight": 16,
+    "unit": "份装配/构建文档",
+    "value": 0,
+    "anchorValue": 26.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "装配/构建类文档 0 份",
+    "evidence": []
+   },
+   {
+    "key": "electronics",
+    "label": "电子可复现性",
+    "weight": 14,
+    "unit": "个 PCB / EDA 设计文件",
+    "value": 0,
+    "anchorValue": 1.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "PCB / EDA 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "kinematics",
+    "label": "运动学可验证性",
+    "weight": 14,
+    "unit": "个运动学描述文件",
+    "value": 0,
+    "anchorValue": 12.0,
+    "ratio": 0.0,
+    "points": 0.0,
+    "measured": true,
+    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "evidence": []
+   },
+   {
+    "key": "licensing",
+    "label": "授权明确性",
+    "weight": 10,
+    "unit": "许可明确度（0–1）",
+    "value": 0.5,
+    "anchorValue": 1.0,
+    "ratio": 0.585,
+    "points": 5.85,
+    "measured": true,
+    "detail": "有 LICENSE 文件但无法识别为标准许可",
+    "evidence": []
+   }
+  ],
+  "flags": [],
+  "repository": "https://github.com/deltarobotone/hardware_parts",
+  "name": "hardware_parts"
  },
  "REPO-ADRIAEIK-FUSION2URDF": {
   "score": 33.2,
@@ -18467,7 +18865,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "hardware"
  },
  "REPO-RT-NET-CRANE_X7_HARDWARE": {
-  "score": 18.3,
+  "score": 25.8,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -18476,12 +18874,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 4,
+    "value": 12,
     "anchorValue": 21.0,
-    "ratio": 0.5207,
-    "points": 12.5,
+    "ratio": 0.8298,
+    "points": 19.92,
     "measured": true,
-    "detail": "仓库树中 4 个参数化 CAD 文件",
+    "detail": "仓库树中 12 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/rt-net/crane_x7_Hardware/blob/HEAD/3d_cad_data/v1.0/CRANE-X7_HandA_RealSenseD435mount.stp",
      "https://github.com/rt-net/crane_x7_Hardware/blob/HEAD/3d_cad_data/v1.0/CRANE-X7v20180626.stp"
@@ -19015,7 +19413,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "SPIRO.Hardware"
  },
  "REPO-OPEN-RDC-BIPEDAL_ROBOT_HARDWARE": {
-  "score": 93.3,
+  "score": 93.9,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -19024,12 +19422,12 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "设计可制造性",
     "weight": 24,
     "unit": "个参数化 CAD 文件",
-    "value": 217,
+    "value": 234,
     "anchorValue": 21.0,
-    "ratio": 1.742,
-    "points": 41.81,
+    "ratio": 1.7663,
+    "points": 42.39,
     "measured": true,
-    "detail": "仓库树中 217 个参数化 CAD 文件",
+    "detail": "仓库树中 234 个参数化 CAD 文件",
     "evidence": [
      "https://github.com/open-rdc/Bipedal_Robot_Hardware/blob/HEAD/Circuit/Kicad/Libraries/G7EB-1A-E2_DC12/G7EB_1A_E2.step",
      "https://github.com/open-rdc/Bipedal_Robot_Hardware/blob/HEAD/Circuit/Kicad/Libraries/XT30UPB-M/XT30UPB-M.step"
@@ -19856,7 +20254,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
   "name": "koch-v1-1"
  },
  "ARM-FAZE4": {
-  "score": 24.5,
+  "score": 43.1,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -19880,13 +20278,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 20.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.8463,
+    "points": 18.62,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：BOM_7_11_2023.xlsx（40 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/PCrnjak/Faze4-Robotic-arm/HEAD/BOM_7_11_2023.xlsx"
+    ]
    },
    {
     "key": "assembly",
@@ -19955,7 +20355,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
  "EDU-OLIMEX-MINIBOT": {
   "score": 41.4,
   "anchorScore": 100.0,
-  "measuredWeight": 100,
+  "measuredWeight": 78,
   "dimensions": [
    {
     "key": "design",
@@ -19977,10 +20377,10 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "unit": "个可采购行项（行数 × 规格系数）",
     "value": 0.0,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
-    "measured": true,
-    "detail": "仓库内无 BOM 文件",
+    "ratio": null,
+    "points": null,
+    "measured": false,
+    "detail": "有 2 份 BOM，但格式无法解析（OpenDocument 表格，需专门解析器）",
     "evidence": []
    },
    {
@@ -20042,13 +20442,14 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
    }
   ],
   "flags": [
+   "有 22 分权重的维度未能测量，已按 0 计入；总分为下界，实际不低于此值",
    "人工策展条目：其证据包含仓库之外的资源（官方站点 / EasyEDA / OSF 等）。本指数只统计仓库内文件，故此分数会低于项目实际证据水平。"
   ],
   "repository": "https://github.com/OLIMEX/Minibot",
   "name": "Olimex MINIBOT"
  },
  "EDU-ROSMO": {
-  "score": 10.0,
+  "score": 12.5,
   "anchorScore": 100.0,
   "measuredWeight": 100,
   "dimensions": [
@@ -20070,13 +20471,15 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "label": "物料可采购性",
     "weight": 22,
     "unit": "个可采购行项（行数 × 规格系数）",
-    "value": 0.0,
+    "value": 0.5,
     "anchorValue": 35.5,
-    "ratio": 0.0,
-    "points": 0.0,
+    "ratio": 0.1127,
+    "points": 2.48,
     "measured": true,
-    "detail": "仓库内无 BOM 文件",
-    "evidence": []
+    "detail": "最佳 BOM：ibom.html（1 行，规格系数 0.5）",
+    "evidence": [
+     "https://raw.githubusercontent.com/rosmo-robot/rosmo-robot.github.io/HEAD/ibom.html"
+    ]
    },
    {
     "key": "assembly",

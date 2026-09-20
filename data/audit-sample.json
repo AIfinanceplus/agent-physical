@@ -1,0 +1,1311 @@
+{
+ "HUM-BERKELEY-LITE": {
+  "id": "HUM-BERKELEY-LITE",
+  "name": "Berkeley Humanoid Lite",
+  "score": 100.0,
+  "repository": "HybridRobotics/Berkeley-Humanoid-Lite",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "仓库有 .gitmodules，硬件可能在子模块里"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 60,
+   "cached_blobs": 60,
+   "archived": false,
+   "pushed_at": "2026-03-10T20:15:00Z"
+  },
+  "live_counts": {},
+  "gitmodules": "{\"name\":\".gitmodules\",\"path\":\".gitmodules\",\"sha\":\"fdc7b5f938bcf64bcfe13399f36425321fa37d62\",\"size\":340,\"url\":\"https://api.github.com/repos/HybridRobotics/berkeley-humanoid-lite/contents/.gitmodules?ref=main\",\"html_url\":\"https://github.com/HybridRobotics/berkeley-humanoid-lite/blob/main/.gitmodules\",\"git_url\":\"https://api.github.com/repos/HybridRobotics/berkeley-humanoid-lite/git/blobs/fdc7b5f938bcf64bcfe13399f36425321fa37d62\",\"download_url\":\"https://raw.githubusercontent.com/HybridRobotics/berkeley-humanoid-lite/main/.gitmodules\",\"type\":\"file\",\"content\":\"W3N1Ym1vZHVsZSAic291cmNlL2JlcmtlbGV5X2h1bWFub2lkX2xpdGVfYXNz\\nZXRzIl0KCXBhdGggPSBzb3VyY2UvYmVya2VsZXlfaHVtYW5vaWRfbGl0ZV9h\\nc3NldHMKCXVybCA9IGdpdEBnaXRodWIuY29tOkh5YnJpZFJvYm90aWNzL0Jl\\ncmtlbGV5LUh1bWFub2lkLUxpdGUtQXNzZXRzLmdpdApbc3VibW9kd",
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "links_checked": 0
+ },
+ "REPO-CHESTNUT-ROBOTICS-AERO-HAND-OPEN": {
+  "id": "REPO-CHESTNUT-ROBOTICS-AERO-HAND-OPEN",
+  "name": "aero-hand-open",
+  "score": 94.1,
+  "repository": "Chestnut-Robotics/aero-hand-open",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "仓库有 .gitmodules，硬件可能在子模块里"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 325,
+   "cached_blobs": 325,
+   "archived": false,
+   "pushed_at": "2026-09-15T17:57:04Z"
+  },
+  "live_counts": {
+   "BOM": 3,
+   "CAD": 28,
+   "DESC": 2,
+   "DOC": 2,
+   "MESH": 49,
+   "PCB": 4
+  },
+  "gitmodules": "{\"name\":\".gitmodules\",\"path\":\".gitmodules\",\"sha\":\"97cff1c74b009998a514d90f63705f180443a5be\",\"size\":242,\"url\":\"https://api.github.com/repos/Chestnut-Robotics/aero-hand-open/contents/.gitmodules?ref=main\",\"html_url\":\"https://github.com/Chestnut-Robotics/aero-hand-open/blob/main/.gitmodules\",\"git_url\":\"https://api.github.com/repos/Chestnut-Robotics/aero-hand-open/git/blobs/97cff1c74b009998a514d90f63705f180443a5be\",\"download_url\":\"https://raw.githubusercontent.com/Chestnut-Robotics/aero-hand-open/main/.gitmodules\",\"type\":\"file\",\"content\":\"W3N1Ym1vZHVsZSAibXVqb2NvX3BsYXlncm91bmQiXQoJcGF0aCA9IHNpbV9y\\nbC9tdWpvY29fcGxheWdyb3VuZAoJdXJsID0gaHR0cHM6Ly9naXRodWIuY29t\\nL2dvb2dsZS1kZWVwbWluZC9tdWpvY29fcGxheWdyb3VuZC5naXQKW3N1Ym1v\\nZHVsZSAic2ltdWxhdGlvbiJdCglwYXRoID0gc2ltX3JsL3NpbXVsYXRpb24K\\nCXVybCA9IGh",
+  "bom": {
+   "files": 3,
+   "status": {
+    "ok": 3
+   },
+   "files_list": [
+    "hardware/Assembly/BOM.csv",
+    "hardware/PCB/Aero_hand_open_left/Aero-Hand-Open-Left-BOM.csv",
+    "hardware/PCB/Aero_hand_open_right/Aero-Hand-Open-Right-BOM.csv"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 28,
+    "points": 26.14,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 40.5,
+    "points": 22.79,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 2,
+    "points": 5.33,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 4,
+    "points": 28.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 2,
+    "points": 6.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.5,
+    "points": 5.85,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-NEWDEXTERITY-OPEN-BIOMANUAL-MANIPULATION-SYSTEM": {
+  "id": "REPO-NEWDEXTERITY-OPEN-BIOMANUAL-MANIPULATION-SYSTEM",
+  "name": "Open-Biomanual-Manipulation-System",
+  "score": 87.7,
+  "repository": "newdexterity/Open-Biomanual-Manipulation-System",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "可能有未被计入的硬件文件：{'网格扩展名被判为 ∅': 20}"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 616,
+   "cached_blobs": 616,
+   "archived": false,
+   "pushed_at": "2025-08-14T23:03:09Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 248,
+   "DESC": 9,
+   "MESH": 28
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 20
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "Assembly Guide/Bill_of_Materials.xlsx"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 248,
+    "points": 42.84,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 74.25,
+    "points": 26.42,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 9,
+    "points": 12.57,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.5,
+    "points": 5.85,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-ZEROTH-ROBOTICS-HARDWARE": {
+  "id": "REPO-ZEROTH-ROBOTICS-HARDWARE",
+  "name": "hardware",
+  "score": 53.4,
+  "repository": "zeroth-robotics/hardware",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 56,
+   "cached_blobs": 56,
+   "archived": false,
+   "pushed_at": "2024-12-04T07:49:24Z"
+  },
+  "live_counts": {
+   "BOM": 3,
+   "CAD": 3,
+   "PCB": 6
+  },
+  "bom": {
+   "files": 3,
+   "status": {
+    "ok": 3
+   },
+   "files_list": [
+    "Custom Electronics /IMU Mount, Rev A/Rev A Electronics, Micro Stompy - BOM_IMUMount.csv",
+    "Custom Electronics /Milk V Hat, Rev B/MilkVHat_RevB_BOM.csv",
+    "Custom Electronics /Milk V Hat, Rev B/REVB_BOM_MilkVHat.csv"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 3,
+    "points": 10.76,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 10.0,
+    "points": 14.66,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 6,
+    "points": 28.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-LOONGOPEN-OPENLOONG-HARDWARE": {
+  "id": "REPO-LOONGOPEN-OPENLOONG-HARDWARE",
+  "name": "OpenLoong-Hardware",
+  "score": 53.3,
+  "repository": "loongOpen/OpenLoong-Hardware",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 559,
+   "cached_blobs": 559,
+   "archived": false,
+   "pushed_at": "2025-09-05T11:11:18Z"
+  },
+  "live_counts": {
+   "CAD": 226,
+   "DOC": 2
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 226,
+    "points": 42.12,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 2,
+    "points": 5.33,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.5,
+    "points": 5.85,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-ZHICHENGSONG6-FLORES": {
+  "id": "REPO-ZHICHENGSONG6-FLORES",
+  "name": "FLORES",
+  "score": 51.5,
+  "repository": "ZhichengSong6/FLORES",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "可能有未被计入的硬件文件：{'网格扩展名被判为 ∅': 45}"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 665,
+   "cached_blobs": 665,
+   "archived": false,
+   "pushed_at": "2026-05-22T08:44:14Z"
+  },
+  "live_counts": {
+   "CAD": 44,
+   "DESC": 55,
+   "MESH": 41
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 45
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 44,
+    "points": 29.56,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 55,
+    "points": 21.97,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-VULCAN-FORGE-SOURCCEY-HARDWARE": {
+  "id": "REPO-VULCAN-FORGE-SOURCCEY-HARDWARE",
+  "name": "sourccey-hardware",
+  "score": 47.6,
+  "repository": "vulcan-forge/sourccey-hardware",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 542,
+   "cached_blobs": 542,
+   "archived": false,
+   "pushed_at": "2026-08-28T22:12:11Z"
+  },
+  "live_counts": {
+   "CAD": 111,
+   "DESC": 3,
+   "DOC": 1,
+   "MESH": 55
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 111,
+    "points": 36.64,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 1,
+    "points": 3.36,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 3,
+    "points": 7.57,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-THEROBOTSTUDIO-SO-ARM100": {
+  "id": "REPO-THEROBOTSTUDIO-SO-ARM100",
+  "name": "SO-ARM100",
+  "score": 46.8,
+  "repository": "TheRobotStudio/SO-ARM100",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "可能有未被计入的硬件文件：{'网格扩展名被判为 ∅': 28}"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 237,
+   "cached_blobs": 237,
+   "archived": false,
+   "pushed_at": "2026-09-06T12:46:39Z"
+  },
+  "live_counts": {
+   "CAD": 36,
+   "DESC": 4,
+   "MESH": 86
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 28
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 36,
+    "points": 28.04,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 4,
+    "points": 8.78,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-HSHI74-TODDLERBOT": {
+  "id": "REPO-HSHI74-TODDLERBOT",
+  "name": "toddlerbot",
+  "score": 44.5,
+  "repository": "hshi74/toddlerbot",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "仓库有 .gitmodules，硬件可能在子模块里"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 1279,
+   "cached_blobs": 1279,
+   "archived": false,
+   "pushed_at": "2026-07-31T07:04:15Z"
+  },
+  "live_counts": {
+   "BOM": 2,
+   "DESC": 9,
+   "DOC": 2,
+   "MESH": 604
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 1
+  },
+  "gitmodules": "{\"name\":\".gitmodules\",\"path\":\".gitmodules\",\"sha\":\"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391\",\"size\":0,\"url\":\"https://api.github.com/repos/hshi74/toddlerbot/contents/.gitmodules?ref=main\",\"html_url\":\"https://github.com/hshi74/toddlerbot/blob/main/.gitmodules\",\"git_url\":\"https://api.github.com/repos/hshi74/toddlerbot/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391\",\"download_url\":\"https://raw.githubusercontent.com/hshi74/toddlerbot/main/.gitmodules\",\"type\":\"file\",\"content\":\"\",\"encoding\":\"base64\",\"_links\":{\"self\":\"https://api.github.com/repos/hshi74/toddlerbot/contents/.gitmodules?ref=main\",\"git\":\"https://api.github.com/repos/hshi74/toddlerbot/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391\",\"html\":\"https://github.com/hshi74/toddlerbot/blob/main/.gitmodules\"}}",
+  "bom": {
+   "files": 2,
+   "status": {
+    "ok": 2
+   },
+   "files_list": [
+    "docs/_static/bom.csv",
+    "docs/_static/bom_v8.csv"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 14.0,
+    "points": 16.56,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 2,
+    "points": 5.33,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 9,
+    "points": 12.57,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "QUAD-OPENQUADRUPED": {
+  "id": "QUAD-OPENQUADRUPED",
+  "name": "OpenQuadruped",
+  "score": 42.6,
+  "repository": "adham-elarabawy/OpenQuadruped",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 469,
+   "cached_blobs": 469,
+   "archived": false,
+   "pushed_at": "2024-08-23T17:10:44Z"
+  },
+  "live_counts": {
+   "CAD": 28,
+   "DESC": 6,
+   "MESH": 64
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 1
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "links_checked": 0
+ },
+ "REPO-LIAOCHIKON-ALTO-3D-PRINTED-6-AXIS-ROBOTIC-ARM": {
+  "id": "REPO-LIAOCHIKON-ALTO-3D-PRINTED-6-AXIS-ROBOTIC-ARM",
+  "name": "ALTO-3D-Printed-6-Axis-Robotic-Arm",
+  "score": 37.3,
+  "repository": "liaochikon/ALTO-3D-Printed-6-Axis-Robotic-Arm",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 438,
+   "cached_blobs": 438,
+   "archived": false,
+   "pushed_at": "2025-11-12T05:50:20Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 4
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "hardware/alto_bom.xlsx"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 4,
+    "points": 12.5,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 10.25,
+    "points": 14.8,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-AHADJAWAID-LATTICE": {
+  "id": "REPO-AHADJAWAID-LATTICE",
+  "name": "lattice",
+  "score": 33.7,
+  "repository": "ahadjawaid/lattice",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "可能有未被计入的硬件文件：{'网格扩展名被判为 ∅': 10}"
+   }
+  ],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 67,
+   "cached_blobs": 67,
+   "archived": false,
+   "pushed_at": "2026-06-21T16:02:18Z"
+  },
+  "live_counts": {
+   "CAD": 12,
+   "DESC": 1,
+   "MESH": 15
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 10
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 12,
+    "points": 19.92,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 1,
+    "points": 3.78,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-AI-FANGE-MICRODUCK-BUILD-TUTORIAL": {
+  "id": "REPO-AI-FANGE-MICRODUCK-BUILD-TUTORIAL",
+  "name": "Microduck-build-tutorial",
+  "score": 32.4,
+  "repository": "AI-FanGe/Microduck-build-tutorial",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 122,
+   "cached_blobs": 122,
+   "archived": false,
+   "pushed_at": "2026-09-11T07:51:37Z"
+  },
+  "live_counts": {
+   "CAD": 10,
+   "DESC": 1,
+   "MESH": 26
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 10,
+    "points": 18.62,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 1,
+    "points": 3.78,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-POPPY-PROJECT-POPPY-ERGO-JR": {
+  "id": "REPO-POPPY-PROJECT-POPPY-ERGO-JR",
+  "name": "poppy-ergo-jr",
+  "score": 31.6,
+  "repository": "poppy-project/poppy-ergo-jr",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "仓库有 .gitmodules，硬件可能在子模块里"
+   }
+  ],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 112,
+   "cached_blobs": 112,
+   "archived": false,
+   "pushed_at": "2022-05-30T15:48:09Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 6,
+   "DESC": 1,
+   "MESH": 15
+  },
+  "gitmodules": "{\"name\":\".gitmodules\",\"path\":\".gitmodules\",\"sha\":\"763d53fdc7e2341794744907cf6a4623d6bca2ad\",\"size\":111,\"url\":\"https://api.github.com/repos/poppy-project/poppy-ergo-jr/contents/.gitmodules?ref=master\",\"html_url\":\"https://github.com/poppy-project/poppy-ergo-jr/blob/master/.gitmodules\",\"git_url\":\"https://api.github.com/repos/poppy-project/poppy-ergo-jr/git/blobs/763d53fdc7e2341794744907cf6a4623d6bca2ad\",\"download_url\":\"https://raw.githubusercontent.com/poppy-project/poppy-ergo-jr/master/.gitmodules\",\"type\":\"file\",\"content\":\"W3N1Ym1vZHVsZSAiaGFyZHdhcmUvcGl4bF9ib2FyZCJdCglwYXRoID0gaGFy\\nZHdhcmUvcGl4bF9ib2FyZAoJdXJsID0gaHR0cHM6Ly9naXRodWIuY29tL3Bv\\ncHB5LXByb2plY3QvcGl4bC5naXQK\\n\",\"encoding\":\"base64\",\"_links\":{\"self\":\"https://api.github.com/repos/poppy-project/poppy-ergo-jr/contents/.gitmodules?r",
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "doc/bom.md"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 6,
+    "points": 15.11,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 7.0,
+    "points": 12.72,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 1,
+    "points": 3.78,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-G-LEVINE-OPENTORQUE-ACTUATOR": {
+  "id": "REPO-G-LEVINE-OPENTORQUE-ACTUATOR",
+  "name": "OpenTorque-Actuator",
+  "score": 29.2,
+  "repository": "G-Levine/OpenTorque-Actuator",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 19,
+   "cached_blobs": 19,
+   "archived": false,
+   "pushed_at": "2019-04-21T22:28:14Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 2,
+   "DOC": 1,
+   "MESH": 12
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "Bill of Materials.csv"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 2,
+    "points": 8.53,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 5.5,
+    "points": 11.45,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 1,
+    "points": 3.36,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.5,
+    "points": 5.85,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-PKOOIJ-OPEN-ARMS-MINI": {
+  "id": "REPO-PKOOIJ-OPEN-ARMS-MINI",
+  "name": "open-arms-mini",
+  "score": 29.2,
+  "repository": "pkooij/open-arms-mini",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 45,
+   "cached_blobs": 45,
+   "archived": false,
+   "pushed_at": "2026-03-26T16:57:46Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 20,
+   "MESH": 21
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "BOM.md"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 20,
+    "points": 23.64,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 1.5,
+    "points": 5.6,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-ALYONAMININA-SPIRO.HARDWARE": {
+  "id": "REPO-ALYONAMININA-SPIRO.HARDWARE",
+  "name": "SPIRO.Hardware",
+  "score": 29.1,
+  "repository": "AlyonaMinina/SPIRO.Hardware",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 96,
+   "cached_blobs": 96,
+   "archived": false,
+   "pushed_at": "2024-06-14T13:19:11Z"
+  },
+  "live_counts": {
+   "CAD": 12,
+   "DOC": 1,
+   "MESH": 60
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 12,
+    "points": 19.92,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 1,
+    "points": 3.36,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.5,
+    "points": 5.85,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-JINDADU00-LEGGED_ROBOT_COMPETITION": {
+  "id": "REPO-JINDADU00-LEGGED_ROBOT_COMPETITION",
+  "name": "legged_robot_competition",
+  "score": 27.6,
+  "repository": "jindadu00/legged_robot_competition",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "可能有未被计入的硬件文件：{'网格扩展名被判为 ∅': 72}"
+   }
+  ],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 1195,
+   "cached_blobs": 1195,
+   "archived": false,
+   "pushed_at": "2024-10-09T15:22:47Z"
+  },
+  "live_counts": {
+   "CAD": 1,
+   "DESC": 58,
+   "MESH": 279
+  },
+  "classifier_gaps": {
+   "网格扩展名被判为 ∅": 72
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 1,
+    "points": 5.38,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 58,
+    "points": 22.26,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-SOURCE-ROBOTICS-PAROL6-ROS2-MOVEIT": {
+  "id": "REPO-SOURCE-ROBOTICS-PAROL6-ROS2-MOVEIT",
+  "name": "PAROL6-ROS2-MOVEIT",
+  "score": 24.8,
+  "repository": "Source-Robotics/PAROL6-ROS2-MOVEIT",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 350,
+   "cached_blobs": 350,
+   "archived": false,
+   "pushed_at": "2026-08-08T08:29:04Z"
+  },
+  "live_counts": {
+   "DESC": 14,
+   "MESH": 42
+  },
+  "bom": {
+   "files": 0,
+   "status": {},
+   "files_list": []
+  },
+  "recomputed": {
+   "design": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 14,
+    "points": 14.78,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 1.0,
+    "points": 10.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-AAEDMUSA-OPENQDD-V1": {
+  "id": "REPO-AAEDMUSA-OPENQDD-V1",
+  "name": "OpenQDD-V1",
+  "score": 17.5,
+  "repository": "aaedmusa/OpenQDD-V1",
+  "recorded": {},
+  "findings": [],
+  "tree": {
+   "branch": "main",
+   "live_blobs": 6,
+   "cached_blobs": 6,
+   "archived": false,
+   "pushed_at": "2023-06-23T07:49:24Z"
+  },
+  "live_counts": {
+   "BOM": 1
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "OpenQDD V1 BOM.xlsx"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 16.5,
+    "points": 17.5,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "REPO-POPPY-PROJECT-POPPY-TORSO": {
+  "id": "REPO-POPPY-PROJECT-POPPY-TORSO",
+  "name": "poppy-torso",
+  "score": 14.7,
+  "repository": "poppy-project/poppy-torso",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "MEDIUM",
+    "what": "仓库有 .gitmodules，硬件可能在子模块里"
+   }
+  ],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 78,
+   "cached_blobs": 78,
+   "archived": false,
+   "pushed_at": "2022-03-24T18:12:32Z"
+  },
+  "live_counts": {
+   "BOM": 1,
+   "CAD": 1,
+   "DESC": 2,
+   "DOC": 1,
+   "MESH": 30
+  },
+  "gitmodules": "{\"name\":\".gitmodules\",\"path\":\".gitmodules\",\"sha\":\"3c4e590fd562c69a90a94e19c982de1597d6ef40\",\"size\":639,\"url\":\"https://api.github.com/repos/poppy-project/poppy-torso/contents/.gitmodules?ref=master\",\"html_url\":\"https://github.com/poppy-project/poppy-torso/blob/master/.gitmodules\",\"git_url\":\"https://api.github.com/repos/poppy-project/poppy-torso/git/blobs/3c4e590fd562c69a90a94e19c982de1597d6ef40\",\"download_url\":\"https://raw.githubusercontent.com/poppy-project/poppy-torso/master/.gitmodules\",\"type\":\"file\",\"content\":\"W3N1Ym1vZHVsZSAiaGFyZHdhcmUvcm9ib3Rpc19saWJyYXJ5Il0KCXBhdGgg\\nPSBoYXJkd2FyZS9yb2JvdGlzX2xpYnJhcnkKCXVybD1odHRwczovL2dpdGh1\\nYi5jb20vcG9wcHktcHJvamVjdC9Sb2JvdGlzLWxpYnJhcnkKW3N1Ym1vZHVs\\nZSAiaGFyZHdhcmUvaGVhZCJdCglwYXRoID0gaGFyZHdhcmUvaGVhZAoJdXJs\\nID0gaHR0cHM6Ly9naXRodWIuY29tL3Bvc",
+  "bom": {
+   "files": 1,
+   "status": {
+    "ok": 1
+   },
+   "files_list": [
+    "hardware/doc/BOM.md"
+   ]
+  },
+  "recomputed": {
+   "design": {
+    "value": 1,
+    "points": 5.38,
+    "anchor": 21.0
+   },
+   "sourcing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 35.5
+   },
+   "assembly": {
+    "value": 1,
+    "points": 3.36,
+    "anchor": 26.0
+   },
+   "electronics": {
+    "value": 0,
+    "points": 0.0,
+    "anchor": 1.0
+   },
+   "kinematics": {
+    "value": 2,
+    "points": 6.0,
+    "anchor": 12.0
+   },
+   "licensing": {
+    "value": 0.0,
+    "points": 0.0,
+    "anchor": 1.0
+   }
+  },
+  "links_checked": 0
+ },
+ "EDU-ROSMO": {
+  "id": "EDU-ROSMO",
+  "name": "ROSMO",
+  "score": 10.0,
+  "repository": "rosmo-robot/rosmo-robot.github.io",
+  "recorded": {},
+  "findings": [
+   {
+    "level": "HIGH",
+    "what": "有 1 个 BOM 文件，但一个都没解析成功（{'未抓': 1}）→ 物料维度被低估"
+   }
+  ],
+  "tree": {
+   "branch": "master",
+   "live_blobs": 222,
+   "cached_blobs": 222,
+   "archived": false,
+   "pushed_at": "2025-10-03T09:55:02Z"
+  },
+  "live_counts": {
+   "BOM": 1
+  },
+  "bom": {
+   "files": 1,
+   "status": {
+    "未抓": 1
+   },
+   "files_list": [
+    "ibom.html"
+   ]
+  },
+  "links_checked": 0
+ }
+}

@@ -47,16 +47,63 @@ REPO_IDS = ROOT / "data" / "repo-ids.json"
 
 PARAMETRIC_CAD = {".step", ".stp", ".iges", ".igs", ".f3d", ".f3z", ".sldprt",
                   ".sldasm", ".x_t", ".x_b", ".brep", ".fcstd", ".scad", ".3dm",
-                  ".catpart", ".catproduct", ".ipt", ".iam"}
+                  ".catpart", ".catproduct", ".ipt", ".iam",
+                  # DXF/DWG 是激光切割与 CNC 件的**加工文件**（如
+                  # `laser_cut_parts/dxf/back_plate_standoff.dxf`），一个件能不能
+                  # 造出来就写在这些文件里。原先不收，19 个项目 175 个加工文件被漏掉。
+                  ".dxf", ".dwg"}
 PRINT_MESH = {".stl", ".3mf", ".obj", ".ply"}
 ROBOT_DESC = {".urdf", ".xacro", ".mjcf", ".usd", ".usda", ".srdf"}
 PCB_EDA = {".kicad_pcb", ".kicad_sch", ".brd", ".sch", ".gerber", ".gbr",
            ".drl", ".net", ".dsn"}
 DOC_EXT = {".md", ".pdf", ".txt", ".rst"}
-BOM_RX = re.compile(r"(^|[^a-z])(bom|bill[_\-\s]?of[_\-\s]?material|parts[_\-\s]?list|"
-                    r"material[_\-\s]?list|shopping[_\-\s]?list)([^a-z]|$)", re.I)
-DOCISH_RX = re.compile(r"(readme|assembly|build[_\-\s]?guide|instruction|"
-                       r"getting[_\-\s]?started|manual|tutorial)", re.I)
+# 物料清单的识别。
+#
+# 这里曾有三个会让**真实 BOM 一个都认不出**的缺陷，抽检时才暴露：
+#   1. `material` 没带可选的复数 s，而尾部边界是 `([^a-z]|$)`——
+#      于是 `bill of materials.csv`（最常见的一种命名）永远失配。
+#   2. `bom` 要求左右都是非字母，于是 `TotalBOM / 3DBOM / ibom / ZZEBOM`
+#      这类前后紧邻字母的写法全部漏掉。
+#   3. 完全没有中文模式，`机械采购清单 / 散件清单 / 物料表` 一个都不认。
+# 修法：允许一段有限的字母数字前缀再跟 bom（右边界仍在，所以 bomb/bomber 不会中），
+# 复数可选，并补上中文里**明确指零件**的写法。
+BOM_RX = re.compile(
+    r"(^|[^a-z])("
+    r"[a-z0-9_\-]{0,12}bom"
+    r"|bill[_\- ]?of[_\- ]?materials?"
+    r"|parts?[_\- ]?list"
+    r"|material[_\- ]?list"
+    r"|shopping[_\- ]?list"
+    r"|bom[_\- ]?list"
+    # 中文只收明确指零件的说法；裸「清单」不收——`训练前数据清单.md` 不是 BOM。
+    r"|采购清单|散件清单|物料清单|物料表|零件清单|采购表"
+    r")([^a-z]|$)", re.I)
+DOCISH_RX = re.compile(r"(readme|assembly|build[_\- ]?guide|instruction|"
+                       r"getting[_\- ]?started|manual|tutorial)", re.I)
+
+# 软件物料清单（SBOM）不是硬件零件表。
+# 放宽 bom 的匹配后，PX4 立刻借 `.github/workflows/sbom_license_check.yml`
+# 混进了目录——"software bill of materials" 是许可证合规产物，与能否买到舵机无关。
+SOFTWARE_BOM_RX = re.compile(r"sbom|software[_\- ]?bill[_\- ]?of[_\- ]?material", re.I)
+
+# CI / 机器人配置目录不是装配文档。PX4 有 10 个 `.github/instructions/*.md`
+# （GitHub Copilot 的提示词）会被 `instruction` 命中，算成"装配可理解性"的证据。
+CI_PATH_RX = re.compile(r"(^|/)\.(github|gitlab|circleci)(/|$)", re.I)
+
+# 软件自带模板不是本项目的设计。
+#
+# 这里连着踩了两次坑，都值得记下来：
+#
+# 一、按目录名一刀切不行。`Hardware/Design Data/Body Assembly/*.ipt` 是某个项目的
+#     **真实装配件**（79 个），而 Autodesk 的 `Design Data/` 通常只放标准件样式表。
+#     同一个目录名下放的是真设计还是样式表，取决于项目怎么组织，不取决于目录叫什么。
+#     所以目录规则只作用于**软件确实自带模板库的格式**（.dwg 图框、.xls 零件表样式）。
+#
+# 二、按文件名排除更不行。`Bottom_Cover (Template).FCStd`、`base_template.STEP`
+#     是作者给自己零件起的名，它们是真设计——按名字排除会删掉 SpotMicroESP32 的
+#     7 个 FreeCAD 零件。**规则要针对软件的行为，不要针对人会怎么命名。**
+TEMPLATE_DIR_RX = re.compile(r"(^|/)(templates?|design[_\- ]?data|samples?)(/|$)", re.I)
+TEMPLATE_DIR_EXTS = {".dwg", ".xls", ".xlsx", ".xlt"}
 
 # 物料清单必须是**能读出零件行**的表格或文档。只看文件名会出笑话：
 # PX4 的 docs/assets/airframes/.../parts_list.jpg 是一张照片，证明不了任何零件。
@@ -166,17 +213,20 @@ def classify(path: str) -> str | None:
     low = path.lower()
     name = low.rsplit("/", 1)[-1]
     ext = ("." + name.rsplit(".", 1)[-1]) if "." in name else ""
-    if BOM_RX.search(name) and (not ext or ext in BOM_EXT):
+    templated = ext in TEMPLATE_DIR_EXTS and bool(TEMPLATE_DIR_RX.search(low))
+    if (BOM_RX.search(name) and not SOFTWARE_BOM_RX.search(name)
+            and (not ext or ext in BOM_EXT) and not templated):
         return "BOM"
     if ext in PARAMETRIC_CAD:
-        return "CAD"
+        return None if templated else "CAD"
     if ext in PRINT_MESH:
         return None if SIM_PATH_RX.search(low) else "MESH"
     if ext in ROBOT_DESC:
         return "DESC"
     if ext in PCB_EDA:
         return "PCB"
-    if ext in DOC_EXT and DOCISH_RX.search(low) and not re.search(r"readme", low):
+    if (ext in DOC_EXT and DOCISH_RX.search(low)
+            and not re.search(r"readme", low) and not CI_PATH_RX.search(low)):
         return "DOC"
     return None
 
@@ -653,7 +703,22 @@ def main() -> None:
     dropped_sim: list[str] = []
     dropped_nocad: list[str] = []
     rescued: list[str] = []
+
+    # 人工复核后的排除清单——与 candidates-manual.json 相对的"拒绝出口"。
+    # 结构闸只按可观测特征判定，识别不了「BOM 里写的是买两台商用机器人」
+    # 这类语义问题。被逐条核对后拒绝的仓库写在这里并带上理由，
+    # 好让"为什么这个项目没进来"在界面上有答案，而不是只有模型知道。
+    reviewed: dict[str, dict] = {}
+    rp = ROOT / "data" / "excluded-reviewed.json"
+    if rp.exists():
+        for e in json.loads(rp.read_text(encoding="utf-8")):
+            reviewed[e["full_name"].lower()] = e
+    dropped_reviewed: list[str] = []
+
     for r in repos:
+        if r["full_name"].lower() in reviewed:
+            dropped_reviewed.append(r["full_name"])
+            continue
         blob_text = f"{r.get('name','')} {r.get('description','') or ''} " \
                     f"{' '.join(r.get('topics') or [])} {r.get('full_name','')}"
         tree = load_tree(r["full_name"])
@@ -740,6 +805,13 @@ def main() -> None:
         "candidates": len(repos),
         "kept": len(out),
         "excluded": [
+            *([{
+                "reason": "REVIEWED_AND_REJECTED",
+                "label": "人工逐条核对后排除（附理由）",
+                "repos": sorted(dropped_reviewed),
+                "details": [reviewed[f.lower()] for f in sorted(dropped_reviewed)
+                            if f.lower() in reviewed],
+            }] if dropped_reviewed else []),
             {"reason": "TOOL_OR_LIBRARY_OR_DATASET",
              "label": "工具 / 库 / 数据集 / 教程",
              "repos": sorted(dropped_neg)},

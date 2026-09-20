@@ -1,0 +1,63 @@
+<!doctype html><meta charset="utf-8">
+<style>
+ *{box-sizing:border-box}
+ body{color:var(--foreground);font-size:12px}
+ .wrap{max-width:640px}
+ h3{font-size:12px;font-weight:600;margin:14px 0 8px}
+ h3:first-child{margin-top:0}
+ .r{display:grid;grid-template-columns:62px 1fr 118px;align-items:center;gap:8px;margin:3px 0}
+ .lb{color:var(--muted-foreground);font-variant-numeric:tabular-nums;text-align:right}
+ .bw{height:11px;border-radius:2px;background:var(--accent);overflow:hidden}
+ .b{display:block;height:100%;background:#d3ea5c;border-radius:2px}
+ .ct{color:var(--muted-foreground);font-variant-numeric:tabular-nums}
+ .kv{display:flex;flex-wrap:wrap;gap:14px;padding:8px 10px;border:1px solid var(--border);border-radius:3px;margin-bottom:4px}
+ .kv div{display:flex;gap:5px;align-items:baseline}
+ .kv b{font-size:15px;font-weight:600}
+ .kv span{color:var(--muted-foreground);font-size:11px}
+</style>
+<div class="wrap">
+<div class="kv">
+  <div><b>217</b><span>计分项目</span></div>
+  <div><b>102.7</b><span>最高</span></div>
+  <div><b>37.5</b><span>中位</span></div>
+  <div><b>25.0</b><span>p25</span></div>
+  <div><b>51.2</b><span>p75</span></div>
+  <div><b>5.4</b><span>最低</span></div>
+  <div><b>40.7</b><span>均值</span></div>
+  <div><b>100</b><span>锚点 Berkeley</span></div>
+</div>
+<h3>分数分布（5 分一档，x 轴到 105）</h3>
+<div class="r"><span class="lb">5-9</span><span class="bw"><span class="b" style="width:17.9%"></span></span><span class="ct">5</span></div>
+<div class="r"><span class="lb">10-14</span><span class="bw"><span class="b" style="width:35.7%"></span></span><span class="ct">10</span></div>
+<div class="r"><span class="lb">15-19</span><span class="bw"><span class="b" style="width:78.6%"></span></span><span class="ct">22</span></div>
+<div class="r"><span class="lb">20-24</span><span class="bw"><span class="b" style="width:60.7%"></span></span><span class="ct">17</span></div>
+<div class="r"><span class="lb">25-29</span><span class="bw"><span class="b" style="width:85.7%"></span></span><span class="ct">24</span></div>
+<div class="r"><span class="lb">30-34</span><span class="bw"><span class="b" style="width:57.1%"></span></span><span class="ct">16</span></div>
+<div class="r"><span class="lb">35-39</span><span class="bw"><span class="b" style="width:100.0%"></span></span><span class="ct">28</span></div>
+<div class="r"><span class="lb">40-44</span><span class="bw"><span class="b" style="width:71.4%"></span></span><span class="ct">20</span></div>
+<div class="r"><span class="lb">45-49</span><span class="bw"><span class="b" style="width:71.4%"></span></span><span class="ct">20</span></div>
+<div class="r"><span class="lb">50-54</span><span class="bw"><span class="b" style="width:32.1%"></span></span><span class="ct">9</span></div>
+<div class="r"><span class="lb">55-59</span><span class="bw"><span class="b" style="width:17.9%"></span></span><span class="ct">5</span></div>
+<div class="r"><span class="lb">60-64</span><span class="bw"><span class="b" style="width:46.4%"></span></span><span class="ct">13</span></div>
+<div class="r"><span class="lb">65-69</span><span class="bw"><span class="b" style="width:17.9%"></span></span><span class="ct">5</span></div>
+<div class="r"><span class="lb">70-74</span><span class="bw"><span class="b" style="width:17.9%"></span></span><span class="ct">5</span></div>
+<div class="r"><span class="lb">75-79</span><span class="bw"><span class="b" style="width:14.3%"></span></span><span class="ct">4</span></div>
+<div class="r"><span class="lb">80-84</span><span class="bw"><span class="b" style="width:3.6%"></span></span><span class="ct">1</span></div>
+<div class="r"><span class="lb">85-89</span><span class="bw"><span class="b" style="width:10.7%"></span></span><span class="ct">3</span></div>
+<div class="r"><span class="lb">90-94</span><span class="bw"><span class="b" style="width:17.9%"></span></span><span class="ct">5</span></div>
+<div class="r"><span class="lb">95-99</span><span class="bw"><span class="b" style="width:7.1%"></span></span><span class="ct">2</span></div>
+<div class="r"><span class="lb">100-104</span><span class="bw"><span class="b" style="width:10.7%"></span></span><span class="ct">3</span></div>
+<h3>档位</h3>
+<div class="r"><span class="lb">≥100</span><span class="bw"><span class="b" style="width:1.4%;background:#d3ea5c"></span></span><span class="ct">3 · 1%</span></div>
+<div class="r"><span class="lb">70–100</span><span class="bw"><span class="b" style="width:9.2%;background:#35d0c8"></span></span><span class="ct">20 · 9%</span></div>
+<div class="r"><span class="lb">45–70</span><span class="bw"><span class="b" style="width:24.0%;background:#5aa9ff"></span></span><span class="ct">52 · 24%</span></div>
+<div class="r"><span class="lb">20–45</span><span class="bw"><span class="b" style="width:48.4%;background:#8894a6"></span></span><span class="ct">105 · 48%</span></div>
+<div class="r"><span class="lb"><20</span><span class="bw"><span class="b" style="width:17.1%;background:#ffb454"></span></span><span class="ct">37 · 17%</span></div>
+<h3>各维度平均得分 / 权重（为空 = 该维确实得 0；未测 = 该维测量失败，已按 0 计入总分）</h3>
+<div class="r"><span class="lb">设计可制造性</span><span class="bw"><span class="b" style="width:68.2%;background:#5aa9ff"></span></span><span class="ct">16.4/24 · 为空 45</span></div>
+<div class="r"><span class="lb">物料可采购性</span><span class="bw"><span class="b" style="width:24.9%;background:#5aa9ff"></span></span><span class="ct">5.5/22 · 为空 140 · <span style="color:#ffb454">未测 9</span></span></div>
+<div class="r"><span class="lb">装配可理解性</span><span class="bw"><span class="b" style="width:13.0%;background:#5aa9ff"></span></span><span class="ct">2.1/16 · 为空 140</span></div>
+<div class="r"><span class="lb">电子可复现性</span><span class="bw"><span class="b" style="width:34.1%;background:#5aa9ff"></span></span><span class="ct">4.8/14 · 为空 177</span></div>
+<div class="r"><span class="lb">运动学可验证性</span><span class="bw"><span class="b" style="width:33.0%;background:#5aa9ff"></span></span><span class="ct">4.6/14 · 为空 122</span></div>
+<div class="r"><span class="lb">授权明确性</span><span class="bw"><span class="b" style="width:73.7%;background:#5aa9ff"></span></span><span class="ct">7.4/10 · 为空 43</span></div>
+</div>

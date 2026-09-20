@@ -28,6 +28,14 @@ import {
 
 type SortKey = "stars" | "name" | "parts" | "assemblies" | "eri";
 
+/** 人工复核后排除的条目附带的理由（只有这一类分组有）。 */
+type ExcludedDetail = {
+  full_name: string;
+  date?: string;
+  reason: string;
+  found_by?: string;
+};
+
 export default function ReviewPage() {
   const [query, setQuery] = useState("");
   const [scope, setScope] = useState<"all" | "generated" | "curated">("all");
@@ -420,7 +428,12 @@ export default function ReviewPage() {
               排除规则是启发式的，不是形式化判定。下面逐条列出被排除的仓库，
               便于复核规则是否误伤——误杀真项目比放进无关项目更难发现。
             </p>
-            {PIPELINE_AUDIT.excluded.map((group) => (
+            {PIPELINE_AUDIT.excluded.map((group) => {
+              // 只有"人工逐条核对后排除"这一类带理由明细；
+              // 其余分组是纯名单，没有 details 字段，所以这里显式断言形状。
+              const details =
+                (group as { details?: readonly ExcludedDetail[] }).details ?? [];
+              return (
               <div key={group.reason} className="rounded-sm border border-border p-3">
                 <p className="text-[12px] font-medium">
                   {group.label}
@@ -442,8 +455,31 @@ export default function ReviewPage() {
                     </a>
                   ))}
                 </div>
+                {details.length > 0 && (
+                  <ul className="mt-3 space-y-2 border-t border-border/60 pt-2">
+                    {details.map((d) => (
+                      <li key={d.full_name} className="text-[11px] leading-relaxed">
+                        <a
+                          href={`https://github.com/${d.full_name}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="num text-foreground hover:text-primary"
+                        >
+                          {d.full_name}
+                        </a>
+                        {d.found_by && (
+                          <span className="ml-2 text-[10px] text-muted-foreground">
+                            发现于：{d.found_by}
+                          </span>
+                        )}
+                        <p className="mt-0.5 text-muted-foreground">{d.reason}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
-            ))}
+              );
+            })}
             {PIPELINE_AUDIT.rescuedByStructure.length > 0 ? (
               <div className="rounded-sm border border-primary/30 bg-primary/5 p-3">
                 <p className="text-[12px] font-medium text-primary">

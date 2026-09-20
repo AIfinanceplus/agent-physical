@@ -26,6 +26,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 import build_projects as B  # noqa: E402
+from fetch_curated_trees import curated_repos  # noqa: E402
 
 OUT = ROOT / "data" / "bom-content.json"
 UA = {"User-Agent": "agent-physical-bom-audit"}
@@ -316,11 +317,26 @@ def main() -> None:
     projects = json.loads(src.split("WorkbenchProject[] = ", 1)[1].rstrip().rstrip(";"))
 
     jobs: list[tuple[str, str]] = []
-    for p in projects:
-        full = p["repository"].replace("https://github.com/", "")
+    seen_repos: set[str] = set()
+
+    def add_repo(full: str) -> None:
+        if full in seen_repos:
+            return
+        seen_repos.add(full)
         for e in B.load_tree(full) or []:
             if e.get("type") == "blob" and B.classify(e.get("path", "")) == "BOM":
                 jobs.append((full, e["path"]))
+
+    for p in projects:
+        add_repo(p["repository"].replace("https://github.com/", ""))
+
+    # 人工策展项目也要覆盖。
+    # 首版只遍历生成项目，于是 4 个策展条目的 BOM 从来没被抓过——
+    # 它们的"物料可采购性"因此恒为 0，而其中 Faze4 其实有一份能解析的 .xlsx。
+    # 少抓一个来源，就等于在那一维上给这些项目判了无期。
+    for pid, url in curated_repos().items():
+        if "github.com" in url:
+            add_repo(url.replace("https://github.com/", "").rstrip("/"))
 
     done: dict = {}
     if OUT.exists():

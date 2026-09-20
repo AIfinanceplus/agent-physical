@@ -761,6 +761,25 @@
     "price": false,
     "qty": true
    }
+  },
+  "TotalBOM.xlsx": {
+   "file": "TotalBOM.xlsx",
+   "url": "https://raw.githubusercontent.com/iliasam/OpenSimpleLidar/HEAD/TotalBOM.xlsx",
+   "status": "ok",
+   "rows": 16,
+   "header": [
+    "No.",
+    "Name",
+    "Price",
+    "Description",
+    "URL"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": false
+   }
   }
  },
  "Roboparty/roboto_origin": {
@@ -924,6 +943,102 @@
    "cols": {
     "mpn": true,
     "supplier": true,
+    "price": false,
+    "qty": true
+   }
+  },
+  "modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM 01 ZZEBOM.xlsx": {
+   "file": "modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM 01 ZZEBOM.xlsx",
+   "url": "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V1.0/atom01_mechanic/02_Manufacturing/CNC_Machining/ATOM%2001%20ZZEBOM.xlsx",
+   "status": "ok",
+   "rows": 110,
+   "header": [
+    "Number",
+    "Part Number",
+    "Part Name",
+    "Management class",
+    "Material",
+    "Quantity",
+    "Unit",
+    "Version",
+    "Description",
+    "Classification",
+    "Supplier",
+    "Price(for 100 sets)/yuan"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
+  },
+  "modules/rpo_hardware/V2.0/roboto_origin_mechanic/00_Docs/萝博头原型机（RoboParty Roboto Origin）散件清单 V1.1.3.xlsx": {
+   "file": "modules/rpo_hardware/V2.0/roboto_origin_mechanic/00_Docs/萝博头原型机（RoboParty Roboto Origin）散件清单 V1.1.3.xlsx",
+   "url": "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V2.0/roboto_origin_mechanic/00_Docs/%E8%90%9D%E5%8D%9A%E5%A4%B4%E5%8E%9F%E5%9E%8B%E6%9C%BA%EF%BC%88RoboParty%20Roboto%20Origin%EF%BC%89%E6%95%A3%E4%BB%B6%E6%B8%85%E5%8D%95%20V1.1.3.xlsx",
+   "status": "ok",
+   "rows": 53,
+   "header": [
+    "RB-roboto-36",
+    "电子元器件",
+    "RDK X5 8G",
+    "8G/单板",
+    "1",
+    "pcs",
+    "-",
+    "地瓜保修"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/3D_Printing/A2_3DBOM .xlsx": {
+   "file": "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/3D_Printing/A2_3DBOM .xlsx",
+   "url": "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/3D_Printing/A2_3DBOM%20.xlsx",
+   "status": "ok",
+   "rows": 5,
+   "header": [
+    "Number",
+    "Part Number",
+    "Part Name",
+    "Management class",
+    "Material",
+    "Quantity",
+    "Unit",
+    "Version",
+    "Description",
+    "Classification"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/CNC_Machining/A2_CNCBOM.xlsx": {
+   "file": "modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/CNC_Machining/A2_CNCBOM.xlsx",
+   "url": "https://raw.githubusercontent.com/Roboparty/roboto_origin/HEAD/modules/rpo_hardware/V2.0/roboto_origin_mechanic/02_Manufacturing/CNC_Machining/A2_CNCBOM.xlsx",
+   "status": "ok",
+   "rows": 27,
+   "header": [
+    "Number",
+    "Part Number",
+    "Part Name",
+    "Management class",
+    "Material",
+    "Quantity",
+    "Unit",
+    "Version",
+    "Description",
+    "Classification"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
     "price": false,
     "qty": true
    }
@@ -1230,6 +1345,41 @@
     "qty": false
    },
    "note": "取 21 张表中最大的（18 行）"
+  },
+  "docs/机械采购清单.md": {
+   "file": "docs/机械采购清单.md",
+   "url": "https://raw.githubusercontent.com/fanhao375/microduck-replica/HEAD/docs/%E6%9C%BA%E6%A2%B0%E9%87%87%E8%B4%AD%E6%B8%85%E5%8D%95.md",
+   "status": "ok",
+   "rows": 10,
+   "header": [
+    "零件",
+    "打几个"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 10 张表中最大的（11 行）"
+  },
+  "docs/电控采购清单.md": {
+   "file": "docs/电控采购清单.md",
+   "url": "https://raw.githubusercontent.com/fanhao375/microduck-replica/HEAD/docs/%E7%94%B5%E6%8E%A7%E9%87%87%E8%B4%AD%E6%B8%85%E5%8D%95.md",
+   "status": "ok",
+   "rows": 9,
+   "header": [
+    "Armbian headless rootfs",
+    "~2 GB",
+    "`deploy/README.md:144` 确认是 headless 镜像；**2 GB 是外部经验值，仓库无依据**"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": true,
+    "qty": false
+   },
+   "note": "取 15 张表中最大的（11 行）"
   }
  },
  "Source-Robotics/Faze4-Robotic-arm": {
@@ -1919,6 +2069,58 @@
     "qty": true
    },
    "note": "分隔符 ','"
+  },
+  "amulet_controller/Manufacturing/Assembly/ibom/ibom.html": {
+   "file": "amulet_controller/Manufacturing/Assembly/ibom/ibom.html",
+   "url": "https://raw.githubusercontent.com/EPFLXplore/XRE_LeggedRobot_HW/HEAD/amulet_controller/Manufacturing/Assembly/ibom/ibom.html",
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "var f=0;return f=b.pressure&&c.buttons?b.pressure:c.buttons?.5:0,c.x=c.clientX,c.y=c.clientY,c.pointerId=b.pointerId",
+    "0,c.width=b.width",
+    "0,c.height=b.height",
+    "0,c.pressure=f,c.tiltX=b.tiltX",
+    "0,c.tiltY=b.tiltY",
+    "0,c.twist=b.twist",
+    "0,c.tangentialPressure=b.tangentialPressure",
+    "0,c.pointerType=b.pointerType",
+    "\"\",c.hwTimestamp=b.hwTimestamp",
+    "0,c.isPrimary=b.isPrimary",
+    "!1,c}function b(){this.array=[],this.size=0}function c(a,b,c,d){this.addCallback=a.bind(d),this.removeCallback=b.bind(d),this.changedCallback=c.bind(d),A&&(this.observer=new A(this.mutationWatcher.bind(this)))}function d(a){return\"body /shadow-deep/ \"+e(a)}function e(a){return'[touch-action=\"'+a+'\"]'}function f(a){return\"{ -ms-touch-action: \"+a+\"; touch-action: \"+a+\"; }\"}function g(){if(F){D.forEach(function(a){String(a)===a?(E+=e(a)+f(a)+\"\\n\",G&&(E+=d(a)+f(a)+\"\\n\")):(E+=a.selectors.map(e)+f(a.rule)+\"\\n\",G&&(E+=a.selectors.map(d)+f(a.rule)+\"\\n\"))});var a=document.createElement(\"style\");a.textContent=E,document.head.appendChild(a)}}function h(){if(!window.PointerEvent){if(window.PointerEvent=a,window.navigator.msPointerEnabled){var b=window.navigator.msMaxTouchPoints;Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:b,enumerable:!0}),u.registerSource(\"ms\",_)}else Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:0,enumerable:!0}),u.registerSource(\"mouse\",N),void 0!==window.ontouchstart&&u.registerSource(\"touch\",V);u.register(document)}}function i(a){if(!u.pointermap.has(a)){var b=new Error(\"InvalidPointerId\");throw b.name=\"InvalidPointerId\",b}}function j(a){for(var b=a.parentNode;b&&b!==a.ownerDocument;)b=b.parentNode;if(!b){var c=new Error(\"InvalidStateError\");throw c.name=\"InvalidStateError\",c}}function k(a){var b=u.pointermap.get(a);return 0!==b.buttons}function l(){window.Element&&!Element.prototype.setPointerCapture&&Object.defineProperties(Element.prototype,{setPointerCapture:{value:W},releasePointerCapture:{value:X},hasPointerCapture:{value:Y}})}"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 1 张表中最大的（4 行）"
+  },
+  "amulet_encoder/Manufacturing/Assembly/ibom/ibom.html": {
+   "file": "amulet_encoder/Manufacturing/Assembly/ibom/ibom.html",
+   "url": "https://raw.githubusercontent.com/EPFLXplore/XRE_LeggedRobot_HW/HEAD/amulet_encoder/Manufacturing/Assembly/ibom/ibom.html",
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "var f=0;return f=b.pressure&&c.buttons?b.pressure:c.buttons?.5:0,c.x=c.clientX,c.y=c.clientY,c.pointerId=b.pointerId",
+    "0,c.width=b.width",
+    "0,c.height=b.height",
+    "0,c.pressure=f,c.tiltX=b.tiltX",
+    "0,c.tiltY=b.tiltY",
+    "0,c.twist=b.twist",
+    "0,c.tangentialPressure=b.tangentialPressure",
+    "0,c.pointerType=b.pointerType",
+    "\"\",c.hwTimestamp=b.hwTimestamp",
+    "0,c.isPrimary=b.isPrimary",
+    "!1,c}function b(){this.array=[],this.size=0}function c(a,b,c,d){this.addCallback=a.bind(d),this.removeCallback=b.bind(d),this.changedCallback=c.bind(d),A&&(this.observer=new A(this.mutationWatcher.bind(this)))}function d(a){return\"body /shadow-deep/ \"+e(a)}function e(a){return'[touch-action=\"'+a+'\"]'}function f(a){return\"{ -ms-touch-action: \"+a+\"; touch-action: \"+a+\"; }\"}function g(){if(F){D.forEach(function(a){String(a)===a?(E+=e(a)+f(a)+\"\\n\",G&&(E+=d(a)+f(a)+\"\\n\")):(E+=a.selectors.map(e)+f(a.rule)+\"\\n\",G&&(E+=a.selectors.map(d)+f(a.rule)+\"\\n\"))});var a=document.createElement(\"style\");a.textContent=E,document.head.appendChild(a)}}function h(){if(!window.PointerEvent){if(window.PointerEvent=a,window.navigator.msPointerEnabled){var b=window.navigator.msMaxTouchPoints;Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:b,enumerable:!0}),u.registerSource(\"ms\",_)}else Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:0,enumerable:!0}),u.registerSource(\"mouse\",N),void 0!==window.ontouchstart&&u.registerSource(\"touch\",V);u.register(document)}}function i(a){if(!u.pointermap.has(a)){var b=new Error(\"InvalidPointerId\");throw b.name=\"InvalidPointerId\",b}}function j(a){for(var b=a.parentNode;b&&b!==a.ownerDocument;)b=b.parentNode;if(!b){var c=new Error(\"InvalidStateError\");throw c.name=\"InvalidStateError\",c}}function k(a){var b=u.pointermap.get(a);return 0!==b.buttons}function l(){window.Element&&!Element.prototype.setPointerCapture&&Object.defineProperties(Element.prototype,{setPointerCapture:{value:W},releasePointerCapture:{value:X},hasPointerCapture:{value:Y}})}"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 1 张表中最大的（4 行）"
   }
  },
  "TNY-Robotics/TNY-360": {
@@ -2775,6 +2977,29 @@
     "price": false,
     "qty": true
    }
+  },
+  "Projects/Battery Management System/Rev1/Project Outputs for Battery Management System/BOM/Bill of Materials-Battery Management System(Production).xlsx": {
+   "file": "Projects/Battery Management System/Rev1/Project Outputs for Battery Management System/BOM/Bill of Materials-Battery Management System(Production).xlsx",
+   "url": "https://raw.githubusercontent.com/uwrobotics/MarsRoverHardware/HEAD/Projects/Battery%20Management%20System/Rev1/Project%20Outputs%20for%20Battery%20Management%20System/BOM/Bill%20of%20Materials-Battery%20Management%20System%28Production%29.xlsx",
+   "status": "ok",
+   "rows": 53,
+   "header": [
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Supplier Part Number 1",
+    "Supplier 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   }
  },
  "ferrolho/rotary-inverted-pendulum": {
@@ -3443,6 +3668,38 @@
     "qty": true
    },
    "note": "分隔符 ','"
+  },
+  "Projects/Nav-Lights/Project Outputs for Nav_Lights_UWARG/BOM/Bill of Materials-Nav_Lights_UWARG.xls": {
+   "file": "Projects/Nav-Lights/Project Outputs for Nav_Lights_UWARG/BOM/Bill of Materials-Nav_Lights_UWARG.xls",
+   "url": "https://raw.githubusercontent.com/UWARG/hardware/HEAD/Projects/Nav-Lights/Project%20Outputs%20for%20Nav_Lights_UWARG/BOM/Bill%20of%20Materials-Nav_Lights_UWARG.xls",
+   "status": "unparsed",
+   "reason": "旧版 Excel 二进制格式，标准库不支持"
+  },
+  "Projects/Power Distribution/Rev 1/Project Outputs for Power Distribution/BOM/Bill of Materials-Power Distribution.xlsx": {
+   "file": "Projects/Power Distribution/Rev 1/Project Outputs for Power Distribution/BOM/Bill of Materials-Power Distribution.xlsx",
+   "url": "https://raw.githubusercontent.com/UWARG/hardware/HEAD/Projects/Power%20Distribution/Rev%201/Project%20Outputs%20for%20Power%20Distribution/BOM/Bill%20of%20Materials-Power%20Distribution.xlsx",
+   "status": "ok",
+   "rows": 24,
+   "header": [
+    "Line #",
+    "Name",
+    "Description",
+    "Designator",
+    "Quantity",
+    "Manufacturer 1",
+    "Manufacturer Part Number 1",
+    "Manufacturer Lifecycle 1",
+    "Supplier 1",
+    "Supplier Part Number 1",
+    "Supplier Unit Price 1",
+    "Supplier Subtotal 1"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   }
   }
  },
  "SYSU-RoboticsLab/RAPID-Hand": {
@@ -3743,6 +4000,32 @@
    "url": "https://raw.githubusercontent.com/GonzaCerv/noah-hardware/HEAD/Doc/BOM.ods",
    "status": "unparsed",
    "reason": "OpenDocument 表格，需专门解析器"
+  },
+  "PCB/bom/ibom.html": {
+   "file": "PCB/bom/ibom.html",
+   "url": "https://raw.githubusercontent.com/GonzaCerv/noah-hardware/HEAD/PCB/bom/ibom.html",
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "var f=0;return f=b.pressure&&c.buttons?b.pressure:c.buttons?.5:0,c.x=c.clientX,c.y=c.clientY,c.pointerId=b.pointerId",
+    "0,c.width=b.width",
+    "0,c.height=b.height",
+    "0,c.pressure=f,c.tiltX=b.tiltX",
+    "0,c.tiltY=b.tiltY",
+    "0,c.twist=b.twist",
+    "0,c.tangentialPressure=b.tangentialPressure",
+    "0,c.pointerType=b.pointerType",
+    "\"\",c.hwTimestamp=b.hwTimestamp",
+    "0,c.isPrimary=b.isPrimary",
+    "!1,c}function b(){this.array=[],this.size=0}function c(a,b,c,d){this.addCallback=a.bind(d),this.removeCallback=b.bind(d),this.changedCallback=c.bind(d),A&&(this.observer=new A(this.mutationWatcher.bind(this)))}function d(a){return\"body /shadow-deep/ \"+e(a)}function e(a){return'[touch-action=\"'+a+'\"]'}function f(a){return\"{ -ms-touch-action: \"+a+\"; touch-action: \"+a+\"; }\"}function g(){if(F){D.forEach(function(a){String(a)===a?(E+=e(a)+f(a)+\"\\n\",G&&(E+=d(a)+f(a)+\"\\n\")):(E+=a.selectors.map(e)+f(a.rule)+\"\\n\",G&&(E+=a.selectors.map(d)+f(a.rule)+\"\\n\"))});var a=document.createElement(\"style\");a.textContent=E,document.head.appendChild(a)}}function h(){if(!window.PointerEvent){if(window.PointerEvent=a,window.navigator.msPointerEnabled){var b=window.navigator.msMaxTouchPoints;Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:b,enumerable:!0}),u.registerSource(\"ms\",_)}else Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:0,enumerable:!0}),u.registerSource(\"mouse\",N),void 0!==window.ontouchstart&&u.registerSource(\"touch\",V);u.register(document)}}function i(a){if(!u.pointermap.has(a)){var b=new Error(\"InvalidPointerId\");throw b.name=\"InvalidPointerId\",b}}function j(a){for(var b=a.parentNode;b&&b!==a.ownerDocument;)b=b.parentNode;if(!b){var c=new Error(\"InvalidStateError\");throw c.name=\"InvalidStateError\",c}}function k(a){var b=u.pointermap.get(a);return 0!==b.buttons}function l(){window.Element&&!Element.prototype.setPointerCapture&&Object.defineProperties(Element.prototype,{setPointerCapture:{value:W},releasePointerCapture:{value:X},hasPointerCapture:{value:Y}})}"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 1 张表中最大的（4 行）"
   }
  },
  "MarcDcls/coconuts": {
@@ -3984,6 +4267,612 @@
     "qty": true
    },
    "note": "分隔符 ','"
+  }
+ },
+ "NVIDIA-AI-IOT/jetbot": {
+  "docs/bill_of_materials.md": {
+   "file": "docs/bill_of_materials.md",
+   "url": "https://raw.githubusercontent.com/NVIDIA-AI-IOT/jetbot/HEAD/docs/bill_of_materials.md",
+   "status": "ok",
+   "rows": 12,
+   "header": [
+    "**Part**",
+    "**Quantity**",
+    "**Cost**",
+    "**URL**",
+    "**Notes**"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   },
+   "note": "取 7 张表中最大的（13 行）"
+  },
+  "docs/bill_of_materials_orin.md": {
+   "file": "docs/bill_of_materials_orin.md",
+   "url": "https://raw.githubusercontent.com/NVIDIA-AI-IOT/jetbot/HEAD/docs/bill_of_materials_orin.md",
+   "status": "ok",
+   "rows": 10,
+   "header": [
+    "**Part**",
+    "**Quantity**",
+    "**Cost**",
+    "**URL**",
+    "**Notes**"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": true,
+    "qty": true
+   },
+   "note": "取 5 张表中最大的（11 行）"
+  }
+ },
+ "PetoiCamp/OpenCat-Old": {
+  "Resources/miniBOM.csv": {
+   "file": "Resources/miniBOM.csv",
+   "url": "https://raw.githubusercontent.com/PetoiCamp/OpenCat-Old/HEAD/Resources/miniBOM.csv",
+   "status": "ok",
+   "rows": 15,
+   "header": [
+    "Battery Holder",
+    "1",
+    "2 serial",
+    "https://www.aliexpress.com/item/5pcs-lot-Plastic-Battery-Holder-Storage-Box-Case-for-2x18650-Battery-Holder/32635747407.html?spm=2114.search0104.3.9.76c62b45VoR3iM&ws_ab_test=searchweb0_0,searchweb201602_4_10065_10344_10068_10130_10324_10342_10547_10325_10343_10546_10340_10548_10341_10545_10084_10617_10083_10616_10618_10615_10307_5920012_10313_10059_10534_100031_10103_441_10624_442_10623_10622_10621_10620_10142,searchweb201603_25,ppcSwitch_3&algo_expid=ac81478a-1c41-41b4-a315-f7d67daf6f01-1&algo_pvid=ac81478a-1c41-41b4-a315-f7d67daf6f01&priceBeautifyAB=4"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": true,
+    "qty": true
+   },
+   "note": "分隔符 ','"
+  }
+ },
+ "G-Levine/OpenTorque-Actuator": {
+  "Bill of Materials.csv": {
+   "file": "Bill of Materials.csv",
+   "url": "https://raw.githubusercontent.com/G-Levine/OpenTorque-Actuator/HEAD/Bill%20of%20Materials.csv",
+   "status": "ok",
+   "rows": 11,
+   "header": [
+    "Part Name",
+    "Count",
+    "Source",
+    "Alternate Source"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "分隔符 ','"
+  }
+ },
+ "upkie/upkie": {
+  "docs/assembly/bill-of-materials.md": {
+   "file": "docs/assembly/bill-of-materials.md",
+   "url": "https://raw.githubusercontent.com/upkie/upkie/HEAD/docs/assembly/bill-of-materials.md",
+   "status": "ok",
+   "rows": 34,
+   "header": [
+    "Short name",
+    "Part name and requirements",
+    "Quantity",
+    "Suppliers"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "取 1 张表中最大的（35 行）"
+  }
+ },
+ "upsidedownlabs/BioAmp-EXG-Pill": {
+  "hardware/bom/ibom.html": {
+   "file": "hardware/bom/ibom.html",
+   "url": "https://raw.githubusercontent.com/upsidedownlabs/BioAmp-EXG-Pill/HEAD/hardware/bom/ibom.html",
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "var f=0;return f=b.pressure&&c.buttons?b.pressure:c.buttons?.5:0,c.x=c.clientX,c.y=c.clientY,c.pointerId=b.pointerId",
+    "0,c.width=b.width",
+    "0,c.height=b.height",
+    "0,c.pressure=f,c.tiltX=b.tiltX",
+    "0,c.tiltY=b.tiltY",
+    "0,c.twist=b.twist",
+    "0,c.tangentialPressure=b.tangentialPressure",
+    "0,c.pointerType=b.pointerType",
+    "\"\",c.hwTimestamp=b.hwTimestamp",
+    "0,c.isPrimary=b.isPrimary",
+    "!1,c}function b(){this.array=[],this.size=0}function c(a,b,c,d){this.addCallback=a.bind(d),this.removeCallback=b.bind(d),this.changedCallback=c.bind(d),A&&(this.observer=new A(this.mutationWatcher.bind(this)))}function d(a){return\"body /shadow-deep/ \"+e(a)}function e(a){return'[touch-action=\"'+a+'\"]'}function f(a){return\"{ -ms-touch-action: \"+a+\"; touch-action: \"+a+\"; }\"}function g(){if(F){D.forEach(function(a){String(a)===a?(E+=e(a)+f(a)+\"\\n\",G&&(E+=d(a)+f(a)+\"\\n\")):(E+=a.selectors.map(e)+f(a.rule)+\"\\n\",G&&(E+=a.selectors.map(d)+f(a.rule)+\"\\n\"))});var a=document.createElement(\"style\");a.textContent=E,document.head.appendChild(a)}}function h(){if(!window.PointerEvent){if(window.PointerEvent=a,window.navigator.msPointerEnabled){var b=window.navigator.msMaxTouchPoints;Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:b,enumerable:!0}),u.registerSource(\"ms\",_)}else Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:0,enumerable:!0}),u.registerSource(\"mouse\",N),void 0!==window.ontouchstart&&u.registerSource(\"touch\",V);u.register(document)}}function i(a){if(!u.pointermap.has(a)){var b=new Error(\"InvalidPointerId\");throw b.name=\"InvalidPointerId\",b}}function j(a){for(var b=a.parentNode;b&&b!==a.ownerDocument;)b=b.parentNode;if(!b){var c=new Error(\"InvalidStateError\");throw c.name=\"InvalidStateError\",c}}function k(a){var b=u.pointermap.get(a);return 0!==b.buttons}function l(){window.Element&&!Element.prototype.setPointerCapture&&Object.defineProperties(Element.prototype,{setPointerCapture:{value:W},releasePointerCapture:{value:X},hasPointerCapture:{value:Y}})}"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 1 张表中最大的（4 行）"
+  }
+ },
+ "google-deepmind/barkour_robot": {
+  "hardware/barkour_robot_bill_of_materials.csv": {
+   "file": "hardware/barkour_robot_bill_of_materials.csv",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/barkour_robot_bill_of_materials.csv",
+   "status": "ok",
+   "rows": 205,
+   "header": [
+    "Item No.",
+    "PART",
+    "Specification/ Unit",
+    "TYPE",
+    "MANUFACTURER",
+    " Mfg. Product No. / SKU",
+    "Source",
+    "Total Quantity Required",
+    "Additional Notes"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   },
+   "note": "分隔符 ','"
+  },
+  "hardware/electronics/ada/Project Outputs for Ada/BOM/Bill of Materials-Ada.xlsx": {
+   "file": "hardware/electronics/ada/Project Outputs for Ada/BOM/Bill of Materials-Ada.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/ada/Project%20Outputs%20for%20Ada/BOM/Bill%20of%20Materials-Ada.xlsx",
+   "status": "ok",
+   "rows": 15,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/cortes/Project Outputs for Cortes/BOM/Bill of Materials-Cortes.xlsx": {
+   "file": "hardware/electronics/cortes/Project Outputs for Cortes/BOM/Bill of Materials-Cortes.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/cortes/Project%20Outputs%20for%20Cortes/BOM/Bill%20of%20Materials-Cortes.xlsx",
+   "status": "ok",
+   "rows": 46,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/feifei/Project Outputs for Power_Distro/BOM/Bill of Materials-Fei-Fei.xlsx": {
+   "file": "hardware/electronics/feifei/Project Outputs for Power_Distro/BOM/Bill of Materials-Fei-Fei.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/feifei/Project%20Outputs%20for%20Power_Distro/BOM/Bill%20of%20Materials-Fei-Fei.xlsx",
+   "status": "ok",
+   "rows": 5,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/gebru/Project Outputs for Gebru/BOM/Bill of Materials-Gebru.xlsx": {
+   "file": "hardware/electronics/gebru/Project Outputs for Gebru/BOM/Bill of Materials-Gebru.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/gebru/Project%20Outputs%20for%20Gebru/BOM/Bill%20of%20Materials-Gebru.xlsx",
+   "status": "ok",
+   "rows": 41,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/grace/Project Outputs for Grace/BOM/Bill of Materials-Grace.xlsx": {
+   "file": "hardware/electronics/grace/Project Outputs for Grace/BOM/Bill of Materials-Grace.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/grace/Project%20Outputs%20for%20Grace/BOM/Bill%20of%20Materials-Grace.xlsx",
+   "status": "ok",
+   "rows": 28,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/hamilton/Project Outputs for Hamilton/BOM/Bill of Materials-Hamilton.xlsx": {
+   "file": "hardware/electronics/hamilton/Project Outputs for Hamilton/BOM/Bill of Materials-Hamilton.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/hamilton/Project%20Outputs%20for%20Hamilton/BOM/Bill%20of%20Materials-Hamilton.xlsx",
+   "status": "ok",
+   "rows": 8,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/holberton/Project Outputs for Holberton/BOM/Bill of Materials-Holberton.xlsx": {
+   "file": "hardware/electronics/holberton/Project Outputs for Holberton/BOM/Bill of Materials-Holberton.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/holberton/Project%20Outputs%20for%20Holberton/BOM/Bill%20of%20Materials-Holberton.xlsx",
+   "status": "ok",
+   "rows": 92,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/hopper/Project Outputs for Hopper/BOM/Bill of Materials-Hopper.xlsx": {
+   "file": "hardware/electronics/hopper/Project Outputs for Hopper/BOM/Bill of Materials-Hopper.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/hopper/Project%20Outputs%20for%20Hopper/BOM/Bill%20of%20Materials-Hopper.xlsx",
+   "status": "ok",
+   "rows": 36,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/jackson/Project Outputs for Jackson/BOM/Bill of Materials-Jackson.xlsx": {
+   "file": "hardware/electronics/jackson/Project Outputs for Jackson/BOM/Bill of Materials-Jackson.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/jackson/Project%20Outputs%20for%20Jackson/BOM/Bill%20of%20Materials-Jackson.xlsx",
+   "status": "ok",
+   "rows": 47,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/mataric/Project Outputs for Mataric/BOM/Bill of Materials-Mataric.xlsx": {
+   "file": "hardware/electronics/mataric/Project Outputs for Mataric/BOM/Bill of Materials-Mataric.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/mataric/Project%20Outputs%20for%20Mataric/BOM/Bill%20of%20Materials-Mataric.xlsx",
+   "status": "ok",
+   "rows": 19,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  },
+  "hardware/electronics/rus/Project Outputs for Rus/BOM/Bill of Materials-Rus.xlsx": {
+   "file": "hardware/electronics/rus/Project Outputs for Rus/BOM/Bill of Materials-Rus.xlsx",
+   "url": "https://raw.githubusercontent.com/google-deepmind/barkour_robot/HEAD/hardware/electronics/rus/Project%20Outputs%20for%20Rus/BOM/Bill%20of%20Materials-Rus.xlsx",
+   "status": "ok",
+   "rows": 50,
+   "header": [
+    "Comment",
+    "Description",
+    "Designator",
+    "Footprint",
+    "LibRef",
+    "Quantity"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  }
+ },
+ "prl-mushr/mushr": {
+  "mushr_docs/hardware/mushr_nano_bill_of_materials.docx": {
+   "file": "mushr_docs/hardware/mushr_nano_bill_of_materials.docx",
+   "url": "https://raw.githubusercontent.com/prl-mushr/mushr/HEAD/mushr_docs/hardware/mushr_nano_bill_of_materials.docx",
+   "status": "unparsed",
+   "reason": "Word 文档，需专门解析器"
+  },
+  "mushr_docs/hardware/mushr_nano_bill_of_materials.pdf": {
+   "file": "mushr_docs/hardware/mushr_nano_bill_of_materials.pdf",
+   "url": "https://raw.githubusercontent.com/prl-mushr/mushr/HEAD/mushr_docs/hardware/mushr_nano_bill_of_materials.pdf",
+   "status": "unparsed",
+   "reason": "PDF 二进制，需专门解析器"
+  }
+ },
+ "ajayre/JacktheRipperBot": {
+  "Documents/BillofMaterials.xlsx": {
+   "file": "Documents/BillofMaterials.xlsx",
+   "url": "https://raw.githubusercontent.com/ajayre/JacktheRipperBot/HEAD/Documents/BillofMaterials.xlsx",
+   "status": "ok",
+   "rows": 34,
+   "header": [
+    "Quantity",
+    "Description",
+    "Notes",
+    "Source2"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
+  }
+ },
+ "ToanTech/py-apple-bldc-quadruped-robot": {
+  "BOM/菠萝无刷一代 机械 +电控 物料表.xlsx": {
+   "file": "BOM/菠萝无刷一代 机械 +电控 物料表.xlsx",
+   "url": "https://raw.githubusercontent.com/ToanTech/py-apple-bldc-quadruped-robot/HEAD/BOM/%E8%8F%A0%E8%90%9D%E6%97%A0%E5%88%B7%E4%B8%80%E4%BB%A3%20%E6%9C%BA%E6%A2%B0%20%2B%E7%94%B5%E6%8E%A7%20%E7%89%A9%E6%96%99%E8%A1%A8.xlsx",
+   "status": "ok",
+   "rows": 14,
+   "header": [
+    "部分名称",
+    "物料名称",
+    "物料规格",
+    "数量",
+    "注意"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": false,
+    "qty": true
+   }
+  }
+ },
+ "popi-mkx3/popi_project": {
+  "popi_reports/POPI_bill_of_materials.xlsx": {
+   "file": "popi_reports/POPI_bill_of_materials.xlsx",
+   "url": "https://raw.githubusercontent.com/popi-mkx3/popi_project/HEAD/popi_reports/POPI_bill_of_materials.xlsx",
+   "status": "ok",
+   "rows": 35,
+   "header": [
+    "Commutateur, D-Link, DES-1005, 5 ports RJ45",
+    "1.0",
+    "13.6",
+    "13.6",
+    "55",
+    "En attente à Thalès",
+    "57"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   }
+  }
+ },
+ "NimbRo/nimbro-op2": {
+  "NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls": {
+   "file": "NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls",
+   "url": "https://raw.githubusercontent.com/NimbRo/nimbro-op2/HEAD/NimbRo-OP2/NimbRo-OP2_Bill_of_Materials.xls",
+   "status": "unparsed",
+   "reason": "旧版 Excel 二进制格式，标准库不支持"
+  },
+  "NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls": {
+   "file": "NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls",
+   "url": "https://raw.githubusercontent.com/NimbRo/nimbro-op2/HEAD/NimbRo-OP2X/NimbRo-OP2X_Bill_of_Materials.xls",
+   "status": "unparsed",
+   "reason": "旧版 Excel 二进制格式，标准库不支持"
+  }
+ },
+ "OpenPodcar/OpenPodcar": {
+  "docs/hardware/billOfMaterials.xlsx": {
+   "file": "docs/hardware/billOfMaterials.xlsx",
+   "url": "https://raw.githubusercontent.com/OpenPodcar/OpenPodcar/HEAD/docs/hardware/billOfMaterials.xlsx",
+   "status": "ok",
+   "rows": 11,
+   "header": [
+    "QTY",
+    "ITEM",
+    "IMAGE",
+    "LINK"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
+  }
+ },
+ "newdexterity/Open-Biomanual-Manipulation-System": {
+  "Assembly Guide/Bill_of_Materials.xlsx": {
+   "file": "Assembly Guide/Bill_of_Materials.xlsx",
+   "url": "https://raw.githubusercontent.com/newdexterity/Open-Biomanual-Manipulation-System/HEAD/Assembly%20Guide/Bill_of_Materials.xlsx",
+   "status": "ok",
+   "rows": 99,
+   "header": [
+    "Item",
+    "Product Number/SKU",
+    "Units",
+    "Unit Price/ USD",
+    "Subtotal/USD",
+    "Website",
+    "Notes"
+   ],
+   "cols": {
+    "mpn": true,
+    "supplier": false,
+    "price": true,
+    "qty": false
+   }
+  }
+ },
+ "Hyperspawn/Dropbear": {
+  "Components/Actuators/OpenTorque (ODrive)/Bill of Materials.csv": {
+   "file": "Components/Actuators/OpenTorque (ODrive)/Bill of Materials.csv",
+   "url": "https://raw.githubusercontent.com/Hyperspawn/Dropbear/HEAD/Components/Actuators/OpenTorque%20%28ODrive%29/Bill%20of%20Materials.csv",
+   "status": "ok",
+   "rows": 11,
+   "header": [
+    "Part Name",
+    "Count",
+    "Source",
+    "Alternate Source"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "分隔符 ','"
+  }
+ },
+ "MarginallyClever/sixi": {
+  "part files/Bill Of Materials.ods": {
+   "file": "part files/Bill Of Materials.ods",
+   "url": "https://raw.githubusercontent.com/MarginallyClever/sixi/HEAD/part%20files/Bill%20Of%20Materials.ods",
+   "status": "unparsed",
+   "reason": "OpenDocument 表格，需专门解析器"
+  }
+ },
+ "rosmo-robot/rosmo-robot.github.io": {
+  "ibom.html": {
+   "file": "ibom.html",
+   "url": "https://raw.githubusercontent.com/rosmo-robot/rosmo-robot.github.io/HEAD/ibom.html",
+   "status": "ok",
+   "rows": 1,
+   "header": [
+    "var f=0;return f=b.pressure&&c.buttons?b.pressure:c.buttons?.5:0,c.x=c.clientX,c.y=c.clientY,c.pointerId=b.pointerId",
+    "0,c.width=b.width",
+    "0,c.height=b.height",
+    "0,c.pressure=f,c.tiltX=b.tiltX",
+    "0,c.tiltY=b.tiltY",
+    "0,c.twist=b.twist",
+    "0,c.tangentialPressure=b.tangentialPressure",
+    "0,c.pointerType=b.pointerType",
+    "\"\",c.hwTimestamp=b.hwTimestamp",
+    "0,c.isPrimary=b.isPrimary",
+    "!1,c}function b(){this.array=[],this.size=0}function c(a,b,c,d){this.addCallback=a.bind(d),this.removeCallback=b.bind(d),this.changedCallback=c.bind(d),A&&(this.observer=new A(this.mutationWatcher.bind(this)))}function d(a){return\"body /shadow-deep/ \"+e(a)}function e(a){return'[touch-action=\"'+a+'\"]'}function f(a){return\"{ -ms-touch-action: \"+a+\"; touch-action: \"+a+\"; }\"}function g(){if(F){D.forEach(function(a){String(a)===a?(E+=e(a)+f(a)+\"\\n\",G&&(E+=d(a)+f(a)+\"\\n\")):(E+=a.selectors.map(e)+f(a.rule)+\"\\n\",G&&(E+=a.selectors.map(d)+f(a.rule)+\"\\n\"))});var a=document.createElement(\"style\");a.textContent=E,document.head.appendChild(a)}}function h(){if(!window.PointerEvent){if(window.PointerEvent=a,window.navigator.msPointerEnabled){var b=window.navigator.msMaxTouchPoints;Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:b,enumerable:!0}),u.registerSource(\"ms\",_)}else Object.defineProperty(window.navigator,\"maxTouchPoints\",{value:0,enumerable:!0}),u.registerSource(\"mouse\",N),void 0!==window.ontouchstart&&u.registerSource(\"touch\",V);u.register(document)}}function i(a){if(!u.pointermap.has(a)){var b=new Error(\"InvalidPointerId\");throw b.name=\"InvalidPointerId\",b}}function j(a){for(var b=a.parentNode;b&&b!==a.ownerDocument;)b=b.parentNode;if(!b){var c=new Error(\"InvalidStateError\");throw c.name=\"InvalidStateError\",c}}function k(a){var b=u.pointermap.get(a);return 0!==b.buttons}function l(){window.Element&&!Element.prototype.setPointerCapture&&Object.defineProperties(Element.prototype,{setPointerCapture:{value:W},releasePointerCapture:{value:X},hasPointerCapture:{value:Y}})}"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": false
+   },
+   "note": "取 1 张表中最大的（4 行）"
+  }
+ },
+ "OLIMEX/Minibot": {
+  "HARDWARE/MiniBot_RevA_BOM.ods": {
+   "file": "HARDWARE/MiniBot_RevA_BOM.ods",
+   "url": "https://raw.githubusercontent.com/OLIMEX/Minibot/HEAD/HARDWARE/MiniBot_RevA_BOM.ods",
+   "status": "unparsed",
+   "reason": "OpenDocument 表格，需专门解析器"
+  },
+  "HARDWARE/charger/MiniBot_charger_RevA_BOM.ods": {
+   "file": "HARDWARE/charger/MiniBot_charger_RevA_BOM.ods",
+   "url": "https://raw.githubusercontent.com/OLIMEX/Minibot/HEAD/HARDWARE/charger/MiniBot_charger_RevA_BOM.ods",
+   "status": "unparsed",
+   "reason": "OpenDocument 表格，需专门解析器"
+  }
+ },
+ "PCrnjak/Faze4-Robotic-arm": {
+  "BOM_7_11_2023.xlsx": {
+   "file": "BOM_7_11_2023.xlsx",
+   "url": "https://raw.githubusercontent.com/PCrnjak/Faze4-Robotic-arm/HEAD/BOM_7_11_2023.xlsx",
+   "status": "ok",
+   "rows": 40,
+   "header": [
+    "Type",
+    "quantity",
+    "Link",
+    "Joint 3 main case",
+    "1"
+   ],
+   "cols": {
+    "mpn": false,
+    "supplier": true,
+    "price": false,
+    "qty": true
+   }
   }
  }
 }

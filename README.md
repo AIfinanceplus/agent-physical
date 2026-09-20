@@ -10,9 +10,9 @@
 | --- | --- |
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
-| 管线生成 | 212 个（来自公开仓库树的证据化拆解） |
-| 评分 | OPEN_REPRO_V2：1 个已评分（Berkeley，导入自 physical-ai）· 217 个未评分；<br>证据重现度（ERI）：217 个已计分，锚点 Berkeley = 100，中位 37.5 |
-| 零件行 | 3,830 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
+| 管线生成 | 216 个（来自公开仓库树的证据化拆解） |
+| 评分 | OPEN_REPRO_V2：1 个已评分（Berkeley，导入自 physical-ai）· 221 个未评分；<br>证据重现度（ERI）：221 个已计分，锚点 Berkeley = 100，中位 38.0 |
+| 零件行 | 3,908 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -64,8 +64,8 @@ type ReproductionScore =
 pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.generated.ts
 ```
 
-输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 212 个 `WorkbenchProject`
-（3,830 条零件行、1,038 个总成）。规则：
+输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 216 个 `WorkbenchProject`
+（3,908 条零件行、1,059 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -300,14 +300,44 @@ if not buckets.get("MESH") and not buckets.get("CAD"):
 
 ### 结果（2026-09-19）
 
-217 / 218 个项目计分（`HEAD-BEATRIX` 的证据在 OSF，无仓库树可数，如实留空并写明原因）。
+221 / 222 个项目计分（`HEAD-BEATRIX` 的证据在 OSF，无仓库树可数，如实留空并写明原因）。
 
-- 最高 **102.7**（`roboto_origin`）· 中位 **37.5** · 最低 5.4
-- ≥100 有 **3** 个 · 60–100 有 38 个 · <40 有 122 个
-- 13 个项目的分数为**下界**（有维度未能测量）
+- 最高 **107.1**（`roboto_origin`）· 中位 **38.0** · 均值 41.7 · 最低 5.4
+- ≥100 有 **4** 个 · 70–100 有 23 个 · 45–70 有 51 个 · 20–45 有 109 个 · <20 有 34 个
+- 12 个项目的分数为**下界**（有维度未能测量）
 
-中位只有 37.5 是真实信号：多数开源机器人仓库公开了 STL/CAD，但没有可采购清单、
+中位只有 38.0 是真实信号：多数开源机器人仓库公开了 STL/CAD，但没有可采购清单、
 没有板子设计、没有装配文档——按"能否被第三方复现"这把尺子衡量，离 Berkeley 参考实现确实很远。
+
+### 抽检审计：分类器的三个系统性漏判
+
+用 `pipeline/audit_sample.py` 分层随机抽 10%（22 个项目）、**不复用缓存**、从实时 API
+独立重取仓库树并重新计数，回答"树是否取全 / 取证是否取全 / 分类器是否漏判"。
+跑出 1 条 HIGH + 10 条 MEDIUM，逐个查实后修掉了三处系统性漏判——**每一项都让分数变了**：
+
+| 漏判 | 影响面 | 性质 |
+| --- | --- | --- |
+| `bill of materials` 里的复数 `s` 让词尾边界失配 | 40 个 BOM 文件 | **最常见的 BOM 命名从未被识别过** |
+| `.dxf` / `.dwg` 不在 CAD 清单里 | 229 个文件 / 26 个项目 | 激光切割件、钣金图是真实加工文件 |
+| 中文命名的 BOM 无任何规则 | 全部中国项目 | `采购清单` / `物料表` / `散件清单` 整批丢 |
+
+修正后 **34 个项目分数上升、0 个下降**（`barkour_robot` 39.4 → 70.3，`mocktailsmixer`
+15.4 → 40.4）。同时修掉一处**反向错误**：放宽后 PX4 借 `.github/workflows/sbom_license_check.yml`
+混进目录——`SBOM` 是软件许可证合规产物，与能否买到舵机无关；它的 208 个"装配文档"
+其实是 GitHub Copilot 提示词。另有一处**误伤**值得记：首版模板排除规则按文件名匹配
+`template`，删掉了 `Bottom_Cover (Template).FCStd` 这类作者自己命名的真实零件；
+规则只应针对**软件的行为**（Inventor 在 `Templates/` 里自带 45 个 .dwg 图框），
+不应针对**人会怎么命名**。
+
+结构闸只能按可观测特征判定，识别不了"BOM 里写的是买两台商用机器人"这类语义问题。
+因此新增人工复核的**拒绝出口** `data/excluded-reviewed.json`（与 `candidates-manual.json`
+这个入口相对），每条形如：
+
+> `real-stanford/umi-on-legs` —— 该仓库的 `bill_of_materials.md` 首两行是
+> "Unitree Go2 Edu Plus: $12500 / ARX5: $10000"，它要求读者**购买两台商用机器人**。
+> 按此仓库造不出任何零件。
+
+被拒条目连同理由一并出现在审看台的排除清单里，让"为什么这个项目没进来"在界面上有答案。
 
 ## 运行
 
@@ -323,6 +353,8 @@ cd pipeline && python3 build_projects.py --min-tier B --out ../lib/projects.gene
 python3 fetch_bom_content.py            # 解析全语料 BOM（--force 全量重解析）
 python3 fetch_curated_trees.py          # 补拉策展条目的仓库树
 python3 score_reproduction.py           # 产出 lib/scores.generated.ts + data/score-audit.json
+
+python3 audit_sample.py                 # 抽检 10%：实时重取树、独立重算、分层报告
 ```
 
 `--min-tier` 控制收录范围（A/B/C/D），`--max-parts` 控制每个项目的零件行上限。
@@ -361,11 +393,13 @@ data/candidates-gap.json          补采候选清单（人工策展来源）
 data/candidates-lists.json        新增策展清单提取的候选
 data/candidates-search.json       GitHub 结构化检索的候选
 data/candidates-hardware-search.json 按命名惯例检索的候选
-data/candidates-manual.json        人工逐条核实过的候选（正式出口）
+data/candidates-manual.json       人工策展候选（正式入口）
+data/excluded-reviewed.json       人工复核后排除的仓库 + 理由（正式拒绝出口）
 data/seed-gap.json                补采种子（robots.json 同形）
 data/repo-ids.json                仓库 id → 规范名 映射（去重与改名纠正）
 data/bom-content.json             全语料 BOM 的解析结果（含未解析原因）
-data/score-audit.json             逐项目六维分与**全部**证据（可离线逐条核对）
+data/score-audit.json             逐项目六维评分 + 全部证据（可离线逐条核对）
+data/audit-sample.json            10% 抽检的分层审计结果
 data/curated-license.json         策展条目的许可标识（取自 gh，避免重复请求）
 app/review/page.tsx               审看台：可筛选表格 + 排除清单
 ```

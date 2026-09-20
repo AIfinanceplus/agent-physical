@@ -1,0 +1,8 @@
+[
+  {
+    "full_name": "real-stanford/umi-on-legs",
+    "date": "2026-09-19",
+    "reason": "该仓库的 `real-wbc/docs/bill_of_materials.md` 首两行是「Unitree Go2 Edu Plus: $12500 / ARX5: $10000」——它要求读者**购买两台商用机器人**，其余条目是 SpaceMouse、iPhone 15 Pro 与亚马逊线材。仓库本身是实现操作策略的研究代码，随附的 URDF 是第三方机型（go2_arx5）的运动学描述。按此仓库造不出任何零件。",
+    "found_by": "结构闸放宽（DXF/DWG 计入 CAD、BOM 命名修正）后新进，人工逐条核对时发现"
+  }
+]
