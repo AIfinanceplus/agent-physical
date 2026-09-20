@@ -1,0 +1,26 @@
+[
+ {
+  "slug": "awesome-humanoid-robot.git",
+  "owner": "YansongW",
+  "name": "awesome-humanoid-robot.git",
+  "cat": "list",
+  "src": "awesome-humanoid-robot",
+  "trust": "other"
+ },
+ {
+  "slug": "X-Bot",
+  "owner": "peng-zhihui",
+  "name": "X-Bot",
+  "cat": "list",
+  "src": "awesome-robotics-ee-opensource(中文)",
+  "trust": "other"
+ },
+ {
+  "slug": "poppy-ergo-jr.",
+  "owner": "poppy-project",
+  "name": "poppy-ergo-jr.",
+  "cat": "list",
+  "src": "orobot.io 目录",
+  "trust": "hardware"
+ }
+]

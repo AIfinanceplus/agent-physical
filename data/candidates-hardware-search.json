@@ -1,0 +1,572 @@
+[
+ {
+  "owner": "Rack-Robotics",
+  "slug": "Powercore-V1.0-Hardware",
+  "name": "Powercore-V1.0-Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 168,
+  "desc": "CAD & Electronics for Powercore V1"
+ },
+ {
+  "owner": "uwrobotics",
+  "slug": "MarsRoverHardware",
+  "name": "MarsRoverHardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 100,
+  "desc": "PCB designs for the University of Waterloo Robotics Team"
+ },
+ {
+  "owner": "robs-tech-workbench",
+  "slug": "hexapod_spiderbot_model",
+  "name": "hexapod_spiderbot_model",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 96,
+  "desc": "This repository contains STL files, 3D printing instructions, and build documentation for ArachnoBot, a 3D-printed spider robot. Here you'll find all you need to build your own SpiderBot, whether you're a beginner or an experienced robotics enthusiast."
+ },
+ {
+  "owner": "SRA-VJTI",
+  "slug": "sra-board-hardware-design",
+  "name": "sra-board-hardware-design",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 80,
+  "desc": "ESP32-based Development Board for Robotics and Embedded Applications"
+ },
+ {
+  "owner": "Alexhuge1",
+  "slug": "Alexbotmini_hardware",
+  "name": "Alexbotmini_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 76,
+  "desc": "A small robot especially for rl training locomotion"
+ },
+ {
+  "owner": "Roboparty",
+  "slug": "roboparty_deploy",
+  "name": "roboparty_deploy",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 72,
+  "desc": "ROS 2 deployment framework for Roboparty RPO/Roboto robots, including hardware drivers, inference, and controller utilities."
+ },
+ {
+  "owner": "zapplyjobs",
+  "slug": "New-Grad-Hardware-Engineering-Jobs-2027",
+  "name": "New-Grad-Hardware-Engineering-Jobs-2027",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 63,
+  "desc": "2027 entry-level hardware engineering jobs — EE, embedded systems & robotics US roles"
+ },
+ {
+  "owner": "UWARG",
+  "slug": "hardware",
+  "name": "hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 59,
+  "desc": "PCB designs for the Waterloo Aerial Robotics Group"
+ },
+ {
+  "owner": "AdoHaha",
+  "slug": "DH2URDF",
+  "name": "DH2URDF",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 57,
+  "desc": "Denavit-Hartenberg table to URDF(  Unified Robot Description Format)"
+ },
+ {
+  "owner": "wuphilipp",
+  "slug": "robot_parts",
+  "name": "robot_parts",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 55,
+  "desc": "A collection of hardware parts for robotics research"
+ },
+ {
+  "owner": "vinay-lanka",
+  "slug": "navbot_hardware",
+  "name": "navbot_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 52,
+  "desc": "Autonomous Robot Series Code Repository. A differential drive robot controller with Arduino Mega and DC motors with encoders. Uses 2 PID controllers"
+ },
+ {
+  "owner": "Red-Rabbit-Robotics",
+  "slug": "rx1_arm_hardware",
+  "name": "rx1_arm_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 51,
+  "desc": "robotic arm hardware files for rx1 humanoid robot"
+ },
+ {
+  "owner": "v4rl-ucy",
+  "slug": "mav_hardware",
+  "name": "mav_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 42,
+  "desc": "Documentation of the MAV hardware setup used at the Vision for Robotics Lab."
+ },
+ {
+  "owner": "liaochikon",
+  "slug": "ALTO-3D-Printed-6-Axis-Robotic-Arm",
+  "name": "ALTO-3D-Printed-6-Axis-Robotic-Arm",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 37,
+  "desc": "A 3D printed desktop high precision 6 axis robotic arm"
+ },
+ {
+  "owner": "BoosterRobotics",
+  "slug": "booster_assets",
+  "name": "booster_assets",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 35,
+  "desc": "Booster robot descriptions and example motion data"
+ },
+ {
+  "owner": "rjvallett",
+  "slug": "URDF-Converter",
+  "name": "URDF-Converter",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 34,
+  "desc": "Program used in conjunction with Autodesk Inventor 2013 to convert assemblies into Universal Robot Description Format (URDF) for ROS."
+ },
+ {
+  "owner": "leggedrobotics",
+  "slug": "urdf2robcogen",
+  "name": "urdf2robcogen",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 32,
+  "desc": "A tool that translates a robot URDF description into the kindsl format that can be processed by RobCoGen."
+ },
+ {
+  "owner": "artfulbytes",
+  "slug": "nsumo_hardware",
+  "name": "nsumo_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 32,
+  "desc": "A 2-layer PCB for a small sumobot including MSP430G2553, regulators, motor drivers, and IR receiver."
+ },
+ {
+  "owner": "IgnorAnsel",
+  "slug": "urdf_editor",
+  "name": "urdf_editor",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 30,
+  "desc": "A Qt-based tool for creating and editing URDF (Unified Robot Description Format) models. It offers a graphical interface for building robot models through drag-and-drop, automatically generating URDF code, making robot design easier for developers and enthusiasts."
+ },
+ {
+  "owner": "leggedrobotics",
+  "slug": "ocs2_robotic_assets",
+  "name": "ocs2_robotic_assets",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 30,
+  "desc": "Various robotic assets for OCS2 Toolbox"
+ },
+ {
+  "owner": "tokirobot",
+  "slug": "PSI1_Hardware",
+  "name": "PSI1_Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 30,
+  "desc": "Repository for Hardware of the open source quadruped robot PSI1."
+ },
+ {
+  "owner": "GonzaCerv",
+  "slug": "noah-hardware",
+  "name": "noah-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 28,
+  "desc": "This repo contains all the hardware description for the Noah project. Here lies 3D models, electronics PCB and Firmware software of the robot."
+ },
+ {
+  "owner": "vulcan-forge",
+  "slug": "sourccey-hardware",
+  "name": "sourccey-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 27,
+  "desc": "Open Source Hardware Repository for the Sourccey Robot "
+ },
+ {
+  "owner": "Makeblock-official",
+  "slug": "Mecanum-Wheel-Robot-Kit",
+  "name": "Mecanum-Wheel-Robot-Kit",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 27,
+  "desc": "Mecanum Wheel Robot Kit is a type of mobile chassis robot based on Makeblock open source hardware platform. The chassis of this kit consists of Mecanum wheels, encoder motor driver, mechanical structure, and other electronic modules (e.g. main controller). This robot kit is for projects that move in narrow space and projects that need to move in all directions. This robot kit can be applied to various fields, such as robots, wheelchairs, and transport facilities. "
+ },
+ {
+  "owner": "UNLINEARITY",
+  "slug": "URDF-Visualizer",
+  "name": "URDF-Visualizer",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 26,
+  "desc": "A professional, web-based visualization tool for URDF (Unified Robot Description Format) and Xacro robot models."
+ },
+ {
+  "owner": "shekit",
+  "slug": "peeqo-robot-hardware",
+  "name": "peeqo-robot-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 25,
+  "desc": "These are all the hardware, assembly and circuitry components of peeqo - http://peeqo.com"
+ },
+ {
+  "owner": "antdroid-hexapod",
+  "slug": "antdroid-hardware",
+  "name": "antdroid-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 25,
+  "desc": "3D design of Antdroid robot."
+ },
+ {
+  "owner": "Red-Rabbit-Robotics",
+  "slug": "rx1_hand_hardware",
+  "name": "rx1_hand_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 25,
+  "desc": "robotic hand hardware files for rx1 humanoid robot"
+ },
+ {
+  "owner": "brukg",
+  "slug": "so_arm_100_hardware",
+  "name": "so_arm_100_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 25,
+  "desc": "a ROS 2 Control hardware interface plugin for the SO100-arm low-cost 5DoF robotic manipulator. This interface supports both direct serial communication with the physical robot and simulation via ROS topics."
+ },
+ {
+  "owner": "generalroboticslab",
+  "slug": "dukeHumanoidHardwareControl",
+  "name": "dukeHumanoidHardwareControl",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 25,
+  "desc": "Biped hardware control code"
+ },
+ {
+  "owner": "openBrushograph",
+  "slug": "openBrushograph_hardware",
+  "name": "openBrushograph_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 24,
+  "desc": "A simple, open source and 3D-printable DIY x-y gantry and z-mechanism for making a brush painting robot"
+ },
+ {
+  "owner": "sharpa-robotics",
+  "slug": "sharpa-urdf-usd-xml",
+  "name": "sharpa-urdf-usd-xml",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 20,
+  "desc": "Assets for sharpa hardware"
+ },
+ {
+  "owner": "Red-Rabbit-Robotics",
+  "slug": "rx2_arm_hardware_beta",
+  "name": "rx2_arm_hardware_beta",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 20,
+  "desc": "robotic arm hardware beta release of RX2 humanoid"
+ },
+ {
+  "owner": "raphaelchang",
+  "slug": "dragonflyte-hardware",
+  "name": "dragonflyte-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 20,
+  "desc": "Hardware designs for Dragonflyte flight computer"
+ },
+ {
+  "owner": "NitinJSanket",
+  "slug": "RoboticsHardware",
+  "name": "RoboticsHardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 19,
+  "desc": "Amazing Hardware for robotics"
+ },
+ {
+  "owner": "E1pco",
+  "slug": "Hardware-Accelerated_System_for_IK_Solution_Based_on_LeRobot",
+  "name": "Hardware-Accelerated_System_for_IK_Solution_Based_on_LeRobot",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 19,
+  "desc": ""
+ },
+ {
+  "owner": "deltarobotone",
+  "slug": "hardware_parts",
+  "name": "hardware_parts",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 19,
+  "desc": "All hardware parts of Delta-Robot One (files and shop links)"
+ },
+ {
+  "owner": "Adriaeik",
+  "slug": "fusion2URDF",
+  "name": "fusion2URDF",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 18,
+  "desc": "A Fusion 360 → ROS 2 plugin. Export any rigid-group robot assembly to a complete robot_description package with hierarchical xacro, meshes, collision, and ros2_control."
+ },
+ {
+  "owner": "adityakamath",
+  "slug": "sts_hardware_interface",
+  "name": "sts_hardware_interface",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 18,
+  "desc": "ROS 2 Control Hardware (System) Interface for STS series motors from Feetech and other manufacturers"
+ },
+ {
+  "owner": "lihuang3",
+  "slug": "ur3_ROS-hardware",
+  "name": "ur3_ROS-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 16,
+  "desc": "Universal Robot (UR3) Pick and Place Hardware Implementation with ROS using a USB Cam and an Electromagnetic Gripper"
+ },
+ {
+  "owner": "kralf",
+  "slug": "blender-urdf",
+  "name": "blender-urdf",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 16,
+  "desc": "Unified Robot Description Format (URDF) import-export addon for Blender."
+ },
+ {
+  "owner": "pliam1105",
+  "slug": "3D-Printed-ROS-SLAM-Robot",
+  "name": "3D-Printed-ROS-SLAM-Robot",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 14,
+  "desc": "A 3D-printed robot that runs on the Robot Operating System and uses a LiDAR to autonomously navigate around and map a room (Simultaneous Localization And Mapping)"
+ },
+ {
+  "owner": "sidharthmohannair",
+  "slug": "ros2-ardupilot-sitl-hardware",
+  "name": "ros2-ardupilot-sitl-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 14,
+  "desc": "ROS2 Humble + MAVROS + ArduPilot integration framework. Test in SITL simulation, deploy to real hardware (Cube Orange, Pixhawk). Flight-tested on Raspberry Pi 4."
+ },
+ {
+  "owner": "Choitek",
+  "slug": "ASPIR-3D-Print-Files-V1",
+  "name": "ASPIR-3D-Print-Files-V1",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 13,
+  "desc": "3D printable STL files for the ASPIR robot version 1"
+ },
+ {
+  "owner": "rt-net",
+  "slug": "crane_x7_Hardware",
+  "name": "crane_x7_Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 12,
+  "desc": "CRANEシリーズのアームロボット  ハードウェア情報 / CRANE Series Arm Robots – Hardware Information "
+ },
+ {
+  "owner": "atticusrussell",
+  "slug": "ros2_rpi_pwm_hardware_interface",
+  "name": "ros2_rpi_pwm_hardware_interface",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 12,
+  "desc": "hardware interface for PWM servos through Raspberry Pi's GPIO pins compatible with ros2_control framework"
+ },
+ {
+  "owner": "intelligent-soft-robots",
+  "slug": "ball_launcher_hardware",
+  "name": "ball_launcher_hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 11,
+  "desc": "Custom designed table tennis ball launcher hardware share."
+ },
+ {
+  "owner": "AnanasRobot",
+  "slug": "AnanasStepper",
+  "name": "AnanasStepper",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 9,
+  "desc": "This is a part of a smart Robot control system(AnanasRobot), based on Stepper Motor and CAN bus.This project aims to build a motion control system including hardware and software to make Multi-Axis Gang Control easy and precise, applied to 3D printer, a 6+ axis robot arm or some more complex motion control system. "
+ },
+ {
+  "owner": "TehseenHasan",
+  "slug": "4DOF-3D-Printed-Robotic-Arm",
+  "name": "4DOF-3D-Printed-Robotic-Arm",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 9,
+  "desc": "It includes Firmware, STL files, Documentation, Images and Videos of robotic arm."
+ },
+ {
+  "owner": "Vendning-Machine-Team",
+  "slug": "Vending_Machine_Robot-Hardware",
+  "name": "Vending_Machine_Robot-Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 9,
+  "desc": "AI and robotic code"
+ },
+ {
+  "owner": "hibiscus22",
+  "slug": "OpenHardwareAGV",
+  "name": "OpenHardwareAGV",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 8,
+  "desc": "Open Source Hardware Repository for Industrial Autonomous Vehicle"
+ },
+ {
+  "owner": "AlyonaMinina",
+  "slug": "SPIRO.Hardware",
+  "name": "SPIRO.Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 7,
+  "desc": "SPIRO is a Smart Plate Imaging Robot"
+ },
+ {
+  "owner": "kyamashita5",
+  "slug": "robotrace_course_cad",
+  "name": "robotrace_course_cad",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "other",
+  "stars": 7,
+  "desc": ""
+ },
+ {
+  "owner": "Materials-Informatics-Group",
+  "slug": "Robot_FLUID_3D-Parts",
+  "name": "Robot_FLUID_3D-Parts",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 7,
+  "desc": "Here are all 3D-printable Objects for the FLUID robot in STL format, and also all in one 7z (zipped) file"
+ },
+ {
+  "owner": "open-rdc",
+  "slug": "Bipedal_Robot_Hardware",
+  "name": "Bipedal_Robot_Hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 6,
+  "desc": "2024 ヒューマノイド"
+ },
+ {
+  "owner": "colcon",
+  "slug": "colcon-hardware-acceleration",
+  "name": "colcon-hardware-acceleration",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 6,
+  "desc": "  An extension for colcon-core to include embedded and Hardware Acceleration capabilities"
+ },
+ {
+  "owner": "raphaelchang",
+  "slug": "toffee-hardware",
+  "name": "toffee-hardware",
+  "cat": "hardware",
+  "src": "hardware-search",
+  "trust": "hardware",
+  "stars": 6,
+  "desc": "PCB designs for Toffee 3D camera, the first open source time-of-flight depth camera"
+ }
+]

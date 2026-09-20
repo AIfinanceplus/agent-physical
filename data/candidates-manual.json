@@ -1,0 +1,22 @@
+[
+ {
+  "owner": "wuphilipp",
+  "slug": "gello_mechanical",
+  "name": "gello_mechanical",
+  "cat": "manipulator",
+  "src": "manual",
+  "trust": "hardware",
+  "desc": "GELLO 遥操作臂的机械设计：.scad 参数化文件覆盖 AR4 整条手臂（arm1/arm2/l1/ring/wrist），另有 71 个可直接打印的 STL。",
+  "verified_by": "人工逐条核实：打开仓库树确认存在参数化 CAD（.scad）与成组打印件，非仅网格。"
+ },
+ {
+  "owner": "fuwei007",
+  "slug": "Navbot-EN01",
+  "name": "Navbot-EN01",
+  "cat": "mobile",
+  "src": "manual",
+  "trust": "hardware",
+  "desc": "Navbot EN01 移动机器人：Hardware/RebotModel 下有 BOM.xlsx 与 3 个 CNC 用 .stp 参数化件。",
+  "verified_by": "人工逐条核实：确认 BOM.xlsx 与 .stp 为加工文件，而非仅有仿真网格。"
+ }
+]

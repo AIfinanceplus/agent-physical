@@ -1,0 +1,2331 @@
+[
+ {
+  "slug": "robocasa",
+  "owner": "robocasa",
+  "name": "robocasa",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 1741,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "OpenCat-Old",
+  "owner": "PetoiCamp",
+  "name": "OpenCat-Old",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 1375,
+  "_via": [
+   "topic:quadruped-robot",
+   "topic:robot-dog"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "PHC",
+  "owner": "ZhengyiLuo",
+  "name": "PHC",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 1291,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "HoloMotion",
+  "owner": "HorizonRobotics",
+  "name": "HoloMotion",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 710,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Capstan-Drive",
+  "owner": "aaedmusa",
+  "name": "Capstan-Drive",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 647,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "WholebodyVLA",
+  "owner": "OpenDriveLab",
+  "name": "WholebodyVLA",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 568,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "pyroboplan",
+  "owner": "sea-bass",
+  "name": "pyroboplan",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 459,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Venocyber-md",
+  "owner": "Kingjux",
+  "name": "Venocyber-md",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 399,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "reactive_diffusion_policy",
+  "owner": "xiaoxiaoxh",
+  "name": "reactive_diffusion_policy",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 382,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "docker-for-robotics",
+  "owner": "2b-t",
+  "name": "docker-for-robotics",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 359,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "easy_handeye2",
+  "owner": "marcoesposito1988",
+  "name": "easy_handeye2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 310,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Phyzical_org",
+  "owner": "Phyzicalorg",
+  "name": "Phyzical_org",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 292,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "g1pilot",
+  "owner": "hucebot",
+  "name": "g1pilot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 285,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "mpx",
+  "owner": "iit-DLSLab",
+  "name": "mpx",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 276,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "lerobotdepot",
+  "owner": "maximilienroberti",
+  "name": "lerobotdepot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 246,
+  "_via": [
+   "open hardware robot stars:>100",
+   "3d printable robot stars:>100",
+   "open source robotics hardware stars:>100"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "RVD",
+  "owner": "aliasrobotics",
+  "name": "RVD",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 243,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "dolly",
+  "owner": "chapulina",
+  "name": "dolly",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 241,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "lightning-grasp",
+  "owner": "zhaohengyin",
+  "name": "lightning-grasp",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 216,
+  "_via": [
+   "topic:dexterous-hand"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "mockway_robotics",
+  "owner": "Jelatine",
+  "name": "mockway_robotics",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 206,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Watti",
+  "owner": "Nikolay-Tyulkin",
+  "name": "Watti",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 198,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "jetbot-ros2",
+  "owner": "jdgalviss",
+  "name": "jetbot-ros2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 196,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "raspberryturk",
+  "owner": "joeymeyer",
+  "name": "raspberryturk",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 193,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "astroviz",
+  "owner": "CDonosoK",
+  "name": "astroviz",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 191,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Teleopit",
+  "owner": "BotRunner64",
+  "name": "Teleopit",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 189,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "tortoisebot",
+  "owner": "rigbetellabs",
+  "name": "tortoisebot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 189,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "kinpy",
+  "owner": "neka-nat",
+  "name": "kinpy",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 180,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "EI-Beginner",
+  "owner": "humanoidintelligence",
+  "name": "EI-Beginner",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 179,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Pi3DET",
+  "owner": "worldbench",
+  "name": "Pi3DET",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 177,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "spotMicro-Chinese",
+  "owner": "bianglibeyond",
+  "name": "spotMicro-Chinese",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 171,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "scikit-robot",
+  "owner": "iory",
+  "name": "scikit-robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 169,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "soccerbot",
+  "owner": "utra-robosoccer",
+  "name": "soccerbot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 161,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Pedro3DFiles",
+  "owner": "almtzr",
+  "name": "Pedro3DFiles",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 157,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "JacktheRipperBot",
+  "owner": "ajayre",
+  "name": "JacktheRipperBot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 153,
+  "_via": [
+   "3d printable robot stars:>100"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "telegrip",
+  "owner": "DipFlip",
+  "name": "telegrip",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 142,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "OpenQDD-V1",
+  "owner": "aaedmusa",
+  "name": "OpenQDD-V1",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 135,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "EgoExoMoCap",
+  "owner": "eth-siplab",
+  "name": "EgoExoMoCap",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 135,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "MKS-XDRIVE-MINI",
+  "owner": "justlovescience",
+  "name": "MKS-XDRIVE-MINI",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 133,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "crane_x7_ros",
+  "owner": "rt-net",
+  "name": "crane_x7_ros",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 129,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "TRILL",
+  "owner": "UT-Austin-RPL",
+  "name": "TRILL",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 127,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "rbot",
+  "owner": "rlxai",
+  "name": "rbot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 114,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "G-Earth",
+  "owner": "sirjonasxx",
+  "name": "G-Earth",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 110,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robot-arm",
+  "owner": "trzy",
+  "name": "robot-arm",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 106,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "isaac_mission_dispatch",
+  "owner": "nvidia-isaac",
+  "name": "isaac_mission_dispatch",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 105,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Blacky",
+  "owner": "blackbox114",
+  "name": "Blacky",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 99,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "uStepper-RobotArm-Rev3",
+  "owner": "uStepper",
+  "name": "uStepper-RobotArm-Rev3",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 96,
+  "_via": [
+   "robot arm STEP files stars:>50"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "wave-go",
+  "owner": "vigorlee",
+  "name": "wave-go",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 93,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "TactAR_APP",
+  "owner": "xiaoxiaoxh",
+  "name": "TactAR_APP",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 91,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Isaac-ManipulaRL",
+  "owner": "cypypccpy",
+  "name": "Isaac-ManipulaRL",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 87,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "telemoma",
+  "owner": "UT-Austin-RobIn",
+  "name": "telemoma",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 87,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "PACE-ICRA2026",
+  "owner": "purdue-tracelab",
+  "name": "PACE-ICRA2026",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 85,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "blender-robotics-utils",
+  "owner": "robotology",
+  "name": "blender-robotics-utils",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 83,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "HumanTyping",
+  "owner": "Lax3n",
+  "name": "HumanTyping",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 82,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "PRELUDE",
+  "owner": "UT-Austin-RPL",
+  "name": "PRELUDE",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 82,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "centauri",
+  "owner": "TimHanewich",
+  "name": "centauri",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 81,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "manbo-robot-dog",
+  "owner": "RussellCooper-DJZ",
+  "name": "manbo-robot-dog",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 80,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ros_esp32cam_diffdrive",
+  "owner": "Reinbert",
+  "name": "ros_esp32cam_diffdrive",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 79,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "gesture-recognition-for-human-robot-interaction",
+  "owner": "AravinthPanch",
+  "name": "gesture-recognition-for-human-robot-interaction",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 77,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Manipulator",
+  "owner": "easyw",
+  "name": "Manipulator",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 76,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "design-os-3d-blender",
+  "owner": "jangtrinh",
+  "name": "design-os-3d-blender",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 76,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "programming-humanoid-robot-in-python",
+  "owner": "DAInamite",
+  "name": "programming-humanoid-robot-in-python",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 74,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "rx1_bom",
+  "owner": "Red-Rabbit-Robotics",
+  "name": "rx1_bom",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 70,
+  "_via": [
+   "humanoid robot BOM stars:>50"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "AB-SO-BOT",
+  "owner": "Mr-C4T",
+  "name": "AB-SO-BOT",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 68,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "epuck_ros2",
+  "owner": "cyberbotics",
+  "name": "epuck_ros2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 66,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "magician_ros2",
+  "owner": "jkaniuka",
+  "name": "magician_ros2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 63,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "crane_plus",
+  "owner": "rt-net",
+  "name": "crane_plus",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 62,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "virtualGizmo3D",
+  "owner": "BrutPitt",
+  "name": "virtualGizmo3D",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 61,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "nova_carter",
+  "owner": "NVIDIA-ISAAC-ROS",
+  "name": "nova_carter",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 61,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Bumper-Bot",
+  "owner": "AntoBrandi",
+  "name": "Bumper-Bot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 60,
+  "_via": [
+   "topic:robotics topic:3d-printing",
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ICRA2023_Quadruped_Robot_Challenges",
+  "owner": "rise-lab-skku",
+  "name": "ICRA2023_Quadruped_Robot_Challenges",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 59,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "unitree_ros",
+  "owner": "snt-arg",
+  "name": "unitree_ros",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 59,
+  "_via": [
+   "topic:legged-robot",
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "openvmp",
+  "owner": "openvmp",
+  "name": "openvmp",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 59,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "raspimouse2",
+  "owner": "rt-net",
+  "name": "raspimouse2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 59,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "nvblox_mindmap",
+  "owner": "nvidia-isaac",
+  "name": "nvblox_mindmap",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 58,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "gz-rviz",
+  "owner": "gazebosim",
+  "name": "gz-rviz",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 58,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "radiance_field_ros",
+  "owner": "leggedrobotics",
+  "name": "radiance_field_ros",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 58,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "telecarla",
+  "owner": "hofbi",
+  "name": "telecarla",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 58,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Axioma_robot",
+  "owner": "MrDavidAlv",
+  "name": "Axioma_robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 56,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "HumanoidVerse3",
+  "owner": "NathanWu7",
+  "name": "HumanoidVerse3",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 56,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "vr-teleop-kit",
+  "owner": "Dream-Machines-Robotics",
+  "name": "vr-teleop-kit",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 56,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "dexhand-mechanical-build",
+  "owner": "iotdesignshop",
+  "name": "dexhand-mechanical-build",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 56,
+  "_via": [
+   "humanoid robot BOM stars:>50",
+   "dexterous hand open source stars:>50"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "so101_ros2",
+  "owner": "nimiCurtis",
+  "name": "so101_ros2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 55,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "RAPID-Hand",
+  "owner": "SYSU-RoboticsLab",
+  "name": "RAPID-Hand",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 54,
+  "_via": [
+   "dexterous hand open source stars:>50"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "unitree-g1-autonomous",
+  "owner": "GalacTechNyc",
+  "name": "unitree-g1-autonomous",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 53,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "OpenDACT",
+  "owner": "coelacant1",
+  "name": "OpenDACT",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 53,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "IFRA_ConveyorBelt",
+  "owner": "IFRA-Cranfield",
+  "name": "IFRA_ConveyorBelt",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 52,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ext_observer",
+  "owner": "mikhel1984",
+  "name": "ext_observer",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 51,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "PAPRLE",
+  "owner": "uiuckimlab",
+  "name": "PAPRLE",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 51,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ros2_heinz",
+  "owner": "K-d4wg",
+  "name": "ros2_heinz",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 50,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "quadruped_locomotion_project",
+  "owner": "muye1202",
+  "name": "quadruped_locomotion_project",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 50,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "kinematic-model-opencat",
+  "owner": "ger01d",
+  "name": "kinematic-model-opencat",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 50,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "collector",
+  "owner": "AirExo",
+  "name": "collector",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 50,
+  "_via": [
+   "topic:exoskeleton",
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "mjlab_microban",
+  "owner": "Rhoban",
+  "name": "mjlab_microban",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 49,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "wrestling",
+  "owner": "cyberbotics",
+  "name": "wrestling",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 49,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "opencat-gym",
+  "owner": "ger01d",
+  "name": "opencat-gym",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 49,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ike_nav",
+  "owner": "uhobeike",
+  "name": "ike_nav",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 49,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "TeamHOI",
+  "owner": "sail-sg",
+  "name": "TeamHOI",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 48,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "warehouse-robot",
+  "owner": "abel-gr",
+  "name": "warehouse-robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 48,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robot-blueberry",
+  "owner": "jewel-nath",
+  "name": "robot-blueberry",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 47,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:humanoid",
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "OpenVINO_RealSense_HarvestBot",
+  "owner": "OmniXRI",
+  "name": "OpenVINO_RealSense_HarvestBot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 46,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "microduck-playground",
+  "owner": "Vottivott",
+  "name": "microduck-playground",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 46,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "UR5e_Touch_haptic_teleoperation",
+  "owner": "OltanS",
+  "name": "UR5e_Touch_haptic_teleoperation",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 46,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "CHILD",
+  "owner": "uiuckimlab",
+  "name": "CHILD",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 44,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "facial-expressions-unity",
+  "owner": "mochi-neko",
+  "name": "facial-expressions-unity",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 44,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "vinrobotics_mjlab",
+  "owner": "VinRobotics",
+  "name": "vinrobotics_mjlab",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "JEPLO",
+  "owner": "ASIG-X",
+  "name": "JEPLO",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Multi-Hetero-Agent-Exploration-on-UnitreeGOs",
+  "owner": "Sayantani-Bhattacharya",
+  "name": "Multi-Hetero-Agent-Exploration-on-UnitreeGOs",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robodog",
+  "owner": "AustinOwens",
+  "name": "robodog",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "braccio_camai",
+  "owner": "francisc0garcia",
+  "name": "braccio_camai",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "trip_kinematics",
+  "owner": "TriPed-Robot",
+  "name": "trip_kinematics",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 43,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "whole_body_ik",
+  "owner": "mrsp",
+  "name": "whole_body_ik",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 42,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:humanoid",
+   "topic:legged-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Quadruped-DIPLOID",
+  "owner": "BitsRobocon",
+  "name": "Quadruped-DIPLOID",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 42,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "AirExo-2",
+  "owner": "AirExo",
+  "name": "AirExo-2",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 42,
+  "_via": [
+   "topic:exoskeleton",
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "atta",
+  "owner": "brenocq",
+  "name": "atta",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 41,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "pyfri",
+  "owner": "lbr-stack",
+  "name": "pyfri",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 41,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "TAG",
+  "owner": "InternRobotics",
+  "name": "TAG",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 41,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "TROT-Q",
+  "owner": "engcang",
+  "name": "TROT-Q",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 40,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "opentera-webrtc-ros",
+  "owner": "introlab",
+  "name": "opentera-webrtc-ros",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 40,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "lerobot.js",
+  "owner": "TimPietrusky",
+  "name": "lerobot.js",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 39,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Synthesis-Assets-Explorer",
+  "owner": "Extwin-Synthesis",
+  "name": "Synthesis-Assets-Explorer",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 37,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "penny",
+  "owner": "ssloy",
+  "name": "penny",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 37,
+  "_via": [
+   "topic:open-hardware robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Robotic-Manipulators",
+  "owner": "MathWorks-Teaching-Resources",
+  "name": "Robotic-Manipulators",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 36,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "CBC_Pi0.7_Openpi",
+  "owner": "Knight1112D",
+  "name": "CBC_Pi0.7_Openpi",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 36,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Husky",
+  "owner": "Tinker-Twins",
+  "name": "Husky",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 35,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Dropbear",
+  "owner": "Hyperspawn",
+  "name": "Dropbear",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 34,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "go2_dreamwaq",
+  "owner": "curieuxjy",
+  "name": "go2_dreamwaq",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 34,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "tongdou",
+  "owner": "solitary-dev-50",
+  "name": "tongdou",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 34,
+  "_via": [
+   "topic:open-hardware robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "teleop_twist_keyboard_cpp",
+  "owner": "methylDragon",
+  "name": "teleop_twist_keyboard_cpp",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 33,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ProceduralWalk",
+  "owner": "jegor377",
+  "name": "ProceduralWalk",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 32,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "five-dof-robot-arm",
+  "owner": "ferasboulala",
+  "name": "five-dof-robot-arm",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 32,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "GPA-Teleoperation",
+  "owner": "ZJU-FAST-Lab",
+  "name": "GPA-Teleoperation",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 31,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "eus_vive",
+  "owner": "knorth55",
+  "name": "eus_vive",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 31,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "cheetah-algorithms",
+  "owner": "grassjelly",
+  "name": "cheetah-algorithms",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 30,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "akabot",
+  "owner": "TheNoobInventor",
+  "name": "akabot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 30,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "cdl-digital-twin",
+  "owner": "rafaelkonlechner",
+  "name": "cdl-digital-twin",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 30,
+  "_via": [
+   "topic:robotic-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robot-gym",
+  "owner": "nicrusso7",
+  "name": "robot-gym",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:quadruped-robot",
+   "topic:quadruped",
+   "topic:legged-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "RL_Dog",
+  "owner": "pietrodardano",
+  "name": "RL_Dog",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "maddux",
+  "owner": "bcaine",
+  "name": "maddux",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "LCPMotionPlanner",
+  "owner": "Tom-Forsyth",
+  "name": "LCPMotionPlanner",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:robotic-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "LeCyborg",
+  "owner": "Mr-C4T",
+  "name": "LeCyborg",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "omnictrl",
+  "owner": "t413",
+  "name": "omnictrl",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "portal",
+  "owner": "livekit",
+  "name": "portal",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 29,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "iFOC",
+  "owner": "Matrixchung",
+  "name": "iFOC",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 28,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "X2CNet",
+  "owner": "lipzh5",
+  "name": "X2CNet",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 28,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "BaselineFootstepPlanner",
+  "owner": "isri-aist",
+  "name": "BaselineFootstepPlanner",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 27,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "hexapod_kinematics",
+  "owner": "conroy-cheers",
+  "name": "hexapod_kinematics",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 27,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ExoskeletonForKids",
+  "owner": "kpaonaut",
+  "name": "ExoskeletonForKids",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 27,
+  "_via": [
+   "topic:exoskeleton"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "meta-qlearning-humanoid",
+  "owner": "gokulp01",
+  "name": "meta-qlearning-humanoid",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 26,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "rapcores",
+  "owner": "RAPcores",
+  "name": "rapcores",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 26,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ROS2-DRL-Turtlebot3-like-LIDAR-Robot",
+  "owner": "slimx-ai",
+  "name": "ROS2-DRL-Turtlebot3-like-LIDAR-Robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 26,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "tron2_openpi",
+  "owner": "limxdynamics",
+  "name": "tron2_openpi",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 25,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "StrideSim",
+  "owner": "AuTURBO",
+  "name": "StrideSim",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 25,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "gscrib",
+  "owner": "joansalasoler",
+  "name": "gscrib",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 25,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "opentera",
+  "owner": "introlab",
+  "name": "opentera",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 25,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "MOS-9-Open-Source-Humanoid-Robot",
+  "owner": "THMOS2025",
+  "name": "MOS-9-Open-Source-Humanoid-Robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robot-niko",
+  "owner": "jewel-nath",
+  "name": "robot-niko",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "6dof-kinematic",
+  "owner": "jacobsayono",
+  "name": "6dof-kinematic",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "OpenMobileRoboticManipulator",
+  "owner": "MilosRasic98",
+  "name": "OpenMobileRoboticManipulator",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robokin",
+  "owner": "legalaspro",
+  "name": "robokin",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "data",
+  "owner": "lazervel",
+  "name": "data",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "sixi",
+  "owner": "MarginallyClever",
+  "name": "sixi",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:open-hardware robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "axebot",
+  "owner": "mateusmenezes95",
+  "name": "axebot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "securbot",
+  "owner": "introlab",
+  "name": "securbot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "REAL-ROBO",
+  "owner": "real-dex-suite",
+  "name": "REAL-ROBO",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 24,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "tough",
+  "owner": "WPI-Humanoid-Robotics-Lab",
+  "name": "tough",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 23,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "legged-daily",
+  "owner": "Renkunzhao",
+  "name": "legged-daily",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 23,
+  "_via": [
+   "topic:humanoid-robot",
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "quadruped-springs",
+  "owner": "francescovezzi",
+  "name": "quadruped-springs",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 23,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "QuadrupedRL",
+  "owner": "chengruiz",
+  "name": "QuadrupedRL",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 23,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "k9",
+  "owner": "hopkira",
+  "name": "k9",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 23,
+  "_via": [
+   "topic:robot-dog"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ondroid",
+  "owner": "em0sh",
+  "name": "ondroid",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "hybrid_gait",
+  "owner": "Derek-TH-Wang",
+  "name": "hybrid_gait",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:quadruped-robot",
+   "topic:quadruped",
+   "topic:locomotion topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "mini-quadruped",
+  "owner": "nicoRomeroCuruchet",
+  "name": "mini-quadruped",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:quadruped-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "python_usb_robot_arm",
+  "owner": "orionrobots",
+  "name": "python_usb_robot_arm",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Robotic_Arm_Seven",
+  "owner": "elevenMiles",
+  "name": "Robotic_Arm_Seven",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:robot-arm",
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ros2-igus-rebel",
+  "owner": "AIRLab-POLIMI",
+  "name": "ros2-igus-rebel",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:robotic-arm",
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Self-organizing-bots",
+  "owner": "perseus784",
+  "name": "Self-organizing-bots",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 22,
+  "_via": [
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "CapaBot-SanBot-Robot",
+  "owner": "igor-lirussi",
+  "name": "CapaBot-SanBot-Robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:humanoid-robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "VividFace",
+  "owner": "lipzh5",
+  "name": "VividFace",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:humanoid"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Peabot-Library",
+  "owner": "mpmumau",
+  "name": "Peabot-Library",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Quadruped-dog-like-robot",
+  "owner": "miguelasd688",
+  "name": "Quadruped-dog-like-robot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:quadruped"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "T_System",
+  "owner": "LookAtMe-Genius-Cameraman",
+  "name": "T_System",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:robotic-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "SG-Bot",
+  "owner": "ymxlzgy",
+  "name": "SG-Bot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:robotic-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ShunkoBot",
+  "owner": "murcie443",
+  "name": "ShunkoBot",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:robotic-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "resty-bakery",
+  "owner": "leandromoreira",
+  "name": "resty-bakery",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "cloisim_ros",
+  "owner": "lge-ros2",
+  "name": "cloisim_ros",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "unified-humanoid-getup",
+  "owner": "utra-robosoccer",
+  "name": "unified-humanoid-getup",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 21,
+  "_via": [
+   "topic:humanoid-robots"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "fanduck",
+  "owner": "7757",
+  "name": "fanduck",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:bipedal-robot",
+   "topic:robotics topic:3d-printing"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "learning-inverse-kinematics",
+  "owner": "a-doering",
+  "name": "learning-inverse-kinematics",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:robot-arm"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "manipulator_parameter_identification",
+  "owner": "zubair-irshad",
+  "name": "manipulator_parameter_identification",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:manipulator"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "ros_ws",
+  "owner": "bharath5673",
+  "name": "ros_ws",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "Groot1Publisher",
+  "owner": "Vishnu-Kr",
+  "name": "Groot1Publisher",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "robotiq_modular_gripper",
+  "owner": "AcutronicRobotics",
+  "name": "robotiq_modular_gripper",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:ros2 topic:robot"
+  ],
+  "trust": "other"
+ },
+ {
+  "slug": "lerobot-xense",
+  "owner": "XenseRobotics-AI",
+  "name": "lerobot-xense",
+  "cat": "search",
+  "src": "github-search",
+  "_stars": 20,
+  "_via": [
+   "topic:teleoperation"
+  ],
+  "trust": "other"
+ }
+]

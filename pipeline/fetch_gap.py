@@ -24,8 +24,9 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 from build_projects import CACHE, classify  # noqa: E402
+from trust_policy import trust_of  # noqa: E402
 
-CANDIDATES = ROOT / "data" / "candidates-gap.json"
+CANDIDATES = sorted((ROOT / "data").glob("candidates-*.json"))
 SEED_OUT = ROOT / "data" / "seed-gap.json"
 
 
@@ -104,11 +105,36 @@ def fetch(cand: dict) -> dict:
         "urdf_files": urdf_files[:40],
         "file_count": sum(1 for e in tree if e.get("type") == "blob"),
         "_gap": {"cat": cand.get("cat"), "src": cand.get("src")},
+        "_trust": cand.get("trust") or "other",
     }
 
 
 def main() -> None:
-    cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
+    all_cands: list[dict] = []
+    for f in CANDIDATES:
+        if not f.exists():
+            continue
+        items = json.loads(f.read_text(encoding="utf-8"))
+        all_cands.extend(items)
+        print(f"  读入 {f.name}: {len(items)}")
+
+    # 候选的出处与可信度。可信度必须随来源而非"是不是清单"来定：
+    # 范围是"可复现开放硬件"的清单（trust=hardware）才可以直接信任为机器人。
+    meta_map = {f"{c['owner']}/{c['slug']}".lower():
+                {"src": c.get("src"), "cat": c.get("cat"),
+                 "trust": trust_of(c.get("src"), c.get("trust"))}
+                for c in all_cands}
+
+    # 已有种子的不重复拉取——每轮重拉几百个仓库既慢又白费配额
+    done: set[str] = set()
+    if SEED_OUT.exists():
+        for r in json.loads(SEED_OUT.read_text(encoding="utf-8")):
+            done.add(r["full_name"].lower())
+    before = len(all_cands)
+    cands = [c for c in all_cands
+             if f"{c['owner']}/{c['slug']}".lower() not in done]
+    print(f"  已在种子中跳过: {before - len(cands)}")
+
     # 同一仓库可能来自多个清单，按小写去重（GitHub 大小写不敏感）
     uniq: dict[str, dict] = {}
     for c in cands:
@@ -123,10 +149,34 @@ def main() -> None:
     (ROOT / "data" / "gap-fetch-report.json").write_text(
         json.dumps({"ok": ok, "error": err}, ensure_ascii=False, indent=2),
         encoding="utf-8")
-    SEED_OUT.write_text(json.dumps(ok, ensure_ascii=False, indent=2),
+
+    # 与已有种子合并后写回。必须合并：本轮做了增量跳过，直接覆盖会把
+    # 之前几轮拉到的仓库从种子里删掉——生成器随即丢失那些项目。
+    # 同时按最新的候选元数据回填 _trust：早先几轮的种子没有这个字段，
+    # 不回填会被当成不可信来源，让 ExoMy、NimbRo-OP2 这类真硬件再次被误杀。
+    merged: dict[str, dict] = {}
+    if SEED_OUT.exists():
+        for r in json.loads(SEED_OUT.read_text(encoding="utf-8")):
+            merged[r["full_name"].lower()] = r
+    for r in ok:
+        merged[r["full_name"].lower()] = r
+    for k, r in merged.items():
+        m = meta_map.get(k)
+        if m:
+            r["_gap"] = {"cat": m["cat"], "src": m["src"]}
+            r["_trust"] = m["trust"]
+        else:
+            # 不在候选文件里（例如候选文件里已被"已知"过滤掉）也要按记得的
+            # 来源重算，否则一个已收录的硬件项目会因为候选列表刷新而掉出可信档，
+            # 下一轮生成就被误杀——ExoMy 就踩过这个坑。
+            r["_trust"] = trust_of((r.get("_gap") or {}).get("src"))
+            r.setdefault("_gap", {"cat": None, "src": None})
+    SEED_OUT.write_text(json.dumps(sorted(merged.values(),
+                                          key=lambda x: -x.get("stars", 0)),
+                                   ensure_ascii=False, indent=2),
                         encoding="utf-8")
 
-    print(f"拉到: {len(ok)}   失败: {len(err)}")
+    print(f"拉到: {len(ok)}   失败: {len(err)}   种子合计: {len(merged)}")
     for e in err:
         print(f"  ✗ {e['full_name']}  ({e['error']})")
 

@@ -10,9 +10,9 @@
 | --- | --- |
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
-| 管线生成 | 183 个（来自公开仓库树的证据化拆解） |
-| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 188 个未评分 |
-| 零件行 | 3,652 条，全部指向真实文件（逐项目检测链接可达率 183/183） |
+| 管线生成 | 204 个（来自公开仓库树的证据化拆解） |
+| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 209 个未评分 |
+| 零件行 | 3,803 条，全部指向真实文件（逐项目检测链接可达率 204/204） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -64,8 +64,8 @@ type ReproductionScore =
 pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.generated.ts
 ```
 
-输入是 543 棵已缓存的公开仓库树与仓库元数据，输出 183 个 `WorkbenchProject`
-（3,652 条零件行、943 个总成）。规则：
+输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 204 个 `WorkbenchProject`
+（3,803 条零件行、1,027 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -111,7 +111,8 @@ pipeline/review_gap.py   逐条审看：谁有真硬件证据、谁与现目录�
 pipeline/audit_links.py  对全部零件链接做覆盖式可达性检测
 ```
 
-从 99 个候选中补进 50 个（133 → 183）。四件事值得记下来：
+从 99 个候选中补进 50 个（133 → 183），之后又从更多清单、
+GitHub 结构化检索与"硬件仓库命名"专项检索补到 **204 个**。几件事值得记下来：
 
 ### 标杆自己的硬件仓库一直不在库里
 
@@ -142,7 +143,12 @@ pipeline/audit_links.py  对全部零件链接做覆盖式可达性检测
 
 `blob_url()` 原本写死 `branch="main"`，于是默认分支是 `master` 的仓库
 整个仓库的零件链接全 404。**逐项目抽检 133 条，51 条 404（38%）。**
-改用 `/blob/HEAD/`（GitHub 会解析到默认分支）后复测 183/183 全部可达。
+改用 `/blob/HEAD/`（GitHub 会解析到默认分支）后复测全部可达。
+
+**链接检测还必须区分「确定失效」与「请求没成功」。** 一次审计把 11 条状态 0
+报成死链，逐条复测全部 200——那是瞬时网络失败。现在 `audit_links.py` 重试 3 次
+（HEAD 失败则退到带 Range 的 GET），只有 404/410 才算确定失效，0/5xx 归入"待复核"。
+不重试的审计会周期性误报，久而久之就没人信它了——而它恰恰是唯一能发现成片失效的手段。
 
 **规则：链接、引用、外键这类“每一条都必须对”的数据，一律写覆盖式检测脚本（并发 HEAD 请求 + 逐项计数），不用抽样。抽样只能证伪“全坏”，不能证明“全好”。**
 
@@ -174,6 +180,70 @@ mmmarinho/UMIRobot        → mmmarinho/umirobot
 
 改名后缓存文件仍挂在旧名下，所以规范化名字时必须同时迁移缓存，否则生成器反而找不到树。
 
+### 清单是形态，不是背书
+
+一份清单的**收录范围**才决定它能不能被信任，而清单这个形态本身什么也不保证。
+
+`awesome-robot-descriptions` 形态上是清单，收录范围却是 **URDF 描述**（含发那科、Unitree
+等商用机器人）。把它当成可信来源后，飞控软件 `ArduPilot`、`PX4`、运动学库 `kinpy`、
+`scikit-robot` 全部借道涌入——因为"可信"那一档同时绕过了关键词闸。
+同理，一份名字就叫 `awesome-robotic-tooling` 的清单曾一次贡献 811 个候选，全是库和工具链。
+
+信任策略现在集中在 `pipeline/trust_policy.py` 一张表里。它必须只有一处：
+早先散在三个脚本中，结果一处漏映射（`awesome-mjyc` 没登记），
+就把 `esa-prl/ExoMy`（78 个 CAD + 10 个 BOM）挡在了目录外。
+
+还有一层更隐蔽的：**显式字段不能压过策略表**。条目里带的 `trust` 常常是策略表还没有该来源时
+写下的旧结论，一旦落进数据就永久遮蔽后续修正——`tag_trust` 因此长期报"更新 0"，
+什么都没纠正而无人察觉。现在对范围统一的来源，表是权威；只有确实需要逐条判定的来源
+（兄弟仓库、命名检索）才用显式值。
+
+### URDF 不是「可制造证据」
+
+用"有 URDF + 若干网格"当放行条件，会把大量**造不出来**的仓库当成可复现硬件——
+商用机器人和强化学习训练仓库都发 URDF + 显示网格，而 URDF 只描述运动学。
+
+现在的分界：**参数化 CAD / BOM / Gerber 任意一项 = 有可制造证据**；
+只有网格 + URDF 的，需要有"收录范围即开放硬件"的来源背书。
+两个判定细节同样重要：
+
+- **BOM 必须是能读出零件行的表格或文档。** 只看文件名会让 PX4 的
+  `docs/assets/.../parts_list.jpg` 变成物料清单——一张照片证明不了任何零件。
+- **仿真器自带的显示网格不算硬件证据。** ArduPilot 的 18 个 STL 全部位于
+  `libraries/SITL/examples/JSON/pybullet/models/` 下，是 SITL 测试模型；
+  PHC 的网格里还混着 SMPL 人体模型。
+
+### 同一份仓库出现两次时，要补字段而不是二选一
+
+`gello_mechanical` 与 `Navbot-EN01` 明明有 CAD/BOM、层级也是 B，却始终不进目录。
+根因：它们既在 `robots.json`（带 tier 与采集证据）又在补采种子里（带 `_trust` 来源元数据），
+合并时 `if k not in seen` 判定"已存在"，把种子那份整条丢弃——连 `_trust` 一起丢了，
+于是两者被关键词闸当作无来源的自动命中拦下。两份记录各有一半信息，**必须补字段**。
+
+### 逐个账号列举不如按命名惯例检索
+
+"软件仓库出名、硬件仓库默默无闻"这个模式已独立撞见 6 次，所以写了
+`probe_sibling_hardware.py` 对全部主账号扫兄弟仓库。但它实测约 32 秒/账号、
+792 个账号要跑 4 小时以上，不划算。
+
+改用 `search_hardware_repos.py`：按硬件仓库的命名惯例（`-hardware` / `-assets` /
+`-mechanical` / `-cad` / `-description`）交叉机器人语义做检索，16 次 API 调用
+就拿到 57 个候选。这一轮直接找回了此前被拦下的 `wuphilipp/robot_parts`
+（gello 作者）与 `vinay-lanka/navbot_hardware`。
+
+另一个坑：`/orgs/{name}/repos` 对**个人账号**返回 404，要退到 `/users/{name}/repos`。
+
+### 被拦下的项目要有正式出口
+
+个别真项目（`wuphilipp/gello_mechanical`、`fuwei007/Navbot-EN01`）因为 description 为空、
+没有 URDF，任何关键词规则都救不了它们。出口是人工打开仓库树逐条核实后写进
+`data/candidates-manual.json` —— 核实成本高，所以只用于逐个确认过的少量条目，
+不能当批量兜底。
+
+反例也要留下记录：`NVIDIA-AI-IOT/jetracer` 的 8 个 CAD 全是**商用遥控车底盘
+（Latrax / Tamiya）的摄像头支架与转接板**，车本体仍需购买，不构成可复现的机器人设计，
+因此不收。
+
 ## 运行
 
 ```bash
@@ -201,10 +271,22 @@ lib/
   workbench-projects.ts           注册表 + 人工策展条目
   projects.generated.ts           管线生成（勿手改）
 pipeline/build_projects.py        证据 → 工作台 的生成器
-pipeline/fetch_gap.py             漏网候选的采集（策展清单 → 种子）
-pipeline/audit_links.py           零件链接覆盖式可达性检测
+pipeline/fetch_gap.py             漏网候选的采集（清单/检索 → 种子）
+pipeline/scan_lists.py            扫描策展清单（含中文社区），提取并比对仓库
+pipeline/search_more_sources.py   GitHub 结构化多路检索（话题 + 关键词）
+pipeline/search_hardware_repos.py 按硬件仓库命名惯例检索（找外置的硬件）
+pipeline/probe_sibling_hardware.py 同主账号兄弟仓库扫描（慢，检索版优先）
+pipeline/review_gap.py            逐条审看候选：有证据 / 重复 / 会被哪道闸拦下
+pipeline/audit_links.py           零件链接覆盖式可达性检测（重试 + 区分确定失效）
+pipeline/trace_project.py         追踪某仓库在生成流程各关卡的去留
 pipeline/resolve_repo_ids.py      仓库稳定 id 与规范名解析
+pipeline/tag_trust.py             按来源刷新候选的可信度标签
+pipeline/trust_policy.py          来源可信度策略（唯一真源）
 data/candidates-gap.json          补采候选清单（人工策展来源）
+data/candidates-lists.json        新增策展清单提取的候选
+data/candidates-search.json       GitHub 结构化检索的候选
+data/candidates-hardware-search.json 按命名惯例检索的候选
+data/candidates-manual.json        人工逐条核实过的候选（正式出口）
 data/seed-gap.json                补采种子（robots.json 同形）
 data/repo-ids.json                仓库 id → 规范名 映射（去重与改名纠正）
 app/review/page.tsx               审看台：可筛选表格 + 排除清单

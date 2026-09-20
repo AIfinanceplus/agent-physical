@@ -58,6 +58,20 @@ BOM_RX = re.compile(r"(^|[^a-z])(bom|bill[_\-\s]?of[_\-\s]?material|parts[_\-\s]
 DOCISH_RX = re.compile(r"(readme|assembly|build[_\-\s]?guide|instruction|"
                        r"getting[_\-\s]?started|manual|tutorial)", re.I)
 
+# 物料清单必须是**能读出零件行**的表格或文档。只看文件名会出笑话：
+# PX4 的 docs/assets/airframes/.../parts_list.jpg 是一张照片，证明不了任何零件。
+BOM_EXT = {".csv", ".tsv", ".xlsx", ".xls", ".ods", ".numbers", ".md", ".txt",
+           ".pdf", ".json", ".xml", ".yaml", ".yml", ".html", ".doc", ".docx"}
+
+# 仿真器自带的显示网格不是硬件证据。ArduPilot 的 18 个 STL 全部位于
+# libraries/SITL/examples/JSON/pybullet/models/ 下，是 SITL 测试模型，
+# 与"这个机器人怎么造"无关；PHC 的网格里还混着 SMPL 人体模型。
+# 只对 MESH 生效：URDF 即便放在 sim/ 下，仍可能是该机器人的真实运动学描述。
+SIM_PATH_RX = re.compile(
+    r"(^|/)(sitl|sim|sims|simulation|simulations|gazebo|pybullet|mujoco|"
+    r"isaac|isaaclab|isaacsim|ignition|drake|webots|brax|genesis|sapien|"
+    r"models?_household|smpl)(/|$)", re.I)
+
 # 格式桶：这些目录名描述的是「文件是什么格式」，不是「机器人的哪个部分」。
 # 它们绝不能当总成，否则界面会出现一列叫 meshes / urdf / docs 的"总成"。
 FORMAT_BUCKET = {
@@ -152,12 +166,12 @@ def classify(path: str) -> str | None:
     low = path.lower()
     name = low.rsplit("/", 1)[-1]
     ext = ("." + name.rsplit(".", 1)[-1]) if "." in name else ""
-    if BOM_RX.search(name):
+    if BOM_RX.search(name) and (not ext or ext in BOM_EXT):
         return "BOM"
     if ext in PARAMETRIC_CAD:
         return "CAD"
     if ext in PRINT_MESH:
-        return "MESH"
+        return None if SIM_PATH_RX.search(low) else "MESH"
     if ext in ROBOT_DESC:
         return "DESC"
     if ext in PCB_EDA:
@@ -282,8 +296,16 @@ def build_project(repo: dict, tree: list[dict], max_parts: int) -> dict | None:
     has_pcb = bool(buckets.get("PCB"))
     mesh_count = len(buckets.get("MESH", []))
     has_desc = bool(buckets.get("DESC"))
+    # 参数化 CAD / BOM / PCB 任意一项 = 有可制造证据，直接通过。
+    # 只有网格（STL）+ URDF 的，需要外部担保：必须是"收录范围本身即
+    # 可复现开放硬件"的清单收录的项目。
+    # 为什么不能只凭"有 URDF"放行：URDF 描述运动学，不能据以制造。商用机器人
+    # （发那科、Unitree）和强化学习训练仓库都发 URDF + 显示网格，仅凭 URDF
+    # 会把它们当成可造机器人——这恰恰把"可复现"这个前提弄丢了。
+    # 而纯 3D 打印项目确实可能只发 STL，那类项目由策展清单背书。
+    voucher = repo.get("_trust") == "hardware"
     if not (has_parametric or has_bom or has_pcb
-            or (mesh_count >= 8 and has_desc)):
+            or (mesh_count >= 8 and has_desc and voucher)):
         return None
 
     hardware = [(k, e, p) for k in ("MESH", "CAD", "PCB", "BOM")
@@ -571,8 +593,23 @@ def main() -> None:
     if SEED_GAP.exists():
         for r in json.loads(SEED_GAP.read_text(encoding="utf-8")):
             k = r["full_name"].lower()
-            if k not in seen_casefold:
+            cur = seen_casefold.get(k)
+            if cur is None:
                 seen_casefold[k] = r
+                continue
+            # 同一个仓库常常既在 robots.json（带 tier 与采集证据）又在种子里
+            # （带 _trust/_gap 这类来源元数据）。整条丢弃任一份都会丢字段：
+            # 丢掉种子那份，_trust 就没了，条目随即被关键词闸误杀——
+            # gello_mechanical 与 Navbot-EN01 就是这样消失的（两者 tier 都是 B，
+            # 本来就该进目录，却因为"已存在"而只留下了没有 _trust 的那份）。
+            # 正确做法是补字段，而不是二选一。
+            if r.get("_trust"):
+                cur["_trust"] = r["_trust"]
+            if r.get("_gap"):
+                cur["_gap"] = r["_gap"]
+            for f in ("bom_files", "urdf_files", "evidence", "file_count"):
+                if not cur.get(f) and r.get(f):
+                    cur[f] = r[f]
         repos = list(seen_casefold.values())
 
     # --- 按 GitHub 数字 id 去重 -------------------------------------------
@@ -645,14 +682,16 @@ def main() -> None:
             dropped_neg.append(r["full_name"])
             continue
         if not ROBOT_SIGNAL.search(blob_text):
-            # 兜底按「来源可信度」分两档，不按证据强度：
-            #   人工策展清单收录的（_gap）——策展门槛就是"硬件+软件双开源的机器人"，
-            #     被收录这件事本身就是人工验证过它是机器人，不必再用关键词确认。
-            #   自动采集命中的——只有 URDF/MJCF 这类结构证据才能推翻关键词判断。
-            # 为什么不能一律放宽：放宽后 NopSCADlib（SCAD 库）、kicad-happy（KiCad
-            # 工具）、DIY-CNC-machine（数控机床）这些"有参数化 CAD 但不是机器人"的
-            # 项目会全部涌入——关键词闸存在的意义正在于此。
-            curated = bool(r.get("_gap"))
+            # 兜底按「来源可信度」分档，不按证据强度：
+            #   收录范围本身就是"可复现开放硬件"的清单（_trust=hardware）——
+            #     被收录这件事就是人工判断"它是个能造的机器人"，不必再问关键词。
+            #   其他来源——只有 URDF/MJCF 这类结构证据才能推翻关键词判断。
+            # 为什么不能按证据强度放宽：那样 NopSCADlib（SCAD 库）、kicad-happy
+            # （KiCad 工具）、DIY-CNC-machine（数控机床）会全部涌入。
+            # 为什么不能"是清单就信任"：awesome-robot-descriptions 收录的是 URDF
+            # 描述（含 Unitree、发那科等商用机器人），一并信任会让 ArduPilot、
+            # PX4、kinpy、scikit-robot 这类飞控与库借道进来——清单的范围必须跟着来源看。
+            curated = r.get("_trust") == "hardware"
             if curated or has_desc:
                 stats["rescued_by_structure"] += 1
                 rescued.append(r["full_name"])

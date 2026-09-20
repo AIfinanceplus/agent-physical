@@ -1,4 +1,9 @@
 {
+ "01-ai/yi": {
+  "id": 713967573,
+  "canonical": "01-ai/Yi",
+  "archived": false
+ },
  "0artanis0/learninghumanoidrunning": {
   "id": 1094852341,
   "canonical": "0artanis0/LearningHumanoidRunning",
@@ -9,9 +14,29 @@
   "canonical": "0x23/MicroManipulator",
   "archived": false
  },
+ "0xaiwhisperer/qubit": {
+  "id": 1167180200,
+  "canonical": "0xaiwhisperer/qubit",
+  "archived": false
+ },
  "1x-technologies/1xgpt": {
   "id": 814423928,
   "canonical": "1x-technologies/1xgpt",
+  "archived": false
+ },
+ "2b-t/docker-for-robotics": {
+  "id": 597701828,
+  "canonical": "2b-t/docker-for-robotics",
+  "archived": false
+ },
+ "2noise/chattts": {
+  "id": 806709826,
+  "canonical": "2noise/ChatTTS",
+  "archived": false
+ },
+ "2toinf/x-vla": {
+  "id": 1063851187,
+  "canonical": "2toinf/X-VLA",
   "archived": false
  },
  "4ndreas/betabots-robot-arm-project": {
@@ -19,9 +44,24 @@
   "canonical": "4ndreas/BetaBots-Robot-Arm-Project",
   "archived": false
  },
+ "7757/fanduck": {
+  "id": 1373058548,
+  "canonical": "7757/fanduck",
+  "archived": false
+ },
  "advrhumanoids/casadi_kin_dyn": {
   "id": 217009689,
   "canonical": "ADVRHumanoids/casadi_kin_dyn",
+  "archived": false
+ },
+ "advrhumanoids/iit-dagana-ros-pkg": {
+  "id": 563464420,
+  "canonical": "ADVRHumanoids/iit-dagana-ros-pkg",
+  "archived": false
+ },
+ "advrhumanoids/iit-walkman-ros-pkg": {
+  "id": 110574428,
+  "canonical": "ADVRHumanoids/iit-walkman-ros-pkg",
   "archived": false
  },
  "ai-fange/microduck-build-tutorial": {
@@ -34,9 +74,24 @@
   "canonical": "AIM-Intelligence/video2robot",
   "archived": false
  },
+ "airlab-polimi/ros2-igus-rebel": {
+  "id": 745598505,
+  "canonical": "AIRLab-POLIMI/ros2-igus-rebel",
+  "archived": false
+ },
  "anybotics/anymal_b_simple_description": {
   "id": 180160362,
   "canonical": "ANYbotics/anymal_b_simple_description",
+  "archived": false
+ },
+ "anybotics/anymal_c_simple_description": {
+  "id": 294315942,
+  "canonical": "ANYbotics/anymal_c_simple_description",
+  "archived": false
+ },
+ "anybotics/anymal_d_simple_description": {
+  "id": 700852158,
+  "canonical": "ANYbotics/anymal_d_simple_description",
   "archived": false
  },
  "anybotics/elevation_mapping": {
@@ -44,14 +99,64 @@
   "canonical": "ANYbotics/elevation_mapping",
   "archived": false
  },
+ "asig-x/jeplo": {
+  "id": 1367157676,
+  "canonical": "ASIG-X/JEPLO",
+  "archived": false
+ },
+ "acutronicrobotics/robotiq_modular_gripper": {
+  "id": 169441021,
+  "canonical": "AcutronicRobotics/robotiq_modular_gripper",
+  "archived": false
+ },
  "adam-cad/cadam": {
   "id": 1048601047,
   "canonical": "Adam-CAD/CADAM",
   "archived": false
  },
+ "adohaha/dh2urdf": {
+  "id": 74651005,
+  "canonical": "AdoHaha/DH2URDF",
+  "archived": false
+ },
+ "adriaeik/fusion2urdf": {
+  "id": 1228897627,
+  "canonical": "Adriaeik/fusion2URDF",
+  "archived": false
+ },
+ "agibottech/agibot_x1_hardware": {
+  "id": 877673758,
+  "canonical": "AgibotTech/agibot_x1_hardware",
+  "archived": false
+ },
+ "agibottech/agibot_x1_infer": {
+  "id": 877058977,
+  "canonical": "AgibotTech/agibot_x1_infer",
+  "archived": false
+ },
+ "agibottech/agibot_x1_train": {
+  "id": 877059051,
+  "canonical": "AgibotTech/agibot_x1_train",
+  "archived": false
+ },
  "agroecology-lab/feldfreund_devkit_ros": {
   "id": 1149586616,
   "canonical": "Agroecology-Lab/feldfreund_devkit_ros",
+  "archived": false
+ },
+ "aimrt/aimrt": {
+  "id": 861606962,
+  "canonical": "AimRT/AimRT",
+  "archived": false
+ },
+ "airexo/airexo-2": {
+  "id": 945811821,
+  "canonical": "AirExo/AirExo-2",
+  "archived": false
+ },
+ "airexo/collector": {
+  "id": 692059529,
+  "canonical": "AirExo/collector",
   "archived": false
  },
  "albusgive/wheel_legged_genesis": {
@@ -69,9 +174,24 @@
   "canonical": "Alexhuge1/Alexbot",
   "archived": false
  },
+ "alexhuge1/alexbotmini_hardware": {
+  "id": 898269850,
+  "canonical": "Alexhuge1/Alexbotmini_hardware",
+  "archived": false
+ },
  "alishug/evoarm": {
   "id": 73292354,
   "canonical": "AliShug/EvoArm",
+  "archived": false
+ },
+ "alyonaminina/spiro.hardware": {
+  "id": 187408343,
+  "canonical": "AlyonaMinina/SPIRO.Hardware",
+  "archived": false
+ },
+ "ananasrobot/ananasstepper": {
+  "id": 93999548,
+  "canonical": "AnanasRobot/AnanasStepper",
   "archived": false
  },
  "andregeist/wheelbot-v2.5": {
@@ -109,6 +229,26 @@
   "canonical": "AntoBrandi/Arduino-Bot",
   "archived": false
  },
+ "antobrandi/bumper-bot": {
+  "id": 525550478,
+  "canonical": "AntoBrandi/Bumper-Bot",
+  "archived": false
+ },
+ "apolloauto/apollo": {
+  "id": 96246170,
+  "canonical": "ApolloAuto/apollo",
+  "archived": false
+ },
+ "aravinthpanch/gesture-recognition-for-human-robot-interaction": {
+  "id": 27762252,
+  "canonical": "AravinthPanch/gesture-recognition-for-human-robot-interaction",
+  "archived": false
+ },
+ "ardupilot/ardupilot": {
+  "id": 7512484,
+  "canonical": "ArduPilot/ardupilot",
+  "archived": false
+ },
  "argo-robot/quadrupeds_locomotion": {
   "id": 912739062,
   "canonical": "Argo-Robot/quadrupeds_locomotion",
@@ -122,6 +262,16 @@
  "atharva-05/unitree_ros2_sim": {
   "id": 839720210,
   "canonical": "Atharva-05/unitree_ros2_sim",
+  "archived": false
+ },
+ "auturbo/stridesim": {
+  "id": 735905513,
+  "canonical": "AuTURBO/StrideSim",
+  "archived": false
+ },
+ "austinowens/robodog": {
+  "id": 348159549,
+  "canonical": "AustinOwens/robodog",
   "archived": false
  },
  "autodesk/synthesis": {
@@ -144,9 +294,34 @@
   "canonical": "BTFrontier/polygon_mapping",
   "archived": false
  },
+ "bitsrobocon/quadruped-diploid": {
+  "id": 281354099,
+  "canonical": "BitsRobocon/Quadruped-DIPLOID",
+  "archived": false
+ },
+ "boosterrobotics/booster_assets": {
+  "id": 1110411782,
+  "canonical": "BoosterRobotics/booster_assets",
+  "archived": false
+ },
  "boosterrobotics/booster_gym": {
   "id": 900659795,
   "canonical": "BoosterRobotics/booster_gym",
+  "archived": false
+ },
+ "botrunner64/teleopit": {
+  "id": 1162575717,
+  "canonical": "BotRunner64/Teleopit",
+  "archived": false
+ },
+ "brutpitt/virtualgizmo3d": {
+  "id": 160553504,
+  "canonical": "BrutPitt/virtualGizmo3D",
+  "archived": false
+ },
+ "cdonosok/astroviz": {
+  "id": 902051793,
+  "canonical": "CDonosoK/astroviz",
   "archived": false
  },
  "ckraft11/ironless-qdd-actuator": {
@@ -169,6 +344,11 @@
   "canonical": "Chestnut-Robotics/aero-hand-open",
   "archived": false
  },
+ "choitek/aspir-3d-print-files-v1": {
+  "id": 107931941,
+  "canonical": "Choitek/ASPIR-3D-Print-Files-V1",
+  "archived": false
+ },
  "chrgri/diy-sim-racing-ffb-pedal-mechanical-design": {
   "id": 828452438,
   "canonical": "ChrGri/DIY-Sim-Racing-FFB-Pedal-Mechanical-Design",
@@ -187,6 +367,11 @@
  "currydreamer/wheel_bipedal_robot": {
   "id": 1249738798,
   "canonical": "CurryDreamer/Wheel_Bipedal_Robot",
+  "archived": false
+ },
+ "dainamite/programming-humanoid-robot-in-python": {
+  "id": 25481860,
+  "canonical": "DAInamite/programming-humanoid-robot-in-python",
   "archived": false
  },
  "davian-robotics/phuma": {
@@ -214,6 +399,16 @@
   "canonical": "Deeplocal/mocktailsmixer",
   "archived": false
  },
+ "derek-th-wang/hybrid_gait": {
+  "id": 315879680,
+  "canonical": "Derek-TH-Wang/hybrid_gait",
+  "archived": false
+ },
+ "derek-th-wang/mini_cheetah_urdf": {
+  "id": 267061147,
+  "canonical": "Derek-TH-Wang/mini_cheetah_urdf",
+  "archived": false
+ },
  "derek-th-wang/quadruped_ctrl": {
   "id": 267837347,
   "canonical": "Derek-TH-Wang/quadruped_ctrl",
@@ -227,6 +422,11 @@
  "dicklesworthstone/destructive_command_guard": {
   "id": 1130004860,
   "canonical": "Dicklesworthstone/destructive_command_guard",
+  "archived": false
+ },
+ "dipflip/telegrip": {
+  "id": 977874509,
+  "canonical": "DipFlip/telegrip",
   "archived": false
  },
  "dominic789654/awesome-deepseek-harness": {
@@ -244,6 +444,16 @@
   "canonical": "Drakonian/data-editor-for-bc",
   "archived": false
  },
+ "dream-machines-robotics/vr-teleop-kit": {
+  "id": 1274662029,
+  "canonical": "Dream-Machines-Robotics/vr-teleop-kit",
+  "archived": false
+ },
+ "e1pco/hardware-accelerated_system_for_ik_solution_based_on_lerobot": {
+  "id": 1119817089,
+  "canonical": "E1pco/Hardware-Accelerated_System_for_IK_Solution_Based_on_LeRobot",
+  "archived": false
+ },
  "epflxplore/xre_leggedrobot_hw": {
   "id": 702678481,
   "canonical": "EPFLXplore/XRE_LeggedRobot_HW",
@@ -259,14 +469,39 @@
   "canonical": "EricYufengWu/q8bot",
   "archived": false
  },
+ "extwin-synthesis/synthesis-assets-explorer": {
+  "id": 1072718529,
+  "canonical": "Extwin-Synthesis/Synthesis-Assets-Explorer",
+  "archived": false
+ },
+ "fftai/wiki-grx-models": {
+  "id": 807539348,
+  "canonical": "FFTAI/Wiki-GRx-Models",
+  "archived": false
+ },
  "fpgawars/icezum": {
   "id": 52031088,
   "canonical": "FPGAwars/icezum",
   "archived": false
  },
+ "farama-foundation/metaworld": {
+  "id": 207383121,
+  "canonical": "Farama-Foundation/Metaworld",
+  "archived": false
+ },
  "farmbot/farmbot_os": {
   "id": 15848380,
   "canonical": "FarmBot/farmbot_os",
+  "archived": false
+ },
+ "flagopen/robobrain2.5": {
+  "id": 996485653,
+  "canonical": "FlagOpen/RoboBrain2.5",
+  "archived": false
+ },
+ "florianwilk/spotmicroai": {
+  "id": 183903267,
+  "canonical": "FlorianWilk/SpotMicroAI",
   "archived": false
  },
  "forgecad/forgecad-public-kit": {
@@ -279,6 +514,16 @@
   "canonical": "G-Levine/OpenTorque-Actuator",
   "archived": false
  },
+ "g-levine/pupper_v3_description": {
+  "id": 760898662,
+  "canonical": "G-Levine/pupper_v3_description",
+  "archived": false
+ },
+ "g-levine/rhea_description": {
+  "id": 608012206,
+  "canonical": "G-Levine/rhea_description",
+  "archived": false
+ },
  "gpsbabel/gpsbabel": {
   "id": 40028252,
   "canonical": "GPSBabel/gpsbabel",
@@ -287,6 +532,21 @@
  "gabryxx7/robotarmhelix": {
   "id": 100423984,
   "canonical": "Gabryxx7/RobotArmHelix",
+  "archived": false
+ },
+ "galactechnyc/unitree-g1-autonomous": {
+  "id": 1027834001,
+  "canonical": "GalacTechNyc/unitree-g1-autonomous",
+  "archived": false
+ },
+ "galaxygeneralrobotics/openwbt": {
+  "id": 997353956,
+  "canonical": "GalaxyGeneralRobotics/OpenWBT",
+  "archived": false
+ },
+ "genesis-embodied-ai/genesis": {
+  "id": 712225112,
+  "canonical": "Genesis-Embodied-AI/genesis-world",
   "archived": false
  },
  "geode-solutions/opengeode": {
@@ -304,6 +564,11 @@
   "canonical": "Gh0stlyKn1ght/Primo",
   "archived": false
  },
+ "gonzacerv/noah-hardware": {
+  "id": 253662892,
+  "canonical": "GonzaCerv/noah-hardware",
+  "archived": false
+ },
  "h-freax/awesome-video-robotic-papers": {
   "id": 816639481,
   "canonical": "H-Freax/Awesome-Video-Robotic-Papers",
@@ -314,9 +579,29 @@
   "canonical": "HCI-Lab-Saarland/ExoKit",
   "archived": false
  },
+ "hkust-aerial-robotics/fiesta": {
+  "id": 168839565,
+  "canonical": "HKUST-Aerial-Robotics/FIESTA",
+  "archived": false
+ },
  "hkust-aerial-robotics/omninxt": {
   "id": 768658203,
   "canonical": "HKUST-Aerial-Robotics/OmniNxt",
+  "archived": false
+ },
+ "hkust-aerial-robotics/vins-fusion": {
+  "id": 165091078,
+  "canonical": "HKUST-Aerial-Robotics/VINS-Fusion",
+  "archived": false
+ },
+ "hkust-aerial-robotics/vins-mono": {
+  "id": 91875325,
+  "canonical": "HKUST-Aerial-Robotics/VINS-Mono",
+  "archived": false
+ },
+ "haddingtondynamics/dexter": {
+  "id": 124001434,
+  "canonical": "HaddingtonDynamics/Dexter",
   "archived": false
  },
  "hanzzzzz000/iv8": {
@@ -332,6 +617,11 @@
  "hao-starrr/humanoid-arm-retarget": {
   "id": 850233252,
   "canonical": "Hao-Starrr/humanoid-arm-retarget",
+  "archived": false
+ },
+ "healthcare-robotics/assistive-gym": {
+  "id": 210993757,
+  "canonical": "Healthcare-Robotics/assistive-gym",
   "archived": false
  },
  "helas1999/exoforce-exoskeletons-for-military-use": {
@@ -369,9 +659,19 @@
   "canonical": "HoangGiang93/urdf_importer",
   "archived": false
  },
+ "horizonrobotics/embodiedgen": {
+  "id": 1000014156,
+  "canonical": "HorizonRobotics/EmbodiedGen",
+  "archived": false
+ },
  "horizonrobotics/geoflowslam": {
   "id": 1021204559,
   "canonical": "HorizonRobotics/GeoFlowSlam",
+  "archived": false
+ },
+ "horizonrobotics/holomotion": {
+  "id": 1028843437,
+  "canonical": "HorizonRobotics/HoloMotion",
   "archived": false
  },
  "hybridrobotics/berkeley-humanoid-lite": {
@@ -389,9 +689,29 @@
   "canonical": "HybridRobotics/berkeley_humanoid_description",
   "archived": false
  },
+ "hyperspawn/dropbear": {
+  "id": 696588630,
+  "canonical": "Hyperspawn/Dropbear",
+  "archived": false
+ },
+ "idea-research/groundingdino": {
+  "id": 611591640,
+  "canonical": "IDEA-Research/GroundingDINO",
+  "archived": false
+ },
+ "ifra-cranfield/ifra_conveyorbelt": {
+  "id": 649768215,
+  "canonical": "IFRA-Cranfield/IFRA_ConveyorBelt",
+  "archived": false
+ },
  "iwin-fins/finsrov-an-underwater-camera-based-multi-robot-platform": {
   "id": 1145798513,
   "canonical": "IWIN-FINS/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform",
+  "archived": false
+ },
+ "ignoransel/urdf_editor": {
+  "id": 802156739,
+  "canonical": "IgnorAnsel/urdf_editor",
   "archived": false
  },
  "iminthemiddle/emloco": {
@@ -409,9 +729,19 @@
   "canonical": "Interbotix/interbotix_ros_manipulators",
   "archived": false
  },
+ "internlm/internlm": {
+  "id": 662878020,
+  "canonical": "InternLM/InternLM",
+  "archived": false
+ },
  "internrobotics/internhumanoid": {
   "id": 1025572241,
   "canonical": "InternRobotics/InternHumanoid",
+  "archived": false
+ },
+ "internrobotics/internvla-m1": {
+  "id": 1057962659,
+  "canonical": "InternRobotics/InternVLA-M1",
   "archived": false
  },
  "internrobotics/openhomie": {
@@ -422,6 +752,11 @@
  "internrobotics/physhsi": {
   "id": 1075212555,
   "canonical": "InternRobotics/PhysHSI",
+  "archived": false
+ },
+ "internrobotics/tag": {
+  "id": 1219621406,
+  "canonical": "InternRobotics/TAG",
   "archived": false
  },
  "jsonbored/awesome-claude": {
@@ -444,6 +779,11 @@
   "canonical": "Jelatine/JellyCAD",
   "archived": false
  },
+ "jelatine/mockway_robotics": {
+  "id": 1122674785,
+  "canonical": "Jelatine/mockway_robotics",
+  "archived": false
+ },
  "jereozero/so101-real": {
   "id": 1237620135,
   "canonical": "JereoZero/so101-real",
@@ -454,9 +794,24 @@
   "canonical": "Jerome-Graves/yertle",
   "archived": false
  },
+ "k-d4wg/ros2_heinz": {
+  "id": 1004268835,
+  "canonical": "K-d4wg/ros2_heinz",
+  "archived": false
+ },
  "kelvinlaumiau/kinova7dof-mujoco": {
   "id": 945265975,
   "canonical": "KelvinLauMiau/Kinova7DoF-MuJoCo",
+  "archived": false
+ },
+ "kingjux/venocyber-md": {
+  "id": 773278937,
+  "canonical": "Kingjux/Venocyber-md",
+  "archived": false
+ },
+ "kinovarobotics/ros2_kortex": {
+  "id": 390407974,
+  "canonical": "Kinovarobotics/ros2_kortex",
   "archived": false
  },
  "kinovarobotics/ros_kortex": {
@@ -469,6 +824,11 @@
   "canonical": "KlabCMU/KinPoly",
   "archived": false
  },
+ "knight1112d/cbc_pi0.7_openpi": {
+  "id": 1272015275,
+  "canonical": "Knight1112D/CBC_Pi0.7_Openpi",
+  "archived": false
+ },
  "kolakivy/awesome-quadruped-with-manipulator": {
   "id": 991375935,
   "canonical": "KolaKivy/Awesome-Quadruped-with-Manipulator",
@@ -477,6 +837,11 @@
  "kwanwaipang/awesome-legged-robot-localization-and-mapping": {
   "id": 954700157,
   "canonical": "KwanWaiPang/Awesome-Legged-Robot-Localization-and-Mapping",
+  "archived": false
+ },
+ "lax3n/humantyping": {
+  "id": 1101654524,
+  "canonical": "Lax3n/HumanTyping",
   "archived": false
  },
  "lecar-lab/asap": {
@@ -504,9 +869,19 @@
   "canonical": "LeCAR-Lab/dial-mpc",
   "archived": false
  },
+ "lifelong-robot-learning/libero": {
+  "id": 625323941,
+  "canonical": "Lifelong-Robot-Learning/LIBERO",
+  "archived": false
+ },
  "liudingchuan/graduate_project": {
   "id": 618386528,
   "canonical": "LiuDingchuan/Graduate_Project",
+  "archived": false
+ },
+ "lookatme-genius-cameraman/t_system": {
+  "id": 185371391,
+  "canonical": "LookAtMe-Genius-Cameraman/T_System",
   "archived": false
  },
  "lxliam/legged_mpc_amp": {
@@ -519,6 +894,11 @@
   "canonical": "MX-LZX/Catch-Contact-the-Force",
   "archived": false
  },
+ "makeblock-official/mecanum-wheel-robot-kit": {
+  "id": 50912170,
+  "canonical": "Makeblock-official/Mecanum-Wheel-Robot-Kit",
+  "archived": false
+ },
  "manufacturedmotion/hex": {
   "id": 717609585,
   "canonical": "ManufacturedMotion/Hex",
@@ -527,6 +907,11 @@
  "marcdcls/coconuts": {
   "id": 1134999394,
   "canonical": "MarcDcls/coconuts",
+  "archived": false
+ },
+ "marginallyclever/sixi": {
+  "id": 134742352,
+  "canonical": "MarginallyClever/sixi",
   "archived": false
  },
  "markfzp/act-plus-plus": {
@@ -549,9 +934,24 @@
   "canonical": "Masterminds/goutils",
   "archived": false
  },
+ "materials-informatics-group/robot_fluid_3d-parts": {
+  "id": 887108390,
+  "canonical": "Materials-Informatics-Group/Robot_FLUID_3D-Parts",
+  "archived": false
+ },
+ "mathworks-teaching-resources/robotic-manipulators": {
+  "id": 639579469,
+  "canonical": "MathWorks-Teaching-Resources/Robotic-Manipulators",
+  "archived": false
+ },
  "matheshwaranpitchai/open-source-leader-arm": {
   "id": 1346503896,
   "canonical": "Matheshwaranpitchai/open-source-leader-arm",
+  "archived": false
+ },
+ "matrixchung/ifoc": {
+  "id": 809826958,
+  "canonical": "Matrixchung/iFOC",
   "archived": false
  },
  "matthias84/awesome-flying-fpv": {
@@ -564,9 +964,34 @@
   "canonical": "MeArm/MeArm",
   "archived": false
  },
+ "megvii-basedetection/yolox": {
+  "id": 386811486,
+  "canonical": "Megvii-BaseDetection/YOLOX",
+  "archived": false
+ },
+ "miroboticslab/cyberdog_ros2": {
+  "id": 406747198,
+  "canonical": "MiRoboticsLab/cyberdog_ros2",
+  "archived": false
+ },
  "michaelmarav/probabilisticcontactestimation": {
   "id": 513167651,
   "canonical": "MichaelMarav/ProbabilisticContactEstimation",
+  "archived": false
+ },
+ "milosrasic98/openmobileroboticmanipulator": {
+  "id": 1258723593,
+  "canonical": "MilosRasic98/OpenMobileRoboticManipulator",
+  "archived": false
+ },
+ "minimax-ai/minimax-m2": {
+  "id": 1083363028,
+  "canonical": "MiniMax-AI/MiniMax-M2",
+  "archived": false
+ },
+ "moonshotai/kimi-k2": {
+  "id": 1013143108,
+  "canonical": "MoonshotAI/Kimi-K2",
   "archived": false
  },
  "morvanzhou/train-robot-arm-from-scratch": {
@@ -574,14 +999,34 @@
   "canonical": "MorvanZhou/train-robot-arm-from-scratch",
   "archived": false
  },
+ "mr-c4t/ab-so-bot": {
+  "id": 953558248,
+  "canonical": "Mr-C4T/AB-SO-BOT",
+  "archived": false
+ },
+ "mr-c4t/lecyborg": {
+  "id": 978728751,
+  "canonical": "Mr-C4T/LeCyborg",
+  "archived": false
+ },
  "mr-zqr/liko": {
   "id": 686826504,
   "canonical": "Mr-Zqr/LIKO",
   "archived": false
  },
+ "mrdavidalv/axioma_robot": {
+  "id": 1087469790,
+  "canonical": "MrDavidAlv/Axioma_robot",
+  "archived": false
+ },
  "multivac11/wheel-legged-robot--main_code": {
   "id": 909589957,
   "canonical": "Multivac11/Wheel-legged-robot--Main_Code",
+  "archived": false
+ },
+ "myrobotlab/inmoov": {
+  "id": 76143020,
+  "canonical": "MyRobotLab/InMoov",
   "archived": false
  },
  "ndhana94/hyperdog_ros2": {
@@ -604,6 +1049,11 @@
   "canonical": "NRdrgz/Just1",
   "archived": false
  },
+ "nus-lins-lab/manifm": {
+  "id": 799093694,
+  "canonical": "NUS-LinS-Lab/ManiFM",
+  "archived": false
+ },
  "nvidia-ai-iot/jetbot": {
   "id": 174653395,
   "canonical": "NVIDIA-AI-IOT/jetbot",
@@ -612,6 +1062,16 @@
  "nvidia-ai-iot/jetracer": {
   "id": 180871441,
   "canonical": "NVIDIA-AI-IOT/jetracer",
+  "archived": false
+ },
+ "nvidia-isaac-ros/nova_carter": {
+  "id": 706955108,
+  "canonical": "NVIDIA-ISAAC-ROS/nova_carter",
+  "archived": false
+ },
+ "nvidia/isaac-gr00t": {
+  "id": 946829547,
+  "canonical": "NVIDIA/Isaac-GR00T",
   "archived": false
  },
  "nvidia/soma-retargeter": {
@@ -639,14 +1099,39 @@
   "canonical": "Nate711/StanfordDoggoProject",
   "archived": false
  },
+ "nathanwu7/humanoidverse3": {
+  "id": 1007508999,
+  "canonical": "NathanWu7/HumanoidVerse3",
+  "archived": false
+ },
+ "nikolay-tyulkin/watti": {
+  "id": 1320151833,
+  "canonical": "Nikolay-Tyulkin/Watti",
+  "archived": false
+ },
  "nimbro/nimbro-op2": {
   "id": 104756464,
   "canonical": "NimbRo/nimbro-op2",
   "archived": false
  },
+ "nitinjsanket/roboticshardware": {
+  "id": 181283249,
+  "canonical": "NitinJSanket/RoboticsHardware",
+  "archived": false
+ },
  "oxoyo/f2e-tutorial-collect": {
   "id": 58689560,
   "canonical": "OXOYO/F2E-Tutorial-Collect",
+  "archived": false
+ },
+ "oltans/ur5e_touch_haptic_teleoperation": {
+  "id": 650884688,
+  "canonical": "OltanS/UR5e_Touch_haptic_teleoperation",
+  "archived": false
+ },
+ "omnixri/openvino_realsense_harvestbot": {
+  "id": 216390714,
+  "canonical": "OmniXRI/OpenVINO_RealSense_HarvestBot",
   "archived": false
  },
  "oneoneliu/ggcnn_cornell_dataset": {
@@ -664,14 +1149,29 @@
   "canonical": "Open-X-Humanoid/TienKung-Lab",
   "archived": false
  },
+ "open-x-humanoid/xr-1": {
+  "id": 1118920938,
+  "canonical": "Open-X-Humanoid/XR-1",
+  "archived": false
+ },
  "open-x-humanoid/pelican-vl": {
   "id": 1089959096,
   "canonical": "Open-X-Humanoid/pelican-vl",
   "archived": false
  },
+ "openbmb/minicpm-o": {
+  "id": 749647889,
+  "canonical": "OpenBMB/MiniCPM-V",
+  "archived": false
+ },
  "openbionics/prosthetic-hands": {
   "id": 32456392,
   "canonical": "OpenBionics/Prosthetic-Hands",
+  "archived": false
+ },
+ "opendrivelab/agibot-world": {
+  "id": 900546855,
+  "canonical": "OpenDriveLab/AgiBot-World",
   "archived": false
  },
  "opendrivelab/egohumanoid": {
@@ -682,6 +1182,31 @@
  "opendrivelab/robonaldo": {
   "id": 1262027955,
   "canonical": "OpenDriveLab/RoboNaldo",
+  "archived": false
+ },
+ "opendrivelab/uniad": {
+  "id": 575306900,
+  "canonical": "OpenDriveLab/UniAD",
+  "archived": false
+ },
+ "opendrivelab/wholebodyvla": {
+  "id": 1113952243,
+  "canonical": "OpenDriveLab/WholebodyVLA",
+  "archived": false
+ },
+ "opendronemap/odm": {
+  "id": 24470090,
+  "canonical": "OpenDroneMap/ODM",
+  "archived": false
+ },
+ "opengvlab/internvl": {
+  "id": 721995615,
+  "canonical": "OpenGVLab/InternVL",
+  "archived": false
+ },
+ "opengalaxea/galaxeavla": {
+  "id": 1035292363,
+  "canonical": "OpenGalaxea/GalaxeaVLA",
   "archived": false
  },
  "openhutb/hutb": {
@@ -709,6 +1234,26 @@
   "canonical": "OpenQuadruped/spot_mini_mini",
   "archived": false
  },
+ "opentelevision/television": {
+  "id": 791744964,
+  "canonical": "OpenTeleVision/TeleVision",
+  "archived": false
+ },
+ "openxiangshan/xiangshan": {
+  "id": 271929004,
+  "canonical": "OpenXiangShan/XiangShan",
+  "archived": false
+ },
+ "orebrouniversity/yumi": {
+  "id": 52382779,
+  "canonical": "OrebroUniversity/yumi",
+  "archived": true
+ },
+ "ottodiy/ottodiylib": {
+  "id": 190644360,
+  "canonical": "OttoDIY/OttoDIYLib",
+  "archived": false
+ },
  "ottodiy/ottodiy": {
   "id": 64104078,
   "canonical": "OttoDIY/OttoNinja",
@@ -719,9 +1264,59 @@
   "canonical": "Source-Robotics/Faze4-Robotic-arm",
   "archived": false
  },
+ "pcrnjak/parol-commander-software": {
+  "id": 670989491,
+  "canonical": "Source-Robotics/PAROL-commander-software",
+  "archived": false
+ },
+ "pcrnjak/parol6-desktop-robot-arm": {
+  "id": 667155414,
+  "canonical": "Source-Robotics/PAROL6-Desktop-robot-arm",
+  "archived": false
+ },
+ "pcrnjak/parol6-ros2-moveit": {
+  "id": 975626123,
+  "canonical": "Source-Robotics/PAROL6-ROS2-MOVEIT",
+  "archived": false
+ },
+ "pcrnjak/parol6-python-api": {
+  "id": 1034561994,
+  "canonical": "PCrnjak/PAROL6-python-API",
+  "archived": false
+ },
+ "pku-epic/graspvla": {
+  "id": 978518470,
+  "canonical": "PKU-EPIC/GraspVLA",
+  "archived": false
+ },
+ "pr2/pr2_common": {
+  "id": 7969542,
+  "canonical": "PR2/pr2_common",
+  "archived": false
+ },
+ "px4/px4-autopilot": {
+  "id": 5298790,
+  "canonical": "PX4/PX4-Autopilot",
+  "archived": false
+ },
+ "paddlepaddle/paddle": {
+  "id": 65711522,
+  "canonical": "PaddlePaddle/Paddle",
+  "archived": false
+ },
+ "paddlepaddle/paddleocr": {
+  "id": 262296122,
+  "canonical": "PaddlePaddle/PaddleOCR",
+  "archived": false
+ },
  "petoicamp/opencat": {
   "id": 326441188,
   "canonical": "PetoiCamp/OpenCat-Quadruped-Robot",
+  "archived": false
+ },
+ "petoicamp/opencat-old": {
+  "id": 124574483,
+  "canonical": "PetoiCamp/OpenCat-Old",
   "archived": false
  },
  "petoicamp/opencat-quadruped-robot": {
@@ -734,6 +1329,16 @@
   "canonical": "PetoiCamp/OpenCatEsp32-Quadruped-Robot",
   "archived": false
  },
+ "physical-intelligence/openpi": {
+  "id": 876210014,
+  "canonical": "Physical-Intelligence/openpi",
+  "archived": false
+ },
+ "phyzicalorg/phyzical_org": {
+  "id": 1362686421,
+  "canonical": "Phyzicalorg/Phyzical_org",
+  "archived": false
+ },
  "pines-cheng/awesome-nodejs-cn": {
   "id": 53874146,
   "canonical": "Pines-Cheng/awesome-nodejs-cn",
@@ -742,6 +1347,31 @@
  "pinggusoft/esp32_quadruped": {
   "id": 435420135,
   "canonical": "PingguSoft/esp32_quadruped",
+  "archived": false
+ },
+ "psi-robot/dexgraspvla": {
+  "id": 941025002,
+  "canonical": "Psi-Robot/DexGraspVLA",
+  "archived": false
+ },
+ "qwenlm/qwen": {
+  "id": 674075444,
+  "canonical": "QwenLM/Qwen",
+  "archived": false
+ },
+ "qwenlm/qwen2-vl": {
+  "id": 849239437,
+  "canonical": "QwenLM/Qwen3-VL",
+  "archived": false
+ },
+ "rapcores/rapcores": {
+  "id": 208556773,
+  "canonical": "RAPcores/rapcores",
+  "archived": false
+ },
+ "rlinf/rlinf": {
+  "id": 1037741738,
+  "canonical": "RLinf/RLinf",
   "archived": false
  },
  "robotis-git/opencr": {
@@ -774,14 +1404,54 @@
   "canonical": "ROBOTIS-GIT/turtlebot3",
   "archived": false
  },
+ "rt-thread/rt-thread": {
+  "id": 7408108,
+  "canonical": "RT-Thread/rt-thread",
+  "archived": false
+ },
+ "rack-robotics/powercore-v1.0-hardware": {
+  "id": 673425565,
+  "canonical": "Rack-Robotics/Powercore-V1.0-Hardware",
+  "archived": false
+ },
+ "rayckey/gingerurdf": {
+  "id": 150865327,
+  "canonical": "Rayckey/GingerURDF",
+  "archived": false
+ },
  "red-rabbit-robotics/rx1": {
   "id": 806934657,
   "canonical": "Red-Rabbit-Robotics/rx1",
   "archived": false
  },
+ "red-rabbit-robotics/rx1_arm_hardware": {
+  "id": 829278197,
+  "canonical": "Red-Rabbit-Robotics/rx1_arm_hardware",
+  "archived": false
+ },
+ "red-rabbit-robotics/rx1_bom": {
+  "id": 834338779,
+  "canonical": "Red-Rabbit-Robotics/rx1_bom",
+  "archived": false
+ },
+ "red-rabbit-robotics/rx1_hand_hardware": {
+  "id": 832469532,
+  "canonical": "Red-Rabbit-Robotics/rx1_hand_hardware",
+  "archived": false
+ },
  "red-rabbit-robotics/rx1_servo_hardware": {
   "id": 823935821,
   "canonical": "Red-Rabbit-Robotics/rx1_servo_hardware",
+  "archived": false
+ },
+ "red-rabbit-robotics/rx2_arm_hardware_beta": {
+  "id": 870423558,
+  "canonical": "Red-Rabbit-Robotics/rx2_arm_hardware_beta",
+  "archived": false
+ },
+ "reinbert/ros_esp32cam_diffdrive": {
+  "id": 336904182,
+  "canonical": "Reinbert/ros_esp32cam_diffdrive",
   "archived": false
  },
  "renforce-dynamics/multimodalwbc": {
@@ -794,14 +1464,44 @@
   "canonical": "Rengar-Yang/WheelLeggedRobotSimulation",
   "archived": false
  },
+ "renkunzhao/legged-daily": {
+  "id": 1143539578,
+  "canonical": "Renkunzhao/legged-daily",
+  "archived": false
+ },
+ "rethinkrobotics/baxter_common": {
+  "id": 11371241,
+  "canonical": "RethinkRobotics/baxter_common",
+  "archived": false
+ },
+ "rethinkrobotics/sawyer_robot": {
+  "id": 60373690,
+  "canonical": "RethinkRobotics/sawyer_robot",
+  "archived": false
+ },
  "rhoban/microban": {
   "id": 1230832604,
   "canonical": "Rhoban/microban",
   "archived": false
  },
+ "rhoban/mjlab_microban": {
+  "id": 1232726412,
+  "canonical": "Rhoban/mjlab_microban",
+  "archived": false
+ },
  "rhoban/onshape-to-robot": {
   "id": 176774675,
   "canonical": "Rhoban/onshape-to-robot",
+  "archived": false
+ },
+ "rhoban/onshape-to-robot-examples": {
+  "id": 258506616,
+  "canonical": "Rhoban/onshape-to-robot-examples",
+  "archived": false
+ },
+ "rhoban/sigmaban_urdf": {
+  "id": 549474904,
+  "canonical": "Rhoban/sigmaban_urdf",
   "archived": false
  },
  "riccardobiosas/awesome-mlsecops": {
@@ -819,9 +1519,19 @@
   "canonical": "RobStride/EDULITE_A3",
   "archived": false
  },
+ "robotwin-platform/robotwin": {
+  "id": 859294552,
+  "canonical": "RoboTwin-Platform/RoboTwin",
+  "archived": false
+ },
  "roboparty/ufo": {
   "id": 1299023861,
   "canonical": "Roboparty/UFO",
+  "archived": false
+ },
+ "roboparty/roboparty_deploy": {
+  "id": 1018383698,
+  "canonical": "Roboparty/roboparty_deploy",
   "archived": false
  },
  "roboparty/roboto_origin": {
@@ -829,9 +1539,19 @@
   "canonical": "Roboparty/roboto_origin",
   "archived": false
  },
+ "robotlocomotion/models": {
+  "id": 152971074,
+  "canonical": "RobotLocomotion/models",
+  "archived": false
+ },
  "robotisim/mobile_robotics_engineer": {
   "id": 712775291,
   "canonical": "Robotisim/mobile_robotics_engineer",
+  "archived": false
+ },
+ "robotnikautomation/robotnik_description": {
+  "id": 757340598,
+  "canonical": "RobotnikAutomation/robotnik_description",
   "archived": false
  },
  "runpeidong/humanup": {
@@ -839,9 +1559,29 @@
   "canonical": "RunpeiDong/HumanUP",
   "archived": false
  },
+ "russellcooper-djz/manbo-robot-dog": {
+  "id": 1082586896,
+  "canonical": "RussellCooper-DJZ/manbo-robot-dog",
+  "archived": false
+ },
+ "schunk-se-co-kg/schunk_description": {
+  "id": 805281593,
+  "canonical": "SCHUNK-SE-Co-KG/schunk_description",
+  "archived": false
+ },
+ "schunk-se-co-kg/schunk_svh_ros_driver": {
+  "id": 610710481,
+  "canonical": "SCHUNK-SE-Co-KG/schunk_svh_ros_driver",
+  "archived": false
+ },
  "sigrobotics-uiuc/lekiwi": {
   "id": 927393896,
   "canonical": "SIGRobotics-UIUC/LeKiwi",
+  "archived": false
+ },
+ "sra-vjti/sra-board-hardware-design": {
+  "id": 292762293,
+  "canonical": "SRA-VJTI/sra-board-hardware-design",
   "archived": false
  },
  "sustaina-op/sustaina-op": {
@@ -849,9 +1589,19 @@
   "canonical": "SUSTAINA-OP/SUSTAINA-OP",
   "archived": false
  },
+ "sysu-roboticslab/rapid-hand": {
+  "id": 1009023188,
+  "canonical": "SYSU-RoboticsLab/RAPID-Hand",
+  "archived": false
+ },
  "salman-h/pick-place-robot": {
   "id": 98006459,
   "canonical": "Salman-H/pick-place-robot",
+  "archived": false
+ },
+ "sayantani-bhattacharya/multi-hetero-agent-exploration-on-unitreegos": {
+  "id": 915112180,
+  "canonical": "Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs",
   "archived": false
  },
  "scalerf/quadrf": {
@@ -959,9 +1709,34 @@
   "canonical": "StephenCarlson/MiniHawk-VTOL",
   "archived": false
  },
+ "thmos2025/mos-9-open-source-humanoid-robot": {
+  "id": 1301645694,
+  "canonical": "THMOS2025/MOS-9-Open-Source-Humanoid-Robot",
+  "archived": false
+ },
+ "thudm/chatglm-6b": {
+  "id": 613349035,
+  "canonical": "zai-org/ChatGLM-6B",
+  "archived": false
+ },
+ "thudm/cogvlm2": {
+  "id": 798679341,
+  "canonical": "zai-org/CogVLM2",
+  "archived": false
+ },
+ "thudm/cogvideo": {
+  "id": 497512032,
+  "canonical": "zai-org/CogVideo",
+  "archived": false
+ },
  "tny-robotics/tny-360": {
   "id": 926473134,
   "canonical": "TNY-Robotics/TNY-360",
+  "archived": false
+ },
+ "tehseenhasan/4dof-3d-printed-robotic-arm": {
+  "id": 266107166,
+  "canonical": "TehseenHasan/4DOF-3D-Printed-Robotic-Arm",
   "archived": false
  },
  "telehuman/textop": {
@@ -969,9 +1744,44 @@
   "canonical": "TeleHuman/TextOp",
   "archived": false
  },
+ "tencent-hunyuan/hunyuan3d-2.1": {
+  "id": 1001565199,
+  "canonical": "Tencent-Hunyuan/Hunyuan3D-2.1",
+  "archived": false
+ },
+ "tencent-hunyuan/hunyuanvideo": {
+  "id": 895453957,
+  "canonical": "Tencent-Hunyuan/HunyuanVideo",
+  "archived": false
+ },
+ "tencent-hunyuan/hunyuanworld-1.0": {
+  "id": 1022300160,
+  "canonical": "Tencent-Hunyuan/HunyuanWorld-1.0",
+  "archived": false
+ },
  "tencent-roboticsx/lifelike-agility-and-play": {
   "id": 651483365,
   "canonical": "Tencent-RoboticsX/lifelike-agility-and-play",
+  "archived": false
+ },
+ "tencent/tencentos-tiny": {
+  "id": 203957456,
+  "canonical": "OpenAtomFoundation/TobudOS",
+  "archived": false
+ },
+ "tencent/ncnn": {
+  "id": 95879426,
+  "canonical": "Tencent/ncnn",
+  "archived": false
+ },
+ "tetheria/aero-hand-open": {
+  "id": 1071825013,
+  "canonical": "Chestnut-Robotics/aero-hand-open",
+  "archived": false
+ },
+ "thenoobinventor/akabot": {
+  "id": 641024784,
+  "canonical": "TheNoobInventor/akabot",
   "archived": false
  },
  "therobotstudio/dexhand": {
@@ -994,6 +1804,26 @@
   "canonical": "TheRobotStudio/V2_DexHand",
   "archived": false
  },
+ "timhanewich/centauri": {
+  "id": 1029975271,
+  "canonical": "TimHanewich/centauri",
+  "archived": false
+ },
+ "timpietrusky/lerobot.js": {
+  "id": 1002178952,
+  "canonical": "TimPietrusky/lerobot.js",
+  "archived": false
+ },
+ "tinker-twins/husky": {
+  "id": 521807770,
+  "canonical": "Tinker-Twins/Husky",
+  "archived": false
+ },
+ "tixiaoshan/lio-sam": {
+  "id": 276269866,
+  "canonical": "TixiaoShan/LIO-SAM",
+  "archived": false
+ },
  "toantech/py-apple-bldc-quadruped-robot": {
   "id": 338747406,
   "canonical": "ToanTech/py-apple-bldc-quadruped-robot",
@@ -1004,6 +1834,16 @@
   "canonical": "ToanTech/py-apple-quadruped-robot",
   "archived": false
  },
+ "tom-forsyth/lcpmotionplanner": {
+  "id": 524769046,
+  "canonical": "Tom-Forsyth/LCPMotionPlanner",
+  "archived": false
+ },
+ "tommyzihao/vlm_arm": {
+  "id": 804835727,
+  "canonical": "TommyZihao/vlm_arm",
+  "archived": false
+ },
  "tophillrobotics/quadruped-robot": {
   "id": 503285472,
   "canonical": "TopHillRobotics/quadruped-robot",
@@ -1012,6 +1852,11 @@
  "toyota/yubi-hw": {
   "id": 1235112588,
   "canonical": "Toyota/yubi-hw",
+  "archived": false
+ },
+ "triped-robot/trip_kinematics": {
+  "id": 350709377,
+  "canonical": "TriPed-Robot/trip_kinematics",
   "archived": false
  },
  "trossenrobotics/trossen_arm": {
@@ -1049,9 +1894,49 @@
   "canonical": "UMich-CURLY/deep-contact-estimator",
   "archived": false
  },
+ "unlinearity/urdf-visualizer": {
+  "id": 1122669660,
+  "canonical": "UNLINEARITY/URDF-Visualizer",
+  "archived": false
+ },
+ "ut-austin-rpl/prelude": {
+  "id": 533354945,
+  "canonical": "UT-Austin-RPL/PRELUDE",
+  "archived": false
+ },
+ "ut-austin-rpl/trill": {
+  "id": 669693944,
+  "canonical": "UT-Austin-RPL/TRILL",
+  "archived": false
+ },
+ "ut-austin-robin/telemoma": {
+  "id": 765939335,
+  "canonical": "UT-Austin-RobIn/telemoma",
+  "archived": false
+ },
+ "uwarg/hardware": {
+  "id": 391812628,
+  "canonical": "UWARG/hardware",
+  "archived": false
+ },
  "universalrobots/universal_robots_ros2_description": {
   "id": 438618920,
   "canonical": "UniversalRobots/Universal_Robots_ROS2_Description",
+  "archived": false
+ },
+ "vector-wangel/xlerobot": {
+  "id": 972979883,
+  "canonical": "Vector-Wangel/XLeRobot",
+  "archived": false
+ },
+ "vendning-machine-team/vending_machine_robot-hardware": {
+  "id": 1174009836,
+  "canonical": "Vendning-Machine-Team/Vending_Machine_Robot-Hardware",
+  "archived": false
+ },
+ "vinrobotics/vinrobotics_mjlab": {
+  "id": 1273083137,
+  "canonical": "VinRobotics/vinrobotics_mjlab",
   "archived": false
  },
  "violinlee/nodequad12-micropython": {
@@ -1059,9 +1944,44 @@
   "canonical": "ViolinLee/NodeQuad12-MicroPython",
   "archived": false
  },
+ "virgileboat/lerobot-humanoid-hardware": {
+  "id": 1222594618,
+  "canonical": "huggingface/lerobot-humanoid-hardware",
+  "archived": false
+ },
+ "virgileboat/lerobot-humanoid-runtime": {
+  "id": 1218766237,
+  "canonical": "huggingface/lerobot-humanoid-runtime",
+  "archived": false
+ },
+ "vishnu-kr/groot1publisher": {
+  "id": 1169295942,
+  "canonical": "Vishnu-Kr/Groot1Publisher",
+  "archived": false
+ },
  "vitrani/shadowtac": {
   "id": 929367789,
   "canonical": "Vitrani/ShadowTac",
+  "archived": false
+ },
+ "vorondesign/voron-0": {
+  "id": 253470610,
+  "canonical": "VoronDesign/Voron-0",
+  "archived": false
+ },
+ "vottivott/microduck-playground": {
+  "id": 1355071512,
+  "canonical": "Vottivott/microduck-playground",
+  "archived": false
+ },
+ "wpi-humanoid-robotics-lab/tough": {
+  "id": 117013719,
+  "canonical": "WPI-Humanoid-Robotics-Lab/tough",
+  "archived": false
+ },
+ "wan-video/wan2.1": {
+  "id": 938717878,
+  "canonical": "Wan-Video/Wan2.1",
   "archived": false
  },
  "wangwen-believer/biped-robot-project": {
@@ -1074,9 +1994,24 @@
   "canonical": "WooQi57/Helpful-Doggybot",
   "archived": false
  },
+ "x-square-robot/wall-x": {
+  "id": 1050222011,
+  "canonical": "X-Square-Robot/wall-x",
+  "archived": false
+ },
  "xrobots/robotx": {
   "id": 90650300,
   "canonical": "XRobots/RobotX",
+  "archived": false
+ },
+ "xenserobotics-ai/lerobot-xense": {
+  "id": 1051014705,
+  "canonical": "XenseRobotics-AI/lerobot-xense",
+  "archived": false
+ },
+ "xiaomimimo/mimo-embodied": {
+  "id": 1099638979,
+  "canonical": "XiaomiMiMo/MiMo-Embodied",
   "archived": false
  },
  "xinlang2019/awesome-wheeled-legged": {
@@ -1119,9 +2054,29 @@
   "canonical": "Yuexuan9/Tinker",
   "archived": false
  },
+ "zju-fast-lab/fast-drone-250": {
+  "id": 411304693,
+  "canonical": "ZJU-FAST-Lab/Fast-Drone-250",
+  "archived": false
+ },
+ "zju-fast-lab/gpa-teleoperation": {
+  "id": 406025647,
+  "canonical": "ZJU-FAST-Lab/GPA-Teleoperation",
+  "archived": false
+ },
+ "zju-fast-lab/ego-planner": {
+  "id": 262742958,
+  "canonical": "ZJU-FAST-Lab/ego-planner",
+  "archived": false
+ },
  "zhaomingxie/cassie_rl_env": {
   "id": 169455656,
   "canonical": "ZhaomingXie/cassie_rl_env",
+  "archived": false
+ },
+ "zhengyiluo/phc": {
+  "id": 705349904,
+  "canonical": "ZhengyiLuo/PHC",
   "archived": false
  },
  "zhengyiluo/pulse": {
@@ -1149,6 +2104,16 @@
   "canonical": "ZodiusInfuser/TrueWalkSimulator",
   "archived": false
  },
+ "a-doering/learning-inverse-kinematics": {
+  "id": 361199433,
+  "canonical": "a-doering/learning-inverse-kinematics",
+  "archived": false
+ },
+ "a-price/robotiq_arg85_description": {
+  "id": 35454621,
+  "canonical": "a-price/robotiq_arg85_description",
+  "archived": false
+ },
  "acodedog/legged-robots-manipulation": {
   "id": 773653288,
   "canonical": "aCodeDog/legged-robots-manipulation",
@@ -1159,9 +2124,24 @@
   "canonical": "aaedmusa/3D-Printed-Robot-Dog",
   "archived": false
  },
+ "aaedmusa/capstan-drive": {
+  "id": 806872659,
+  "canonical": "aaedmusa/Capstan-Drive",
+  "archived": false
+ },
+ "aaedmusa/openqdd-v1": {
+  "id": 656506070,
+  "canonical": "aaedmusa/OpenQDD-V1",
+  "archived": false
+ },
  "aaedmusa/tops": {
   "id": 671738813,
   "canonical": "aaedmusa/TOPS",
+  "archived": false
+ },
+ "abel-gr/warehouse-robot": {
+  "id": 344132660,
+  "canonical": "abel-gr/warehouse-robot",
   "archived": false
  },
  "abr/abr_control": {
@@ -1179,6 +2159,31 @@
   "canonical": "adham-elarabawy/open-quadruped",
   "archived": false
  },
+ "adityakamath/sts_hardware_interface": {
+  "id": 1124816614,
+  "canonical": "adityakamath/sts_hardware_interface",
+  "archived": false
+ },
+ "adubredu/digitrobot.jl": {
+  "id": 370631833,
+  "canonical": "adubredu/DigitRobot.jl",
+  "archived": false
+ },
+ "agilexrobotics/piper_ros": {
+  "id": 852054651,
+  "canonical": "agilexrobotics/piper_ros",
+  "archived": false
+ },
+ "ahadjawaid/lattice": {
+  "id": 1259409386,
+  "canonical": "ahadjawaid/lattice",
+  "archived": false
+ },
+ "ahadjawaid/lerobot": {
+  "id": 1029325889,
+  "canonical": "ahadjawaid/lerobot",
+  "archived": false
+ },
  "ai-boost/awesome-prompts": {
   "id": 745546184,
   "canonical": "ai-boost/awesome-prompts",
@@ -1187,6 +2192,11 @@
  "ai4ce/citywalker": {
   "id": 868718822,
   "canonical": "ai4ce/CityWalker",
+  "archived": false
+ },
+ "ajayre/jacktheripperbot": {
+  "id": 11793240,
+  "canonical": "ajayre/JacktheRipperBot",
   "archived": false
  },
  "akinami3/pybulletrobotics": {
@@ -1214,14 +2224,69 @@
   "canonical": "ali-pahlevani/Mobile_Robot_URDF_Maker",
   "archived": false
  },
+ "aliasrobotics/rvd": {
+  "id": 140867554,
+  "canonical": "aliasrobotics/RVD",
+  "archived": false
+ },
+ "alibaba-damo-academy/rynnbrain": {
+  "id": 1153216306,
+  "canonical": "alibaba-damo-academy/RynnBrain",
+  "archived": false
+ },
+ "alibaba-damo-academy/rynnvla-001": {
+  "id": 1033836568,
+  "canonical": "alibaba-damo-academy/RynnVLA-001",
+  "archived": false
+ },
+ "alibaba/mnn": {
+  "id": 181436799,
+  "canonical": "alibaba/MNN",
+  "archived": false
+ },
+ "almtzr/pedro3dfiles": {
+  "id": 740506788,
+  "canonical": "almtzr/Pedro3DFiles",
+  "archived": false
+ },
+ "ami-iit/awesome-urdf": {
+  "id": 424941534,
+  "canonical": "gbionics/awesome-urdf",
+  "archived": false
+ },
+ "amov-lab/prometheus": {
+  "id": 225547305,
+  "canonical": "amov-lab/Prometheus",
+  "archived": false
+ },
+ "ankurhanda/robot-assets": {
+  "id": 254945466,
+  "canonical": "ankurhanda/robot-assets",
+  "archived": false
+ },
  "anoochit/arduino-quadruped-robot": {
   "id": 48045617,
   "canonical": "anoochit/arduino-quadruped-robot",
   "archived": false
  },
+ "antdroid-hexapod/antdroid-hardware": {
+  "id": 30405163,
+  "canonical": "antdroid-hexapod/antdroid-hardware",
+  "archived": false
+ },
  "anujjain-dev/unitree-go2-ros2": {
   "id": 844243897,
   "canonical": "anujjain-dev/unitree-go2-ros2",
+  "archived": false
+ },
+ "apache/incubator-mxnet": {
+  "id": 34864402,
+  "canonical": "apache/mxnet",
+  "archived": true
+ },
+ "apache/tvm": {
+  "id": 70746484,
+  "canonical": "apache/tvm",
   "archived": false
  },
  "apexrl/awesome-rl-for-legged-locomotion": {
@@ -1249,6 +2314,11 @@
   "canonical": "arounamounchili/linkforge",
   "archived": false
  },
+ "artfulbytes/nsumo_hardware": {
+  "id": 376476917,
+  "canonical": "artfulbytes/nsumo_hardware",
+  "archived": false
+ },
  "ashtuchkin/vive-diy-position-sensor": {
   "id": 72387364,
   "canonical": "ashtuchkin/vive-diy-position-sensor",
@@ -1269,9 +2339,34 @@
   "canonical": "asu-iris/comfree_warp",
   "archived": false
  },
+ "atticusrussell/ros2_rpi_pwm_hardware_interface": {
+  "id": 645020236,
+  "canonical": "atticusrussell/ros2_rpi_pwm_hardware_interface",
+  "archived": false
+ },
+ "aubrune/reachy_description": {
+  "id": 282515341,
+  "canonical": "aubrune/reachy_description",
+  "archived": false
+ },
+ "automaticdai/arduino-yaoji": {
+  "id": 10613477,
+  "canonical": "automaticdai/arduino-yaoji",
+  "archived": true
+ },
  "automaticdai/awesome-robotics-ee-opensource": {
   "id": 305445528,
   "canonical": "automaticdai/awesome-robotics-ee-opensource",
+  "archived": false
+ },
+ "automaticdai/rpi-environmental-sensing": {
+  "id": 74073573,
+  "canonical": "automaticdai/rpi-environmental-sensing",
+  "archived": false
+ },
+ "automaticdai/rpi-object-detection": {
+  "id": 47143299,
+  "canonical": "automaticdai/rpi-object-detection",
   "archived": false
  },
  "automatika-robotics/emos": {
@@ -1294,9 +2389,44 @@
   "canonical": "autorope/donkeycar",
   "archived": false
  },
+ "baichuan-inc/baichuan2": {
+  "id": 685444668,
+  "canonical": "baichuan-inc/Baichuan2",
+  "archived": false
+ },
+ "bbokser/spryped": {
+  "id": 235253478,
+  "canonical": "bbokser/spryped",
+  "archived": false
+ },
+ "bcaine/maddux": {
+  "id": 55376587,
+  "canonical": "bcaine/maddux",
+  "archived": false
+ },
+ "bdaiinstitute/spot_description": {
+  "id": 920187983,
+  "canonical": "rai-opensource/spot_description",
+  "archived": false
+ },
+ "bharath5673/ros_ws": {
+  "id": 593607408,
+  "canonical": "bharath5673/ros_ws",
+  "archived": false
+ },
  "bheijden/bubblify": {
   "id": 1053285963,
   "canonical": "bheijden/bubblify",
+  "archived": false
+ },
+ "bianglibeyond/spotmicro-chinese": {
+  "id": 306519263,
+  "canonical": "bianglibeyond/spotMicro-Chinese",
+  "archived": false
+ },
+ "bitcraze/crazyflie-firmware": {
+  "id": 17058380,
+  "canonical": "bitcraze/crazyflie-firmware",
   "archived": false
  },
  "bitzhangcy/neural-pde-solver": {
@@ -1307,6 +2437,16 @@
  "bkevelham/unity-avatar-generation": {
   "id": 338689078,
   "canonical": "bkevelham/unity-avatar-generation",
+  "archived": false
+ },
+ "blackbox114/blacky": {
+  "id": 261704885,
+  "canonical": "blackbox114/Blacky",
+  "archived": false
+ },
+ "blanboom/nixieclock": {
+  "id": 23046257,
+  "canonical": "blanboom/NixieClock",
   "archived": false
  },
  "bostoncleek/quadruped_control": {
@@ -1324,9 +2464,19 @@
   "canonical": "bourumir-wyngs/serde-saphyr",
   "archived": false
  },
+ "boxer-cpr/boxer": {
+  "id": 426007835,
+  "canonical": "boxer-cpr/boxer",
+  "archived": false
+ },
  "bpodgursky/jbool_expressions": {
   "id": 8529745,
   "canonical": "bpodgursky/jbool_expressions",
+  "archived": false
+ },
+ "brenocq/atta": {
+  "id": 265389469,
+  "canonical": "brenocq/atta",
   "archived": false
  },
  "bridgedp/hunter_bipedal_control": {
@@ -1339,9 +2489,24 @@
   "canonical": "britcruise9/GrowBot",
   "archived": false
  },
+ "brukg/so_arm_100_hardware": {
+  "id": 924934320,
+  "canonical": "brukg/so_arm_100_hardware",
+  "archived": false
+ },
  "brysonjones/multitask_dit_policy": {
   "id": 1103378933,
   "canonical": "brysonjones/multitask_dit_policy",
+  "archived": false
+ },
+ "bulletphysics/bullet3": {
+  "id": 1605598,
+  "canonical": "bulletphysics/bullet3",
+  "archived": false
+ },
+ "bxirobotics/robot_models": {
+  "id": 956960050,
+  "canonical": "bxirobotics/robot_descriptions",
   "archived": false
  },
  "bytedance/deer-flow": {
@@ -1364,14 +2529,29 @@
   "canonical": "ccrpRepo/robot_retargeter",
   "archived": false
  },
+ "chapulina/dolly": {
+  "id": 177352675,
+  "canonical": "chapulina/dolly",
+  "archived": false
+ },
  "chauby/bipedalwalkingrobots": {
   "id": 313916150,
   "canonical": "chauby/BipedalWalkingRobots",
   "archived": false
  },
+ "chengruiz/quadrupedrl": {
+  "id": 426594417,
+  "canonical": "chengruiz/QuadrupedRL",
+  "archived": false
+ },
  "chengxuxin/expressive-humanoid": {
   "id": 828673273,
   "canonical": "chengxuxin/expressive-humanoid",
+  "archived": false
+ },
+ "chengxuxin/extreme-parkour": {
+  "id": 696876161,
+  "canonical": "chengxuxin/extreme-parkour",
   "archived": false
  },
  "chinmaynehate/venom": {
@@ -1389,14 +2569,49 @@
   "canonical": "chvmp/robots",
   "archived": false
  },
+ "coelacant1/opendact": {
+  "id": 41754063,
+  "canonical": "coelacant1/OpenDACT",
+  "archived": false
+ },
+ "colcon/colcon-hardware-acceleration": {
+  "id": 388415306,
+  "canonical": "colcon/colcon-hardware-acceleration",
+  "archived": false
+ },
+ "conroy-cheers/hexapod_kinematics": {
+  "id": 397240245,
+  "canonical": "conroy-cheers/hexapod_kinematics",
+  "archived": false
+ },
  "curieuxjy/awesome_quadrupedal_robots": {
   "id": 417322802,
   "canonical": "curieuxjy/Awesome_Quadrupedal_Robots",
   "archived": false
  },
+ "curieuxjy/go2_dreamwaq": {
+  "id": 843814702,
+  "canonical": "curieuxjy/go2_dreamwaq",
+  "archived": false
+ },
+ "cyberbotics/epuck_ros2": {
+  "id": 241296751,
+  "canonical": "cyberbotics/epuck_ros2",
+  "archived": false
+ },
  "cyberbotics/pyikfast": {
   "id": 313993697,
   "canonical": "cyberbotics/pyikfast",
+  "archived": false
+ },
+ "cyberbotics/wrestling": {
+  "id": 454443408,
+  "canonical": "cyberbotics/wrestling",
+  "archived": false
+ },
+ "cypypccpy/isaac-manipularl": {
+  "id": 414135548,
+  "canonical": "cypypccpy/Isaac-ManipulaRL",
   "archived": false
  },
  "danderfer/comp_sci_sem_2": {
@@ -1414,9 +2629,39 @@
   "canonical": "darshmenon/UR3_ROS2_PICK_AND_PLACE",
   "archived": false
  },
+ "david-dorf/perseverance-ingenuity-urdfs": {
+  "id": 927826452,
+  "canonical": "david-dorf/perseverance-ingenuity-urdfs",
+  "archived": false
+ },
+ "deepmind/mujoco_menagerie": {
+  "id": 532854029,
+  "canonical": "google-deepmind/mujoco_menagerie",
+  "archived": false
+ },
+ "deepseek-ai/deepseek-r1": {
+  "id": 919443098,
+  "canonical": "deepseek-ai/DeepSeek-R1",
+  "archived": false
+ },
+ "deepseek-ai/deepseek-v3": {
+  "id": 908531752,
+  "canonical": "deepseek-ai/DeepSeek-V3",
+  "archived": false
+ },
+ "deepseek-ai/janus": {
+  "id": 874559208,
+  "canonical": "deepseek-ai/Janus",
+  "archived": false
+ },
  "delftopenhardware/awesome-open-hardware": {
   "id": 441230859,
   "canonical": "delftopenhardware/awesome-open-hardware",
+  "archived": false
+ },
+ "deltarobotone/hardware_parts": {
+  "id": 192122559,
+  "canonical": "deltarobotone/hardware_parts",
   "archived": false
  },
  "deltaxrobot/delta-x-3d-printed-parts": {
@@ -1439,6 +2684,21 @@
   "canonical": "dfki-ric/phobos",
   "archived": false
  },
+ "dingo-cpr/dingo": {
+  "id": 286526640,
+  "canonical": "dingo-cpr/dingo",
+  "archived": false
+ },
+ "dji-sdk/tello-python": {
+  "id": 139931861,
+  "canonical": "dji-sdk/Tello-Python",
+  "archived": false
+ },
+ "dora-rs/dora": {
+  "id": 460615268,
+  "canonical": "dora-rs/dora",
+  "archived": false
+ },
  "dorianborian/sesame-robot": {
   "id": 1101481970,
   "canonical": "dorianborian/sesame-robot",
@@ -1447,6 +2707,11 @@
  "dorna-robotics/dorna": {
   "id": 152176891,
   "canonical": "dorna-robotics/dorna",
+  "archived": false
+ },
+ "droid-dataset/droid": {
+  "id": 772166631,
+  "canonical": "droid-dataset/droid",
   "archived": false
  },
  "dstx123/unitree_rl": {
@@ -1469,6 +2734,11 @@
   "canonical": "earthtojake/text-to-cad",
   "archived": false
  },
+ "easyw/manipulator": {
+  "id": 105539122,
+  "canonical": "easyw/Manipulator",
+  "archived": false
+ },
  "eivindbohler/tinyllama": {
   "id": 451106326,
   "canonical": "eivindbohler/tinyllama",
@@ -1489,6 +2759,11 @@
   "canonical": "elephantrobotics/mycobot_ros",
   "archived": false
  },
+ "elevenmiles/robotic_arm_seven": {
+  "id": 1188832472,
+  "canonical": "elevenMiles/Robotic_Arm_Seven",
+  "archived": false
+ },
  "elggem/dagor_biped_hardware": {
   "id": 339016048,
   "canonical": "elggem/dagor_biped_hardware",
@@ -1499,9 +2774,24 @@
   "canonical": "elijah-waichong-chan/go2-convex-mpc",
   "archived": false
  },
+ "em0sh/ondroid": {
+  "id": 815157427,
+  "canonical": "em0sh/ondroid",
+  "archived": false
+ },
  "enactic/openarm": {
   "id": 864777463,
   "canonical": "enactic/openarm",
+  "archived": false
+ },
+ "engcang/trot-q": {
+  "id": 449263531,
+  "canonical": "engcang/TROT-Q",
+  "archived": false
+ },
+ "engineai-robotics/engineai_humanoid": {
+  "id": 856741038,
+  "canonical": "engineai-robotics/engineai_humanoid",
   "archived": false
  },
  "epfl-lasa/ridgeback_ur5_controller": {
@@ -1513,6 +2803,16 @@
   "id": 241151153,
   "canonical": "esa-prl/ExoMy",
   "archived": true
+ },
+ "espressif/esp-idf": {
+  "id": 65899476,
+  "canonical": "espressif/esp-idf",
+  "archived": false
+ },
+ "eth-siplab/egoexomocap": {
+  "id": 1278474760,
+  "canonical": "eth-siplab/EgoExoMoCap",
+  "archived": false
  },
  "ethz-adrl/towr": {
   "id": 117434408,
@@ -1529,6 +2829,21 @@
   "canonical": "evyatarmeged/Humanoid",
   "archived": false
  },
+ "f1tenth/f1tenth_system": {
+  "id": 227050301,
+  "canonical": "f1tenth/f1tenth_system",
+  "archived": false
+ },
+ "facebookarchive/caffe2": {
+  "id": 38066334,
+  "canonical": "facebookarchive/caffe2",
+  "archived": true
+ },
+ "facebookresearch/differentiable-robot-model": {
+  "id": 300462600,
+  "canonical": "facebookresearch/differentiable-robot-model",
+  "archived": true
+ },
  "fan-ziqi/rl_sar": {
   "id": 767986837,
   "canonical": "fan-ziqi/rl_sar",
@@ -1544,6 +2859,11 @@
   "canonical": "fazildgr8/realsense_explorer_bot",
   "archived": false
  },
+ "ferasboulala/five-dof-robot-arm": {
+  "id": 103861687,
+  "canonical": "ferasboulala/five-dof-robot-arm",
+  "archived": false
+ },
  "ferrolho/rotary-inverted-pendulum": {
   "id": 799462853,
   "canonical": "ferrolho/rotary-inverted-pendulum",
@@ -1554,9 +2874,24 @@
   "canonical": "fiveages-sim/robot_descriptions",
   "archived": false
  },
+ "flexivrobotics/flexiv_description": {
+  "id": 1100278081,
+  "canonical": "flexivrobotics/flexiv_description",
+  "archived": false
+ },
  "fractalrobotics/fractal-5-pro": {
   "id": 999134645,
   "canonical": "fractalrobotics/Fractal-5-Pro",
+  "archived": false
+ },
+ "francescovezzi/quadruped-springs": {
+  "id": 577845755,
+  "canonical": "francescovezzi/quadruped-springs",
+  "archived": false
+ },
+ "francisc0garcia/braccio_camai": {
+  "id": 187345071,
+  "canonical": "francisc0garcia/braccio_camai",
   "archived": false
  },
  "frankaemika/franka_ros": {
@@ -1569,6 +2904,11 @@
   "canonical": "frankarobotics/franka_ros2",
   "archived": false
  },
+ "fundamentalvision/bevformer": {
+  "id": 475869888,
+  "canonical": "fundamentalvision/BEVFormer",
+  "archived": false
+ },
  "fuwei007/navbot-en01": {
   "id": 956287508,
   "canonical": "fuwei007/Navbot-EN01",
@@ -1579,6 +2919,16 @@
   "canonical": "gaiyi7788/awesome-legged-locomotion-learning",
   "archived": false
  },
+ "gaoxiang12/slambook2": {
+  "id": 145275555,
+  "canonical": "gaoxiang12/slambook2",
+  "archived": false
+ },
+ "gazebosim/gz-rviz": {
+  "id": 243482979,
+  "canonical": "gazebosim/gz-rviz",
+  "archived": false
+ },
  "gbionics/awesome-urdf": {
   "id": 424941534,
   "canonical": "gbionics/awesome-urdf",
@@ -1587,6 +2937,11 @@
  "gbionics/bipedal-locomotion-framework": {
   "id": 224706442,
   "canonical": "gbionics/bipedal-locomotion-framework",
+  "archived": false
+ },
+ "gbionics/gb-robot-models": {
+  "id": 1280107294,
+  "canonical": "gbionics/gb-robot-models",
   "archived": false
  },
  "gbionics/human-gazebo": {
@@ -1609,14 +2964,39 @@
   "canonical": "generalroboticslab/DukeHumanoidv1",
   "archived": false
  },
+ "generalroboticslab/dukehumanoidhardwarecontrol": {
+  "id": 762494503,
+  "canonical": "generalroboticslab/dukeHumanoidHardwareControl",
+  "archived": false
+ },
+ "ger01d/kinematic-model-opencat": {
+  "id": 339164375,
+  "canonical": "ger01d/kinematic-model-opencat",
+  "archived": false
+ },
+ "ger01d/opencat-gym": {
+  "id": 353455451,
+  "canonical": "ger01d/opencat-gym",
+  "archived": false
+ },
  "gezp/universal_robot_ign": {
   "id": 325754641,
   "canonical": "gezp/universal_robot_ign",
   "archived": false
  },
+ "gkjohnson/nasa-urdf-robots": {
+  "id": 135928025,
+  "canonical": "gkjohnson/nasa-urdf-robots",
+  "archived": false
+ },
  "glumb/mrc": {
   "id": 87812134,
   "canonical": "glumb/mrc",
+  "archived": false
+ },
+ "gokulp01/meta-qlearning-humanoid": {
+  "id": 675464651,
+  "canonical": "gokulp01/meta-qlearning-humanoid",
   "archived": false
  },
  "golaced/omnibotseries-tinker": {
@@ -1649,14 +3029,39 @@
   "canonical": "google-deepmind/mujoco_playground",
   "archived": false
  },
+ "google-deepmind/open_x_embodiment": {
+  "id": 707547956,
+  "canonical": "google-deepmind/open_x_embodiment",
+  "archived": false
+ },
  "graiola/wolf-setup": {
   "id": 266441416,
   "canonical": "graiola/wolf-setup",
   "archived": false
  },
+ "graspnet/anygrasp_sdk": {
+  "id": 571926051,
+  "canonical": "graspnet/anygrasp_sdk",
+  "archived": false
+ },
+ "grassjelly/cheetah-algorithms": {
+  "id": 193311540,
+  "canonical": "grassjelly/cheetah-algorithms",
+  "archived": false
+ },
  "grassjelly/onine": {
   "id": 101564755,
   "canonical": "grassjelly/onine",
+  "archived": false
+ },
+ "guidoschillaci/underwater-drone": {
+  "id": 111101233,
+  "canonical": "guidoschillaci/underwater-drone",
+  "archived": false
+ },
+ "gundam-global-challenge/gundam_robot": {
+  "id": 174115505,
+  "canonical": "gundam-global-challenge/gundam_robot",
   "archived": false
  },
  "gunthercox/salvius": {
@@ -1669,9 +3074,19 @@
   "canonical": "guohuadeng/app-odoo",
   "archived": false
  },
+ "guoyww/animatediff": {
+  "id": 654930782,
+  "canonical": "guoyww/AnimateDiff",
+  "archived": false
+ },
  "hackclub/blot": {
   "id": 583590537,
   "canonical": "hackclub/blot",
+  "archived": false
+ },
+ "haosulab/maniskill": {
+  "id": 520357130,
+  "canonical": "mani-skill/ManiSkill",
   "archived": false
  },
  "haozhang04/leggedskilldeploy": {
@@ -1719,6 +3134,11 @@
   "canonical": "hello-robot/stretch_firmware",
   "archived": false
  },
+ "hello-robot/stretch_ros": {
+  "id": 271383659,
+  "canonical": "hello-robot/stretch_ros",
+  "archived": false
+ },
  "hello-robot/stretch_ros2": {
   "id": 406228757,
   "canonical": "hello-robot/stretch_ros2",
@@ -1729,9 +3149,24 @@
   "canonical": "henriksod/Fabrik2DArduino",
   "archived": false
  },
+ "hibiscus22/openhardwareagv": {
+  "id": 331934856,
+  "canonical": "hibiscus22/OpenHardwareAGV",
+  "archived": false
+ },
  "hidro-iri/borinot": {
   "id": 686005295,
   "canonical": "hidro-iri/Borinot",
+  "archived": false
+ },
+ "hku-mars/fast-livo2": {
+  "id": 790197987,
+  "canonical": "hku-mars/FAST-LIVO2",
+  "archived": false
+ },
+ "hku-mars/fast_lio": {
+  "id": 303308200,
+  "canonical": "hku-mars/FAST_LIO",
   "archived": false
  },
  "hku-mars/liv_handhold_2": {
@@ -1749,6 +3184,16 @@
   "canonical": "hku-mars/UMI-3D",
   "archived": false
  },
+ "hku-mars/r3live": {
+  "id": 404724835,
+  "canonical": "hku-mars/r3live",
+  "archived": false
+ },
+ "hofbi/telecarla": {
+  "id": 270957585,
+  "canonical": "hofbi/telecarla",
+  "archived": false
+ },
  "hoilc/scoop-lemon": {
   "id": 280706885,
   "canonical": "hoilc/scoop-lemon",
@@ -1759,9 +3204,19 @@
   "canonical": "hongsukchoi/VideoMimic",
   "archived": false
  },
+ "hopkira/k9": {
+  "id": 445570505,
+  "canonical": "hopkira/k9",
+  "archived": false
+ },
  "hshi74/toddlerbot": {
   "id": 926431156,
   "canonical": "hshi74/toddlerbot",
+  "archived": false
+ },
+ "hucebot/g1pilot": {
+  "id": 998887473,
+  "canonical": "hucebot/g1pilot",
   "archived": false
  },
  "huggingface/lerobot": {
@@ -1794,14 +3249,44 @@
   "canonical": "humancomputerlab/LeLamp",
   "archived": false
  },
+ "humanoidintelligence/ei-beginner": {
+  "id": 1115555100,
+  "canonical": "humanoidintelligence/EI-Beginner",
+  "archived": false
+ },
  "husarion/rosbot_ros": {
   "id": 128059220,
   "canonical": "husarion/rosbot_ros",
   "archived": false
  },
+ "husky/husky": {
+  "id": 32733110,
+  "canonical": "husky/husky",
+  "archived": false
+ },
+ "hustvl/diffusiondrive": {
+  "id": 888803834,
+  "canonical": "hustvl/DiffusionDrive",
+  "archived": false
+ },
  "hyparxis/gym-cassie": {
   "id": 161083343,
   "canonical": "hyparxis/gym-cassie",
+  "archived": false
+ },
+ "ianathompson/edo_description": {
+  "id": 139092027,
+  "canonical": "ianathompson/eDO_description",
+  "archived": false
+ },
+ "icub-tech-iit/ergocub-software": {
+  "id": 554302047,
+  "canonical": "mesh-iit/ergocub-software",
+  "archived": false
+ },
+ "igor-lirussi/capabot-sanbot-robot": {
+  "id": 321759397,
+  "canonical": "igor-lirussi/CapaBot-SanBot-Robot",
   "archived": false
  },
  "ihmcrobotics/ihmc-open-robotics-software": {
@@ -1829,6 +3314,11 @@
   "canonical": "iit-DLSLab/gym-quadruped",
   "archived": false
  },
+ "iit-dlslab/mpx": {
+  "id": 901755851,
+  "canonical": "iit-DLSLab/mpx",
+  "archived": false
+ },
  "iit-dlslab/muse": {
   "id": 862255933,
   "canonical": "iit-DLSLab/muse",
@@ -1849,6 +3339,51 @@
   "canonical": "inspirai/MetalHead",
   "archived": false
  },
+ "intelligent-soft-robots/ball_launcher_hardware": {
+  "id": 534271775,
+  "canonical": "intelligent-soft-robots/ball_launcher_hardware",
+  "archived": false
+ },
+ "introlab/opentera": {
+  "id": 168543624,
+  "canonical": "introlab/opentera",
+  "archived": false
+ },
+ "introlab/opentera-webrtc-ros": {
+  "id": 327394865,
+  "canonical": "introlab/opentera-webrtc-ros",
+  "archived": false
+ },
+ "introlab/securbot": {
+  "id": 167011460,
+  "canonical": "introlab/securbot",
+  "archived": false
+ },
+ "iory/scikit-robot": {
+  "id": 172605620,
+  "canonical": "iory/scikit-robot",
+  "archived": false
+ },
+ "iotdesignshop/dexhand-mechanical-build": {
+  "id": 671979134,
+  "canonical": "iotdesignshop/dexhand-mechanical-build",
+  "archived": false
+ },
+ "iotdesignshop/dexhand_description": {
+  "id": 689657680,
+  "canonical": "iotdesignshop/dexhand_description",
+  "archived": false
+ },
+ "isaac-sim/isaaclab": {
+  "id": 567038244,
+  "canonical": "isaac-sim/IsaacLab",
+  "archived": false
+ },
+ "isaac-sim/isaacsim": {
+  "id": 992179916,
+  "canonical": "isaac-sim/IsaacSim",
+  "archived": false
+ },
  "isaac-sim2real/sage": {
   "id": 1050922965,
   "canonical": "isaac-sim2real/sage",
@@ -1857,6 +3392,11 @@
  "isl-org/openbot": {
   "id": 283999274,
   "canonical": "ob-f/OpenBot",
+  "archived": false
+ },
+ "isri-aist/baselinefootstepplanner": {
+  "id": 527554772,
+  "canonical": "isri-aist/BaselineFootstepPlanner",
   "archived": false
  },
  "isri-aist/baselinewalkingcontroller": {
@@ -1869,9 +3409,29 @@
   "canonical": "isri-aist/CentroidalControlCollection",
   "archived": false
  },
+ "isri-aist/jvrc_mj_description": {
+  "id": 406629031,
+  "canonical": "isri-aist/jvrc_mj_description",
+  "archived": false
+ },
  "izabellalbuquerque/free-courses": {
   "id": 1014479729,
   "canonical": "izabellalbuquerque/Free-Courses",
+  "archived": false
+ },
+ "jackal/jackal": {
+  "id": 18222915,
+  "canonical": "jackal/jackal",
+  "archived": false
+ },
+ "jackvial/assembler0": {
+  "id": 1043306952,
+  "canonical": "jackvial/assembler0",
+  "archived": false
+ },
+ "jacobsayono/6dof-kinematic": {
+  "id": 614416309,
+  "canonical": "jacobsayono/6dof-kinematic",
   "archived": false
  },
  "jadechoghari/roomi": {
@@ -1889,6 +3449,11 @@
   "canonical": "jamro/tiny-engineer",
   "archived": false
  },
+ "jangtrinh/design-os-3d-blender": {
+  "id": 1358657723,
+  "canonical": "jangtrinh/design-os-3d-blender",
+  "archived": false
+ },
  "javascriptdata/danfojs": {
   "id": 263751330,
   "canonical": "javascriptdata/danfojs",
@@ -1899,9 +3464,39 @@
   "canonical": "jaykorea/Isaac-RL-Two-wheel-Legged-Bot",
   "archived": false
  },
+ "jdgalviss/jetbot-ros2": {
+  "id": 317543507,
+  "canonical": "jdgalviss/jetbot-ros2",
+  "archived": false
+ },
+ "jegor377/proceduralwalk": {
+  "id": 376931345,
+  "canonical": "jegor377/ProceduralWalk",
+  "archived": false
+ },
  "jess-moss/koch-v1-1": {
   "id": 830731356,
   "canonical": "jess-moss/koch-v1-1",
+  "archived": false
+ },
+ "jewel-nath/robot-blueberry": {
+  "id": 358488589,
+  "canonical": "jewel-nath/robot-blueberry",
+  "archived": false
+ },
+ "jewel-nath/robot-niko": {
+  "id": 485064665,
+  "canonical": "jewel-nath/robot-niko",
+  "archived": false
+ },
+ "jhu-dvrk/sawintuitiveresearchkit": {
+  "id": 18154725,
+  "canonical": "jhu-dvrk/sawIntuitiveResearchKit",
+  "archived": false
+ },
+ "jhu-lcsr-attic/bhand_model": {
+  "id": 11130796,
+  "canonical": "jhu-lcsr-attic/bhand_model",
   "archived": false
  },
  "jhu-lcsr/handeye_calib_camodocal": {
@@ -1924,6 +3519,21 @@
   "canonical": "jindadu00/legged_robot_competition",
   "archived": false
  },
+ "jkaniuka/magician_ros2": {
+  "id": 701095579,
+  "canonical": "jkaniuka/magician_ros2",
+  "archived": false
+ },
+ "joansalasoler/gscrib": {
+  "id": 957059576,
+  "canonical": "joansalasoler/gscrib",
+  "archived": false
+ },
+ "joeymeyer/raspberryturk": {
+  "id": 84401380,
+  "canonical": "joeymeyer/raspberryturk",
+  "archived": false
+ },
  "johnzhang3/slomo": {
   "id": 632051228,
   "canonical": "johnzhang3/SLoMo",
@@ -1942,6 +3552,11 @@
  "jrapudg/rtwholebodymppi": {
   "id": 858387888,
   "canonical": "jrapudg/RTWholeBodyMPPI",
+  "archived": false
+ },
+ "jrl-umi3218/pepper_description": {
+  "id": 288070562,
+  "canonical": "jrl-umi3218/pepper_description",
   "archived": false
  },
  "jsk-ros-pkg/solidworks_urdf_exporter2": {
@@ -1964,6 +3579,16 @@
   "canonical": "jurmy24/mechaverse",
   "archived": false
  },
+ "juruobenruo/dexvla": {
+  "id": 931906769,
+  "canonical": "juruobenruo/DexVLA",
+  "archived": false
+ },
+ "justlovescience/mks-xdrive-mini": {
+  "id": 1085109628,
+  "canonical": "justlovescience/MKS-XDRIVE-MINI",
+  "archived": false
+ },
  "kallaspriit/rosbot": {
   "id": 379569620,
   "canonical": "kallaspriit/rosbot",
@@ -1977,6 +3602,21 @@
  "kitspace/awesome-electronics": {
   "id": 64177015,
   "canonical": "kitspace/awesome-electronics",
+  "archived": false
+ },
+ "knorth55/eus_vive": {
+  "id": 188592281,
+  "canonical": "knorth55/eus_vive",
+  "archived": false
+ },
+ "kpaonaut/exoskeletonforkids": {
+  "id": 109163412,
+  "canonical": "kpaonaut/ExoskeletonForKids",
+  "archived": false
+ },
+ "kralf/blender-urdf": {
+  "id": 29591780,
+  "canonical": "kralf/blender-urdf",
   "archived": false
  },
  "kscalelabs/kbot": {
@@ -1994,9 +3634,34 @@
   "canonical": "kscalelabs/ksim",
   "archived": false
  },
+ "kyamashita5/robotrace_course_cad": {
+  "id": 1254751036,
+  "canonical": "kyamashita5/robotrace_course_cad",
+  "archived": false
+ },
  "kydlikebtc/awesome-grokbot": {
   "id": 1353051646,
   "canonical": "kydlikebtc/awesome-grokbot",
+  "archived": false
+ },
+ "laas/simple_humanoid_description": {
+  "id": 68588833,
+  "canonical": "laas/simple_humanoid_description",
+  "archived": false
+ },
+ "lazervel/data": {
+  "id": 874633666,
+  "canonical": "lazervel/data",
+  "archived": false
+ },
+ "lbr-stack/lbr_fri_ros2_stack": {
+  "id": 224664015,
+  "canonical": "lbr-stack/lbr_fri_ros2_stack",
+  "archived": false
+ },
+ "lbr-stack/pyfri": {
+  "id": 634594119,
+  "canonical": "lbr-stack/pyfri",
   "archived": false
  },
  "ldt29/haic": {
@@ -2004,9 +3669,24 @@
   "canonical": "ldt29/HAIC",
   "archived": false
  },
+ "leandromoreira/resty-bakery": {
+  "id": 293943120,
+  "canonical": "leandromoreira/resty-bakery",
+  "archived": false
+ },
  "leap-hand/leap_hand_api": {
   "id": 681726939,
   "canonical": "leap-hand/LEAP_Hand_API",
+  "archived": false
+ },
+ "leap-hand/leap_hand_sim": {
+  "id": 690100134,
+  "canonical": "leap-hand/LEAP_Hand_Sim",
+  "archived": false
+ },
+ "legalaspro/robokin": {
+  "id": 1198916071,
+  "canonical": "legalaspro/robokin",
   "archived": false
  },
  "legged-robots-that-balance/-legged-robots-that-balance-": {
@@ -2034,14 +3714,29 @@
   "canonical": "leggedrobotics/legged_gym",
   "archived": false
  },
+ "leggedrobotics/ocs2_robotic_assets": {
+  "id": 475126045,
+  "canonical": "leggedrobotics/ocs2_robotic_assets",
+  "archived": false
+ },
  "leggedrobotics/pace-sim2real": {
   "id": 1051165000,
   "canonical": "leggedrobotics/pace-sim2real",
   "archived": false
  },
+ "leggedrobotics/radiance_field_ros": {
+  "id": 830942095,
+  "canonical": "leggedrobotics/radiance_field_ros",
+  "archived": false
+ },
  "leggedrobotics/rsl_rl": {
   "id": 418503284,
   "canonical": "leggedrobotics/rsl_rl",
+  "archived": false
+ },
+ "leggedrobotics/urdf2robcogen": {
+  "id": 159849145,
+  "canonical": "leggedrobotics/urdf2robcogen",
   "archived": false
  },
  "leggedrobotics/vitruvio": {
@@ -2064,9 +3759,49 @@
   "canonical": "legubiao/quadruped_ros2_control",
   "archived": false
  },
+ "lge-ros2/cloisim_ros": {
+  "id": 257223917,
+  "canonical": "lge-ros2/cloisim_ros",
+  "archived": false
+ },
+ "liaochikon/alto-3d-printed-6-axis-robotic-arm": {
+  "id": 778740705,
+  "canonical": "liaochikon/ALTO-3D-Printed-6-Axis-Robotic-Arm",
+  "archived": false
+ },
+ "lihuang3/ur3_ros-hardware": {
+  "id": 128545486,
+  "canonical": "lihuang3/ur3_ROS-hardware",
+  "archived": false
+ },
+ "limxdynamics/humanoid-description": {
+  "id": 978715435,
+  "canonical": "limxdynamics/humanoid-description",
+  "archived": false
+ },
+ "limxdynamics/robot-description": {
+  "id": 800828236,
+  "canonical": "limxdynamics/tron1-robot-description",
+  "archived": false
+ },
  "limxdynamics/tron1-mujoco-sim": {
   "id": 845894207,
   "canonical": "limxdynamics/tron1-mujoco-sim",
+  "archived": false
+ },
+ "limxdynamics/tron1-robot-description": {
+  "id": 800828236,
+  "canonical": "limxdynamics/tron1-robot-description",
+  "archived": false
+ },
+ "limxdynamics/tron2-robot-description": {
+  "id": 1236103493,
+  "canonical": "limxdynamics/tron2-robot-description",
+  "archived": false
+ },
+ "limxdynamics/tron2_openpi": {
+  "id": 1300639609,
+  "canonical": "limxdynamics/tron2_openpi",
   "archived": false
  },
  "linchangyi1/9dtact": {
@@ -2094,6 +3829,21 @@
   "canonical": "linyongxinhio/Six-legged-Robot",
   "archived": false
  },
+ "lipzh5/vividface": {
+  "id": 1146929996,
+  "canonical": "lipzh5/VividFace",
+  "archived": false
+ },
+ "lipzh5/x2cnet": {
+  "id": 980600685,
+  "canonical": "lipzh5/X2CNet",
+  "archived": false
+ },
+ "livekit/portal": {
+  "id": 1212864461,
+  "canonical": "livekit/portal",
+  "archived": false
+ },
  "liyiteng/am-arm": {
   "id": 1218889923,
   "canonical": "liyiteng/AM-ARM",
@@ -2102,6 +3852,11 @@
  "liyiteng/alohamini": {
   "id": 1088881030,
   "canonical": "liyiteng/AlohaMini",
+  "archived": false
+ },
+ "lllyasviel/controlnet": {
+  "id": 595893961,
+  "canonical": "lllyasviel/ControlNet",
   "archived": false
  },
  "lnotspotl/notspot_sim_py": {
@@ -2132,6 +3887,11 @@
  "lupinjia/leggedgym-ex": {
   "id": 906514310,
   "canonical": "lupinjia/LeggedGym-Ex",
+  "archived": false
+ },
+ "lvjonok/skydio_x2_description": {
+  "id": 740944339,
+  "canonical": "lvjonok/skydio_x2_description",
   "archived": false
  },
  "makerforgetech/modular-biped": {
@@ -2174,9 +3934,19 @@
   "canonical": "manumerous/wb_humanoid_mpc",
   "archived": false
  },
+ "marcoesposito1988/easy_handeye2": {
+  "id": 384832602,
+  "canonical": "marcoesposito1988/easy_handeye2",
+  "archived": false
+ },
  "marmotlab/apex": {
   "id": 1000160638,
   "canonical": "marmotlab/APEX",
+  "archived": false
+ },
+ "mateusmenezes95/axebot": {
+  "id": 561060821,
+  "canonical": "mateusmenezes95/axebot",
   "archived": false
  },
  "matheecs/ocs2_legged_robot_notes": {
@@ -2184,9 +3954,39 @@
   "canonical": "matheecs/ocs2_legged_robot_notes",
   "archived": false
  },
+ "mathieu-celerier/kinova_mj_description": {
+  "id": 539901250,
+  "canonical": "mathieu-celerier/kinova_mj_description",
+  "archived": false
+ },
+ "mattions/pedro": {
+  "id": 140734099,
+  "canonical": "mattions/pedro",
+  "archived": false
+ },
+ "mavlink/qgroundcontrol": {
+  "id": 2567844,
+  "canonical": "mavlink/qgroundcontrol",
+  "archived": false
+ },
+ "maximilienroberti/lerobotdepot": {
+  "id": 950867682,
+  "canonical": "maximilienroberti/lerobotdepot",
+  "archived": false
+ },
  "maxvfischer/diy-cnc-machine": {
   "id": 376202591,
   "canonical": "maxvfischer/DIY-CNC-machine",
+  "archived": false
+ },
+ "med-air/surrol": {
+  "id": 390250875,
+  "canonical": "med-air/SurRoL",
+  "archived": false
+ },
+ "mees/calvin": {
+  "id": 387839793,
+  "canonical": "mees/calvin",
   "archived": false
  },
  "mekion/the-bimo-project": {
@@ -2204,6 +4004,11 @@
   "canonical": "menloresearch/asimov-v0",
   "archived": false
  },
+ "methyldragon/teleop_twist_keyboard_cpp": {
+  "id": 141987433,
+  "canonical": "methylDragon/teleop_twist_keyboard_cpp",
+  "archived": false
+ },
  "michaelkubina/spotmicroesp32": {
   "id": 281784590,
   "canonical": "michaelkubina/SpotMicroESP32",
@@ -2214,9 +4019,19 @@
   "canonical": "miguelasd688/4-legged-robot-model",
   "archived": false
  },
+ "miguelasd688/quadruped-dog-like-robot": {
+  "id": 191057427,
+  "canonical": "miguelasd688/Quadruped-dog-like-robot",
+  "archived": false
+ },
  "mikeroyal/robotics-guide": {
   "id": 304958225,
   "canonical": "mikeroyal/Robotics-guide",
+  "archived": false
+ },
+ "mikhel1984/ext_observer": {
+  "id": 251319313,
+  "canonical": "mikhel1984/ext_observer",
   "archived": false
  },
  "mit-acl/cadrl_ros": {
@@ -2244,14 +4059,34 @@
   "canonical": "mmmarinho/umirobot",
   "archived": false
  },
+ "mochi-neko/facial-expressions-unity": {
+  "id": 620099570,
+  "canonical": "mochi-neko/facial-expressions-unity",
+  "archived": false
+ },
+ "modelscope/funasr": {
+  "id": 569959091,
+  "canonical": "modelscope/FunASR",
+  "archived": false
+ },
  "moveit/moveit2": {
   "id": 170893393,
   "canonical": "moveit/moveit2",
   "archived": false
  },
+ "mpmumau/peabot-library": {
+  "id": 90657160,
+  "canonical": "mpmumau/Peabot-Library",
+  "archived": false
+ },
  "mrsp/serow": {
   "id": 122772690,
   "canonical": "mrsp/serow",
+  "archived": false
+ },
+ "mrsp/whole_body_ik": {
+  "id": 262097152,
+  "canonical": "mrsp/whole_body_ik",
   "archived": false
  },
  "msadowski/awesome-weekly-robotics": {
@@ -2264,9 +4099,19 @@
   "canonical": "mujocolab/mjlab_playground",
   "archived": false
  },
+ "murcie443/shunkobot": {
+  "id": 963548158,
+  "canonical": "murcie443/ShunkoBot",
+  "archived": false
+ },
  "murobotics-ai/handumi-hw": {
   "id": 1214075908,
   "canonical": "murobotics-ai/handumi-hw",
+  "archived": false
+ },
+ "muye1202/quadruped_locomotion_project": {
+  "id": 728995000,
+  "canonical": "muye1202/quadruped_locomotion_project",
   "archived": false
  },
  "nasa-jpl/open-source-rover": {
@@ -2284,9 +4129,19 @@
   "canonical": "navuboy/ddpg_biped",
   "archived": false
  },
+ "neka-nat/kinpy": {
+  "id": 206802340,
+  "canonical": "neka-nat/kinpy",
+  "archived": false
+ },
  "neurobionics/onshape-robotics-toolkit": {
   "id": 865051944,
   "canonical": "neurobionics/onshape-robotics-toolkit",
+  "archived": false
+ },
+ "neurobionics/opensourceleg": {
+  "id": 482055059,
+  "canonical": "neurobionics/opensourceleg",
   "archived": false
  },
  "newdexterity/hybrid-exoskeleton-glove": {
@@ -2304,14 +4159,29 @@
   "canonical": "nhnifong/cranebot3-firmware",
   "archived": false
  },
+ "nicoromerocuruchet/mini-quadruped": {
+  "id": 412110341,
+  "canonical": "nicoRomeroCuruchet/mini-quadruped",
+  "archived": false
+ },
  "nicrusso7/rex-gym": {
   "id": 217925220,
   "canonical": "nicrusso7/rex-gym",
   "archived": false
  },
+ "nicrusso7/robot-gym": {
+  "id": 347400482,
+  "canonical": "nicrusso7/robot-gym",
+  "archived": false
+ },
  "nimazareian/quadruped-rl-locomotion": {
   "id": 770763976,
   "canonical": "nimazareian/quadruped-rl-locomotion",
+  "archived": false
+ },
+ "nimicurtis/so101_ros2": {
+  "id": 1001011932,
+  "canonical": "nimiCurtis/so101_ros2",
   "archived": false
  },
  "noitom-robotics/adapt": {
@@ -2324,6 +4194,11 @@
   "canonical": "nophead/NopSCADlib",
   "archived": false
  },
+ "norma-core/norma-core": {
+  "id": 1147376804,
+  "canonical": "norma-core/norma-core",
+  "archived": false
+ },
  "noshluk2/ros2-ultimate-guide-for-custom-robotic-arms-and-panda-7-dof": {
   "id": 189318528,
   "canonical": "noshluk2/ROS2-Ultimate-guide-for-Custom-Robotic-Arms-and-Panda-7-DOF",
@@ -2332,6 +4207,21 @@
  "nv-tlabs/pacer": {
   "id": 712619877,
   "canonical": "nv-tlabs/pacer",
+  "archived": false
+ },
+ "nvidia-isaac/isaac_mission_dispatch": {
+  "id": 553229891,
+  "canonical": "nvidia-isaac/isaac_mission_dispatch",
+  "archived": false
+ },
+ "nvidia-isaac/nvblox_mindmap": {
+  "id": 1071243344,
+  "canonical": "nvidia-isaac/nvblox_mindmap",
+  "archived": false
+ },
+ "ob-f/openbot": {
+  "id": 283999274,
+  "canonical": "ob-f/OpenBot",
   "archived": false
  },
  "okalachev/flix": {
@@ -2364,9 +4254,24 @@
   "canonical": "open-dynamic-robot-initiative/solo",
   "archived": false
  },
+ "open-mmlab/mmdetection": {
+  "id": 145670234,
+  "canonical": "open-mmlab/mmdetection",
+  "archived": false
+ },
+ "open-rdc/bipedal_robot_hardware": {
+  "id": 890341678,
+  "canonical": "open-rdc/Bipedal_Robot_Hardware",
+  "archived": false
+ },
  "open-rdc/ros2_walking_pattern_generator": {
   "id": 547212890,
   "canonical": "open-rdc/ROS2_Walking_Pattern_Generator",
+  "archived": false
+ },
+ "open-rmf/rmf": {
+  "id": 342367337,
+  "canonical": "open-rmf/rmf",
   "archived": false
  },
  "openamrobot/openamr": {
@@ -2374,9 +4279,34 @@
   "canonical": "openAMRobot/openamr",
   "archived": false
  },
+ "openbrushograph/openbrushograph_hardware": {
+  "id": 1104862494,
+  "canonical": "openBrushograph/openBrushograph_hardware",
+  "archived": false
+ },
+ "opentcs/opentcs": {
+  "id": 389536225,
+  "canonical": "openTCS/opentcs",
+  "archived": false
+ },
+ "openai/roboschool": {
+  "id": 91389763,
+  "canonical": "openai/roboschool",
+  "archived": true
+ },
  "openhumanoids/oh-distro": {
   "id": 49654497,
   "canonical": "openhumanoids/oh-distro",
+  "archived": false
+ },
+ "openvla/openvla": {
+  "id": 814864073,
+  "canonical": "openvla/openvla",
+  "archived": false
+ },
+ "openvmp/openvmp": {
+  "id": 535493791,
+  "canonical": "openvmp/openvmp",
   "archived": false
  },
  "orcahand/orca_core": {
@@ -2397,6 +4327,11 @@
  "ori-drs/pronto": {
   "id": 110474417,
   "canonical": "ori-drs/pronto",
+  "archived": false
+ },
+ "orionrobots/python_usb_robot_arm": {
+  "id": 15769026,
+  "canonical": "orionrobots/python_usb_robot_arm",
   "archived": false
  },
  "ouguangjun/leg-kilo": {
@@ -2429,6 +4364,51 @@
   "canonical": "pantor/ruckig",
   "archived": false
  },
+ "paparazzi/paparazzi": {
+  "id": 1068018,
+  "canonical": "paparazzi/paparazzi",
+  "archived": false
+ },
+ "peng-zhihui/deepvision": {
+  "id": 282873186,
+  "canonical": "peng-zhihui/DeepVision",
+  "archived": false
+ },
+ "peng-zhihui/dummy-robot": {
+  "id": 414577657,
+  "canonical": "peng-zhihui/Dummy-Robot",
+  "archived": false
+ },
+ "peng-zhihui/electronbot": {
+  "id": 468685658,
+  "canonical": "peng-zhihui/ElectronBot",
+  "archived": false
+ },
+ "peng-zhihui/l-ink_card": {
+  "id": 273689548,
+  "canonical": "peng-zhihui/L-ink_Card",
+  "archived": false
+ },
+ "peng-zhihui/minirover-hardware": {
+  "id": 292812097,
+  "canonical": "peng-zhihui/MiniRover-Hardware",
+  "archived": false
+ },
+ "peng-zhihui/one-robot": {
+  "id": 240684950,
+  "canonical": "peng-zhihui/ONE-Robot",
+  "archived": false
+ },
+ "peng-zhihui/pocketlcd": {
+  "id": 316705066,
+  "canonical": "peng-zhihui/PocketLCD",
+  "archived": false
+ },
+ "perseus784/self-organizing-bots": {
+  "id": 89271013,
+  "canonical": "perseus784/Self-organizing-bots",
+  "archived": false
+ },
  "philfung/awesome-reliable-robotics": {
   "id": 988069032,
   "canonical": "philfung/awesome-reliable-robotics",
@@ -2442,6 +4422,11 @@
  "pib-rocks/pib-backend": {
   "id": 757917842,
   "canonical": "pib-rocks/pib-backend",
+  "archived": false
+ },
+ "pietrodardano/rl_dog": {
+  "id": 810287041,
+  "canonical": "pietrodardano/RL_Dog",
   "archived": false
  },
  "pkooij/open-arms-mini": {
@@ -2464,6 +4449,11 @@
   "canonical": "plenprojectcompany/plen-3DModel_Fusion360",
   "archived": false
  },
+ "pliam1105/3d-printed-ros-slam-robot": {
+  "id": 744546936,
+  "canonical": "pliam1105/3D-Printed-ROS-SLAM-Robot",
+  "archived": false
+ },
  "poboisvert/gptars_interstellar": {
   "id": 825124523,
   "canonical": "poboisvert/GPTARS_Interstellar",
@@ -2474,6 +4464,11 @@
   "canonical": "pollen-robotics/AmazingHand",
   "archived": false
  },
+ "pollen-robotics/elec_rpi_robot_hat": {
+  "id": 1165627933,
+  "canonical": "pollen-robotics/elec_RPI_Robot_HAT",
+  "archived": false
+ },
  "pollen-robotics/grabette": {
   "id": 1262728827,
   "canonical": "pollen-robotics/grabette",
@@ -2482,6 +4477,11 @@
  "pollen-robotics/microduck": {
   "id": 1315850547,
   "canonical": "pollen-robotics/microduck",
+  "archived": false
+ },
+ "pollen-robotics/microduck_rl": {
+  "id": 1111189673,
+  "canonical": "pollen-robotics/microduck_rl",
   "archived": false
  },
  "pollen-robotics/reachy-sdk": {
@@ -2519,14 +4519,34 @@
   "canonical": "poppy-project/poppy-torso",
   "archived": false
  },
+ "poppy-project/poppy_ergo_jr_description": {
+  "id": 263158015,
+  "canonical": "poppy-project/poppy_ergo_jr_description",
+  "archived": false
+ },
+ "poppy-project/poppy_torso_description": {
+  "id": 81379400,
+  "canonical": "poppy-project/poppy_torso_description",
+  "archived": false
+ },
  "pr2-humanoid/pr2-platform": {
   "id": 849108931,
   "canonical": "pr2-humanoid/PR2-Platform",
   "archived": false
  },
+ "prl-mushr/mushr": {
+  "id": 194911842,
+  "canonical": "prl-mushr/mushr",
+  "archived": false
+ },
  "psrobotics/quadruped_bai_servo": {
   "id": 366730730,
   "canonical": "psrobotics/quadruped_bai_servo",
+  "archived": false
+ },
+ "psyonicinc/ability-hand-api": {
+  "id": 468087319,
+  "canonical": "psyonicinc/ability-hand-api",
   "archived": false
  },
  "ptb/mac-setup": {
@@ -2539,6 +4559,11 @@
   "canonical": "purdue-tracelab/Humanoid-Locomotion-Survey",
   "archived": false
  },
+ "purdue-tracelab/pace-icra2026": {
+  "id": 1157379320,
+  "canonical": "purdue-tracelab/PACE-ICRA2026",
+  "archived": false
+ },
  "qiayuanl/legged_control": {
   "id": 506852195,
   "canonical": "qiayuanl/legged_control",
@@ -2547,6 +4572,26 @@
  "quandy2020/openrobotics": {
   "id": 567126386,
   "canonical": "quandy2020/OpenRobotics",
+  "archived": false
+ },
+ "qxiaofan/awesome-3dcv-papers-daily": {
+  "id": 287487877,
+  "canonical": "qxiaofan/awesome-3dcv-papers-daily",
+  "archived": false
+ },
+ "rafaelkonlechner/cdl-digital-twin": {
+  "id": 97207094,
+  "canonical": "rafaelkonlechner/cdl-digital-twin",
+  "archived": false
+ },
+ "raphaelchang/dragonflyte-hardware": {
+  "id": 111773341,
+  "canonical": "raphaelchang/dragonflyte-hardware",
+  "archived": false
+ },
+ "raphaelchang/toffee-hardware": {
+  "id": 138102992,
+  "canonical": "raphaelchang/toffee-hardware",
   "archived": false
  },
  "raspibotics/mabel": {
@@ -2564,9 +4609,19 @@
   "canonical": "rdesarz/biped-walking-controller",
   "archived": false
  },
+ "real-dex-suite/real-robo": {
+  "id": 800475705,
+  "canonical": "real-dex-suite/REAL-ROBO",
+  "archived": false
+ },
  "real-stanford/umi-on-legs": {
   "id": 821587848,
   "canonical": "real-stanford/umi-on-legs",
+  "archived": false
+ },
+ "regular030/saturnarm": {
+  "id": 995135878,
+  "canonical": "regular030/SaturnArm",
   "archived": false
  },
  "reubenstr/electropup": {
@@ -2574,14 +4629,59 @@
   "canonical": "reubenstr/ElectroPup",
   "archived": false
  },
+ "ridgeback/ridgeback": {
+  "id": 38638657,
+  "canonical": "ridgeback/ridgeback",
+  "archived": false
+ },
+ "ridgeback/ridgeback_manipulation": {
+  "id": 124254731,
+  "canonical": "ridgeback/ridgeback_manipulation",
+  "archived": false
+ },
+ "rigbetellabs/tortoisebot": {
+  "id": 336882989,
+  "canonical": "rigbetellabs/tortoisebot",
+  "archived": false
+ },
+ "rimim/awd": {
+  "id": 857527298,
+  "canonical": "rimim/AWD",
+  "archived": false
+ },
  "ripl/hapcompass": {
   "id": 1171000583,
   "canonical": "ripl/HapCompass",
   "archived": false
  },
+ "rise-lab-skku/icra2023_quadruped_robot_challenges": {
+  "id": 573221840,
+  "canonical": "rise-lab-skku/ICRA2023_Quadruped_Robot_Challenges",
+  "archived": false
+ },
+ "rjvallett/urdf-converter": {
+  "id": 7783149,
+  "canonical": "rjvallett/URDF-Converter",
+  "archived": false
+ },
+ "rlxai/rbot": {
+  "id": 1234039984,
+  "canonical": "rlxai/rbot",
+  "archived": false
+ },
  "robertorobotics/nextis-aira-3d": {
   "id": 1176249471,
   "canonical": "robertorobotics/Nextis-AIRA-3D",
+  "archived": false
+ },
+ "robin-shaun/xtdrone": {
+  "id": 248799809,
+  "canonical": "robin-shaun/XTDrone",
+  "archived": false
+ },
+ "robocasa/robocasa": {
+  "id": 799171422,
+  "canonical": "robocasa/robocasa",
   "archived": false
  },
  "robocurve/inspect-robots": {
@@ -2599,6 +4699,31 @@
   "canonical": "robot-descriptions/awesome-robot-descriptions",
   "archived": false
  },
+ "robot-descriptions/cassie_description": {
+  "id": 557345293,
+  "canonical": "robot-descriptions/cassie_description",
+  "archived": true
+ },
+ "robot-descriptions/fanuc_m710ic_description": {
+  "id": 644468267,
+  "canonical": "robot-descriptions/fanuc_m710ic_description",
+  "archived": true
+ },
+ "robot-descriptions/halodi-robot-models": {
+  "id": 1322748110,
+  "canonical": "robot-descriptions/halodi-robot-models",
+  "archived": true
+ },
+ "robot-descriptions/jaxon_description": {
+  "id": 544971195,
+  "canonical": "robot-descriptions/jaxon_description",
+  "archived": true
+ },
+ "robot-descriptions/stretch_description": {
+  "id": 627338144,
+  "canonical": "robot-descriptions/stretch_description",
+  "archived": true
+ },
  "robot-learning-co/trlc-dk1": {
   "id": 1028472519,
   "canonical": "robot-learning-co/trlc-dk1",
@@ -2614,9 +4739,19 @@
   "canonical": "roboterax/humanoid-gym",
   "archived": false
  },
+ "robotics-survey/awesome-robotics-foundation-models": {
+  "id": 718423019,
+  "canonical": "robotics-survey/Awesome-Robotics-Foundation-Models",
+  "archived": false
+ },
  "robotis-git/open_manipulator": {
   "id": 79540562,
   "canonical": "ROBOTIS-GIT/open_manipulator",
+  "archived": false
+ },
+ "robotology/blender-robotics-utils": {
+  "id": 390279015,
+  "canonical": "robotology/blender-robotics-utils",
   "archived": false
  },
  "robotology/gym-ignition-models": {
@@ -2639,6 +4774,11 @@
   "canonical": "robotology/whole-body-controllers",
   "archived": false
  },
+ "robs-tech-workbench/hexapod_spiderbot_model": {
+  "id": 685114802,
+  "canonical": "robs-tech-workbench/hexapod_spiderbot_model",
+  "archived": false
+ },
  "robs-tech-workbench/hexapod_spiderbot_tutorials": {
   "id": 634979834,
   "canonical": "robs-tech-workbench/hexapod_spiderbot_tutorials",
@@ -2647,6 +4787,11 @@
  "rohanpsingh/learninghumanoidwalking": {
   "id": 513357615,
   "canonical": "rohanpsingh/LearningHumanoidWalking",
+  "archived": false
+ },
+ "ros-aldebaran/romeo_robot": {
+  "id": 23698624,
+  "canonical": "ros-aldebaran/romeo_robot",
   "archived": false
  },
  "ros-claw/rosclaw": {
@@ -2664,6 +4809,16 @@
   "canonical": "ros-industrial/abb_experimental",
   "archived": false
  },
+ "ros-industrial/fanuc": {
+  "id": 10350614,
+  "canonical": "ros-industrial/fanuc",
+  "archived": false
+ },
+ "ros-industrial/robotiq": {
+  "id": 13423674,
+  "canonical": "ros-industrial-attic/robotiq",
+  "archived": false
+ },
  "ros-industrial/ros2_canopen": {
   "id": 474912556,
   "canonical": "ros-industrial/ros2_canopen",
@@ -2672,6 +4827,46 @@
  "ros-industrial/universal_robot": {
   "id": 8745199,
   "canonical": "ros-industrial/universal_robot",
+  "archived": false
+ },
+ "ros-naoqi/nao_meshes": {
+  "id": 23344376,
+  "canonical": "ros-naoqi/nao_meshes",
+  "archived": false
+ },
+ "ros-naoqi/nao_robot": {
+  "id": 25249395,
+  "canonical": "ros-naoqi/nao_robot",
+  "archived": false
+ },
+ "ros2/ros2": {
+  "id": 31285942,
+  "canonical": "ros2/ros2",
+  "archived": false
+ },
+ "rt-net/crane_plus": {
+  "id": 295617353,
+  "canonical": "rt-net/crane_plus",
+  "archived": false
+ },
+ "rt-net/crane_x7_hardware": {
+  "id": 117190967,
+  "canonical": "rt-net/crane_x7_Hardware",
+  "archived": false
+ },
+ "rt-net/crane_x7_ros": {
+  "id": 116793447,
+  "canonical": "rt-net/crane_x7_ros",
+  "archived": false
+ },
+ "rt-net/raspimouse2": {
+  "id": 147800542,
+  "canonical": "rt-net/raspimouse2",
+  "archived": false
+ },
+ "rt-net/sciurus17_description": {
+  "id": 688834067,
+  "canonical": "rt-net/sciurus17_description",
   "archived": false
  },
  "ruka-hand/ruka": {
@@ -2699,9 +4894,19 @@
   "canonical": "s-kajita/IntroductionToHumanoidRobotics",
   "archived": false
  },
+ "s1lent4gnt/koch-v1-1": {
+  "id": 857132783,
+  "canonical": "s1lent4gnt/koch-v1-1",
+  "archived": false
+ },
  "sahilrajpurkar03/nlp-pnp-robotic-arm": {
   "id": 1035674773,
   "canonical": "sahilrajpurkar03/nlp-pnp-robotic-arm",
+  "archived": false
+ },
+ "sail-sg/teamhoi": {
+  "id": 1176497214,
+  "canonical": "sail-sg/TeamHOI",
   "archived": false
  },
  "sayantanauddy/hierarchical_bipedal_controller": {
@@ -2709,14 +4914,39 @@
   "canonical": "sayantanauddy/hierarchical_bipedal_controller",
   "archived": false
  },
+ "sea-bass/pyroboplan": {
+  "id": 750107020,
+  "canonical": "sea-bass/pyroboplan",
+  "archived": false
+ },
  "servodevelop/star-arm-102": {
   "id": 1170383087,
   "canonical": "servodevelop/Star-Arm-102",
   "archived": false
  },
+ "sharpa-robotics/sharpa-urdf-usd-xml": {
+  "id": 1195934826,
+  "canonical": "sharpa-robotics/sharpa-urdf-usd-xml",
+  "archived": false
+ },
  "shayanalibhatti/finger-movement-classification-via-machine-learning-using-emg-armband-for-3d-printed-robotic-hand": {
   "id": 214301346,
   "canonical": "shayanalibhatti/Finger-Movement-Classification-via-Machine-Learning-using-EMG-Armband-for-3D-Printed-Robotic-Hand",
+  "archived": false
+ },
+ "shbang91/draco3_description": {
+  "id": 604670674,
+  "canonical": "shbang91/draco3_description",
+  "archived": false
+ },
+ "shekit/peeqo-robot-hardware": {
+  "id": 83619693,
+  "canonical": "shekit/peeqo-robot-hardware",
+  "archived": false
+ },
+ "sidharthmohannair/ros2-ardupilot-sitl-hardware": {
+  "id": 1115741566,
+  "canonical": "sidharthmohannair/ros2-ardupilot-sitl-hardware",
   "archived": false
  },
  "sihengz02/uh-1": {
@@ -2749,6 +4979,31 @@
   "canonical": "singhaman1750/Legged-Robots",
   "archived": false
  },
+ "sipeed/licheerv-nano-build": {
+  "id": 745752110,
+  "canonical": "sipeed/LicheeRV-Nano-Build",
+  "archived": false
+ },
+ "sipeed/maixpy": {
+  "id": 745771617,
+  "canonical": "sipeed/MaixPy",
+  "archived": false
+ },
+ "sirjonasxx/g-earth": {
+  "id": 127325058,
+  "canonical": "sirjonasxx/G-Earth",
+  "archived": false
+ },
+ "slightech/mynt-eye-s-sdk": {
+  "id": 129619138,
+  "canonical": "slightech/MYNT-EYE-S-SDK",
+  "archived": false
+ },
+ "slimx-ai/ros2-drl-turtlebot3-like-lidar-robot": {
+  "id": 385179034,
+  "canonical": "slimx-ai/ROS2-DRL-Turtlebot3-like-LIDAR-Robot",
+  "archived": false
+ },
  "smart-methods/arduino_robot_arm": {
   "id": 303421664,
   "canonical": "smart-methods/arduino_robot_arm",
@@ -2759,25 +5014,85 @@
   "canonical": "smoggy-P/elevation_mapping_humanoid",
   "archived": false
  },
+ "snt-arg/unitree_ros": {
+  "id": 613378433,
+  "canonical": "snt-arg/unitree_ros",
+  "archived": false
+ },
+ "sofa-framework/sofa": {
+  "id": 60089478,
+  "canonical": "sofa-framework/sofa",
+  "archived": false
+ },
  "softmata/horus": {
   "id": 1078093679,
   "canonical": "softmata/horus",
   "archived": false
+ },
+ "solitary-dev-50/tongdou": {
+  "id": 1297944311,
+  "canonical": "solitary-dev-50/tongdou",
+  "archived": false
+ },
+ "ssloy/penny": {
+  "id": 237815107,
+  "canonical": "ssloy/penny",
+  "archived": false
+ },
+ "stack-chan/stack-chan": {
+  "id": 374381865,
+  "canonical": "stack-chan/stack-chan",
+  "archived": false
+ },
+ "stack-of-tasks/talos-data": {
+  "id": 168350529,
+  "canonical": "stack-of-tasks/talos-data",
+  "archived": true
  },
  "stanfordroboticsclub/stanfordquadruped": {
   "id": 236418227,
   "canonical": "stanfordroboticsclub/StanfordQuadruped",
   "archived": false
  },
+ "start-jsk/rtmros_choreonoid": {
+  "id": 39870049,
+  "canonical": "start-jsk/rtmros_choreonoid",
+  "archived": false
+ },
+ "stepfun-ai/step1x-edit": {
+  "id": 971293318,
+  "canonical": "stepfun-ai/Step1X-Edit",
+  "archived": false
+ },
+ "stephane-caron/awesome-open-source-robots": {
+  "id": 485431774,
+  "canonical": "stephane-caron/awesome-open-source-robots",
+  "archived": false
+ },
+ "stephane-caron/jvrc_description": {
+  "id": 460012924,
+  "canonical": "robot-descriptions/jvrc_description",
+  "archived": true
+ },
  "stephane-caron/lipm_walking_controller": {
   "id": 149110222,
   "canonical": "stephane-caron/lipm_walking_controller",
+  "archived": true
+ },
+ "stephane-caron/openrave_models": {
+  "id": 59568856,
+  "canonical": "stephane-caron/openrave_models",
   "archived": true
  },
  "stephane-caron/pymanoid": {
   "id": 38289034,
   "canonical": "stephane-caron/pymanoid",
   "archived": true
+ },
+ "stepjam/rlbench": {
+  "id": 211181267,
+  "canonical": "stepjam/RLBench",
+  "archived": false
  },
  "swarm-subnet/langostino": {
   "id": 1053235780,
@@ -2787,6 +5102,11 @@
  "syw-robotics/nabo_pointfoot_bipedal_robot": {
   "id": 786040716,
   "canonical": "syw-robotics/Nabo_Pointfoot_Bipedal_Robot",
+  "archived": false
+ },
+ "t413/omnictrl": {
+  "id": 839529152,
+  "canonical": "t413/omnictrl",
   "archived": false
  },
  "taielab/awesome-hacking-lists": {
@@ -2799,6 +5119,11 @@
   "canonical": "taishi-i/awesome-ChatGPT-repositories",
   "archived": false
  },
+ "tc-huang/low_cost_robot": {
+  "id": 784610434,
+  "canonical": "tc-huang/low_cost_robot",
+  "archived": false
+ },
  "thanhndv212/figaroh-plus": {
   "id": 758723494,
   "canonical": "thanhndv212/figaroh-plus",
@@ -2807,6 +5132,11 @@
  "thecognifly/cognifly-stl": {
   "id": 262408996,
   "canonical": "thecognifly/CogniFly-STL",
+  "archived": false
+ },
+ "thu-ml/roboticsdiffusiontransformer": {
+  "id": 868861536,
+  "canonical": "thu-ml/RoboticsDiffusionTransformer",
   "archived": false
  },
  "timqian/bambot": {
@@ -2819,9 +5149,24 @@
   "canonical": "tmjeong1103/RIMKit",
   "archived": false
  },
+ "tokirobot/psi1_hardware": {
+  "id": 863322826,
+  "canonical": "tokirobot/PSI1_Hardware",
+  "archived": false
+ },
+ "tonyzhaozh/act": {
+  "id": 605310229,
+  "canonical": "tonyzhaozh/act",
+  "archived": false
+ },
  "tonyzhaozh/aloha": {
   "id": 604950127,
   "canonical": "tonyzhaozh/aloha",
+  "archived": false
+ },
+ "tork-a/rtmros_nextage": {
+  "id": 13974308,
+  "canonical": "tork-a/rtmros_nextage",
   "archived": false
  },
  "track-tech/venus-1__four-link-wheel-legged-robot": {
@@ -2839,6 +5184,31 @@
   "canonical": "tryingfly/nabo",
   "archived": false
  },
+ "trzy/robot-arm": {
+  "id": 786652394,
+  "canonical": "trzy/robot-arm",
+  "archived": false
+ },
+ "ustepper/ustepper-robotarm-rev3": {
+  "id": 68390419,
+  "canonical": "uStepper/uStepper-RobotArm-Rev3",
+  "archived": false
+ },
+ "uhobeike/ike_nav": {
+  "id": 667032039,
+  "canonical": "uhobeike/ike_nav",
+  "archived": false
+ },
+ "uiuckimlab/child": {
+  "id": 1021093221,
+  "canonical": "uiuckimlab/CHILD",
+  "archived": false
+ },
+ "uiuckimlab/paprle": {
+  "id": 978457645,
+  "canonical": "uiuckimlab/PAPRLE",
+  "archived": false
+ },
  "unitreerobotics/qmini": {
   "id": 988278489,
   "canonical": "unitreerobotics/Qmini",
@@ -2847,6 +5217,31 @@
  "unitreerobotics/kinect_teleoperate": {
   "id": 841794878,
   "canonical": "unitreerobotics/kinect_teleoperate",
+  "archived": false
+ },
+ "unitreerobotics/point_lio_unilidar": {
+  "id": 695052490,
+  "canonical": "unitreerobotics/point_lio_unilidar",
+  "archived": false
+ },
+ "unitreerobotics/unifolm-vla": {
+  "id": 1132780953,
+  "canonical": "unitreerobotics/unifolm-vla",
+  "archived": false
+ },
+ "unitreerobotics/unifolm-world-model-action": {
+  "id": 1055591911,
+  "canonical": "unitreerobotics/unifolm-world-model-action",
+  "archived": false
+ },
+ "unitreerobotics/unitree_il_lerobot": {
+  "id": 874533115,
+  "canonical": "unitreerobotics/unitree_lerobot",
+  "archived": false
+ },
+ "unitreerobotics/unitree_guide": {
+  "id": 605555055,
+  "canonical": "unitreerobotics/unitree_guide",
   "archived": false
  },
  "unitreerobotics/unitree_legged_sdk": {
@@ -2864,6 +5259,21 @@
   "canonical": "unitreerobotics/unitree_mujoco",
   "archived": false
  },
+ "unitreerobotics/unitree_rl_gym": {
+  "id": 703406051,
+  "canonical": "unitreerobotics/unitree_rl_gym",
+  "archived": false
+ },
+ "unitreerobotics/unitree_rl_lab": {
+  "id": 996673888,
+  "canonical": "unitreerobotics/unitree_rl_lab",
+  "archived": false
+ },
+ "unitreerobotics/unitree_rl_mjlab": {
+  "id": 1142979272,
+  "canonical": "unitreerobotics/unitree_rl_mjlab",
+  "archived": false
+ },
  "unitreerobotics/unitree_ros": {
   "id": 287439935,
   "canonical": "unitreerobotics/unitree_ros",
@@ -2879,6 +5289,16 @@
   "canonical": "unitreerobotics/unitree_sdk2",
   "archived": false
  },
+ "unitreerobotics/unitree_sdk2_python": {
+  "id": 792341110,
+  "canonical": "unitreerobotics/unitree_sdk2_python",
+  "archived": false
+ },
+ "unitreerobotics/unitree_sim_isaaclab": {
+  "id": 1007431730,
+  "canonical": "unitreerobotics/unitree_sim_isaaclab",
+  "archived": false
+ },
  "unitreerobotics/xr_teleoperate": {
   "id": 838218532,
   "canonical": "unitreerobotics/xr_teleoperate",
@@ -2889,9 +5309,64 @@
   "canonical": "upkie/upkie",
   "archived": false
  },
+ "upkie/upkie_description": {
+  "id": 471061195,
+  "canonical": "upkie/upkie_description",
+  "archived": false
+ },
  "upsidedownlabs/bioamp-exg-pill": {
   "id": 333050332,
   "canonical": "upsidedownlabs/BioAmp-EXG-Pill",
+  "archived": false
+ },
+ "userguide-galaxea/urdf": {
+  "id": 843396091,
+  "canonical": "userguide-galaxea/URDF",
+  "archived": false
+ },
+ "utiasdsl/gym-pybullet-drones": {
+  "id": 286408558,
+  "canonical": "learnsyslab/gym-pybullet-drones",
+  "archived": false
+ },
+ "utra-robosoccer/soccerbot": {
+  "id": 134985794,
+  "canonical": "utra-robosoccer/soccerbot",
+  "archived": false
+ },
+ "utra-robosoccer/unified-humanoid-getup": {
+  "id": 963979639,
+  "canonical": "utra-robosoccer/unified-humanoid-getup",
+  "archived": false
+ },
+ "uwrobotics/marsroverhardware": {
+  "id": 195049549,
+  "canonical": "uwrobotics/MarsRoverHardware",
+  "archived": false
+ },
+ "uynitsuj/rby1_description": {
+  "id": 991468599,
+  "canonical": "uynitsuj/rby1_description",
+  "archived": false
+ },
+ "v4rl-ucy/mav_hardware": {
+  "id": 430669662,
+  "canonical": "v4rl-ucy/mav_hardware",
+  "archived": false
+ },
+ "vigorlee/wave-go": {
+  "id": 1313408207,
+  "canonical": "vigorlee/wave-go",
+  "archived": false
+ },
+ "vinay-lanka/navbot_hardware": {
+  "id": 333933356,
+  "canonical": "vinay-lanka/navbot_hardware",
+  "archived": false
+ },
+ "vulcan-forge/sourccey-hardware": {
+  "id": 1296842921,
+  "canonical": "vulcan-forge/sourccey-hardware",
   "archived": false
  },
  "wadekeith/awesome-embodied-ai": {
@@ -2914,9 +5389,24 @@
   "canonical": "wesmar/kvc",
   "archived": false
  },
+ "whoenig/crazyflie_ros": {
+  "id": 25419228,
+  "canonical": "whoenig/crazyflie_ros",
+  "archived": true
+ },
+ "worldbench/pi3det": {
+  "id": 1024207187,
+  "canonical": "worldbench/Pi3DET",
+  "archived": false
+ },
  "wuphilipp/gello_mechanical": {
   "id": 714860562,
   "canonical": "wuphilipp/gello_mechanical",
+  "archived": false
+ },
+ "wuphilipp/robot_parts": {
+  "id": 599898986,
+  "canonical": "wuphilipp/robot_parts",
   "archived": false
  },
  "xarm-developer/xarm-cplus-sdk": {
@@ -2934,6 +5424,16 @@
   "canonical": "xArm-Developer/xarm_ros2",
   "archived": false
  },
+ "xiaoxiaoxh/tactar_app": {
+  "id": 956356546,
+  "canonical": "xiaoxiaoxh/TactAR_APP",
+  "archived": false
+ },
+ "xiaoxiaoxh/reactive_diffusion_policy": {
+  "id": 957463251,
+  "canonical": "xiaoxiaoxh/reactive_diffusion_policy",
+  "archived": false
+ },
  "yaoyao-jpg/phizero": {
   "id": 1317569438,
   "canonical": "yaoyao-jpg/PhiZero",
@@ -2949,9 +5449,44 @@
   "canonical": "ycheng517/tabletop-handybot",
   "archived": false
  },
+ "yfrobotics/awesome-robotics-ee-opensource": {
+  "id": 305445528,
+  "canonical": "automaticdai/awesome-robotics-ee-opensource",
+  "archived": false
+ },
+ "yfrobotics/robowiki": {
+  "id": 304149698,
+  "canonical": "yfrobotics/robowiki-cn",
+  "archived": false
+ },
+ "yfrobotics/yf-home-iot": {
+  "id": 245883035,
+  "canonical": "yfrobotics/yf-smart-home-iot",
+  "archived": false
+ },
+ "ymxlzgy/sg-bot": {
+  "id": 694379140,
+  "canonical": "ymxlzgy/SG-Bot",
+  "archived": false
+ },
  "youngwoo-yoon/co-speech_gesture_generation": {
   "id": 275562418,
   "canonical": "youngwoo-yoon/Co-Speech_Gesture_Generation",
+  "archived": false
+ },
+ "yusongmin1/dreamwaq": {
+  "id": 1122036731,
+  "canonical": "yusongmin1/Dreamwaq",
+  "archived": false
+ },
+ "zai-org/glm-v": {
+  "id": 1010055053,
+  "canonical": "zai-org/GLM-V",
+  "archived": false
+ },
+ "zapplyjobs/new-grad-hardware-engineering-jobs-2027": {
+  "id": 1037599563,
+  "canonical": "zapplyjobs/New-Grad-Hardware-Engineering-Jobs-2027",
   "archived": false
  },
  "zengweishuai/scalebfm": {
@@ -2972,6 +5507,11 @@
  "zha0ming1e/legged_mpc_control": {
   "id": 543948086,
   "canonical": "zha0ming1e/legged_mpc_control",
+  "archived": false
+ },
+ "zhaohengyin/lightning-grasp": {
+  "id": 1079473022,
+  "canonical": "zhaohengyin/lightning-grasp",
   "archived": false
  },
  "zhaozijie2022/locowheeledlegged": {
@@ -3022,6 +5562,11 @@
  "zlingkang/quadruped_9g": {
   "id": 124011243,
   "canonical": "zlingkang/quadruped_9g",
+  "archived": false
+ },
+ "zubair-irshad/manipulator_parameter_identification": {
+  "id": 171325161,
+  "canonical": "zubair-irshad/manipulator_parameter_identification",
   "archived": false
  },
  "zzzjie-robot/go2arm_lab": {
