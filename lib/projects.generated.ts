@@ -7,7 +7,7 @@
  * in `gaps` rather than filled in, and no reproduction probability is emitted
  * here — scoring belongs to OPEN_REPRO_V2 alone.
  *
- * Projects: 204
+ * Projects: 212
  */
 
 import type { WorkbenchProject } from "./workbench-types";
@@ -93,6 +93,93 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-MAKERSPET-OOMWOO",
+    "name": "oomwoo",
+    "category": "ROBOT",
+    "version": "2026-09-17",
+    "embodiment": "通用机器人",
+    "summary": "Open-source vacuum robot cleaner",
+    "repository": "https://github.com/makerspet/oomwoo",
+    "releaseBasis": "仓库 makerspet/oomwoo 的公开文件树快照（110 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 11024,
+    "license": "Apache-2.0",
+    "assemblies": [
+      {
+        "id": "templates",
+        "name": "templates",
+        "description": "2 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      },
+      {
+        "id": "software-docs",
+        "name": "软件与文档",
+        "description": "非硬件件｜运动学描述与控制/装配文档",
+        "x": 50.0,
+        "y": 76.0,
+        "color": "#8894a6"
+      }
+    ],
+    "parts": [
+      {
+        "id": "makerspet-oomwoo-docs-build-instructions-md",
+        "assembly": "software-docs",
+        "name": "BUILD_INSTRUCTIONS",
+        "specification": "装配/构建文档 .md · 1,424 B",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/makerspet/oomwoo/blob/HEAD/docs/BUILD_INSTRUCTIONS.md"
+      },
+      {
+        "id": "makerspet-oomwoo-bom-md",
+        "assembly": "templates",
+        "name": "BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/makerspet/oomwoo/blob/HEAD/BOM.md"
+      },
+      {
+        "id": "makerspet-oomwoo-contributions-compute-benchmark-xbattlax-templates-compute-bom-",
+        "assembly": "templates",
+        "name": "compute_bom",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/makerspet/oomwoo/blob/HEAD/contributions/compute-benchmark/xbattlax/templates/compute_bom.csv"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/makerspet/oomwoo/blob/HEAD/BOM.md",
+        "detail": "仓库内物料清单：BOM.md"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/makerspet/oomwoo",
+        "detail": "Open-source vacuum robot cleaner"
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
@@ -2293,6 +2380,83 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
         "state": "verified",
         "url": "https://github.com/ob-f/OpenBot",
         "detail": "OpenBot leverages smartphones as brains for low-cost robots. We have designed a small electric vehicle that costs about $50 and serves as a robot body. Our software stack for Android smartphones supports advanced robotics workloads such as person following and real-time autonomous navigation."
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-ENACTIC-OPENARM",
+    "name": "openarm",
+    "category": "HUMANOID_FULL",
+    "version": "2026-09-14",
+    "embodiment": "FULL_22_DOF 级",
+    "summary": "A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments.",
+    "repository": "https://github.com/enactic/openarm",
+    "releaseBasis": "仓库 enactic/openarm 的公开文件树快照（556 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 3475,
+    "license": "Apache-2.0",
+    "assemblies": [
+      {
+        "id": "electrical",
+        "name": "electrical",
+        "description": "1 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      },
+      {
+        "id": "software-docs",
+        "name": "软件与文档",
+        "description": "非硬件件｜运动学描述与控制/装配文档",
+        "x": 50.0,
+        "y": 76.0,
+        "color": "#8894a6"
+      }
+    ],
+    "parts": [
+      {
+        "id": "enactic-openarm-website-static-file-hardware-bill-of-materials-electrical-bom-fo",
+        "assembly": "electrical",
+        "name": "bom-for-hub",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/enactic/openarm/blob/HEAD/website/static/file/hardware/bill-of-materials/electrical/bom-for-hub.csv"
+      },
+      {
+        "id": "enactic-openarm-website-versioned-docs-version-1-0-getting-started-contribute-md",
+        "assembly": "software-docs",
+        "name": "contribute",
+        "specification": "装配/构建文档 .md · 3,637 B",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/enactic/openarm/blob/HEAD/website/versioned_docs/version-1.0/getting-started/contribute.md"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/enactic/openarm/blob/HEAD/website/static/file/hardware/bill-of-materials/electrical/bom-for-hub.csv",
+        "detail": "仓库内物料清单：website/static/file/hardware/bill-of-materials/electrical/bom-for-hub.csv"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/enactic/openarm",
+        "detail": "A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments."
       }
     ],
     "gaps": [
@@ -8291,6 +8455,85 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     }
   },
   {
+    "id": "REPO-AGIBOTTECH-AGIBOT_X1_HARDWARE",
+    "name": "agibot_x1_hardware",
+    "category": "ROBOT",
+    "version": "2025-04-18",
+    "embodiment": "通用机器人",
+    "summary": "The hardware design for AgiBot X1.",
+    "repository": "https://github.com/AgibotTech/agibot_x1_hardware",
+    "releaseBasis": "仓库 AgibotTech/agibot_x1_hardware 的公开文件树快照（34 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 1073,
+    "license": "无",
+    "assemblies": [
+      {
+        "id": "x1-20241024",
+        "name": "智元灵犀X1_20241024",
+        "description": "3 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "agibottech-agibot-x1-hardware-x1-20241024-x1-bom-20241024-xlsx",
+        "assembly": "x1-20241024",
+        "name": "智元灵犀X1_BOM清单_20241024",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/AgibotTech/agibot_x1_hardware/blob/HEAD/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_20241024/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_BOM%E6%B8%85%E5%8D%95_20241024.xlsx"
+      },
+      {
+        "id": "agibottech-agibot-x1-hardware-x1-20250108-x1-bom-20250108-xlsx",
+        "assembly": "x1-20241024",
+        "name": "智元灵犀X1_BOM清单_20250108",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/AgibotTech/agibot_x1_hardware/blob/HEAD/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_20250108/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_BOM%E6%B8%85%E5%8D%95_20250108.xlsx"
+      },
+      {
+        "id": "agibottech-agibot-x1-hardware-x1-20250307-x1-bom-xlsx",
+        "assembly": "x1-20241024",
+        "name": "智元灵犀X1总BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/AgibotTech/agibot_x1_hardware/blob/HEAD/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_20250307/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1%E6%80%BBBOM.xlsx"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/AgibotTech/agibot_x1_hardware/blob/HEAD/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_20241024/%E6%99%BA%E5%85%83%E7%81%B5%E7%8A%80X1_BOM%E6%B8%85%E5%8D%95_20241024.xlsx",
+        "detail": "仓库内物料清单：智元灵犀X1_20241024/智元灵犀X1_BOM清单_20241024.xlsx"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/AgibotTech/agibot_x1_hardware",
+        "detail": "The hardware design for AgiBot X1."
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
     "id": "REPO-POPPY-PROJECT-POPPY-HUMANOID",
     "name": "poppy-humanoid",
     "category": "HUMANOID_FULL",
@@ -14199,6 +14442,138 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
       "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-HADDINGTONDYNAMICS-DEXTER",
+    "name": "Dexter",
+    "category": "ROBOT",
+    "version": "2024-06-17",
+    "embodiment": "未归类",
+    "summary": "HaddingtonDynamics/Dexter 的公开仓库证据工作台。",
+    "repository": "https://github.com/HaddingtonDynamics/Dexter",
+    "releaseBasis": "仓库 HaddingtonDynamics/Dexter 的公开文件树快照（268 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 436,
+    "license": "GPL-3.0",
+    "assemblies": [
+      {
+        "id": "motor-pcb",
+        "name": "Motor PCB",
+        "description": "2 个 PCB · 2 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      },
+      {
+        "id": "software-docs",
+        "name": "软件与文档",
+        "description": "非硬件件｜运动学描述与控制/装配文档",
+        "x": 50.0,
+        "y": 76.0,
+        "color": "#8894a6"
+      }
+    ],
+    "parts": [
+      {
+        "id": "haddingtondynamics-dexter-hardware-opto-09011-00122-0-bom-csv",
+        "assembly": "motor-pcb",
+        "name": "09011-00122-0_BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/Hardware/Opto/09011-00122-0_BOM.csv"
+      },
+      {
+        "id": "haddingtondynamics-dexter-hardware-motor-pcb-09051-00135-0-bom-xlsx",
+        "assembly": "motor-pcb",
+        "name": "09051-00135-0_BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/Hardware/Motor%20PCB/09051-00135-0_BOM.xlsx"
+      },
+      {
+        "id": "haddingtondynamics-dexter-hardware-motor-pcb-09011-00135-a-dsn",
+        "assembly": "motor-pcb",
+        "name": "09011-00135-A",
+        "specification": "电路设计文件 .DSN · 406,016 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/Hardware/Motor%20PCB/09011-00135-A.DSN"
+      },
+      {
+        "id": "haddingtondynamics-dexter-hardware-motor-pcb-09051-00135-02-ncd-drl",
+        "assembly": "motor-pcb",
+        "name": "09051-00135-02_NCD",
+        "specification": "电路设计文件 .drl · 9,868 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/Hardware/Motor%20PCB/09051-00135-02_NCD.drl"
+      },
+      {
+        "id": "haddingtondynamics-dexter-dde-initialcalibration-hdi-cal-instructions-step-1-pdf",
+        "assembly": "software-docs",
+        "name": "HDI CAL INSTRUCTIONS- STEP 1",
+        "specification": "装配/构建文档 .pdf · 387,322 B",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/DDE/InitialCalibration/HDI%20CAL%20INSTRUCTIONS-%20STEP%201.pdf"
+      },
+      {
+        "id": "haddingtondynamics-dexter-dde-initialcalibration-hdi-cal-instructions-step-2-pdf",
+        "assembly": "software-docs",
+        "name": "HDI CAL INSTRUCTIONS- STEP 2",
+        "specification": "装配/构建文档 .pdf · 590,839 B",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/DDE/InitialCalibration/HDI%20CAL%20INSTRUCTIONS-%20STEP%202.pdf"
+      },
+      {
+        "id": "haddingtondynamics-dexter-dde-initialcalibration-hdi-cal-instructions-step-3-pdf",
+        "assembly": "software-docs",
+        "name": "HDI CAL INSTRUCTIONS- STEP 3",
+        "specification": "装配/构建文档 .pdf · 1,375,150 B",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/DDE/InitialCalibration/HDI%20CAL%20INSTRUCTIONS-%20STEP%203.pdf"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "电路设计",
+        "url": "https://github.com/HaddingtonDynamics/Dexter/tree/HEAD/Hardware/Motor%20PCB",
+        "state": "verified",
+        "detail": "PCB / 原理图目录：Hardware/Motor PCB"
+      },
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/HaddingtonDynamics/Dexter/blob/HEAD/Hardware/Motor%20PCB/09051-00135-0_BOM.xlsx",
+        "detail": "仓库内物料清单：Hardware/Motor PCB/09051-00135-0_BOM.xlsx"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/HaddingtonDynamics/Dexter",
+        "detail": "仓库主页"
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],
     "reproduction": {
@@ -27794,6 +28169,65 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     }
   },
   {
+    "id": "REPO-AAEDMUSA-OPENQDD-V1",
+    "name": "OpenQDD-V1",
+    "category": "ROBOT",
+    "version": "2023-06-23",
+    "embodiment": "通用机器人",
+    "summary": "Open source 3D printed Robotic Actuator",
+    "repository": "https://github.com/aaedmusa/OpenQDD-V1",
+    "releaseBasis": "仓库 aaedmusa/OpenQDD-V1 的公开文件树快照（6 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 135,
+    "license": "无",
+    "assemblies": [
+      {
+        "id": "asm0",
+        "name": "整机资产",
+        "description": "仓库未按功能分区组织，本组按文件类型聚合｜1 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "aaedmusa-openqdd-v1-openqdd-v1-bom-xlsx",
+        "assembly": "asm0",
+        "name": "OpenQDD V1 BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/aaedmusa/OpenQDD-V1/blob/HEAD/OpenQDD%20V1%20BOM.xlsx"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/aaedmusa/OpenQDD-V1/blob/HEAD/OpenQDD%20V1%20BOM.xlsx",
+        "detail": "仓库内物料清单：OpenQDD V1 BOM.xlsx"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/aaedmusa/OpenQDD-V1",
+        "detail": "Open source 3D printed Robotic Actuator"
+      }
+    ],
+    "gaps": [
+      "仓库未按功能分区组织文件，装配层级由零件文件名中的部位词聚类推导，与官方装配顺序可能有出入。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
     "id": "REPO-JUSTLOVESCIENCE-MKS-XDRIVE-MINI",
     "name": "MKS-XDRIVE-MINI",
     "category": "QUADRUPED",
@@ -34485,6 +34919,204 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-POLLEN-ROBOTICS-ELEC_RPI_ROBOT_HAT",
+    "name": "elec_RPI_Robot_HAT",
+    "category": "ROBOT",
+    "version": "2026-09-14",
+    "embodiment": "通用机器人",
+    "summary": "RPI HAT for small/medium robots (IMU, Dynamixel)",
+    "repository": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT",
+    "releaseBasis": "仓库 pollen-robotics/elec_RPI_Robot_HAT 的公开文件树快照（34 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 72,
+    "license": "Apache-2.0",
+    "assemblies": [
+      {
+        "id": "asm0",
+        "name": "供电",
+        "description": "按零件文件名中的部位词聚类｜8 个 PCB · 1 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-production-ase01187-c1-elec-rpi-robot-hat-bom",
+        "assembly": "asm0",
+        "name": "ASE01187-C1_elec_RPI_Robot_HAT_BOM",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/production/ASE01187-C1_elec_RPI_Robot_HAT_BOM.csv"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-audio-kicad-sch",
+        "assembly": "asm0",
+        "name": "audio",
+        "specification": "电路设计文件 .kicad_sch · 405,599 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/audio.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-dynamixel-kicad-sch",
+        "assembly": "asm0",
+        "name": "dynamixel",
+        "specification": "电路设计文件 .kicad_sch · 337,231 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/dynamixel.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-elec-rpi-robot-hat-kicad-pcb",
+        "assembly": "asm0",
+        "name": "elec_RPI_Robot_HAT",
+        "specification": "电路设计文件 .kicad_pcb · 2,213,353 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/elec_RPI_Robot_HAT.kicad_pcb"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-elec-rpi-robot-hat-kicad-sch",
+        "assembly": "asm0",
+        "name": "elec_RPI_Robot_HAT",
+        "specification": "电路设计文件 .kicad_sch · 961,918 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/elec_RPI_Robot_HAT.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-main-kicad-sch",
+        "assembly": "asm0",
+        "name": "main",
+        "specification": "电路设计文件 .kicad_sch · 231,872 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/main.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-power-kicad-sch",
+        "assembly": "asm0",
+        "name": "power",
+        "specification": "电路设计文件 .kicad_sch · 236,793 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/power.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-pwr-supply-charge-kicad-sch",
+        "assembly": "asm0",
+        "name": "pwr_supply_charge",
+        "specification": "电路设计文件 .kicad_sch · 811,870 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/pwr_supply_charge.kicad_sch"
+      },
+      {
+        "id": "pollen-robotics-elec-rpi-robot-hat-sensors-kicad-sch",
+        "assembly": "asm0",
+        "name": "sensors",
+        "specification": "电路设计文件 .kicad_sch · 286,316 B",
+        "quantity": "1",
+        "kind": "PCB",
+        "state": "verified",
+        "source": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/sensors.kicad_sch"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT/blob/HEAD/production/ASE01187-C1_elec_RPI_Robot_HAT_BOM.csv",
+        "detail": "仓库内物料清单：production/ASE01187-C1_elec_RPI_Robot_HAT_BOM.csv"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/pollen-robotics/elec_RPI_Robot_HAT",
+        "detail": "RPI HAT for small/medium robots (IMU, Dynamixel)"
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-RED-RABBIT-ROBOTICS-RX1_BOM",
+    "name": "rx1_bom",
+    "category": "HUMANOID_FULL",
+    "version": "2024-07-27",
+    "embodiment": "FULL_22_DOF 级",
+    "summary": "hardware BOM for rx1 humanoid robot",
+    "repository": "https://github.com/Red-Rabbit-Robotics/rx1_bom",
+    "releaseBasis": "仓库 Red-Rabbit-Robotics/rx1_bom 的公开文件树快照（4 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 70,
+    "license": "MIT",
+    "assemblies": [
+      {
+        "id": "asm0",
+        "name": "整机资产",
+        "description": "仓库未按功能分区组织，本组按文件类型聚合｜1 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "red-rabbit-robotics-rx1-bom-red-rabbit-robotics-rx1-humanoid-preliminary-bom-v0-",
+        "assembly": "asm0",
+        "name": "Red Rabbit Robotics RX1 Humanoid preliminary BOM V0.1 - 2024 07 26",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/Red-Rabbit-Robotics/rx1_bom/blob/HEAD/Red%20Rabbit%20Robotics%20RX1%20Humanoid%20preliminary%20BOM%20V0.1%20-%202024%2007%2026.xlsx"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/Red-Rabbit-Robotics/rx1_bom/blob/HEAD/Red%20Rabbit%20Robotics%20RX1%20Humanoid%20preliminary%20BOM%20V0.1%20-%202024%2007%2026.xlsx",
+        "detail": "仓库内物料清单：Red Rabbit Robotics RX1 Humanoid preliminary BOM V0.1 - 2024 07 26.xlsx"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/Red-Rabbit-Robotics/rx1_bom",
+        "detail": "hardware BOM for rx1 humanoid robot"
+      }
+    ],
+    "gaps": [
+      "仓库未按功能分区组织文件，装配层级由零件文件名中的部位词聚类推导，与官方装配顺序可能有出入。",
       "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
@@ -54765,6 +55397,65 @@ export const GENERATED_PROJECTS: WorkbenchProject[] = [
     "gaps": [
       "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
       "仓库内未提供 BOM 清单文件，零件数量与单价未在公开资料中标注。",
+      "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
+      "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
+    ],
+    "reproduction": {
+      "state": "UNSCORED",
+      "reason": "NOT_YET_MODELED",
+      "note": "本项目已生成证据工作台，但尚未提交 OPEN_REPRO_V2 评分。"
+    }
+  },
+  {
+    "id": "REPO-AUTOMATICDAI-ARDUINO-YAOJI",
+    "name": "arduino-yaoji",
+    "category": "ROBOT",
+    "version": "2017-09-14",
+    "embodiment": "未归类",
+    "summary": "Yaoji is an open-source digital plant based on Arduino and Android.",
+    "repository": "https://github.com/automaticdai/arduino-yaoji",
+    "releaseBasis": "仓库 automaticdai/arduino-yaoji 的公开文件树快照（36 个文件）；装配层级由目录结构或零件文件名推导，零件行逐条对应真实文件。",
+    "stars": 3,
+    "license": "无",
+    "assemblies": [
+      {
+        "id": "documents",
+        "name": "documents",
+        "description": "1 个 BOM",
+        "x": 50.0,
+        "y": 20.0,
+        "color": "#d3ea5c"
+      }
+    ],
+    "parts": [
+      {
+        "id": "automaticdai-arduino-yaoji-documents-bom-list-txt",
+        "assembly": "documents",
+        "name": "BOM List",
+        "specification": "物料清单文件 · 数量与单价需人工核对",
+        "quantity": "1",
+        "kind": "MAKE",
+        "state": "verified",
+        "source": "https://github.com/automaticdai/arduino-yaoji/blob/HEAD/documents/BOM%20List.txt"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "BOM",
+        "state": "verified",
+        "url": "https://github.com/automaticdai/arduino-yaoji/blob/HEAD/documents/BOM%20List.txt",
+        "detail": "仓库内物料清单：documents/BOM List.txt"
+      },
+      {
+        "label": "上游仓库",
+        "state": "verified",
+        "url": "https://github.com/automaticdai/arduino-yaoji",
+        "detail": "Yaoji is an open-source digital plant based on Arduino and Android."
+      }
+    ],
+    "gaps": [
+      "装配层级由仓库发布的目录结构推导，可能与官方装配顺序不完全一致。",
+      "未发现 URDF / MJCF 等运动学描述文件，关节自由度与限位未能验证。",
       "未发现 PCB / 原理图文件，电子部分的具体设计不可复核。",
       "零件单价与供应商信息未在本仓库结构中体现；本工作台不代填价格，采购成本需以供应商实时报价为准。"
     ],

@@ -283,7 +283,10 @@ def build_project(repo: dict, tree: list[dict], max_parts: int) -> dict | None:
         if k:
             buckets[k].append((e, e["path"]))
 
-    if not buckets.get("MESH") and not buckets.get("CAD"):
+    # 只认网格和 CAD 的早期守卫会漏掉"只发 BOM"的项目（makerspet/oomwoo ★11K
+    # 就是这样被挡了很久）。它与下面那道明确接受 BOM/PCB 的硬件闸互相矛盾，
+    # 而真正决定要不要收的是那道闸——这里只负责排除"完全没有任何硬件证据"的仓库。
+    if not any(buckets.get(k) for k in ("MESH", "CAD", "PCB", "BOM")):
         return None
 
     # --- 硬件证据硬闸 -----------------------------------------------------

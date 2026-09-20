@@ -10,9 +10,9 @@
 | --- | --- |
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
-| 管线生成 | 204 个（来自公开仓库树的证据化拆解） |
-| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 209 个未评分 |
-| 零件行 | 3,803 条，全部指向真实文件（逐项目检测链接可达率 204/204） |
+| 管线生成 | 212 个（来自公开仓库树的证据化拆解） |
+| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 217 个未评分 |
+| 零件行 | 3,830 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -64,8 +64,8 @@ type ReproductionScore =
 pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.generated.ts
 ```
 
-输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 204 个 `WorkbenchProject`
-（3,803 条零件行、1,027 个总成）。规则：
+输入是 544 棵已缓存的公开仓库树与仓库元数据，输出 212 个 `WorkbenchProject`
+（3,830 条零件行、1,038 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -243,6 +243,23 @@ mmmarinho/UMIRobot        → mmmarinho/umirobot
 反例也要留下记录：`NVIDIA-AI-IOT/jetracer` 的 8 个 CAD 全是**商用遥控车底盘
 （Latrax / Tamiya）的摄像头支架与转接板**，车本体仍需购买，不构成可复现的机器人设计，
 因此不收。
+
+### 两道判定互相矛盾时，窄的那道会静默吃掉项目
+
+`build_project()` 开头有一道**早期的**守卫：
+
+```python
+if not buckets.get("MESH") and not buckets.get("CAD"):
+    return None
+```
+
+它只认网格和 CAD，**在下面那道明确接受 BOM/PCB 的硬件闸之前就返回了**。
+于是"只发 BOM"的项目全部静默消失——`makerspet/oomwoo`（★11K）就卡在这里很久。
+把守卫对齐成 `MESH/CAD/PCB/BOM` 任意一项后，一次多收 8 个项目
+（`enactic/openarm`、`AgibotTech/agibot_x1_hardware`、`HaddingtonDynamics/Dexter` 等）。
+
+教训：**同一件事有两道判定时，要确认它们不会给出不同答案**，
+否则先执行的那道实际定义了行为，而另一道只存在于阅读代码的人的想象里。
 
 ## 运行
 
