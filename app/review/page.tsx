@@ -5,6 +5,15 @@ import { AlertTriangle, Check, ExternalLink, Search } from "lucide-react";
 import { ALL_PROJECTS, PROJECT_STATS, findProject } from "@/lib/workbench-projects";
 import { PIPELINE_AUDIT } from "@/lib/pipeline-audit";
 import { BAND_LABEL, UNSCORED_LABEL, scoreLabel } from "@/lib/reproduction";
+import {
+  ANCHOR_NAME,
+  ANCHOR_SCORE,
+  BAND_FILTERS,
+  DIMENSION_NOTES,
+  EVIDENCE_SCORES,
+  bandOf,
+  scoreOf,
+} from "@/lib/evidence-score";
 
 /**
  * 审看台 / Audit surface.
@@ -17,12 +26,13 @@ import { BAND_LABEL, UNSCORED_LABEL, scoreLabel } from "@/lib/reproduction";
  *      with the data instead of scrolling past in a terminal.
  */
 
-type SortKey = "stars" | "name" | "parts" | "assemblies";
+type SortKey = "stars" | "name" | "parts" | "assemblies" | "eri";
 
 export default function ReviewPage() {
   const [query, setQuery] = useState("");
   const [scope, setScope] = useState<"all" | "generated" | "curated">("all");
   const [state, setState] = useState<"all" | "scored" | "unscored">("all");
+  const [band, setBand] = useState<string>("all");
   const [sort, setSort] = useState<SortKey>("stars");
   const [openId, setOpenId] = useState<string | null>(null);
   const [auditOpen, setAuditOpen] = useState(false);
@@ -34,21 +44,45 @@ export default function ReviewPage() {
       if (scope === "curated" && !p.curated) return false;
       if (state === "scored" && p.reproduction.state !== "SCORED") return false;
       if (state === "unscored" && p.reproduction.state !== "UNSCORED") return false;
+      if (band !== "all") {
+        const s = EVIDENCE_SCORES[p.id]?.score ?? null;
+        const f = BAND_FILTERS.find((b) => b.key === band);
+        if (s === null || !f || !f.test(s)) return false;
+      }
       if (!q) return true;
       return `${p.id} ${p.name} ${p.category}`.toLowerCase().includes(q);
     });
     const detail = (id: string) => findProject(id);
     return list.sort((a, b) => {
       if (sort === "name") return a.name.localeCompare(b.name);
+      if (sort === "eri") {
+        const sa = EVIDENCE_SCORES[a.id]?.score ?? -1;
+        const sb = EVIDENCE_SCORES[b.id]?.score ?? -1;
+        return sb - sa;
+      }
       if (sort === "stars") return (b.stars ?? -1) - (a.stars ?? -1);
       const da = detail(a.id);
       const db = detail(b.id);
       if (sort === "parts") return (db?.parts.length ?? 0) - (da?.parts.length ?? 0);
       return (db?.assemblies.length ?? 0) - (da?.assemblies.length ?? 0);
     });
-  }, [query, scope, state, sort]);
+  }, [query, scope, state, band, sort]);
+
+  const eriStats = useMemo(() => {
+    const vals = Object.values(EVIDENCE_SCORES)
+      .map((s) => s.score)
+      .filter((v): v is number => v !== null);
+    const sorted = [...vals].sort((a, b) => a - b);
+    return {
+      n: vals.length,
+      median: sorted.length ? sorted[Math.floor(sorted.length / 2)] : 0,
+      atOrAbove: vals.filter((v) => v >= 100).length,
+      lowerBound: Object.values(EVIDENCE_SCORES).filter((s) => s.measuredWeight < 100).length,
+    };
+  }, []);
 
   const open = openId ? findProject(openId) : null;
+  const openEntry = openId ? ALL_PROJECTS.find((p) => p.id === openId) ?? null : null;
   const totalExcluded = PIPELINE_AUDIT.excluded.reduce((s, e) => s + e.repos.length, 0);
 
   return (
@@ -119,8 +153,25 @@ export default function ReviewPage() {
             ["name", "按名称"],
             ["parts", "按零件行"],
             ["assemblies", "按总成数"],
+            ["eri", "按重现度"],
           ]}
         />
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2 border-b border-border bg-muted/20 px-4 py-2 lg:px-6">
+        <span className="num text-[10px] text-muted-foreground">
+          证据重现度（锚点 {ANCHOR_NAME} = {ANCHOR_SCORE}）
+        </span>
+        <Segmented
+          value={band}
+          onChange={setBand}
+          options={[["all", "任意档"], ...BAND_FILTERS.map(
+            (b) => [b.key, b.label] as [string, string])]}
+        />
+        <span className="num ml-auto text-[10px] text-muted-foreground">
+          口径：只计仓库内文件 · 已计分 {eriStats.n} · 中位 {eriStats.median} · ≥100 有 {eriStats.atOrAbove} 个
+          {eriStats.lowerBound ? ` · ${eriStats.lowerBound} 个含未测维度（分数为下界）` : ""}
+        </span>
       </div>
 
       <div className="overflow-x-auto">
@@ -129,7 +180,8 @@ export default function ReviewPage() {
             <tr className="border-b border-border text-left text-[11px] text-muted-foreground">
               <Th className="w-[300px]">项目</Th>
               <Th>形态</Th>
-              <Th className="w-[150px]">评分</Th>
+              <Th className="w-[120px]">重现度</Th>
+              <Th className="w-[150px]">OPEN_REPRO_V2</Th>
               <Th className="w-[130px]">来源</Th>
               <Th className="w-[70px] text-right">★</Th>
               <Th className="w-[90px] text-right">总成</Th>
@@ -158,6 +210,9 @@ export default function ReviewPage() {
                   </Td>
                   <Td>
                     <span className="num text-[11px]">{p.category}</span>
+                  </Td>
+                  <Td>
+                    <EriCell id={p.id} />
                   </Td>
                   <Td>
                     {p.reproduction.state === "SCORED" ? (
@@ -229,6 +284,8 @@ export default function ReviewPage() {
             {open.releaseBasis}
           </p>
 
+          <EriBreakdown id={open.id} />
+
           <Section title={`装配（${open.assemblies.length}）`}>
             {open.assemblies.map((a) => (
               <div key={a.id} className="flex gap-2 border-b border-border/60 py-1.5 last:border-0">
@@ -299,6 +356,51 @@ export default function ReviewPage() {
               ))}
             </ol>
           </Section>
+        </div>
+      ) : null}
+
+      {/*
+        标杆项目走的是另一条路径：它有专门的深度 3D 浏览器，因此不在通用项目
+        列表里，findProject 对它返回 null。原来这一行渲染出来却点不出任何东西——
+        看起来可点、实际是死的。而它恰恰是评分锚点，必须能打开六维表来核对
+        "100 分"是怎么来的。这里给它一条精简抽屉。
+      */}
+      {!open && openEntry ? (
+        <div className="fixed inset-y-0 right-0 z-20 w-full max-w-[520px] overflow-y-auto border-l border-border bg-background p-5 shadow-2xl">
+          <div className="flex items-start gap-2">
+            <div className="min-w-0">
+              <p className="num text-[10px] text-muted-foreground">{openEntry.id}</p>
+              <h2 className="text-[16px] font-semibold">{openEntry.name}</h2>
+            </div>
+            <button
+              type="button"
+              onClick={() => setOpenId(null)}
+              className="ml-auto shrink-0 rounded-sm border border-border px-2 py-1 text-[11px] hover:border-primary/50"
+            >
+              关闭
+            </button>
+          </div>
+          {scoreOf(openEntry.id)?.repository ? (
+            <a
+              href={scoreOf(openEntry.id)!.repository}
+              target="_blank"
+              rel="noreferrer"
+              className="num mt-1 inline-flex items-center gap-1 text-[11px] text-primary hover:underline"
+            >
+              {scoreOf(openEntry.id)!.repository} <ExternalLink className="size-3" />
+            </a>
+          ) : null}
+          <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">
+            标杆项目使用专门的深度 3D 浏览器，零件行与装配树不在通用列表中。
+            下面是与其它 212 个项目「同一算式」算出的六维证据拆解——它同时是满分基准。
+          </p>
+          <a
+            href="/"
+            className="mt-2 inline-flex items-center gap-1 rounded-sm border border-primary/40 bg-primary/10 px-2 py-1 text-[11px] text-primary"
+          >
+            打开深度工作台 <ExternalLink className="size-3" />
+          </a>
+          <EriBreakdown id={openEntry.id} />
         </div>
       ) : null}
 
@@ -428,4 +530,108 @@ function Th({ children, className = "" }: { children: React.ReactNode; className
 
 function Td({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return <td className={`px-3 py-2 align-top ${className}`}>{children}</td>;
+}
+
+/** 表格里的重现度格子。数字旁边始终带档位与"下界"标记，避免被当成满分读。 */
+function EriCell({ id }: { id: string }) {
+  const s = scoreOf(id);
+  if (!s || s.score === null) {
+    return <span className="num text-[10px] text-muted-foreground">未计分</span>;
+  }
+  const b = bandOf(s.score);
+  return (
+    <span className="flex flex-col gap-0.5">
+      <span className="num text-[13px] font-medium">{s.score.toFixed(1)}</span>
+      {b ? (
+        <span className={`w-fit rounded-sm border px-1 py-px text-[9px] ${b.className}`}>
+          {b.label}
+        </span>
+      ) : null}
+      {s.measuredWeight < 100 ? (
+        <span className="num text-[9px] text-[#ffb454]">下界（有维度未测）</span>
+      ) : null}
+    </span>
+  );
+}
+
+/**
+ * 抽屉里的重现度拆解：六个维度逐条列出取值、基准、与锚点的比、得分，
+ * 并把产生这个数值的证据链接摆出来。
+ *
+ * 这里是"不靠模型自评"的落点——每个数字旁边都能点开它数的是哪些文件。
+ */
+function EriBreakdown({ id }: { id: string }) {
+  const s = scoreOf(id);
+  if (!s) return null;
+  const b = s.score === null ? null : bandOf(s.score);
+  return (
+    <Section title={`证据重现度（锚点 ${ANCHOR_SCORE}）`}>
+      <div className="flex flex-wrap items-baseline gap-2 py-1.5">
+        <span className="num text-[26px] font-semibold">
+          {s.score === null ? "—" : s.score.toFixed(1)}
+        </span>
+        {b ? (
+          <span className={`rounded-sm border px-1.5 py-0.5 text-[10px] ${b.className}`}>
+            {b.label}
+          </span>
+        ) : null}
+        <span className="text-[10px] text-muted-foreground">{b?.hint}</span>
+      </div>
+      {s.flags.map((f) => (
+        <p key={f} className="border-t border-border/60 py-1.5 text-[10px] text-[#ffb454]">
+          {f}
+        </p>
+      ))}
+      <div className="border-t border-border/60 py-1">
+        {s.dimensions.map((d) => {
+          const pct = d.ratio === null ? 0 : Math.min(100, (d.ratio / 2) * 100);
+          return (
+            <div key={d.key} className="border-b border-border/40 py-1.5 last:border-0">
+              <div className="flex items-baseline gap-2">
+                <span className="w-[86px] shrink-0 text-[11px]">{d.label}</span>
+                <span className="num text-[11px] tabular-nums">
+                  {d.value.toFixed(d.unit.startsWith("许可") ? 1 : 0)}
+                </span>
+                <span className="num text-[10px] text-muted-foreground">
+                  / 基准 {d.anchorValue.toFixed(0)}
+                </span>
+                <span className="num ml-auto text-[11px]">
+                  {d.points === null ? "未测" : `+${d.points.toFixed(1)}`}
+                </span>
+                <span className="num w-[38px] shrink-0 text-right text-[10px] text-muted-foreground">
+                  权重 {d.weight}
+                </span>
+              </div>
+              <div className="mt-1 h-[3px] w-full rounded-full bg-muted">
+                <div
+                  className="h-full rounded-full bg-primary/70"
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+              <p className="mt-1 text-[10px] leading-snug text-muted-foreground">
+                {d.detail}
+                {DIMENSION_NOTES[d.key] ? ` — ${DIMENSION_NOTES[d.key]}` : ""}
+              </p>
+              {d.evidence.length ? (
+                <div className="mt-1 flex flex-wrap gap-1">
+                  {d.evidence.slice(0, 3).map((u) => (
+                    <a
+                      key={u}
+                      href={u}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={u}
+                      className="num max-w-[220px] truncate rounded-sm border border-border px-1 py-px text-[9px] text-primary hover:border-primary/50"
+                    >
+                      {u.replace("https://github.com/", "").replace("/blob/HEAD/", " ▸ ")}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+    </Section>
+  );
 }

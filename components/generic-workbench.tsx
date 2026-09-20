@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { AlertTriangle, Check, Download, ExternalLink, Search } from "lucide-react";
 import type { EvidenceState, WorkbenchProject } from "@/lib/workbench-projects";
 import { gapsDisclaimer, scoreLabel } from "@/lib/reproduction";
+import { bandOf, scoreOf } from "@/lib/evidence-score";
 
 const KIND_COLOR = { BUY: "#5aa9ff", PRINT: "#b98cff", PCB: "#35d0c8", MAKE: "#ffb454", SW: "#8894a6" } as const;
 const STATE_LABEL: Record<EvidenceState, string> = { verified: "已核验", partial: "待归一", missing: "资料缺失" };
@@ -21,6 +22,7 @@ export function GenericWorkbench({ project }: { project: WorkbenchProject }) {
     return matchesAssembly && haystack.includes(query.toLowerCase());
   }), [project.parts, query, selected]);
   const verifiedCount = project.parts.filter((part) => part.state === "verified").length;
+  const eri = scoreOf(project.id);
 
   const exportCsv = () => {
     const fields = ["assembly", "kind", "name", "specification", "quantity", "evidence_state", "source"];
@@ -38,7 +40,7 @@ export function GenericWorkbench({ project }: { project: WorkbenchProject }) {
     <div className="flex min-h-0 flex-1 flex-col bg-background lg:h-full lg:overflow-hidden">
       <header className="shrink-0 border-b border-border px-4 py-3 lg:px-6">
         <div className="flex flex-wrap items-center gap-2">
-          <Badge primary>{project.id}</Badge><Badge>{project.category}</Badge><Badge primary>{project.version} · {project.embodiment}</Badge><Badge primary>{score.state === "SCORED" ? `OPEN REPRO ${scoreLabel(score)}` : scoreLabel(score)}</Badge>
+          <Badge primary>{project.id}</Badge><Badge>{project.category}</Badge><Badge primary>{project.version} · {project.embodiment}</Badge><Badge primary>{score.state === "SCORED" ? `OPEN REPRO ${scoreLabel(score)}` : scoreLabel(score)}</Badge><EriBadge id={project.id} />
           <a href={project.repository} target="_blank" rel="noreferrer" className="ml-auto inline-flex items-center gap-1.5 text-[12px] text-muted-foreground hover:text-primary">官方源 <ExternalLink className="size-3" /></a>
         </div>
         <h1 className="mt-2 text-[20px] font-semibold">{project.name} · 互动拆解与证据台</h1>
@@ -66,8 +68,11 @@ export function GenericWorkbench({ project }: { project: WorkbenchProject }) {
             <label className="ml-auto flex items-center gap-2 text-[11px] text-muted-foreground">拆分<input type="range" min="0" max="100" value={explode} onChange={(event) => setExplode(Number(event.target.value))} className="w-28 accent-[#d3ea5c]" /></label>
           </div>
           <AssemblyMap project={project} selected={selected} explode={explode} onSelect={setSelected} />
-          <div className="absolute right-4 bottom-4 left-4 grid grid-cols-3 gap-px overflow-hidden rounded-sm border border-border bg-border">
-            <Metric label="证据化 BOM 行" value={String(project.parts.length)} /><Metric label="已核验" value={`${verifiedCount}/${project.parts.length}`} /><Metric label={score.state === "SCORED" ? "重现概率" : "重现概率"} value={score.state === "SCORED" ? `${score.probabilityPercent}%` : "—"} accent={score.state === "SCORED"} />
+          <div className="absolute right-4 bottom-4 left-4 grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border lg:grid-cols-4">
+            <Metric label="证据化 BOM 行" value={String(project.parts.length)} />
+            <Metric label="已核验" value={`${verifiedCount}/${project.parts.length}`} />
+            <Metric label="OPEN_REPRO_V2（physical-ai 模型）" value={score.state === "SCORED" ? `${score.probabilityPercent}%` : "—"} accent={score.state === "SCORED"} />
+            <Metric label="证据重现度（Berkeley=100）" value={eri ? eri.score?.toFixed(1) ?? "—" : "—"} accent={!!eri && (eri.score ?? 0) >= 100} />
           </div>
         </section>
 
@@ -103,5 +108,16 @@ function AssemblyMap({ project, selected, explode, onSelect }: { project: Workbe
 }
 
 function Badge({ children, primary = false }: { children: React.ReactNode; primary?: boolean }) { return <span className={`num rounded-sm border px-1.5 py-0.5 text-[10px] ${primary ? "border-primary/40 bg-primary/10 text-primary" : "border-border text-muted-foreground"}`}>{children}</span>; }
+/** 头部的重现度徽标：分值 + 档位，并链到审看台的逐维拆解。 */
+function EriBadge({ id }: { id: string }) {
+  const s = scoreOf(id);
+  if (!s || s.score === null) return <Badge>重现度 未计分</Badge>;
+  const b = bandOf(s.score);
+  return (
+    <a href="/review" title={`证据重现度 ${s.score}（锚点 Berkeley=100）${s.measuredWeight < 100 ? " · 分数为下界" : ""}，点开看逐维证据`}>
+      <Badge primary>重现度 {s.score.toFixed(1)}{b ? ` · ${b.label}` : ""}{s.measuredWeight < 100 ? "†" : ""}</Badge>
+    </a>
+  );
+}
 function Metric({ label, value, accent = false }: { label: string; value: string; accent?: boolean }) { return <div className="bg-card/95 px-3 py-2 backdrop-blur"><p className="text-[9px] text-muted-foreground">{label}</p><p className={`num mt-1 text-[14px] font-semibold ${accent ? "text-primary" : ""}`}>{value}</p></div>; }
 function State({ state }: { state: EvidenceState }) { const ok = state === "verified"; return <span className={`mt-1 inline-flex items-center gap-1 text-[10px] ${ok ? "text-[#35d0c8]" : state === "partial" ? "text-[#ffb454]" : "text-destructive"}`}>{ok ? <Check className="size-2.5" /> : <AlertTriangle className="size-2.5" />}{STATE_LABEL[state]}</span>; }

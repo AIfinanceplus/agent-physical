@@ -1,0 +1,6 @@
+{
+ "PCrnjak/Faze4-Robotic-arm": "CERN-OHL-S-2.0",
+ "OLIMEX/Minibot": "Apache-2.0",
+ "rosmo-robot/rosmo-robot.github.io": "MIT",
+ "adham-elarabawy/OpenQuadruped": "NOASSERTION"
+}

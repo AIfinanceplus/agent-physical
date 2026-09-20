@@ -11,7 +11,7 @@
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
 | 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
 | 管线生成 | 212 个（来自公开仓库树的证据化拆解） |
-| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 217 个未评分 |
+| 评分 | OPEN_REPRO_V2：1 个已评分（Berkeley，导入自 physical-ai）· 217 个未评分；<br>证据重现度（ERI）：217 个已计分，锚点 Berkeley = 100，中位 37.5 |
 | 零件行 | 3,830 条，全部指向真实文件（逐项目检测链接可达率 212/212） |
 
 ## 修正的缺陷：硬编码的 88
@@ -261,6 +261,54 @@ if not buckets.get("MESH") and not buckets.get("CAD"):
 教训：**同一件事有两道判定时，要确认它们不会给出不同答案**，
 否则先执行的那道实际定义了行为，而另一道只存在于阅读代码的人的想象里。
 
+## 评分：证据重现度指数（ERI）
+
+**以 Berkeley Humanoid Lite 参考实现为 100 分锚点，其他项目可高可低。**
+这个分数不是模型给的评价，而是由可复核的计数算出来的。
+
+### 它为什么不是幻觉
+
+| 约束 | 做法 |
+|---|---|
+| 不让模型打分 | 六个维度全是**计数**：CAD 文件数、可解析 BOM 行项、PCB 文件数、URDF 文件数、装配文档数、许可字段。没有任何一处调用判断 |
+| 锚点不是写死的常数 | 每个基准值由 `score_reproduction.py` 从参考实现与 Berkeley 硬件仓库树**解析**得出，每次运行重算并断言 |
+| 每个分数可逐条核对 | 每个维度的证据（具体文件路径 / BOM 原始链接）落盘 `data/score-audit.json` |
+| 不用别人的评分冒充自己 | Berkeley 的 88 是从 physical-ai **导入**的 OPEN_REPRO_V2 值，全程单独标注来源；ERI 是另一把尺子，两者在界面上并列显示、互不冒充 |
+| 测不出来就说测不出来 | 未测维度按 0 计入并把总分标为**下界**，不退出分母（退出分母等于奖励测量失败） |
+
+### 六维与锚点基准
+
+| 维度 | 权重 | 观测量 | Berkeley 基准 |
+|---|---|---|---|
+| 设计可制造性 | 24 | 参数化 CAD 文件数（STEP/IGES/F3D/SLDPRT/SCAD） | 21 |
+| 物料可采购性 | 22 | 可解析 BOM 行项 × 规格系数（型号/价格/供应商各 0.25） | 35.5 |
+| 装配可理解性 | 16 | 装配/构建类文档数 | 26 |
+| 电子可复现性 | 14 | PCB / EDA 文件数 | 1 |
+| 运动学可验证性 | 14 | URDF / MJCF / SDF / USD 文件数 | 12 |
+| 授权明确性 | 10 | 开放许可 1.0 / 无法识别 0.5 / 未声明 0 | 1.0 |
+
+比值 `min(2, log1p(n)/log1p(基准))`：用对数压缩，避免超大仓库靠单一维度刷分；
+上限 2 倍使"比 Berkeley 更强"能被表达出来，同时不让一个维度拉爆总分。
+
+### 口径边界
+
+- **只计仓库内文件。** 把硬件资料放在仓库之外的项目（官方站点零件表、EasyEDA、OSF）
+  会被系统性低估，其分数下会写明这一点。
+- 因此 ERI 回答的是"这个仓库里的证据有多齐全"，**不是"这个项目有多好"**。
+- 量纲可比性由构造保证：锚点与项目用**同一个估计量**。曾有一版锚点用"三项齐全的条目数"、
+  项目用"行数 × 系数"，结果一个 100 行无型号无价格的清单凭空与 Berkeley 打平——已修正。
+
+### 结果（2026-09-19）
+
+217 / 218 个项目计分（`HEAD-BEATRIX` 的证据在 OSF，无仓库树可数，如实留空并写明原因）。
+
+- 最高 **102.7**（`roboto_origin`）· 中位 **37.5** · 最低 5.4
+- ≥100 有 **3** 个 · 60–100 有 38 个 · <40 有 122 个
+- 13 个项目的分数为**下界**（有维度未能测量）
+
+中位只有 37.5 是真实信号：多数开源机器人仓库公开了 STL/CAD，但没有可采购清单、
+没有板子设计、没有装配文档——按"能否被第三方复现"这把尺子衡量，离 Berkeley 参考实现确实很远。
+
 ## 运行
 
 ```bash
@@ -270,6 +318,11 @@ npx tsc --noEmit                        # 类型检查
 npm run build                           # 生产构建
 
 cd pipeline && python3 build_projects.py --min-tier B --out ../lib/projects.generated.ts
+
+# 评分链：抓 BOM 内容 → 补策展项目仓库树 → 计分
+python3 fetch_bom_content.py            # 解析全语料 BOM（--force 全量重解析）
+python3 fetch_curated_trees.py          # 补拉策展条目的仓库树
+python3 score_reproduction.py           # 产出 lib/scores.generated.ts + data/score-audit.json
 ```
 
 `--min-tier` 控制收录范围（A/B/C/D），`--max-parts` 控制每个项目的零件行上限。
@@ -284,10 +337,15 @@ components/
   build-explorer/                 参考实现的深度 3D 工作台
 lib/
   reproduction.ts                 评分模型契约与展示层（唯一真源）
+  evidence-score.ts               证据重现度指数的档位与口径说明
+  scores.generated.ts             逐项目六维分（勿手改）
   workbench-types.ts              人机共用的项目结构
   workbench-projects.ts           注册表 + 人工策展条目
   projects.generated.ts           管线生成（勿手改）
 pipeline/build_projects.py        证据 → 工作台 的生成器
+pipeline/fetch_bom_content.py     抓取并解析全语料 BOM 内容（可采购性的实测值）
+pipeline/score_reproduction.py    证据重现度指数（锚点 = Berkeley = 100）
+pipeline/fetch_curated_trees.py   补拉人工策展条目的仓库树
 pipeline/fetch_gap.py             漏网候选的采集（清单/检索 → 种子）
 pipeline/scan_lists.py            扫描策展清单（含中文社区），提取并比对仓库
 pipeline/search_more_sources.py   GitHub 结构化多路检索（话题 + 关键词）
@@ -306,6 +364,9 @@ data/candidates-hardware-search.json 按命名惯例检索的候选
 data/candidates-manual.json        人工逐条核实过的候选（正式出口）
 data/seed-gap.json                补采种子（robots.json 同形）
 data/repo-ids.json                仓库 id → 规范名 映射（去重与改名纠正）
+data/bom-content.json             全语料 BOM 的解析结果（含未解析原因）
+data/score-audit.json             逐项目六维分与**全部**证据（可离线逐条核对）
+data/curated-license.json         策展条目的许可标识（取自 gh，避免重复请求）
 app/review/page.tsx               审看台：可筛选表格 + 排除清单
 ```
 
