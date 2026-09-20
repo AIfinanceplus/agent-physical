@@ -206,7 +206,8 @@ def build_anchor() -> dict:
         "assembly": float(r.get("with_docs", 0)),
         # 电子：参考实现记录的配电板设计数（Berkeley 的 EDA 文件不在公开仓库树里）
         "electronics": float(max(1, r.get("own_pcb", 0))),
-        # 运动学：URDF/MJCF/SDF/USD 文件数（可重算）
+        # 运动学：URDF/Xacro/MJCF/USD/SRDF 文件数（可重算）
+        # 不含 .sdf：语料里的 .sdf 绝大多数是 Gazebo 仿真场景，不是机器人自身的描述。
         "kinematics": float(t["counts"]["DESC"]),
         # 授权：Assets 仓库为 CC-BY-SA-4.0，明确允许再制造
         "licensing": 1.0,
@@ -290,7 +291,7 @@ def dims_for_project(p: dict, tree: list[dict], bom: dict) -> dict:
         "electronics": (len(pcb_files), [blob_url(x) for x in pcb_files[:4]],
                         f"PCB / EDA 文件 {len(pcb_files)} 个"),
         "kinematics": (len(kin_files), [blob_url(x) for x in kin_files[:4]],
-                       f"URDF / MJCF / SDF / USD 文件 {len(kin_files)} 个"),
+                       f"URDF / Xacro / MJCF / USD / SRDF 文件 {len(kin_files)} 个"),
         "licensing": (lic_ratio, [], lic_detail),
     }, {"sourcing_measured": src["measured"]}
 

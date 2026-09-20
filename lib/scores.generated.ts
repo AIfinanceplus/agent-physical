@@ -85,7 +85,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -177,7 +177,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -273,7 +273,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -364,7 +364,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6275,
     "points": 8.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 4 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 4 个",
     "evidence": [
      "https://github.com/TheRobotStudio/SO-ARM100/blob/HEAD/Simulation/SO100/so100.urdf",
      "https://github.com/TheRobotStudio/SO-ARM100/blob/HEAD/Simulation/SO101/so101_new_calib.urdf"
@@ -461,7 +461,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.5405,
     "points": 7.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 3 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 3 个",
     "evidence": [
      "https://github.com/Vector-Wangel/XLeRobot/blob/HEAD/simulation/Maniskill/assets/xlerobot/xlerobot.srdf",
      "https://github.com/Vector-Wangel/XLeRobot/blob/HEAD/simulation/Maniskill/assets/xlerobot/xlerobot.urdf"
@@ -557,7 +557,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -648,7 +648,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/Seeed-Projects/reBot-DevArm/blob/HEAD/Rebot_Arm_description/DM/urdf/ReBot_Arm_DM.urdf",
      "https://github.com/Seeed-Projects/reBot-DevArm/blob/HEAD/Rebot_Arm_description/RS/urdf/ReBot_Arm_RS.urdf"
@@ -744,7 +744,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/apirrone/Open_Duck_Mini/blob/HEAD/mini_bdx/robots/bdx/robot.urdf",
      "https://github.com/apirrone/Open_Duck_Mini/blob/HEAD/mini_bdx/robots/open_duck_mini_v2/robot.urdf"
@@ -840,7 +840,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -932,7 +932,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1023,7 +1023,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/AlexanderKoch-Koch/low_cost_robot/blob/HEAD/simulation/low_cost_robot/low-cost-arm.urdf"
     ]
@@ -1120,7 +1120,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1216,7 +1216,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm/blob/HEAD/PAROL6_URDF/PAROL6/urdf/PAROL6.urdf"
     ]
@@ -1314,7 +1314,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1409,7 +1409,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.3512,
     "points": 18.92,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 31 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 31 个",
     "evidence": [
      "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/urdf/_d405.urdf.xacro",
      "https://github.com/Roboparty/roboto_origin/blob/HEAD/modules/roboparty_deploy/src/camera/thirdparty/realsense-ros/realsense2_description/urdf/_d415.urdf.xacro"
@@ -1503,7 +1503,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.239,
     "points": 17.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 23 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 23 个",
     "evidence": [
      "https://github.com/ZJU-FAST-Lab/Fast-Drone-250/blob/HEAD/src/realflight_modules/realsense-ros/realsense2_description/tests/dual_d415.xacro",
      "https://github.com/ZJU-FAST-Lab/Fast-Drone-250/blob/HEAD/src/realflight_modules/realsense-ros/realsense2_description/tests/dual_d435.xacro"
@@ -1599,7 +1599,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1687,7 +1687,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8107,
     "points": 11.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 7 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 7 个",
     "evidence": [
      "https://github.com/chvmp/champ/blob/HEAD/champ_description/urdf/accessories.urdf.xacro",
      "https://github.com/chvmp/champ/blob/HEAD/champ_description/urdf/champ.urdf"
@@ -1783,7 +1783,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1878,7 +1878,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -1969,7 +1969,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2066,7 +2066,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2159,7 +2159,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.7915,
     "points": 25.08,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 98 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 98 个",
     "evidence": [
      "https://github.com/robin-shaun/XTDrone/blob/HEAD/sitl_config/gazebo_plugin/velodyne/velodyne_description/urdf/HDL-32E.urdf.xacro",
      "https://github.com/robin-shaun/XTDrone/blob/HEAD/sitl_config/gazebo_plugin/velodyne/velodyne_description/urdf/VLP-16.urdf.xacro"
@@ -2255,7 +2255,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2346,7 +2346,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2439,7 +2439,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2538,7 +2538,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2634,7 +2634,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/SIGRobotics-UIUC/LeKiwi/blob/HEAD/URDF/LeKiwi.urdf"
     ]
@@ -2728,7 +2728,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -2824,7 +2824,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/menloresearch/asimov-1/blob/HEAD/sim-model/urdf/asimov_1.urdf"
     ]
@@ -2914,7 +2914,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8107,
     "points": 11.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 7 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 7 个",
     "evidence": [
      "https://github.com/chengxuxin/extreme-parkour/blob/HEAD/legged_gym/resources/robots/a1/urdf/a1.urdf",
      "https://github.com/chengxuxin/extreme-parkour/blob/HEAD/legged_gym/resources/robots/a1/urdf/a1_old.urdf"
@@ -3007,7 +3007,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -3097,7 +3097,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/poppy-project/poppy-humanoid/blob/HEAD/hardware/URDF/robots/Poppy_Humanoid.URDF"
     ]
@@ -3195,7 +3195,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.5405,
     "points": 7.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 3 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 3 个",
     "evidence": [
      "https://github.com/liyiteng/AlohaMini/blob/HEAD/AlohaMini1/simulation/src/Aloha/urdf/Aloha.urdf",
      "https://github.com/liyiteng/AlohaMini/blob/HEAD/AlohaMini2/urdf/alohamini2/urdf/alohamini2.urdf"
@@ -3289,7 +3289,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/AI-FanGe/Microduck-build-tutorial/blob/HEAD/microduck/src/model/urdf/robot.urdf"
     ]
@@ -3379,7 +3379,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.7587,
     "points": 10.62,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 6 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 6 个",
     "evidence": [
      "https://github.com/timqian/bambot/blob/HEAD/website/public/URDFs/bambot_v0.urdf",
      "https://github.com/timqian/bambot/blob/HEAD/website/public/URDFs/bambot_v0_base.urdf"
@@ -3481,7 +3481,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/Chestnut-Robotics/aero-hand-open/blob/HEAD/ros2/src/aero_hand_open_description/urdf/aero_hand_open_left.urdf",
      "https://github.com/Chestnut-Robotics/aero-hand-open/blob/HEAD/ros2/src/aero_hand_open_description/urdf/aero_hand_open_right.urdf"
@@ -3577,7 +3577,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -3672,7 +3672,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/Source-Robotics/Faze4-Robotic-arm/blob/HEAD/URDF_FAZE4/urdf/Final_light_assembly_URDF.urdf"
     ]
@@ -3767,7 +3767,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/TheRobotStudio/HOPEJr/blob/HEAD/Humanoid/URDF/Right_Leg/robot.urdf"
     ]
@@ -3860,7 +3860,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/robot-learning-co/trlc-dk1/blob/HEAD/urdf/follower/TRLC-DK1-Follower.urdf"
     ]
@@ -3955,7 +3955,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8977,
     "points": 12.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 9 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 9 个",
     "evidence": [
      "https://github.com/hshi74/toddlerbot/blob/HEAD/toddlerbot/descriptions/sysID_2XC430/sysID_2XC430.urdf",
      "https://github.com/hshi74/toddlerbot/blob/HEAD/toddlerbot/descriptions/sysID_2XL430/sysID_2XL430.urdf"
@@ -4048,7 +4048,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4139,7 +4139,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4232,7 +4232,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4326,7 +4326,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6275,
     "points": 8.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 4 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 4 个",
     "evidence": [
      "https://github.com/norma-core/norma-core/blob/HEAD/hardware/elrobot/simulation/elrobot_follower.urdf",
      "https://github.com/norma-core/norma-core/blob/HEAD/software/station/clients/station-viewer/public/devices/elrobot/elrobot_follower.urdf"
@@ -4422,7 +4422,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/humancomputerlab/LeLamp/blob/HEAD/simulation/robot.urdf"
     ]
@@ -4520,7 +4520,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4611,7 +4611,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.7587,
     "points": 10.62,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 6 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 6 个",
     "evidence": [
      "https://github.com/adham-elarabawy/open-quadruped/blob/HEAD/ros-workspace/src/open_quadruped/urdf/accessories.urdf.xacro",
      "https://github.com/adham-elarabawy/open-quadruped/blob/HEAD/ros-workspace/src/open_quadruped/urdf/spot.urdf"
@@ -4705,7 +4705,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4797,7 +4797,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4893,7 +4893,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -4988,7 +4988,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/Rhoban/microban/blob/HEAD/src/model/urdf/robot.urdf"
     ]
@@ -5085,7 +5085,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5181,7 +5181,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5274,7 +5274,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/upkie/upkie/blob/HEAD/upkie/cpp/interfaces/bullet/plane/plane.urdf"
     ]
@@ -5372,7 +5372,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5463,7 +5463,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5551,7 +5551,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.0,
     "points": 14.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 12 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 12 个",
     "evidence": [
      "https://github.com/orcahand/orcahand_description/blob/HEAD/v1/models/mjcf/orcahand_left.mjcf",
      "https://github.com/orcahand/orcahand_description/blob/HEAD/v1/models/mjcf/orcahand_left_extended.mjcf"
@@ -5645,7 +5645,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5740,7 +5740,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5836,7 +5836,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -5926,7 +5926,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6020,7 +6020,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6117,7 +6117,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6208,7 +6208,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.0558,
     "points": 14.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 14 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 14 个",
     "evidence": [
      "https://github.com/botbotrobotics/BotBrain/blob/HEAD/botbrain_ws/src/bot_description/xacro/botbrain.xacro",
      "https://github.com/botbotrobotics/BotBrain/blob/HEAD/botbrain_ws/src/g1_pkg/urdf/robot.urdf"
@@ -6309,7 +6309,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6400,7 +6400,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6490,7 +6490,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.5897,
     "points": 22.26,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 58 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 58 个",
     "evidence": [
      "https://github.com/jindadu00/legged_robot_competition/blob/HEAD/isaacgym/assets/urdf/anymal_b_simple_description/urdf/anymal.urdf",
      "https://github.com/jindadu00/legged_robot_competition/blob/HEAD/isaacgym/assets/urdf/ball.urdf"
@@ -6583,7 +6583,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6676,7 +6676,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6767,7 +6767,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6860,7 +6860,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -6953,7 +6953,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7046,7 +7046,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7137,7 +7137,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 2.0,
     "points": 28.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 424 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 424 个",
     "evidence": [
      "https://github.com/med-air/SurRoL/blob/HEAD/Benchmark/state_based/surrol/assets/CH4/CH4.urdf",
      "https://github.com/med-air/SurRoL/blob/HEAD/Benchmark/state_based/surrol/assets/CH4/CH4_waypoints.urdf"
@@ -7230,7 +7230,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.0558,
     "points": 14.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 14 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 14 个",
     "evidence": [
      "https://github.com/facebookresearch/differentiable-robot-model/blob/HEAD/diff_robot_data/2link_robot.urdf",
      "https://github.com/facebookresearch/differentiable-robot-model/blob/HEAD/diff_robot_data/allegro/urdf/allegro_hand_description_left.urdf"
@@ -7328,7 +7328,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7420,7 +7420,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6986,
     "points": 9.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 5 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 5 个",
     "evidence": [
      "https://github.com/wengmister/BiDexHand/blob/HEAD/src/combined_fer_moveit_config/srdf/combined_arm.srdf.xacro",
      "https://github.com/wengmister/BiDexHand/blob/HEAD/src/combined_fer_moveit_config/srdf/combined_arm.xacro"
@@ -7511,7 +7511,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/haraduka/mevius/blob/HEAD/models/mevius.urdf"
     ]
@@ -7603,7 +7603,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7694,7 +7694,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7785,7 +7785,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.9153,
     "points": 26.81,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 135 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 135 个",
     "evidence": [
      "https://github.com/elephantrobotics/mycobot_ros/blob/HEAD/Mybuddy/mybuddy_moveit/config/firefighter.srdf",
      "https://github.com/elephantrobotics/mycobot_ros/blob/HEAD/Mybuddy/mybuddy_socket_moveit/config/firefighter.srdf"
@@ -7884,7 +7884,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -7979,7 +7979,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/poppy-project/poppy-ergo-jr/blob/HEAD/software/poppy_ergo_jr/poppy_ergo_jr.urdf"
     ]
@@ -8071,7 +8071,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6986,
     "points": 9.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 5 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 5 个",
     "evidence": [
      "https://github.com/Jelatine/mockway_robotics/blob/HEAD/mockway_description/urdf/mockway_description.urdf",
      "https://github.com/Jelatine/mockway_robotics/blob/HEAD/mockway_lua_moveit/ui/public/urdf/mockway_description.urdf"
@@ -8167,7 +8167,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/kallaspriit/rosbot/blob/HEAD/experiments/test_odrive_ros2_control/src/odrive_description/urdf/odrive.ros2_control.xacro",
      "https://github.com/kallaspriit/rosbot/blob/HEAD/experiments/test_odrive_ros2_control/src/odrive_description/urdf/odrive.urdf.xacro"
@@ -8266,7 +8266,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -8362,7 +8362,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.285,
     "points": 17.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 26 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 26 个",
     "evidence": [
      "https://github.com/golaced/OmniBotSeries-Tinker/blob/HEAD/OmniBotCtrl/OmniBotCtrl/resources/TinkerV2_URDF/urdf/TinkerV2_URDF%20copy.urdf",
      "https://github.com/golaced/OmniBotSeries-Tinker/blob/HEAD/OmniBotCtrl/OmniBotCtrl/resources/TinkerV2_URDF/urdf/TinkerV2_URDF.urdf"
@@ -8461,7 +8461,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -8549,7 +8549,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/prl-mushr/mushr/blob/HEAD/mushr_description/robots/color.urdf.xacro",
      "https://github.com/prl-mushr/mushr/blob/HEAD/mushr_description/robots/mushr_base_nano.urdf.xacro"
@@ -8645,7 +8645,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -8741,7 +8741,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.1269,
     "points": 15.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 17 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 17 个",
     "evidence": [
      "https://github.com/AshishA26/Orion-Quadruped/blob/HEAD/Software/Jetson/workspace/isaac_ros-dev/src/orion_urdf/urdf/robot_description.urdf",
      "https://github.com/AshishA26/Orion-Quadruped/blob/HEAD/Software/kinematics_sim/pybullet_sim/leg.urdf"
@@ -8840,7 +8840,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6986,
     "points": 9.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 5 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 5 个",
     "evidence": [
      "https://github.com/roboninecom/SO-ARM100-101-Parallel-Gripper/blob/HEAD/community/histology-slide-gripper/mujoco/so_101.urdf.xacro",
      "https://github.com/roboninecom/SO-ARM100-101-Parallel-Gripper/blob/HEAD/community/histology-slide-gripper/mujoco/so_101_arm.urdf"
@@ -8934,7 +8934,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8977,
     "points": 12.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 9 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 9 个",
     "evidence": [
      "https://github.com/jiachengliu3/OpenWBC/blob/HEAD/OpenHomie/HomieRL/legged_gym/resources/robots/g1_description/g1.urdf",
      "https://github.com/jiachengliu3/OpenWBC/blob/HEAD/avp_teleoperate/assets/g1/g1_body23.urdf"
@@ -9031,7 +9031,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9124,7 +9124,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/RobStride/EDULITE_A3/blob/HEAD/el_a3_ros/EDULITE-A3/EDULITE-A3.urdf",
      "https://github.com/RobStride/EDULITE_A3/blob/HEAD/el_a3_ros/el_a3_description/urdf/el_a3.urdf"
@@ -9223,7 +9223,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9319,7 +9319,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9409,7 +9409,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/Jerome-Graves/yertle/blob/HEAD/simulation/yertle.urdf"
     ]
@@ -9504,7 +9504,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9597,7 +9597,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9690,7 +9690,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/eai-yeslab/OpenEAI-Arm/blob/HEAD/software/ros2/src/openeai_arm_urdf_ros2/urdf/STEP.urdf"
     ]
@@ -9782,7 +9782,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9873,7 +9873,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -9966,7 +9966,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10057,7 +10057,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10147,7 +10147,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10241,7 +10241,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10333,7 +10333,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10424,7 +10424,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/golaced/Quadruped-Robot-Moco-12-/blob/HEAD/教程5-步态控制算法/py_robot/4leggedRobot.urdf"
     ]
@@ -10517,7 +10517,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -10612,7 +10612,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.081,
     "points": 15.13,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 15 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 15 个",
     "evidence": [
      "https://github.com/popi-mkx3/popi_project/blob/HEAD/popi_software/popi/popi_code/models/popi.urdf",
      "https://github.com/popi-mkx3/popi_project/blob/HEAD/popi_software/popi/popi_description/xacro/const.xacro"
@@ -10709,7 +10709,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8107,
     "points": 11.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 7 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 7 个",
     "evidence": [
      "https://github.com/pollen-robotics/grabette/blob/HEAD/integrations/openarm/openarm_gripette_model/openarm_gripette_model/openarm_right/config.json.urdf",
      "https://github.com/pollen-robotics/grabette/blob/HEAD/integrations/openarm/openarm_gripette_model/openarm_gripette_model/openarm_right/robot.urdf"
@@ -10803,7 +10803,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.6275,
     "points": 8.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 4 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 4 个",
     "evidence": [
      "https://github.com/runtimerobotics/fusion360-urdf-ros2/blob/HEAD/demos/rosbot/generated_pkg/rosbot_description/urdf/materials.xacro",
      "https://github.com/runtimerobotics/fusion360-urdf-ros2/blob/HEAD/demos/rosbot/generated_pkg/rosbot_description/urdf/rosbot.xacro"
@@ -10894,7 +10894,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.7587,
     "points": 10.62,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 6 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 6 个",
     "evidence": [
      "https://github.com/haraduka/mevita/blob/HEAD/models/meshes/mevita_long_mujoco.urdf",
      "https://github.com/haraduka/mevita/blob/HEAD/models/meshes/mevita_mujoco.urdf"
@@ -10993,7 +10993,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11084,7 +11084,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11176,7 +11176,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/ferrolho/rotary-inverted-pendulum/blob/HEAD/model/model.urdf"
     ]
@@ -11270,7 +11270,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11360,7 +11360,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.5763,
     "points": 22.07,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 56 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 56 个",
     "evidence": [
      "https://github.com/loongOpen/OpenLoong-Gymloong/blob/HEAD/AzureLoong/resources/robots/OGHR/urdf/OGHR_wholeBody.urdf",
      "https://github.com/loongOpen/OpenLoong-Gymloong/blob/HEAD/AzureLoong/resources/robots/OGHR/urdf/OGHR_wholeBody_Simplified(12dof).urdf"
@@ -11454,7 +11454,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11545,7 +11545,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11639,7 +11639,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.7915,
     "points": 25.08,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 98 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 98 个",
     "evidence": [
      "https://github.com/cypypccpy/Isaac-ManipulaRL/blob/HEAD/assets/baxter/baxter_description/urdf/baxter.urdf",
      "https://github.com/cypypccpy/Isaac-ManipulaRL/blob/HEAD/assets/baxter/baxter_description/urdf/baxter.urdf.xacro"
@@ -11736,7 +11736,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11830,7 +11830,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -11922,7 +11922,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12018,7 +12018,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12111,7 +12111,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12206,7 +12206,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/liyiteng/AM-ARM/blob/HEAD/am-arm200-pro/urdf/urdf/am-arm200pro.urdf",
      "https://github.com/liyiteng/AM-ARM/blob/HEAD/am-arm200/urdf/urdf/am-arm200.urdf"
@@ -12300,7 +12300,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12393,7 +12393,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12483,7 +12483,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12574,7 +12574,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.0558,
     "points": 14.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 14 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 14 个",
     "evidence": [
      "https://github.com/Rhoban/onshape-to-robot-examples/blob/HEAD/2wheels_mujoco/robot.urdf",
      "https://github.com/Rhoban/onshape-to-robot-examples/blob/HEAD/2wheels_urdf/robot.urdf"
@@ -12668,7 +12668,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12756,7 +12756,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/DarrenLevine/TipTap/blob/HEAD/software/tiptap.urdf"
     ]
@@ -12851,7 +12851,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -12950,7 +12950,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13043,7 +13043,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 2.0,
     "points": 28.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 353 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 353 个",
     "evidence": [
      "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/legged_robot_description/urdf/Lite3/const.xacro",
      "https://github.com/Lxliam/legged_mpc_amp/blob/HEAD/src/legged_robot_description/urdf/a1/const.xacro"
@@ -13137,7 +13137,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13230,7 +13230,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.5405,
     "points": 7.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 3 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 3 个",
     "evidence": [
      "https://github.com/AntoBrandi/Bumper-Bot/blob/HEAD/bumperbot_description/urdf/bumperbot.urdf.xacro",
      "https://github.com/AntoBrandi/Bumper-Bot/blob/HEAD/bumperbot_description/urdf/bumperbot_gazebo.xacro"
@@ -13324,7 +13324,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13423,7 +13423,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13514,7 +13514,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13604,7 +13604,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/dfki-ric-underactuated-lab/acromonk/blob/HEAD/data/simulation_models/acromonk.urdf"
     ]
@@ -13700,7 +13700,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8977,
     "points": 12.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 9 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 9 个",
     "evidence": [
      "https://github.com/nimiCurtis/so101_ros2/blob/HEAD/so101_description/urdf/so101_new_calib.ros2_control.xacro",
      "https://github.com/nimiCurtis/so101_ros2/blob/HEAD/so101_description/urdf/so101_new_calib.urdf"
@@ -13794,7 +13794,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -13890,7 +13890,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.2549,
     "points": 17.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 24 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 24 个",
     "evidence": [
      "https://github.com/SYSU-RoboticsLab/RAPID-Hand/blob/HEAD/RapidHandHardware/mechanical_structure/rapidhand_description/urdf/rapidhand.urdf",
      "https://github.com/SYSU-RoboticsLab/RAPID-Hand/blob/HEAD/RapidTeleop/assets/robots/arms/ur10e/ur10e.urdf"
@@ -13983,7 +13983,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.4841,
     "points": 20.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 44 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 44 个",
     "evidence": [
      "https://github.com/ImIntheMiddle/EmLoco/blob/HEAD/isaacgym/assets/urdf/anymal_b_simple_description/urdf/anymal.urdf",
      "https://github.com/ImIntheMiddle/EmLoco/blob/HEAD/isaacgym/assets/urdf/ball.urdf"
@@ -14077,7 +14077,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.5694,
     "points": 21.97,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 55 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 55 个",
     "evidence": [
      "https://github.com/ZhichengSong6/FLORES/blob/HEAD/code/Mdog/descriptions/mdog/mdog_description/urdf/mdog.urdf",
      "https://github.com/ZhichengSong6/FLORES/blob/HEAD/code/Mdog/descriptions/mdog/mdog_description/xacro/gazebo_classic.xacro"
@@ -14171,7 +14171,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/HybridRobotics/berkeley_humanoid_description/blob/HEAD/urdf/gazebo.urdf",
      "https://github.com/HybridRobotics/berkeley_humanoid_description/blob/HEAD/urdf/robot.urdf"
@@ -14265,7 +14265,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/ahadjawaid/lattice/blob/HEAD/simulation/lattice.urdf"
     ]
@@ -14358,7 +14358,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -14452,7 +14452,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/poppy-project/poppy-torso/blob/HEAD/hardware/URDF/robots/Poppy_Torso.URDF",
      "https://github.com/poppy-project/poppy-torso/blob/HEAD/software/poppy_torso/poppy_torso.urdf"
@@ -14545,7 +14545,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -14644,7 +14644,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -14735,7 +14735,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -14826,7 +14826,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/carpit680/giraffe/blob/HEAD/giraffe_ws/src/giraffe_description/urdf/Giraffe.urdf",
      "https://github.com/carpit680/giraffe/blob/HEAD/giraffe_ws/src/giraffe_description/urdf/giraffe.urdf.xacro"
@@ -14922,7 +14922,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8107,
     "points": 11.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 7 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 7 个",
     "evidence": [
      "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/ROS2_HUMBLE/src/stararm102_description/urdf/stararm102_description.urdf",
      "https://github.com/servodevelop/Star-Arm-102/blob/HEAD/ROS2_HUMBLE/src/stararm102_gazebo/config/stararm102_gazebo.urdf.xacro"
@@ -15017,7 +15017,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.187,
     "points": 16.62,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 20 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 20 个",
     "evidence": [
      "https://github.com/uiuckimlab/CHILD/blob/HEAD/hw_interface/teleop_leaders/description/urdf/child_leaders/g1_child.urdf",
      "https://github.com/uiuckimlab/CHILD/blob/HEAD/hw_interface/teleop_leaders/description/urdf/child_leaders/g1_child.xacro"
@@ -15111,7 +15111,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.9349,
     "points": 13.09,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 10 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 10 个",
     "evidence": [
      "https://github.com/HybridRobotics/berkeley-humanoid-lite-assets/blob/HEAD/data/robots/berkeley_humanoid/berkeley_humanoid_lite/urdf/berkeley_humanoid_lite.urdf",
      "https://github.com/HybridRobotics/berkeley-humanoid-lite-assets/blob/HEAD/data/robots/berkeley_humanoid/berkeley_humanoid_lite/urdf/berkeley_humanoid_lite_biped.urdf"
@@ -15205,7 +15205,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/AirExo/AirExo-2/blob/HEAD/airexo/urdf_models/airexo/airexo.urdf",
      "https://github.com/AirExo/AirExo-2/blob/HEAD/airexo/urdf_models/airexo/airexo_no_handle.urdf"
@@ -15299,7 +15299,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -15390,7 +15390,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.9688,
     "points": 13.56,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 11 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 11 个",
     "evidence": [
      "https://github.com/InternRobotics/TAG/blob/HEAD/Retargeting/Hand_Retargeting/robot_source/Glove_v2.0/21DoF_Glove.urdf",
      "https://github.com/InternRobotics/TAG/blob/HEAD/Retargeting/Hand_Retargeting/robot_source/XHAND1_URDF_ver1.3/xhand1_left/urdf/xhand_left.urdf"
@@ -15484,7 +15484,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -15579,7 +15579,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -15671,7 +15671,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -15764,7 +15764,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -15857,7 +15857,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8977,
     "points": 12.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 9 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 9 个",
     "evidence": [
      "https://github.com/newdexterity/Open-Biomanual-Manipulation-System/blob/HEAD/Software/moah_src/moa_description/urdf/dual_arm.xacro",
      "https://github.com/newdexterity/Open-Biomanual-Manipulation-System/blob/HEAD/Software/moah_src/moa_description/urdf/left_arm_moa_transmission.xacro"
@@ -15948,7 +15948,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.9349,
     "points": 13.09,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 10 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 10 个",
     "evidence": [
      "https://github.com/BoosterRobotics/booster_assets/blob/HEAD/robots/K1/K1_22dof.urdf",
      "https://github.com/BoosterRobotics/booster_assets/blob/HEAD/robots/K1/K1_locomotion.urdf"
@@ -16047,7 +16047,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 2.0,
     "points": 28.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 6794 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 6794 个",
     "evidence": [
      "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/arm.xacro",
      "https://github.com/Hyperspawn/Dropbear/blob/HEAD/CAD_Files/Assembly/Full_Body/URDF/dropbear_detailed_urdf/urdf/gazebo/battery.xacro"
@@ -16141,7 +16141,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/tork-a/rtmros_nextage/blob/HEAD/nextage_calibration/models/checkerboard_horizontal.urdf",
      "https://github.com/tork-a/rtmros_nextage/blob/HEAD/nextage_calibration/models/checkerboard_waist.urdf"
@@ -16242,7 +16242,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -16336,7 +16336,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -16424,7 +16424,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/makerspet/makerspet_snoopy/blob/HEAD/urdf/robot.urdf.xacro"
     ]
@@ -16516,7 +16516,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.9688,
     "points": 13.56,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 11 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 11 个",
     "evidence": [
      "https://github.com/leggedrobotics/ocs2_robotic_assets/blob/HEAD/resources/anymal_c/urdf/anymal.urdf",
      "https://github.com/leggedrobotics/ocs2_robotic_assets/blob/HEAD/resources/ballbot/urdf/ballbot.urdf"
@@ -16613,7 +16613,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -16704,7 +16704,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -16803,7 +16803,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -16896,7 +16896,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.5405,
     "points": 7.57,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 3 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 3 个",
     "evidence": [
      "https://github.com/vulcan-forge/sourccey-hardware/blob/HEAD/URDF/Arm.urdf",
      "https://github.com/vulcan-forge/sourccey-hardware/blob/HEAD/URDF/ArmLeft/ArmLeft.urdf"
@@ -16992,7 +16992,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17085,7 +17085,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17176,7 +17176,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17266,7 +17266,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/MarcDcls/coconuts/blob/HEAD/hardware/benchmark/robot.urdf"
     ]
@@ -17362,7 +17362,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17453,7 +17453,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17544,7 +17544,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17637,7 +17637,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17730,7 +17730,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17824,7 +17824,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -17915,7 +17915,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18006,7 +18006,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.4841,
     "points": 20.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 44 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 44 个",
     "evidence": [
      "https://github.com/zubair-irshad/manipulator_parameter_identification/blob/HEAD/09-URDF/3DOF-WIP/3dof.urdf",
      "https://github.com/zubair-irshad/manipulator_parameter_identification/blob/HEAD/09-URDF/7DOFArm/singlearm.urdf"
@@ -18097,7 +18097,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 1.0558,
     "points": 14.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 14 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 14 个",
     "evidence": [
      "https://github.com/Source-Robotics/PAROL6-ROS2-MOVEIT/blob/HEAD/ros_parol/src/install/parol6/share/parol6/urdf/PAROL6%20(copy).urdf",
      "https://github.com/Source-Robotics/PAROL6-ROS2-MOVEIT/blob/HEAD/ros_parol/src/install/parol6/share/parol6/urdf/parol6.urdf"
@@ -18191,7 +18191,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18282,7 +18282,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18373,7 +18373,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.4283,
     "points": 6.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 2 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 2 个",
     "evidence": [
      "https://github.com/jackvial/assembler0/blob/HEAD/packages/assembler0-simulator/src/assembler0_simulator/low_cost_robot/low-cost-arm.urdf",
      "https://github.com/jackvial/assembler0/blob/HEAD/packages/assembler0-simulator/src/assembler0_simulator/low_cost_robot_6dof_screwdriver/low_cost_robot_screwdriver.urdf"
@@ -18467,7 +18467,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18560,7 +18560,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8107,
     "points": 11.35,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 7 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 7 个",
     "evidence": [
      "https://github.com/Adriaeik/fusion2URDF/blob/HEAD/examples/Assem1_description/urdf/Assem1.urdf",
      "https://github.com/Adriaeik/fusion2URDF/blob/HEAD/examples/Assem1_description/urdf/Assem1.urdf.xacro"
@@ -18654,7 +18654,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18745,7 +18745,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/pliam1105/3D-Printed-ROS-SLAM-Robot/blob/HEAD/ROS%20Codes/slam_bot/src/description/slam_bot_description.urdf"
     ]
@@ -18843,7 +18843,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -18934,7 +18934,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19028,7 +19028,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19116,7 +19116,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/pib-rocks/pib-backend/blob/HEAD/ros_packages/pibsim_webots/resource/pib.urdf"
     ]
@@ -19208,7 +19208,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19298,7 +19298,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19391,7 +19391,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19487,7 +19487,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/open-rdc/Bipedal_Robot_Hardware/blob/HEAD/Robot_Models/URDF/urdf_simple-model/simple_model.urdf"
     ]
@@ -19580,7 +19580,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/Rhoban/sigmaban_urdf/blob/HEAD/robot.urdf"
     ]
@@ -19672,7 +19672,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -19760,7 +19760,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.8566,
     "points": 11.99,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 8 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 8 个",
     "evidence": [
      "https://github.com/kscalelabs/kbot-models/blob/HEAD/kbot-full-collisions/robot.mjcf",
      "https://github.com/kscalelabs/kbot-models/blob/HEAD/kbot-full-collisions/robot.urdf"
@@ -19854,7 +19854,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/jhu-lcsr-attic/bhand_model/blob/HEAD/robots/bhand_model.URDF"
     ]
@@ -19947,7 +19947,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/tc-huang/low_cost_robot/blob/HEAD/simulation/low_cost_robot/low-cost-arm.urdf"
     ]
@@ -20041,7 +20041,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -20139,7 +20139,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -20230,7 +20230,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/s1lent4gnt/koch-v1-1/blob/HEAD/simulation/follower.urdf"
     ]
@@ -20327,7 +20327,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.2702,
     "points": 3.78,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 1 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 1 个",
     "evidence": [
      "https://github.com/PCrnjak/Faze4-Robotic-arm/blob/HEAD/URDF_FAZE4/urdf/Final_light_assembly_URDF.urdf"
     ]
@@ -20424,7 +20424,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -20517,7 +20517,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.0,
     "points": 0.0,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 0 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 0 个",
     "evidence": []
    },
    {
@@ -20610,7 +20610,7 @@ export const EVIDENCE_SCORES: Record<string, EvidenceScore> = {
     "ratio": 0.7587,
     "points": 10.62,
     "measured": true,
-    "detail": "URDF / MJCF / SDF / USD 文件 6 个",
+    "detail": "URDF / Xacro / MJCF / USD / SRDF 文件 6 个",
     "evidence": [
      "https://github.com/adham-elarabawy/OpenQuadruped/blob/HEAD/ros-workspace/src/open_quadruped/urdf/accessories.urdf.xacro",
      "https://github.com/adham-elarabawy/OpenQuadruped/blob/HEAD/ros-workspace/src/open_quadruped/urdf/spot.urdf"

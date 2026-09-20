@@ -102,6 +102,6 @@ export const DIMENSION_NOTES: Record<string, string> = {
   sourcing: "可解析 BOM 的行项数 × 规格系数（有型号/价格/供应商各占 0.25）。仅有一份清单但无型号无价格，不等于可采购。",
   assembly: "装配/构建类文档数（非 README 的构建指南、装配手册）。",
   electronics: "PCB / EDA 文件数（Gerber、KiCad、brd、sch）。机器人自有的板子设计。",
-  kinematics: "URDF / MJCF / SDF / USD 文件数。运动学可被第三方复算与验证。",
+  kinematics: "URDF / Xacro / MJCF / USD / SRDF 文件数。运动学可被第三方复算与验证。Gazebo 的 .sdf 不计：语料里的 .sdf 绝大多数是仿真场景（地形、道具、角色），不是机器人自身的运动学描述——把它算进来会奖励「建了个仿真世界」。",
   licensing: "许可明确度：开放许可 1.0；有 LICENSE 但无法识别 0.5；未声明 0。允许再制造才算数。",
 };
