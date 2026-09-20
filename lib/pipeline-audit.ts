@@ -10,8 +10,8 @@
 export const PIPELINE_AUDIT = {
   "generatedAt": "2026-09-19",
   "minTier": "B",
-  "candidates": 185,
-  "kept": 133,
+  "candidates": 264,
+  "kept": 187,
   "excluded": [
     {
       "reason": "TOOL_OR_LIBRARY_OR_DATASET",
@@ -31,7 +31,7 @@ export const PIPELINE_AUDIT = {
     },
     {
       "reason": "NO_ROBOT_SIGNAL",
-      "label": "无机器人信号且无 URDF 结构证据",
+      "label": "无机器人信号且无任何结构证据",
       "repos": [
         "FPGAwars/icezum",
         "NVIDIA-AI-IOT/jetracer",
@@ -54,6 +54,7 @@ export const PIPELINE_AUDIT = {
         "LeCAR-Lab/dial-mpc",
         "NVIDIA/soma-retargeter",
         "NVlabs/ProtoMotions",
+        "Open-X-Humanoid/TienKung-Lab",
         "OpenLegged/URDF-Studio",
         "YanjieZe/GMR",
         "bridgedp/hunter_bipedal_control",
@@ -66,6 +67,7 @@ export const PIPELINE_AUDIT = {
         "haruki1526/LeggedRobotsForBullet",
         "iit-DLSLab/gym-quadruped",
         "jaykorea/Isaac-RL-Two-wheel-Legged-Bot",
+        "leap-hand/LEAP_Hand_API",
         "legubiao/quadruped_ros2_control",
         "loongOpen/OpenLoong-Dyn-Control",
         "lupinjia/LeggedGym-Ex",
@@ -83,14 +85,54 @@ export const PIPELINE_AUDIT = {
       "reason": "NO_HARDWARE_EVIDENCE",
       "label": "无硬件证据（无参数化 CAD / BOM / PCB，网格也不足）",
       "repos": [
+        "Agroecology-Lab/feldfreund_devkit_ros",
+        "CarbonAeronautics/Manual-Quadcopter-Drone",
+        "FarmBot/farmbot_os",
+        "HybridRobotics/Berkeley-Humanoid-Lite",
+        "MarkFzp/mobile-aloha",
+        "Nate711/Doggo",
+        "Nate711/StanfordDoggoProject",
         "OpenHUTB/hutb",
+        "PetoiCamp/OpenCat-Quadruped-Robot",
+        "TheRobotStudio/V2_DexHand",
+        "Twisted-Fields/acorn-precision-farming-rover",
         "enactic/openarm",
+        "geezacoleman/OpenWeedLocator",
+        "generalroboticslab/DukeHumanoidv1",
+        "huggingface/lerobot-humanoid",
+        "kscalelabs/kbot",
+        "linorobot/linorobot2_hardware",
+        "makerspet/makerspet_loki",
         "makerspet/oomwoo",
-        "upkie/upkie"
+        "miguelasd688/4-legged-robot-model",
+        "mjbots/quad",
+        "mmmarinho/UMIRobot",
+        "nhnifong/cranebot3-firmware",
+        "orcahand/orca_core",
+        "ruka-hand/RUKA",
+        "upkie/upkie",
+        "zeroth-robotics/zeroth-bot"
       ]
     }
   ],
   "rescuedByStructure": [
-    "apirrone/Open_Duck_Mini"
+    "ManufacturedMotion/Hex",
+    "Nate711/Doggo",
+    "NimbRo/nimbro-op2",
+    "OpenBionics/Prosthetic-Hands",
+    "OpenPodcar/OpenPodcar",
+    "StephenCarlson/MiniHawk-VTOL",
+    "Vitrani/ShadowTac",
+    "apirrone/Open_Duck_Mini",
+    "cbedio/OpenScout",
+    "esa-prl/ExoMy",
+    "geezacoleman/OpenWeedLocator",
+    "hshi74/toddlerbot",
+    "iliasam/OpenSimpleLidar",
+    "kscalelabs/kbot-models",
+    "orcahand/orca_core",
+    "orcahand/orcahand_description",
+    "orcahand/orcahand_hardware",
+    "pib-rocks/pib-backend"
   ]
 } as const;

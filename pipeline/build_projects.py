@@ -35,6 +35,10 @@ HOME = Path.home()
 COURSE = HOME / "hermes-robot-course"
 CACHE = COURSE / "pipeline" / ".cache"
 ROBOTS = COURSE / "data" / "robots.json"
+ROOT = Path(__file__).resolve().parent.parent
+# 漏网项目的补充种子（pipeline/fetch_gap.py 产出）。与主采集共用同一条生成
+# 路径和同一套证据判定，所以它不是"另一份数据"，只是另一个来源。
+SEED_GAP = ROOT / "data" / "seed-gap.json"
 
 # --- 文件分类：全部基于扩展名/文件名，不做语义猜测 -------------------------
 
@@ -201,11 +205,14 @@ def part_word(text: str) -> tuple[str, str] | None:
 
 
 def blob_url(full: str, branch: str, path: str) -> str:
-    return f"https://github.com/{full}/blob/{branch}/{quote(path)}"
+    # branch 一律传 HEAD：GitHub 的 /blob/HEAD/ 会解析到默认分支。
+    # 曾经写死 main，于是默认分支为 master 的仓库（nasa-jpl/open-source-rover 等）
+    # 整仓库的零件链接全是 404——抽查 3 条 URL 的验证方式发现不了这种成片失效。
+    return f"https://github.com/{full}/blob/HEAD/{quote(path)}"
 
 
 def tree_url(full: str, branch: str, path: str) -> str:
-    return f"https://github.com/{full}/tree/{branch}/{quote(path)}"
+    return f"https://github.com/{full}/tree/HEAD/{quote(path)}"
 
 
 def load_tree(full_name: str) -> list[dict] | None:
@@ -235,6 +242,17 @@ KIND_SPEC = {
 }
 COLORS = ["#d3ea5c", "#5aa9ff", "#35d0c8", "#ffb454",
           "#b98cff", "#ff7a7a", "#7affc4", "#ffd47a"]
+
+
+def hardware_counts(tree: list[dict]) -> dict[str, int]:
+    """按 classify() 统计文件树里的证据类型，口径与 build_project 完全一致。"""
+    c: dict[str, int] = {}
+    for e in tree:
+        if e.get("type") == "blob":
+            k = classify(e.get("path", ""))
+            if k:
+                c[k] = c.get(k, 0) + 1
+    return c
 
 
 def build_project(repo: dict, tree: list[dict], max_parts: int) -> dict | None:
@@ -547,6 +565,13 @@ def main() -> None:
             seen_casefold[key] = r
     repos = list(seen_casefold.values())
 
+    if SEED_GAP.exists():
+        for r in json.loads(SEED_GAP.read_text(encoding="utf-8")):
+            k = r["full_name"].lower()
+            if k not in seen_casefold:
+                seen_casefold[k] = r
+        repos = list(seen_casefold.values())
+
     out, stats = [], Counter()
     dropped_neg: list[str] = []
     dropped_nosig: list[str] = []
@@ -585,8 +610,16 @@ def main() -> None:
             dropped_neg.append(r["full_name"])
             continue
         if not ROBOT_SIGNAL.search(blob_text):
-            if has_desc:
-                stats["rescued_by_urdf"] += 1
+            # 兜底按「来源可信度」分两档，不按证据强度：
+            #   人工策展清单收录的（_gap）——策展门槛就是"硬件+软件双开源的机器人"，
+            #     被收录这件事本身就是人工验证过它是机器人，不必再用关键词确认。
+            #   自动采集命中的——只有 URDF/MJCF 这类结构证据才能推翻关键词判断。
+            # 为什么不能一律放宽：放宽后 NopSCADlib（SCAD 库）、kicad-happy（KiCad
+            # 工具）、DIY-CNC-machine（数控机床）这些"有参数化 CAD 但不是机器人"的
+            # 项目会全部涌入——关键词闸存在的意义正在于此。
+            curated = bool(r.get("_gap"))
+            if curated or has_desc:
+                stats["rescued_by_structure"] += 1
                 rescued.append(r["full_name"])
             else:
                 stats["drop_no_robot_signal"] += 1
@@ -634,7 +667,7 @@ def main() -> None:
              "label": "工具 / 库 / 数据集 / 教程",
              "repos": sorted(dropped_neg)},
             {"reason": "NO_ROBOT_SIGNAL",
-             "label": "无机器人信号且无 URDF 结构证据",
+             "label": "无机器人信号且无任何结构证据",
              "repos": sorted(dropped_nosig)},
             {"reason": "SIMULATOR_OR_MODEL_ZOO",
              "label": "仿真器 / 模型库（不可制造）",
@@ -678,7 +711,7 @@ def main() -> None:
         for name in dropped_nosig:
             print(f"      - {name}")
     if rescued:
-        print(f"  关键词未命中但凭 URDF 结构证据收录:")
+        print(f"  关键词未命中但凭结构证据收录（URDF 或参数化 CAD/BOM/PCB）:")
         for name in rescued:
             print(f"      - {name}")
     if dropped_sim:

@@ -1,0 +1,4155 @@
+{
+  "ok": [
+    {
+      "full_name": "HybridRobotics/Berkeley-Humanoid-Lite",
+      "name": "berkeley-humanoid-lite",
+      "owner": "HybridRobotics",
+      "description": "Codebase for Berkeley Humanoid Lite",
+      "url": "https://github.com/HybridRobotics/berkeley-humanoid-lite",
+      "homepage": "https://lite.berkeley-humanoid.org/",
+      "stars": 1867,
+      "forks": 291,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "berkeley-humanoids"
+      ],
+      "pushed_at": "2026-03-10T20:15:00Z",
+      "created_at": "2025-03-17T23:32:39Z",
+      "archived": false,
+      "open_issues": 8,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 60,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "asimovinc/asimov-1",
+      "name": "asimov-1",
+      "owner": "menloresearch",
+      "description": "v1 of Asimov, an open-source humanoid robot ",
+      "url": "https://github.com/menloresearch/asimov-1",
+      "homepage": "https://docs.menlo.ai/asimov/1",
+      "stars": 1209,
+      "forks": 198,
+      "language": "Python",
+      "license": "CERN-OHL-S-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-14T04:18:34Z",
+      "created_at": "2026-04-08T09:33:14Z",
+      "archived": false,
+      "open_issues": 3,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "PCB": 15,
+        "CAD": 180,
+        "DOC": 1,
+        "MESH": 25,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "sim-model/urdf/asimov_1.urdf"
+      ],
+      "file_count": 315,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "menloresearch/asimov-1",
+      "name": "asimov-1",
+      "owner": "menloresearch",
+      "description": "v1 of Asimov, an open-source humanoid robot ",
+      "url": "https://github.com/menloresearch/asimov-1",
+      "homepage": "https://docs.menlo.ai/asimov/1",
+      "stars": 1209,
+      "forks": 198,
+      "language": "Python",
+      "license": "CERN-OHL-S-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-14T04:18:34Z",
+      "created_at": "2026-04-08T09:33:14Z",
+      "archived": false,
+      "open_issues": 3,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "PCB": 15,
+        "CAD": 180,
+        "DOC": 1,
+        "MESH": 25,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "sim-model/urdf/asimov_1.urdf"
+      ],
+      "file_count": 315,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Open-X-Humanoid/TienKung-Lab",
+      "name": "TienKung-Lab",
+      "owner": "Open-X-Humanoid",
+      "description": "Tien Kung-Lab: Direct IsaacLab Workflow for Legged Robots",
+      "url": "https://github.com/Open-X-Humanoid/TienKung-Lab",
+      "homepage": "",
+      "stars": 889,
+      "forks": 121,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [
+        "embodied-ai",
+        "humanoid-robot",
+        "isaaclab",
+        "isaacsim",
+        "reinforcement-learning",
+        "sim2sim",
+        "tienkung"
+      ],
+      "pushed_at": "2026-07-15T05:44:13Z",
+      "created_at": "2025-07-03T08:32:43Z",
+      "archived": false,
+      "open_issues": 8,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 21,
+        "DESC": 5
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "legged_lab/assets/tienkung2_lite/urdf/tienkung2_lite.urdf",
+        "legged_lab/assets/tienkung2_lite/usd/configuration/tienkung2_lite_base.usd",
+        "legged_lab/assets/tienkung2_lite/usd/configuration/tienkung2_lite_physics.usd",
+        "legged_lab/assets/tienkung2_lite/usd/configuration/tienkung2_lite_sensor.usd",
+        "legged_lab/assets/tienkung2_lite/usd/tienkung2_lite.usd"
+      ],
+      "file_count": 146,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "loongOpen/OpenLoong-Hardware",
+      "name": "OpenLoong-Hardware",
+      "owner": "loongOpen",
+      "description": "Hardware System for Humanoid Robots",
+      "url": "https://github.com/loongOpen/OpenLoong-Hardware",
+      "homepage": "https://www.openloong.org.cn/cn/documents/robot/product_introduction",
+      "stars": 128,
+      "forks": 37,
+      "language": "",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2025-09-05T11:11:18Z",
+      "created_at": "2024-10-28T06:28:10Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 2,
+        "CAD": 226
+      },
+      "cad_formats": [
+        ".step"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 559,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "zeroth-robotics/zeroth-bot",
+      "name": "zeroth-bot",
+      "owner": "zeroth-robotics",
+      "description": "3D-printed open-source humanoid robot platform for sim-to-real and RL",
+      "url": "https://github.com/zeroth-robotics/zeroth-bot",
+      "homepage": "https://docs.zeroth.bot",
+      "stars": 830,
+      "forks": 130,
+      "language": "",
+      "license": "MIT",
+      "topics": [
+        "humanoid",
+        "rl",
+        "robotics",
+        "simulation"
+      ],
+      "pushed_at": "2025-05-24T02:12:38Z",
+      "created_at": "2024-09-03T06:48:40Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 5,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "Rhoban/microban",
+      "name": "microban",
+      "owner": "Rhoban",
+      "description": "Microban is an affordable, fully 3D-printable, and 100% open-source humanoid robot. Powered by a Raspberry Pi Zero 2W and 19 Dynamixel servomotors, it serves as an accessible DIY platform for learning, experimentation, and research in robotics.",
+      "url": "https://github.com/Rhoban/microban",
+      "homepage": "",
+      "stars": 454,
+      "forks": 74,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [
+        "diy",
+        "electronics",
+        "engineering",
+        "humanoid-robot",
+        "robotics"
+      ],
+      "pushed_at": "2026-09-10T00:04:15Z",
+      "created_at": "2026-05-06T11:13:44Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 34,
+        "MESH": 48,
+        "DOC": 1,
+        "BOM": 1,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".scad",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "docs/bom.md"
+      ],
+      "urdf_files": [
+        "src/model/urdf/robot.urdf"
+      ],
+      "file_count": 159,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "hshi74/toddlerbot",
+      "name": "toddlerbot",
+      "owner": "hshi74",
+      "description": "",
+      "url": "https://github.com/hshi74/toddlerbot",
+      "homepage": "",
+      "stars": 766,
+      "forks": 92,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2026-07-31T07:04:15Z",
+      "created_at": "2025-02-03T08:41:30Z",
+      "archived": false,
+      "open_issues": 3,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 2,
+        "BOM": 4,
+        "MESH": 605,
+        "DESC": 9
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [
+        "docs/_static/bom.csv",
+        "docs/_static/bom_v8.csv",
+        "docs/_static/jlc_bom.png",
+        "docs/_static/v8bom.png"
+      ],
+      "urdf_files": [
+        "toddlerbot/descriptions/sysID_2XC430/sysID_2XC430.urdf",
+        "toddlerbot/descriptions/sysID_2XL430/sysID_2XL430.urdf",
+        "toddlerbot/descriptions/sysID_XC330/sysID_XC330.urdf",
+        "toddlerbot/descriptions/sysID_XC430/sysID_XC430.urdf",
+        "toddlerbot/descriptions/sysID_XM430/sysID_XM430.urdf",
+        "toddlerbot/descriptions/toddlerbot_2xc/toddlerbot_2xc.urdf",
+        "toddlerbot/descriptions/toddlerbot_2xc_gripper/toddlerbot_2xc_gripper.urdf",
+        "toddlerbot/descriptions/toddlerbot_2xm/toddlerbot_2xm.urdf",
+        "toddlerbot/descriptions/toddlerbot_2xm_gripper/toddlerbot_2xm_gripper.urdf"
+      ],
+      "file_count": 1279,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "poppy-project/poppy-humanoid",
+      "name": "poppy-humanoid",
+      "owner": "poppy-project",
+      "description": "Poppy Humanoid is an open-source and 3D printed humanoid robot. Optimized for research and education purposes, its modularity allows for a wide range of applications and experimentations. ",
+      "url": "https://github.com/poppy-project/poppy-humanoid",
+      "homepage": "",
+      "stars": 1067,
+      "forks": 288,
+      "language": "Jupyter Notebook",
+      "license": "",
+      "topics": [
+        "poppy",
+        "robot",
+        "robotics"
+      ],
+      "pushed_at": "2021-12-06T18:19:35Z",
+      "created_at": "2015-01-09T10:23:33Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 1,
+        "MESH": 52,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".sldasm",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "hardware/URDF/robots/Poppy_Humanoid.URDF"
+      ],
+      "file_count": 114,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "poppy-project/poppy-ergo-jr",
+      "name": "poppy-ergo-jr",
+      "owner": "poppy-project",
+      "description": "🤖  Poppy Ergo Jr is an open-source robotic arm based on modular 3D printed conception and  low-cost XL-320 motors.",
+      "url": "https://github.com/poppy-project/poppy-ergo-jr",
+      "homepage": "",
+      "stars": 228,
+      "forks": 83,
+      "language": "Jupyter Notebook",
+      "license": "",
+      "topics": [
+        "dynamixel",
+        "raspberry-pi",
+        "robotics"
+      ],
+      "pushed_at": "2022-05-30T15:48:09Z",
+      "created_at": "2015-02-11T11:38:13Z",
+      "archived": false,
+      "open_issues": 15,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 6,
+        "CAD": 6,
+        "MESH": 15,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "doc/bom.md",
+        "doc/img/BOM/BOM_3D_printed_parts.jpg",
+        "doc/img/BOM/BOM_Ollo.jpg",
+        "doc/img/BOM/BOM_Robotis_XL320.jpg",
+        "doc/img/BOM/BOM_electronics.jpg",
+        "doc/img/BOM/BOM_lamp.jpg"
+      ],
+      "urdf_files": [
+        "software/poppy_ergo_jr/poppy_ergo_jr.urdf"
+      ],
+      "file_count": 112,
+      "_gap": {
+        "cat": "arm",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "NimbRo/nimbro-op2",
+      "name": "nimbro-op2",
+      "owner": "NimbRo",
+      "description": "2017 NimbRo-OP2 hardware release",
+      "url": "https://github.com/NimbRo/nimbro-op2",
+      "homepage": "",
+      "stars": 61,
+      "forks": 12,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2018-09-26T11:23:30Z",
+      "created_at": "2017-09-25T13:54:14Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 69
+      },
+      "cad_formats": [
+        ".step"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 75,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "TheRobotStudio/HOPEJr",
+      "name": "HOPEJr",
+      "owner": "TheRobotStudio",
+      "description": "HOPEJr_open-source_DIY_Humanoid_Robot_with_dexterous_hands",
+      "url": "https://github.com/TheRobotStudio/HOPEJr",
+      "homepage": "",
+      "stars": 828,
+      "forks": 102,
+      "language": "C#",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2026-05-04T15:36:45Z",
+      "created_at": "2024-10-04T11:02:27Z",
+      "archived": false,
+      "open_issues": 13,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 176,
+        "BOM": 8,
+        "CAD": 6,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "Arm/BOM.md",
+        "Arm/PCB/12-connector/bom.csv",
+        "Arm/PCB/7-connector/bom.csv",
+        "Arm/PCB/homunculus_pcb/BOM.csv",
+        "Humanoid/3dprint files/First_Arm_Draft/BOM",
+        "Humanoid/3dprint files/First_Finger_Draft/BOM",
+        "Humanoid/3dprint files/First_Hand_Draft/BOM",
+        "Humanoid/3dprint files/Second_Arm_Draft/BOM"
+      ],
+      "urdf_files": [
+        "Humanoid/URDF/Right_Leg/robot.urdf"
+      ],
+      "file_count": 259,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "MarcDcls/coconuts",
+      "name": "coconuts",
+      "owner": "MarcDcls",
+      "description": "The CocoNuts project is an open-source humanoid robotics research platform. Its primary design philosophy is the minimization of leg inertia by concentrating mass near the root of the limbs, utilizing a combination of timing belts and parallel linkage mechanisms.",
+      "url": "https://github.com/MarcDcls/coconuts",
+      "homepage": "",
+      "stars": 24,
+      "forks": 1,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [
+        "humanoid-robot",
+        "mechanical-design",
+        "robotics"
+      ],
+      "pushed_at": "2026-06-30T17:11:34Z",
+      "created_at": "2026-01-15T13:58:43Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "MESH": 49,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [
+        "hardware/BOM.md"
+      ],
+      "urdf_files": [
+        "hardware/benchmark/robot.urdf"
+      ],
+      "file_count": 130,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "generalroboticslab/DukeHumanoidv1",
+      "name": "DukeHumanoidv1",
+      "owner": "generalroboticslab",
+      "description": "RL simulation and hardware control for Duke Humanoid V1",
+      "url": "https://github.com/generalroboticslab/DukeHumanoidv1",
+      "homepage": "",
+      "stars": 72,
+      "forks": 7,
+      "language": "",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-06-22T01:39:33Z",
+      "created_at": "2024-09-24T06:30:41Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 5,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "assadollahi/kayra",
+      "name": "kayra",
+      "owner": "assadollahi",
+      "description": "an easy to modify, 3d printable open source humanoid robot evolved by the community",
+      "url": "https://github.com/assadollahi/kayra",
+      "homepage": "",
+      "stars": 59,
+      "forks": 5,
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "pushed_at": "2026-09-13T16:41:02Z",
+      "created_at": "2022-08-19T20:20:06Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 63,
+        "MESH": 66
+      },
+      "cad_formats": [
+        ".fcstd",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 231,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "raspibotics/MABEL",
+      "name": "MABEL",
+      "owner": "raspibotics",
+      "description": "MABEL is a feature-packed, open-source, legged balancing robot based off of the Boston Dynamics Handle robot.",
+      "url": "https://github.com/raspibotics/MABEL",
+      "homepage": "https://raspibotics.github.io/MABEL/",
+      "stars": 186,
+      "forks": 40,
+      "language": "C++",
+      "license": "GPL-3.0",
+      "topics": [
+        "arduino",
+        "balancing-robots",
+        "boston-dynamics",
+        "mabel",
+        "raspberry-pi",
+        "raspberry-pi-robot",
+        "raspibotics",
+        "robot",
+        "robotics",
+        "self-balancing-robot"
+      ],
+      "pushed_at": "2020-08-18T20:59:50Z",
+      "created_at": "2020-07-29T19:35:53Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 11,
+        "CAD": 2
+      },
+      "cad_formats": [
+        ".f3z",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 38,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "dfki-ric-underactuated-lab/acromonk",
+      "name": "acromonk",
+      "owner": "dfki-ric-underactuated-lab",
+      "description": "AcroMonk: A Minimalist Underactuated Brachiating Robot",
+      "url": "https://github.com/dfki-ric-underactuated-lab/acromonk",
+      "homepage": "",
+      "stars": 55,
+      "forks": 6,
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "pushed_at": "2023-08-25T04:31:53Z",
+      "created_at": "2022-11-16T10:54:36Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DESC": 1,
+        "MESH": 18,
+        "CAD": 1
+      },
+      "cad_formats": [
+        ".obj",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "data/simulation_models/acromonk.urdf"
+      ],
+      "file_count": 187,
+      "_gap": {
+        "cat": "hybrid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "hidro-iri/Borinot",
+      "name": "Borinot",
+      "owner": "hidro-iri",
+      "description": "🐝 Borinot: Open-Source Aerial Robot for Hybrid Locomotion & Manipulation Research. Dive into the fusion of flight and contact dynamics!",
+      "url": "https://github.com/hidro-iri/Borinot",
+      "homepage": "",
+      "stars": 24,
+      "forks": 6,
+      "language": "Shell",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "pushed_at": "2026-04-30T14:45:08Z",
+      "created_at": "2023-09-01T14:06:42Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 5,
+        "CAD": 29,
+        "MESH": 10
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 213,
+      "_gap": {
+        "cat": "hybrid",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "XRobots/RobotX",
+      "name": "RobotX",
+      "owner": "XRobots",
+      "description": "All the things for RobotX",
+      "url": "https://github.com/XRobots/RobotX",
+      "homepage": "",
+      "stars": 131,
+      "forks": 46,
+      "language": "C++",
+      "license": "LGPL-3.0",
+      "topics": [],
+      "pushed_at": "2018-06-16T19:41:18Z",
+      "created_at": "2017-05-08T16:37:10Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 3
+      },
+      "cad_formats": [
+        ".stp"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 19,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "DarrenLevine/TipTap",
+      "name": "TipTap",
+      "owner": "DarrenLevine",
+      "description": "A 3d-printed bipedal robot. A low-cost desktop option for semi-direct drive walking research.",
+      "url": "https://github.com/DarrenLevine/TipTap",
+      "homepage": "https://hackaday.io/project/163093-tiptap",
+      "stars": 65,
+      "forks": 11,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2020-10-05T19:15:04Z",
+      "created_at": "2019-11-23T19:23:06Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 16,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "software/tiptap.urdf"
+      ],
+      "file_count": 32,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "open-dynamic-robot-initiative/open_robot_actuator_hardware",
+      "name": "open_robot_actuator_hardware",
+      "owner": "open-dynamic-robot-initiative",
+      "description": "",
+      "url": "https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware",
+      "homepage": "https://open-dynamic-robot-initiative.github.io",
+      "stars": 1471,
+      "forks": 258,
+      "language": "",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "pushed_at": "2022-09-06T15:20:50Z",
+      "created_at": "2019-08-20T13:13:37Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "PCB": 2,
+        "DOC": 2,
+        "CAD": 11,
+        "MESH": 207,
+        "BOM": 2
+      },
+      "cad_formats": [
+        ".fcstd",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.pdf",
+        "mechanics/foot_contact_switch_v1/documentation/bom_foot_contact_switch_v1.xlsx"
+      ],
+      "urdf_files": [],
+      "file_count": 1363,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "nasa-jpl/open-source-rover",
+      "name": "open-source-rover",
+      "owner": "nasa-jpl",
+      "description": "A build-it-yourself, 6-wheel rover based on the rovers on Mars!",
+      "url": "https://github.com/nasa-jpl/open-source-rover",
+      "homepage": "https://open-source-rover.readthedocs.io",
+      "stars": 9657,
+      "forks": 1502,
+      "language": "HTML",
+      "license": "Apache-2.0",
+      "topics": [
+        "diy",
+        "hardware",
+        "mars",
+        "mars-rover",
+        "open-source",
+        "robot",
+        "robotics"
+      ],
+      "pushed_at": "2026-09-03T19:13:02Z",
+      "created_at": "2018-06-29T23:57:16Z",
+      "archived": false,
+      "open_issues": 15,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 23,
+        "BOM": 6,
+        "PCB": 7,
+        "MESH": 2
+      },
+      "cad_formats": [
+        ".step",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [
+        "electrical/pcb/control_board/BOM/bom_v2.0.3_board_ref_parts.csv",
+        "electrical/pcb/control_board/BOM/bom_v2.0.3_other_parts.csv",
+        "electrical/pcb/control_board/BOM/digikey_bom_4-20-2023.csv",
+        "electrical/pcb/control_board/BOM/digikey_upload_bom.png",
+        "parts_list/digikey_bom.csv",
+        "parts_list/parts_list.csv"
+      ],
+      "urdf_files": [],
+      "file_count": 614,
+      "_gap": {
+        "cat": "wheeled",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "mjbots/hoverbot",
+      "name": "hoverbot",
+      "owner": "mjbots",
+      "description": "Simple balancing hoverboard robot",
+      "url": "https://github.com/mjbots/hoverbot",
+      "homepage": "",
+      "stars": 63,
+      "forks": 17,
+      "language": "C++",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2025-05-07T21:06:31Z",
+      "created_at": "2024-05-30T14:59:29Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "PCB": 13,
+        "MESH": 15
+      },
+      "cad_formats": [
+        ".3mf",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM.md"
+      ],
+      "urdf_files": [],
+      "file_count": 212,
+      "_gap": {
+        "cat": "wheeled",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "mjbots/quad",
+      "name": "quad",
+      "owner": "mjbots",
+      "description": "quad A1 robot software and hardware",
+      "url": "https://github.com/mjbots/quad",
+      "homepage": "",
+      "stars": 106,
+      "forks": 29,
+      "language": "C++",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2026-06-17T18:23:42Z",
+      "created_at": "2020-12-02T00:20:44Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 48
+      },
+      "cad_formats": [
+        ".3mf"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 327,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "cbedio/OpenScout",
+      "name": "OpenScout",
+      "owner": "cbedio",
+      "description": "",
+      "url": "https://github.com/cbedio/OpenScout",
+      "homepage": "",
+      "stars": 86,
+      "forks": 14,
+      "language": "C++",
+      "license": "GPL-3.0",
+      "topics": [],
+      "pushed_at": "2025-01-28T11:17:27Z",
+      "created_at": "2022-04-04T11:42:47Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 2,
+        "CAD": 3,
+        "MESH": 7
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 149,
+      "_gap": {
+        "cat": "wheeled",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "AndReGeist/wheelbot-v2.5",
+      "name": "wheelbot",
+      "owner": "AndReGeist",
+      "description": "The Wheelbot: A Jumping Reaction Wheel Unicycle - ICRA 2022",
+      "url": "https://github.com/AndReGeist/wheelbot",
+      "homepage": "https://sites.google.com/view/wheelbot/start",
+      "stars": 141,
+      "forks": 34,
+      "language": "Jupyter Notebook",
+      "license": "GPL-3.0",
+      "topics": [
+        "hardware-designs",
+        "robotics",
+        "unicycle"
+      ],
+      "pushed_at": "2025-03-04T16:15:25Z",
+      "created_at": "2022-06-03T11:17:53Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 31,
+        "DOC": 1,
+        "PCB": 2
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 120,
+      "_gap": {
+        "cat": "wheeled",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "NRdrgz/Just1",
+      "name": "Just1",
+      "owner": "NRdrgz",
+      "description": "Just1 - An Open-Source Autonomous Mecanum Wheel Robot ",
+      "url": "https://github.com/NRdrgz/Just1",
+      "homepage": "",
+      "stars": 76,
+      "forks": 6,
+      "language": "C++",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-11-09T22:15:38Z",
+      "created_at": "2025-09-20T00:23:13Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "CAD": 1,
+        "MESH": 5
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "Bot/Hardware/Bill_of_material.md"
+      ],
+      "urdf_files": [],
+      "file_count": 96,
+      "_gap": {
+        "cat": "wheeled",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "haraduka/mevita",
+      "name": "mevita",
+      "owner": "haraduka",
+      "description": "      MEVITA: Open-Source Bipedal Robot Assembled from E-Commerce Components via Sheet Metal Welding",
+      "url": "https://github.com/haraduka/mevita",
+      "homepage": "",
+      "stars": 105,
+      "forks": 9,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-08-27T00:35:48Z",
+      "created_at": "2025-08-11T07:08:40Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 13,
+        "DESC": 6
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "models/meshes/mevita_long_mujoco.urdf",
+        "models/meshes/mevita_mujoco.urdf",
+        "models/mevita_dae.urdf",
+        "models/mevita_long_dae.urdf",
+        "models/mevita_long_stl.urdf",
+        "models/mevita_stl.urdf"
+      ],
+      "file_count": 71,
+      "_gap": {
+        "cat": "biped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "haraduka/mevius",
+      "name": "mevius",
+      "owner": "haraduka",
+      "description": "A Quadruped Robot Easily Constructed through E-Commerce with Sheet Metal Welding and Machining",
+      "url": "https://github.com/haraduka/mevius",
+      "homepage": "",
+      "stars": 254,
+      "forks": 28,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-06-10T01:40:50Z",
+      "created_at": "2024-09-12T05:12:02Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 13,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "models/mevius.urdf"
+      ],
+      "file_count": 33,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "Agroecology-Lab/feldfreund_devkit_ros",
+      "name": "feldfreund_devkit_ros",
+      "owner": "Agroecology-Lab",
+      "description": "ROS2 stack for the Sowbot open hardware reference platforms. We're working towards  a precision-guided seeding/weeding robot. ",
+      "url": "https://github.com/Agroecology-Lab/feldfreund_devkit_ros",
+      "homepage": "https://sowbot.co.uk/",
+      "stars": 98,
+      "forks": 17,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agriculture",
+        "agtech",
+        "robot",
+        "robotics",
+        "ros2"
+      ],
+      "pushed_at": "2026-09-18T21:20:55Z",
+      "created_at": "2026-02-04T09:34:04Z",
+      "archived": false,
+      "open_issues": 38,
+      "default_branch": "caatinga-dev",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 4,
+        "DESC": 4
+      },
+      "cad_formats": [
+        ".obj",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "src/devkit_simulation/urdf/agro_robot.urdf.xacro",
+        "src/devkit_simulation/urdf/ifarmate.urdf.xacro",
+        "src/devkit_simulation/urdf/robo_caatinga.urdf.xacro",
+        "src/devkit_simulation/urdf/sowbot_01.xacro"
+      ],
+      "file_count": 226,
+      "_gap": {
+        "cat": "tracked",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "miguelasd688/4-legged-robot-model",
+      "name": "4-legged-robot-model",
+      "owner": "miguelasd688",
+      "description": "",
+      "url": "https://github.com/miguelasd688/4-legged-robot-model",
+      "homepage": "",
+      "stars": 261,
+      "forks": 71,
+      "language": "C++",
+      "license": "GPL-3.0",
+      "topics": [],
+      "pushed_at": "2021-12-15T19:08:43Z",
+      "created_at": "2020-02-22T02:32:06Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 20,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "pollen-robotics/AmazingHand",
+      "name": "AmazingHand",
+      "owner": "pollen-robotics",
+      "description": "Code and model to control the AH!",
+      "url": "https://github.com/pollen-robotics/AmazingHand",
+      "homepage": "",
+      "stars": 2393,
+      "forks": 274,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-04-23T10:21:30Z",
+      "created_at": "2025-06-25T16:10:41Z",
+      "archived": false,
+      "open_issues": 21,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 72,
+        "BOM": 1,
+        "CAD": 20,
+        "DOC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "assets/BOM.jpg"
+      ],
+      "urdf_files": [],
+      "file_count": 196,
+      "_gap": {
+        "cat": "hand",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "pollen-robotics/grabette",
+      "name": "grabette",
+      "owner": "pollen-robotics",
+      "description": "Grabette: robotic data recording device",
+      "url": "https://github.com/pollen-robotics/grabette",
+      "homepage": "",
+      "stars": 109,
+      "forks": 12,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "robotics"
+      ],
+      "pushed_at": "2026-09-17T13:07:06Z",
+      "created_at": "2026-06-08T09:07:34Z",
+      "archived": false,
+      "open_issues": 25,
+      "default_branch": "develop",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 318,
+        "DESC": 7,
+        "CAD": 44,
+        "DOC": 4
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "integrations/openarm/openarm_gripette_model/openarm_gripette_model/openarm_right/config.json.urdf",
+        "integrations/openarm/openarm_gripette_model/openarm_gripette_model/openarm_right/robot.urdf",
+        "packages/grabette/urdf/grabette_left/robot.urdf",
+        "packages/grabette/urdf/grabette_right/robot.urdf",
+        "packages/gripette/urdf/gripette_left/robot.urdf",
+        "packages/gripette/urdf/gripette_right/robot.urdf",
+        "packages/gripette/urdf/openarm_gripette_right/robot.urdf"
+      ],
+      "file_count": 872,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "ferrolho/rotary-inverted-pendulum",
+      "name": "rotary-inverted-pendulum",
+      "owner": "ferrolho",
+      "description": "A £20 open-source rotary inverted pendulum that balances itself with a 689-parameter neural network running standalone on an Arduino Nano.",
+      "url": "https://github.com/ferrolho/rotary-inverted-pendulum",
+      "homepage": "https://ferrolho.github.io/rotary-inverted-pendulum/",
+      "stars": 96,
+      "forks": 9,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "control-theory",
+        "furuta-pendulum",
+        "inverted-pendulum",
+        "mujoco",
+        "reinforcement-learning",
+        "robotics",
+        "sim-to-real",
+        "tinyml"
+      ],
+      "pushed_at": "2026-09-15T08:39:08Z",
+      "created_at": "2024-05-12T08:10:58Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 5,
+        "DESC": 1,
+        "DOC": 1,
+        "BOM": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [
+        "website/src/content/docs/build/bom.md"
+      ],
+      "urdf_files": [
+        "model/model.urdf"
+      ],
+      "file_count": 146,
+      "_gap": {
+        "cat": "edu",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "jess-moss/koch-v1-1",
+      "name": "koch-v1-1",
+      "owner": "jess-moss",
+      "description": "A version 1.1 of the Alexander Koch low cost robot arm with some small changes.",
+      "url": "https://github.com/jess-moss/koch-v1-1",
+      "homepage": "",
+      "stars": 731,
+      "forks": 67,
+      "language": "",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2024-09-17T13:55:36Z",
+      "created_at": "2024-07-18T21:48:09Z",
+      "archived": false,
+      "open_issues": 10,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 17,
+        "CAD": 51
+      },
+      "cad_formats": [
+        ".sldasm",
+        ".sldprt",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 75,
+      "_gap": {
+        "cat": "arm",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "timqian/bambot",
+      "name": "bambot",
+      "owner": "timqian",
+      "description": "Play with open source, low-cost AI robots with ease 🤖",
+      "url": "https://github.com/timqian/bambot",
+      "homepage": "https://bambot.org",
+      "stars": 971,
+      "forks": 94,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2025-07-14T09:49:10Z",
+      "created_at": "2025-03-17T15:19:05Z",
+      "archived": false,
+      "open_issues": 30,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 46,
+        "DESC": 6
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "website/public/URDFs/bambot_v0.urdf",
+        "website/public/URDFs/bambot_v0_base.urdf",
+        "website/public/URDFs/so101.urdf",
+        "website/public/URDFs/sts3215.urdf",
+        "website/public/URDFs/unitree-g1/g1_23dof.urdf",
+        "website/public/URDFs/unitree-go2/go2.urdf"
+      ],
+      "file_count": 200,
+      "_gap": {
+        "cat": "mobile-manip",
+        "src": "awesome-osr"
+      }
+    },
+    {
+      "full_name": "TheRobotStudio/SO-ARM100",
+      "name": "SO-ARM100",
+      "owner": "TheRobotStudio",
+      "description": "Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "homepage": "",
+      "stars": 7518,
+      "forks": 689,
+      "language": "",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-06T12:46:39Z",
+      "created_at": "2024-05-10T22:07:52Z",
+      "archived": false,
+      "open_issues": 86,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 114,
+        "CAD": 36,
+        "DESC": 4
+      },
+      "cad_formats": [
+        ".3mf",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "Simulation/SO100/so100.urdf",
+        "Simulation/SO101/so101_new_calib.urdf",
+        "Simulation/SO101/so101_new_calib_camera.urdf",
+        "Simulation/SO101/so101_old_calib.urdf"
+      ],
+      "file_count": 237,
+      "_gap": {
+        "cat": "arm",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "TheRobotStudio/V2_DexHand",
+      "name": "V2_DexHand",
+      "owner": "TheRobotStudio",
+      "description": "The stl files and code for the V2 DexHand",
+      "url": "https://github.com/TheRobotStudio/V2_DexHand",
+      "homepage": "",
+      "stars": 72,
+      "forks": 18,
+      "language": "",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2026-04-14T15:07:18Z",
+      "created_at": "2025-03-18T17:11:45Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 24
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 51,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "BCN3D/BCN3D-Moveo",
+      "name": "BCN3D-Moveo",
+      "owner": "BCN3D",
+      "description": "Open Source 3D Printed Robotic Arm for educational purposes",
+      "url": "https://github.com/BCN3D/BCN3D-Moveo",
+      "homepage": "",
+      "stars": 1965,
+      "forks": 567,
+      "language": "C++",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2022-03-01T11:37:05Z",
+      "created_at": "2016-07-28T11:07:14Z",
+      "archived": false,
+      "open_issues": 47,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "CAD": 110,
+        "MESH": 32,
+        "DOC": 1
+      },
+      "cad_formats": [
+        ".sldasm",
+        ".sldprt",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM/BCN3D Moveo BOM.pdf"
+      ],
+      "urdf_files": [],
+      "file_count": 229,
+      "_gap": {
+        "cat": "arm",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Seeed-Projects/reBot-DevArm",
+      "name": "reBot-DevArm",
+      "owner": "Seeed-Projects",
+      "description": "Open Source Robotic Arm for All Developers",
+      "url": "https://github.com/Seeed-Projects/reBot-DevArm",
+      "homepage": "",
+      "stars": 4269,
+      "forks": 428,
+      "language": "Python",
+      "license": "CERN-OHL-W-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-19T04:42:37Z",
+      "created_at": "2025-11-25T06:01:17Z",
+      "archived": false,
+      "open_issues": 18,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 92,
+        "DESC": 2,
+        "CAD": 106
+      },
+      "cad_formats": [
+        ".step",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "Rebot_Arm_description/DM/urdf/ReBot_Arm_DM.urdf",
+        "Rebot_Arm_description/RS/urdf/ReBot_Arm_RS.urdf"
+      ],
+      "file_count": 419,
+      "_gap": {
+        "cat": "arm",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Source-Robotics/PAROL6-Desktop-robot-arm",
+      "name": "PAROL6-Desktop-robot-arm",
+      "owner": "Source-Robotics",
+      "description": "BOM, STL files and instructions for PAROL6 3D printed robot arm",
+      "url": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm",
+      "homepage": "https://source-robotics.com/",
+      "stars": 3256,
+      "forks": 375,
+      "language": "HTML",
+      "license": "GPL-3.0",
+      "topics": [
+        "ai",
+        "lerobot",
+        "parol6",
+        "python",
+        "robotics"
+      ],
+      "pushed_at": "2026-09-07T15:55:30Z",
+      "created_at": "2023-07-16T20:25:20Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 2,
+        "DOC": 3,
+        "MESH": 52,
+        "DESC": 1,
+        "CAD": 2
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM/BOM.md",
+        "BOM/BOM_PDF_Legacy.pdf"
+      ],
+      "urdf_files": [
+        "PAROL6_URDF/PAROL6/urdf/PAROL6.urdf"
+      ],
+      "file_count": 7856,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "PCrnjak/Faze4-Robotic-arm",
+      "name": "Faze4-Robotic-arm",
+      "owner": "Source-Robotics",
+      "description": "All files  for 6 axis robot arm with cycloidal gearboxes .",
+      "url": "https://github.com/Source-Robotics/Faze4-Robotic-arm",
+      "homepage": "",
+      "stars": 901,
+      "forks": 151,
+      "language": "C++",
+      "license": "CERN-OHL-S-2.0",
+      "topics": [
+        "robot",
+        "robotics"
+      ],
+      "pushed_at": "2025-12-28T18:54:32Z",
+      "created_at": "2019-08-20T11:44:19Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 1,
+        "BOM": 1,
+        "CAD": 1,
+        "MESH": 7,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM_7_11_2023.xlsx"
+      ],
+      "urdf_files": [
+        "URDF_FAZE4/urdf/Final_light_assembly_URDF.urdf"
+      ],
+      "file_count": 76,
+      "_gap": {
+        "cat": "arm",
+        "src": "canonical"
+      }
+    },
+    {
+      "full_name": "Gh0stlyKn1ght/Primo",
+      "name": "Primo",
+      "owner": "Gh0stlyKn1ght",
+      "description": "Our open-source anthropomorphic manipulator, entirely 3D printed, designed and built by Crea3d.",
+      "url": "https://github.com/Gh0stlyKn1ght/Primo",
+      "homepage": "",
+      "stars": 0,
+      "forks": 0,
+      "language": "G-code",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2026-04-23T19:29:08Z",
+      "created_at": "2026-04-23T16:04:48Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "1.1",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 51,
+        "DOC": 1,
+        "BOM": 5
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [
+        "02 - BOM AND MANUAL/PRIMO_1.1_3D_Printing_BOM.xlsx",
+        "02 - BOM AND MANUAL/PRIMO_1.1_Electrical_BOM.xlsx",
+        "02 - BOM AND MANUAL/PRIMO_1.1_Mechanical_BOM.xlsx",
+        "costed_electrical_bom.csv",
+        "docs/project/BOM_GAPS.md"
+      ],
+      "urdf_files": [],
+      "file_count": 132,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "eai-yeslab/OpenEAI-Arm",
+      "name": "OpenEAI-Arm",
+      "owner": "eai-yeslab",
+      "description": "",
+      "url": "https://github.com/eai-yeslab/OpenEAI-Arm",
+      "homepage": "",
+      "stars": 137,
+      "forks": 2,
+      "language": "C++",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "pushed_at": "2026-09-19T09:52:41Z",
+      "created_at": "2026-02-08T09:09:37Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 36,
+        "BOM": 1,
+        "MESH": 14,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".sldprt",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "hardware/bom/BOM.xlsx"
+      ],
+      "urdf_files": [
+        "software/ros2/src/openeai_arm_urdf_ros2/urdf/STEP.urdf"
+      ],
+      "file_count": 2055,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "robertorobotics/Nextis-AIRA-3D",
+      "name": "Nextis-AIRA-3D",
+      "owner": "robertorobotics",
+      "description": "Open-source 7DoF 3D-printable robotic arm with LeRobot integration. ",
+      "url": "https://github.com/robertorobotics/Nextis-AIRA-3D",
+      "homepage": "https://www.nextis.tech/hardware",
+      "stars": 260,
+      "forks": 21,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "3d-printing",
+        "artificial-intelligence",
+        "machine-learning",
+        "open-source",
+        "robotics"
+      ],
+      "pushed_at": "2026-03-12T13:12:56Z",
+      "created_at": "2026-03-08T20:17:33Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 1,
+        "BOM": 1,
+        "CAD": 30
+      },
+      "cad_formats": [
+        ".step"
+      ],
+      "bom_files": [
+        "hardware/BOM.md"
+      ],
+      "urdf_files": [],
+      "file_count": 68,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "enactic/openarm",
+      "name": "openarm",
+      "owner": "enactic",
+      "description": "A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments.",
+      "url": "https://github.com/enactic/openarm",
+      "homepage": "https://openarm.dev",
+      "stars": 3476,
+      "forks": 374,
+      "language": "MDX",
+      "license": "Apache-2.0",
+      "topics": [
+        "bilateral-teleoperation",
+        "force-feedback",
+        "genesis",
+        "gravity-compensation",
+        "humanoid-robot",
+        "imitation-learning",
+        "machine-learning",
+        "moveit2",
+        "mujoco",
+        "open-source",
+        "openarm",
+        "python",
+        "reinforcement-learning",
+        "robot",
+        "robot-arm",
+        "robotics",
+        "ros2",
+        "teleoperation"
+      ],
+      "pushed_at": "2026-09-14T08:38:05Z",
+      "created_at": "2024-09-29T06:13:42Z",
+      "archived": false,
+      "open_issues": 15,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 2,
+        "DOC": 1
+      },
+      "cad_formats": [],
+      "bom_files": [
+        "website/static/file/hardware/bill-of-materials/electrical/bom-for-hub.csv",
+        "website/static/img/hardware/bom/procurement/bom-summary.png"
+      ],
+      "urdf_files": [],
+      "file_count": 556,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "pkooij/open-arms-mini",
+      "name": "open-arms-mini",
+      "owner": "pkooij",
+      "description": "open-arms-mini: cheap human like teleoperation device that supports human in the loop corrections",
+      "url": "https://github.com/pkooij/open-arms-mini",
+      "homepage": "",
+      "stars": 132,
+      "forks": 11,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2026-03-26T16:57:46Z",
+      "created_at": "2026-03-26T15:02:36Z",
+      "archived": false,
+      "open_issues": 3,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "CAD": 20,
+        "MESH": 21
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM.md"
+      ],
+      "urdf_files": [],
+      "file_count": 45,
+      "_gap": {
+        "cat": "arm",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "liyiteng/AM-ARM",
+      "name": "AM-ARM",
+      "owner": "liyiteng",
+      "description": "an affordable, open-source 6+1 DoF robot arm compatible with LeRobot",
+      "url": "https://github.com/liyiteng/AM-ARM",
+      "homepage": "",
+      "stars": 72,
+      "forks": 7,
+      "language": "",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-06-18T10:36:17Z",
+      "created_at": "2026-04-23T10:11:05Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 45,
+        "DESC": 2,
+        "BOM": 1,
+        "DOC": 1,
+        "CAD": 27
+      },
+      "cad_formats": [
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [
+        "am-arm200/bom.md"
+      ],
+      "urdf_files": [
+        "am-arm200-pro/urdf/urdf/am-arm200pro.urdf",
+        "am-arm200/urdf/urdf/am-arm200.urdf"
+      ],
+      "file_count": 135,
+      "_gap": {
+        "cat": "arm",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Matheshwaranpitchai/open-source-leader-arm",
+      "name": "open-source-leader-arm",
+      "owner": "Matheshwaranpitchai",
+      "description": "open-source, low-cost, 3D printed leader arm for teleoperating an SO-ARM    ",
+      "url": "https://github.com/Matheshwaranpitchai/open-source-leader-arm",
+      "homepage": "",
+      "stars": 121,
+      "forks": 14,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-15T19:25:21Z",
+      "created_at": "2026-08-25T18:40:10Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 20,
+        "MESH": 20
+      },
+      "cad_formats": [
+        ".3mf",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 68,
+      "_gap": {
+        "cat": "arm",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "4ndreas/BetaBots-Robot-Arm-Project",
+      "name": "BetaBots-Robot-Arm-Project",
+      "owner": "4ndreas",
+      "description": "3d printable Robot arm ",
+      "url": "https://github.com/4ndreas/BetaBots-Robot-Arm-Project",
+      "homepage": "",
+      "stars": 391,
+      "forks": 122,
+      "language": "HTML",
+      "license": "GPL-3.0",
+      "topics": [],
+      "pushed_at": "2021-07-22T13:43:20Z",
+      "created_at": "2015-09-18T18:22:23Z",
+      "archived": false,
+      "open_issues": 8,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 605,
+        "BOM": 4,
+        "MESH": 3
+      },
+      "cad_formats": [
+        ".iam",
+        ".ipt",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [
+        "Blue/Inventor/Design Data/partslist.xml",
+        "Green/Inventor/Design Data/partslist.xml",
+        "Green/RobotV4_BOM.xlsx",
+        "Orange/Inventor/Design Data/partslist.xml"
+      ],
+      "urdf_files": [],
+      "file_count": 1126,
+      "_gap": {
+        "cat": "arm",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "mmmarinho/UMIRobot",
+      "name": "umirobot",
+      "owner": "mmmarinho",
+      "description": "",
+      "url": "https://github.com/mmmarinho/umirobot",
+      "homepage": "https://mmmarinho.github.io/UMIRobot/",
+      "stars": 3,
+      "forks": 2,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "topics": [],
+      "pushed_at": "2024-01-21T23:19:05Z",
+      "created_at": "2021-01-09T06:07:24Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DESC": 1
+      },
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [
+        "models/urdf/UMIRobot.urdf"
+      ],
+      "file_count": 263,
+      "_gap": {
+        "cat": "arm",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "simonepri/roboprime",
+      "name": "roboprime",
+      "owner": "simonepri",
+      "description": "🤖 Full featured 21 DOF 3D Printed Humanoid Robot based on ATmega328P chip",
+      "url": "https://github.com/simonepri/roboprime",
+      "homepage": "",
+      "stars": 50,
+      "forks": 9,
+      "language": "Arduino",
+      "license": "GPL-3.0",
+      "topics": [
+        "3d-printing",
+        "arduino",
+        "atmega328p",
+        "electronics",
+        "firmware",
+        "humanoid",
+        "humanoid-robot",
+        "robotics"
+      ],
+      "pushed_at": "2017-10-19T16:04:12Z",
+      "created_at": "2017-07-01T15:36:09Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 24,
+        "BOM": 1,
+        "PCB": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [
+        "schematics/orcad/ROBOT.BOM"
+      ],
+      "urdf_files": [],
+      "file_count": 115,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "dorianborian/sesame-robot",
+      "name": "sesame-robot",
+      "owner": "dorianborian",
+      "description": "An open and affordable mini quadruped robot based on ESP32.",
+      "url": "https://github.com/dorianborian/sesame-robot",
+      "homepage": "https://www.doriantodd.com/sesame",
+      "stars": 4453,
+      "forks": 602,
+      "language": "C",
+      "license": "Apache-2.0",
+      "topics": [
+        "hardware",
+        "robotics",
+        "walking-robot"
+      ],
+      "pushed_at": "2026-09-13T04:04:23Z",
+      "created_at": "2025-11-21T18:30:15Z",
+      "archived": false,
+      "open_issues": 17,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 2,
+        "BOM": 2,
+        "MESH": 15
+      },
+      "cad_formats": [
+        ".f3z",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "hardware/pcb/distro-v2/BOM_Sesame-Distro-V2.csv",
+        "hardware/pcb/distro-v3.1/BOM_Sesame-Distro-Board-V3.1.csv"
+      ],
+      "urdf_files": [],
+      "file_count": 131,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "PetoiCamp/OpenCat-Quadruped-Robot",
+      "name": "OpenCat-Quadruped-Robot",
+      "owner": "PetoiCamp",
+      "description": "An open source quadruped robot pet framework for developing Boston Dynamics-style four-legged robots that are perfect for STEM, coding & robotics education, IoT robotics applications, AI-enhanced robotics application services, research, and DIY robotics kit development. ",
+      "url": "https://github.com/PetoiCamp/OpenCat-Quadruped-Robot",
+      "homepage": "https://www.petoi.com",
+      "stars": 5340,
+      "forks": 633,
+      "language": "C++",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "arduino",
+        "block-coding",
+        "education",
+        "iot",
+        "legged-robot",
+        "physical-ai",
+        "quadruped",
+        "quadruped-robot-gaits",
+        "raspberry-pi",
+        "reinforcement-learning",
+        "robot-cat",
+        "robot-dog",
+        "robot-kit",
+        "robotics",
+        "robotics-education",
+        "simulation",
+        "stem",
+        "visual-programming",
+        "walking"
+      ],
+      "pushed_at": "2026-09-08T04:50:11Z",
+      "created_at": "2021-01-03T15:42:00Z",
+      "archived": false,
+      "open_issues": 6,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 2,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "Resources/SimulationModels/bittle_simple.urdf"
+      ],
+      "file_count": 328,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "chvmp/champ",
+      "name": "champ",
+      "owner": "chvmp",
+      "description": "MIT Cheetah I Implementation",
+      "url": "https://github.com/chvmp/champ",
+      "homepage": "",
+      "stars": 2316,
+      "forks": 445,
+      "language": "C++",
+      "license": "BSD-3-Clause",
+      "topics": [
+        "gazebo",
+        "gazebo-ros",
+        "gazebo-simulator",
+        "legged-robotics",
+        "legged-robots",
+        "quadruped",
+        "quadruped-robot-gaits",
+        "quadruped-simulation",
+        "robotics",
+        "ros"
+      ],
+      "pushed_at": "2024-07-04T00:40:17Z",
+      "created_at": "2019-05-11T16:44:17Z",
+      "archived": false,
+      "open_issues": 54,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 9,
+        "DESC": 7
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "champ_description/urdf/accessories.urdf.xacro",
+        "champ_description/urdf/champ.urdf",
+        "champ_description/urdf/champ.urdf.xacro",
+        "champ_description/urdf/champ_arm.urdf",
+        "champ_description/urdf/champ_velodyne.urdf",
+        "champ_description/urdf/leg.urdf.xacro",
+        "champ_description/urdf/properties.urdf.xacro"
+      ],
+      "file_count": 136,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "Nate711/StanfordDoggoProject",
+      "name": "StanfordDoggoProject",
+      "owner": "Nate711",
+      "description": "Stanford Doggo is an open source quadruped robot that jumps, flips, and trots!",
+      "url": "https://github.com/Nate711/StanfordDoggoProject",
+      "homepage": "",
+      "stars": 2554,
+      "forks": 751,
+      "language": "",
+      "license": "MIT",
+      "topics": [
+        "cad",
+        "direct-drive",
+        "legged-robotics",
+        "quadruped",
+        "quasi-direct",
+        "robot",
+        "stanford-doggo"
+      ],
+      "pushed_at": "2024-07-08T02:08:11Z",
+      "created_at": "2018-09-13T04:43:31Z",
+      "archived": false,
+      "open_issues": 11,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 17,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "ManufacturedMotion/Hex",
+      "name": "Hex",
+      "owner": "ManufacturedMotion",
+      "description": "",
+      "url": "https://github.com/ManufacturedMotion/Hex",
+      "homepage": "",
+      "stars": 62,
+      "forks": 4,
+      "language": "HTML",
+      "license": "GPL-3.0",
+      "topics": [],
+      "pushed_at": "2026-09-07T22:51:21Z",
+      "created_at": "2023-11-12T01:43:10Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 5,
+        "MESH": 42,
+        "CAD": 6,
+        "PCB": 8,
+        "DOC": 4
+      },
+      "cad_formats": [
+        ".3mf",
+        ".f3d",
+        ".f3z",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "Hex1_resources/BOM/BOM.md",
+        "Hex2_resources/BOM/hexapod_bom - electrical.pdf",
+        "Hex2_resources/BOM/hexapod_bom - mechanical.pdf",
+        "Hex3_resources/electronics/leg_board/V2.0/HEX3_leg_board_v2.0 v69_top_bom.csv",
+        "Hex3_resources/electronics/leg_board/V3.2/HEX3_leg_board_PCB_v3.2 top_bom.csv"
+      ],
+      "urdf_files": [],
+      "file_count": 289,
+      "_gap": {
+        "cat": "hexapod",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "makerspet/oomwoo",
+      "name": "oomwoo",
+      "owner": "makerspet",
+      "description": "Open-source vacuum robot cleaner",
+      "url": "https://github.com/makerspet/oomwoo",
+      "homepage": "https://oomwoo.com",
+      "stars": 11024,
+      "forks": 687,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "3d-printing",
+        "arduino",
+        "diy-electronics",
+        "diy-project",
+        "esp32",
+        "esp32-arduino",
+        "home-assistant",
+        "lidar",
+        "lidar-slam",
+        "raspberry-pi",
+        "ros2",
+        "slam",
+        "vacuum-cleaner",
+        "vacuum-robot"
+      ],
+      "pushed_at": "2026-09-17T06:46:26Z",
+      "created_at": "2026-06-10T06:03:33Z",
+      "archived": false,
+      "open_issues": 3,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 2,
+        "DOC": 1
+      },
+      "cad_formats": [],
+      "bom_files": [
+        "BOM.md",
+        "contributions/compute-benchmark/xbattlax/templates/compute_bom.csv"
+      ],
+      "urdf_files": [],
+      "file_count": 110,
+      "_gap": {
+        "cat": "mobile",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "makerspet/makerspet_loki",
+      "name": "makerspet_loki",
+      "owner": "makerspet",
+      "description": "Maker's Pet Loki - a 200mm 3D-printed DIY pet robot compatible with Kaia.ai robotics software platform ",
+      "url": "https://github.com/makerspet/makerspet_loki",
+      "homepage": "https://makerspet.com",
+      "stars": 65,
+      "forks": 6,
+      "language": "Lua",
+      "license": "Apache-2.0",
+      "topics": [
+        "3d-printing",
+        "3mf",
+        "arduino",
+        "diy",
+        "esp32",
+        "esp32-arduino",
+        "fusion-360",
+        "kaia-ai",
+        "kaiaai-robot",
+        "makers",
+        "open-source",
+        "pet-robots",
+        "pets",
+        "remake-ai",
+        "robot",
+        "robotics",
+        "ros2",
+        "stem",
+        "stl-files"
+      ],
+      "pushed_at": "2025-10-04T21:51:01Z",
+      "created_at": "2023-09-07T22:51:44Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "iron",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 1,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "urdf/robot.urdf.xacro"
+      ],
+      "file_count": 30,
+      "_gap": {
+        "cat": "mobile",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "makerspet/makerspet_snoopy",
+      "name": "makerspet_snoopy",
+      "owner": "makerspet",
+      "description": "Maker's Pet Snoopy - a 300mm 3D-printed DIY pet robot compatible with Kaia.ai robotics software platform",
+      "url": "https://github.com/makerspet/makerspet_snoopy",
+      "homepage": "https://makerspet.com",
+      "stars": 31,
+      "forks": 4,
+      "language": "Lua",
+      "license": "Apache-2.0",
+      "topics": [
+        "3d-printing",
+        "3mf",
+        "arduino",
+        "diy",
+        "esp32",
+        "esp32-arduino",
+        "fusion-360",
+        "kaia-ai",
+        "kaiaai-robot",
+        "makers",
+        "open-source",
+        "pet-robots",
+        "pets",
+        "remake-ai",
+        "robot",
+        "robotics",
+        "ros2",
+        "stem",
+        "stl-files"
+      ],
+      "pushed_at": "2025-10-04T21:52:36Z",
+      "created_at": "2023-09-03T10:13:52Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "iron",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 10,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "urdf/robot.urdf.xacro"
+      ],
+      "file_count": 37,
+      "_gap": {
+        "cat": "mobile",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "openAMRobot/openamr",
+      "name": "openamr",
+      "owner": "openAMRobot",
+      "description": "Legacy OpenAMRobot monorepo retained for historical reference. Current development is split across the platform hardware, software, firmware, UI, documentation, and release repositories.",
+      "url": "https://github.com/openAMRobot/openamr",
+      "homepage": "https://docs.openamrobot.ai/",
+      "stars": 160,
+      "forks": 38,
+      "language": "",
+      "license": "MIT",
+      "topics": [
+        "legacy",
+        "open-source",
+        "openamrobot",
+        "robotics",
+        "ros2"
+      ],
+      "pushed_at": "2026-09-17T21:50:31Z",
+      "created_at": "2024-07-17T16:33:27Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "CAD": 55,
+        "DOC": 17
+      },
+      "cad_formats": [
+        ".sldasm",
+        ".sldprt",
+        ".step"
+      ],
+      "bom_files": [
+        "docs/hardware/BOM/BOM_specs_MMP.xlsx"
+      ],
+      "urdf_files": [],
+      "file_count": 182,
+      "_gap": {
+        "cat": "mobile",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "OpenPodcar/OpenPodcar",
+      "name": "OpenPodcar",
+      "owner": "OpenPodcar",
+      "description": "Open source hardware design and software for OpenPodcar.",
+      "url": "https://github.com/OpenPodcar/OpenPodcar",
+      "homepage": "",
+      "stars": 49,
+      "forks": 13,
+      "language": "",
+      "license": "GPL-2.0",
+      "topics": [],
+      "pushed_at": "2022-05-09T21:05:29Z",
+      "created_at": "2022-05-09T21:07:15Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 5,
+        "MESH": 14,
+        "CAD": 6,
+        "PCB": 18
+      },
+      "cad_formats": [
+        ".fcstd",
+        ".obj",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 1812,
+      "_gap": {
+        "cat": "mobile",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "esa-prl/ExoMy",
+      "name": "ExoMy",
+      "owner": "esa-prl",
+      "description": "ExoMy [ARCHIVED]: Check https://github.com/0xD0M1M0/ExoMy for latest updates.",
+      "url": "https://github.com/esa-prl/ExoMy",
+      "homepage": "https://esa-prl.github.io/ExoMy/",
+      "stars": 292,
+      "forks": 47,
+      "language": "",
+      "license": "GPL-3.0",
+      "topics": [
+        "3d-printing",
+        "diy",
+        "exomy",
+        "hardware"
+      ],
+      "pushed_at": "2021-04-13T09:10:34Z",
+      "created_at": "2020-02-17T16:11:47Z",
+      "archived": true,
+      "open_issues": 4,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 78,
+        "BOM": 10
+      },
+      "cad_formats": [
+        ".sldasm",
+        ".sldprt"
+      ],
+      "bom_files": [
+        "Mechanical Design/Drawings/AI_Chassis_BoM.SLDDRW",
+        "Mechanical Design/Drawings/AI_Head_BoM.SLDDRW",
+        "Mechanical Design/Drawings/AI_Integration_BoM.SLDDRW",
+        "Mechanical Design/Drawings/AI_Rear_Bogie_BoM.SLDDRW",
+        "Mechanical Design/Drawings/AI_Side_Bogie_BoM.SLDDRW",
+        "Mechanical Design/Drawings/AI_Top_BoM.SLDDRW",
+        "Mechanical Design/Drawings/MI_Printed_Parts_BoM.SLDDRW",
+        "Mechanical Design/Drawings/MI_Wire_Harness_BoM.SLDDRW",
+        "Mechanical Design/Drawings/PI_ExoMy_All_Parts_BoM.SLDDRW",
+        "Mechanical Design/Templates/ExoMy_BoM_Template.sldbomtbt"
+      ],
+      "urdf_files": [],
+      "file_count": 122,
+      "_gap": {
+        "cat": "rover",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "MarkFzp/mobile-aloha",
+      "name": "mobile-aloha",
+      "owner": "MarkFzp",
+      "description": "Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation",
+      "url": "https://github.com/MarkFzp/mobile-aloha",
+      "homepage": "https://mobile-aloha.github.io/",
+      "stars": 4475,
+      "forks": 734,
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "topics": [
+        "imitation-learning",
+        "robotics"
+      ],
+      "pushed_at": "2024-06-22T18:27:51Z",
+      "created_at": "2023-07-04T01:07:37Z",
+      "archived": false,
+      "open_issues": 20,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 5,
+        "DOC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 38,
+      "_gap": {
+        "cat": "mobile-manip",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "SIGRobotics-UIUC/LeKiwi",
+      "name": "LeKiwi",
+      "owner": "SIGRobotics-UIUC",
+      "description": "LeKiwi - Low-Cost Mobile Manipulator",
+      "url": "https://github.com/SIGRobotics-UIUC/LeKiwi",
+      "homepage": "",
+      "stars": 1427,
+      "forks": 156,
+      "language": "",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-08-05T09:25:59Z",
+      "created_at": "2025-02-04T22:01:58Z",
+      "archived": false,
+      "open_issues": 13,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 76,
+        "CAD": 2,
+        "DOC": 2,
+        "BOM": 2,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM.md",
+        "DynamixelLeKiwi/BOM.md"
+      ],
+      "urdf_files": [
+        "URDF/LeKiwi.urdf"
+      ],
+      "file_count": 159,
+      "_gap": {
+        "cat": "mobile-manip",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "robot-learning-co/trlc-dk1",
+      "name": "trlc-dk1",
+      "owner": "robot-learning-co",
+      "description": "TRLC's Developer Kit 1",
+      "url": "https://github.com/robot-learning-co/trlc-dk1",
+      "homepage": "",
+      "stars": 789,
+      "forks": 110,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-07-13T10:04:52Z",
+      "created_at": "2025-07-29T15:22:29Z",
+      "archived": false,
+      "open_issues": 8,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 2,
+        "MESH": 37,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".3mf",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "urdf/follower/TRLC-DK1-Follower.urdf"
+      ],
+      "file_count": 85,
+      "_gap": {
+        "cat": "mobile-manip",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "kscalelabs/kbot",
+      "name": "kbot",
+      "owner": "kscalelabs",
+      "description": "The K-Scale Robot",
+      "url": "https://github.com/kscalelabs/kbot",
+      "homepage": "",
+      "stars": 391,
+      "forks": 69,
+      "language": "",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-11-07T18:49:54Z",
+      "created_at": "2025-04-05T22:25:02Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 12,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "pib-rocks/pib-backend",
+      "name": "pib-backend",
+      "owner": "pib-rocks",
+      "description": "",
+      "url": "https://github.com/pib-rocks/pib-backend",
+      "homepage": "",
+      "stars": 10,
+      "forks": 24,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "topics": [],
+      "pushed_at": "2026-09-19T23:13:18Z",
+      "created_at": "2024-02-15T08:58:08Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 15,
+        "DESC": 1
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "ros_packages/pibsim_webots/resource/pib.urdf"
+      ],
+      "file_count": 4943,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "nhnifong/cranebot3-firmware",
+      "name": "cranebot3-firmware",
+      "owner": "nhnifong",
+      "description": "Code for a household crane robot",
+      "url": "https://github.com/nhnifong/cranebot3-firmware",
+      "homepage": "",
+      "stars": 82,
+      "forks": 8,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-19T18:36:33Z",
+      "created_at": "2025-01-14T01:17:31Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 4
+      },
+      "cad_formats": [
+        ".obj"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 367,
+      "_gap": {
+        "cat": "cable",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "orcahand/orca_core",
+      "name": "orca_core",
+      "owner": "orcahand",
+      "description": "Core Python Controller of the ORCA Hand",
+      "url": "https://github.com/orcahand/orca_core",
+      "homepage": "",
+      "stars": 593,
+      "forks": 152,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2026-09-18T10:10:24Z",
+      "created_at": "2025-03-04T02:23:07Z",
+      "archived": false,
+      "open_issues": 14,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 6
+      },
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 174,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "leap-hand/LEAP_Hand_API",
+      "name": "LEAP_Hand_API",
+      "owner": "leap-hand",
+      "description": "API for controlling LEAP Hand v1",
+      "url": "https://github.com/leap-hand/LEAP_Hand_API",
+      "homepage": "http://leaphand.com/",
+      "stars": 174,
+      "forks": 52,
+      "language": "C++",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2025-10-20T16:31:10Z",
+      "created_at": "2023-08-22T16:15:09Z",
+      "archived": false,
+      "open_issues": 5,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 393,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Chestnut-Robotics/aero-hand-open",
+      "name": "aero-hand-open",
+      "owner": "Chestnut-Robotics",
+      "description": "https://shop.tetheria.ai/",
+      "url": "https://github.com/Chestnut-Robotics/aero-hand-open",
+      "homepage": "https://chestnut-robotics.github.io/aero-hand-open/",
+      "stars": 960,
+      "forks": 149,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2026-09-15T17:57:04Z",
+      "created_at": "2025-10-07T21:34:10Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 3,
+        "CAD": 28,
+        "MESH": 49,
+        "DOC": 2,
+        "PCB": 4,
+        "DESC": 2
+      },
+      "cad_formats": [
+        ".3mf",
+        ".step",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [
+        "hardware/Assembly/BOM.csv",
+        "hardware/PCB/Aero_hand_open_left/Aero-Hand-Open-Left-BOM.csv",
+        "hardware/PCB/Aero_hand_open_right/Aero-Hand-Open-Right-BOM.csv"
+      ],
+      "urdf_files": [
+        "ros2/src/aero_hand_open_description/urdf/aero_hand_open_left.urdf",
+        "ros2/src/aero_hand_open_description/urdf/aero_hand_open_right.urdf"
+      ],
+      "file_count": 325,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "wengmister/BiDexHand",
+      "name": "BiDexHand",
+      "owner": "wengmister",
+      "description": "Open source release of biomimetic dexterous robotic hand, BiDexHand",
+      "url": "https://github.com/wengmister/BiDexHand",
+      "homepage": "",
+      "stars": 255,
+      "forks": 34,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-11-23T21:34:01Z",
+      "created_at": "2025-02-11T19:14:21Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "BOM": 1,
+        "MESH": 58,
+        "CAD": 1,
+        "DESC": 5
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "BOM.md"
+      ],
+      "urdf_files": [
+        "src/combined_fer_moveit_config/srdf/combined_arm.srdf.xacro",
+        "src/combined_fer_moveit_config/srdf/combined_arm.xacro",
+        "src/hand_rviz/urdf/combined_description.xacro",
+        "src/hand_rviz/urdf/hand_urdf.urdf",
+        "src/hand_rviz/urdf/hand_urdf_cf.urdf"
+      ],
+      "file_count": 208,
+      "_gap": {
+        "cat": "hand",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "OpenBionics/Prosthetic-Hands",
+      "name": "Prosthetic-Hands",
+      "owner": "OpenBionics",
+      "description": "Affordable (< 200$), light-weight (< 300 gr), anthropomorphic prosthetic hands, using a novel selectively-lockable differential mechanism",
+      "url": "https://github.com/OpenBionics/Prosthetic-Hands",
+      "homepage": "http://www.openbionics.org/",
+      "stars": 189,
+      "forks": 57,
+      "language": "TeX",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2018-02-10T01:31:57Z",
+      "created_at": "2015-03-18T12:05:30Z",
+      "archived": false,
+      "open_issues": 15,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 1,
+        "CAD": 391,
+        "MESH": 280,
+        "PCB": 2
+      },
+      "cad_formats": [
+        ".fcstd",
+        ".sldasm",
+        ".sldprt",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 1002,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "deltaxrobot/Delta-X-3D-Printed-Parts",
+      "name": "Delta-X-3D-Printed-Parts",
+      "owner": "deltaxrobot",
+      "description": "Delta X 3D Printing Parts will be open-source in March 2020",
+      "url": "https://github.com/deltaxrobot/Delta-X-3D-Printed-Parts",
+      "homepage": "",
+      "stars": 72,
+      "forks": 32,
+      "language": "",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2024-03-16T07:49:57Z",
+      "created_at": "2019-12-31T14:31:44Z",
+      "archived": false,
+      "open_issues": 4,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 327,
+        "CAD": 13
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 343,
+      "_gap": {
+        "cat": "hand",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "ruka-hand/RUKA",
+      "name": "RUKA",
+      "owner": "ruka-hand",
+      "description": "Official implementation for the project RUKA: Rethinking the Design of Humanoid Hands with Learning. Project Website: https://ruka-hand.github.io ",
+      "url": "https://github.com/ruka-hand/RUKA",
+      "homepage": "",
+      "stars": 198,
+      "forks": 28,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-08-11T20:18:48Z",
+      "created_at": "2025-04-22T14:45:13Z",
+      "archived": false,
+      "open_issues": 5,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 18
+      },
+      "cad_formats": [
+        ".obj",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 92,
+      "_gap": {
+        "cat": "hand",
+        "src": "awesome-mjyc"
+      }
+    },
+    {
+      "full_name": "iliasam/OpenSimpleLidar",
+      "name": "OpenSimpleLidar",
+      "owner": "iliasam",
+      "description": "Open Source scanning laser rangefinder",
+      "url": "https://github.com/iliasam/OpenSimpleLidar",
+      "homepage": "https://hackaday.io/project/20628-opensimplelidar",
+      "stars": 2563,
+      "forks": 259,
+      "language": "C",
+      "license": "MIT",
+      "topics": [
+        "diy",
+        "laser",
+        "lidar",
+        "ros",
+        "stm32",
+        "triangulation"
+      ],
+      "pushed_at": "2025-07-22T12:09:50Z",
+      "created_at": "2017-03-28T19:16:45Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 4,
+        "CAD": 4,
+        "BOM": 4,
+        "PCB": 4
+      },
+      "cad_formats": [
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [
+        "PCB/CommonPCB_v1.1M/PCB_BOM.xlsx",
+        "PCB/CommonPCB_v1.2/PCB_BOM.xlsx",
+        "PCB/CommonPCB_v1.2M/PCB_BOM.xlsx",
+        "PCB/SplittedPCB_v1.0_and_v1.1/MainPCB/PCB_BOM.xlsx"
+      ],
+      "urdf_files": [],
+      "file_count": 410,
+      "_gap": {
+        "cat": "sensor",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "ripl/HapCompass",
+      "name": "HapCompass",
+      "owner": "ripl",
+      "description": "3D design files and code for \"HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation \". Accepted to ICRA 2026.",
+      "url": "https://github.com/ripl/HapCompass",
+      "homepage": "https://ripl.github.io/HapCompass/",
+      "stars": 9,
+      "forks": 0,
+      "language": "",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2026-06-11T19:28:56Z",
+      "created_at": "2026-03-02T19:05:54Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 1,
+        "MESH": 6
+      },
+      "cad_formats": [
+        ".f3z",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 62,
+      "_gap": {
+        "cat": "sensor",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Vitrani/ShadowTac",
+      "name": "ShadowTac",
+      "owner": "Vitrani",
+      "description": "This repository contains files and instructions requred to build and use ShadowTac, an high resolution vision based tactile sensor.",
+      "url": "https://github.com/Vitrani/ShadowTac",
+      "homepage": "",
+      "stars": 14,
+      "forks": 2,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2025-09-18T16:48:32Z",
+      "created_at": "2025-02-08T11:39:33Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 4,
+        "MESH": 4
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 17,
+      "_gap": {
+        "cat": "sensor",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "upsidedownlabs/BioAmp-EXG-Pill",
+      "name": "BioAmp-EXG-Pill",
+      "owner": "upsidedownlabs",
+      "description": "BioAmp EXG Pill is a small and elegant Analog Front End (AFE) board for BioPotential signal acquisition.",
+      "url": "https://github.com/upsidedownlabs/BioAmp-EXG-Pill",
+      "homepage": "https://www.crowdsupply.com/upside-down-labs/bioamp-exg-pill",
+      "stars": 428,
+      "forks": 95,
+      "language": "HTML",
+      "license": "NOASSERTION",
+      "topics": [
+        "afe",
+        "arduino",
+        "bioamp-emg-pill",
+        "bioamp-exg-pill",
+        "bioelectronics",
+        "biology",
+        "biopotential-signals",
+        "board",
+        "ecg",
+        "eeg",
+        "emg",
+        "emg-signal",
+        "eog",
+        "hardware",
+        "lorforlinux",
+        "prosthetic-design",
+        "prosthetics",
+        "upsidedownlabs"
+      ],
+      "pushed_at": "2024-08-23T08:31:14Z",
+      "created_at": "2021-01-26T10:34:03Z",
+      "archived": false,
+      "open_issues": 12,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 6,
+        "PCB": 3,
+        "MESH": 4
+      },
+      "cad_formats": [
+        ".step",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 319,
+      "_gap": {
+        "cat": "sensor",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "FarmBot/farmbot_os",
+      "name": "farmbot_os",
+      "owner": "FarmBot",
+      "description": "The operating system and all related software that runs on FarmBot's Raspberry Pi.",
+      "url": "https://github.com/FarmBot/farmbot_os",
+      "homepage": "",
+      "stars": 1173,
+      "forks": 286,
+      "language": "Elixir",
+      "license": "MIT",
+      "topics": [
+        "elixir",
+        "farmbot",
+        "nerves"
+      ],
+      "pushed_at": "2026-07-22T19:05:44Z",
+      "created_at": "2014-01-12T18:54:11Z",
+      "archived": false,
+      "open_issues": 22,
+      "default_branch": "staging",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 557,
+      "_gap": {
+        "cat": "agri",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "Twisted-Fields/acorn-precision-farming-rover",
+      "name": "acorn-precision-farming-rover",
+      "owner": "Twisted-Fields",
+      "description": "Source code for Acorn, the precision farming rover by Twisted Fields",
+      "url": "https://github.com/Twisted-Fields/acorn-precision-farming-rover",
+      "homepage": "",
+      "stars": 279,
+      "forks": 37,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2024-07-06T08:07:48Z",
+      "created_at": "2021-01-31T00:35:15Z",
+      "archived": false,
+      "open_issues": 10,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 2
+      },
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 293,
+      "_gap": {
+        "cat": "agri",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "geezacoleman/OpenWeedLocator",
+      "name": "OpenWeedLocator",
+      "owner": "geezacoleman",
+      "description": "An open-source, low-cost, image-based weed detection device for in-crop and fallow scenarios.",
+      "url": "https://github.com/geezacoleman/OpenWeedLocator",
+      "homepage": "",
+      "stars": 496,
+      "forks": 92,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agriculture",
+        "diy"
+      ],
+      "pushed_at": "2026-09-16T20:39:21Z",
+      "created_at": "2021-08-23T17:36:25Z",
+      "archived": false,
+      "open_issues": 18,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 30
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 236,
+      "_gap": {
+        "cat": "agri",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "thecognifly/CogniFly-STL",
+      "name": "CogniFly-STL",
+      "owner": "thecognifly",
+      "description": "3D files for printing and assembling current and past versions of CogniFly",
+      "url": "https://github.com/thecognifly/CogniFly-STL",
+      "homepage": "https://thecognifly.github.io/",
+      "stars": 41,
+      "forks": 4,
+      "language": "",
+      "license": "",
+      "topics": [
+        "3d-printing",
+        "betaflight",
+        "collision-resistance",
+        "drone",
+        "inav",
+        "uav"
+      ],
+      "pushed_at": "2023-01-31T19:33:23Z",
+      "created_at": "2020-05-08T19:16:58Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 30,
+        "MESH": 147
+      },
+      "cad_formats": [
+        ".f3d",
+        ".fcstd",
+        ".step",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 471,
+      "_gap": {
+        "cat": "drone",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "okalachev/flix",
+      "name": "flix",
+      "owner": "okalachev",
+      "description": "Making an ESP32-based quadcopter from scratch",
+      "url": "https://github.com/okalachev/flix",
+      "homepage": "https://t.me/opensourcequadcopter",
+      "stars": 1816,
+      "forks": 303,
+      "language": "C++",
+      "license": "",
+      "topics": [
+        "arduino",
+        "autopilot",
+        "control-theory",
+        "drone",
+        "esp32",
+        "flight-control",
+        "flight-controller",
+        "mavlink",
+        "quadcopter",
+        "quadcopter-firmware",
+        "uav"
+      ],
+      "pushed_at": "2026-09-18T19:42:55Z",
+      "created_at": "2020-09-06T21:33:57Z",
+      "archived": false,
+      "open_issues": 2,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 1,
+        "CAD": 4,
+        "MESH": 5
+      },
+      "cad_formats": [
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 279,
+      "_gap": {
+        "cat": "drone",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "StephenCarlson/MiniHawk-VTOL",
+      "name": "MiniHawk-VTOL",
+      "owner": "StephenCarlson",
+      "description": "Artwork for the MiniHawk VTOL, a 3D-Printed Tricopter/Fixed-wing hybrid aircraft.",
+      "url": "https://github.com/StephenCarlson/MiniHawk-VTOL",
+      "homepage": "",
+      "stars": 323,
+      "forks": 70,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2022-06-19T06:41:38Z",
+      "created_at": "2020-06-15T22:15:39Z",
+      "archived": false,
+      "open_issues": 17,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 93,
+        "CAD": 1
+      },
+      "cad_formats": [
+        ".3mf",
+        ".stl",
+        ".stp"
+      ],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 115,
+      "_gap": {
+        "cat": "drone",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "CarbonAeronautics/Manual-Quadcopter-Drone",
+      "name": "Manual-Quadcopter-Drone",
+      "owner": "CarbonAeronautics",
+      "description": "",
+      "url": "https://github.com/CarbonAeronautics/Manual-Quadcopter-Drone",
+      "homepage": "",
+      "stars": 248,
+      "forks": 37,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2023-04-22T16:05:36Z",
+      "created_at": "2022-11-01T17:37:22Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 1
+      },
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 3,
+      "_gap": {
+        "cat": "drone",
+        "src": "growbotics"
+      }
+    },
+    {
+      "full_name": "HybridRobotics/berkeley-humanoid-lite-assets",
+      "name": "berkeley-humanoid-lite-assets",
+      "owner": "HybridRobotics",
+      "description": "A submodule of Berkeley Humanoid Lite Project",
+      "url": "https://github.com/HybridRobotics/berkeley-humanoid-lite-assets",
+      "homepage": "",
+      "stars": 42,
+      "forks": 32,
+      "language": "Python",
+      "license": "CC-BY-SA-4.0",
+      "topics": [
+        "mjcf",
+        "robotics",
+        "urdf"
+      ],
+      "pushed_at": "2025-09-07T19:15:37Z",
+      "created_at": "2025-03-17T23:34:05Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 26,
+        "CAD": 8,
+        "DESC": 10
+      },
+      "cad_formats": [
+        ".scad",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/urdf/berkeley_humanoid_lite.urdf",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/urdf/berkeley_humanoid_lite_biped.urdf",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/berkeley_humanoid_lite.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/berkeley_humanoid_lite_biped.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_base.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_biped_base.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_biped_physics.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_biped_sensor.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_physics.usd",
+        "data/robots/berkeley_humanoid/berkeley_humanoid_lite/usd/configuration/berkeley_humanoid_lite_sensor.usd"
+      ],
+      "file_count": 63,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "submodule"
+      }
+    },
+    {
+      "full_name": "HybridRobotics/berkeley_humanoid_description",
+      "name": "berkeley_humanoid_description",
+      "owner": "HybridRobotics",
+      "description": "",
+      "url": "https://github.com/HybridRobotics/berkeley_humanoid_description",
+      "homepage": "",
+      "stars": 51,
+      "forks": 5,
+      "language": "OpenSCAD",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2024-08-23T22:13:52Z",
+      "created_at": "2024-08-23T22:12:49Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 13,
+        "DESC": 2,
+        "CAD": 13
+      },
+      "cad_formats": [
+        ".scad",
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "urdf/gazebo.urdf",
+        "urdf/robot.urdf"
+      ],
+      "file_count": 38,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "sibling"
+      }
+    },
+    {
+      "full_name": "zeroth-robotics/hardware",
+      "name": "hardware",
+      "owner": "zeroth-robotics",
+      "description": "",
+      "url": "https://github.com/zeroth-robotics/hardware",
+      "homepage": "",
+      "stars": 12,
+      "forks": 1,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2024-12-04T07:49:24Z",
+      "created_at": "2024-11-11T01:38:29Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "PCB": 6,
+        "CAD": 3,
+        "BOM": 3
+      },
+      "cad_formats": [
+        ".step"
+      ],
+      "bom_files": [
+        "Custom Electronics /IMU Mount, Rev A/Rev A Electronics, Micro Stompy - BOM_IMUMount.csv",
+        "Custom Electronics /Milk V Hat, Rev B/MilkVHat_RevB_BOM.csv",
+        "Custom Electronics /Milk V Hat, Rev B/REVB_BOM_MilkVHat.csv"
+      ],
+      "urdf_files": [],
+      "file_count": 56,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "sibling"
+      }
+    },
+    {
+      "full_name": "Nate711/Doggo",
+      "name": "Doggo",
+      "owner": "Nate711",
+      "description": "",
+      "url": "https://github.com/Nate711/Doggo",
+      "homepage": "",
+      "stars": 200,
+      "forks": 122,
+      "language": "C++",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2019-12-05T19:47:41Z",
+      "created_at": "2018-07-04T04:27:16Z",
+      "archived": false,
+      "open_issues": 14,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 31,
+      "_gap": {
+        "cat": "quadruped",
+        "src": "submodule"
+      }
+    },
+    {
+      "full_name": "orcahand/orcahand_hardware",
+      "name": "orcahand_hardware",
+      "owner": "orcahand",
+      "description": "ORCA hand hardware: CAD source (STL) and Bambu Lab print files (3MF)",
+      "url": "https://github.com/orcahand/orcahand_hardware",
+      "homepage": "",
+      "stars": 197,
+      "forks": 37,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [],
+      "pushed_at": "2026-09-18T08:37:24Z",
+      "created_at": "2026-06-11T17:04:34Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "CAD": 69,
+        "BOM": 2,
+        "PCB": 6,
+        "MESH": 234,
+        "DOC": 1
+      },
+      "cad_formats": [
+        ".3mf",
+        ".step",
+        ".stl"
+      ],
+      "bom_files": [
+        "orca_v1/ORCA_Electronics/ORCA_Motor_Connectors_BOM.xls",
+        "orca_v2/electronics/ORCA_Motor_Connectors_BOM.xls"
+      ],
+      "urdf_files": [],
+      "file_count": 357,
+      "_gap": {
+        "cat": "hand",
+        "src": "sibling"
+      }
+    },
+    {
+      "full_name": "orcahand/orcahand_description",
+      "name": "orcahand_description",
+      "owner": "orcahand",
+      "description": "Contains the description files for the Orcahand model (MJCF, URDF)",
+      "url": "https://github.com/orcahand/orcahand_description",
+      "homepage": "",
+      "stars": 403,
+      "forks": 108,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2026-07-31T09:37:02Z",
+      "created_at": "2025-05-04T07:50:22Z",
+      "archived": false,
+      "open_issues": 6,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 970,
+        "DESC": 12
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "v1/models/mjcf/orcahand_left.mjcf",
+        "v1/models/mjcf/orcahand_left_extended.mjcf",
+        "v1/models/mjcf/orcahand_right.mjcf",
+        "v1/models/mjcf/orcahand_right_extended.mjcf",
+        "v1/models/urdf/orcahand_left.urdf",
+        "v1/models/urdf/orcahand_left_extended.urdf",
+        "v1/models/urdf/orcahand_right.urdf",
+        "v1/models/urdf/orcahand_right_extended.urdf",
+        "v2/models/mjcf/orcahand_left.mjcf",
+        "v2/models/mjcf/orcahand_right.mjcf",
+        "v2/models/urdf/orcahand_left.urdf",
+        "v2/models/urdf/orcahand_right.urdf"
+      ],
+      "file_count": 1019,
+      "_gap": {
+        "cat": "hand",
+        "src": "sibling"
+      }
+    },
+    {
+      "full_name": "kscalelabs/kbot-models",
+      "name": "kbot-models",
+      "owner": "kscalelabs",
+      "description": "",
+      "url": "https://github.com/kscalelabs/kbot-models",
+      "homepage": "",
+      "stars": 2,
+      "forks": 4,
+      "language": "",
+      "license": "MIT",
+      "topics": [],
+      "pushed_at": "2025-10-02T19:38:08Z",
+      "created_at": "2025-09-30T23:12:11Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "master",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 627,
+        "DESC": 8
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "kbot-full-collisions/robot.mjcf",
+        "kbot-full-collisions/robot.urdf",
+        "kbot-headless-full-collisions/robot.mjcf",
+        "kbot-headless-full-collisions/robot.urdf",
+        "kbot-headless/robot.mjcf",
+        "kbot-headless/robot.urdf",
+        "kbot/robot.mjcf",
+        "kbot/robot.urdf"
+      ],
+      "file_count": 1664,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "submodule"
+      }
+    },
+    {
+      "full_name": "linorobot/linorobot2_hardware",
+      "name": "linorobot2_hardware",
+      "owner": "linorobot",
+      "description": "",
+      "url": "https://github.com/linorobot/linorobot2_hardware",
+      "homepage": "",
+      "stars": 181,
+      "forks": 127,
+      "language": "C++",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-09-16T06:00:07Z",
+      "created_at": "2021-07-28T14:57:28Z",
+      "archived": false,
+      "open_issues": 30,
+      "default_branch": "jazzy",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 89,
+      "_gap": {
+        "cat": "mobile",
+        "src": "sibling"
+      }
+    },
+    {
+      "full_name": "huggingface/lerobot-humanoid-hardware",
+      "name": "lerobot-humanoid-hardware",
+      "owner": "huggingface",
+      "description": "",
+      "url": "https://github.com/huggingface/lerobot-humanoid-hardware",
+      "homepage": "",
+      "stars": 37,
+      "forks": 5,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-08-27T02:18:28Z",
+      "created_at": "2026-04-27T14:15:18Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "DOC": 4,
+        "MESH": 81,
+        "BOM": 4
+      },
+      "cad_formats": [
+        ".3mf",
+        ".stl"
+      ],
+      "bom_files": [
+        "hardware/bom/bom.csv",
+        "hardware/bom/bom.md",
+        "hardware/bom/bom_buy.csv",
+        "hardware/bom/bom_buy.md"
+      ],
+      "urdf_files": [],
+      "file_count": 188,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "huggingface/lerobot-humanoid-model",
+      "name": "lerobot-humanoid-model",
+      "owner": "huggingface",
+      "description": "",
+      "url": "https://github.com/huggingface/lerobot-humanoid-model",
+      "homepage": "",
+      "stars": 9,
+      "forks": 4,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-08-27T02:16:13Z",
+      "created_at": "2026-01-21T10:40:48Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 1166,
+        "DESC": 3
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "models/bipedal_plateform/urdf/robot.urdf",
+        "models/bipedal_plateform_no_arms/urdf/robot.urdf",
+        "models/lerobot_humanoide/urdf/robot.urdf"
+      ],
+      "file_count": 2374,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "huggingface/lerobot-humanoid-design",
+      "name": "lerobot-humanoid-design",
+      "owner": "huggingface",
+      "description": "Design and co-design of the next LeRobot humanoid.",
+      "url": "https://github.com/huggingface/lerobot-humanoid-design",
+      "homepage": "",
+      "stars": 8,
+      "forks": 4,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "pushed_at": "2026-08-27T02:16:21Z",
+      "created_at": "2025-11-28T10:08:28Z",
+      "archived": false,
+      "open_issues": 1,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {
+        "MESH": 124,
+        "DESC": 3
+      },
+      "cad_formats": [
+        ".stl"
+      ],
+      "bom_files": [],
+      "urdf_files": [
+        "urdf/bipedal_plateform/urdf/robot.urdf",
+        "urdf/humanoid_v0/urdf/robot.urdf",
+        "urdf/upper_body/urdf/robot.urdf"
+      ],
+      "file_count": 282,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    },
+    {
+      "full_name": "huggingface/lerobot-humanoid",
+      "name": "lerobot-humanoid",
+      "owner": "huggingface",
+      "description": "",
+      "url": "https://github.com/huggingface/lerobot-humanoid",
+      "homepage": "",
+      "stars": 252,
+      "forks": 24,
+      "language": "",
+      "license": "",
+      "topics": [],
+      "pushed_at": "2026-08-10T19:20:22Z",
+      "created_at": "2026-05-18T12:46:23Z",
+      "archived": false,
+      "open_issues": 0,
+      "default_branch": "main",
+      "tier": "A",
+      "reproducibility_score": null,
+      "score_reasons": [],
+      "evidence": {},
+      "cad_formats": [],
+      "bom_files": [],
+      "urdf_files": [],
+      "file_count": 3,
+      "_gap": {
+        "cat": "humanoid",
+        "src": "search"
+      }
+    }
+  ],
+  "error": [
+    {
+      "full_name": "alexanderkoch-koch/Low-Cost-Robot-Project",
+      "error": "repo_not_found",
+      "slug": "Low-Cost-Robot-Project",
+      "owner": "alexanderkoch-koch",
+      "name": "low_cost_robot dup check",
+      "cat": "arm",
+      "src": "dup-check"
+    },
+    {
+      "full_name": "PCrnjak/Prismo",
+      "error": "repo_not_found",
+      "slug": "Prismo",
+      "owner": "PCrnjak",
+      "name": "Prismo",
+      "cat": "arm",
+      "src": "sibling"
+    },
+    {
+      "full_name": "Niryo/MARA",
+      "error": "repo_not_found",
+      "slug": "MARA",
+      "owner": "Niryo",
+      "name": "Niryo One / MARA",
+      "cat": "arm",
+      "src": "awesome-mjyc"
+    }
+  ]
+}

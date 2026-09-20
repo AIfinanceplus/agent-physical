@@ -9,9 +9,10 @@
 | | |
 | --- | --- |
 | 参考实现 | `HUM-BERKELEY-LITE`（深度 3D 拆解台，整机物料 $4,350.59 / ¥23,244.19） |
-| 人工策展 | 5 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4） |
-| 管线生成 | 134 个（来自公开仓库树的证据化拆解） |
-| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 139 个未评分 |
+| 人工策展 | 6 个（ROSMO / OpenQuadruped / BEATRIX / Olimex MINIBOT / Faze4 / …） |
+| 管线生成 | 187 个（来自公开仓库树的证据化拆解） |
+| 评分 | 1 个已评分（Berkeley，导入自 physical-ai）· 192 个未评分 |
+| 零件行 | 3,724 条，全部指向真实文件（逐项目抽检链接可达率 187/187） |
 
 ## 修正的缺陷：硬编码的 88
 
@@ -63,8 +64,8 @@ type ReproductionScore =
 pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.generated.ts
 ```
 
-输入是 543 棵已缓存的公开仓库树与仓库元数据，输出 134 个 `WorkbenchProject`
-（2,764 条零件行、728 个总成）。规则：
+输入是 543 棵已缓存的公开仓库树与仓库元数据，输出 187 个 `WorkbenchProject`
+（3,724 条零件行、966 个总成）。规则：
 
 1. **装配层级三层回退**。优先取功能性目录；目录只有格式桶时按零件文件名中的部位词聚类；
    两条都不通就显式声明"无可识别的功能分区"并写进缺口。
@@ -97,6 +98,55 @@ pipeline/build_projects.py    证据 → WorkbenchProject，写 lib/projects.gen
 
 **已知局限**：以上是启发式规则，不是形式化判定。排除清单在每次运行时会逐条打印，可审计。
 
+## 漏网项目补充
+
+主采集按关键词 + 星数从 544 个仓库里筛，必然漏掉两类：**描述写得差的好项目**，
+和**硬件与代码分仓的项目**。所以补采走上游的人工策展清单
+（`awesome-open-source-robots` 的收录门槛是"硬件和软件都开源"，
+正好等于我们要的可复现门槛），而不是再搜一遍关键词。
+
+```
+pipeline/fetch_gap.py    候选 → 元数据 + 文件树，走与主采集完全相同的证据判定
+pipeline/review_gap.py   逐条审看：谁有真硬件证据、谁与现目录重复、谁会被哪道闸拦下
+pipeline/audit_links.py  对全部零件链接做覆盖式可达性检测
+```
+
+从 99 个候选中补进 54 个（133 → 187）。三件事值得记下来：
+
+### 标杆自己的硬件仓库一直不在库里
+
+`HybridRobotics/Berkeley-Humanoid-Lite`（★1867）只有 60 个文件、零几何文件——它是**代码库**，
+硬件在 `.gitmodules` 指向的另一个仓库 `HybridRobotics/berkeley-humanoid-lite-assets`。
+两个名字除大小写和 `-assets` 后缀外没有任何关联线索，因此从未被关联上。
+
+同类：`zeroth-robotics/zeroth-bot` → `zeroth-robotics/hardware`；
+`orcahand/orca_core` → `orcahand/orcahand_hardware`；`Nate711/StanfordDoggoProject` → `Nate711/Doggo`。
+
+判据：描述写着"humanoid robot"的仓库如果只有几十个文件、没有任何几何文件，
+那它几乎一定是代码库，硬件在别处——去查同组织的兄弟仓库和 `.gitmodules`。
+
+### 关键词闸把真硬件误杀
+
+`esa-prl/ExoMy`（69 个 `.sldprt` + 10 个 BOM）、`NimbRo/nimbro-op2`（69 个 `.step`）、
+`ManufacturedMotion/Hex`（BOM + 3mf + PCB）三个真硬件项目全被"机器人信号不足"拦下，
+因为它们的 description 为空、或是 `[ARCHIVED] 见新地址`。
+
+修法是**按来源可信度分档，而不是按证据强度放宽**：人工策展清单收录的，
+收录动作本身就是"它是机器人"的验证，不必再问关键词；自动采集命中的，
+仍只有 URDF/MJCF 这类结构证据能推翻关键词判断。
+
+先试过按证据强度放宽（有参数化 CAD/BOM/PCB 就放行），结果 SCAD 库、KiCad 工具、
+数控机床全部涌入——关键词闸存在的意义正在于此。
+
+### 零件链接写死分支会成片 404
+
+`blob_url()` 原本写死 `branch="main"`，于是默认分支是 `master` 的仓库
+整个仓库的零件链接全 404。**逐项目抽检 133 条，51 条 404（38%）。**
+改用 `/blob/HEAD/`（GitHub 会解析到默认分支）后复测 187/187 全部可达。
+
+为什么之前没发现：上一轮只抽查了 3 条 URL，全 200 就认为链接是好的。
+成片失效恰恰是抽样看不见的——所以现在用 `audit_links.py` 做覆盖式检测。
+
 ## 运行
 
 ```bash
@@ -124,6 +174,11 @@ lib/
   workbench-projects.ts           注册表 + 人工策展条目
   projects.generated.ts           管线生成（勿手改）
 pipeline/build_projects.py        证据 → 工作台 的生成器
+pipeline/fetch_gap.py             漏网候选的采集（策展清单 → 种子）
+pipeline/audit_links.py           零件链接覆盖式可达性检测
+data/candidates-gap.json          补采候选清单（人工策展来源）
+data/seed-gap.json                补采种子（robots.json 同形）
+app/review/page.tsx               审看台：可筛选表格 + 排除清单
 ```
 
 ## 数据来源与边界
