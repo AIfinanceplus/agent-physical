@@ -1,6 +1,7 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Layers } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { ALL_PROJECTS, PROJECT_STATS } from "@/lib/workbench-projects";
 import { scoreLabel } from "@/lib/reproduction";
 import { TEARDOWN_IDS, hasTeardown } from "@/lib/teardown-registry";
@@ -12,6 +13,12 @@ import { TEARDOWN_IDS, hasTeardown } from "@/lib/teardown-registry";
  * both numbers were literals. 88 was Berkeley Humanoid Lite's class ceiling,
  * displayed as if it described every project, and "6 / 6" drifted the moment a
  * project was added. Both now come from the registry.
+ *
+ * The "· 深度 3D" badge was a plain string with no handler: readers clicked it
+ * expecting the list of teardown projects and nothing happened. The count was
+ * right there in the header ("3D 拆解台 29") with no way to reach those 29.
+ * It is now a real control that lists exactly the projects whose spec exists —
+ * membership comes from `TEARDOWN_IDS`, never from a hand-written list.
  */
 export function ProjectSwitcher({
   value,
@@ -21,6 +28,27 @@ export function ProjectSwitcher({
   onChange: (id: string) => void;
 }) {
   const current = ALL_PROJECTS.find((p) => p.id === value);
+  const [open, setOpen] = useState(false);
+  const box = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const away = (event: MouseEvent) => {
+      if (box.current && !box.current.contains(event.target as Node)) setOpen(false);
+    };
+    const esc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", away);
+    document.addEventListener("keydown", esc);
+    return () => {
+      document.removeEventListener("mousedown", away);
+      document.removeEventListener("keydown", esc);
+    };
+  }, [open]);
+
+  const teardowns = ALL_PROJECTS.filter((p) => TEARDOWN_IDS.includes(p.id));
+
   return (
     <nav
       className="flex h-14 shrink-0 items-center gap-3 border-b border-border bg-[#0b0e14] px-4 lg:px-6"
@@ -36,7 +64,68 @@ export function ProjectSwitcher({
           {PROJECT_STATS.unscored} · 3D 拆解台 {TEARDOWN_IDS.length}
         </p>
       </div>
-      <div className="relative ml-auto min-w-0 max-w-[420px] flex-1 sm:w-[420px] sm:flex-none">
+
+      <div ref={box} className="relative ml-auto shrink-0">
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-haspopup="listbox"
+          className={`num flex h-9 items-center gap-1.5 rounded-sm border px-2.5 text-[11px] transition-colors ${
+            open
+              ? "border-primary bg-primary/10 text-primary"
+              : "border-border text-muted-foreground hover:border-primary/50 hover:text-primary"
+          }`}
+          title="列出全部深度 3D 拆解台"
+          data-hermes-click="teardown-list"
+        >
+          <Layers className="size-3.5" aria-hidden />
+          深度 3D · {teardowns.length}
+          <ChevronDown className="size-3.5" aria-hidden />
+        </button>
+        {open ? (
+          <div
+            role="listbox"
+            aria-label="深度 3D 拆解台"
+            className="absolute top-11 right-0 z-50 max-h-[70vh] w-[420px] overflow-auto rounded-sm border border-border bg-[#0b0e14] shadow-lg"
+          >
+            <p className="border-b border-border px-3 py-2 text-[10px] tracking-[0.12em] text-muted-foreground">
+              以下 {teardowns.length} 个项目有深度 3D 拆解台：3D 几何 · 装配层级 · 零件表 ·
+              关节反查 · 爆炸视图 · 六维证据分 · 缺口声明
+            </p>
+            {teardowns.map((project) => {
+              const active = project.id === value;
+              return (
+                <button
+                  key={project.id}
+                  type="button"
+                  role="option"
+                  aria-selected={active}
+                  onClick={() => {
+                    onChange(project.id);
+                    setOpen(false);
+                  }}
+                  className={`num block w-full px-3 py-2 text-left text-[11px] transition-colors ${
+                    active
+                      ? "bg-primary/10 text-primary"
+                      : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                  }`}
+                >
+                  <span className="block truncate">
+                    {active ? "▸ " : "　"}
+                    {project.name}
+                  </span>
+                  <span className="block truncate text-[10px] opacity-70">
+                    {project.id} · {scoreLabel(project.reproduction)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+
+      <div className="relative min-w-0 max-w-[420px] flex-1 sm:w-[420px] sm:flex-none">
         <select
           value={value}
           onChange={(event) => onChange(event.target.value)}
