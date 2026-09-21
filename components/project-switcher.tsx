@@ -144,10 +144,23 @@ export function ProjectSwitcher({
         />
       </div>
       {current ? (
-        <span className="num hidden shrink-0 rounded-sm border border-border px-2 py-1 text-[10px] text-muted-foreground lg:block">
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-haspopup="listbox"
+          title="列出全部深度 3D 拆解台"
+          data-hermes-click="teardown-list"
+          className={`num hidden shrink-0 items-center gap-1 rounded-sm border px-2 py-1 text-[10px] transition-colors lg:flex ${
+            open
+              ? "border-primary bg-primary/10 text-primary"
+              : "border-border text-muted-foreground hover:border-primary/50 hover:text-primary"
+          }`}
+        >
           {current.curated ? "人工策展" : "证据管线"}
           {hasTeardown(current.id) ? " · 深度 3D" : ""}
-        </span>
+          <ChevronDown className="size-3" aria-hidden />
+        </button>
       ) : null}
       <a
         href="/review"
